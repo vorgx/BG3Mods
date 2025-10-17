@@ -1,0 +1,793 @@
+// ========================================
+// WARRIOR STATUS DEFINITIONS
+// Created: October 16, 2025
+// Patch: 8 Compatible (4.8.0.10)
+// ========================================
+// Total Statuses: 31
+// - Base Abilities: 15 statuses
+// - Mountain Thane: 6 statuses
+// - Colossus: 7 statuses
+// - Slayer: 3 statuses
+// ========================================
+
+// ========================================
+// BASE ABILITY STATUSES
+// ========================================
+
+// SHIELD SLAM - Rage Generation
+new entry "WAR_SHIELD_SLAM_RAGE_GEN"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc19;1"
+data "Description" "h125abc20;1"
+data "Icon" "PassiveFeature_Generic_Energy"
+data "FormatColor" "Attack"
+data "StackId" "WAR_SHIELD_SLAM_RAGE_GEN"
+data "OnApplyFunctors" "ApplyStatus(SELF,WAR_SHIELD_SLAM_RAGE,100,1)"
+data "StatusGroups" "SG_RemoveOnRespec"
+
+// MORTAL WOUND - Healing Reduction
+new entry "WAR_MORTAL_WOUND"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc21;1"
+data "Description" "h125abc22;1"
+data "Icon" "PassiveFeature_Generic_DeathsDoor"
+data "FormatColor" "Damage"
+data "StackId" "WAR_MORTAL_WOUND"
+data "Boosts" "HealingReceived(Incoming,-50)"
+data "StatusGroups" "SG_RemoveOnRespec"
+data "StatusPropertyFlags" "DisableCombatlog"
+
+// ENRAGED - Fury Core Mechanic
+new entry "WAR_ENRAGED"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc23;1"
+data "Description" "h125abc24;2"
+data "DescriptionParams" "20;10"
+data "Icon" "Action_Barbarian_Rage"
+data "FormatColor" "Damage"
+data "StackId" "WAR_ENRAGED"
+data "Boosts" "Damage(Increase,20);RollBonus(RawAbility,1d4,PhysicalDamage)"
+data "StatusGroups" "SG_RemoveOnRespec"
+data "StatusPropertyFlags" "DisableCombatlog"
+
+// AVATAR - Transformation Buff
+new entry "WAR_AVATAR"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc25;1"
+data "Description" "h125abc26;4"
+data "DescriptionParams" "4;2;50;4"
+data "Icon" "Action_Barbarian_Rage"
+data "FormatColor" "Damage"
+data "StackId" "WAR_AVATAR"
+data "Boosts" "Ability(Strength,4);AC(2);ActionResourceMultiplier(Rage,150,0);StatusImmunity(FRIGHTENED);StatusImmunity(CHARMED)"
+data "StatusGroups" "SG_RemoveOnRespec"
+
+// THUNDER CLAP SLOW - Movement Reduction
+new entry "WAR_THUNDER_CLAP_SLOW"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc27;1"
+data "Description" "h125abc28;1"
+data "Icon" "PassiveFeature_Generic_Slowing"
+data "FormatColor" "Damage"
+data "StackId" "WAR_THUNDER_CLAP_SLOW"
+data "Boosts" "ActionResource(Movement,-2,0)"
+data "StatusGroups" "SG_RemoveOnRespec"
+data "StatusPropertyFlags" "DisableCombatlog"
+
+// WHIRLWIND BUFF - Cleave Enable
+new entry "WAR_WHIRLWIND_BUFF"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc29;1"
+data "Description" "h125abc30;1"
+data "Icon" "PassiveFeature_Generic_Offensive"
+data "FormatColor" "Attack"
+data "StackId" "WAR_WHIRLWIND_BUFF"
+data "StackType" "Additive"
+data "StatusGroups" "SG_RemoveOnRespec"
+data "StatusPropertyFlags" "DisableCombatlog"
+using "_BOOST"
+
+// SHIELD SLAM RAGE - Actual Rage Grant
+new entry "WAR_SHIELD_SLAM_RAGE"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc31;1"
+data "Description" "h125abc32;1"
+data "Icon" "PassiveFeature_Generic_Energy"
+data "FormatColor" "Attack"
+data "StackId" "WAR_SHIELD_SLAM_RAGE"
+data "OnApplyFunctors" "RestoreResource(Rage,15,0)"
+data "StatusGroups" "SG_RemoveOnRespec"
+
+// SHIELD BLOCK - Blocking Stance
+new entry "WAR_SHIELD_BLOCK"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc33;1"
+data "Description" "h125abc34;2"
+data "DescriptionParams" "100;30"
+data "Icon" "Action_Paladin_ShieldBash"
+data "FormatColor" "Defense"
+data "StackId" "WAR_SHIELD_BLOCK"
+data "Boosts" "BlockRegainHitPoints(100);Damage(Increase,30,WAR_ShieldSlam)"
+data "StatusGroups" "SG_RemoveOnRespec"
+
+// BATTLE SHOUT - Party Damage Buff
+new entry "WAR_BATTLE_SHOUT"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc35;1"
+data "Description" "h125abc36;1"
+data "Icon" "Action_Paladin_BlessedWarrior"
+data "FormatColor" "Attack"
+data "StackId" "WAR_BATTLE_SHOUT"
+data "Boosts" "RollBonus(Attack,2);RollBonus(Damage,2)"
+data "StatusGroups" "SG_RemoveOnRespec"
+
+// SUNDERED ARMOR (SUNDER ATTACK) - Stacking AC Reduction
+new entry "WAR_SUNDERATTACK_ARMOR"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc123;1"
+data "Description" "h125abc124;2"
+data "DescriptionParams" "1;3"
+data "Icon" "statIcons_Sundered"
+data "FormatColor" "Red"
+data "StackId" "WAR_SUNDERATTACK_ARMOR"
+data "StackType" "Additive"
+data "StackPriority" "1"
+data "Boosts" "AC(-1)"
+data "StatusPropertyFlags" "DisableCombatlog"
+data "StatusGroups" "SG_RemoveOnRespec"
+data "StatusEffect" "7c9e9039-9049-4094-92d7-1de7e8da3c41"
+
+// DEFENSIVE STANCE - Damage Reduction
+new entry "WAR_DEFENSIVE_STANCE"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc37;1"
+data "Description" "h125abc38;1"
+data "Icon" "PassiveFeature_Generic_Defensive"
+data "FormatColor" "Defense"
+data "StackId" "WAR_DEFENSIVE_STANCE"
+data "Boosts" "Resistance(Physical,Resistant10)"
+data "StatusGroups" "SG_RemoveOnRespec"
+
+// CHARGE RAGE - Rage Grant
+new entry "WAR_CHARGE_RAGE_GEN"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc47;1"
+data "Description" "h125abc48;1"
+data "Icon" "PassiveFeature_Generic_Energy"
+data "FormatColor" "Attack"
+data "StackId" "WAR_CHARGE_RAGE_GEN"
+data "OnApplyFunctors" "RestoreResource(Rage,10,0)"
+data "StatusGroups" "SG_RemoveOnRespec"
+
+// SUNDER ARMOR RAGE - Rage Grant
+new entry "WAR_SUNDER_ARMOR_RAGE"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc127;1"
+data "Description" "h125abc128;1"
+data "Icon" "PassiveFeature_Generic_Energy"
+data "FormatColor" "Attack"
+data "StackId" "WAR_SUNDER_ARMOR_RAGE"
+data "OnApplyFunctors" "RestoreResource(Rage,15,0)"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+data "StatusGroups" "SG_RemoveOnRespec"
+
+// DIE BY THE SWORD - Parry All
+new entry "WAR_DIE_BY_THE_SWORD"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc51;1"
+data "Description" "h125abc52;1"
+data "Icon" "Action_Paladin_ShieldOfFaith"
+data "FormatColor" "Defense"
+data "StackId" "WAR_DIE_BY_THE_SWORD"
+data "Boosts" "AC(100)"
+data "StatusGroups" "SG_RemoveOnRespec"
+
+// SPELL REFLECTION - Reflect Magic
+new entry "WAR_SPELL_REFLECTION"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc53;1"
+data "Description" "h125abc54;1"
+data "Icon" "Action_Cleric_ShieldOfFaith"
+data "FormatColor" "Defense"
+data "StackId" "WAR_SPELL_REFLECTION"
+data "Boosts" "Resistance(Force,Immune);Resistance(Fire,Immune);Resistance(Cold,Immune);Resistance(Lightning,Immune);Resistance(Thunder,Immune);Resistance(Poison,Immune);Resistance(Acid,Immune);Resistance(Necrotic,Immune);Resistance(Radiant,Immune);Resistance(Psychic,Immune)"
+data "StatusGroups" "SG_RemoveOnRespec"
+
+// RALLYING CRY - Temp HP Grant
+new entry "WAR_RALLYING_CRY_TEMP_HP"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc61;1"
+data "Description" "h125abc62;1"
+data "Icon" "Action_Paladin_HealingRadiance"
+data "FormatColor" "Healing"
+data "StackId" "WAR_RALLYING_CRY_TEMP_HP"
+data "OnApplyFunctors" "ApplyStatus(TEMPORARY_HITPOINTS,100,0,2d8+context.Source.Level)"
+data "StatusGroups" "SG_RemoveOnRespec"
+
+// ========================================
+// MOUNTAIN THANE SPECIALIZATION STATUSES
+// ========================================
+
+// Keystone Status: Avatar of the Storm
+new entry "WAR_AVATAR_OF_THE_STORM"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h123abc23;1"
+data "Description" "h123abc24;1"
+data "Icon" "PassiveFeature_Generic_Lightning"
+data "FormatColor" "Water"
+data "StackId" "WAR_AVATAR_OF_THE_STORM"
+data "TickType" "StartTurn"
+data "TooltipDamage" "DealDamage(1d8,Lightning)"
+data "TickFunctors" "CreateExplosion(Projectile_WAR_AvatarStorm_Burst)"
+data "StatusGroups" "SG_RemoveOnRespec"
+data "StatusPropertyFlags" "DisableCombatlog"
+
+// L15 Alternative: Burst of Power
+new entry "WAR_BURST_OF_POWER"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h123abc25;1"
+data "Description" "h123abc26;1"
+data "Icon" "PassiveFeature_Generic_Lightning"
+data "FormatColor" "Water"
+data "StackId" "WAR_BURST_OF_POWER"
+data "StackType" "Additive"
+data "Boosts" "ActionResourceConsumeMultiplier(BonusActionPoint,100,0,WAR_ShieldSlam);ActionResourceMultiplier(Rage,200,0,WAR_ShieldSlam)"
+data "RemoveEvents" "OnSpellCast"
+data "RemoveConditions" "HasStringInSpellRoll('Projectile(WAR_ShieldSlam)')"
+data "StatusGroups" "SG_RemoveOnRespec"
+data "StatusPropertyFlags" "TickingWithSource"
+
+// L17 Recommended: Thunder Blast Charge
+new entry "WAR_THUNDER_BLAST_CHARGE"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h123abc27;1"
+data "Description" "h123abc28;1"
+data "Icon" "PassiveFeature_Generic_Lightning"
+data "FormatColor" "Water"
+data "StackId" "WAR_THUNDER_BLAST_CHARGE"
+data "StackType" "Additive"
+data "Boosts" "Damage(Increase,40,WAR_ThunderClap);ActionResourceMultiplier(Rage,200,0,WAR_ThunderClap)"
+data "RemoveEvents" "OnSpellCast"
+data "RemoveConditions" "HasStringInSpellRoll('Projectile(WAR_ThunderClap)')"
+data "StatusGroups" "SG_RemoveOnRespec"
+data "StatusPropertyFlags" "TickingWithSource"
+
+// L17 Alternative: Thorim's Might
+new entry "WAR_THORIM_MIGHT"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h123abc29;1"
+data "Description" "h123abc30;1"
+data "Icon" "PassiveFeature_Generic_Lightning"
+data "FormatColor" "Water"
+data "StackId" "WAR_THORIM_MIGHT"
+data "Boosts" "Ability(Strength,4);AC(2);IgnoreDamageResistances(Lightning)"
+data "StatusGroups" "SG_RemoveOnRespec"
+data "StatusPropertyFlags" "TickingWithSource"
+
+// L19 Alternative: Thunder Blast Damage Reduction
+new entry "WAR_THUNDER_BLAST_DR"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h123abc31;1"
+data "Description" "h123abc32;1"
+data "Icon" "PassiveFeature_Generic_Defense"
+data "FormatColor" "Water"
+data "StackId" "WAR_THUNDER_BLAST_DR"
+data "Boosts" "Resistance(Physical,Resistant10);StatusImmunity(PRONE)"
+data "StatusGroups" "SG_RemoveOnRespec"
+
+// L19 Alternative: Steadfast as the Peaks
+new entry "WAR_STEADFAST"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h123abc33;1"
+data "Description" "h123abc34;1"
+data "Icon" "PassiveFeature_Generic_Defensive"
+data "FormatColor" "Water"
+data "StackId" "WAR_STEADFAST"
+data "TickType" "StartTurn"
+data "Boosts" "SavingThrowBonus(AllSavingThrows,2);AC(1)"
+data "TickFunctors" "RegainHitPoints(2%)"
+data "StatusGroups" "SG_RemoveOnRespec"
+data "StatusPropertyFlags" "TickingWithSource"
+
+// ========================================
+// COLOSSUS SPECIALIZATION STATUSES
+// ========================================
+
+// Keystone Status: Colossal Might
+new entry "WAR_COLOSSAL_MIGHT"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h124abc27;1"
+data "Description" "h124abc28;1"
+data "Icon" "PassiveFeature_Generic_Damage"
+data "FormatColor" "Red"
+data "StackId" "WAR_COLOSSAL_MIGHT"
+data "StackType" "Additive"
+data "Boosts" "Damage(Increase,10,WAR_Demolish)"
+data "StatusGroups" "SG_RemoveOnRespec"
+data "StatusPropertyFlags" "TickingWithSource"
+
+// L15 Alternative: Veteran Vitality Heal
+new entry "WAR_VETERAN_VITALITY_HEAL"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h124abc29;1"
+data "Description" "h124abc30;1"
+data "Icon" "PassiveFeature_Generic_Healing"
+data "FormatColor" "Heal"
+data "StackId" "WAR_VETERAN_VITALITY_HEAL"
+data "TickType" "StartTurn"
+data "TickFunctors" "RegainHitPoints(7.5%)"
+data "StatusGroups" "SG_RemoveOnRespec"
+data "StatusPropertyFlags" "TickingWithSource"
+
+// L15 Alternative: Veteran Vitality Cooldown
+new entry "WAR_VETERAN_VITALITY_CD"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h124abc31;1"
+data "Description" "h124abc32;1"
+data "Icon" "PassiveFeature_Generic_Defense"
+data "FormatColor" "Red"
+data "StackId" "WAR_VETERAN_VITALITY_CD"
+data "StatusGroups" "SG_RemoveOnRespec"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+
+// L15 Alternative: One Against Many
+new entry "WAR_ONE_AGAINST_MANY"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h124abc09;1"
+data "Description" "h124abc10;1"
+data "Icon" "PassiveFeature_Generic_Damage"
+data "FormatColor" "Red"
+data "StackId" "WAR_ONE_AGAINST_MANY"
+data "StackPriority" "1"
+data "StatusGroups" "SG_RemoveOnRespec"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+data "RemoveEvents" "OnTurn"
+
+// L17 Alternative: Enhanced Bleeding (Arterial Bleed)
+new entry "WAR_BLEEDING_ENHANCED"
+type "StatusData"
+data "StatusType" "BOOST"
+using "BLEEDING"
+data "DisplayName" "h124abc33;1"
+data "Description" "h124abc34;1"
+data "Icon" "PassiveFeature_Generic_Bleed"
+data "FormatColor" "Red"
+data "StackId" "WAR_BLEEDING_ENHANCED"
+data "TooltipDamage" "DealDamage(1d6+1d6*(StatusCount(WAR_COLOSSAL_MIGHT)*5/100),Slashing)"
+data "TickFunctors" "DealDamage(1d6,Slashing);IF(HasStatus('WAR_COLOSSAL_MIGHT',context.Source)):DealDamage(1d6*(StatusCount(WAR_COLOSSAL_MIGHT,context.Source)*5/100),Slashing)"
+
+// L19 Alternative: Demolish Shockwave Buff
+new entry "WAR_DEMOLISH_SHOCKWAVE_BUFF"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h124abc23;1"
+data "Description" "h124abc24;1"
+data "Icon" "PassiveFeature_Generic_Control"
+data "FormatColor" "Red"
+data "StackId" "WAR_DEMOLISH_SHOCKWAVE_BUFF"
+data "Boosts" "IncreaseSpellRange(3,WAR_Shockwave);StatusDurationIncrease(STUNNED,1)"
+data "RemoveEvents" "OnCast"
+data "RemoveConditions" "HasStringInSpellRoll('Projectile(WAR_Shockwave)')"
+data "OnRemoveFunctors" "ApplyStatus(context.Source,WAR_COLOSSAL_MIGHT,100,5)"
+data "StatusGroups" "SG_RemoveOnRespec"
+data "StatusPropertyFlags" "TickingWithSource"
+
+// Shared Status: Enhanced Demoralized (used by Mountain Thane L19)
+new entry "WAR_DEMORALIZED_ENHANCED"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h124abc35;1"
+data "Description" "h124abc36;1"
+data "Icon" "Status_Generic_Debuff"
+data "FormatColor" "Red"
+data "StackId" "WAR_DEMORALIZED_ENHANCED"
+data "Boosts" "Damage(Decrease,10,All)"
+data "StatusGroups" "SG_RemoveOnRespec"
+
+// ========================================
+// SLAYER SPECIALIZATION STATUSES
+// ========================================
+
+// Keystone Status: Marked for Execution
+new entry "WAR_MARKED_FOR_EXECUTION"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc21;1"
+data "Description" "h125abc22;1"
+data "Icon" "PassiveFeature_Generic_Dark"
+data "FormatColor" "Red"
+data "StackId" "WAR_MARKED_FOR_EXECUTION"
+data "Boosts" "Damage(Increase,10,WAR_Execute);Damage(Increase,1d6,FromSource)"
+data "ManagedStatusEffectType" "Negative"
+data "StatusGroups" "SG_RemoveOnRespec"
+data "StatusEffect" "b297f0bb-13a8-4bc7-9551-fd82cfb05ea6"
+
+// L15/L17 Alternative: Blood Frenzy (Overwhelming Blades reward)
+new entry "WAR_BLOOD_FRENZY"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc23;1"
+data "Description" "h125abc24;1"
+data "Icon" "PassiveFeature_Generic_Damage"
+data "FormatColor" "Red"
+data "StackId" "WAR_BLOOD_FRENZY"
+data "Boosts" "Damage(Increase,2,Melee);ActionResource(Movement,10%,0)"
+data "StatusGroups" "SG_RemoveOnRespec"
+
+// L19 Alternative: Overwhelmed (Reap the Storm debuff)
+new entry "WAR_OVERWHELMED"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc17;1"
+data "Description" "h125abc18;1"
+data "Icon" "Status_Generic_Debuff"
+data "FormatColor" "Red"
+data "StackId" "WAR_OVERWHELMED"
+data "Boosts" "Damage(Increase,8,FromSource)"
+data "ManagedStatusEffectType" "Negative"
+data "StatusGroups" "SG_RemoveOnRespec"
+data "StatusPropertyFlags" "DisableCombatlog"
+
+// ========================================
+// ARMS WARRIOR SUBCLASS STATUSES
+// ========================================
+
+// Shattered Defenses - Applied by Colossus Smash
+new entry "WAR_SHATTERED_DEFENSES"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc81;1"
+data "Description" "h125abc82;1"
+data "Icon" "Status_Generic_Debuff"
+data "FormatColor" "Red"
+data "StackId" "WAR_SHATTERED_DEFENSES"
+data "Boosts" "AC(-3)"
+data "ManagedStatusEffectType" "Negative"
+data "StatusGroups" "SG_RemoveOnRespec"
+
+// Sweeping Strikes - Cleave buff for next 2 attacks
+new entry "WAR_SWEEPING_STRIKES"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc83;1"
+data "Description" "h125abc84;1"
+data "Icon" "Action_Cleave"
+data "FormatColor" "Blue"
+data "StackId" "WAR_SWEEPING_STRIKES"
+data "Boosts" "EnableBasicMeleeWeaponCleaveAttack"
+data "StatusGroups" "SG_RemoveOnRespec"
+data "TickType" "StartTurn"
+data "OnApplyFunctors" "ApplyStatus(SELF,WAR_SWEEPING_STRIKES_TRACKER,100,2)"
+
+// Sweeping Strikes Tracker - Tracks number of cleave attacks
+new entry "WAR_SWEEPING_STRIKES_TRACKER"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc83;1"
+data "Description" "h125abc84;1"
+data "Icon" "Action_Cleave"
+data "FormatColor" "Blue"
+data "StackId" "WAR_SWEEPING_STRIKES_TRACKER"
+data "StatusGroups" "SG_RemoveOnRespec"
+data "StatusPropertyFlags" "DisableCombatlog;DisablePortraitIndicator"
+
+// Rend - Bleed damage over time
+new entry "WAR_REND"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc85;1"
+data "Description" "h125abc86;2"
+data "Icon" "Status_Bleed"
+data "FormatColor" "Red"
+data "StackId" "WAR_REND"
+data "Boosts" ""
+data "ManagedStatusEffectType" "Negative"
+data "StatusGroups" "SG_RemoveOnRespec"
+data "TickType" "StartTurn"
+data "OnTickFunctors" "DealDamage(2d6,Slashing,Magical)"
+
+// Skullsplitter Rage - Rage generation from Skullsplitter
+new entry "WAR_SKULLSPLITTER_RAGE"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc87;1"
+data "Description" "h125abc88;1"
+data "Icon" "statIcons_Rage"
+data "FormatColor" "Blue"
+data "StackId" "WAR_SKULLSPLITTER_RAGE"
+data "OnApplyFunctors" "RestoreResource(Rage,20,0)"
+data "StatusGroups" "SG_RemoveOnRespec"
+data "StatusPropertyFlags" "DisableCombatlog;DisablePortraitIndicator"
+
+// Deadly Calm - 0 Rage cost for abilities
+new entry "WAR_DEADLY_CALM"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc89;1"
+data "Description" "h125abc90;1"
+data "Icon" "PassiveFeature_Generic_Tactical"
+data "FormatColor" "Blue"
+data "StackId" "WAR_DEADLY_CALM"
+data "Boosts" "ActionResourceConsumeMultiplier(Rage,0,0)"
+data "StatusGroups" "SG_RemoveOnRespec"
+
+// Sundered Armor - Applied by Warbreaker
+new entry "WAR_SUNDERED_ARMOR"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc91;1"
+data "Description" "h125abc92;1"
+data "Icon" "Status_Generic_Debuff"
+data "FormatColor" "Red"
+data "StackId" "WAR_SUNDERED_ARMOR"
+data "Boosts" "AC(-2)"
+data "ManagedStatusEffectType" "Negative"
+data "StatusGroups" "SG_RemoveOnRespec"
+
+// Bladestorm - Channeled AoE damage
+new entry "WAR_BLADESTORM"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc93;1"
+data "Description" "h125abc94;2"
+data "Icon" "Spell_Transmutation_ArcaneGate"
+data "FormatColor" "Blue"
+data "StackId" "WAR_BLADESTORM"
+data "Boosts" ""
+data "StatusGroups" "SG_RemoveOnRespec;SG_Condition;SG_Concentration"
+data "TickType" "StartTurn"
+data "OnTickFunctors" "DealDamage(2d8+StrengthModifier,Slashing,Magical,Cone,3)"
+
+// ========================================
+// END OF WARRIOR SPECIALIZATION STATUSES
+// ========================================
+// NOTES FOR IMPLEMENTATION:
+// - All statuses use placeholder localization handles (h123abc##, h124abc##, h125abc##)
+// - Replace with actual contentuid values from English.loca.xml
+// - StatusEffect UUIDs reference vanilla BG3 visual effects
+// - Avatar of the Storm requires Projectile_WAR_AvatarStorm_Burst explosion definition
+// - Enhanced Bleeding uses dynamic damage calculation based on Colossal Might stacks
+// - All statuses tagged with SG_RemoveOnRespec for proper cleanup
+// ========================================
+
+// ========================================
+// BASELINE WARRIOR UTILITY STATUSES
+// Feature Tag: FEATURE_BASELINE_UTILITY
+// ========================================
+
+// Hamstring - Movement snare (-6m movement)
+new entry "WAR_HAMSTRING"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc109;1"
+data "Description" "h125abc110;1"
+data "Icon" "Status_Restrained"
+data "FormatColor" "Red"
+data "StackId" "WAR_HAMSTRING"
+data "Boosts" "ActionResource(Movement,-6,0)"
+data "ManagedStatusEffectType" "Negative"
+data "StatusGroups" "SG_RemoveOnRespec"
+
+// Victory Rush - Healing on hit
+new entry "WAR_VICTORY_RUSH_HEAL"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc111;1"
+data "Description" "h125abc112;1"
+data "Icon" "Spell_Evocation_MagicWeapon_Healing"
+data "FormatColor" "Blue"
+data "StackId" "WAR_VICTORY_RUSH_HEAL"
+data "OnApplyFunctors" "RegainHitPoints(2d8+ConstitutionModifier)"
+data "StatusGroups" "SG_RemoveOnRespec"
+data "StatusPropertyFlags" "DisableCombatlog;DisablePortraitIndicator"
+
+// Victorious - Enables Victory Rush after kill (20 second duration ~ 2 turns in BG3)
+new entry "WAR_VICTORIOUS"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc117;1"
+data "Description" "h125abc118;1"
+data "Icon" "Action_Barbarian_Rage"
+data "FormatColor" "Blue"
+data "StackId" "WAR_VICTORIOUS"
+data "Boosts" ""
+data "StatusGroups" "SG_RemoveOnRespec"
+
+// Pummel - Silence (prevents spell casting)
+new entry "WAR_PUMMEL"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc113;1"
+data "Description" "h125abc114;1"
+data "Icon" "Status_Silence"
+data "FormatColor" "Red"
+data "StackId" "WAR_PUMMEL"
+data "Boosts" "StatusImmunity(SG_Condition)"
+data "ManagedStatusEffectType" "Negative"
+data "StatusGroups" "SG_RemoveOnRespec"
+
+// Berserker Rage - CC immunity and removal
+new entry "WAR_BERSERKER_RAGE"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc115;1"
+data "Description" "h125abc116;1"
+data "Icon" "Action_Barbarian_Rage"
+data "FormatColor" "Blue"
+data "StackId" "WAR_BERSERKER_RAGE"
+data "Boosts" "StatusImmunity(FRIGHTENED);StatusImmunity(CHARMED);StatusImmunity(SG_Fleeing)"
+data "OnApplyFunctors" "RemoveStatus(FRIGHTENED);RemoveStatus(CHARMED);RemoveStatus(SG_Fleeing)"
+data "StatusGroups" "SG_RemoveOnRespec"
+
+// ========================================
+// FURY SPECIALIZATION - BLOODTHIRST HEAL
+// Heal from Bloodthirst attack
+// ========================================
+
+new entry "WAR_BLOODTHIRST_HEAL"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc163;1"
+data "Description" "h125abc164;1"
+data "Icon" "PassiveFeature_Generic_Healing"
+data "FormatColor" "Heal"
+data "StackId" "WAR_BLOODTHIRST_HEAL"
+data "OnApplyFunctors" "RegainHitPoints(MaximumHPPercentage*5/100)"
+data "StatusGroups" "SG_RemoveOnRespec"
+data "StatusPropertyFlags" "DisableCombatlog"
+
+// ========================================
+// FURY SPECIALIZATION - ENRAGED REGENERATION
+// Healing over time and damage reduction
+// ========================================
+
+new entry "WAR_ENRAGED_REGENERATION"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc165;1"
+data "Description" "h125abc166;3"
+data "DescriptionParams" "10;20"
+data "Icon" "Action_Barbarian_RageWildMagic"
+data "FormatColor" "Heal"
+data "StackId" "WAR_ENRAGED_REGENERATION"
+data "Boosts" "Resistance(All,Resistant20)"
+data "OnApplyFunctors" "RegainHitPoints(MaximumHPPercentage*10/100)"
+data "OnTurnFunctors" "RegainHitPoints(MaximumHPPercentage*10/100)"
+data "StatusGroups" "SG_RemoveOnRespec"
+
+// ========================================
+// PROTECTION SPECIALIZATION - TAUNTED
+// Enemy forced to target caster
+// ========================================
+
+new entry "WAR_TAUNTED"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc167;1"
+data "Description" "h125abc168;1"
+data "Icon" "Action_Paladin_CompelledDuel"
+data "FormatColor" "Damage"
+data "StackId" "WAR_TAUNTED"
+data "Boosts" "Disadvantage(AttackRoll,UnlessTarget('Tagged',context.Source))"
+data "StatusGroups" "SG_RemoveOnRespec"
+
+// ========================================
+// PROTECTION SPECIALIZATION - LAST STAND
+// Temporary HP boost
+// ========================================
+
+new entry "WAR_LAST_STAND"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc169;1"
+data "Description" "h125abc170;2"
+data "DescriptionParams" "30;3"
+data "Icon" "Action_Paladin_LayOnHands"
+data "FormatColor" "Heal"
+data "StackId" "WAR_LAST_STAND"
+data "OnApplyFunctors" "ApplyStatus(WAR_LAST_STAND_HP,100,3)"
+data "StatusGroups" "SG_RemoveOnRespec"
+
+new entry "WAR_LAST_STAND_HP"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc169;1"
+data "Description" "h125abc170;2"
+data "DescriptionParams" "30;3"
+data "Icon" "Action_Paladin_LayOnHands"
+data "FormatColor" "Heal"
+data "StackId" "WAR_LAST_STAND_HP"
+data "Boosts" "TemporaryHP(MaximumHPPercentage*30/100)"
+data "StatusGroups" "SG_RemoveOnRespec"
+data "StatusPropertyFlags" "DisableCombatlog"
+
+// ========================================
+// PROTECTION SPECIALIZATION - SHIELD WALL
+// Major damage reduction
+// ========================================
+
+new entry "WAR_SHIELD_WALL"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc171;1"
+data "Description" "h125abc172;2"
+data "DescriptionParams" "40;2"
+data "Icon" "Action_Paladin_ShieldOfFaith"
+data "FormatColor" "Blue"
+data "StackId" "WAR_SHIELD_WALL"
+data "Boosts" "Resistance(All,Resistant40)"
+data "StatusGroups" "SG_RemoveOnRespec"
+
+// ========================================
+// ALL SPECIALIZATIONS - INDOMITABLE
+// Advantage on saving throws
+// ========================================
+
+new entry "WAR_INDOMITABLE"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc173;1"
+data "Description" "h125abc174;1"
+data "Icon" "Action_Paladin_AuraOfCourage"
+data "FormatColor" "Blue"
+data "StackId" "WAR_INDOMITABLE"
+data "Boosts" "Advantage(SavingThrow);RollBonus(SavingThrow,1d4)"
+data "StatusGroups" "SG_RemoveOnRespec"
+
+// ========================================
+// PROTECTION SPECIALIZATION - INTERVENE
+// Protecting ally with damage redirection
+// ========================================
+
+new entry "WAR_INTERVENE"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc175;1"
+data "Description" "h125abc176;1"
+data "Icon" "Action_Paladin_ProtectiveSpirit"
+data "FormatColor" "Blue"
+data "StackId" "WAR_INTERVENE"
+data "Boosts" "AC(2)"
+data "StatusGroups" "SG_RemoveOnRespec"
+
+new entry "WAR_INTERVENE_PROTECTED"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h125abc177;1"
+data "Description" "h125abc178;1"
+data "Icon" "Action_Paladin_ProtectiveSpirit"
+data "FormatColor" "Heal"
+data "StackId" "WAR_INTERVENE_PROTECTED"
+data "Boosts" "AC(2)"
+data "StatusGroups" "SG_RemoveOnRespec"
+
+// ========================================
+// END OF WARRIOR STATUSES
+// ========================================
+

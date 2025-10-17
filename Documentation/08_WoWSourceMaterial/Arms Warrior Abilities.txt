@@ -1,0 +1,138 @@
+
+Baseline Arms Warrior Abilities:
+Offensive Abilities:
+ Whirlwind (WW) - primary multitarget attack.
+ Slam - initial rage spender, quickly replaced by other abilities.
+ Shield Slam - early offensive ability, replaced upon specializing.
+ Hamstring - minor snare.
+ Victory Rush (VR) - very useful free heal after getting a kill.
+ Execute (Exe) - Arms' version of Execute
+ Heroic Throw (HT) - pitifully low damage ranged attack, only appropriate for pulling from a distance.
+Utility Abilities:
+ Charge - primary mobility and gap closer.
+ Pummel - low cooldown interrupt.
+ Battle Shout (Shout) - worth ~5% damage for melee classes and Hunters.
+ Berserker Rage (BzR) - preemptive or reactive CC removal.
+ Taunt - draws aggro and generally gets you killed.
+
+Warrior Class Talents
+Row 1
+ Battle Stance (Battle/BStance) - basic offensive stance.
+ Defensive Stance (Def/DStance) - basic defensive stance.
+Row 2
+ Fast Footwork - minor passive speed boost.
+ War Machine - passive boost to rage generation with bonus on kill effects.
+ Leeching Strikes - minor passive healing boost.
+ Intervene - charge an ally!
+Row 3
+ Impending Victory (IV) - on-demand version of Victory Rush.
+ Heroic Leap (Leap) - burst mobility skill, which does not immune ground effects like Blink, but can be useful for avoiding knockbacks.
+ Storm Bolt - useful ranged stun on a relatively low cooldown.
+Row 4
+ Intimidating Shout - easily broken AoE fear which can be used as a pseudo interrupt.
+ Second Wind - very rarely ignores environmental damage, but is usually broken by most effects.
+ Frothing Berserker - inconsistent passive rage refund.
+ Bounding Stride - allows more leaping.
+ Pain and Gain - passive self-healing.
+ Thunder Clap (TC) - a core part of Arms' multitarget.
+Row 5
+ Cacophonous Roar - still broken far too easily in group content, only moderately viable in PvP.
+ Menace - still easily broken in PvE, though moderately more useful due to the knockback.
+ Spell Reflection (SR) - very useful, low cooldown damage reduction.
+ Rallying Cry (Rally) - one of the few raid-wide defensive abilities.
+ Shockwave - on demand AoE stun.
+ Crackling Thunder - only minorly useful, as Rend is only applied to 5 targets at a time.
+Row 6
+ Honed Reflexes - Reduces most defensive cooldowns by a very minor amount.
+ Crushing Force - major damage increase for Slam.
+ Bitter Immunity - highly situational due to its long cooldown.
+ Overwhelming Rage - eases the burdens of rage management.
+ Rumbling Earth - greatly increases the usefulness of Shockwave when using it regularly against groups.
+ Reinforced Plates - synergizes with Armored to the Teeth to provide additional damage.
+Row 7
+ Wrecking Throw - highly effective against absorption shields, though rarely a major gain.
+ Shattering Throw - immunity breaking version of Wrecking Throw, rarely used in PvE.
+ Barbaric Training - worthwhile filler ability damage.
+ Sidearm - minor passive damage increase.
+ Double Time - a must-have mobility increase.
+ Seismic Reverberation - very minor with Whirlwind, but highly effective for Cleave builds.
+ Concussive Blows - rather underwhelming due to only affecting the target which is interrupted, rather than increasing all damage dealt, though the reduced cooldown can be nice.
+ Berserker Shout - seldom used group-wide fear breaker.
+ Piercing Howl - major AoE snare, offset by its cooldown.
+Row 8
+ Cruel Strikes - a minor increase to Execute, smaller than it may seem.
+ Wild Strikes - very powerful due to the amount of rage generated from auto-attacks.
+ Two-Handed Weapon Specialization - a must-have passive damage increase.
+ Armored to the Teeth - near indispensable damage increase that helps gear scaling over the course of an expansion.
+Row 9
+ Thunderous Roar (TRoar) - stronger than it may seem, due to its bleed damage being uncapped, allowing it to fully damage any number of extra targets.
+ Avatar (Ava) - one of the main personal cooldowns that should always be taken.
+ Champion's Spear (Spear) - aligns well with other 90s cooldowns, though not generally as useful as Thunderous Roar.
+Row 10
+ Uproar - keeps Thunderous Roar aligned with Avatar and other cooldowns, provides a noticeable overall damage increase, especially in multitarget.
+ Thunderous Words - increases the damage of all bleeds only while Thunderous Roar is active, creating powerful burst windows.
+ Warlord's Torment - a fairly minor increase due to the low uptime and long cooldown.
+ Blademaster's Torment - two-target and heavy multitarget focused, which combines and extends the duration of regularly cast Sweeping Strikes.
+ Piercing Challenge - a minor overall damage increase, though the extra rage generation is largely irrelevant.
+ Champion's Might - a short but powerful damage window, which now activates on the target instead of requiring the player to stand within a specific location.
+
+Arms Spec Talents 
+Passive
+ Seasoned Soldier - increases Arms rage generation from critical strikes.
+ Mastery: Deep Wounds - enables scaling damage from Mastery.
+Row 1
+ Mortal Strike (MS) - primary attack forming the basis of the rotation.
+Row 2
+ Overpower (OP) - secondary attack which buffs Mortal Strike.
+Row 3
+ Martial Prowess - enables Overpower's buff.
+ Die by the Sword (DbtS) - Arms primary defensive cooldown.
+ Improved Execute - enables Arms Execute.
+Row 4
+ Improved Overpower - insignificant damage increase.
+ Bloodsurge - provides minor rage generation against a single target, but ramps greatly against multiple.
+ Fueled by Violence - minor amount of passive healing which ramps against multiple targets.
+ Storm Wall - heals on any parry, not just when Die by the Sword is active.
+ Ignore Pain (IP) - on-demand defensive trading rage for survivability.
+ Sudden Death (SD) - enables proc-based gameplay, now stacking up to two times.
+ Fervor of Battle (FoB) - single target damage enhancement, which also allows the abilities to stack Collateral Damage. The auto-cast Slam does not cost rage.
+Row 5
+ Tactician - calculates the total rage spent on an ability and converts it into a chance to reset the cooldown on Overpower.
+ Colossus Smash (CS) - Arms' primary offensive cooldown, which also inflicts Deep Wounds.
+ Impale - increases the extra critical hit damage inflicted by crits, meaning it's closer to a 5% damage bonus than 10%.
+Row 6
+ Skullsplitter (SkS) - condenses bleed damage into short cooldown windows and generates a moderate amount of rage.
+ Rend - inflicts a moderately strong bleed which interacts with several other talents across the tree.
+ Finishing Blows - increases rage generation during the Execute phase to fuel its higher costs.
+ Anger Management (AM) - an indispensable talent, creating more frequent increased damage windows.
+ Spiteful Serenity - a very underwhelming talent with its own negative bonus in addition to strong competition in Anger Management.
+ Exhilarating Blows - allows more casts of Mortal Strike and Cleave.
+ Collateral Damage - gains a stack for each single target attack cleaved by Sweeping Strikes, which includes the free Slam cast by Fervor of Battle, creating great synergy between them.
+ Cleave - Arms' primary multitarget attack, which also inflicts Deep Wounds.
+Row 7
+ Bloodborne - general bleed damage increase, which synergizes well with other bleed talents found throughout the tree.
+ Dreadnaught (DN) - a multitarget option for Overpower.
+ Strength of Arms (SoA) - a single/two target power increase for Overpower.
+ In For The Kill (IftK) - has the same duration of Colossus Smash, with good benefit against both single and multiple targets.
+ Test of Might (ToM) - stacks up a powerful strength buff, effectively extending the increased damage window created by Colossus Smash.
+ Blunt Instruments - a single target alternative to Warbreaker, which also extends the duration of In for the Kill and Test of Might.
+ Warbreaker (WB) - turns Colossus Smash into a multitarget attack, extremely important for effective AoE damage.
+ Massacre - allows more frequent use of Execute.
+ Storm of Swords - largely unnecessary, resulting in overcapping.
+Row 8
+ Deft Experience - a minor Mastery increase, with the much more important effect of doubling the chance to trigger Tactician.
+ Valor in Victory - a minor Versatility increase, which also reduces the cooldown of Die by the Sword.
+ Critical Thinking - a minor Critical Strike increase, with a very impactful rage refund for Execute, which is also additive with Improved Execute for a combined 30% refund.
+Row 9
+ Battlelord - creates an entertaining gameplay loop of Mortal Strike refreshing Overpower via Tactician and Overpower refreshing Mortal Strike via Battlelord.
+ Bloodletting - a very important bleed damage increase, which reduces the amount of maintenance required to maintain the debuffs and synergizes very well with Skullsplitter and Thunderous Roar/Words.
+ Bladestorm (BS) - Arms major multitarget cooldown, with several very powerful follow-on talents.
+ Ravager (Rav) - a passive alternative to Bladestorm, more suited for use against individual targets.
+ Sharpened Blades - a moderate damage increase for Arms' most important rotational abilities.
+ Juggernaut - provides a large ramping damage increase, though not well suited for short encounters and susceptible to dropping during downtime.
+Row 10
+ Fatality - provides increased damage during Execute, while keeping the abilities used before Execute relevant. It cannot critically strike and does not benefit from class buffs such as Colossus Smash or Avatar, but it can be buffed by primary stat increases like Test of Might or potions.
+ Dance of Death - provides a significant damage increase for Bladestorm and can be chained from pack to pack, but the timing does not work cleanly with all of Bladestorm's other follow-on talents.
+ Unhinged - a significant single/two target damage increase while using Bladestorm or Ravager, highly effective in combination with other effects that synergize with Mortal Strike.
+ Merciless Bonegrinder - a major damage increase for Cleave or Whirlwind, creating strong AoE damage windows.
+ Executioner's Precision (EP) - provides great value to Mortal Strike, keeping the ability relevant during Execute.

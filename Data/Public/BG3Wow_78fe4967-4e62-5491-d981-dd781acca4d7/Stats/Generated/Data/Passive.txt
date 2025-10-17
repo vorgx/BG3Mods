@@ -1,0 +1,420 @@
+// ========================================
+// WARRIOR SPECIALIZATION PASSIVE DEFINITIONS
+// Created: October 16, 2025
+// Patch: 8 Compatible (4.8.0.10)
+// ========================================
+// Total Passives: 33 (11 per specialization)
+// - Mountain Thane: 11 passives (1 keystone + 9 tiers + 1 capstone)
+// - Colossus: 11 passives (1 keystone + 9 tiers + 1 capstone)
+// - Slayer: 11 passives (1 keystone + 9 tiers + 1 capstone)
+// ========================================
+
+// ========================================
+// MOUNTAIN THANE SPECIALIZATION (Fury + Protection)
+// Theme: Lightning/Storm, proc-based gameplay
+// ========================================
+
+// LEVEL 13: KEYSTONE
+new entry "WAR_MountainThane_Keystone"
+type "PassiveData"
+data "DisplayName" "h123abc01;1"
+data "Description" "h123abc02;1"
+data "Icon" "PassiveFeature_Generic_Lightning"
+data "Properties" "Highlighted"
+data "StatsFunctorContext" "OnStatusApplied"
+data "Conditions" "HasStatus('SG_Polymorph_BeastShape_Behaviour',context.Source)"
+data "StatsFunctors" "ApplyStatus(SELF,WAR_AVATAR_OF_THE_STORM,-1)"
+
+// LEVEL 15: TIER 1 CHOICES
+new entry "WAR_MountainThane_LightningStrikes"
+type "PassiveData"
+data "DisplayName" "h123abc03;1"
+data "Description" "h123abc04;1"
+data "Icon" "PassiveFeature_Generic_Lightning"
+data "Properties" "Highlighted"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "HasPassive('WAR_MountainThane_Keystone',context.Source) and (HasStringInSpellRoll('Projectile(WAR_ThunderClap)') or HasStringInSpellRoll('Projectile(WAR_Revenge)') or HasStringInSpellRoll('Projectile(WAR_Execute)'))"
+data "StatsFunctors" "IF(RandomCastOutcome(25,100)):DealDamage(1d10,Lightning,Magical);IF(HasStatus('WAR_AVATAR_OF_THE_STORM',context.Source) and RandomCastOutcome(7,100)):DealDamage(1d10,Lightning,Magical)"
+data "PriorityOrder" "100"
+
+new entry "WAR_MountainThane_BurstOfPower"
+type "PassiveData"
+data "DisplayName" "h123abc05;1"
+data "Description" "h123abc06;1"
+data "Icon" "PassiveFeature_Generic_Lightning"
+data "Properties" "Highlighted"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "HasPassive('WAR_MountainThane_Keystone',context.Source) and HasPassive('WAR_MountainThane_LightningStrikes',context.Source) and DamageType(Lightning)"
+data "StatsFunctors" "IF(RandomCastOutcome(25,100)):ApplyStatus(SELF,WAR_BURST_OF_POWER,2)"
+data "PriorityOrder" "99"
+
+new entry "WAR_MountainThane_CrashingThunder"
+type "PassiveData"
+data "DisplayName" "h123abc07;1"
+data "Description" "h123abc08;1"
+data "Icon" "PassiveFeature_Generic_Thunder"
+data "Properties" "Highlighted"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "HasPassive('WAR_MountainThane_Keystone',context.Source) and (HasStringInSpellRoll('Projectile(WAR_Whirlwind)') or HasStringInSpellRoll('Projectile(WAR_Revenge)')) and TargetCountAtLeast(3)"
+data "StatsFunctors" "DealDamage(MainMeleeWeapon*0.4,MainMeleeWeaponDamageType);RestoreResource(context.Source,Rage,1,0);IF(RandomCastOutcome(25,100)):DealDamage(1d10,Lightning,Magical)"
+data "PriorityOrder" "100"
+
+// LEVEL 17: TIER 2 CHOICES
+new entry "WAR_MountainThane_ThunderBlast"
+type "PassiveData"
+data "DisplayName" "h123abc09;1"
+data "Description" "h123abc10;1"
+data "Icon" "PassiveFeature_Generic_Lightning"
+data "Properties" "Highlighted"
+data "StatsFunctorContext" "OnCast"
+data "Conditions" "HasPassive('WAR_MountainThane_Keystone',context.Source) and HasStringInSpellRoll('Projectile(WAR_ShieldSlam)')"
+data "StatsFunctors" "IF(RandomCastOutcome(35,100)):ApplyStatus(SELF,WAR_THUNDER_BLAST_CHARGE,100,2)"
+data "PriorityOrder" "100"
+
+new entry "WAR_MountainThane_GroundCurrent"
+type "PassiveData"
+data "DisplayName" "h123abc11;1"
+data "Description" "h123abc12;1"
+data "Icon" "PassiveFeature_Generic_Lightning"
+data "Properties" "Highlighted"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "HasPassive('WAR_MountainThane_Keystone',context.Source) and DamageType(Lightning)"
+data "StatsFunctors" "DealDamage(LastDamage*0.6,Lightning,Magical,ClosestEnemyNotSelf,5);IF(RandomCastOutcome(25,100)):DealDamage(1d10,Lightning,Magical,ClosestEnemyNotSelf,5)"
+data "PriorityOrder" "98"
+
+new entry "WAR_MountainThane_ThoriMight"
+type "PassiveData"
+data "DisplayName" "h123abc13;1"
+data "Description" "h123abc14;1"
+data "Icon" "PassiveFeature_Generic_Lightning"
+data "Properties" "Highlighted"
+data "StatsFunctorContext" "OnStatusApplied;OnStatusRemoved"
+data "Conditions" "HasPassive('WAR_MountainThane_Keystone',context.Source) and HasStatus('WAR_AVATAR_OF_THE_STORM',context.Source)"
+data "StatsFunctors" "IF(HasStatus('WAR_AVATAR_OF_THE_STORM')):ApplyStatus(SELF,WAR_THORIM_MIGHT,-1);IF(not HasStatus('WAR_AVATAR_OF_THE_STORM')):RemoveStatus(SELF,WAR_THORIM_MIGHT)"
+data "PriorityOrder" "100"
+
+// LEVEL 19: TIER 3 CHOICES
+new entry "WAR_MountainThane_StrengthOfMountain"
+type "PassiveData"
+data "DisplayName" "h123abc15;1"
+data "Description" "h123abc16;1"
+data "Icon" "PassiveFeature_Generic_Damage"
+data "Properties" "Highlighted"
+data "Boosts" "IF(HasPassive('WAR_MountainThane_Keystone')):Damage(Increase,15,WAR_ShieldSlam)"
+data "StatsFunctorContext" "OnCast"
+data "Conditions" "HasPassive('WAR_MountainThane_Keystone',context.Source) and HasStringInSpellRoll('Projectile(WAR_DemoralizingShout)')"
+data "StatsFunctors" "ApplyStatus(WAR_DEMORALIZED_ENHANCED,3)"
+
+new entry "WAR_MountainThane_KeepFeetOnGround"
+type "PassiveData"
+data "DisplayName" "h123abc17;1"
+data "Description" "h123abc18;1"
+data "Icon" "PassiveFeature_Generic_Defense"
+data "Properties" "Highlighted"
+data "Boosts" "IF(HasPassive('WAR_MountainThane_Keystone')):Resistance(Physical,Resistant3);IF(HasStatus('WAR_THUNDER_BLAST_DR')):Resistance(Physical,Resistant10);IF(HasStatus('WAR_THUNDER_BLAST_DR')):StatusImmunity(PRONE)"
+data "StatsFunctorContext" "OnCast"
+data "Conditions" "HasPassive('WAR_MountainThane_Keystone',context.Source) and HasStringInSpellRoll('Projectile(WAR_ThunderClap)') and HasStatus('WAR_THUNDER_BLAST_CHARGE',context.Source)"
+data "StatsFunctors" "ApplyStatus(SELF,WAR_THUNDER_BLAST_DR,5)"
+
+new entry "WAR_MountainThane_SteadfastAsPeaks"
+type "PassiveData"
+data "DisplayName" "h123abc19;1"
+data "Description" "h123abc20;1"
+data "Icon" "PassiveFeature_Generic_Defensive"
+data "Properties" "Highlighted"
+data "Boosts" "IF(HasPassive('WAR_MountainThane_Keystone')):IncreaseMaxHP(8%)"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "HasPassive('WAR_MountainThane_Keystone',context.Source) and HPPercentageLessThan(50) and not HasStatus('WAR_STEADFAST',context.Source)"
+data "StatsFunctors" "ApplyStatus(SELF,WAR_STEADFAST,UntilLongRest)"
+
+// LEVEL 20: CAPSTONE
+new entry "WAR_MountainThane_GatheringStorms"
+type "PassiveData"
+data "DisplayName" "h123abc21;1"
+data "Description" "h123abc22;1"
+data "Icon" "PassiveFeature_Generic_Lightning"
+data "Properties" "Highlighted"
+data "Boosts" "IF(HasPassive('WAR_MountainThane_Keystone')):Damage(Increase,25,WAR_Revenge);IF(HasPassive('WAR_MountainThane_Keystone')):Damage(Increase,25,WAR_Execute)"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "HasPassive('WAR_MountainThane_Keystone',context.Source) and DamageType(Lightning) and HasPassive('WAR_MountainThane_LightningStrikes',context.Source)"
+data "StatsFunctors" "RestoreResource(context.Source,Rage,3,0)"
+
+// ========================================
+// COLOSSUS SPECIALIZATION (Arms + Protection)
+// Theme: Stack & Burst, Demolish finisher
+// ========================================
+
+// LEVEL 13: KEYSTONE
+new entry "WAR_Colossus_Keystone"
+type "PassiveData"
+data "DisplayName" "h124abc01;1"
+data "Description" "h124abc02;1"
+data "Icon" "PassiveFeature_Generic_Damage"
+data "Properties" "Highlighted"
+data "Boosts" "UnlockSpell(Target_WAR_Demolish)"
+data "StatsFunctorContext" "OnCast"
+data "Conditions" "HasStringInSpellRoll('Projectile(WAR_ShieldSlam)') or HasStringInSpellRoll('Projectile(WAR_Execute)') or (HasStringInSpellRoll('Projectile(WAR_Revenge)') and TargetCountAtLeast(3))"
+data "StatsFunctors" "ApplyStatus(SELF,WAR_COLOSSAL_MIGHT,100,5)"
+
+// LEVEL 15: TIER 1 CHOICES
+new entry "WAR_Colossus_NoStrangerToPain"
+type "PassiveData"
+data "DisplayName" "h124abc03;1"
+data "Description" "h124abc04;1"
+data "Icon" "PassiveFeature_Generic_Defense"
+data "Properties" "Highlighted"
+data "Boosts" "IF(HasPassive('WAR_Colossus_Keystone')):DamageReduction(Increase,20,IgnorePain)"
+
+new entry "WAR_Colossus_VeteranVitality"
+type "PassiveData"
+data "DisplayName" "h124abc05;1"
+data "Description" "h124abc06;1"
+data "Icon" "PassiveFeature_Generic_Healing"
+data "Properties" "Highlighted"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "HasPassive('WAR_Colossus_Keystone',context.Source) and ((HPPercentageLessThan(35) and not HasStatus('WAR_VETERAN_VITALITY_CD',context.Source)) or (HasPassive('WAR_Colossus_VeteranVitality',context.Source) and HasStringInSpellRoll('Projectile(WAR_Demolish)')))"
+data "StatsFunctors" "IF(HPPercentageLessThan(35) and not HasStatus('WAR_VETERAN_VITALITY_CD',context.Source)):ApplyStatus(SELF,WAR_VETERAN_VITALITY_HEAL,2);IF(HPPercentageLessThan(35)):ApplyStatus(SELF,WAR_VETERAN_VITALITY_CD,15);IF(HasStringInSpellRoll('Projectile(WAR_Demolish)')):GainTemporaryHitPoints(LastDamage*0.1)"
+data "PriorityOrder" "100"
+
+new entry "WAR_Colossus_OneAgainstMany"
+type "PassiveData"
+data "DisplayName" "h124abc07;1"
+data "Description" "h124abc08;1"
+data "Icon" "PassiveFeature_Generic_Damage"
+data "Properties" "Highlighted"
+data "StatsFunctorContext" "OnCast"
+data "Conditions" "HasPassive('WAR_Colossus_Keystone',context.Source) and (HasStringInSpellRoll('Projectile(WAR_Shockwave)') or HasStringInSpellRoll('Projectile(WAR_Revenge)') or HasStringInSpellRoll('Projectile(WAR_Whirlwind)'))"
+data "StatsFunctors" "ApplyStatus(SELF,WAR_ONE_AGAINST_MANY,1);IF(TargetCountAtLeast(4)):ApplyStatus(SELF,WAR_COLOSSAL_MIGHT,100,5)"
+data "PriorityOrder" "100"
+
+// LEVEL 17: TIER 2 CHOICES
+new entry "WAR_Colossus_PracticedStrikes"
+type "PassiveData"
+data "DisplayName" "h124abc11;1"
+data "Description" "h124abc12;1"
+data "Icon" "PassiveFeature_Generic_Damage"
+data "Properties" "Highlighted"
+data "Boosts" "IF(HasPassive('WAR_Colossus_Keystone')):Damage(Increase,10,WAR_ShieldSlam);IF(HasPassive('WAR_Colossus_Keystone')):Damage(Increase,10,WAR_Revenge)"
+data "StatsFunctorContext" "OnCast"
+data "Conditions" "HasPassive('WAR_Colossus_Keystone',context.Source) and HasStringInSpellRoll('Projectile(WAR_ShieldSlam)')"
+data "StatsFunctors" "RestoreResource(context.Source,Rage,3,0)"
+
+new entry "WAR_Colossus_ArterialBleed"
+type "PassiveData"
+data "DisplayName" "h124abc13;1"
+data "Description" "h124abc14;1"
+data "Icon" "PassiveFeature_Generic_Bleed"
+data "Properties" "Highlighted"
+data "StatsFunctorContext" "OnDamage;OnCast"
+data "Conditions" "HasPassive('WAR_Colossus_Keystone',context.Source) and ((context.HasContextFlag(StatsFunctorContext.OnDamage) and IsMeleeAttack() and DamageType(Slashing)) or (context.HasContextFlag(StatsFunctorContext.OnCast) and HasPassive('WAR_Colossus_ArterialBleed',context.Source) and HasStringInSpellRoll('Projectile(WAR_Demolish)')))"
+data "StatsFunctors" "IF(context.HasContextFlag(StatsFunctorContext.OnDamage) and RandomCastOutcome(30,100)):ApplyStatus(BLEEDING,3);IF(context.HasContextFlag(StatsFunctorContext.OnCast)):ApplyStatus(WAR_BLEEDING_ENHANCED,3)"
+data "PriorityOrder" "100"
+
+new entry "WAR_Colossus_Earthquaker"
+type "PassiveData"
+data "DisplayName" "h124abc15;1"
+data "Description" "h124abc16;1"
+data "Icon" "PassiveFeature_Generic_Control"
+data "Properties" "Highlighted"
+data "Boosts" "IF(HasPassive('WAR_Colossus_Keystone')):ReduceCooldown(WAR_Shockwave,1)"
+data "StatsFunctorContext" "OnCast"
+data "Conditions" "HasPassive('WAR_Colossus_Keystone',context.Source) and HasStringInSpellRoll('Projectile(WAR_Shockwave)')"
+data "StatsFunctors" "ApplyStatus(PRONE,2,SavingThrow(Ability.Dexterity,SourceSpellDC()));IF(TargetCountAtLeast(3)):RestoreResource(context.Source,Rage,5,0)"
+data "PriorityOrder" "100"
+
+// LEVEL 19: TIER 3 CHOICES
+new entry "WAR_Colossus_MartialExpert"
+type "PassiveData"
+data "DisplayName" "h124abc17;1"
+data "Description" "h124abc18;1"
+data "Icon" "PassiveFeature_Generic_Damage"
+data "Properties" "Highlighted"
+data "Boosts" "IF(HasPassive('WAR_Colossus_Keystone')):Damage(Increase,7*StatusCount(WAR_COLOSSAL_MIGHT),WAR_Revenge)"
+
+new entry "WAR_Colossus_TideOfBattle"
+type "PassiveData"
+data "DisplayName" "h124abc19;1"
+data "Description" "h124abc20;1"
+data "Icon" "PassiveFeature_Generic_Damage"
+data "Properties" "Highlighted"
+data "Boosts" "IF(HasPassive('WAR_Colossus_Keystone')):Damage(Increase,7*StatusCount(WAR_COLOSSAL_MIGHT),WAR_Revenge);IF(HasPassive('WAR_Colossus_Keystone')):ReduceCooldown(WAR_Revenge,1)"
+
+new entry "WAR_Colossus_DemolishShockwave"
+type "PassiveData"
+data "DisplayName" "h124abc21;1"
+data "Description" "h124abc22;1"
+data "Icon" "PassiveFeature_Generic_Damage"
+data "Properties" "Highlighted"
+data "Boosts" "IF(HasPassive('WAR_Colossus_Keystone')):ReduceCooldown(Target_WAR_Demolish,1)"
+data "StatsFunctorContext" "OnCast"
+data "Conditions" "HasPassive('WAR_Colossus_Keystone',context.Source) and HasStringInSpellRoll('Projectile(Target_WAR_Demolish)')"
+data "StatsFunctors" "ApplyStatus(SELF,WAR_DEMOLISH_SHOCKWAVE_BUFF,2)"
+data "PriorityOrder" "100"
+
+// LEVEL 20: CAPSTONE
+new entry "WAR_Colossus_PreciseMight"
+type "PassiveData"
+data "DisplayName" "h124abc25;1"
+data "Description" "h124abc26;1"
+data "Icon" "PassiveFeature_Generic_Critical"
+data "Properties" "Highlighted"
+data "Boosts" "IF(HasPassive('WAR_Colossus_Keystone')):CriticalHitChance(2*StatusCount(WAR_COLOSSAL_MIGHT))"
+
+// ========================================
+// SLAYER SPECIALIZATION (Arms + Fury)
+// Theme: Mark & Execute, executioner gameplay
+// ========================================
+
+// LEVEL 13: KEYSTONE
+new entry "WAR_Slayer_Keystone"
+type "PassiveData"
+data "DisplayName" "h125abc01;1"
+data "Description" "h125abc02;1"
+data "Icon" "PassiveFeature_Generic_Dark"
+data "Properties" "Highlighted"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "IsMeleeAttack()"
+data "StatsFunctors" "IF(RandomCastOutcome(15,100)):DealDamage(2d8,Slashing,Magical);IF(RandomCastOutcome(15,100)):ApplyStatus(WAR_MARKED_FOR_EXECUTION,4)"
+data "PriorityOrder" "100"
+
+// LEVEL 15: TIER 1 CHOICES
+new entry "WAR_Slayer_BrutalFinish"
+type "PassiveData"
+data "DisplayName" "h125abc03;1"
+data "Description" "h125abc04;1"
+data "Icon" "PassiveFeature_Generic_Damage"
+data "Properties" "Highlighted"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "HasPassive('WAR_Slayer_Keystone',context.Source) and HasStringInSpellRoll('Projectile(WAR_Execute)') and HasStatus('WAR_MARKED_FOR_EXECUTION',context.Target)"
+data "StatsFunctors" "DealDamage(LastDamage*0.5,MainMeleeWeaponDamageType)"
+data "PriorityOrder" "99"
+
+new entry "WAR_Slayer_ImminentDemise"
+type "PassiveData"
+data "DisplayName" "h125abc05;1"
+data "Description" "h125abc06;1"
+data "Icon" "PassiveFeature_Generic_Damage"
+data "Properties" "Highlighted"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "HasPassive('WAR_Slayer_Keystone',context.Source) and HasStringInSpellRoll('Projectile(WAR_MortalStrike)') and HasStatus('WAR_MARKED_FOR_EXECUTION',context.Target)"
+data "StatsFunctors" "DealDamage(LastDamage*0.3,MainMeleeWeaponDamageType);ApplyStatus(HEALING_REDUCTION,3)"
+data "PriorityOrder" "99"
+
+new entry "WAR_Slayer_OverwhelmingBlades"
+type "PassiveData"
+data "DisplayName" "h125abc07;1"
+data "Description" "h125abc08;1"
+data "Icon" "PassiveFeature_Generic_Damage"
+data "Properties" "Highlighted"
+data "StatsFunctorContext" "OnStatusApplied;OnKill"
+data "Conditions" "HasPassive('WAR_Slayer_Keystone',context.Source) and ((context.HasContextFlag(StatsFunctorContext.OnStatusApplied) and StatusId('WAR_MARKED_FOR_EXECUTION')) or (context.HasContextFlag(StatsFunctorContext.OnKill) and HasPassive('WAR_Slayer_OverwhelmingBlades',context.Source) and HasStringInSpellRoll('Projectile(WAR_Execute)') and HasStatus('WAR_MARKED_FOR_EXECUTION',context.Target)))"
+data "StatsFunctors" "IF(context.HasContextFlag(StatsFunctorContext.OnStatusApplied)):ApplyStatus(WAR_MARKED_FOR_EXECUTION,4,ClosestEnemyNotSelf,4);IF(context.HasContextFlag(StatsFunctorContext.OnKill)):ApplyStatus(SELF,WAR_BLOOD_FRENZY,2)"
+data "PriorityOrder" "100"
+
+// LEVEL 17: TIER 2 CHOICES
+new entry "WAR_Slayer_CullingCyclone"
+type "PassiveData"
+data "DisplayName" "h125abc09;1"
+data "Description" "h125abc10;1"
+data "Icon" "PassiveFeature_Generic_Damage"
+data "Properties" "Highlighted"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "HasPassive('WAR_Slayer_Keystone',context.Source) and HasStringInSpellRoll('Projectile(WAR_Whirlwind)') and HasStatus('WAR_MARKED_FOR_EXECUTION',context.Target)"
+data "StatsFunctors" "DealDamage(1d6,Slashing)"
+data "PriorityOrder" "99"
+
+new entry "WAR_Slayer_Opportunist"
+type "PassiveData"
+data "DisplayName" "h125abc11;1"
+data "Description" "h125abc12;1"
+data "Icon" "PassiveFeature_Generic_Critical"
+data "Properties" "Highlighted"
+data "Boosts" "IF(HasPassive('WAR_Slayer_Keystone') and HasStatus('WAR_MARKED_FOR_EXECUTION',context.Target)):Advantage(AttackRoll)"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "HasPassive('WAR_Slayer_Keystone',context.Source) and IsCriticalHit() and HasStatus('WAR_MARKED_FOR_EXECUTION',context.Target)"
+data "StatsFunctors" "ReduceCooldown(WAR_Execute,1,context.Source)"
+
+new entry "WAR_Slayer_OverwhelmingBlades_Alt"
+type "PassiveData"
+data "DisplayName" "h125abc07;1"
+data "Description" "h125abc08;1"
+data "Icon" "PassiveFeature_Generic_Damage"
+data "Properties" "Highlighted"
+data "StatsFunctorContext" "OnStatusApplied;OnKill"
+data "Conditions" "HasPassive('WAR_Slayer_Keystone',context.Source) and ((context.HasContextFlag(StatsFunctorContext.OnStatusApplied) and StatusId('WAR_MARKED_FOR_EXECUTION')) or (context.HasContextFlag(StatsFunctorContext.OnKill) and HasPassive('WAR_Slayer_OverwhelmingBlades_Alt',context.Source) and HasStringInSpellRoll('Projectile(WAR_Execute)') and HasStatus('WAR_MARKED_FOR_EXECUTION',context.Target)))"
+data "StatsFunctors" "IF(context.HasContextFlag(StatsFunctorContext.OnStatusApplied)):ApplyStatus(WAR_MARKED_FOR_EXECUTION,4,ClosestEnemyNotSelf,4);IF(context.HasContextFlag(StatsFunctorContext.OnKill)):ApplyStatus(SELF,WAR_BLOOD_FRENZY,2)"
+data "PriorityOrder" "100"
+
+// LEVEL 19: TIER 3 CHOICES
+new entry "WAR_Slayer_ShowNoMercy"
+type "PassiveData"
+data "DisplayName" "h125abc13;1"
+data "Description" "h125abc14;1"
+data "Icon" "PassiveFeature_Generic_Critical"
+data "Properties" "Highlighted"
+data "Boosts" "IF(HasPassive('WAR_Slayer_Keystone') and HasStatus('WAR_MARKED_FOR_EXECUTION',context.Target)):CriticalHitRange(1)"
+
+new entry "WAR_Slayer_ReapTheStorm"
+type "PassiveData"
+data "DisplayName" "h125abc15;1"
+data "Description" "h125abc16;1"
+data "Icon" "PassiveFeature_Generic_Damage"
+data "Properties" "Highlighted"
+data "StatsFunctorContext" "OnCast"
+data "Conditions" "HasPassive('WAR_Slayer_Keystone',context.Source) and (HasStringInSpellRoll('Projectile(WAR_Whirlwind)') or HasStringInSpellRoll('Projectile(WAR_Revenge)')) and TargetCountAtLeast(3)"
+data "StatsFunctors" "ApplyStatus(WAR_OVERWHELMED,3)"
+data "PriorityOrder" "100"
+
+new entry "WAR_Slayer_ImminentDemise_Alt"
+type "PassiveData"
+data "DisplayName" "h125abc05;1"
+data "Description" "h125abc06;1"
+data "Icon" "PassiveFeature_Generic_Damage"
+data "Properties" "Highlighted"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "HasPassive('WAR_Slayer_Keystone',context.Source) and HasStringInSpellRoll('Projectile(WAR_MortalStrike)') and HasStatus('WAR_MARKED_FOR_EXECUTION',context.Target)"
+data "StatsFunctors" "DealDamage(LastDamage*0.3,MainMeleeWeaponDamageType);ApplyStatus(HEALING_REDUCTION,3)"
+data "PriorityOrder" "99"
+
+// LEVEL 20: CAPSTONE
+new entry "WAR_Slayer_Malice"
+type "PassiveData"
+data "DisplayName" "h125abc19;1"
+data "Description" "h125abc20;1"
+data "Icon" "PassiveFeature_Generic_Dark"
+data "Properties" "Highlighted"
+data "Boosts" "IF(HasPassive('WAR_Slayer_Keystone')):Damage(Increase,30,WAR_RagingBlow)"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "HasPassive('WAR_Slayer_Keystone',context.Source) and HasStringInSpellRoll('Projectile(WAR_RagingBlow)')"
+data "StatsFunctors" "IF(RandomCastOutcome(10,100)):ApplyStatus(WAR_MARKED_FOR_EXECUTION,4)"
+data "PriorityOrder" "100"
+
+// ========================================
+// BASELINE WARRIOR PASSIVES
+// Feature Tag: FEATURE_BASELINE_UTILITY
+// ========================================
+
+// Victory Rush Enabler - Grants Victorious status on kill
+new entry "WAR_VictoryRush_Passive"
+type "PassiveData"
+data "DisplayName" "h125abc119;1"
+data "Description" "h125abc120;1"
+data "Icon" "Action_Barbarian_Rage"
+data "Properties" "Highlighted"
+data "StatsFunctorContext" "OnKill"
+data "Conditions" "HasStringInSpellRoll('MeleeWeaponAttack') or HasStringInSpellRoll('RangedWeaponAttack')"
+data "StatsFunctors" "ApplyStatus(SELF,WAR_VICTORIOUS,100,2)"
+data "PriorityOrder" "100"
+
+// ========================================
+// END OF WARRIOR SPECIALIZATION PASSIVES
+// ========================================
+// IMPLEMENTATION NOTES:
+// - All passives use placeholder localization handles (h123abc##, h124abc##, h125abc##)
+// - Replace with actual contentuid values from English.loca.xml
+// - Rage resource uses ActionResource identifier from ActionResourceDefinitions.lsx
+// - All ability references (WAR_Execute, WAR_ShieldSlam, etc.) must match Spell file entries
+// - Alternative passives (_Alt suffix) allow second chance selection at higher tiers
+// - HasPassive checks ensure keystone is active before tier talents function
+// - All passives marked with "Highlighted" property for proper UI display
+// ========================================

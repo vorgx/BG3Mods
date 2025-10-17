@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="10"/>
+    <region id="ClassDescriptions">
+        <node id="root">
+            <children>
+                <!-- ====================================================================== -->
+                <!-- WARRIOR BASE CLASS                                                     -->
+                <!-- UUID: 78fe4967-4e62-5491-d981-dd781acca4d7                            -->
+                <!-- Resource: Rage (0-100 meter) defined in ActionResourceDefinitions    -->
+                <!-- Proficiencies: Granted in Progressions.lsx Level 1                   -->
+                <!-- ====================================================================== -->
+                <node id="ClassDescription">
+                    <attribute id="BaseHp" type="int32" value="10"/>
+                    <attribute id="CanLearnSpells" type="bool" value="false"/>
+                    <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
+                    <attribute id="ClassEquipment" type="FixedString" value="EQP_CC_Warrior"/>
+                    <attribute id="Description" type="TranslatedString" handle="hd78e30ba1c9e4f9bb0c9aa1f8e9c7d2a" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h5a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d" version="1"/>
+                    <attribute id="HasGod" type="bool" value="false"/>
+                    <attribute id="HpPerLevel" type="int32" value="10"/>
+                    <attribute id="LearningStrategy" type="uint8" value="1"/>
+                    <attribute id="MustPrepareSpells" type="bool" value="false"/>
+                    <attribute id="Name" type="FixedString" value="WoWWarrior"/>
+                    <attribute id="PrimaryAbility" type="uint8" value="1"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d"/>
+                    <attribute id="SoundClassType" type="FixedString" value="Barbarian"/>
+                    <attribute id="SpellCastingAbility" type="uint8" value="0"/>
+                    <attribute id="UUID" type="guid" value="78fe4967-4e62-5491-d981-dd781acca4d7"/>
+                    <children>
+                        <node id="Tags">
+                            <attribute id="Object" type="guid" value="2c5b9d0e-1f3a-4c6d-8e9f-0a1b2c3d4e5f"/>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- ====================================================================== -->
+                <!-- ARMS WARRIOR SUBCLASS                                                  -->
+                <!-- UUID: 1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d                            -->
+                <!-- Spec: Two-handed weapon master, bleeds, executes                      -->
+                <!-- ====================================================================== -->
+                <node id="ClassDescription">
+                    <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
+                    <attribute id="ClassEquipment" type="FixedString" value="EQP_CC_Warrior_Arms"/>
+                    <attribute id="Description" type="TranslatedString" handle="h1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f" version="1"/>
+                    <attribute id="LearningStrategy" type="uint8" value="1"/>
+                    <attribute id="MustPrepareSpells" type="bool" value="false"/>
+                    <attribute id="Name" type="FixedString" value="ArmsWarrior"/>
+                    <attribute id="ParentGuid" type="guid" value="78fe4967-4e62-5491-d981-dd781acca4d7"/>
+                    <attribute id="PrimaryAbility" type="uint8" value="1"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e"/>
+                    <attribute id="SoundClassType" type="FixedString" value="Barbarian"/>
+                    <attribute id="SpellCastingAbility" type="uint8" value="0"/>
+                    <attribute id="SubclassTitle" type="TranslatedString" handle="h2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e" version="1"/>
+                    <attribute id="UUID" type="guid" value="1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"/>
+                    <children>
+                        <node id="Tags">
+                            <attribute id="Object" type="guid" value="3d4e5f6a-7b8c-9d0e-1f2a-3b4c5d6e7f8a"/>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- ====================================================================== -->
+                <!-- FURY WARRIOR SUBCLASS                                                  -->
+                <!-- UUID: 3b4c5d6e-7f8a-9b0c-1d2e-3f4a5b6c7d8e                            -->
+                <!-- Spec: Dual-wield berserker, Enrage state, relentless offense         -->
+                <!-- ====================================================================== -->
+                <node id="ClassDescription">
+                    <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
+                    <attribute id="ClassEquipment" type="FixedString" value="EQP_CC_Warrior_Fury"/>
+                    <attribute id="Description" type="TranslatedString" handle="h3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f" version="1"/>
+                    <attribute id="LearningStrategy" type="uint8" value="1"/>
+                    <attribute id="MustPrepareSpells" type="bool" value="false"/>
+                    <attribute id="Name" type="FixedString" value="FuryWarrior"/>
+                    <attribute id="ParentGuid" type="guid" value="78fe4967-4e62-5491-d981-dd781acca4d7"/>
+                    <attribute id="PrimaryAbility" type="uint8" value="1"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="4c5d6e7f-8a9b-0c1d-2e3f-4a5b6c7d8e9f"/>
+                    <attribute id="SoundClassType" type="FixedString" value="Barbarian"/>
+                    <attribute id="SpellCastingAbility" type="uint8" value="0"/>
+                    <attribute id="SubclassTitle" type="TranslatedString" handle="h5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a" version="1"/>
+                    <attribute id="UUID" type="guid" value="3b4c5d6e-7f8a-9b0c-1d2e-3f4a5b6c7d8e"/>
+                    <children>
+                        <node id="Tags">
+                            <attribute id="Object" type="guid" value="5e6f7a8b-9c0d-1e2f-3a4b-5c6d7e8f9a0b"/>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- ====================================================================== -->
+                <!-- PROTECTION WARRIOR SUBCLASS                                            -->
+                <!-- UUID: 5c6d7e8f-9a0b-1c2d-3e4f-5a6b7c8d9e0f                            -->
+                <!-- Spec: Shield tank, absorb shields, Shield Block mitigation           -->
+                <!-- ====================================================================== -->
+                <node id="ClassDescription">
+                    <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
+                    <attribute id="ClassEquipment" type="FixedString" value="EQP_CC_Warrior_Protection"/>
+                    <attribute id="Description" type="TranslatedString" handle="h5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a" version="1"/>
+                    <attribute id="LearningStrategy" type="uint8" value="1"/>
+                    <attribute id="MustPrepareSpells" type="bool" value="false"/>
+                    <attribute id="Name" type="FixedString" value="ProtectionWarrior"/>
+                    <attribute id="ParentGuid" type="guid" value="78fe4967-4e62-5491-d981-dd781acca4d7"/>
+                    <attribute id="PrimaryAbility" type="uint8" value="1"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="6d7e8f9a-0b1c-2d3e-4f5a-6b7c8d9e0f1a"/>
+                    <attribute id="SoundClassType" type="FixedString" value="Barbarian"/>
+                    <attribute id="SpellCastingAbility" type="uint8" value="0"/>
+                    <attribute id="SubclassTitle" type="TranslatedString" handle="h7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b" version="1"/>
+                    <attribute id="UUID" type="guid" value="5c6d7e8f-9a0b-1c2d-3e4f-5a6b7c8d9e0f"/>
+                    <children>
+                        <node id="Tags">
+                            <attribute id="Object" type="guid" value="7f8a9b0c-1d2e-3f4a-5b6c-7d8e9f0a1b2c"/>
+                        </node>
+                    </children>
+                </node>
+
+            </children>
+        </node>
+    </region>
+</save>

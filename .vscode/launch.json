@@ -1,0 +1,34 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Build PAK (Multitool)",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${workspaceFolder}\\.vscode\\build-pak.ps1",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Unpack PAK (Multitool)",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${workspaceFolder}\\.vscode\\unpack-pak.ps1",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Build PAK (LSLib - Fallback)",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${workspaceFolder}\\QUICK_PACKAGE.ps1",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Validate Mod Structure",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${workspaceFolder}\\validate_mod_structure.ps1",
+            "args": ["-Verbose"],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- saved from url=(0149)https://brwsrfrm.com/d/ofr/398?trafficTypes=ADBLOCK&ref=https%3A%2F%2Fwww.wowhead.com&size=728x90&gdpr=0&section=zaf-billboard&extid=5699819534286848 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>1099/14287</title>
+    <style>* { margin: 0px; padding: 0px; } img { cursor: pointer; }</style>
+    <script>
+        (function() {
+            var frame = window;
+            var cmpFrame;
+            var cmpCallbacks = {};
+
+            while(frame) {
+                try {
+                    if (frame.frames['__tcfapiLocator']) {
+                        cmpFrame = frame;
+                        break;
+                    }
+                } catch(ignore) {}
+
+                if (frame === window.top) {
+                    break;
+                }
+
+                frame = frame.parent;
+            }
+
+            window.__tcfapi = function(cmd, version, callback, arg) {
+                if (!cmpFrame) {
+                    callback({msg: 'CMP not found'}, false);
+                } else {
+                    var callId = Math.random() + '';
+                    var msg = {
+                        __tcfapiCall: {
+                            command: cmd,
+                            version: version,
+                            callId: callId,
+                        },
+                    };
+                    cmpCallbacks[callId] = callback;
+                    cmpFrame.postMessage(msg, '*');
+                }
+            };
+
+            function postMessageHandler(event) {
+                var json = {};
+
+                try {
+                    json = typeof event.data === 'string' ? JSON.parse(event.data) : event.data;
+                } catch (ignore) {}
+
+                var payload = json.__tcfapiReturn;
+                if (payload) {
+                    if (typeof cmpCallbacks[payload.callId] === 'function') {
+                        cmpCallbacks[payload.callId](payload.returnValue, payload.success);
+                        cmpCallbacks[payload.callId] = null;
+                    }
+                }
+            }
+            window.addEventListener('message', postMessageHandler, false);
+        }());
+    </script>
+</head>
+<body>
+    <script id="pos14287" src="./14287"></script><div><iframe src="./14287.html" frameborder="0" scrolling="no" width="728" height="90"></iframe></div>
+
+
+</body></html>

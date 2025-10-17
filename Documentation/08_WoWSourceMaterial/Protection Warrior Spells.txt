@@ -1,0 +1,157 @@
+Baseline Protection Warrior Spells
+Offensive Abilities
+ Shield Slam (SS)- Your main offensive skill. Deals damage, generates Rage, it’s great.
+ Devastate - A very basic damaging skill that has a lot of talent interactions.
+ Execute - Powerful single-target damage skill. Consumes lots of Rage to finish off low-health enemies.
+ Heroic Throw (HT) - Weak single-target damage skill. Useful for tagging enemies from range, that’s it.
+ Slam - A basic Rage-spending, single-target damage skill. It is not useful to Protection Warriors.
+ Whirlwind (WW) - A basic Rage-spending, AoE damage skill. It is not useful to Protection Warriors.
+ Offensive Cooldowns
+None.
+ Utility Abilities
+ Shield Block (SB) - Primary defensive skill. Very powerful damage mitigation while active.
+ Battle Shout (BS or Shout) - Excellent attack power buff for your group.
+ Charge - Basic, excellent mobility skill. All Warriors have it, and it’s great.
+ Pummel (Kick) - Simple interrupt.
+ Taunt - Taunts enemies. Very basic.
+ Victory Rush (VR) - Self-heal that becomes active after securing a kill.
+ Hamstring - A single-target slow. Occasionally useful, but not very often.
+ Passive Abilities
+ Mastery: Critical Block - This is your Mastery. It reduces the damage taken from auto-attacks you block. It also increases your Attack Power. It’s okay.
+ Shield Block - Grants your main defensive skill a second charge.
+ Riposte - A very simple Crit to Parry conversion.
+ Vanguard - Simple defensive aura, reduces your damage taken, increases your Stamina and Armor.
+
+Protection Warrior Talents
+
+Class Talents
+Row 1 Talents
+ Battle Stance - Granted for free. Grants 3% crit chance. Usually, the stance you can choose to be in, in content that isn't dangerous or challenging to you. Or whenever you are not actively tanking a boss in a raid.
+ Defensive Stance - Granted for free. Default tanking stance in TWW. It is to be treated as an opt-in/opt-out toggle when damage intake is no longer dangerous or mostly physical.
+Row 2 Talents
+ Fast Footwork grants 5% extra Movementspeed.
+ War Machine Increases your Auto-attack Rage generation from 2 to 3 rage and grants Movement speed and 5 Rage whenever a target you are in combat with dies.
+ Leeching Strikes grants 3% extra leech.
+ Intervene Lets you "charge" at a friendly target, While you are within 10 yards of the target you will be intercepting any Physical Attack aimed at them.
+Row 3 Talents
+ Impending Victory (IV) One our primary tools to recover lost Health Points.
+ Heroic Leap (Leap) An excellent movement ability letting you close a lot of distance between you and your destination, does not require a target!
+ Storm Bolt Incredibly potent single-target Stun, can be cast from range, and has a short CD!
+Row 4 Talents
+ Intimidating Shout (Fear) Used to inflict Fear on up to 6 targets, 1.5min CD, one of the weaker AoE CCs in the game but better than nothing.
+ Second Wind Small recovery tool if you haven't been hit in a while or while you are below 35% HP, is not extremely useful as a protection warrior.
+ Frothing Berserker A large chance to get a small rage refund on an offensive rage spender. Mandatory Pathing node.
+ Bounding Stride Reduces the CD of Heroic Leap from 45 seconds down to 30 seconds and grants a useful 70% movement speed buff, very good talent.
+ Pain and Gain A small heal once every 10 seconds, nothing relevating.
+ Thunder Clap (TC) One of our main damage-dealing abilities and ways to apply Rend, must pick!
+Row 5 Talents
+Choice Node between:
+ Cacophonous Roar Makes it so the afflicted target of  Intimidating Shout can take more damage before fear breaks, not really useful in PvE
+ Menace makes it so  Intimidating Shout causes the Target to cower in fear and instead knocks every other targets away instead of only affecting 5 targets, it can now hit all of your targets.
+ Spell Reflection (SR) One of our most potent defensive abilities! Must have!
+ Rallying Cry (Rally) Our 1 and only defensive raid buff. Also a must-have.
+ Shockwave A short AoE stun. Great pickup for Mythic Plus.
+ Crackling Thunder Increases the radius of  Thunder Clap and increases the amount the enemy is slowed by.
+Row 6 Talents
+ Honed Reflexes Reduces the Cooldown of multiple Utility abilities by 5%. (effectively 1 second on each of them).
+ Crushing Force Increases the Damage of our Main Damage ability by a large amount! Must Have!
+ Bitter Immunity A lackluster heal that also removes diseases, poisons, and curses. Generally not recommended to be picked up.
+ Overwhelming Rage Increases our maximum rage by 15/30 points, usually not picked up.
+ Rumbling Earth Reduces the cooldown of  Shockwave if it strikes 3 or more targets.
+ Reinforced Plates Increases our already large amount of armor and stamina by 10%, must-have, and a great pathing node!
+Row 7 Talents
+Choice Node between:
+ Wrecking Throw Does large amounts of damage vs shields, has niche applications.
+ Shattering Throw Does large amounts of damage vs shields and can break magic immunities, 3-minute CD. Does not have PvE applications.
+Choice Node between:
+ Barbaric Training (BT) Increases the damage of our offensive spender.
+ Sidearm Grants a small chance for auto-attacks to throw out axes to a total of 4 targets, and does a decent amount of damage.
+ Double Time Increases the total amount of charges of  Charge to 2. Must-have talent!
+Choice Node between:
+ Seismic Reverberation (seismic) Allows  Revenge to strike an additional time for 30% of damage when it strikes 3 or more targets. Very good for AoE.
+ Concussive Blows Reduces the cooldown of our interrupt by 1 second and allows us to deal 5% extra damage to the target, niche applications, usually not picked up.
+Choice Node between:
+ Piercing Howl Very strong AoE slow on decently short cooldown, usually not picked up in PvE.
+ Berserker Shout Can break friendly targets out of fear if applied, does not see use in PvE.
+Row 8 Talents
+ Cruel Strikes Strong Pathing node.
+ Wild Strikes Mandatory Pathing node. Grants extra haste and auto-attack swing speed.
+ One-Handed Weapon Specialization Mandatory Pick up. 4% Leech and 6% damage!
+ Armored to the Teeth Turns Armor into Strength! Extremely potent as Tank.
+Row 9 Talents
+ Thunderous Roar (Roar) One of our strongest AoE damaging abilities!
+ Avatar Bread and Butter of every Warrior spec. Must-have!
+ Champion's Spear (Spear) Former Kyrian Ability turned Core ability, another strong AoE ability.
+Row 10 Talents
+ Uproar Reduces  Thunderous Roar from 1.5min to 45sec CD, incredibly potent in Mythic Plus!
+ Thunderous Words Increases the duration of  Thunderous Roar by 2sec and increases all Bleed damage done during its duration by 30%.
+Choice Node between:
+ Immovable Object (IO) Grants  Avatar for 6 sec when  Shield Wall is used and vice versa.
+ Unstoppable Force (UF) Reduces the cooldown and damage of  Thunder Clap by 50% while  Avatar is active.
+ Piercing Challenge Increases damage of  Champion's Spear by 50% and rage generated by 100%. .
+ Champion's Might Increases critical damage done to all targets tethered to  Champion's Spear by 25%. Also increases duration by 2 sec.
+
+Protection Warrior Spec Talents
+Row 1 Talents
+ Ignore Pain (IP) - Core defensive skill, must-have talent.
+Row 2 Talents
+ Revenge - Core offensive AoE Rage spender. Must-have talent.
+ Demoralizing Shout (Demo or DS) - Minor defensive cooldown with good talent synergy deeper in the tree. Must-have talent.
+Row 3 Talents
+ Brace For Impact (BFI)- Stacking buff that grants 10% Shield Slam damage and 5% Block Value per stack. Extremely easy to maintain 2-3 stacks, which provides incredible value for a single point. Absolutely mandatory talent.
+ Armor Specialization - Basic Armor increase, has synergy with other talents to increase Strength.
+ Fight Through the Flames (FTTF) - Newly added in The War Within, reduces magic dmg taken while in Defensive Stance, not overly useful for most situations. Niche application in Mythic Plus, more useful in Raid.
+ Devastator - Excellent rotation-smoothing talent, must-have talent. DO NOT TRY TO SKIP THIS.
+Row 4 Talents
+ Disrupting Shout - Reduces the cooldown of Challenging Shout to 90s and converts it into an AoE taunt/interrupt. Cool concept, decent in Mythic+, and useful on some raid bosses!
+ Best Served Cold (BSC) - Increases  Revenge occasionally after we dodge or parry an attack. Rather weak. Very optional.
+ Strategist - Critical rotational functionality. Absolutely mandatory talent. Not just for pathing reasons.
+Row 5 Talents
+ Last Stand (LS) - Basic defensive cooldown, grants bonus health for 15 seconds. Good reactive cooldown. Mandatory talent.
+ Instigate - Basically auto-attack rage generation by 2 and performs very well.
+ Rend - Excellent DPS increase applied passively by  Thunder Clap.
+ Bloodsurge - a small chance for deep wounds to grant 5 Rage. Warriors apply Deep Wounds by performing their normal rotation. This talent scales directly with target count, making it substantially better in AoE. However, loses to  Instigate in most situations.
+Choice Node:  Fueled by Violence/ Brutal Vitality: Both Talents are exceptionally strong, pick your poison, you can't go wrong with either.
+ Fueled by Violence (FbV) - Moderate self-healing gain in all-out AoE. Freshly buffed, strong talent.
+ Brutal Vitality (BrV)- This grants ~8% Leech whenever Ignore Pain is active. It's a decent boost to self-sustain, especially since the dmg from  Violent Outburst already fuels into the absorb. Very Strong talent.
+Row 6 Talents
+Choice Node between:  Unnerving Focus/ Bolster: Neither of them is usually played due to their locations on the tree..
+ Unnerving Focus - Increases Rage Generation while  Last Stand is active. Has rarely seen play.
+ Bolster - Reduces the cooldown of  Last Stand to 2 minutes and grants  Shield Block. Can find a niche application if the lower cooldown is beneficial.
+ Thunderlord (TL) - Good cooldown reduction for Demoralizing Shout that synergizes with other talents in the tree. Good talent in AoE, very mediocre in single target.
+Choice Node between:  Bloodborne/ Sudden Death:  Bloodborne is better in AoE,  Sudden Death is better in single-target. Great node for pathing, and worth taking regardless of which talent you choose.
+ Bloodborne (BB) - Provides a decent increase to bleed effects.
+ Sudden Death (SD) - Excellent single-target damage proc, adds up to quite a bit of damage throughout a raid fight.
+Choice Node between:  Heavy Repercussions/ Into the Fray:  Heavy Repercussions and  Into the Fray are both outstanding talents.  Heavy Repercussions is more useful in single target,  Into the Fray is better in AoE.
+ Heavy Repercussions (HR) - Increases Rage Generation of  Shield Slam by 2, which is also multiplied by  Violent Outburst. But more importantly, it increases  Shield Block duration by 1 second every time you press  Shield Slam, resulting in pretty much infinite  Shield Block uptime. Mandatory pick for low haste levels early in an expansion.
+ Into the Fray (ITF) - 8% Haste buff that is easy to maintain in any group scenario, but especially in AoE. Always useful, and very easy to justify running at all times outside of early expansion M+. Fantastic in raids. Good in Mythic+, but comes at the loss of some defensive reliability, which isn't necessarily worth the risk.
+ Punish - Increases  Shield Slam damage and causes the hit enemy to deal less damage to you.
+Choice Node between:  Hunker Down/ Spellbreaker:  Hunker Down is the more useful of the 2 choices if you know the encounter.  Spellbreaker is more useful if you're uncertain how to use  Spell Reflection effectively.
+ Hunker Down - Increases  Spell Reflection magic damage reduction and grants you 2% passive AoE damage reduction.
+ Spellbreaker - Grants a small chance to reduce a magic damage hit by 50%.
+Row 7 Talents
+ Tough as Nails (TaN) - Passive damage output whenever you block an attack, recently buffed, however, still not a popular or strong choice.
+ Shield Wall (SW)- Iconic, mandatory defensive cooldown. The ultimate tank defensive cooldown. Take it.
+ Enduring Defenses (ED) - Incredible defensive bonus, simply grants 33% more Shield Block uptime. Massive increase to Protection Warrior’s ability to survive damage in any situation.
+ Unyielding Stance - Simple increase of  Defensive Stance damage reduction. Required for pathing.
+ Red Right Hand - Simple increase of  Execute damage. Great in combination with other Execute talents.
+Row 8 Talents
+Choice Node between:  Defender's Aegis/ Impenetrable Wall:  Defender's Aegis is better in every single situation.
+ Defender's Aegis (DA) - Grants a 2nd charge of  Shield Wall and significantly reduces the base cooldown.
+ Impenetrable Wall (Imp Wall) - Reduces the cooldown of  Shield Wall whenever you cast  Shield Slam.
+ Focused Vigor (FV) - Amazing Talent, offers huge amounts of damage output and Armor for just 1 Talent point, not mandatory for pathing but heavily encouraged to pick up!
+ Shield Specialization - Outstanding defensive bonus. Greatly reduces damage taken from blockable hits and is crucial for pathing to the Talents that enable the "Rage Feedback Machine" further.
+ Enduring Alacrity (EA) - A significant increase in Health and 2% Haste gain makes this talent one of the most attractive talents on our talent tree.
+ Anger Management (AM)- Fantastic cooldown reduction talent that rewards you for spending Rage by increasing the uptime on your two strongest cooldowns. Never skip this talent, under any circumstances.
+Row 9 Talents
+ Massacre - Straightforward, powerful increase to Protection Warrior’s Execute damage. Amazing offensive talent.
+ Booming Voice (BV) - Turns Demoralizing Shout into a good offensive cooldown and Rage generation tool. Grants 30 rage and synergizes very nicely with  Thunderlord, especially in AoE. Can be classified as Mandatory.
+ Indomitable (Indom) - Extremely valuable defensive talent. Substantially increases tankiness and grants a steady trickle of self-healing. Mandatory if you want to call yourself a tank.
+ Violent Outburst (Outburst or VO) - Excellent Rage generation increase, one of the vital pillarstones to the "Rage Feedback Machine" to deal huge amounts of damage and be an absolute brick house of a tank.
+ Heavy Handed - Allows  Execute to strike 2 additional targets for a reduced amount. Great for raiding and overall damage output!
+Row 10 Talents
+ Shield Charge (SC) - Decent offensive cooldown and Rage generation tool. It is not great on its own, but it is good with the talent synergy below. Grants 20 rage. It deals slightly more single-target damage than Ravager, but less AoE damage.
+ Battle-Scarred Veteran (BSV) - Reactive defensive cooldown that provides a ton of damage reduction and increased healing taken. The 3-minute cooldown is long. After FINALLY being fixed in 10.2.7, this Talent is properly useful for new players and may have niche applications in high keys as a planned defensive. Great tool to recover from a mistake or generally when in trouble.
+Choice Node between: Whirling Blade/ Ravager.  Whirling Blade for more overall damage.  Ravager for a more controlled, predictable offensive cooldown.
+ Whirling Blade - This talent randomly sends out more frequent and shorter versions of  Ravager.
+ Ravager - Great offensive Ability for initial threat in a pull, grants 60 rage over its course to help you stabilize and get the "Rage Feedback Machine" going.

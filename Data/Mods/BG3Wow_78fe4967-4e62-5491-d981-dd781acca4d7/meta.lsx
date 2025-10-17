@@ -18,9 +18,9 @@
                     </children>
                 </node>
                 <node id="ModuleInfo">
-                    <attribute id="Author" type="LSString" value=""/>
+                    <attribute id="Author" type="LSString" value="vorgx"/>
                     <attribute id="CharacterCreationLevelName" type="FixedString" value=""/>
-                    <attribute id="Description" type="LSString" value=""/>
+                    <attribute id="Description" type="LSString" value="World of Warcraft classes for BG3 - Starting with Warrior"/>
                     <attribute id="FileSize" type="uint64" value="0"/>
                     <attribute id="Folder" type="LSString" value="BG3Wow_78fe4967-4e62-5491-d981-dd781acca4d7"/>
                     <attribute id="LobbyLevelName" type="FixedString" value=""/>

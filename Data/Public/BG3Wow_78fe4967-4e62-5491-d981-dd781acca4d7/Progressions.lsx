@@ -1,0 +1,1300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="10"/>
+    <region id="Progressions">
+        <node id="root">
+            <children>
+                <!-- =====================================================
+                     BASE WARRIOR PROGRESSION TABLE
+                     UUID: a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d
+                     ===================================================== -->
+                
+                <!-- LEVEL 1 - Character Creation -->
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Rage,100,0)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_UnlockRage;WAR_RageGeneration"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d"/>
+                    <attribute id="UUID" type="guid" value="0a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d"/>
+                    <children>
+                        <node id="SubClasses">
+                            <children>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"/>
+                                </node>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="3b4c5d6e-7f8a-9b0c-1d2e-3f4a5b6c7d8e"/>
+                                </node>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="5c6d7e8f-9a0b-1c2d-3e4f-5a6b7c8d9e0f"/>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Selectors">
+                            <children>
+                                <node id="SelectSkills">
+                                    <attribute id="Amount" type="uint8" value="2"/>
+                                    <attribute id="SkillsList" type="guid" value="f974ebd6-3725-4b90-bb5c-2b647d41615d"/>
+                                    <attribute id="UUID" type="guid" value="1b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e"/>
+                                </node>
+                                <node id="SelectAbilityBonus">
+                                    <attribute id="Amount" type="uint8" value="2"/>
+                                    <attribute id="BonusType" type="uint8" value="1"/>
+                                    <attribute id="UUID" type="guid" value="2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f"/>
+                                </node>
+                                <node id="AddSpells">
+                                    <attribute id="Spells" type="LSString" value="WAR_Charge;WAR_HeroicStrike"/>
+                                    <attribute id="UUID" type="guid" value="bc76bcd5-b481-4cc8-8c04-4de370e9e2cf"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- LEVEL 1 - Multiclass -->
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Rage,100,0)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="IsMulticlass" type="bool" value="True"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_UnlockRage;WAR_RageGeneration"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d"/>
+                    <attribute id="UUID" type="guid" value="3d4e5f6a-7b8c-9d0e-1f2a-3b4c5d6e7f8a"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="SelectSkills">
+                                    <attribute id="Amount" type="uint8" value="2"/>
+                                    <attribute id="SkillsList" type="guid" value="f974ebd6-3725-4b90-bb5c-2b647d41615d"/>
+                                    <attribute id="UUID" type="guid" value="4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b"/>
+                                </node>
+                                <node id="AddSpells">
+                                    <attribute id="Spells" type="LSString" value="WAR_Charge;WAR_HeroicStrike"/>
+                                    <attribute id="UUID" type="guid" value="5f6a7b8c-9d0e-1f2a-3b4c-5d6e7f8a9b0c"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- LEVEL 2 - Battle Shout -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="2"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d"/>
+                    <attribute id="UUID" type="guid" value="6a7b8c9d-0e1f-2a3b-4c5d-6e7f8a9b0c1d"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="Spells" type="LSString" value="WAR_BattleShout"/>
+                                    <attribute id="UUID" type="guid" value="7b8c9d0e-1f2a-3b4c-5d6e-7f8a9b0c1d2e"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- LEVEL 3 - Execute (Core Warrior ability, before subclass-specific abilities) -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d"/>
+                    <attribute id="UUID" type="guid" value="8c9d0e1f-2a3b-4c5d-6e7f-8a9b0c1d2e3f"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="Spells" type="LSString" value="WAR_Execute"/>
+                                    <attribute id="UUID" type="guid" value="9d0e1f2a-3b4c-5d6e-7f8a-9b0c1d2e3f4a"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- LEVEL 4 - Feat -->
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="True"/>
+                    <attribute id="Level" type="uint8" value="4"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d"/>
+                    <attribute id="UUID" type="guid" value="0e1f2a3b-4c5d-6e7f-8a9b-0c1d2e3f4a5b"/>
+                </node>
+
+                <!-- LEVEL 5 - Extra Attack -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="PassivesAdded" type="LSString" value="ExtraAttack"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d"/>
+                    <attribute id="UUID" type="guid" value="1f2a3b4c-5d6e-7f8a-9b0c-1d2e3f4a5b6c"/>
+                </node>
+
+                <!-- LEVEL 6 - Defensive Stance -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="6"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d"/>
+                    <attribute id="UUID" type="guid" value="2a3b4c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="Spells" type="LSString" value="WAR_DefensiveStance"/>
+                                    <attribute id="UUID" type="guid" value="3b4c5d6e-7f8a-9b0c-1d2e-3f4a5b6c7d8e"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- LEVEL 7 - Intimidating Shout -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="7"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d"/>
+                    <attribute id="UUID" type="guid" value="4c5d6e7f-8a9b-0c1d-2e3f-4a5b6c7d8e9f"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="Spells" type="LSString" value="WAR_IntimidatingShout"/>
+                                    <attribute id="UUID" type="guid" value="5d6e7f8a-9b0c-1d2e-3f4a-5b6c7d8e9f0a"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- LEVEL 8 - Feat -->
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="True"/>
+                    <attribute id="Level" type="uint8" value="8"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d"/>
+                    <attribute id="UUID" type="guid" value="6e7f8a9b-0c1d-2e3f-4a5b-6c7d8e9f0a1b"/>
+                </node>
+
+                <!-- LEVEL 9 - Heroic Leap -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="9"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d"/>
+                    <attribute id="UUID" type="guid" value="7f8a9b0c-1d2e-3f4a-5b6c-7d8e9f0a1b2c"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="Spells" type="LSString" value="WAR_HeroicLeap"/>
+                                    <attribute id="UUID" type="guid" value="8a9b0c1d-2e3f-4a5b-6c7d-8e9f0a1b2c3d"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- LEVEL 10 - Rallying Cry -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="10"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d"/>
+                    <attribute id="UUID" type="guid" value="9b0c1d2e-3f4a-5b6c-7d8e-9f0a1b2c3d4e"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="Spells" type="LSString" value="WAR_RallyingCry"/>
+                                    <attribute id="UUID" type="guid" value="0c1d2e3f-4a5b-6c7d-8e9f-0a1b2c3d4e5f"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- LEVEL 11 - Improved Extra Attack -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="11"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="PassivesAdded" type="LSString" value="ImprovedExtraAttack"/>
+                    <attribute id="PassivesRemoved" type="LSString" value="ExtraAttack"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d"/>
+                    <attribute id="UUID" type="guid" value="1d2e3f4a-5b6c-7d8e-9f0a-1b2c3d4e5f6a"/>
+                </node>
+
+                <!-- LEVEL 12 - Feat -->
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="True"/>
+                    <attribute id="Level" type="uint8" value="12"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d"/>
+                    <attribute id="UUID" type="guid" value="2e3f4a5b-6c7d-8e9f-0a1b-2c3d4e5f6a7b"/>
+                </node>
+
+                <!-- LEVEL 13 - Inspiring Presence -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_InspiringPresence"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d"/>
+                    <attribute id="UUID" type="guid" value="3f4a5b6c-7d8e-9f0a-1b2c-3d4e5f6a7b8c"/>
+                </node>
+
+                <!-- LEVEL 14 - Hamstring -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="14"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d"/>
+                    <attribute id="UUID" type="guid" value="4a5b6c7d-8e9f-0a1b-2c3d-4e5f6a7b8c9d"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="Spells" type="LSString" value="WAR_Hamstring"/>
+                                    <attribute id="UUID" type="guid" value="5b6c7d8e-9f0a-1b2c-3d4e-5f6a7b8c9d0e"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- LEVEL 15 - Spell Reflection -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d"/>
+                    <attribute id="UUID" type="guid" value="6c7d8e9f-0a1b-2c3d-4e5f-6a7b8c9d0e1f"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="Spells" type="LSString" value="WAR_SpellReflection"/>
+                                    <attribute id="UUID" type="guid" value="7d8e9f0a-1b2c-3d4e-5f6a-7b8c9d0e1f2a"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- LEVEL 16 - Feat -->
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="True"/>
+                    <attribute id="Level" type="uint8" value="16"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d"/>
+                    <attribute id="UUID" type="guid" value="8e9f0a1b-2c3d-4e5f-6a7b-8c9d0e1f2a3b"/>
+                </node>
+
+                <!-- LEVEL 17 - Die by the Sword -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d"/>
+                    <attribute id="UUID" type="guid" value="9f0a1b2c-3d4e-5f6a-7b8c-9d0e1f2a3b4c"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="Spells" type="LSString" value="WAR_DiebytheSword"/>
+                                    <attribute id="UUID" type="guid" value="0a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- LEVEL 18 - Indomitable -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="18"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d"/>
+                    <attribute id="UUID" type="guid" value="1b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="Spells" type="LSString" value="Target_WAR_Indomitable"/>
+                                    <attribute id="UUID" type="guid" value="7f8a9b0c-1d2e-3f4a-5b6c-7d8e9f0a1b2c"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- LEVEL 19 - Avatar -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d"/>
+                    <attribute id="UUID" type="guid" value="2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="Spells" type="LSString" value="WAR_Avatar"/>
+                                    <attribute id="UUID" type="guid" value="3d4e5f6a-7b8c-9d0e-1f2a-3b4c5d6e7f8a"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- LEVEL 20 - Feat -->
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="True"/>
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d"/>
+                    <attribute id="UUID" type="guid" value="4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b"/>
+                </node>
+
+                <!-- =====================================================
+                     ARMS WARRIOR SUBCLASS PROGRESSION
+                     UUID: 2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e
+                     ===================================================== -->
+
+                <!-- ARMS LEVEL 1 - Weapon Mastery Passive -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="Arms Warrior"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_ARMS_WeaponMastery"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e"/>
+                    <attribute id="UUID" type="guid" value="5f6a7b8c-9d0e-1f2a-3b4c-5d6e7f8a9b0c"/>
+                </node>
+
+                <!-- ARMS LEVEL 3 - Mortal Strike & Overpower -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="Arms Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e"/>
+                    <attribute id="UUID" type="guid" value="6a7b8c9d-0e1f-2a3b-4c5d-6e7f8a9b0c1d"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="Spells" type="LSString" value="WAR_ARMS_MortalStrike;WAR_ARMS_Overpower"/>
+                                    <attribute id="UUID" type="guid" value="7b8c9d0e-1f2a-3b4c-5d6e-7f8a9b0c1d2e"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- ARMS LEVEL 5 - Tactical Mastery -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="Arms Warrior"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_ARMS_TacticalMastery"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e"/>
+                    <attribute id="UUID" type="guid" value="8c9d0e1f-2a3b-4c5d-6e7f-8a9b0c1d2e3f"/>
+                </node>
+
+                <!-- ARMS LEVEL 7 - Colossus Smash -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="7"/>
+                    <attribute id="Name" type="LSString" value="Arms Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e"/>
+                    <attribute id="UUID" type="guid" value="9d0e1f2a-3b4c-5d6e-7f8a-9b0c1d2e3f4a"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="Spells" type="LSString" value="WAR_ARMS_ColossusSmash"/>
+                                    <attribute id="UUID" type="guid" value="0e1f2a3b-4c5d-6e7f-8a9b-0c1d2e3f4a5b"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- ARMS LEVEL 9 - Sweeping Strikes -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="9"/>
+                    <attribute id="Name" type="LSString" value="Arms Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e"/>
+                    <attribute id="UUID" type="guid" value="1f2a3b4c-5d6e-7f8a-9b0c-1d2e3f4a5b6c"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="Spells" type="LSString" value="WAR_ARMS_SweepingStrikes"/>
+                                    <attribute id="UUID" type="guid" value="2a3b4c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- ARMS LEVEL 11 - Warbreaker -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="11"/>
+                    <attribute id="Name" type="LSString" value="Arms Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e"/>
+                    <attribute id="UUID" type="guid" value="3b4c5d6e-7f8a-9b0c-1d2e-3f4a5b6c7d8e"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="Spells" type="LSString" value="WAR_ARMS_Warbreaker"/>
+                                    <attribute id="UUID" type="guid" value="4c5d6e7f-8a9b-0c1d-2e3f-4a5b6c7d8e9f"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- ARMS LEVEL 13 - Specialization Choice: Colossus OR Slayer -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="Arms Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e"/>
+                    <attribute id="UUID" type="guid" value="5d6e7f8a-9b0c-1d2e-3f4a-5b6c7d8e9f0a"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="SelectPassives">
+                                    <attribute id="Amount" type="uint8" value="1"/>
+                                    <attribute id="UUID" type="guid" value="6e7f8a9b-0c1d-2e3f-4a5b-6c7d8e9f0a1b"/>
+                                    <children>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="7f8a9b0c-1d2e-3f4a-5b6c-7d8e9f0a1b2c"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Colossus_Keystone"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="8a9b0c1d-2e3f-4a5b-6c7d-8e9f0a1b2c3d"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Slayer_Keystone"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- ARMS LEVEL 15 - Specialization Tier 1 Choice -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="Arms Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e"/>
+                    <attribute id="UUID" type="guid" value="9b0c1d2e-3f4a-5b6c-7d8e-9f0a1b2c3d4e"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <!-- Colossus Tier 1 Choices (only if Colossus chosen at L13) -->
+                                <node id="SelectPassives">
+                                    <attribute id="Amount" type="uint8" value="1"/>
+                                    <attribute id="Requirement" type="LSString" value="HasPassive('WAR_Colossus_Keystone')"/>
+                                    <attribute id="UUID" type="guid" value="0c1d2e3f-4a5b-6c7d-8e9f-0a1b2c3d4e5f"/>
+                                    <children>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="1d2e3f4a-5b6c-7d8e-9f0a-1b2c3d4e5f6a"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Colossus_NoStrangerToPain"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="2e3f4a5b-6c7d-8e9f-0a1b-2c3d4e5f6a7b"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Colossus_VeteranVitality"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="3f4a5b6c-7d8e-9f0a-1b2c-3d4e5f6a7b8c"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Colossus_OneAgainstMany"/>
+                                        </node>
+                                    </children>
+                                </node>
+                                <!-- Slayer Tier 1 Choices (only if Slayer chosen at L13) -->
+                                <node id="SelectPassives">
+                                    <attribute id="Amount" type="uint8" value="1"/>
+                                    <attribute id="Requirement" type="LSString" value="HasPassive('WAR_Slayer_Keystone')"/>
+                                    <attribute id="UUID" type="guid" value="4a5b6c7d-8e9f-0a1b-2c3d-4e5f6a7b8c9d"/>
+                                    <children>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="5b6c7d8e-9f0a-1b2c-3d4e-5f6a7b8c9d0e"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Slayer_BrutalFinish"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="6c7d8e9f-0a1b-2c3d-4e5f-6a7b8c9d0e1f"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Slayer_ImminentDemise"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="7d8e9f0a-1b2c-3d4e-5f6a-7b8c9d0e1f2a"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Slayer_OverwhelmingBlades"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- ARMS LEVEL 17 - Specialization Tier 2 Choice -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="Arms Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e"/>
+                    <attribute id="UUID" type="guid" value="8e9f0a1b-2c3d-4e5f-6a7b-8c9d0e1f2a3b"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <!-- Colossus Tier 2 Choices -->
+                                <node id="SelectPassives">
+                                    <attribute id="Amount" type="uint8" value="1"/>
+                                    <attribute id="Requirement" type="LSString" value="HasPassive('WAR_Colossus_Keystone')"/>
+                                    <attribute id="UUID" type="guid" value="9f0a1b2c-3d4e-5f6a-7b8c-9d0e1f2a3b4c"/>
+                                    <children>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="0a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Colossus_PracticedStrikes"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="1b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Colossus_ArterialBleed"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Colossus_Earthquaker"/>
+                                        </node>
+                                    </children>
+                                </node>
+                                <!-- Slayer Tier 2 Choices -->
+                                <node id="SelectPassives">
+                                    <attribute id="Amount" type="uint8" value="1"/>
+                                    <attribute id="Requirement" type="LSString" value="HasPassive('WAR_Slayer_Keystone')"/>
+                                    <attribute id="UUID" type="guid" value="3d4e5f6a-7b8c-9d0e-1f2a-3b4c5d6e7f8a"/>
+                                    <children>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Slayer_CullingCyclone"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="5f6a7b8c-9d0e-1f2a-3b4c-5d6e7f8a9b0c"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Slayer_Opportunist"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="6a7b8c9d-0e1f-2a3b-4c5d-6e7f8a9b0c1d"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Slayer_OverwhelmingBlades2"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- ARMS LEVEL 19 - Specialization Tier 3 Choice -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="Arms Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e"/>
+                    <attribute id="UUID" type="guid" value="7b8c9d0e-1f2a-3b4c-5d6e-7f8a9b0c1d2e"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <!-- Colossus Tier 3 Choices -->
+                                <node id="SelectPassives">
+                                    <attribute id="Amount" type="uint8" value="1"/>
+                                    <attribute id="Requirement" type="LSString" value="HasPassive('WAR_Colossus_Keystone')"/>
+                                    <attribute id="UUID" type="guid" value="8c9d0e1f-2a3b-4c5d-6e7f-8a9b0c1d2e3f"/>
+                                    <children>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="9d0e1f2a-3b4c-5d6e-7f8a-9b0c1d2e3f4a"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Colossus_MartialExpert"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="0e1f2a3b-4c5d-6e7f-8a9b-0c1d2e3f4a5b"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Colossus_TideOfBattle"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="1f2a3b4c-5d6e-7f8a-9b0c-1d2e3f4a5b6c"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Colossus_DemolishShockwave"/>
+                                        </node>
+                                    </children>
+                                </node>
+                                <!-- Slayer Tier 3 Choices -->
+                                <node id="SelectPassives">
+                                    <attribute id="Amount" type="uint8" value="1"/>
+                                    <attribute id="Requirement" type="LSString" value="HasPassive('WAR_Slayer_Keystone')"/>
+                                    <attribute id="UUID" type="guid" value="2a3b4c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d"/>
+                                    <children>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="3b4c5d6e-7f8a-9b0c-1d2e-3f4a5b6c7d8e"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Slayer_ShowNoMercy"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="4c5d6e7f-8a9b-0c1d-2e3f-4a5b6c7d8e9f"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Slayer_ReapTheStorm"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="5d6e7f8a-9b0c-1d2e-3f4a-5b6c7d8e9f0a"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Slayer_ImminentDemise2"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- ARMS LEVEL 20 - Specialization Capstone (Automatic based on L13 choice) -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="Arms Warrior"/>
+                    <attribute id="PassivesAdded" type="LSString" value="IF(HasPassive('WAR_Colossus_Keystone')):ApplyStatus(SELF,WAR_Colossus_PreciseMight);IF(HasPassive('WAR_Slayer_Keystone')):ApplyStatus(SELF,WAR_Slayer_Malice)"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e"/>
+                    <attribute id="UUID" type="guid" value="6e7f8a9b-0c1d-2e3f-4a5b-6c7d8e9f0a1b"/>
+                </node>
+
+                <!-- =====================================================
+                     FURY WARRIOR SUBCLASS PROGRESSION
+                     UUID: 4c5d6e7f-8a9b-0c1d-2e3f-4a5b6c7d8e9f
+                     ===================================================== -->
+
+                <!-- FURY LEVEL 1 - Dual-Wield Mastery Passive -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="Fury Warrior"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_FURY_DualWieldMastery"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="4c5d6e7f-8a9b-0c1d-2e3f-4a5b6c7d8e9f"/>
+                    <attribute id="UUID" type="guid" value="7f8a9b0c-1d2e-3f4a-5b6c-7d8e9f0a1b2c"/>
+                </node>
+
+                <!-- FURY LEVEL 3 - Bloodthirst & Rampage -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="Fury Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="4c5d6e7f-8a9b-0c1d-2e3f-4a5b6c7d8e9f"/>
+                    <attribute id="UUID" type="guid" value="8a9b0c1d-2e3f-4a5b-6c7d-8e9f0a1b2c3d"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="Spells" type="LSString" value="Target_WAR_Bloodthirst"/>
+                                    <attribute id="UUID" type="guid" value="9b0c1d2e-3f4a-5b6c-7d8e-9f0a1b2c3d4e"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- FURY LEVEL 5 - Rampage -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="Fury Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="4c5d6e7f-8a9b-0c1d-2e3f-4a5b6c7d8e9f"/>
+                    <attribute id="UUID" type="guid" value="0c1d2e3f-4a5b-6c7d-8e9f-0a1b2c3d4e5f"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="Spells" type="LSString" value="Target_WAR_Rampage"/>
+                                    <attribute id="UUID" type="guid" value="1d2e3f4a-5b6c-7d8e-9f0a-1b2c3d4e5f6a"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- FURY LEVEL 6 - Enraged Regeneration -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="6"/>
+                    <attribute id="Name" type="LSString" value="Fury Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="4c5d6e7f-8a9b-0c1d-2e3f-4a5b6c7d8e9f"/>
+                    <attribute id="UUID" type="guid" value="2e3f4a5b-6c7d-8e9f-0a1b-2c3d4e5f6a7b"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="Spells" type="LSString" value="Target_WAR_EnragedRegeneration"/>
+                                    <attribute id="UUID" type="guid" value="3f4a5b6c-7d8e-9f0a-1b2c-3d4e5f6a7b8c"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- FURY LEVEL 9 - Raging Blow -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="9"/>
+                    <attribute id="Name" type="LSString" value="Fury Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="4c5d6e7f-8a9b-0c1d-2e3f-4a5b6c7d8e9f"/>
+                    <attribute id="UUID" type="guid" value="4a5b6c7d-8e9f-0a1b-2c3d-4e5f6a7b8c9d"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="Spells" type="LSString" value="WAR_FURY_RagingBlow"/>
+                                    <attribute id="UUID" type="guid" value="5b6c7d8e-9f0a-1b2c-3d4e-5f6a7b8c9d0e"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- FURY LEVEL 11 - Bloodbath -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="11"/>
+                    <attribute id="Name" type="LSString" value="Fury Warrior"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_FURY_Bloodbath"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="4c5d6e7f-8a9b-0c1d-2e3f-4a5b6c7d8e9f"/>
+                    <attribute id="UUID" type="guid" value="6c7d8e9f-0a1b-2c3d-4e5f-6a7b8c9d0e1f"/>
+                </node>
+
+                <!-- FURY LEVEL 13 - Specialization Choice: Mountain Thane OR Slayer -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="Fury Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="4c5d6e7f-8a9b-0c1d-2e3f-4a5b6c7d8e9f"/>
+                    <attribute id="UUID" type="guid" value="7d8e9f0a-1b2c-3d4e-5f6a-7b8c9d0e1f2a"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="SelectPassives">
+                                    <attribute id="Amount" type="uint8" value="1"/>
+                                    <attribute id="UUID" type="guid" value="8e9f0a1b-2c3d-4e5f-6a7b-8c9d0e1f2a3b"/>
+                                    <children>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="9f0a1b2c-3d4e-5f6a-7b8c-9d0e1f2a3b4c"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_MountainThane_Keystone"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="0a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Slayer_Keystone"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- FURY LEVEL 15 - Specialization Tier 1 Choice -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="Fury Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="4c5d6e7f-8a9b-0c1d-2e3f-4a5b6c7d8e9f"/>
+                    <attribute id="UUID" type="guid" value="1b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <!-- Mountain Thane Tier 1 Choices -->
+                                <node id="SelectPassives">
+                                    <attribute id="Amount" type="uint8" value="1"/>
+                                    <attribute id="Requirement" type="LSString" value="HasPassive('WAR_MountainThane_Keystone')"/>
+                                    <attribute id="UUID" type="guid" value="2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f"/>
+                                    <children>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="3d4e5f6a-7b8c-9d0e-1f2a-3b4c5d6e7f8a"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_MountainThane_LightningStrikes"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_MountainThane_BurstOfPower"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="5f6a7b8c-9d0e-1f2a-3b4c-5d6e7f8a9b0c"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_MountainThane_CrashingThunder"/>
+                                        </node>
+                                    </children>
+                                </node>
+                                <!-- Slayer Tier 1 Choices -->
+                                <node id="SelectPassives">
+                                    <attribute id="Amount" type="uint8" value="1"/>
+                                    <attribute id="Requirement" type="LSString" value="HasPassive('WAR_Slayer_Keystone')"/>
+                                    <attribute id="UUID" type="guid" value="6a7b8c9d-0e1f-2a3b-4c5d-6e7f8a9b0c1d"/>
+                                    <children>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="7b8c9d0e-1f2a-3b4c-5d6e-7f8a9b0c1d2e"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Slayer_BrutalFinish"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="8c9d0e1f-2a3b-4c5d-6e7f-8a9b0c1d2e3f"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Slayer_ImminentDemise"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="9d0e1f2a-3b4c-5d6e-7f8a-9b0c1d2e3f4a"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Slayer_OverwhelmingBlades"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- FURY LEVEL 17 - Specialization Tier 2 Choice -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="Fury Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="4c5d6e7f-8a9b-0c1d-2e3f-4a5b6c7d8e9f"/>
+                    <attribute id="UUID" type="guid" value="0e1f2a3b-4c5d-6e7f-8a9b-0c1d2e3f4a5b"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <!-- Mountain Thane Tier 2 Choices -->
+                                <node id="SelectPassives">
+                                    <attribute id="Amount" type="uint8" value="1"/>
+                                    <attribute id="Requirement" type="LSString" value="HasPassive('WAR_MountainThane_Keystone')"/>
+                                    <attribute id="UUID" type="guid" value="1f2a3b4c-5d6e-7f8a-9b0c-1d2e3f4a5b6c"/>
+                                    <children>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="2a3b4c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_MountainThane_ThunderBlast"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="3b4c5d6e-7f8a-9b0c-1d2e-3f4a5b6c7d8e"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_MountainThane_GroundCurrent"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="4c5d6e7f-8a9b-0c1d-2e3f-4a5b6c7d8e9f"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_MountainThane_ThorimsMight"/>
+                                        </node>
+                                    </children>
+                                </node>
+                                <!-- Slayer Tier 2 Choices -->
+                                <node id="SelectPassives">
+                                    <attribute id="Amount" type="uint8" value="1"/>
+                                    <attribute id="Requirement" type="LSString" value="HasPassive('WAR_Slayer_Keystone')"/>
+                                    <attribute id="UUID" type="guid" value="5d6e7f8a-9b0c-1d2e-3f4a-5b6c7d8e9f0a"/>
+                                    <children>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="6e7f8a9b-0c1d-2e3f-4a5b-6c7d8e9f0a1b"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Slayer_CullingCyclone"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="7f8a9b0c-1d2e-3f4a-5b6c-7d8e9f0a1b2c"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Slayer_Opportunist"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="8a9b0c1d-2e3f-4a5b-6c7d-8e9f0a1b2c3d"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Slayer_OverwhelmingBlades2"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- FURY LEVEL 19 - Specialization Tier 3 Choice -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="Fury Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="4c5d6e7f-8a9b-0c1d-2e3f-4a5b6c7d8e9f"/>
+                    <attribute id="UUID" type="guid" value="9b0c1d2e-3f4a-5b6c-7d8e-9f0a1b2c3d4e"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <!-- Mountain Thane Tier 3 Choices -->
+                                <node id="SelectPassives">
+                                    <attribute id="Amount" type="uint8" value="1"/>
+                                    <attribute id="Requirement" type="LSString" value="HasPassive('WAR_MountainThane_Keystone')"/>
+                                    <attribute id="UUID" type="guid" value="0c1d2e3f-4a5b-6c7d-8e9f-0a1b2c3d4e5f"/>
+                                    <children>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="1d2e3f4a-5b6c-7d8e-9f0a-1b2c3d4e5f6a"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_MountainThane_StrengthOfMountain"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="2e3f4a5b-6c7d-8e9f-0a1b-2c3d4e5f6a7b"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_MountainThane_KeepYourFeet"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="3f4a5b6c-7d8e-9f0a-1b2c-3d4e5f6a7b8c"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_MountainThane_SteadfastPeaks"/>
+                                        </node>
+                                    </children>
+                                </node>
+                                <!-- Slayer Tier 3 Choices -->
+                                <node id="SelectPassives">
+                                    <attribute id="Amount" type="uint8" value="1"/>
+                                    <attribute id="Requirement" type="LSString" value="HasPassive('WAR_Slayer_Keystone')"/>
+                                    <attribute id="UUID" type="guid" value="4a5b6c7d-8e9f-0a1b-2c3d-4e5f6a7b8c9d"/>
+                                    <children>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="5b6c7d8e-9f0a-1b2c-3d4e-5f6a7b8c9d0e"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Slayer_ShowNoMercy"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="6c7d8e9f-0a1b-2c3d-4e5f-6a7b8c9d0e1f"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Slayer_ReapTheStorm"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="7d8e9f0a-1b2c-3d4e-5f6a-7b8c9d0e1f2a"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Slayer_ImminentDemise2"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- FURY LEVEL 20 - Specialization Capstone (Automatic based on L13 choice) -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="Fury Warrior"/>
+                    <attribute id="PassivesAdded" type="LSString" value="IF(HasPassive('WAR_MountainThane_Keystone')):ApplyStatus(SELF,WAR_MountainThane_GatheringStorms);IF(HasPassive('WAR_Slayer_Keystone')):ApplyStatus(SELF,WAR_Slayer_Malice)"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="4c5d6e7f-8a9b-0c1d-2e3f-4a5b6c7d8e9f"/>
+                    <attribute id="UUID" type="guid" value="8e9f0a1b-2c3d-4e5f-6a7b-8c9d0e1f2a3b"/>
+                </node>
+
+                <!-- =====================================================
+                     PROTECTION WARRIOR SUBCLASS PROGRESSION
+                     UUID: 6d7e8f9a-0b1c-2d3e-4f5a-6b7c8d9e0f1a
+                     ===================================================== -->
+
+                <!-- PROTECTION LEVEL 1 - Shield Specialization Passive -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="Protection Warrior"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_PROT_ShieldSpecialization"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="6d7e8f9a-0b1c-2d3e-4f5a-6b7c8d9e0f1a"/>
+                    <attribute id="UUID" type="guid" value="9f0a1b2c-3d4e-5f6a-7b8c-9d0e1f2a3b4c"/>
+                </node>
+
+                <!-- PROTECTION LEVEL 3 - Shield Slam, Shield Block & Taunt -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="Protection Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="6d7e8f9a-0b1c-2d3e-4f5a-6b7c8d9e0f1a"/>
+                    <attribute id="UUID" type="guid" value="0a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="Spells" type="LSString" value="Target_WAR_ShieldSlam;Shout_WAR_ShieldBlock;Target_WAR_Taunt"/>
+                                    <attribute id="UUID" type="guid" value="1b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- PROTECTION LEVEL 5 - Intervene -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="Protection Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="6d7e8f9a-0b1c-2d3e-4f5a-6b7c8d9e0f1a"/>
+                    <attribute id="UUID" type="guid" value="2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="Spells" type="LSString" value="Jump_WAR_Intervene"/>
+                                    <attribute id="UUID" type="guid" value="3d4e5f6a-7b8c-9d0e-1f2a-3b4c5d6e7f8a"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- PROTECTION LEVEL 7 - Revenge & Last Stand -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="7"/>
+                    <attribute id="Name" type="LSString" value="Protection Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="6d7e8f9a-0b1c-2d3e-4f5a-6b7c8d9e0f1a"/>
+                    <attribute id="UUID" type="guid" value="4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="Spells" type="LSString" value="Zone_WAR_Revenge;Target_WAR_LastStand"/>
+                                    <attribute id="UUID" type="guid" value="5f6a7b8c-9d0e-1f2a-3b4c-5d6e7f8a9b0c"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- PROTECTION LEVEL 9 - Shield Wall -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="9"/>
+                    <attribute id="Name" type="LSString" value="Protection Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="6d7e8f9a-0b1c-2d3e-4f5a-6b7c8d9e0f1a"/>
+                    <attribute id="UUID" type="guid" value="6a7b8c9d-0e1f-2a3b-4c5d-6e7f8a9b0c1d"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="Spells" type="LSString" value="Target_WAR_ShieldWall"/>
+                                    <attribute id="UUID" type="guid" value="7b8c9d0e-1f2a-3b4c-5d6e-7f8a9b0c1d2e"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- PROTECTION LEVEL 11 - Shockwave -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="11"/>
+                    <attribute id="Name" type="LSString" value="Protection Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="6d7e8f9a-0b1c-2d3e-4f5a-6b7c8d9e0f1a"/>
+                    <attribute id="UUID" type="guid" value="8c9d0e1f-2a3b-4c5d-6e7f-8a9b0c1d2e3f"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="Spells" type="LSString" value="WAR_PROT_Shockwave"/>
+                                    <attribute id="UUID" type="guid" value="9d0e1f2a-3b4c-5d6e-7f8a-9b0c1d2e3f4a"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- PROTECTION LEVEL 13 - Specialization Choice: Mountain Thane OR Colossus -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="Protection Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="6d7e8f9a-0b1c-2d3e-4f5a-6b7c8d9e0f1a"/>
+                    <attribute id="UUID" type="guid" value="0e1f2a3b-4c5d-6e7f-8a9b-0c1d2e3f4a5b"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="SelectPassives">
+                                    <attribute id="Amount" type="uint8" value="1"/>
+                                    <attribute id="UUID" type="guid" value="1f2a3b4c-5d6e-7f8a-9b0c-1d2e3f4a5b6c"/>
+                                    <children>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="2a3b4c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_MountainThane_Keystone"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="3b4c5d6e-7f8a-9b0c-1d2e-3f4a5b6c7d8e"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Colossus_Keystone"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- PROTECTION LEVEL 15 - Specialization Tier 1 Choice -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="Protection Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="6d7e8f9a-0b1c-2d3e-4f5a-6b7c8d9e0f1a"/>
+                    <attribute id="UUID" type="guid" value="4c5d6e7f-8a9b-0c1d-2e3f-4a5b6c7d8e9f"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <!-- Mountain Thane Tier 1 Choices -->
+                                <node id="SelectPassives">
+                                    <attribute id="Amount" type="uint8" value="1"/>
+                                    <attribute id="Requirement" type="LSString" value="HasPassive('WAR_MountainThane_Keystone')"/>
+                                    <attribute id="UUID" type="guid" value="5d6e7f8a-9b0c-1d2e-3f4a-5b6c7d8e9f0a"/>
+                                    <children>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="6e7f8a9b-0c1d-2e3f-4a5b-6c7d8e9f0a1b"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_MountainThane_LightningStrikes"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="7f8a9b0c-1d2e-3f4a-5b6c-7d8e9f0a1b2c"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_MountainThane_BurstOfPower"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="8a9b0c1d-2e3f-4a5b-6c7d-8e9f0a1b2c3d"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_MountainThane_CrashingThunder"/>
+                                        </node>
+                                    </children>
+                                </node>
+                                <!-- Colossus Tier 1 Choices -->
+                                <node id="SelectPassives">
+                                    <attribute id="Amount" type="uint8" value="1"/>
+                                    <attribute id="Requirement" type="LSString" value="HasPassive('WAR_Colossus_Keystone')"/>
+                                    <attribute id="UUID" type="guid" value="9b0c1d2e-3f4a-5b6c-7d8e-9f0a1b2c3d4e"/>
+                                    <children>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="0c1d2e3f-4a5b-6c7d-8e9f-0a1b2c3d4e5f"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Colossus_NoStrangerToPain"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="1d2e3f4a-5b6c-7d8e-9f0a-1b2c3d4e5f6a"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Colossus_VeteranVitality"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="2e3f4a5b-6c7d-8e9f-0a1b-2c3d4e5f6a7b"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Colossus_OneAgainstMany"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- PROTECTION LEVEL 17 - Specialization Tier 2 Choice -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="Protection Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="6d7e8f9a-0b1c-2d3e-4f5a-6b7c8d9e0f1a"/>
+                    <attribute id="UUID" type="guid" value="3f4a5b6c-7d8e-9f0a-1b2c-3d4e5f6a7b8c"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <!-- Mountain Thane Tier 2 Choices -->
+                                <node id="SelectPassives">
+                                    <attribute id="Amount" type="uint8" value="1"/>
+                                    <attribute id="Requirement" type="LSString" value="HasPassive('WAR_MountainThane_Keystone')"/>
+                                    <attribute id="UUID" type="guid" value="4a5b6c7d-8e9f-0a1b-2c3d-4e5f6a7b8c9d"/>
+                                    <children>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="5b6c7d8e-9f0a-1b2c-3d4e-5f6a7b8c9d0e"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_MountainThane_ThunderBlast"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="6c7d8e9f-0a1b-2c3d-4e5f-6a7b8c9d0e1f"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_MountainThane_GroundCurrent"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="7d8e9f0a-1b2c-3d4e-5f6a-7b8c9d0e1f2a"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_MountainThane_ThorimsMight"/>
+                                        </node>
+                                    </children>
+                                </node>
+                                <!-- Colossus Tier 2 Choices -->
+                                <node id="SelectPassives">
+                                    <attribute id="Amount" type="uint8" value="1"/>
+                                    <attribute id="Requirement" type="LSString" value="HasPassive('WAR_Colossus_Keystone')"/>
+                                    <attribute id="UUID" type="guid" value="8e9f0a1b-2c3d-4e5f-6a7b-8c9d0e1f2a3b"/>
+                                    <children>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="9f0a1b2c-3d4e-5f6a-7b8c-9d0e1f2a3b4c"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Colossus_PracticedStrikes"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="0a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Colossus_ArterialBleed"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="1b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Colossus_Earthquaker"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- PROTECTION LEVEL 19 - Specialization Tier 3 Choice -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="Protection Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="6d7e8f9a-0b1c-2d3e-4f5a-6b7c8d9e0f1a"/>
+                    <attribute id="UUID" type="guid" value="2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <!-- Mountain Thane Tier 3 Choices -->
+                                <node id="SelectPassives">
+                                    <attribute id="Amount" type="uint8" value="1"/>
+                                    <attribute id="Requirement" type="LSString" value="HasPassive('WAR_MountainThane_Keystone')"/>
+                                    <attribute id="UUID" type="guid" value="3d4e5f6a-7b8c-9d0e-1f2a-3b4c5d6e7f8a"/>
+                                    <children>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_MountainThane_StrengthOfMountain"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="5f6a7b8c-9d0e-1f2a-3b4c-5d6e7f8a9b0c"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_MountainThane_KeepYourFeet"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="6a7b8c9d-0e1f-2a3b-4c5d-6e7f8a9b0c1d"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_MountainThane_SteadfastPeaks"/>
+                                        </node>
+                                    </children>
+                                </node>
+                                <!-- Colossus Tier 3 Choices -->
+                                <node id="SelectPassives">
+                                    <attribute id="Amount" type="uint8" value="1"/>
+                                    <attribute id="Requirement" type="LSString" value="HasPassive('WAR_Colossus_Keystone')"/>
+                                    <attribute id="UUID" type="guid" value="7b8c9d0e-1f2a-3b4c-5d6e-7f8a9b0c1d2e"/>
+                                    <children>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="8c9d0e1f-2a3b-4c5d-6e7f-8a9b0c1d2e3f"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Colossus_MartialExpert"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="9d0e1f2a-3b4c-5d6e-7f8a-9b0c1d2e3f4a"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Colossus_TideOfBattle"/>
+                                        </node>
+                                        <node id="Passive">
+                                            <attribute id="UUID" type="guid" value="0e1f2a3b-4c5d-6e7f-8a9b-0c1d2e3f4a5b"/>
+                                            <attribute id="Tag" type="LSString" value="WAR_Colossus_DemolishShockwave"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+
+                <!-- PROTECTION LEVEL 20 - Specialization Capstone (Automatic based on L13 choice) -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="Protection Warrior"/>
+                    <attribute id="PassivesAdded" type="LSString" value="IF(HasPassive('WAR_MountainThane_Keystone')):ApplyStatus(SELF,WAR_MountainThane_GatheringStorms);IF(HasPassive('WAR_Colossus_Keystone')):ApplyStatus(SELF,WAR_Colossus_PreciseMight)"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="6d7e8f9a-0b1c-2d3e-4f5a-6b7c8d9e0f1a"/>
+                    <attribute id="UUID" type="guid" value="1f2a3b4c-5d6e-7f8a-9b0c-1d2e3f4a5b6c"/>
+                </node>
+
+            </children>
+        </node>
+    </region>
+</save>
