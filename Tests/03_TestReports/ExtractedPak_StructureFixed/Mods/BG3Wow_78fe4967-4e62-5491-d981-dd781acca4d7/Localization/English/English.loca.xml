@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+    
+    <!-- ========================================
+         CLASS AND SUBCLASS DESCRIPTIONS
+         Used in ClassDescriptions.lsx
+         ========================================
+    -->
+    
+    <!-- Warrior Base Class -->
+    <content contentuid="h5a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d" version="1">Warrior</content>
+    <content contentuid="hd78e30ba1c9e4f9bb0c9aa1f8e9c7d2a" version="1">Masters of martial combat who harness Rage to fuel devastating abilities. Warriors excel with both massive two-handed weapons and sword-and-board tactics, adapting to any battle.</content>
+    
+    <!-- Arms Warrior Subclass -->
+    <content contentuid="h9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f" version="1">Arms Warrior</content>
+    <content contentuid="h1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d" version="1">A master of two-handed weapons who delivers crushing blows and mortal strikes. Arms Warriors specialize in controlled, powerful attacks that tear through armor and leave enemies bleeding.</content>
+    <content contentuid="h2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e" version="1">Specialization</content>
+    
+    <!-- Fury Warrior Subclass -->
+    <content contentuid="h4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f" version="1">Fury Warrior</content>
+    <content contentuid="h3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e" version="1">A relentless berserker who dual-wields weapons with reckless abandon. Fury Warriors thrive in extended combat, building rage through a flurry of strikes and entering an enraged state of unstoppable fury.</content>
+    <content contentuid="h5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a" version="1">Specialization</content>
+    
+    <!-- Protection Warrior Subclass -->
+    <content contentuid="h6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a" version="1">Protection Warrior</content>
+    <content contentuid="h5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f" version="1">An indomitable defender who uses shield and heavy armor to protect allies. Protection Warriors generate rage through absorbing and blocking attacks, becoming an immovable wall between their party and danger.</content>
+    <content contentuid="h7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b" version="1">Specialization</content>
+    
+    <!-- ========================================
+         BASELINE WARRIOR ABILITIES
+         Handles: h125abc01-h125abc20
+         ========================================
+    -->
+    
+    <!-- Charge -->
+    <content contentuid="h125abc01" version="1">Charge</content>
+    <content contentuid="h125abc02" version="4">Charge forward, rushing to an enemy and striking them.
+
+Deal [1] damage and generate [2] Rage.
+Knock the target [3] for [4] turn.
+
+Action • 18m range
+
+Tags: Generator, Gap-Closer, Control</content>
+    
+    <!-- Mortal Strike -->
+    <content contentuid="h125abc03" version="1">Mortal Strike</content>
+    <content contentuid="h125abc04" version="3">A vicious strike that deals heavy damage and prevents healing.
+
+Deal [1] damage and spend [2] Rage.
+Reduce healing received by [3]% for 2 turns.
+
+Action • Melee • 30 Rage
+
+Tags: Spender, Damage, Healing Reduction</content>
+    
+    <!-- Execute -->
+    <content contentuid="h125abc05" version="1">Execute</content>
+    <content contentuid="h125abc06" version="3">Finish off a wounded foe with a devastating blow.
+
+Deal [1] damage and spend [2] Rage.
+Can only be used on targets below [3]% health.
+
+Action • Melee • 10 Rage
+
+Tags: Spender, Execute, High-Damage</content>
+    
+    <!-- Overpower (Spell & Passive) -->
+    <content contentuid="h125abc07" version="1">Overpower</content>
+    <content contentuid="h125abc08" version="2">Overwhelm the enemy, ignoring half their armor.
+
+Deal [1] damage and spend [2] Rage.
+Ignores 50% of the target's AC.
+
+Action • Melee • 10 Rage
+
+Tags: Spender, Armor-Penetration, Damage</content>
+    
+    <!-- Victory Rush -->
+    <content contentuid="h125abc09" version="1">Victory Rush</content>
+    <content contentuid="h125abc10" version="4">Strike out after a victorious kill, healing your wounds.
+
+Deal [1] damage and heal for [2].
+Generate [3] Rage.
+Requires a recent kill to use (2 turns after killing an enemy).
+
+Action • Melee
+
+Tags: Damage, Healing, Generator, Conditional</content>
+    
+    <!-- Whirlwind (Zone & Passive) -->
+    <content contentuid="h125abc11" version="1">Whirlwind</content>
+    <content contentuid="h125abc12" version="2">Spin in a deadly circle, striking all nearby enemies.
+
+Deal [1] to all enemies within 3m.
+Generate [2] Rage per enemy hit.
+
+Action • 3m AoE
+
+Tags: Generator, AoE, Melee</content>
+    
+    <!-- Thunder Clap (Zone & Passive) -->
+    <content contentuid="h125abc13" version="1">Thunder Clap</content>
+    <content contentuid="h125abc14" version="2">Slam the ground with thunderous force.
+
+Deal [1] Thunder damage to enemies in a 3m radius.
+Generate [2] Rage per enemy hit.
+
+Action • 3m AoE
+
+Tags: Generator, AoE, Thunder-Damage</content>
+    
+    <!-- Piercing Howl (Zone & Passive) -->
+    <content contentuid="h125abc15" version="1">Piercing Howl</content>
+    <content contentuid="h125abc16" version="3">Let loose a howl that slows nearby enemies.
+
+Enemies within 3m radius must make a Wisdom save or be Slowed.
+Slowed for [1] turns ([2]% movement, Disadvantage on Dex saves).
+Generate [3] Rage per enemy affected.
+
+Action • 3m AoE • DC 14 Wisdom Save
+
+Tags: Control, AoE, Utility, Generator</content>
+    
+    <!-- Shockwave (Zone & Passive) -->
+    <content contentuid="h125abc17" version="1">Shockwave</content>
+    <content contentuid="h125abc18" version="3">Send a shockwave through the ground, stunning enemies.
+
+Deal [1] damage in a 6m cone.
+Targets must make a Strength save or be Stunned for [2] turns.
+Generate [3] Rage per enemy hit.
+
+Action • 6m Cone • DC 14 Strength Save
+
+Tags: Control, AoE, Stun, Damage, Generator</content>
+    
+    <!-- Rage Management Passive -->
+    <content contentuid="h125abc19" version="1">Rage Resource</content>
+    <content contentuid="h125abc20" version="1">The warrior's burning fury, fueling their most powerful abilities. Maximum 100 Rage.</content>
+    
+    <!-- Enrage Passive -->
+    <content contentuid="h125abc21" version="1">Enrage</content>
+    <content contentuid="h125abc22" version="1">Gain Rage when dealing or receiving damage in combat.</content>
+    
+    <!-- Colossus Smash Status -->
+    <content contentuid="h125abc23" version="1">Colossus Smash</content>
+    <content contentuid="h125abc24" version="2">Armor completely shattered. Physical resistance reduced by [1]% and Armor Class reduced by [2].</content>
+    
+    <!-- Sweeping Strikes Status -->
+    <content contentuid="h125abc25" version="1">Sweeping Strikes</content>
+    <content contentuid="h125abc26" version="4">Your melee attacks cleave to [1] additional nearby enemy for [2]% damage for [3] attacks or [4] turns.</content>
+    
+    <!-- Rend DoT Status -->
+    <content contentuid="h125abc27" version="1">Rend</content>
+    <content contentuid="h125abc28" version="1">Bleeding profusely. Takes slashing damage at the start of each turn.</content>
+    
+    <!-- Skullsplitter Buff -->
+    <content contentuid="h125abc29" version="1">Skullsplitter</content>
+    <content contentuid="h125abc30" version="1">Rage generation increased after a critical strike.</content>
+    
+    <!-- Tactician Status -->
+    <content contentuid="h125abc31" version="1">Tactician</content>
+    <content contentuid="h125abc32" version="1">Increased critical hit chance and tactical awareness.</content>
+    
+    <!-- Shield Block Status -->
+    <content contentuid="h125abc33" version="1">Shield Block</content>
+    <content contentuid="h125abc34" version="2">Blocking incoming attacks. [1]% of blocked damage returned as healing and Shield Slam damage increased by [2]%.</content>
+    
+    <!-- Battle Shout Status -->
+    <content contentuid="h125abc35" version="1">Battle Shout</content>
+    <content contentuid="h125abc36" version="1">Empowered for battle. +2 to Attack Rolls and Damage Rolls.</content>
+    
+    <!-- Defensive Stance Status -->
+    <content contentuid="h125abc37" version="1">Defensive Stance</content>
+    <content contentuid="h125abc38" version="1">In a defensive position. Resistant to physical damage (take 10% less).</content>
+    
+    <!-- Charge Target (Execute Phase) -->
+    <content contentuid="h125abc39" version="1">Charge</content>
+    <content contentuid="h125abc40" version="4">Rush to the target and strike them down.
+
+Deal [1] damage, generate [2] Rage.
+Knock target [3] for [4] turn.
+
+Action • 18m
+
+Tags: Generator, Gap-Closer, Control</content>
+    
+    <!-- Charge Rage Generation Status -->
+    <content contentuid="h125abc47" version="1">Charge: Rage</content>
+    <content contentuid="h125abc48" version="1">Generating Rage from Charge.</content>
+    
+    <!-- Die by the Sword -->
+    <content contentuid="h125abc43" version="1">Die by the Sword</content>
+    <content contentuid="h125abc44" version="1">Become untouchable, parrying all attacks for 3 turns. Grants +100 AC.
+
+Action • Long Rest
+
+Tags: Defensive, Survival, Cooldown</content>
+    
+    <!-- Rallying Cry -->
+    <content contentuid="h125abc45" version="1">Rallying Cry</content>
+    <content contentuid="h125abc46" version="1">Rally your party, granting temporary hit points to all nearby allies.
+
+Action + Bonus Action • 10 Turn Cooldown
+
+Tags: Utility, Party-Buff, Defensive</content>
+    
+    <!-- Die by the Sword Status -->
+    <content contentuid="h125abc51" version="1">Die by the Sword</content>
+    <content contentuid="h125abc52" version="1">Untouchable! Parrying all incoming attacks. +100 AC.</content>
+    
+    <!-- Rallying Cry Temp HP Status -->
+    <content contentuid="h125abc53" version="1">Rallying Cry</content>
+    <content contentuid="h125abc54" version="1">Temporary hit points from Rallying Cry.</content>
+    
+    <!-- Battle Shout (Spell) -->
+    <content contentuid="h125abc55" version="1">Battle Shout</content>
+    <content contentuid="h125abc56" version="3">Let loose a battle cry, inspiring your allies to fight harder.
+
+Grant yourself and nearby allies +[1] to Attack Rolls and +[2] Damage Rolls for [3] turns.
+
+Bonus Action • 3m AoE • 10 Turn Cooldown
+
+Tags: Party-Buff, Utility</content>
+    
+    <!-- Rallying Cry (Spell) -->
+    <content contentuid="h125abc57" version="1">Rallying Cry</content>
+    <content contentuid="h125abc58" version="2">Rally your allies, granting them temporary hit points.
+
+Grant [1] temporary HP to all allies within 9m.
+Costs both Action and Bonus Action.
+
+Action + Bonus Action • 9m AoE • 10 Turn Cooldown
+
+Tags: Defensive, Party-Buff, Healing</content>
+    
+    <!-- Intimidating Shout (Spell) -->
+    <content contentuid="h125abc59" version="1">Intimidating Shout</content>
+    <content contentuid="h125abc60" version="3">Strike fear into the hearts of your enemies.
+
+Enemies within 9m must make a Wisdom save or be Frightened for [1] turns.
+Costs [2] Rage.
+DC [3] Wisdom Save.
+
+Action • 9m AoE • 10 Rage • 10 Turn Cooldown
+
+Tags: Control, Fear, AoE</content>
+    
+    <!-- Hamstring Status -->
+    <content contentuid="h125abc61" version="1">Hamstrung</content>
+    <content contentuid="h125abc62" version="1">Movement severely impaired. Movement speed reduced by 50%.</content>
+    
+    <!-- Heroic Leap (Jump) -->
+    <content contentuid="h125abc63" version="1">Heroic Leap</content>
+    <content contentuid="h125abc64" version="3">Leap through the air to a location, damaging enemies on landing.
+
+Deal [1] damage to enemies within 3m of landing.
+Generate [2] Rage per enemy hit.
+Leap distance: [3]m.
+
+Action • 18m • Short Rest
+
+Tags: Gap-Closer, AoE, Damage, Generator</content>
+    
+    <!-- Hamstring (Spell) -->
+    <content contentuid="h125abc65" version="1">Hamstring</content>
+    <content contentuid="h125abc66" version="2">Cripple an enemy's movement.
+
+Reduce target's movement speed by [1]% for [2] turns.
+
+Bonus Action • Melee
+
+Tags: Utility, Control, Movement-Impairment</content>
+    
+    <!-- Heroic Throw (Spell) -->
+    <content contentuid="h125abc67" version="1">Heroic Throw</content>
+    <content contentuid="h125abc68" version="3">Hurl your weapon at a distant enemy, then recall it instantly.
+
+Deal [1] damage at range.
+Generate [2] Rage.
+Can be used from [3]m away.
+
+Action • 18m • Ranged Attack
+
+Tags: Generator, Ranged, Damage</content>
+    
+    <!-- Pummel (Spell) -->
+    <content contentuid="h125abc69" version="1">Pummel</content>
+    <content contentuid="h125abc70" version="2">Strike quickly to interrupt spellcasting.
+
+Interrupt target's spellcasting.
+Silence them for [1] turn.
+Costs [2] Rage.
+
+Bonus Action • Melee • 10 Rage
+
+Tags: Interrupt, Control, Counter-Spell</content>
+    
+    <!-- Slam (Spell) -->
+    <content contentuid="h125abc71" version="1">Slam</content>
+    <content contentuid="h125abc72" version="3">Slam the enemy with brutal force.
+
+Deal [1] damage.
+Generate [2] Rage.
+Costs [3] Rage to use.
+
+Action • Melee • 10 Rage
+
+Tags: Generator, Damage</content>
+    
+    <!-- Berserker Rage (Spell) -->
+    <content contentuid="h125abc73" version="1">Berserker Rage</content>
+    <content contentuid="h125abc74" version="2">Enter a berserk state, breaking free of control effects.
+
+Remove Fear, Charm, and Incapacitated conditions.
+Immunity to them for [1] turns.
+Generate [2] Rage.
+
+Bonus Action
+
+Tags: Utility, Condition-Removal, Self-Buff</content>
+    
+    <!-- Storm Bolt (Spell) -->
+    <content contentuid="h125abc75" version="1">Storm Bolt</content>
+    <content contentuid="h125abc76" version="1">Hurl a lightning-charged missile at the enemy, stunning them.
+
+Deal 3d8 Thunder damage at range.
+Stun target for 1 turn (DC 14 Constitution save).
+Generate 10 Rage.
+
+Action • 18m • Short Rest
+
+Tags: Control, Stun, Thunder-Damage, Ranged, Generator</content>
+    
+    <!-- Warbreaker (Arms Ability) -->
+    <content contentuid="h125abc77" version="1">Warbreaker</content>
+    <content contentuid="h125abc78" version="4">Smash the ground, shattering enemy armor in a wide area.
+
+Deal [1] damage to all enemies in 3m radius.
+Reduce their AC by [2] for [3] turns.
+Generate [4] Rage per enemy hit.
+
+Action • 3m AoE • Short Rest
+
+Tags: Spender, AoE, Armor-Reduction, Arms</content>
+    
+    <!-- Bladestorm (Arms Channel) -->
+    <content contentuid="h125abc79" version="1">Bladestorm</content>
+    <content contentuid="h125abc80" version="2">Become a whirling storm of steel, dealing damage each turn.
+
+Deal [1] to enemies in a 3m cone each turn.
+Lasts [2] turns. Channeled ability.
+Costs 30 Rage.
+
+Action • Channeled • 30 Rage • Long Rest
+
+Tags: Spender, Channeled, AoE, Arms</content>
+    
+    <!-- Overpower Status (Arms) -->
+    <content contentuid="h125abc81" version="1">Overpower</content>
+    <content contentuid="h125abc82" version="1">Next attack ignores 50% of target's AC.</content>
+    
+    <!-- Sweeping Strikes Buff (Arms) -->
+    <content contentuid="h125abc83" version="1">Sweeping Strikes</content>
+    <content contentuid="h125abc84" version="1">Your attacks cleave to an additional nearby target.</content>
+    
+    <!-- Rend Status (Arms) -->
+    <content contentuid="h125abc85" version="1">Rend</content>
+    <content contentuid="h125abc86" version="2">Bleeding from a grievous wound. Takes [1] Slashing damage per turn for [2] turns.</content>
+    
+    <!-- Skullsplitter Buff (Arms) -->
+    <content contentuid="h125abc87" version="1">Skullsplitter</content>
+    <content contentuid="h125abc88" version="1">Generating additional Rage from a crushing blow to the skull.</content>
+    
+    <!-- Deadly Calm (Arms) -->
+    <content contentuid="h125abc89" version="1">Deadly Calm</content>
+    <content contentuid="h125abc90" version="1">Perfect focus. All abilities cost 0 Rage for 6 turns.
+
+Action • Short Rest
+
+Tags: Utility, Resource-Management, Arms</content>
+    
+    <!-- Sundered Armor (Warbreaker Debuff) -->
+    <content contentuid="h125abc91" version="1">Sundered Armor</content>
+    <content contentuid="h125abc92" version="1">Armor shattered by Warbreaker. -2 AC.</content>
+    
+    <!-- Bladestorm Status (Arms) -->
+    <content contentuid="h125abc93" version="1">Bladestorm</content>
+    <content contentuid="h125abc94" version="2">Whirling in a deadly storm of blades. Dealing [1] in a cone each turn for [2] turns.</content>
+    
+    <!-- Colossus Smash (Spell) -->
+    <content contentuid="h125abc95" version="1">Colossus Smash</content>
+    <content contentuid="h125abc96" version="2">A mighty overhead strike that completely shatters enemy defenses.
+
+Deal [1] damage and spend 20 Rage.
+Reduce target's physical resistance by 20% and AC by -3 for 4 turns.
+
+Action • Melee • 20 Rage • Short Rest
+
+Tags: Spender, Armor-Reduction, Debuff, Arms</content>
+    
+    <!-- Sweeping Strikes (Spell) -->
+    <content contentuid="h125abc97" version="1">Sweeping Strikes</content>
+    <content contentuid="h125abc98" version="2">Your melee attacks cleave to hit an additional enemy.
+
+For [1] turns, your attacks hit [2] additional nearby target for 100% damage.
+
+Bonus Action • Short Rest
+
+Tags: Utility, Cleave, Multi-Target, Arms</content>
+    
+    <!-- Rend (Spell) -->
+    <content contentuid="h125abc99" version="1">Rend</content>
+    <content contentuid="h125abc100" version="2">Tear into the enemy, causing them to bleed profusely.
+
+Apply a bleed that deals [1] Slashing damage per turn for [2] turns.
+Costs 10 Rage.
+
+Action • Melee • 10 Rage
+
+Tags: Damage-over-Time, Bleed, Arms</content>
+    
+    <!-- Skullsplitter (Spell) -->
+    <content contentuid="h125abc101" version="1">Skullsplitter</content>
+    <content contentuid="h125abc102" version="2">Crush the enemy's skull, generating massive Rage.
+
+Deal [1] damage.
+Generate [2] Rage.
+
+Action • Melee
+
+Tags: Generator, Damage, Arms</content>
+    
+    <!-- Demolish (Spell) -->
+    <content contentuid="h125abc103" version="1">Demolish</content>
+    <content contentuid="h125abc104" version="1">Demolish your foe with overwhelming force. A devastating attack that combines raw power with tactical precision.
+
+Action • Melee • 25 Rage
+
+Tags: Spender, High-Damage, Arms</content>
+    
+    <!-- Heroic Throw (Projectile) -->
+    <content contentuid="h125abc105" version="1">Heroic Throw</content>
+    <content contentuid="h125abc106" version="2">Throw your weapon at a distant enemy.
+
+Deal [1] Thunder damage.
+Generate [2] Rage.
+
+Action • 18m • Ranged
+
+Tags: Generator, Ranged, Thunder-Damage</content>
+    
+    <!-- Storm Bolt (Projectile) -->
+    <content contentuid="h125abc107" version="1">Storm Bolt</content>
+    <content contentuid="h125abc108" version="3">Hurl a lightning bolt at the target, stunning them.
+
+Deal [1] Thunder damage.
+Stun target for 1 turn (DC [2]).
+Generate [3] Rage.
+
+Action • 18m • Short Rest
+
+Tags: Control, Stun, Ranged, Thunder-Damage, Generator</content>
+    
+    <!-- Hamstrung Status -->
+    <content contentuid="h125abc109" version="1">Hamstrung</content>
+    <content contentuid="h125abc110" version="1">Legs crippled. Movement speed reduced by 50%.</content>
+    
+    <!-- Pummel Silence Status -->
+    <content contentuid="h125abc111" version="1">Pummeled</content>
+    <content contentuid="h125abc112" version="1">Unable to cast spells. Silenced.</content>
+    
+    <!-- Berserker Rage Buff Status -->
+    <content contentuid="h125abc113" version="1">Berserker Rage</content>
+    <content contentuid="h125abc114" version="1">In a berserker fury. Immune to Fear, Charm, and Incapacitated.</content>
+    
+    <!-- Storm Bolt Stun Status -->
+    <content contentuid="h125abc115" version="1">Storm Bolt Stun</content>
+    <content contentuid="h125abc116" version="1">Stunned by a lightning bolt. Cannot move or take actions.</content>
+    
+    <!-- Victory Rush: Victorious Status -->
+    <content contentuid="h125abc117" version="1">Victorious</content>
+    <content contentuid="h125abc118" version="1">Emboldened by a recent kill. Can use Victory Rush.</content>
+    
+    <!-- Victory Rush Passive -->
+    <content contentuid="h125abc119" version="1">Victory Rush: Enabler</content>
+    <content contentuid="h125abc120" version="1">After killing an enemy with a weapon attack, gain Victorious for 2 turns, allowing you to use Victory Rush.</content>
+    
+    <!-- ========================================
+         SUNDER ARMOR (Replacement for Heroic Strike)
+         Handles: h125abc121-h125abc128
+         ========================================
+    -->
+    
+    <!-- Sunder Armor Spell -->
+    <content contentuid="h125abc121" version="1">Sunder Armor</content>
+    <content contentuid="h125abc122" version="4">Strike at enemy armor, weakening their defenses.
+
+Deal [1] damage and generate [2] Rage.
+Reduce target's AC by -[3] for 5 turns (stacks up to [4] times).
+
+Action • Melee
+
+Tags: Generator, Armor-Reduction, Stacking-Debuff</content>
+    
+    <!-- Sundered Armor (Sunder Attack) Status -->
+    <content contentuid="h125abc123" version="1">Sundered Armor</content>
+    <content contentuid="h125abc124" version="2">Armor weakened by Sunder Armor attacks.
+
+-[1] AC per stack. Stacks up to [2] times.</content>
+    
+    <!-- Sunder Armor Rage Trigger Status -->
+    <content contentuid="h125abc127" version="1">Sunder Armor: Rage</content>
+    <content contentuid="h125abc128" version="1">Generating Rage from Sunder Armor.</content>
+    
+    <!-- ========================================
+         9 CRITICAL ABILITIES - CORRECTED HANDLES
+         Handles: h125abc129-h125abc146
+         ========================================
+    -->
+    
+    <!-- Execute (Target_WAR_Execute) -->
+    <content contentuid="h125abc129" version="1">Execute</content>
+    <content contentuid="h125abc130" version="4">Finish off a wounded foe with a devastating blow.
+
+Deal [1] damage and spend [2] Rage.
+Can only be used on targets below [3]% health (or [4]% with Massacre passive).
+
+Action • Melee • 20 Rage
+
+Tags: Spender, Execute, High-Damage</content>
+    
+    <!-- Shield Slam (Target_WAR_ShieldSlam) -->
+    <content contentuid="h125abc131" version="1">Shield Slam</content>
+    <content contentuid="h125abc132" version="3">Bash the enemy with your shield, dealing bludgeoning damage.
+
+Deal [1] damage (+[2]% while Shield Block is active).
+Generate [3] Rage on hit.
+
+Action • Melee
+
+Tags: Generator, Protection, Damage</content>
+    
+    <!-- Mortal Strike (Target_WAR_MortalStrike) -->
+    <content contentuid="h125abc133" version="1">Mortal Strike</content>
+    <content contentuid="h125abc134" version="3">A vicious strike that deals heavy damage and prevents healing.
+
+Deal [1] damage and apply Mortal Wound.
+Reduce healing received by [2]% for [3] turns.
+
+Action • Melee • 30 Rage
+
+Tags: Spender, Damage, Healing Reduction</content>
+    
+    <!-- Raging Blow (Target_WAR_RagingBlow) -->
+    <content contentuid="h125abc135" version="1">Raging Blow</content>
+    <content contentuid="h125abc136" version="2">Unleash a powerful strike while enraged.
+
+Deal [1] damage. Only usable while Enraged.
+Costs [2] Rage.
+
+Action • Melee • 15 Rage • Requires Enraged
+
+Tags: Spender, Fury, Damage</content>
+    
+    <!-- Avatar (Target_WAR_Avatar) -->
+    <content contentuid="h125abc137" version="1">Avatar</content>
+    <content contentuid="h125abc138" version="4">Transform into a warrior avatar, gaining immense power.
+
+Duration: [1] turns
+Generate [2] Rage per turn
+Deal +[3]% damage
+Take -[4]% damage
+
+Bonus Action • Long Rest
+
+Tags: Transformation, Buff, Cooldown</content>
+    
+    <!-- Revenge (Zone_WAR_Revenge) -->
+    <content contentuid="h125abc139" version="1">Revenge</content>
+    <content contentuid="h125abc140" version="2">Strike back at your attackers in a wide arc.
+
+Deal [1] damage to all enemies in a 3m cone.
+Costs [2] Rage.
+
+Action • 3m Cone • 20 Rage
+
+Tags: Spender, AoE, Damage</content>
+    
+    <!-- Shockwave (Zone_WAR_Shockwave) -->
+    <content contentuid="h125abc141" version="1">Shockwave</content>
+    <content contentuid="h125abc142" version="2">Send a shockwave through the ground, stunning enemies.
+
+Deal [1] damage in a 9m cone.
+Apply Stunned for [2] turns.
+
+Action • 9m Cone • Short Rest
+
+Tags: Control, AoE, Stun, Damage</content>
+    
+    <!-- Thunder Clap (Zone_WAR_ThunderClap) -->
+    <content contentuid="h125abc143" version="1">Thunder Clap</content>
+    <content contentuid="h125abc144" version="3">Slam the ground with thunderous force, damaging and slowing enemies.
+
+Deal [1] Thunder damage to all enemies in 4m radius.
+Reduce movement speed by 20% for [2] turns.
+Costs [3] Rage.
+
+Action • 4m AoE • 10 Rage
+
+Tags: Spender, AoE, Thunder, Slow</content>
+    
+    <!-- Whirlwind (Zone_WAR_Whirlwind) -->
+    <content contentuid="h125abc145" version="1">Whirlwind</content>
+    <content contentuid="h125abc146" version="3">Spin in a deadly circle, striking all nearby enemies.
+
+Deal [1] to all enemies within 3m.
+Apply Whirlwind buff: Next 2 attacks cleave to 1 additional target.
+Costs [2] Rage.
+
+Action • 3m AoE • 10 Rage
+
+Tags: Spender, AoE, Melee</content>
+    
+    <!-- Bloodthirst (Target_WAR_Bloodthirst) -->
+    <content contentuid="h125abc147" version="1">Bloodthirst</content>
+    <content contentuid="h125abc148" version="4">Strike your enemy and gain vitality from their blood.
+
+Deal [1] damage.
+Heal yourself for [2]% of your maximum HP.
+Costs [3] Rage.
+
+Action • Melee • 20 Rage
+
+Tags: Fury, Spender, Damage, Healing</content>
+    
+    <!-- Rampage (Target_WAR_Rampage) -->
+    <content contentuid="h125abc149" version="1">Rampage</content>
+    <content contentuid="h125abc150" version="4">Unleash a furious barrage of strikes against your target.
+
+Deal [1] damage twice in rapid succession.
+Costs [2] Rage.
+
+Action • Melee • 40 Rage
+
+Tags: Fury, Spender, Damage, Multi-Strike</content>
+    
+    <!-- Enraged Regeneration (Target_WAR_EnragedRegeneration) -->
+    <content contentuid="h125abc151" version="1">Enraged Regeneration</content>
+    <content contentuid="h125abc152" version="4">Channel your rage into healing power, regenerating health.
+
+Duration: [1] turns
+Heal for [2]% maximum HP immediately and each turn.
+Reduce all damage taken by [3]% while active.
+
+Bonus Action • Short Rest • 10 Rage
+
+Tags: Fury, Defensive, Healing, Cooldown</content>
+    
+    <!-- Taunt (Target_WAR_Taunt) -->
+    <content contentuid="h125abc153" version="1">Taunt</content>
+    <content contentuid="h125abc154" version="4">Force an enemy to focus their attacks on you.
+
+Duration: [1] turns
+Target has disadvantage on attacks against any ally except you.
+
+Action • 13m Range
+
+Tags: Protection, Control, Threat</content>
+    
+    <!-- Intervene (Jump_WAR_Intervene) -->
+    <content contentuid="h125abc155" version="1">Intervene</content>
+    <content contentuid="h125abc156" version="4">Rush to an ally's defense, protecting them from harm.
+
+Range: [1]m
+Duration: [2] turns
+You and your ally gain +2 AC while you remain close.
+
+Action • Short Rest
+
+Tags: Protection, Mobility, Ally Support</content>
+    
+    <!-- Last Stand (Target_WAR_LastStand) -->
+    <content contentuid="h125abc157" version="1">Last Stand</content>
+    <content contentuid="h125abc158" version="4">Draw upon your final reserves, gaining temporary vitality.
+
+Gain temporary HP equal to [1]% of your maximum HP.
+Duration: [2] turns
+
+Bonus Action • Short Rest
+
+Tags: Protection, Defensive, Temporary HP, Cooldown</content>
+    
+    <!-- Shield Wall (Target_WAR_ShieldWall) -->
+    <content contentuid="h125abc159" version="1">Shield Wall</content>
+    <content contentuid="h125abc160" version="4">Raise your shield in an impenetrable defense.
+
+Reduce all damage taken by [1]%.
+Duration: [2] turns
+
+Bonus Action • Short Rest
+
+Tags: Protection, Defensive, Damage Reduction, Cooldown</content>
+    
+    <!-- Indomitable (Target_WAR_Indomitable) -->
+    <content contentuid="h125abc161" version="1">Indomitable</content>
+    <content contentuid="h125abc162" version="4">Harden your will against any effect.
+
+Gain advantage on all saving throws.
+Gain +1d4 to all saving throws.
+Duration: [1] turn
+
+Bonus Action • Short Rest
+
+Tags: Ultimate, Defensive, Saving Throw, Cooldown</content>
+    
+    <!-- Bloodthirst Heal Status -->
+    <content contentuid="h125abc163" version="1">Bloodthirst Healing</content>
+    <content contentuid="h125abc164" version="1">Healing from Bloodthirst attack.</content>
+    
+    <!-- Enraged Regeneration Status -->
+    <content contentuid="h125abc165" version="1">Enraged Regeneration</content>
+    <content contentuid="h125abc166" version="3">Regenerating health and reducing damage taken.
+    
+Healing [1]% max HP per turn.
+Reducing damage by [2]%.</content>
+    
+    <!-- Taunted Status -->
+    <content contentuid="h125abc167" version="1">Taunted</content>
+    <content contentuid="h125abc168" version="1">Disadvantage on attacks against anyone except the taunter.</content>
+    
+    <!-- Last Stand Status -->
+    <content contentuid="h125abc169" version="1">Last Stand</content>
+    <content contentuid="h125abc170" version="2">Temporary HP granted.
+    
+Gained [1]% max HP for [2] turns.</content>
+    
+    <!-- Shield Wall Status -->
+    <content contentuid="h125abc171" version="1">Shield Wall</content>
+    <content contentuid="h125abc172" version="2">Major damage reduction active.
+    
+Reducing all damage by [1]% for [2] turns.</content>
+    
+    <!-- Indomitable Status -->
+    <content contentuid="h125abc173" version="1">Indomitable</content>
+    <content contentuid="h125abc174" version="1">Advantage and +1d4 on all saving throws.</content>
+    
+    <!-- Intervene Status (Self) -->
+    <content contentuid="h125abc175" version="1">Intervene</content>
+    <content contentuid="h125abc176" version="1">Protecting an ally. +2 AC while near them.</content>
+    
+    <!-- Intervene Status (Protected Ally) -->
+    <content contentuid="h125abc177" version="1">Protected</content>
+    <content contentuid="h125abc178" version="1">Being protected by a warrior. +2 AC while they remain near.</content>
+    
+    <!-- ========================================
+         ARMS WARRIOR ABILITIES
+         Handles: h8a7f2b01-h8a7f2b20
+         ========================================
+    -->
+    
+    <!-- Overpower -->
+    <content contentuid="h8a7f2b01" version="1">Overpower</content>
+    <content contentuid="h8a7f2b02" version="1">Strike with overwhelming force when your enemy leaves themselves exposed. Usable only after an enemy dodges your attack.
+
+Deal 2d10 + Strength modifier weapon damage.
+Costs 10 Rage.
+
+Proc-based attack • 1.5m range
+
+Tags: Spender, Proc</content>
+    
+    <!-- Rend -->
+    <content contentuid="h8a7f2b03" version="1">Rend</content>
+    <content contentuid="h8a7f2b04" version="1">Tear a bleeding wound in your enemy, dealing immediate damage and causing persistent bleeding.
+
+Deal 1d10 + Strength modifier weapon damage.
+Apply bleeding: 1d6 Slashing damage per turn for 8 turns.
+Costs 20 Rage.
+
+DoT attack • 1.5m range
+
+Tags: Spender, DoT, Bleed</content>
+    
+    <!-- Overpower Proc Status -->
+    <content contentuid="h8a7f2b05" version="1">Overpower Ready</content>
+    <content contentuid="h8a7f2b06" version="1">Your enemy's defenses are exposed! You can use Overpower.</content>
+    
+    <!-- Rend Bleed Status -->
+    <content contentuid="h8a7f2b07" version="1">Rending Wounds</content>
+    <content contentuid="h8a7f2b08" version="1">Bleeding heavily. Taking 1d6 Slashing damage per turn.</content>
+    
+</contentList>
+

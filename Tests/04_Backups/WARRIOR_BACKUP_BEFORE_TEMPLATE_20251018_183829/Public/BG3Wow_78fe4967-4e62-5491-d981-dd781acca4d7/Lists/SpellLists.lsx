@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="0" build="60"/>
+    <region id="SpellLists">
+        <node id="root">
+            <children>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Warrior Starting Spells - Level 1"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Charge;WAR_HeroicStrike"/>
+                    <attribute id="UUID" type="guid" value="a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

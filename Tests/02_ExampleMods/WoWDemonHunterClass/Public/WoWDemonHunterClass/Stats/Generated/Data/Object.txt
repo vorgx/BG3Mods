@@ -1,4 +1,0 @@
-new entry "OBJ_DH_Sigils"
-type "Object"
-using "_BaseItem"
-data "DefaultBoosts" "IF(IsInDemonForm(GetSummoner(context.Source))):IgnoreResistance(Fire, Immune);IF(IsInDemonForm(GetSummoner(context.Source))):IgnoreResistance(Fire, Resistant)"

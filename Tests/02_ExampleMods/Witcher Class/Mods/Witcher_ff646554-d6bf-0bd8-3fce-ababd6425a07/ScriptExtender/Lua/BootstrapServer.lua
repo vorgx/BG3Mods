@@ -1,1 +1,0 @@
-Ext.Require("WitcherClassFunctions.lua")

@@ -1,0 +1,86 @@
+// ========================================
+// WARRIOR SPELL DEFINITIONS - JUMP SPELLS
+// Created: October 16, 2025
+// Patch: 8 Compatible (4.8.0.10)
+// ========================================
+// Total Spells: 1
+// - Heroic Leap (All specs - base ability L9)
+// ========================================
+
+// ========================================
+// HEROIC LEAP - Jump Attack
+// ========================================
+
+new entry "Jump_WAR_HeroicLeap"
+type "SpellData"
+data "SpellType" "Jump"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "TargetRadius" "12"
+data "AreaRadius" "3"
+data "SpellRoll" "Attack(AttackType.MeleeWeaponAttack)"
+data "SpellSuccess" "DealDamage(1d8+StrengthModifier,Bludgeoning,Magical)"
+data "TargetConditions" "Enemy() and not Dead()"
+data "Icon" "Action_Jump"
+data "DisplayName" "h125abc63;1"
+data "Description" "h125abc64;3"
+data "DescriptionParams" "12;DealDamage(1d8+StrengthModifier,Bludgeoning);3"
+data "TooltipDamageList" "DealDamage(1d8+StrengthModifier,Bludgeoning)"
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "TooltipOnMiss" "5d5f4487-0434-4dfc-8d60-c21948149dc8"
+data "TooltipOnSave" "5d5f4487-0434-4dfc-8d60-c21948149dc8"
+data "PrepareSound" "Spell_Prepare_Buff_Jump"
+data "PrepareLoopSound" "Spell_Prepare_Buff_Jump_Loop"
+data "CastSound" "Spell_Cast_Buff_Jump_L1to3"
+data "TargetSound" "Spell_Impact_Buff_Jump_L1to3"
+data "VocalComponentSound" "Vocal_Component_Attack"
+data "Cooldown" "OncePerShortRest"
+data "UseCosts" "ActionPoint:1"
+data "SpellAnimation" "83367626-7601-4e13-909a-43636c437201,,;,,;83367626-7601-4e13-909a-43636c437201,,;83367626-7601-4e13-909a-43636c437201,,;83367626-7601-4e13-909a-43636c437201,,;83367626-7601-4e13-909a-43636c437201,,;eadedcce-d01f-4974-9dba-1bb7cb3f5684,,;eadedcce-d01f-4974-9dba-1bb7cb3f5684,,"
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsHarmful;IsSpell;IsJump"
+data "HitAnimationType" "MeleeWeaponAttack"
+data "PrepareEffect" "b20bc52a-b159-4cac-8084-88a0167f749a"
+data "CastEffect" "b20bc52a-b159-4cac-8084-88a0167f749a"
+data "TargetEffect" "b863dc6e-f551-4a93-951f-c3f389b30470"
+data "DamageType" "Bludgeoning"
+data "SpellSoundMagnitude" "Big"
+
+// ========================================
+// PROTECTION SPECIALIZATION - INTERVENE
+// Charge to ally and protect them
+// ========================================
+
+new entry "Jump_WAR_Intervene"
+type "SpellData"
+data "SpellType" "Jump"
+data "Level" "0"
+data "SpellSchool" "Abjuration"
+data "TargetRadius" "12"
+data "AreaRadius" "0"
+data "SpellRoll" "not SavingThrow(Ability.None, 0)"
+data "SpellSuccess" "ApplyStatus(SELF,WAR_INTERVENE,100,2);ApplyStatus(context.Target,WAR_INTERVENE_PROTECTED,100,2)"
+data "TargetConditions" "Ally() and not Dead() and not Self()"
+data "Icon" "Action_Paladin_ProtectiveSpirit"
+data "DisplayName" "h125abc155;1"
+data "Description" "h125abc156;4"
+data "DescriptionParams" "12;2"
+data "TooltipStatusApply" "ApplyStatus(SELF,WAR_INTERVENE,100,2);ApplyStatus(context.Target,WAR_INTERVENE_PROTECTED,100,2)"
+data "PrepareSound" "Spell_Prepare_Buff_Jump"
+data "PrepareLoopSound" "Spell_Prepare_Buff_Jump_Loop"
+data "CastSound" "Spell_Cast_Buff_Jump_L1to3"
+data "TargetSound" "Spell_Impact_Buff_Jump_L1to3"
+data "VocalComponentSound" "Vocal_Component_Buff"
+data "Cooldown" "OncePerShortRest"
+data "UseCosts" "ActionPoint:1"
+data "SpellAnimation" "83367626-7601-4e13-909a-43636c437201,,;,,;83367626-7601-4e13-909a-43636c437201,,;83367626-7601-4e13-909a-43636c437201,,;83367626-7601-4e13-909a-43636c437201,,;83367626-7601-4e13-909a-43636c437201,,;eadedcce-d01f-4974-9dba-1bb7cb3f5684,,;eadedcce-d01f-4974-9dba-1bb7cb3f5684,,"
+data "VerbalIntent" "Buff"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsSpell;IsJump"
+data "PrepareEffect" "b20bc52a-b159-4cac-8084-88a0167f749a"
+data "CastEffect" "b20bc52a-b159-4cac-8084-88a0167f749a"
+data "TargetEffect" "8d134952-fa0a-4f93-936e-3e936c6d7c31"
+
+// ========================================
+// END OF JUMP SPELLS
+// ========================================
+

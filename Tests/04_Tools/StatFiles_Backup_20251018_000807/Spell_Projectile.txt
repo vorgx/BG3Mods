@@ -1,0 +1,89 @@
+// ========================================
+// WARRIOR PROJECTILE SPELLS
+// ========================================
+// These are ranged abilities that use projectile mechanics
+// Feature Tag: FEATURE_BASELINE_UTILITY
+// ========================================
+
+// ========================================
+// HEROIC THROW - Weapon Throw (Action)
+// Uses equipped weapon damage, returns after throw
+// Acts like Throwing Attack (returning weapon)
+// ========================================
+
+new entry "Projectile_WAR_HeroicThrow"
+type "SpellData"
+data "SpellType" "Projectile"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "TargetRadius" "18"
+data "AreaRadius" "0"
+data "SpellRoll" "Attack(AttackType.RangedWeaponAttack)"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType,Magical);ExecuteWeaponFunctors(MainHand)"
+data "TargetConditions" "not Self() and not Dead() and Enemy()"
+data "Icon" "Action_Barbarian_Frenzy_Throwing"
+data "DisplayName" "h125abc105;1"
+data "Description" "h125abc106;2"
+data "DescriptionParams" "DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType);18"
+data "TooltipDamageList" "DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType)"
+data "TooltipAttackSave" "RangedWeaponAttack"
+data "TooltipOnMiss" "5d5f4487-0434-4dfc-8d60-c21948149dc8"
+data "PrepareSound" "Spell_Prepare_Damage_Physical_Gen_L1to3"
+data "PrepareLoopSound" "Spell_Prepare_Damage_Physical_Gen_L1to3_Loop"
+data "CastSound" "Spell_Cast_Damage_Physical_RangedWeaponAttack_L1to3"
+data "TargetSound" "Spell_Impact_Damage_Physical_RangedWeaponAttack_L1to3"
+data "VocalComponentSound" "Vocal_Component_Attack"
+data "Cooldown" "OncePerTurn"
+data "UseCosts" "ActionPoint:1"
+data "SpellAnimation" "3ff87abf-1ea1-4c32-aadc-2f531e4a2e87,,;9b2b743d-c690-49b6-9756-1dfc794d7410,,;3c76b7ba-add8-405d-b12c-3c9a7f2b99f0,,;a8c9c7e8-16d0-4c3c-9508-7e7cd3092517,,;3c76b7ba-add8-405d-b12c-3c9a7f2b99f0,,;21fd5a06-28e1-4829-b66f-c80e2eaa3a2e,,;eadedcce-d01f-4974-9dba-1bb7cb3f5684,,;eadedcce-d01f-4974-9dba-1bb7cb3f5684,,"
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsHarmful;RangeIgnoreVerticalThreshold;IsLinearSpell"
+data "HitAnimationType" "MagicalDamage_External"
+data "PrepareEffect" "f87a5208-6c59-4bb2-92e8-6a0ba169b465"
+data "CastEffect" "f87a5208-6c59-4bb2-92e8-6a0ba169b465"
+data "TargetEffect" "b863dc6e-f551-4a93-951f-c3f389b30470"
+data "DamageType" "Piercing"
+data "SpellSoundMagnitude" "Small"
+
+// ========================================
+// STORM BOLT - Ranged Stun (Action)
+// ========================================
+
+new entry "Projectile_WAR_StormBolt"
+type "SpellData"
+data "SpellType" "Projectile"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "TargetRadius" "18"
+data "AreaRadius" "0"
+data "SpellRoll" "Attack(AttackType.RangedWeaponAttack)"
+data "SpellSuccess" "DealDamage(2d6+StrengthModifier,Thunder,Magical);ApplyStatus(STUNNED,100,2)"
+data "TargetConditions" "not Self() and not Dead() and Enemy()"
+data "Icon" "Spell_Evocation_LightningBolt"
+data "DisplayName" "h125abc107;1"
+data "Description" "h125abc108;3"
+data "DescriptionParams" "DealDamage(2d6+StrengthModifier,Thunder);2;18"
+data "TooltipDamageList" "DealDamage(2d6+StrengthModifier,Thunder)"
+data "TooltipAttackSave" "RangedWeaponAttack"
+data "TooltipStatusApply" "ApplyStatus(STUNNED,100,2)"
+data "TooltipOnMiss" "5d5f4487-0434-4dfc-8d60-c21948149dc8"
+data "PrepareSound" "Spell_Prepare_Damage_Thunder_L1to3"
+data "PrepareLoopSound" "Spell_Prepare_Damage_Thunder_L1to3_Loop"
+data "CastSound" "Spell_Cast_Damage_Thunder_LightningBolt_L1to3"
+data "TargetSound" "Spell_Impact_Damage_Thunder_LightningBolt_L1to3"
+data "VocalComponentSound" "Vocal_Component_Attack"
+data "Cooldown" "OncePerShortRest"
+data "UseCosts" "ActionPoint:1"
+data "SpellAnimation" "3ff87abf-1ea1-4c32-aadc-2f531e4a2e87,,;9b2b743d-c690-49b6-9756-1dfc794d7410,,;3c76b7ba-add8-405d-b12c-3c9a7f2b99f0,,;a8c9c7e8-16d0-4c3c-9508-7e7cd3092517,,;3c76b7ba-add8-405d-b12c-3c9a7f2b99f0,,;21fd5a06-28e1-4829-b66f-c80e2eaa3a2e,,;eadedcce-d01f-4974-9dba-1bb7cb3f5684,,;eadedcce-d01f-4974-9dba-1bb7cb3f5684,,"
+data "VerbalIntent" "Control"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsHarmful;RangeIgnoreVerticalThreshold;IsLinearSpell"
+data "HitAnimationType" "MagicalDamage_External"
+data "PrepareEffect" "66894afc-6ea9-4611-ae38-82a997f5e190"
+data "CastEffect" "66894afc-6ea9-4611-ae38-82a997f5e190"
+data "TargetEffect" "a6e0285b-dc52-44d3-80fe-bd889c1d08a3"
+data "DamageType" "Thunder"
+data "SpellSoundMagnitude" "Medium"
+
+// ========================================
+// END OF PROJECTILE SPELLS
+// ========================================
