@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="200"/>
+    <region id="PassiveLists">
+        <node id="root">
+            <children>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="WoWWarlock_PassiveList"/>
+                    <attribute id="UUID" type="guid" value="d0534f79-93fe-49a0-b1e0-8284d8dab134"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="Class_PassiveList"/>
+                    <attribute id="UUID" type="guid" value="95865c86-4bc8-4e7d-8da6-c22c8367863d"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="ClassRow1"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_UnlockBurningRush,WoWWarlock_FelDomination,WoWWarlock_Unlock_Healthstone_1"/>
+                    <attribute id="UUID" type="guid" value="ebd12d3f-5232-43e0-bb52-dc7b98f4041e"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="ClassRow2"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Unlock_DemonArmor,WoWWarlock_Unlock_FelArmor,WoWWarlock_Unlocspell_Mortal Coil"/>
+                    <attribute id="UUID" type="guid" value="bf5b693e-2e0e-443d-b950-fe1adc6b8fac"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="ClassRow3"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Unlock_Curses,WoWWarlock_Unlock_HowlofTerror"/>
+                    <attribute id="UUID" type="guid" value="cd2781e4-a985-42b6-ab26-2598f0ccdf8b"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="ClassRow4"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_DemonicEmbrace,WoWWarlock_WrathfulMinion,WoWWarlock_Unlock_Banish"/>
+                    <attribute id="UUID" type="guid" value="ee501594-1b66-4291-9b80-253cac88830f"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="ClassRow5"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_TeachingsoftheSatyr,WoWWarlock_Unlock_Shadowfury,WoWWarlock_DemonicFortitude"/>
+                    <attribute id="UUID" type="guid" value="2b6f2d2b-c047-4ed9-9458-74534e4b87c9"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="ClassRow6"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Unlock_DarkPact,WoWWarlock_DarkAccord,WoWWarlock_StrenghofWill"/>
+                    <attribute id="UUID" type="guid" value="19aff8b0-d238-4987-998f-e57aa2daadd1"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="ClassRow7"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_FrequentDonor,WoWWarlock_Darkfury,WoWWarlock_Unlock_LifeTap"/>
+                    <attribute id="UUID" type="guid" value="1fca296a-a162-4cab-bb05-517f2410a2fd"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="ClassRow8Demo"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_DemonicTactics,WoWWarlock_ImprovedArmors,WoWWarlock_Demo_PacofEredar"/>
+                    <attribute id="UUID" type="guid" value="36698e48-dfe7-4e32-b842-41cfeaf420f0"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="ClassRow8Destro"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_DemonicTactics,WoWWarlock_ImprovedArmors,WoWWarlock_Destro_PactofEredar"/>
+                    <attribute id="UUID" type="guid" value="90c84d93-e6f0-40b7-a888-3bfecc8fbafb"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="ClassRow8Aff"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_DemonicTactics,WoWWarlock_ImprovedArmors,WoWWarlock_Aff_PactofEredar"/>
+                    <attribute id="UUID" type="guid" value="59496156-8955-4d65-9469-5baef5d47c31"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="ClassRow9"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_InquisitorGaze,WoWWarlock_SummonSoulkeeper"/>
+                    <attribute id="UUID" type="guid" value="bb380d22-1bf3-407c-a01a-3207eaf6c41a"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="Demo_PassiveList"/>
+                    <attribute id="UUID" type="guid" value="4ca8bee8-266f-40e3-9901-fdf0b4332fa9"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="DemoLevel12"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Demo_ArchimondesDarkness,WoWWarlock_Demo_MannorothsFury,WoWWarlock_Demo_KiljaedensCunning"/>
+                    <attribute id="UUID" type="guid" value="6ab95d39-d811-4b1a-8268-950ef3211de0"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="DemoRow1"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Demo_SacrificedSouls,WoWWarlock_Demo_Imperator,WoWWarlock_Demo_UnlockSoulStrike"/>
+                    <attribute id="UUID" type="guid" value="aa7da72c-92d1-4b2f-b3e4-d04920ffe68a"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="DemoRow2"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Demo_AnnihilanTraining,WoWWarlock_Demo_Unlock_WickedMaw,WoWWarlock_Demo_Unlock_BilescourgeBombers"/>
+                    <attribute id="UUID" type="guid" value="c12df8e1-342b-4ca7-b811-acca4e705ef4"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="DemoRow3"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Demo_Unlock_PowerSiphon,WoWWarlock_Demo_Unlock_DemonicTyrant,WoWWarlock_Demo_Unlock_GrimoireFelguard"/>
+                    <attribute id="UUID" type="guid" value="b96ebe34-101a-46be-b7cc-9adf1cf23a88"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="DemoRow4"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Demo_BloodInvocation,WoWWarlock_Demo_UmbralBlaze"/>
+                    <attribute id="UUID" type="guid" value="ae0b33b4-cea1-4cc9-b38f-39289f0f793b"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="DemoRow5"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Demo_ImpendingDoom,WoWWarlock_Demo_Unlock_DemonicCalling,WoWWarlock_Demo_FiendishOblitation"/>
+                    <attribute id="UUID" type="guid" value="edbd4de0-c39e-4e08-b84b-6e13634c90e9"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="DemoRow6"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Demo_ReignofTyrany,WoWWarlock_Demo_UnlockVilefiend,WoWWarlock_Demo_AntoranArmaments"/>
+                    <attribute id="UUID" type="guid" value="09c8d902-ea92-4be9-aaf5-23ae1c3a2cb5"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="DemoRow7"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Demo_PactoftheImpMother,WoWWarlock_Demo_FoulMouth,WoWWarlock_Demo_HoundmastersGambit"/>
+                    <attribute id="UUID" type="guid" value="0dcf0a7c-1eaf-4700-a2a7-0a548ef813c7"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="DemoRow8"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Demo_DoomEternal,WoWWarlock_Demo_Flametouched,WoWWarlock_Demo_ImproveDemonicTactics"/>
+                    <attribute id="UUID" type="guid" value="69ea804e-cc31-4c60-b447-055d0dd5bef6"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="DemoRow9"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Demo_Unlock_PactOfEredruin,WoWWarlock_Demo_Unlock_Shadowtouched,WoWWarlock_Demo_MarkoftheFelhounts"/>
+                    <attribute id="UUID" type="guid" value="ad23a9eb-a19b-4f9f-b6bc-1f9a9e9648cb"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="Destro_PassiveList"/>
+                    <attribute id="UUID" type="guid" value="b72eba21-2d64-4b50-8c17-477a9843ce3a"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="DestroLevel12"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Destro_ArchimondesDarkness,WoWWarlock_Destro_MannorothsFury,WoWWarlock_Destro_KiljaedensCunning"/>
+                    <attribute id="UUID" type="guid" value="af9c80bd-6df1-471b-98f0-e937cd6c7e5c"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="DestroRow1"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Destro_UnlockSpell_RainofFire,WoWWarlock_Destro_AshenRemains,WoWWarlock_Destro_DiabolicEmbers"/>
+                    <attribute id="UUID" type="guid" value="d0e81080-4624-4dab-ac09-1b2676c5a296"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="DestroRow2"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Destro_ImprovedConflagrate,WoWWarlock_Destro_Backlash"/>
+                    <attribute id="UUID" type="guid" value="0ff0fe7c-75b0-4865-89ed-96ce0600eefd"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="DestroRow3"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Destro_IndiscriminateFlames,WoWWarlock_Destro_Havoc"/>
+                    <attribute id="UUID" type="guid" value="4d808d77-680a-4675-9f1b-b10ee925cf58"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="DestroRow4"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Destro_UnlockSpell_Shadowburn,WoWWarlock_Destro_UnlockSpell_Cataclysm,WoWWarlock_Destro_UnlockSpell_EmberTap"/>
+                    <attribute id="UUID" type="guid" value="ba497f36-780c-41eb-a4a8-c27f421f0744"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="DestroRow5"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Destro_BlisteringAtrophy,WoWWarlock_Destro_UnlockSpell_SummonInfernal,WoWWarlock_Destro_FireandBrimstone"/>
+                    <attribute id="UUID" type="guid" value="db7a998e-9006-480b-9d1f-54ca76cd5656"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="DestroRow6"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Destro_FiendishCruelty,WoWWarlock_Destro_ReverseEntropy"/>
+                    <attribute id="UUID" type="guid" value="48670133-33d0-4589-8fc8-a1e9b053ae7b"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="DestroRow7"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Destro_Devastation,WoWWarlock_Destro_RitualOfRuin,WoWWarlock_Destro_Ruin"/>
+                    <attribute id="UUID" type="guid" value="aa2b01f6-68a5-4289-b8e0-7608f17286eb"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="DestroRow8"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Destro_UnlockSpell_Soulfire,WoWWarlock_Destro_BurnToAshes,WoWWarlock_Destro_ConflagrationofChaos"/>
+                    <attribute id="UUID" type="guid" value="d5c3cb1f-4a46-4240-aa81-a43c85a96c9c"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="DestroRow9"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Destro_Decimation,WoWWarlock_Destro_AvatarofDestruction"/>
+                    <attribute id="UUID" type="guid" value="74f62b43-d73e-4eac-8ef2-3fccfaac0f1a"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="DestroLevel4"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Destro_SummonersEmbrace,WoWWarlock_Destro_Grimoire"/>
+                    <attribute id="UUID" type="guid" value="08aebd7c-9406-4fde-a983-0a20721ca4df"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="DestroLevel5"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Destro_ChannelDemonfire,WoWWarlock_Destro_DemonfireInfusion"/>
+                    <attribute id="UUID" type="guid" value="fc879b66-4211-410d-a6ac-a29051e1fd93"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="DestroLevel8"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Destro_CrashingChaos,WoWWarlock_Destro_RainofChaos"/>
+                    <attribute id="UUID" type="guid" value="8f8e30fd-b6c6-440f-bfac-6dc1e225ff1f"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="Aff_PassiveList"/>
+                    <attribute id="UUID" type="guid" value="4517f1dc-ec43-48a8-a3b4-91f58e9b19ff"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="AffLevel12"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Aff_ArchimondesDarkness,WoWWarlock_Aff_MannorothsFury,WoWWarlock_Aff_KiljaedensCunning"/>
+                    <attribute id="UUID" type="guid" value="b54fc59c-9d07-4035-9463-e7a619fd62c5"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="AffRow1"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Aff_Nightfall,WoWWarlock_Aff_UnlockSpell_SeedOfCorruption"/>
+                    <attribute id="UUID" type="guid" value="ea28aca3-a552-4a20-869e-f6675a887ce6"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="AffRow2"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Aff_PandemicInvocation,WoWWarlock_Aff_CunningCruelty"/>
+                    <attribute id="UUID" type="guid" value="c1db71ba-f7f4-443a-b14d-61b66ea7c06e"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="AffRow3"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Aff_UnlockSpell_Haunt,WoWWarlock_Aff_ImprovedLifeTap_I"/>
+                    <attribute id="UUID" type="guid" value="416af2ea-2e9e-4922-b9b8-4fe6c0a35e1a"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="AffRow4"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Aff_UnlockSpell_Darkglare,WoWWarlock_Aff_ShadowEmbrace,WoWWarlock_Aff_SecretOfTheNecrolyte"/>
+                    <attribute id="UUID" type="guid" value="9b112721-bcaa-4696-a9bf-9f4c0e2f2e80"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="AffRow5"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Aff_WitheringBolt,WoWWarlock_Aff_ImprovedHaunt,WoWWarlock_Aff_MalevolentVisionary"/>
+                    <attribute id="UUID" type="guid" value="1bf7257d-702f-4891-a89c-c6311f3df1dd"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="AffRow6"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Aff_CulltheWeak,WoWWarlock_Aff_UnlockSpell_SoulRot,WoWWarlock_Aff_FocusedMalignancy"/>
+                    <attribute id="UUID" type="guid" value="936371ca-51de-44e4-b219-9de432bcf61a"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="AffRow7"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Aff_TormentedCrescendo,WoWWarlock_Aff_MalignOmen,WoWWarlock_Aff_RavenousAfflictions"/>
+                    <attribute id="UUID" type="guid" value="d380a820-1601-456a-86c6-6527def3e135"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="AffRow8"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Aff_DeathEmbrace_1,WoWWarlock_Aff_UnlockSpell_Oblivion"/>
+                    <attribute id="UUID" type="guid" value="03c9a6d8-2d54-41cd-a9a3-db30eafe8e4b"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="AffRow9"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Aff_DarkHarvest,WoWWarlock_Aff_MaleficTouch,WoWWarlock_Aff_DeathDealer"/>
+                    <attribute id="UUID" type="guid" value="9f662e1c-8d05-4729-b540-b875444a5df7"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="AffLevel4"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Aff_UnlockSpell_DrainSoul,WoWWarlock_Aff_UnlockSpell_Shadowbolt_2"/>
+                    <attribute id="UUID" type="guid" value="f5d1eb53-362d-4435-9123-fff8cf07c81a"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="AffLevel5"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Aff_UnlockSpell_VileTaint,WoWWarlock_Aff_UnlockSpell_PhantomSingularity"/>
+                    <attribute id="UUID" type="guid" value="99f3a3c4-d2f6-4142-867e-e2253ebe6cd2"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="AffLevel7"/>
+                    <attribute id="Passives" type="LSString" value="WoWWarlock_Destro_SummonersEmbrace,WoWWarlock_Aff_Grimoire"/>
+                    <attribute id="UUID" type="guid" value="3e991072-dbef-4004-b042-51057dc9492d"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

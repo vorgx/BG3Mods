@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="10"/>
+    <region id="IconUVList">
+        <node id="root">
+            <children>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Aff_Agony"/>
+                    <attribute id="U1" type="float" value="0.0009765625"/>
+                    <attribute id="U2" type="float" value="0.12402344"/>
+                    <attribute id="V1" type="float" value="0.0009765625"/>
+                    <attribute id="V2" type="float" value="0.12402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Aff_Corruption"/>
+                    <attribute id="U1" type="float" value="0.12597656"/>
+                    <attribute id="U2" type="float" value="0.24902344"/>
+                    <attribute id="V1" type="float" value="0.0009765625"/>
+                    <attribute id="V2" type="float" value="0.12402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Aff_CunningCruelty"/>
+                    <attribute id="U1" type="float" value="0.12597656"/>
+                    <attribute id="U2" type="float" value="0.24902344"/>
+                    <attribute id="V1" type="float" value="0.50097656"/>
+                    <attribute id="V2" type="float" value="0.62402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Aff_DarkSoul_Misery"/>
+                    <attribute id="U1" type="float" value="0.87597656"/>
+                    <attribute id="U2" type="float" value="0.99902344"/>
+                    <attribute id="V1" type="float" value="0.12597656"/>
+                    <attribute id="V2" type="float" value="0.24902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Aff_Darkglare"/>
+                    <attribute id="U1" type="float" value="0.25097656"/>
+                    <attribute id="U2" type="float" value="0.37402344"/>
+                    <attribute id="V1" type="float" value="0.0009765625"/>
+                    <attribute id="V2" type="float" value="0.12402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Aff_DeathsEmbrace"/>
+                    <attribute id="U1" type="float" value="0.37597656"/>
+                    <attribute id="U2" type="float" value="0.49902344"/>
+                    <attribute id="V1" type="float" value="0.0009765625"/>
+                    <attribute id="V2" type="float" value="0.12402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Aff_DrainSoul"/>
+                    <attribute id="U1" type="float" value="0.50097656"/>
+                    <attribute id="U2" type="float" value="0.62402344"/>
+                    <attribute id="V1" type="float" value="0.0009765625"/>
+                    <attribute id="V2" type="float" value="0.12402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Aff_EternalHunger"/>
+                    <attribute id="U1" type="float" value="0.37597656"/>
+                    <attribute id="U2" type="float" value="0.49902344"/>
+                    <attribute id="V1" type="float" value="0.12597656"/>
+                    <attribute id="V2" type="float" value="0.24902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Aff_Haunt"/>
+                    <attribute id="U1" type="float" value="0.62597656"/>
+                    <attribute id="U2" type="float" value="0.74902344"/>
+                    <attribute id="V1" type="float" value="0.0009765625"/>
+                    <attribute id="V2" type="float" value="0.12402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Aff_MaleficGrasp"/>
+                    <attribute id="U1" type="float" value="0.75097656"/>
+                    <attribute id="U2" type="float" value="0.87402344"/>
+                    <attribute id="V1" type="float" value="0.0009765625"/>
+                    <attribute id="V2" type="float" value="0.12402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Aff_Mastery"/>
+                    <attribute id="U1" type="float" value="0.87597656"/>
+                    <attribute id="U2" type="float" value="0.99902344"/>
+                    <attribute id="V1" type="float" value="0.0009765625"/>
+                    <attribute id="V2" type="float" value="0.12402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Aff_Nightfall"/>
+                    <attribute id="U1" type="float" value="0.0009765625"/>
+                    <attribute id="U2" type="float" value="0.12402344"/>
+                    <attribute id="V1" type="float" value="0.12597656"/>
+                    <attribute id="V2" type="float" value="0.24902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Aff_Oblivion"/>
+                    <attribute id="U1" type="float" value="0.12597656"/>
+                    <attribute id="U2" type="float" value="0.24902344"/>
+                    <attribute id="V1" type="float" value="0.12597656"/>
+                    <attribute id="V2" type="float" value="0.24902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Aff_PandemicInvocation"/>
+                    <attribute id="U1" type="float" value="0.0009765625"/>
+                    <attribute id="U2" type="float" value="0.12402344"/>
+                    <attribute id="V1" type="float" value="0.25097656"/>
+                    <attribute id="V2" type="float" value="0.37402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Aff_SecretOfTheNecrolyte"/>
+                    <attribute id="U1" type="float" value="0.12597656"/>
+                    <attribute id="U2" type="float" value="0.24902344"/>
+                    <attribute id="V1" type="float" value="0.25097656"/>
+                    <attribute id="V2" type="float" value="0.37402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Aff_SeedOfCorruption"/>
+                    <attribute id="U1" type="float" value="0.25097656"/>
+                    <attribute id="U2" type="float" value="0.37402344"/>
+                    <attribute id="V1" type="float" value="0.12597656"/>
+                    <attribute id="V2" type="float" value="0.24902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Aff_SiphonLife"/>
+                    <attribute id="U1" type="float" value="0.25097656"/>
+                    <attribute id="U2" type="float" value="0.37402344"/>
+                    <attribute id="V1" type="float" value="0.50097656"/>
+                    <attribute id="V2" type="float" value="0.62402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Aff_SoulRot"/>
+                    <attribute id="U1" type="float" value="0.37597656"/>
+                    <attribute id="U2" type="float" value="0.49902344"/>
+                    <attribute id="V1" type="float" value="0.50097656"/>
+                    <attribute id="V2" type="float" value="0.62402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Aff_TormentedCrescendo"/>
+                    <attribute id="U1" type="float" value="0.50097656"/>
+                    <attribute id="U2" type="float" value="0.62402344"/>
+                    <attribute id="V1" type="float" value="0.12597656"/>
+                    <attribute id="V2" type="float" value="0.24902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Aff_UnstableAffliction"/>
+                    <attribute id="U1" type="float" value="0.62597656"/>
+                    <attribute id="U2" type="float" value="0.74902344"/>
+                    <attribute id="V1" type="float" value="0.12597656"/>
+                    <attribute id="V2" type="float" value="0.24902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Aff_VileTaint"/>
+                    <attribute id="U1" type="float" value="0.75097656"/>
+                    <attribute id="U2" type="float" value="0.87402344"/>
+                    <attribute id="V1" type="float" value="0.12597656"/>
+                    <attribute id="V2" type="float" value="0.24902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_ArchimondesDarkness"/>
+                    <attribute id="U1" type="float" value="0.25097656"/>
+                    <attribute id="U2" type="float" value="0.37402344"/>
+                    <attribute id="V1" type="float" value="0.25097656"/>
+                    <attribute id="V2" type="float" value="0.37402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Banish"/>
+                    <attribute id="U1" type="float" value="0.75097656"/>
+                    <attribute id="U2" type="float" value="0.87402344"/>
+                    <attribute id="V1" type="float" value="0.50097656"/>
+                    <attribute id="V2" type="float" value="0.62402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_BurningRush"/>
+                    <attribute id="U1" type="float" value="0.87597656"/>
+                    <attribute id="U2" type="float" value="0.99902344"/>
+                    <attribute id="V1" type="float" value="0.50097656"/>
+                    <attribute id="V2" type="float" value="0.62402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Curses"/>
+                    <attribute id="U1" type="float" value="0.37597656"/>
+                    <attribute id="U2" type="float" value="0.49902344"/>
+                    <attribute id="V1" type="float" value="0.25097656"/>
+                    <attribute id="V2" type="float" value="0.37402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Curses_CurseOfExhaustion"/>
+                    <attribute id="U1" type="float" value="0.50097656"/>
+                    <attribute id="U2" type="float" value="0.62402344"/>
+                    <attribute id="V1" type="float" value="0.25097656"/>
+                    <attribute id="V2" type="float" value="0.37402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Curses_CurseOfTongues"/>
+                    <attribute id="U1" type="float" value="0.62597656"/>
+                    <attribute id="U2" type="float" value="0.74902344"/>
+                    <attribute id="V1" type="float" value="0.25097656"/>
+                    <attribute id="V2" type="float" value="0.37402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Curses_CurseOfWeakness"/>
+                    <attribute id="U1" type="float" value="0.75097656"/>
+                    <attribute id="U2" type="float" value="0.87402344"/>
+                    <attribute id="V1" type="float" value="0.25097656"/>
+                    <attribute id="V2" type="float" value="0.37402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_DarkAccord"/>
+                    <attribute id="U1" type="float" value="0.0009765625"/>
+                    <attribute id="U2" type="float" value="0.12402344"/>
+                    <attribute id="V1" type="float" value="0.62597656"/>
+                    <attribute id="V2" type="float" value="0.74902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Demo_AnnihilanTraining"/>
+                    <attribute id="U1" type="float" value="0.12597656"/>
+                    <attribute id="U2" type="float" value="0.24902344"/>
+                    <attribute id="V1" type="float" value="0.62597656"/>
+                    <attribute id="V2" type="float" value="0.74902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Demo_AntoranArmaments"/>
+                    <attribute id="U1" type="float" value="0.25097656"/>
+                    <attribute id="U2" type="float" value="0.37402344"/>
+                    <attribute id="V1" type="float" value="0.62597656"/>
+                    <attribute id="V2" type="float" value="0.74902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Demo_BloodInvocation"/>
+                    <attribute id="U1" type="float" value="0.37597656"/>
+                    <attribute id="U2" type="float" value="0.49902344"/>
+                    <attribute id="V1" type="float" value="0.62597656"/>
+                    <attribute id="V2" type="float" value="0.74902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Demo_DarkRegeneration"/>
+                    <attribute id="U1" type="float" value="0.87597656"/>
+                    <attribute id="U2" type="float" value="0.99902344"/>
+                    <attribute id="V1" type="float" value="0.25097656"/>
+                    <attribute id="V2" type="float" value="0.37402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Demo_DarkSoul_Knowledge"/>
+                    <attribute id="U1" type="float" value="0.0009765625"/>
+                    <attribute id="U2" type="float" value="0.12402344"/>
+                    <attribute id="V1" type="float" value="0.37597656"/>
+                    <attribute id="V2" type="float" value="0.49902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Demo_DemonicCore"/>
+                    <attribute id="U1" type="float" value="0.0009765625"/>
+                    <attribute id="U2" type="float" value="0.12402344"/>
+                    <attribute id="V1" type="float" value="0.50097656"/>
+                    <attribute id="V2" type="float" value="0.62402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Demo_DoomEternal"/>
+                    <attribute id="U1" type="float" value="0.50097656"/>
+                    <attribute id="U2" type="float" value="0.62402344"/>
+                    <attribute id="V1" type="float" value="0.62597656"/>
+                    <attribute id="V2" type="float" value="0.74902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Demo_FiendishOblation"/>
+                    <attribute id="U1" type="float" value="0.62597656"/>
+                    <attribute id="U2" type="float" value="0.74902344"/>
+                    <attribute id="V1" type="float" value="0.62597656"/>
+                    <attribute id="V2" type="float" value="0.74902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Demo_Flametouched"/>
+                    <attribute id="U1" type="float" value="0.75097656"/>
+                    <attribute id="U2" type="float" value="0.87402344"/>
+                    <attribute id="V1" type="float" value="0.62597656"/>
+                    <attribute id="V2" type="float" value="0.74902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Demo_FoulMouth"/>
+                    <attribute id="U1" type="float" value="0.87597656"/>
+                    <attribute id="U2" type="float" value="0.99902344"/>
+                    <attribute id="V1" type="float" value="0.62597656"/>
+                    <attribute id="V2" type="float" value="0.74902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Demo_ImprovedDemonicTactics"/>
+                    <attribute id="U1" type="float" value="0.0009765625"/>
+                    <attribute id="U2" type="float" value="0.12402344"/>
+                    <attribute id="V1" type="float" value="0.75097656"/>
+                    <attribute id="V2" type="float" value="0.87402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Demo_InfernalCommand"/>
+                    <attribute id="U1" type="float" value="0.12597656"/>
+                    <attribute id="U2" type="float" value="0.24902344"/>
+                    <attribute id="V1" type="float" value="0.75097656"/>
+                    <attribute id="V2" type="float" value="0.87402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Demo_PactoftheImpmother"/>
+                    <attribute id="U1" type="float" value="0.25097656"/>
+                    <attribute id="U2" type="float" value="0.37402344"/>
+                    <attribute id="V1" type="float" value="0.75097656"/>
+                    <attribute id="V2" type="float" value="0.87402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Demo_ReignofTyrany"/>
+                    <attribute id="U1" type="float" value="0.37597656"/>
+                    <attribute id="U2" type="float" value="0.49902344"/>
+                    <attribute id="V1" type="float" value="0.75097656"/>
+                    <attribute id="V2" type="float" value="0.87402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Demo_RuneofShadow"/>
+                    <attribute id="U1" type="float" value="0.50097656"/>
+                    <attribute id="U2" type="float" value="0.62402344"/>
+                    <attribute id="V1" type="float" value="0.75097656"/>
+                    <attribute id="V2" type="float" value="0.87402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Demo_ShadowInvocation"/>
+                    <attribute id="U1" type="float" value="0.62597656"/>
+                    <attribute id="U2" type="float" value="0.74902344"/>
+                    <attribute id="V1" type="float" value="0.75097656"/>
+                    <attribute id="V2" type="float" value="0.87402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Demo_Shadowtouched"/>
+                    <attribute id="U1" type="float" value="0.75097656"/>
+                    <attribute id="U2" type="float" value="0.87402344"/>
+                    <attribute id="V1" type="float" value="0.75097656"/>
+                    <attribute id="V2" type="float" value="0.87402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Demo_SoulStrike"/>
+                    <attribute id="U1" type="float" value="0.87597656"/>
+                    <attribute id="U2" type="float" value="0.99902344"/>
+                    <attribute id="V1" type="float" value="0.75097656"/>
+                    <attribute id="V2" type="float" value="0.87402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Demo_WickedMaw"/>
+                    <attribute id="U1" type="float" value="0.0009765625"/>
+                    <attribute id="U2" type="float" value="0.12402344"/>
+                    <attribute id="V1" type="float" value="0.87597656"/>
+                    <attribute id="V2" type="float" value="0.99902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_DemonArmor"/>
+                    <attribute id="U1" type="float" value="0.12597656"/>
+                    <attribute id="U2" type="float" value="0.24902344"/>
+                    <attribute id="V1" type="float" value="0.37597656"/>
+                    <attribute id="V2" type="float" value="0.49902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Destro_DarkSoul_Instability"/>
+                    <attribute id="U1" type="float" value="0.25097656"/>
+                    <attribute id="U2" type="float" value="0.37402344"/>
+                    <attribute id="V1" type="float" value="0.37597656"/>
+                    <attribute id="V2" type="float" value="0.49902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Destro_EmberTap"/>
+                    <attribute id="U1" type="float" value="0.37597656"/>
+                    <attribute id="U2" type="float" value="0.49902344"/>
+                    <attribute id="V1" type="float" value="0.37597656"/>
+                    <attribute id="V2" type="float" value="0.49902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_EyepfInquisitor"/>
+                    <attribute id="U1" type="float" value="0.12597656"/>
+                    <attribute id="U2" type="float" value="0.24902344"/>
+                    <attribute id="V1" type="float" value="0.87597656"/>
+                    <attribute id="V2" type="float" value="0.99902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_FelArmor"/>
+                    <attribute id="U1" type="float" value="0.50097656"/>
+                    <attribute id="U2" type="float" value="0.62402344"/>
+                    <attribute id="V1" type="float" value="0.37597656"/>
+                    <attribute id="V2" type="float" value="0.49902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_FelDomination"/>
+                    <attribute id="U1" type="float" value="0.25097656"/>
+                    <attribute id="U2" type="float" value="0.37402344"/>
+                    <attribute id="V1" type="float" value="0.87597656"/>
+                    <attribute id="V2" type="float" value="0.99902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_FrequentDonor"/>
+                    <attribute id="U1" type="float" value="0.37597656"/>
+                    <attribute id="U2" type="float" value="0.49902344"/>
+                    <attribute id="V1" type="float" value="0.87597656"/>
+                    <attribute id="V2" type="float" value="0.99902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_HowlofTerror"/>
+                    <attribute id="U1" type="float" value="0.50097656"/>
+                    <attribute id="U2" type="float" value="0.62402344"/>
+                    <attribute id="V1" type="float" value="0.87597656"/>
+                    <attribute id="V2" type="float" value="0.99902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_KiljaedensCunning"/>
+                    <attribute id="U1" type="float" value="0.62597656"/>
+                    <attribute id="U2" type="float" value="0.74902344"/>
+                    <attribute id="V1" type="float" value="0.37597656"/>
+                    <attribute id="V2" type="float" value="0.49902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_LifeTap"/>
+                    <attribute id="U1" type="float" value="0.75097656"/>
+                    <attribute id="U2" type="float" value="0.87402344"/>
+                    <attribute id="V1" type="float" value="0.37597656"/>
+                    <attribute id="V2" type="float" value="0.49902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_MannorothsFury"/>
+                    <attribute id="U1" type="float" value="0.87597656"/>
+                    <attribute id="U2" type="float" value="0.99902344"/>
+                    <attribute id="V1" type="float" value="0.37597656"/>
+                    <attribute id="V2" type="float" value="0.49902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_PactofAnnihilan"/>
+                    <attribute id="U1" type="float" value="0.62597656"/>
+                    <attribute id="U2" type="float" value="0.74902344"/>
+                    <attribute id="V1" type="float" value="0.87597656"/>
+                    <attribute id="V2" type="float" value="0.99902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_PactofEredar"/>
+                    <attribute id="U1" type="float" value="0.75097656"/>
+                    <attribute id="U2" type="float" value="0.87402344"/>
+                    <attribute id="V1" type="float" value="0.87597656"/>
+                    <attribute id="V2" type="float" value="0.99902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_SargereiTechnique"/>
+                    <attribute id="U1" type="float" value="0.87597656"/>
+                    <attribute id="U2" type="float" value="0.99902344"/>
+                    <attribute id="V1" type="float" value="0.87597656"/>
+                    <attribute id="V2" type="float" value="0.99902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_Soulstone"/>
+                    <attribute id="U1" type="float" value="0.50097656"/>
+                    <attribute id="U2" type="float" value="0.62402344"/>
+                    <attribute id="V1" type="float" value="0.50097656"/>
+                    <attribute id="V2" type="float" value="0.62402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="WoWWarlock_Class_SummonDemon_Imp_BloodPact"/>
+                    <attribute id="U1" type="float" value="0.62597656"/>
+                    <attribute id="U2" type="float" value="0.74902344"/>
+                    <attribute id="V1" type="float" value="0.50097656"/>
+                    <attribute id="V2" type="float" value="0.62402344"/>
+                </node>
+            </children>
+        </node>
+    </region>
+    <region id="TextureAtlasInfo">
+        <node id="root">
+            <children>
+                <node id="TextureAtlasIconSize">
+                    <attribute id="Height" type="int32" value="64"/>
+                    <attribute id="Width" type="int32" value="64"/>
+                </node>
+                <node id="TextureAtlasPath">
+                    <attribute id="Path" type="string" value="Assets/Textures/Icons/newAtlas.dds"/>
+                    <attribute id="UUID" type="FixedString" value="7f27005f-8787-f8cb-5225-3806bad2cd88"/>
+                </node>
+                <node id="TextureAtlasTextureSize">
+                    <attribute id="Height" type="int32" value="512"/>
+                    <attribute id="Width" type="int32" value="512"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

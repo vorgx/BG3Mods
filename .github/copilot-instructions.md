@@ -7,6 +7,81 @@ This is a **Baldur's Gate 3 mod** that implements World of Warcraft's Warrior cl
 **Mod UUID**: `78fe4967-4e62-5491-d981-dd781acca4d7`  
 **Current Version**: 1.0.0.3 (Patch 8 / BG3 v4.8.0.10)
 
+## 🚨 CURRENT STATUS: File-by-File Transformation In Progress
+
+**Strategy**: Using proven WoWWarlock mod (13K+ downloads) as template foundation  
+**Method**: Systematic file-by-file transformation (analyze → review → approve → transform → test)  
+**Progress**: ✅ FILES 1-2 COMPLETE + TESTS PASSING | 📋 FILE 3 NEXT  
+**Handover Doc**: `HANDOVER_FILE_BY_FILE_START.md` ← **READ THIS FIRST**  
+**Detailed Plan**: `Reports\FILE_BY_FILE_TRANSFORMATION_PLAN.md`  
+**Test Suite**: `Documentation\08_TransformationTemplates\Tests\` ← **NEW: Automated validation**
+
+**Critical Backups**:
+- Full Warrior mod: `Tests\WARRIOR_BACKUP_BEFORE_TEMPLATE_20251018_183829`
+- Stat files only: `Tests\WARRIOR_STATS_BACKUP_20251018_183829`
+
+**Current Template**: Fresh WoWWarlock copy in `Data/` folder (UUID: `bdb3fa73-401b-4979-f02e-485422dd8d9c`)  
+**Goal**: Transform to Warrior mod with L1-20, 3 subclasses, 135 abilities
+
+**Completed Files**:
+- ✅ FILE 1: meta.lsx (UUID, dependencies, version) - Test passing
+- ✅ FILE 2: ClassDescriptions.lsx (base + 3 subclasses, 2 active + 2 commented) - Test passing
+  - **Note**: Currently using dummy SpellList UUID `32879c22-4858-48ef-8f8d-22e6d395b396` (Warlock template)
+  - Will replace with real Warrior SpellList UUID when FILE 12 (Lists/SpellLists.lsx) is transformed
+
+---
+
+## 🔴 SOURCE OF TRUTH PROTOCOL (CRITICAL - ALWAYS FOLLOW)
+
+**Living Document**: `Documentation/00_SourcesOfTruth/SOURCE_OF_TRUTH.md`
+
+This is the **single authoritative source** for all project information. All other documents may be outdated.
+
+### Pre-Change Protocol
+**BEFORE making ANY code or file changes**:
+1. Read relevant section of `Documentation/00_SourcesOfTruth/SOURCE_OF_TRUTH.md`
+2. Use it as baseline for current state
+3. Cross-reference with design documents if needed
+4. Proceed with change
+
+### Post-Change Protocol
+**AFTER any change + tests pass**:
+1. Update SOURCE_OF_TRUTH.md with new information
+2. Update "Last Updated" timestamp in changed section
+3. Add change log entry with date and reason
+4. If creating new files, update [12] Folder Structure Inventory
+5. If changing UUIDs/names, update all relevant sections
+
+### File Creation Protocol
+**BEFORE creating new files**:
+1. Check [12] Folder Structure Inventory in SOURCE_OF_TRUTH.md
+2. Determine correct folder location
+3. Present location to user for confirmation
+4. Create file in confirmed location
+5. Update SOURCE_OF_TRUTH.md folder inventory
+
+### Cross-Reference Protocol
+**WHEN moving/renaming files or folders**:
+1. Search SOURCE_OF_TRUTH.md for all references to old path/name
+2. Update ALL references to new path/name
+3. Search codebase for broken links (README.md, INDEX.md, HANDOVER docs)
+4. Run all tests to verify nothing broke
+5. Update SOURCE_OF_TRUTH.md with rename record
+
+### Archive Protocol
+**DO NOT use information from Archive/ folders** unless explicitly asked:
+- Archive folders contain outdated information
+- Always use SOURCE_OF_TRUTH.md as primary reference
+- If user asks about history, check Archive/ AFTER checking SOURCE_OF_TRUTH.md
+
+### Enforcement
+- **Pre-change**: Read SOURCE_OF_TRUTH.md section → Use as baseline → Proceed
+- **Post-change**: Update SOURCE_OF_TRUTH.md → Update timestamp → Add change log → Confirm
+- **File creation**: Check folder inventory → Confirm location → Create → Update inventory
+- **Cross-reference**: Search old name → Update all → Test → Record change
+
+---
+
 ## Critical Architecture Patterns
 
 ### 1. File Structure (Non-Negotiable Paths)
@@ -238,37 +313,132 @@ Before packaging a new version, ALWAYS run these checks:
 
 **CRITICAL**: Before making ANY changes to code or documentation, ALWAYS follow this protocol:
 
-### 0. Check Official Class Creation Guide FIRST (NEW)
-- **⚠️ MANDATORY**: Before ANY class-related changes, read https://wiki.bg3.community/Tutorials/Classes/Basic-Class-Creation
-- **⚠️ VALIDATE**: Check `Documentation/10_ValidationReports/CLASS_CREATION_REQUIREMENTS_CHECKLIST.md`
-- **⚠️ VERIFY**: Confirm all 9 required files exist (see checklist)
-- This guide defines the AUTHORITATIVE structure for BG3 classes
-- Our mod MUST match this structure or class won't appear in character creation
+### 0. SOURCE OF TRUTH PROTOCOL (READ FIRST)
+- **⚠️ MANDATORY**: Follow SOURCE OF TRUTH PROTOCOL (see section above)
+- **Pre-change**: Read `Documentation/00_SourcesOfTruth/SOURCE_OF_TRUTH.md` relevant section
+- **Post-change**: Update SOURCE_OF_TRUTH.md + timestamp + change log
+- **File creation**: Check folder inventory, confirm location with user
+- **Cross-reference**: Update all references when moving/renaming files
 
-### 1. Read Design Documents FIRST
+### 1. Check Handover Document (File-by-File Transformation)
+- **⚠️ MANDATORY**: Read `HANDOVER_FILE_BY_FILE_START.md` for current session context
+- **⚠️ VALIDATE**: Check what file we're currently working on (1-15)
+- **⚠️ VERIFY**: Confirm previous file was completed before moving to next
+- **⚠️ WORKFLOW**: Analyze → Review → Approve → Transform → Verify (never skip approval!)
+
+### 2. File-by-File Transformation Rules (CURRENT STRATEGY)
+- **NEVER** skip ahead - complete current file before suggesting next
+- **ALWAYS** present side-by-side comparison (Warlock vs Warrior)
+- **ALWAYS** wait for explicit user approval before changing anything
+- **ALWAYS** verify changes after transformation (XML syntax, references)
+- **ALWAYS** create test script for each file (following Test-MetaLsx.ps1 / Test-ClassDescriptions.ps1 patterns)
+- **ALWAYS** run tests to verify transformation before moving to next file
+- **DOCUMENT** every change made to each file
+- **CREATE** checkpoint after each priority group
+
+### 3. Read Design Documents
 - **ALWAYS check**: `Documentation/07_DesignDocuments/` - Class blueprints, design specs, intended mechanics
 - **ALWAYS check**: `Documentation/06_ProjectDocuments/` - Implementation guides, passive definitions, file references
+- **ALWAYS check**: `Reports/02_Transformation/FILE_BY_FILE_TRANSFORMATION_PLAN.md` - Current transformation plan
 - **Understand the INTENDED design** before modifying implementation or making claims about what's missing
 
-### 2. Scan Implementation Files SECOND
+### 4. Scan Implementation Files
 - Read actual file contents in `Data/Public/.../Stats/Generated/Data/`
 - Check ALL file types: `Spell_*.txt`, `Status_BOOST.txt`, `Passive.txt`, `Progressions.lsx`
 - Don't rely on grep results alone - verify with actual file reads
 - Many abilities are status effects or passives, not spell entries
 
-### 3. Update Documentation for EVERY Change
+### 5. Update Documentation for EVERY Change
 - **If you change code** → Update relevant `.md` files in Documentation/
 - **If you move files** → Update path references immediately (README.md, INDEX.md, etc.)
 - **If you discover errors** → Create correction documents with evidence (line numbers, file paths)
 - **Keep design docs and implementation in sync** - documentation drift causes confusion
 
-### 4. Trust User Knowledge
+### 6. Trust User Knowledge
 - User knows their project better than AI scanning
 - Verify user statements rather than contradicting them
 - Ask clarifying questions if design intent is unclear
 - Example: "I believe we converted heroic strike to sunder" → User was correct, validate first
 
-### 5. Create Evidence-Based Reports
+### 7. Lessons from WoWWarlock Autopsy (Apply to Stat Files)
+When transforming stat files (FILES 4-10), ensure entries have these fields:
+
+**Visual Effects** (from Warlock reference):
+- `data "PrepareEffect"` - Casting animation start
+- `data "CastEffect"` - Spell launch visual  
+- `data "TargetEffect"` - Impact on target
+
+**Tooltips**:
+- `data "TooltipDamageList"` - Damage display
+- `data "TooltipAttackSave"` - Save DC display
+
+**Animations**:
+- `data "SpellAnimation"` - Character animation
+
+**Flags**:
+- `data "SpellFlags"` - Spell behavior flags
+- `data "VerbalIntent"` - AI behavior hints
+
+**Icon References**:
+- `data "Icon"` - Ability icon path
+
+**Cooldown Format**:
+- Use `"OncePerTurn"`, `"OncePerShortRest"`, `"OncePerCombat"` (NOT numeric values)
+
+### 8. Critical Naming Conventions
+- **Warrior Abilities**: ALWAYS use `WAR_*` prefix (e.g., `WAR_Charge`, `WAR_MountainThane_Keystone`)
+- **NEVER** use `WoWWarrior_*` prefix (causes crashes - passive name mismatch)
+- **Warlock References**: Keep UUIDs unchanged, replace spell/passive names only
+
+### 9. UUID Management
+- **Warlock Template UUID**: `bdb3fa73-401b-4979-f02e-485422dd8d9c` (in Data/ folder now)
+- **Warrior Mod UUID**: `78fe4967-4e62-5491-d981-dd781acca4d7` (our target)
+- **Folder Naming**: Must match UUID exactly
+- **Don't create new UUIDs** unless explicitly instructed (we're transforming, not creating from scratch)
+
+### 10. Test Creation Protocol (NEW - October 18, 2025)
+**CRITICAL**: For EVERY file transformed (FILES 1-15), create a validation test script.
+
+**Test Script Naming**: `Test-{FileName}.ps1` (e.g., `Test-MetaLsx.ps1`, `Test-ClassDescriptions.ps1`)  
+**Location**: `Transformation_Templates/Tests/`  
+**Pattern**: Follow `Test-MetaLsx.ps1` and `Test-ClassDescriptions.ps1` as reference templates
+
+**Required Test Elements**:
+```powershell
+# 1. Parameters (file path, expected values)
+param([Parameter(Mandatory=$true)][string]$FilePath)
+
+# 2. Color output helpers (NO Unicode characters!)
+function Write-Pass { param($Message) Write-Host "[PASS] $Message" -ForegroundColor Green }
+function Write-Fail { param($Message) Write-Host "[FAIL] $Message" -ForegroundColor Red; $script:FailCount++ }
+function Write-Warn { param($Message) Write-Host "[WARN] $Message" -ForegroundColor Yellow }
+function Write-Info { param($Message) Write-Host "[INFO] $Message" -ForegroundColor Cyan }
+
+# 3. XML handling for .lsx files - ALWAYS strip multi-line comments first
+$RawContent = Get-Content $FilePath -Raw
+$CleanedContent = $RawContent -replace '(?s)<!--.*?-->', ''
+[xml]$ParsedXml = $CleanedContent
+
+# 4. Validation checks with informative context
+Write-Info "Found value: $SomeValue"
+if ($SomeValue -eq $ExpectedValue) { Write-Pass "Value correct" } 
+else { Write-Fail "Value mismatch: expected $ExpectedValue, got $SomeValue" }
+
+# 5. Exit with proper code
+if ($FailCount -gt 0) { exit 1 } else { exit 0 }
+```
+
+**PowerShell XML Best Practices**:
+- **Multi-line comments**: ALWAYS use `$Content -replace '(?s)<!--.*?-->', ''` before parsing (prevents "Unexpected end of file" errors)
+- **Version checking**: Support both attribute AND child node patterns (Warlock uses child nodes)
+- **Avoid Unicode**: Use `[PASS]`/`[FAIL]`/`[WARN]`/`[INFO]` - NO emoji (✅❌⚠️ℹ️ cause parse errors)
+- **Show context**: Always display what was found before validating it (`Write-Info "UUID: $uuid"` then `Write-Pass "UUID valid"`)
+
+**Test Master Runner**: After creating test, add it to `Test-AllFiles.ps1` for batch validation
+
+**Documentation**: Update `Tests/README.md` with new test details, usage examples, and lessons learned
+
+### 11. Create Evidence-Based Reports
 - Show proof with line numbers and actual code snippets
 - Include file paths for all references
 - Create searchable documentation for future sessions
