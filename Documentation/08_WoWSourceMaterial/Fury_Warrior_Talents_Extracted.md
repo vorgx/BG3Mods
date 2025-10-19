@@ -370,108 +370,192 @@ These are abilities available immediately when choosing Fury spec, separate from
 
 ## SPECIALIZATION: Mountain Thane (Hero Talent - Choice at L13)
 
-Fury warriors can choose **Mountain Thane** OR **Slayer** at Level 13.
+**Fury Warriors choose MOUNTAIN THANE OR SLAYER at Level 13.**
 
-### Mountain Thane - Key Talent (Granted at L13)
+### Mountain Thane - Keystone (Granted at L13)
 
 **Avatar of the Storm**
 - **Type**: Passive Enhancement
 - **Effect**: Enhances Avatar cooldown with lightning theme
 - **BG3 Implementation**: When you activate Avatar, gain Avatar of the Storm status: Lightning bursts deal 1d8 Lightning damage to all enemies within 3m every turn for Avatar's duration
+- **Tags**: Passive, Keystone, Avatar Enhancement
 
-### Mountain Thane - Choice Nodes (Granted L13-L20)
+### Mountain Thane - Choice Nodes (4 Tiers: L15, L16, L18, L19)
 
-**Lightning Strikes (L13)**
-- **Type**: Passive
-- **Effect**: Auto-attacks during Avatar trigger lightning
-- **BG3 Implementation**: While Avatar active, melee attacks have 30% chance to deal bonus 1d6 Lightning damage to target + all enemies within 2m
+**Choice Node 1 (L15) - Pick 1 of 2:**
 
-**Thunder Blast (L15)**
+**Thunder Blast**
 - **Type**: Passive Enhancement
 - **Effect**: Stronger version of Thunder Clap that ignores armor
 - **BG3 Implementation**: Thunder Clap ignores enemy AC bonuses from armor/shields and deals +1d6 damage
 
-**Burst of Power (L18)**
+**Lightning Strikes**
 - **Type**: Passive
-- **Effect**: Makes Bloodthirst better
-- **BG3 Implementation**: Bloodthirst gains +1d8 damage and heals for an additional 1d6
+- **Effect**: Auto-attacks during Avatar trigger lightning
+- **BG3 Implementation**: While Avatar active, melee attacks have 30% chance to deal bonus 1d6 Lightning damage to target + all enemies within 2m
 
-### Mountain Thane - Passives (Granted L13-L20)
+**Choice Node 2 (L16) - Pick 1 of 2:**
 
-**Crashing Thunder** (L13)
+**Crashing Thunder**
 - **Type**: Passive
 - **Effect**: Thunder Clap damage increase
 - **BG3 Implementation**: Thunder Clap deals +50% damage
 
-**Ground Current** (L15)
+**Ground Current**
 - **Type**: Passive
 - **Effect**: Lightning damage spreads
 - **BG3 Implementation**: When you deal Lightning damage, it chains to 1 additional nearby enemy (50% damage)
 
-**Thorim's Might** (L18)
+**Choice Node 3 (L18) - Pick 1 of 2:**
+
+**Burst of Power**
+- **Type**: Passive
+- **Effect**: Makes Bloodthirst better
+- **BG3 Implementation**: Bloodthirst gains +1d8 damage and heals for an additional 1d6
+
+**Steadfast as the Peaks**
+- **Type**: Passive
+- **Effect**: Stamina increase + Bloodthirst healing bonus
+- **BG3 Implementation**: +5% Stamina (max HP). Bloodthirst healing increased by +30%
+
+**Choice Node 4 (L19) - Pick 1 of 2:**
+
+**Storm's Eye**
+- **Type**: Passive
+- **Effect**: Avatar damage amplification with storm theme
+- **BG3 Implementation**: While Avatar active, all damage you deal is increased by +15%
+
+**Gathering Wind**
+- **Type**: Passive
+- **Effect**: Movement speed during Avatar
+- **BG3 Implementation**: While Avatar active, gain +6m movement speed and cannot be slowed
+
+### Mountain Thane - Passives (Auto-Granted)
+
+**Flashing Skies** (L14)
+- **Type**: Passive
+- **Effect**: Thunder Clap cooldown reduction
+- **BG3 Implementation**: Thunder Clap cooldown reduced by 1 turn (recharges faster)
+
+**Thorim's Might** (L17)
 - **Type**: Passive
 - **Effect**: Strength increase during Avatar
 - **BG3 Implementation**: While Avatar active, gain +4 Strength
 
-**Gathering Storms** (L20)
-- **Type**: Passive (Capstone)
+**Storm's Reach** (L20)
+- **Type**: Passive
+- **Effect**: Lightning and Thunder abilities have increased range
+- **BG3 Implementation**: Thunder Clap and Lightning Strikes range increased by +3m
+
+### Mountain Thane - Capstone (L20)
+
+**Gathering Storms**
+- **Type**: Passive
 - **Effect**: Stacking damage buff during Avatar
-- **BG3 Implementation**: While Avatar active, gain +5% damage per turn (stacks up to 50%)
+- **BG3 Implementation**: 
+  - While Avatar active, gain +5% damage per turn (stacks up to 50%)
+  - Lightning Strikes generate +3 Rage per hit
+  - Thunder Clap grants Avatar of the Storm status for 2 turns (lightning aura)
+- **Tags**: Passive, Enhancement, Capstone
 
 ---
 
 ## SPECIALIZATION: Slayer (Hero Talent - Alternative Choice at L13)
 
-### Slayer - Key Talent (Granted at L13)
+**Fury Warriors choose MOUNTAIN THANE OR SLAYER at Level 13.**
+
+### Slayer - Keystone (Granted at L13)
 
 **Slayer's Dominance**
 - **Type**: Passive
 - **Effect**: Frequent random single-target damage proc that inflicts Marked for Execution
 - **BG3 Implementation**: 15% chance on melee hit to deal bonus 2d8 damage and apply Marked for Execution status (target takes +10% damage from Execute and takes +1d6 damage from your attacks) for 4 turns
+- **Tags**: Passive, Keystone, Proc-Based Damage
 
-### Slayer - Choice Nodes (Granted L13-L20)
+### Slayer - Choice Nodes (3 Tiers: L15, L17, L19)
 
-**Brutal Finish (L13)**
+**Choice Node 1 (L15) - Pick 1 of 3:**
+
+**Brutal Finish**
 - **Type**: Passive
 - **Effect**: Execute damage increase when Marked
 - **BG3 Implementation**: Execute deals +50% damage against Marked for Execution targets
 
-**Overwhelming Blades (L15)**
+**Opportunist**
 - **Type**: Passive
-- **Effect**: Multi-target Marked for Execution spread
-- **BG3 Implementation**: When you apply Marked for Execution, it spreads to 1 additional nearby enemy (within 3m)
-
-**Opportunist (L18)**
-- **Type**: Passive
-- **Effect**: Low value due to relying on Raging Blow resets
+- **Effect**: Raging Blow enhancement tied to cooldown resets
 - **BG3 Implementation**: When Raging Blow resets its cooldown, it deals +1d8 damage on next use
 
-### Slayer - Passives (Granted L13-L20)
+**Overwhelming Blades**
+- **Type**: Passive
+- **Effect**: Multi-target Marked for Execution spread
+- **BG3 Implementation**: When you apply Marked for Execution, it spreads to 1 additional nearby enemy (within 3m) at half effectiveness (duration 2 turns instead of 4)
 
-**Imminent Demise** (L13)
+**Choice Node 2 (L17) - Pick 1 of 3:**
+
+**Show No Mercy**
+- **Type**: Passive
+- **Effect**: Critical strike bonus tied to Marked for Execution
+- **BG3 Implementation**: Attacks against Marked for Execution targets have critical hit range increased by 1 (19-20, or 18-20 if combined with other crit talents)
+
+**Culling Cyclone**
+- **Type**: Passive
+- **Effect**: Whirlwind benefit from Marked
+- **BG3 Implementation**: Whirlwind deals +1d6 damage per Marked for Execution enemy hit (stacks multiplicatively, 3 marked enemies = +3d6)
+
+**Relentless Pursuit**
+- **Type**: Passive
+- **Effect**: Movement speed increase
+- **BG3 Implementation**: +3m movement speed. When you Execute a Marked enemy, gain +6m movement for 2 turns (stacks with base)
+
+**Choice Node 3 (L19) - Pick 1 of 3:**
+
+**Reap the Storm**
+- **Type**: Passive
+- **Effect**: Multi-target debuff
+- **BG3 Implementation**: When you hit 3+ enemies with a single attack, apply Overwhelmed status on all targets (take +8% damage from you) for 3 turns
+
+**Flurry of Blades**
+- **Type**: Passive
+- **Effect**: Raging Blow multi-target
+- **BG3 Implementation**: Raging Blow cleaves to 2 additional nearby targets for 50% damage
+
+**Death Sentence**
+- **Type**: Passive
+- **Effect**: Execute extends Marked for Execution
+- **BG3 Implementation**: When you Execute a target, extend Marked for Execution duration by 3 turns on all marked enemies within 9m
+
+### Slayer - Passives (Auto-Granted)
+
+**Imminent Demise** (L14)
 - **Type**: Passive
 - **Effect**: Rampage damage increase against Marked targets
 - **BG3 Implementation**: Rampage deals +25% damage against Marked for Execution targets
 
-**Culling Cyclone** (L15)
+**Marked Fury** (L16)
 - **Type**: Passive
-- **Effect**: Whirlwind benefit from Marked
-- **BG3 Implementation**: Whirlwind deals +1d6 damage per Marked for Execution enemy hit
+- **Effect**: Rage generation from Marked targets
+- **BG3 Implementation**: Gain +5 Rage when you attack a Marked for Execution target (max 3 procs per turn)
 
-**Show No Mercy** (L18)
+**Unrelenting Onslaught** (L18)
 - **Type**: Passive
-- **Effect**: Damage increase tied to Marked for Execution and Sudden Death procs
-- **BG3 Implementation**: Attacks against Marked for Execution targets have critical hit range increased by 1 (19-20)
+- **Effect**: Attack speed increase
+- **BG3 Implementation**: +10% attack speed while at least 1 enemy is Marked for Execution
 
-**Reap the Storm** (L18)
+**Slayer's Focus** (L20)
 - **Type**: Passive
-- **Effect**: Minor damage contributor for Overwhelmed status
-- **BG3 Implementation**: When you hit 3+ enemies with a single attack, apply Overwhelmed status on all targets (take +5% damage from you) for 3 turns
+- **Effect**: Your primary target (most recently attacked enemy) focus
+- **BG3 Implementation**: Your primary target (most recently attacked enemy) takes +10% damage from you. When you apply Marked for Execution, it's automatically applied to your primary target
 
-**Slayer's Malice** (L20 - Capstone)
+### Slayer - Capstone (L20)
+
+**Slayer's Malice**
 - **Type**: Passive
-- **Effect**: General damage increase further emphasizing Raging Blow
-- **BG3 Implementation**: Raging Blow deals +30% damage and has +10% chance to apply Marked for Execution
+- **Effect**: General damage increase further emphasizing Execute and Bloodthirst
+- **BG3 Implementation**:
+  - Execute deals +30% damage and has +10% chance to apply Marked for Execution
+  - Bloodthirst deals +30% damage (Fury-specific capstone effect - replaces Overpower bonus from Arms version)
+- **Tags**: Passive, Enhancement, Capstone
 
 ---
 

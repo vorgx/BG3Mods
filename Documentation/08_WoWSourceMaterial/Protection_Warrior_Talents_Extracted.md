@@ -437,134 +437,208 @@
 
 ## SPECIALIZATION: Mountain Thane (Hero Talent - Choice at L13)
 
-Protection warriors can choose **Mountain Thane** OR **Colossus** at Level 13.
+**Protection Warriors choose MOUNTAIN THANE OR COLOSSUS at Level 13.**
 
-### Mountain Thane - Key Talent (Granted at L13)
+### Mountain Thane - Keystone (Granted at L13)
 
 **Avatar of the Storm**
 - **Type**: Passive Enhancement
 - **Effect**: Casting Avatar grants Thunder Blast charges and resets Thunder Clap, plus chance to trigger Avatar from Lightning Strikes
 - **BG3 Implementation**: When you activate Avatar, gain 2 charges of Thunder Blast and reset Thunder Clap cooldown. While Avatar is not active, Lightning Strikes have 10% chance to grant Avatar for 4 seconds
+- **Tags**: Passive, Keystone, Avatar Enhancement
 
-### Mountain Thane - Choice Nodes (Granted L13-L20)
+### Mountain Thane - Choice Nodes (4 Tiers: L15, L16, L18, L19)
 
-**Lightning Strikes (L13)**
-- **Type**: Passive
-- **Effect**: Thunder Clap, Revenge, or Execute have chance to strike with lightning bolt
-- **BG3 Implementation**: Thunder Clap, Revenge, or Execute have 25% chance to also strike one enemy with lightning bolt (1d10 Lightning damage). Occurs 30% more often during Avatar
+**Choice Node 1 (L15) - Pick 1 of 2:**
 
-**Thunder Blast (TB) (L15)**
+**Thunder Blast (TB)**
 - **Type**: Passive + Active Enhancement
 - **Effect**: Shield Slam has chance to grant Thunder Blast charges
 - **BG3 Implementation**: Shield Slam has 35% chance to grant 2 charges of Thunder Blast. Thunder Blast replaces next Thunder Clap with stronger version dealing +40% damage as Stormstrike damage and generating +2 Rage
 
-**Keep Your Feet on the Ground (L18)**
+**Lightning Strikes**
 - **Type**: Passive
-- **Effect**: Physical damage reduction + Thunder Blast defensive bonus
-- **BG3 Implementation**: -2% Physical damage taken. Thunder Blast also reduces damage you take by -8% for 5 turns
+- **Effect**: Thunder Clap, Revenge, or Execute have chance to strike with lightning bolt
+- **BG3 Implementation**: Thunder Clap, Revenge, or Execute have 25% chance to also strike one enemy with lightning bolt (1d10 Lightning damage). Occurs 30% more often during Avatar
 
-**Steadfast as the Peaks (L18)**
-- **Type**: Passive
-- **Effect**: Stamina increase + Impending Victory/Victory Rush bonus
-- **BG3 Implementation**: +5% Stamina (max HP). Impending Victory/Victory Rush increases max HP by +10% for 5 turns. When this expires, heal for any excess healing
+**Choice Node 2 (L16) - Pick 1 of 2:**
 
-### Mountain Thane - Passives (Granted L13-L20)
-
-**Burst of Power** (L13)
-- **Type**: Passive
-- **Effect**: Lightning Strikes chance to grant free Shield Slams
-- **BG3 Implementation**: Lightning Strikes have 15% chance to make next 2 Shield Slams have no cooldown
-
-**Crashing Thunder** (L15)
+**Crashing Thunder**
 - **Type**: Passive
 - **Effect**: Whirlwind/Revenge hits multiple times against 3+ targets
 - **BG3 Implementation**: If Whirlwind or Revenge hits 3+ enemies, it hits them 1 additional time for 30% damage
 
-**Strength of the Mountain** (L18)
+**Burst of Power**
+- **Type**: Passive
+- **Effect**: Lightning Strikes chance to grant free Shield Slams
+- **BG3 Implementation**: Lightning Strikes have 15% chance to make next 2 Shield Slams have no cooldown
+
+**Choice Node 3 (L18) - Pick 1 of 2:**
+
+**Keep Your Feet on the Ground**
+- **Type**: Passive
+- **Effect**: Physical damage reduction + Thunder Blast defensive bonus
+- **BG3 Implementation**: -2% Physical damage taken. Thunder Blast also reduces damage you take by -8% for 5 turns
+
+**Steadfast as the Peaks**
+- **Type**: Passive
+- **Effect**: Stamina increase + Impending Victory/Victory Rush bonus
+- **BG3 Implementation**: +5% Stamina (max HP). Impending Victory/Victory Rush increases max HP by +10% for 5 turns. When this expires, heal for any excess healing
+
+**Choice Node 4 (L19) - Pick 1 of 2:**
+
+**Storm's Eye**
+- **Type**: Passive
+- **Effect**: Avatar damage amplification with storm theme
+- **BG3 Implementation**: While Avatar active, all damage you deal is increased by +15%
+
+**Thorim's Might**
+- **Type**: Passive
+- **Effect**: Lightning damage empowerment
+- **BG3 Implementation**: Lightning damage you deal is increased by +30%
+
+### Mountain Thane - Passives (Auto-Granted)
+
+**Flashing Skies** (L14)
+- **Type**: Passive
+- **Effect**: Thunder Clap cooldown reduction
+- **BG3 Implementation**: Thunder Clap cooldown reduced by 1 turn (recharges faster)
+
+**Strength of the Mountain** (L17)
 - **Type**: Passive
 - **Effect**: Shield Slam damage increased, Demoralizing Shout reduces damage more
 - **BG3 Implementation**: +15% Shield Slam damage. Demoralizing Shout reduces damage enemies deal by additional -5%
 
-**Gathering Storms** (L20 - Capstone)
+**Storm's Reach** (L20)
+- **Type**: Passive
+- **Effect**: Lightning and Thunder abilities have increased range
+- **BG3 Implementation**: Thunder Clap and Lightning Strikes range increased by +3m
+
+### Mountain Thane - Capstone (L20)
+
+**Gathering Storms**
 - **Type**: Passive
 - **Effect**: Lightning damage generates Rage, Revenge/Execute damage increased
-- **BG3 Implementation**: Lightning Strikes generate +3 Rage. Revenge and Execute damage increased by +25%
+- **BG3 Implementation**:
+  - Lightning Strikes generate +3 Rage per hit
+  - Revenge and Execute damage increased by +25%
+  - Thunder Blast grants Avatar of the Storm status for 2 turns (lightning aura dealing 1d6 damage/turn to nearby enemies)
+- **Tags**: Passive, Enhancement, Capstone
 
 ---
 
 ## SPECIALIZATION: Colossus (Hero Talent - Alternative Choice at L13)
 
-### Colossus - Key Talent (Granted at L13)
+**Protection Warriors choose MOUNTAIN THANE OR COLOSSUS at Level 13.**
+
+### Colossus - Keystone (Granted at L13)
 
 **Demolish**
-- **Type**: Action (Key Ability)
-- **Effect**: Unleash series of precise powerful strikes
+- **Type**: Active Ability
+- **Cooldown**: Short Rest
+- **Rage Cost**: 20
+- **Effect**: Unleash devastating strike that demolishes armor
 - **BG3 Implementation**:
-  - Action, Single target melee attack (3 rapid strikes)
-  - Damage: 3 strikes of 3d10 + Strength modifier each
-  - Costs: 40 Rage
-  - Consumes all stacks of Colossal Might for bonus damage
-  - Recharge: Short Rest
-  - Tags: MeleeWeapon, MultiHit, SingleTarget
+  - **Base**: Deal 3d12+STR weapon damage
+  - **Debuff**: Apply Demolished status (target takes +10% physical damage) for 3 turns
+  - **Synergy**: Against targets with Sunder Armor, deal +2d12 damage and refresh Sunder duration to maximum
+- **Tags**: Active, Keystone, Single-Target, Debuff
 
 **Colossal Might**
 - **Type**: Passive (Stacking Mechanic)
 - **Effect**: Increases Demolish damage by 10% per stack (max 5 stacks)
-- **BG3 Implementation**: Shield Slam grants 1 stack. Execute grants 1 stack. Revenge grants 1 stack if it hits 3+ targets
+- **BG3 Implementation**: 
+  - Shield Slam grants 1 stack
+  - Execute grants 1 stack
+  - Revenge grants 1 stack if it hits 3+ targets
+- **Tags**: Passive, Stacking Buff
 
-### Colossus - Choice Nodes (Granted L13-L20)
+### Colossus - Choice Nodes (3 Tiers: L15, L17, L19)
 
-**One Against Many (L13)**
+**Choice Node 1 (L15) - Pick 1 of 3:**
+
+**Unstoppable Force**
 - **Type**: Passive
-- **Effect**: Shockwave, Revenge, and Whirlwind deal more damage per target affected
-- **BG3 Implementation**: Shockwave, Revenge, and Whirlwind deal +3% damage per target affected (max 5 targets = +15%)
+- **Effect**: Shield Slam chains to additional targets
+- **BG3 Implementation**: Shield Slam bounces to 1 additional target within 6m, dealing 50% damage
 
-**Arterial Bleed (L15)**
+**Mountain of Muscle and Scars**
+- **Type**: Passive
+- **Effect**: Damage reduction when using Rage
+- **BG3 Implementation**: While you have 50+ Rage (5+ pips), gain resistance to physical damage (take half damage)
+
+**Arterial Bleed**
 - **Type**: Passive
 - **Effect**: Colossal Might increases Rend and Deep Wounds damage
 - **BG3 Implementation**: +3% Rend and Deep Wounds damage per stack of Colossal Might
 
-**Earthquaker (L15)**
+**Choice Node 2 (L17) - Pick 1 of 3:**
+
+**One Against Many**
+- **Type**: Passive
+- **Effect**: Shockwave, Revenge, and Whirlwind deal more damage per target affected
+- **BG3 Implementation**: Shockwave, Revenge, and Whirlwind deal +3% damage per target affected (max 5 targets = +15%)
+
+**Earthquaker**
 - **Type**: Passive Enhancement
 - **Effect**: Shockwave knocks enemies airborne and reduced cooldown
 - **BG3 Implementation**: Shockwave also knocks enemies airborne (grants Prone) and cooldown reduced by 5 seconds
 
-**Martial Expert (L18)**
+**Colossal Might Enhancement**
+- **Type**: Passive
+- **Effect**: Demolish range increase (choice node option - NOT the capstone)
+- **BG3 Implementation**: Demolish can target enemies up to 18m away (from 3m melee range), becomes a ranged slam
+
+**Choice Node 3 (L19) - Pick 1 of 3:**
+
+**Martial Expert**
 - **Type**: Passive
 - **Effect**: Colossal Might increases Revenge damage
 - **BG3 Implementation**: +7% Revenge damage per stack of Colossal Might
 
-**Tide of Battle (L18)**
+**Tide of Battle**
 - **Type**: Passive
-- **Effect**: Revenge damage scales with Colossal Might stacks
-- **BG3 Implementation**: +5% Revenge damage per stack of Colossal Might
+- **Effect**: Revenge enhances next Shield Slam
+- **BG3 Implementation**: When you use Revenge, your next Shield Slam within 2 turns deals +1d8 damage and generates +5 Rage
 
-### Colossus - Passives (Granted L13-L20)
+**Practiced Strikes**
+- **Type**: Passive
+- **Effect**: Shield Slam cooldown reduction
+- **BG3 Implementation**: Shield Slam recharge time reduced by 50% (recharges every 2 turns instead of 4)
 
-**No Stranger to Pain** (L13)
+### Colossus - Passives (Auto-Granted)
+
+**No Stranger to Pain** (L14)
 - **Type**: Passive
 - **Effect**: Ignore Pain prevents more damage
 - **BG3 Implementation**: Ignore Pain damage prevention increased by +20%
 
-**Veteran Vitality** (L13)
+**Veteran Vitality** (L16)
 - **Type**: Passive
 - **Effect**: Gain Second Wind when health drops low
 - **BG3 Implementation**: When HP drops below 35%, gain Second Wind (heal 12% max HP over 2 turns). Once per 60 seconds
 
-**Practiced Strikes** (L15)
+**Disrupting Shout** (L18)
 - **Type**: Passive
-- **Effect**: Shield Slam and Revenge damage increased
-- **BG3 Implementation**: +10% Shield Slam damage, +10% Revenge damage, Shield Slam generates +3 Rage
+- **Effect**: Thunder Clap reduces enemy damage
+- **BG3 Implementation**: Enemies hit by Thunder Clap deal -10% damage for 2 turns
 
-**Precise Might** (L18)
+**Precise Might** (L20)
 - **Type**: Passive
 - **Effect**: Shield Slam critical strikes grant extra Colossal Might stack
 - **BG3 Implementation**: Shield Slam critical hits grant 2 stacks of Colossal Might (instead of 1)
 
-**Mountain of Muscle and Scars** (L20 - Capstone)
+### Colossus - Capstone (L20)
+
+**Dominance of the Colossus**
 - **Type**: Passive
-- **Effect**: Deal more damage, take less damage, increased size
-- **BG3 Implementation**: +4% damage dealt, -2.5% damage taken, size increased by 5%
+- **Effect**: Demolish becomes even more devastating, you become larger and more imposing
+- **BG3 Implementation**:
+  - **Damage Increase**: Demolish deals +50% damage (4d12+1d6+STR instead of 3d12+STR)
+  - **AoE Effect**: Demolish now hits all enemies in a 3m radius around the primary target for 50% damage
+  - **Debuff Enhancement**: Demolished status now also reduces target's AC by -2
+  - **Size Increase**: Your character size increased by 5%, +4% damage dealt, -2.5% damage taken
+- **Tags**: Passive, Enhancement, Capstone
 
 ---
 

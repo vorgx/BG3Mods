@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="4" build="602" lslib_meta="v1,bswap_guids" />
+	<region id="PhysicsBank">
+		<node id="PhysicsBank">
+			<children>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="34ff61fe-551a-451a-b7c7-b4e2ad5d1e4f" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="Name" type="LSString" value="WPN_HUM_Greataxe_A_0" />
+					<attribute id="SourceFile" type="LSString" value="Public/Shared/Assets/Weapons/WPN_HUM_Greataxe_A_0.bin" />
+					<attribute id="Template" type="FixedString" value="Public/Shared/Assets/Weapons/WPN_HUM_Greataxe_A_0" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855878" />
+				</node>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="3fc2ba50-3070-4caa-abe8-3bf885969bde" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="Name" type="LSString" value="WPN_HUM_Longsword_A_1" />
+					<attribute id="SourceFile" type="LSString" value="Public/Shared/Assets/Weapons/WPN_HUM_Longsword_A_1.bin" />
+					<attribute id="Template" type="FixedString" value="Public/Shared/Assets/Weapons/WPN_HUM_Longsword_A_1" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
+				</node>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="b8ae24d1-753f-865f-d6ce-fd99297bb9e2" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="Name" type="LSString" value="WPN_HUM_Greatsword_A_0" />
+					<attribute id="SourceFile" type="LSString" value="Public/Shared/Assets/Weapons/WPN_HUM_Greatsword_A_0.bin" />
+					<attribute id="Template" type="FixedString" value="Public/Shared/Assets/Weapons/WPN_HUM_Greatsword_A_0" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
+				</node>
+			</children>
+		</node>
+	</region>
+	<region id="MaterialBank">
+		<node id="MaterialBank">
+			<children>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="93a1f0d3-b1a4-46da-abe8-796e8917edd2" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="MaterialType" type="uint8" value="4" />
+					<attribute id="Name" type="LSString" value="Apocalypse" />
+					<attribute id="SourceFile" type="LSString" value="Public/Shared/Assets/Materials/Base/Base_AlphaTest.lsf" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115198813274213" />
+					<children>
+						<node id="ScalarParameters">
+							<attribute id="BaseValue" type="float" value="0" />
+							<attribute id="Enabled" type="bool" value="False" />
+							<attribute id="ExportAsPreset" type="bool" value="False" />
+							<attribute id="GroupName" type="FixedString" value="" />
+							<attribute id="ParameterName" type="FixedString" value="SeeThroughEnabled" />
+							<attribute id="Value" type="float" value="0" />
+						</node>
+						<node id="ScalarParameters">
+							<attribute id="BaseValue" type="float" value="0.5" />
+							<attribute id="Enabled" type="bool" value="False" />
+							<attribute id="ExportAsPreset" type="bool" value="True" />
+							<attribute id="GroupName" type="FixedString" value="" />
+							<attribute id="ParameterName" type="FixedString" value="Reflectance" />
+							<attribute id="Value" type="float" value="1" />
+						</node>
+						<node id="Texture2DParameters">
+							<attribute id="Enabled" type="bool" value="True" />
+							<attribute id="ExportAsPreset" type="bool" value="True" />
+							<attribute id="GroupName" type="FixedString" value="" />
+							<attribute id="ID" type="FixedString" value="0ef9460f-e2c9-4b73-bead-cec35f8cee78" />
+							<attribute id="ParameterName" type="FixedString" value="normalmap" />
+						</node>
+						<node id="Texture2DParameters">
+							<attribute id="Enabled" type="bool" value="False" />
+							<attribute id="ExportAsPreset" type="bool" value="True" />
+							<attribute id="GroupName" type="FixedString" value="" />
+							<attribute id="ID" type="FixedString" value="bde93fb8-854a-4817-a93e-a6f8f8cca5d9" />
+							<attribute id="IgnoreTexelDensity" type="bool" value="True" />
+							<attribute id="ParameterName" type="FixedString" value="Gradients" />
+						</node>
+						<node id="Texture2DParameters">
+							<attribute id="Enabled" type="bool" value="True" />
+							<attribute id="ExportAsPreset" type="bool" value="True" />
+							<attribute id="GroupName" type="FixedString" value="" />
+							<attribute id="ID" type="FixedString" value="76c969e8-d237-4f7b-8df2-8175edbe492c3" />
+							<attribute id="ParameterName" type="FixedString" value="basecolor" />
+						</node>
+						<node id="Texture2DParameters">
+							<attribute id="Enabled" type="bool" value="True" />
+							<attribute id="ExportAsPreset" type="bool" value="True" />
+							<attribute id="GroupName" type="FixedString" value="" />
+							<attribute id="ID" type="FixedString" value="7857518b-919d-48a6-8a48-980582a0cb4e" />
+							<attribute id="ParameterName" type="FixedString" value="physicalmap" />
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="d87416d3-2710-4e0d-814b-80e821607dff" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="MaterialType" type="uint8" value="4" />
+					<attribute id="Name" type="LSString" value="FallenPrinceBlades" />
+					<attribute id="SourceFile" type="LSString" value="Public/Shared/Assets/Materials/Base/Base_AlphaTest.lsf" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115198813274213" />
+					<children>
+						<node id="ScalarParameters">
+							<attribute id="BaseValue" type="float" value="0" />
+							<attribute id="Enabled" type="bool" value="False" />
+							<attribute id="ExportAsPreset" type="bool" value="False" />
+							<attribute id="GroupName" type="FixedString" value="" />
+							<attribute id="ParameterName" type="FixedString" value="SeeThroughEnabled" />
+							<attribute id="Value" type="float" value="0" />
+						</node>
+						<node id="ScalarParameters">
+							<attribute id="BaseValue" type="float" value="0.5" />
+							<attribute id="Enabled" type="bool" value="False" />
+							<attribute id="ExportAsPreset" type="bool" value="True" />
+							<attribute id="GroupName" type="FixedString" value="" />
+							<attribute id="ParameterName" type="FixedString" value="Reflectance" />
+							<attribute id="Value" type="float" value="1" />
+						</node>
+						<node id="Texture2DParameters">
+							<attribute id="Enabled" type="bool" value="True" />
+							<attribute id="ExportAsPreset" type="bool" value="True" />
+							<attribute id="GroupName" type="FixedString" value="" />
+							<attribute id="ID" type="FixedString" value="edf05f1c-341c-4e8f-ba09-f8f3470df7ef" />
+							<attribute id="ParameterName" type="FixedString" value="normalmap" />
+						</node>
+						<node id="Texture2DParameters">
+							<attribute id="Enabled" type="bool" value="False" />
+							<attribute id="ExportAsPreset" type="bool" value="True" />
+							<attribute id="GroupName" type="FixedString" value="" />
+							<attribute id="ID" type="FixedString" value="a90992f1-5dbf-9893-dba2-35386614d20d" />
+							<attribute id="IgnoreTexelDensity" type="bool" value="True" />
+							<attribute id="ParameterName" type="FixedString" value="Gradients" />
+						</node>
+						<node id="Texture2DParameters">
+							<attribute id="Enabled" type="bool" value="True" />
+							<attribute id="ExportAsPreset" type="bool" value="True" />
+							<attribute id="GroupName" type="FixedString" value="" />
+							<attribute id="ID" type="FixedString" value="ac0fafe1-80bd-48c8-b7ce-1538b1df1bb2" />
+							<attribute id="ParameterName" type="FixedString" value="basecolor" />
+						</node>
+						<node id="Texture2DParameters">
+							<attribute id="Enabled" type="bool" value="True" />
+							<attribute id="ExportAsPreset" type="bool" value="True" />
+							<attribute id="GroupName" type="FixedString" value="" />
+							<attribute id="ID" type="FixedString" value="83d65b82-a624-47c2-9804-2ac2fc520d35" />
+							<attribute id="ParameterName" type="FixedString" value="physicalmap" />
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="d20f259f-67ce-4d9b-a5f5-1abb8184a257" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="MaterialType" type="uint8" value="4" />
+					<attribute id="Name" type="LSString" value="Apocalypse" />
+					<attribute id="SourceFile" type="LSString" value="Public/Shared/Assets/Materials/Base/Base_AlphaTest.lsf" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115198813274213" />
+					<children>
+						<node id="ScalarParameters">
+							<attribute id="BaseValue" type="float" value="0" />
+							<attribute id="Enabled" type="bool" value="False" />
+							<attribute id="ExportAsPreset" type="bool" value="False" />
+							<attribute id="GroupName" type="FixedString" value="" />
+							<attribute id="ParameterName" type="FixedString" value="SeeThroughEnabled" />
+							<attribute id="Value" type="float" value="0" />
+						</node>
+						<node id="ScalarParameters">
+							<attribute id="BaseValue" type="float" value="0.5" />
+							<attribute id="Enabled" type="bool" value="False" />
+							<attribute id="ExportAsPreset" type="bool" value="True" />
+							<attribute id="GroupName" type="FixedString" value="" />
+							<attribute id="ParameterName" type="FixedString" value="Reflectance" />
+							<attribute id="Value" type="float" value="1" />
+						</node>
+						<node id="Texture2DParameters">
+							<attribute id="Enabled" type="bool" value="True" />
+							<attribute id="ExportAsPreset" type="bool" value="True" />
+							<attribute id="GroupName" type="FixedString" value="" />
+							<attribute id="ID" type="FixedString" value="2f0c95b7-fb38-4492-88f3-4aa80f210f86" />
+							<attribute id="ParameterName" type="FixedString" value="normalmap" />
+						</node>
+						<node id="Texture2DParameters">
+							<attribute id="Enabled" type="bool" value="False" />
+							<attribute id="ExportAsPreset" type="bool" value="True" />
+							<attribute id="GroupName" type="FixedString" value="" />
+							<attribute id="ID" type="FixedString" value="1d13aaca-26d7-4b79-a063-7c045d7d4f88" />
+							<attribute id="IgnoreTexelDensity" type="bool" value="True" />
+							<attribute id="ParameterName" type="FixedString" value="Gradients" />
+						</node>
+						<node id="Texture2DParameters">
+							<attribute id="Enabled" type="bool" value="True" />
+							<attribute id="ExportAsPreset" type="bool" value="True" />
+							<attribute id="GroupName" type="FixedString" value="" />
+							<attribute id="ID" type="FixedString" value="b34a4c27-f706-46af-816c-fd1f2b9280e3" />
+							<attribute id="ParameterName" type="FixedString" value="basecolor" />
+						</node>
+						<node id="Texture2DParameters">
+							<attribute id="Enabled" type="bool" value="True" />
+							<attribute id="ExportAsPreset" type="bool" value="True" />
+							<attribute id="GroupName" type="FixedString" value="" />
+							<attribute id="ID" type="FixedString" value="4a2063cd-c8e4-4f84-bf50-9e463a466f9f" />
+							<attribute id="ParameterName" type="FixedString" value="physicalmap" />
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+	<region id="TextureBank">
+		<node id="TextureBank">
+			<children>
+				<node id="Resource">
+					<attribute id="Depth" type="int32" value="1" />
+					<attribute id="Height" type="int32" value="1024" />
+					<attribute id="ID" type="FixedString" value="0ef9460f-e2c9-4b73-bead-cec35f8cee78" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="Name" type="LSString" value="MawOfDamned_NM" />
+					<attribute id="SRGB" type="bool" value="False" />
+					<attribute id="SourceFile" type="LSString" value="Generated/Public/Shared/Assets/Weapons/Humans/WoWDeathKnightClass/MawOfDamned_NM.DDS" />
+					<attribute id="Streaming" type="bool" value="True" />
+					<attribute id="Template" type="FixedString" value="MawOfDamned_NM" />
+					<attribute id="Type" type="int32" value="1" />
+					<attribute id="Width" type="int32" value="1024" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855943" />
+				</node>
+				<node id="Resource">
+					<attribute id="Depth" type="int32" value="0" />
+					<attribute id="Height" type="int32" value="1024" />
+					<attribute id="ID" type="FixedString" value="76c969e8-d237-4f7b-8df2-8175edbe492c3" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="Name" type="LSString" value="MawOfDamned_BM" />
+					<attribute id="SRGB" type="bool" value="True" />
+					<attribute id="SourceFile" type="LSString" value="Generated/Public/Shared/Assets/Weapons/Humans/WoWDeathKnightClass/MawOfDamned_BM.DDS" />
+					<attribute id="Streaming" type="bool" value="True" />
+					<attribute id="Template" type="FixedString" value="MawOfDamned_BM" />
+					<attribute id="Type" type="int32" value="1" />
+					<attribute id="Width" type="int32" value="1024" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855943" />
+				</node>
+				<node id="Resource">
+					<attribute id="Depth" type="int32" value="1" />
+					<attribute id="Height" type="int32" value="1024" />
+					<attribute id="ID" type="FixedString" value="7857518b-919d-48a6-8a48-980582a0cb4e" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="Name" type="LSString" value="MawOfDamned_PM" />
+					<attribute id="SRGB" type="bool" value="False" />
+					<attribute id="SourceFile" type="LSString" value="Generated/Public/Shared/Assets/Weapons/Humans/WoWDeathKnightClass/MawOfDamned_PM.DDS" />
+					<attribute id="Streaming" type="bool" value="True" />
+					<attribute id="Template" type="FixedString" value="MawOfDamned_PM" />
+					<attribute id="Type" type="int32" value="1" />
+					<attribute id="Width" type="int32" value="1024" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855943" />
+				</node>
+				<node id="Resource">
+					<attribute id="Depth" type="int32" value="1" />
+					<attribute id="Height" type="int32" value="1024" />
+					<attribute id="ID" type="FixedString" value="edf05f1c-341c-4e8f-ba09-f8f3470df7ef" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="Name" type="LSString" value="FallenPrinceBlades_NM" />
+					<attribute id="SRGB" type="bool" value="False" />
+					<attribute id="SourceFile" type="LSString" value="Generated/Public/Shared/Assets/Weapons/Humans/WoWDeathKnightClass/FallenPrinceBlades_NM.DDS" />
+					<attribute id="Streaming" type="bool" value="True" />
+					<attribute id="Template" type="FixedString" value="FallenPrinceBlades_NM" />
+					<attribute id="Type" type="int32" value="1" />
+					<attribute id="Width" type="int32" value="1024" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855943" />
+				</node>
+				<node id="Resource">
+					<attribute id="Depth" type="int32" value="0" />
+					<attribute id="Height" type="int32" value="1024" />
+					<attribute id="ID" type="FixedString" value="ac0fafe1-80bd-48c8-b7ce-1538b1df1bb2" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="Name" type="LSString" value="FallenPrinceBlades_BM" />
+					<attribute id="SRGB" type="bool" value="True" />
+					<attribute id="SourceFile" type="LSString" value="Generated/Public/Shared/Assets/Weapons/Humans/WoWDeathKnightClass/FallenPrinceBlades_BM.DDS" />
+					<attribute id="Streaming" type="bool" value="True" />
+					<attribute id="Template" type="FixedString" value="FallenPrinceBlades_BM" />
+					<attribute id="Type" type="int32" value="1" />
+					<attribute id="Width" type="int32" value="1024" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855943" />
+				</node>
+				<node id="Resource">
+					<attribute id="Depth" type="int32" value="1" />
+					<attribute id="Height" type="int32" value="1024" />
+					<attribute id="ID" type="FixedString" value="83d65b82-a624-47c2-9804-2ac2fc520d35" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="Name" type="LSString" value="FallenPrinceBlades_PM" />
+					<attribute id="SRGB" type="bool" value="False" />
+					<attribute id="SourceFile" type="LSString" value="Generated/Public/Shared/Assets/Weapons/Humans/WoWDeathKnightClass/FallenPrinceBlades_PM.DDS" />
+					<attribute id="Streaming" type="bool" value="True" />
+					<attribute id="Template" type="FixedString" value="FallenPrinceBlades_PM" />
+					<attribute id="Type" type="int32" value="1" />
+					<attribute id="Width" type="int32" value="1024" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855943" />
+				</node>
+				<node id="Resource">
+					<attribute id="Depth" type="int32" value="1" />
+					<attribute id="Height" type="int32" value="1024" />
+					<attribute id="ID" type="FixedString" value="2f0c95b7-fb38-4492-88f3-4aa80f210f86" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="Name" type="LSString" value="Apocalypse_NM" />
+					<attribute id="SRGB" type="bool" value="False" />
+					<attribute id="SourceFile" type="LSString" value="Generated/Public/Shared/Assets/Weapons/Humans/WoWDeathKnightClass/Apocalypse_NM.DDS" />
+					<attribute id="Streaming" type="bool" value="True" />
+					<attribute id="Template" type="FixedString" value="Apocalypse_NM" />
+					<attribute id="Type" type="int32" value="1" />
+					<attribute id="Width" type="int32" value="1024" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855943" />
+				</node>
+				<node id="Resource">
+					<attribute id="Depth" type="int32" value="0" />
+					<attribute id="Height" type="int32" value="1024" />
+					<attribute id="ID" type="FixedString" value="b34a4c27-f706-46af-816c-fd1f2b9280e3" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="Name" type="LSString" value="Apocalypse_BM" />
+					<attribute id="SRGB" type="bool" value="True" />
+					<attribute id="SourceFile" type="LSString" value="Generated/Public/Shared/Assets/Weapons/Humans/WoWDeathKnightClass/Apocalypse_BM.DDS" />
+					<attribute id="Streaming" type="bool" value="True" />
+					<attribute id="Template" type="FixedString" value="Apocalypse_BM" />
+					<attribute id="Type" type="int32" value="1" />
+					<attribute id="Width" type="int32" value="1024" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855943" />
+				</node>
+				<node id="Resource">
+					<attribute id="Depth" type="int32" value="1" />
+					<attribute id="Height" type="int32" value="1024" />
+					<attribute id="ID" type="FixedString" value="4a2063cd-c8e4-4f84-bf50-9e463a466f9f" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="Name" type="LSString" value="Apocalypse_PM" />
+					<attribute id="SRGB" type="bool" value="False" />
+					<attribute id="SourceFile" type="LSString" value="Generated/Public/Shared/Assets/Weapons/Humans/WoWDeathKnightClass/Apocalypse_PM.DDS" />
+					<attribute id="Streaming" type="bool" value="True" />
+					<attribute id="Template" type="FixedString" value="Apocalypse_PM" />
+					<attribute id="Type" type="int32" value="1" />
+					<attribute id="Width" type="int32" value="1024" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855943" />
+				</node>
+			</children>
+		</node>
+	</region>
+	<region id="VisualBank">
+		<node id="VisualBank">
+			<children>
+				<node id="Resource">
+					<attribute id="AttachBone" type="FixedString" value="" />
+					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
+					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />
+					<attribute id="BoundsMax" type="fvec3" value="0.1314379 0.04361478 0.8004952" />
+					<attribute id="BoundsMin" type="fvec3" value="-0.1314379 -0.02595609 -1.558125" />
+					<attribute id="HairType" type="uint8" value="0" />
+					<attribute id="ID" type="FixedString" value="fd106292-3297-4770-b73b-10cd055562b7" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="MaterialType" type="uint8" value="4" />
+					<attribute id="Name" type="LSString" value="MawOfDamned" />
+					<attribute id="NeedsSkeletonRemap" type="bool" value="False" />
+					<attribute id="Radius" type="float" value="1.01437" />
+					<attribute id="SkeletonResource" type="FixedString" value="" />
+					<attribute id="SkeletonSlot" type="FixedString" value="" />
+					<attribute id="Slot" type="FixedString" value="Unassigned" />
+					<attribute id="SoftbodyResourceID" type="FixedString" value="" />
+					<attribute id="SourceFile" type="LSString" value="Generated/Public/Shared/Assets/Weapons/Resources/MawOfDamned_Mesh.GR2" />
+					<attribute id="SupportsVertexColorMask" type="bool" value="False" />
+					<attribute id="Template" type="FixedString" value="Generated/Public/Shared/Assets/Weapons/Resources/MawOfDamned_Mesh.Dummy_MawOfDamned.0" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855932" />
+					<children>
+						<node id="Base" />
+						<node id="Objects">
+							<attribute id="LOD" type="uint8" value="0" />
+							<attribute id="MaterialID" type="FixedString" value="93a1f0d3-b1a4-46da-abe8-796e8917edd2" />
+							<attribute id="ObjectID" type="FixedString" value="MawOfDamned_Mesh.MawOfDamned_Mesh.0" />
+							<attribute id="Physics" type="FixedString" value="" />
+							<attribute id="Slot" type="FixedString" value="" />
+						</node>
+						<node id="Objects">
+							<attribute id="LOD" type="uint8" value="1" />
+							<attribute id="MaterialID" type="FixedString" value="93a1f0d3-b1a4-46da-abe8-796e8917edd2" />
+							<attribute id="ObjectID" type="FixedString" value="MawOfDamned_Mesh.MawOfDamned_Mesh.0" />
+							<attribute id="Physics" type="FixedString" value="" />
+							<attribute id="Slot" type="FixedString" value="" />
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="AttachBone" type="FixedString" value="" />
+					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
+					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />
+					<attribute id="BoundsMax" type="fvec3" value="0.1314379 0.04361478 0.8004952" />
+					<attribute id="BoundsMin" type="fvec3" value="-0.1314379 -0.02595609 -1.558125" />
+					<attribute id="HairType" type="uint8" value="0" />
+					<attribute id="ID" type="FixedString" value="382714f0-e3d5-46c7-b55b-59a695a86e46" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="MaterialType" type="uint8" value="4" />
+					<attribute id="Name" type="LSString" value="FrostReaper" />
+					<attribute id="NeedsSkeletonRemap" type="bool" value="False" />
+					<attribute id="Radius" type="float" value="1.01437" />
+					<attribute id="SkeletonResource" type="FixedString" value="" />
+					<attribute id="SkeletonSlot" type="FixedString" value="" />
+					<attribute id="Slot" type="FixedString" value="Unassigned" />
+					<attribute id="SoftbodyResourceID" type="FixedString" value="" />
+					<attribute id="SourceFile" type="LSString" value="Generated/Public/Shared/Assets/Weapons/Resources/FrostReaper_Mesh.GR2" />
+					<attribute id="SupportsVertexColorMask" type="bool" value="False" />
+					<attribute id="Template" type="FixedString" value="Generated/Public/Shared/Assets/Weapons/Resources/FrostReaper_Mesh.Dummy_FrostReaper.0" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855932" />
+					<children>
+						<node id="Base" />
+						<node id="Objects">
+							<attribute id="LOD" type="uint8" value="0" />
+							<attribute id="MaterialID" type="FixedString" value="d87416d3-2710-4e0d-814b-80e821607dff" />
+							<attribute id="ObjectID" type="FixedString" value="FrostReaper_Mesh.FrostReaper_Mesh.0" />
+							<attribute id="Physics" type="FixedString" value="" />
+							<attribute id="Slot" type="FixedString" value="" />
+						</node>
+						<node id="Objects">
+							<attribute id="LOD" type="uint8" value="1" />
+							<attribute id="MaterialID" type="FixedString" value="d87416d3-2710-4e0d-814b-80e821607dff" />
+							<attribute id="ObjectID" type="FixedString" value="FrostReaper_Mesh.FrostReaper_Mesh.0" />
+							<attribute id="Physics" type="FixedString" value="" />
+							<attribute id="Slot" type="FixedString" value="" />
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="AttachBone" type="FixedString" value="" />
+					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
+					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />
+					<attribute id="BoundsMax" type="fvec3" value="0.1314379 0.04361478 0.8004952" />
+					<attribute id="BoundsMin" type="fvec3" value="-0.1314379 -0.02595609 -1.558125" />
+					<attribute id="HairType" type="uint8" value="0" />
+					<attribute id="ID" type="FixedString" value="11d2e10b-c8b7-42b6-8083-29ff3f711ac4" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="MaterialType" type="uint8" value="4" />
+					<attribute id="Name" type="LSString" value="IceBringer" />
+					<attribute id="NeedsSkeletonRemap" type="bool" value="False" />
+					<attribute id="Radius" type="float" value="1.01437" />
+					<attribute id="SkeletonResource" type="FixedString" value="" />
+					<attribute id="SkeletonSlot" type="FixedString" value="" />
+					<attribute id="Slot" type="FixedString" value="Unassigned" />
+					<attribute id="SoftbodyResourceID" type="FixedString" value="" />
+					<attribute id="SourceFile" type="LSString" value="Generated/Public/Shared/Assets/Weapons/Resources/IceBringer_Mesh.GR2" />
+					<attribute id="SupportsVertexColorMask" type="bool" value="False" />
+					<attribute id="Template" type="FixedString" value="Generated/Public/Shared/Assets/Weapons/Resources/IceBringer_Mesh.Dummy_IceBringer.0" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855932" />
+					<children>
+						<node id="Base" />
+						<node id="Objects">
+							<attribute id="LOD" type="uint8" value="0" />
+							<attribute id="MaterialID" type="FixedString" value="d87416d3-2710-4e0d-814b-80e821607dff" />
+							<attribute id="ObjectID" type="FixedString" value="IceBringer_Mesh.IceBringer_Mesh.0" />
+							<attribute id="Physics" type="FixedString" value="" />
+							<attribute id="Slot" type="FixedString" value="" />
+						</node>
+						<node id="Objects">
+							<attribute id="LOD" type="uint8" value="1" />
+							<attribute id="MaterialID" type="FixedString" value="d87416d3-2710-4e0d-814b-80e821607dff" />
+							<attribute id="ObjectID" type="FixedString" value="IceBringer_Mesh.IceBringer_Mesh.0" />
+							<attribute id="Physics" type="FixedString" value="" />
+							<attribute id="Slot" type="FixedString" value="" />
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="AttachBone" type="FixedString" value="" />
+					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
+					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />
+					<attribute id="BoundsMax" type="fvec3" value="0.1314379 0.04361478 0.8004952" />
+					<attribute id="BoundsMin" type="fvec3" value="-0.1314379 -0.02595609 -1.558125" />
+					<attribute id="HairType" type="uint8" value="0" />
+					<attribute id="ID" type="FixedString" value="04d15eeb-5c59-451f-9ae9-d8e5c1f34e36" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="MaterialType" type="uint8" value="4" />
+					<attribute id="Name" type="LSString" value="Apocalypse" />
+					<attribute id="NeedsSkeletonRemap" type="bool" value="False" />
+					<attribute id="Radius" type="float" value="1.01437" />
+					<attribute id="SkeletonResource" type="FixedString" value="" />
+					<attribute id="SkeletonSlot" type="FixedString" value="" />
+					<attribute id="Slot" type="FixedString" value="Unassigned" />
+					<attribute id="SoftbodyResourceID" type="FixedString" value="" />
+					<attribute id="SourceFile" type="LSString" value="Generated/Public/Shared/Assets/Weapons/Resources/Apocalypse_Mesh.GR2" />
+					<attribute id="SupportsVertexColorMask" type="bool" value="False" />
+					<attribute id="Template" type="FixedString" value="Generated/Public/Shared/Assets/Weapons/Resources/Apocalypse_Mesh.Dummy_Apocalypse.0" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855932" />
+					<children>
+						<node id="Base" />
+						<node id="Objects">
+							<attribute id="LOD" type="uint8" value="0" />
+							<attribute id="MaterialID" type="FixedString" value="d20f259f-67ce-4d9b-a5f5-1abb8184a257" />
+							<attribute id="ObjectID" type="FixedString" value="Apocalypse_Mesh.Apocalypse_Mesh.0" />
+							<attribute id="Physics" type="FixedString" value="" />
+							<attribute id="Slot" type="FixedString" value="" />
+						</node>
+						<node id="Objects">
+							<attribute id="LOD" type="uint8" value="1" />
+							<attribute id="MaterialID" type="FixedString" value="d20f259f-67ce-4d9b-a5f5-1abb8184a257" />
+							<attribute id="ObjectID" type="FixedString" value="Apocalypse_Mesh.Apocalypse_Mesh.0" />
+							<attribute id="Physics" type="FixedString" value="" />
+							<attribute id="Slot" type="FixedString" value="" />
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

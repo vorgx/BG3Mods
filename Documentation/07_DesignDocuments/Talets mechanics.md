@@ -4,13 +4,13 @@ https://www.wowhead.com/guide/classes/warrior/arms/abilities-talents-pve-dps#arm
 Groups
 - Class Talents, (10 rows) Contains (Warrior Class Talents) on level 1 you get all from row 1, after that you will continue to pick 1 from the next row every 2nd level up
 - SubclassSpec Talents, (10 rows) Contains (Arms Spec Talents) on level 1 you get the passive's and all from row 1, after that you will continue to pick 1 from the next row every 2nd level up
-- SubclassBase Talents, (Bucket/group) Contains (Baseline Arms Warrior Abilities) Choice: pick 1 each level during the 19 levels of progression or until you have all Baseline Abilities, at lvl 1 you can pick 1 offensive and one utility 
+- SubclassBase Talents, (Bucket/group) Contains (Baseline Arms Warrior Abilities) **UPDATE (v2.0):** Changed to auto-granted progression. Each subclass receives the same 12 abilities at different levels to support their unique identity. See Warrior_Class_Blueprint.md for specific level assignments per subclass.
 - Specialization, Contains (Colossus Talents) and (Slayer Talents) Choice: at lvl 13 you choose your specialization choose one of the 2 in this group.
 
 
 - Class Talents, (10 rows) Contains (Warrior Class Talents) 
 - SubclassSpec Talents, (10 rows) Contains (Arms Spec Talents) 
-- SubclassBase Talents, (Bucket/group) Contains (Baseline Arms Warrior Abilities) 
+- SubclassBase Talents, (Auto-granted) Contains (Baseline Arms Warrior Abilities) **v2.0:** 12 abilities granted at specific levels (L3-L12), different order per subclass
 - Specialization, Contains (Colossus Talents) and (Slayer Talents) 2 Groups of Talents, Choose 1 Specialization group at lvl 13
 
 
@@ -23,16 +23,16 @@ SubclassBase Talents(Bucket/group, Baseline Arms Warrior Abilities),
 Specialization,         "lists": {
                                     "KEY_TALENT":   "LIST_SPEC_KEY_TALENT",     // exactly one item; grant at L13
                                     "CAPSTONE":     "LIST_SPEC_CAPSTONE",       // exactly one item; grant at L13
-                                    "CHOICE_NODE_1":"LIST_SPEC_CHOICES_1",      // 2 options; pick 1 at L13
-                                    "CHOICE_NODE_2":"LIST_SPEC_CHOICES_2",      // 2 options; pick 1 at L15
-                                    "CHOICE_NODE_3":"LIST_SPEC_CHOICES_3",      // 2 options; pick 1 at L18
+                                    "CHOICE_NODE_1":"LIST_SPEC_CHOICES_1",      // 3 options; pick 1 at L15
+                                    "CHOICE_NODE_2":"LIST_SPEC_CHOICES_2",      // 3 options; pick 1 at L17
+                                    "CHOICE_NODE_3":"LIST_SPEC_CHOICES_3",      // 3 options; pick 1 at L19
                                     "PASSIVES":     "LIST_SPEC_PASSIVES"        // many; 1 each level L13→L20 until exhausted
                                 },
 
 specializations work like this, they have 4 groups: 
 (Key Talent) - Unique ability for the Specialization unlocked at lvl 13.
-(Capstone Talent) - unlocked on lvl 13 (Choice Nodes) - 3 groups of 2 choose 1 from each group, 1 on lvl 13, 15 and 18, all 6(3 groups) are availabale at selection.
-(Passives) - 1 each level from level 13 to 20 or until they run out.
+(Capstone Talent) - unlocked on lvl 15 (Choice Nodes) - 3 groups of 3 talents,  choose 1 from each group, 1 on lvl 15, 17 and 19, only the 3 for that tier should be able(3 talents) are availabale at selection.
+(specialization_Passives),  1 each level from level 13 to 20 or until they run out.
 
 
 
@@ -73,14 +73,15 @@ specializations work like this, they have 4 groups:
       },
 
       "SUBCLASSBASE": {
-        "bucket": true,
+        "bucket": false,
+        "autoGranted": true,
         "lists": {
-          "offense": "LIST_SUBCLASSBASE_OFFENSE",
-          "utility": "LIST_SUBCLASSBASE_UTILITY",
-          "all": "LIST_SUBCLASSBASE_ALL"
+          "arms": "LIST_SUBCLASSBASE_ARMS",
+          "fury": "LIST_SUBCLASSBASE_FURY",
+          "protection": "LIST_SUBCLASSBASE_PROTECTION"
         },
-        "ui": { "offenseToken": "h_LIST_SUBCLASSBASE_OFFENSE", "utilityToken": "h_LIST_SUBCLASSBASE_UTILITY", "allToken": "h_LIST_SUBCLASSBASE_ALL" },
-        "notes": "No rows. At L1: +1 Offense pick +1 Utility pick; from L2→20: +1 pick per level from ALL until exhausted (see §14)."
+        "ui": { "armsToken": "h_LIST_SUBCLASSBASE_ARMS", "furyToken": "h_LIST_SUBCLASSBASE_FURY", "protectionToken": "h_LIST_SUBCLASSBASE_PROTECTION" },
+        "notes": "v2.0 UPDATE: Changed from bucket system to auto-granted progression. 12 abilities granted at specific levels (L3-L12). Each subclass receives same abilities but in different order to support unique identity. See Warrior_Class_Blueprint.md for level assignments."
       },
 
       "SPECIALIZATION": {

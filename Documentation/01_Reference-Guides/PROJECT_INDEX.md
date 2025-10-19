@@ -214,20 +214,31 @@
 
 ⚠️ **UUID Warning**: Example mods may use conflicting UUIDs. Do NOT install simultaneously with BG3Wow.
 
-### **03_ExtractedContent/ (5 Items)**
-**Purpose**: Unpacked .pak files for studying vanilla BG3 content and backup/rollback  
-**Testing Method**: Compare with current mod structure for validation
+### **03_TestReports/ (Renumbered from 04)**
+**Purpose**: Test reports and session summaries  
+**Testing Method**: Review for historical context and validation patterns
 
-| Folder | Purpose | Key Contents | Use Case |
-|--------|---------|--------------|----------|
-| `README.md` | Subfolder documentation (extraction workflows, backup strategies) | ✅ Complete | - |
-| `ExtractedPak/` | Unpacked .pak files | Vanilla BG3 game content | Study vanilla class implementations |
-| `InstalledPackageCheck/` | Installed mod verification | BG3Wow installed state | Verify package installation correctness |
-| `NewPackage/` | New package structure | Experimental builds | Test incremental changes |
-| `WoWWarrior_BACKUP/` | WoWWarrior mod backup folder | Complete mod source | Rollback to known-good state |
-| `WoWWarrior_BACKUP.pak` | WoWWarrior .pak backup | Compiled mod | Quick rollback if current build breaks |
+| File | Purpose | Status |
+|------|---------|--------|
+| Various test reports | Testing and validation documentation | ✅ Complete |
 
-⚠️ **Backup Strategy**: Always extract and backup before major changes. Use LSLib to re-package if rollback needed.
+### **04_Tools/ (Renumbered from 05)**
+**Purpose**: Development tools and migration scripts  
+**Testing Method**: PowerShell scripts for automation
+
+| File | Purpose | Status |
+|------|---------|--------|
+| `MIGRATE_TESTS.ps1` | Tests folder migration script | ✅ Updated for new structure |
+
+### **05_Troubleshooting/ (Renumbered from 06)**
+**Purpose**: Debugging guides and troubleshooting documentation  
+**Testing Method**: Reference guides for common issues
+
+| File | Purpose | Status |
+|------|---------|--------|
+| `SE_DEBUGGING_GUIDE.md` | Script Extender debugging guide | ✅ Complete |
+
+**Note**: `03_ExtractedContent/` was deleted due to Windows MAX_PATH (260 char) issues with nested reference mod files. Folders were renumbered to maintain sequential organization.
 
 ---
 

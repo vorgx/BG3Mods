@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="10"/>
+    <region id="ActionResourceDefinitions">
+        <node id="root">
+            <children>
+                <node id="ActionResource">
+                    <attribute id="Description" type="TranslatedString" handle="h2483ce0dg3709g4983g8aacg8dde1c406c97" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="hdffb5cfegff1fg4209gb239ga15ec5d929ee" version="1"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="MaxValue" type="uint32" value="100"/>
+                    <attribute id="Name" type="FixedString" value="Rage"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Never"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

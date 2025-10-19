@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="0" build="60"/>
+    <region id="PassiveLists">
+        <node id="root">
+            <children>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="Warrior Passive Talents - Minimal placeholder"/>
+                    <attribute id="Passives" type="LSString" value=""/>
+                    <attribute id="UUID" type="guid" value="b2c3d4e5-6f7a-8b9c-0d1e-2f3a4b5c6d7e"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

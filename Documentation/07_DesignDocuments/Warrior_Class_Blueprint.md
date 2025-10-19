@@ -134,6 +134,271 @@
 
 ---
 
+## 5-Pool Talent System (v2.0)
+
+**Status:** Fully Designed, Implementation Planned
+
+The Warrior class features a comprehensive **5-pool talent system** inspired by World of Warcraft's talent trees, offering deep customization and player choice across 20 levels.
+
+### Talent Pool Overview
+
+| Pool # | Name | Levels | Choices | Type | Total Talents |
+|--------|------|--------|---------|------|---------------|
+| **1** | Class Talents | L1-L12 | 9 | Shared by all specs | 24+ talents |
+| **2** | SubclassSpec Talents | L3-L12 | 9 | Spec-specific | 24+ per spec |
+| **3** | SubclassBase Talents | L3-L12 | 12 | Auto-granted | 12 baseline abilities |
+| **4** | Specialization A | L13-L20 | 3-4 | Choice at L13 | 9 talents per spec |
+| **5** | Specialization B | L13-L20 | 3-4 | Choice at L13 | 9 talents per spec |
+
+**Total Player Choices:** 43+ choices across 20 levels (9 Class + 9 SubclassSpec + 3-4 Specialization per tier)
+
+### Pool 1: Class Talents (Shared - 10 Rows)
+
+**Availability:** All Warriors (Arms, Fury, Protection)  
+**Levels:** 1-12  
+**Structure:** 10 rows, pick 1 talent per row = 9 choices
+
+**Purpose:** Core Warrior identity abilities shared across all specializations
+
+**Example Talents:**
+- **Row 1 (L1):** Charge | Heroic Leap | Intervene
+- **Row 2 (L2):** Battle Shout | Commanding Shout | Rallying Cry
+- **Row 3 (L3):** Berserker Rage | Die by the Sword | Defensive Stance
+- **Row 4-10:** Additional utility, mobility, and defensive options
+
+**Implementation:** SelectPassives system with choice nodes at each level
+
+### Pool 2: SubclassSpec Talents (Spec-Specific - 10 Rows)
+
+**Availability:** Specific to Arms, Fury, or Protection  
+**Levels:** 3-12  
+**Structure:** 10 rows, pick 1 talent per row = 9 choices
+
+**Purpose:** Defines specialization playstyle (Arms: big hits/bleeds, Fury: speed/multi-hit, Protection: defense/mitigation)
+
+**Arms Example Talents:**
+- **Row 1 (L3):** Mortal Strike | Overpower | Rend
+- **Row 2 (L4):** Colossus Smash | Warbreaker | Cleave
+- **Row 3-10:** Arms-specific enhancements and abilities
+
+**Fury Example Talents:**
+- **Row 1 (L3):** Bloodthirst | Raging Blow | Rampage
+- **Row 2 (L4):** Enrage | Bloodbath | Frenzy
+
+**Protection Example Talents:**
+- **Row 1 (L3):** Shield Slam | Revenge | Ignore Pain
+- **Row 2 (L4):** Shield Block | Last Stand | Devastate
+
+**Implementation:** Separate SelectPassives progressions per subclass
+
+### Pool 3: SubclassBase Talents (12 Baseline Abilities)
+
+**Availability:** Auto-granted based on subclass choice at L3  
+**Levels:** 3-12  
+**Structure:** 12 abilities granted automatically (no choices)
+
+**Purpose:** Core rotation abilities that define each spec's baseline gameplay
+
+**Note:** Each subclass receives the same 12 abilities but in different orders to support their unique playstyle and identity.
+
+**Arms Baseline Abilities (Two-Handed DPS):**
+1. Whirlwind (L3) - AoE cleave
+2. Execute (L4) - Arms specialty finisher
+3. Hamstring (L5) - Tactical slow
+4. Slam (L6) - Basic filler
+5. Charge (L7) - Gap closer
+6. Victory Rush (L8) - Sustain
+7. Heroic Throw (L9) - Ranged pull
+8. Shield Slam (L10) - Shield utility option
+9. Pummel (L11) - Interrupt
+10. Battle Shout (L12) - Party buff
+11. Berserker Rage (L12) - Cleanse
+12. Taunt (L12) - Utility
+
+**Fury Baseline Abilities (Dual-Wield DPS):**
+1. Whirlwind (L3) - Dual-wield AoE
+2. Slam (L4) - Fast filler
+3. Berserker Rage (L5) - Enrage mechanic (core to Fury identity)
+4. Charge (L6) - Early mobility for aggressive playstyle
+5. Victory Rush (L7) - Sustain for risky gameplay
+6. Execute (L8) - Execute phase tool
+7. Heroic Throw (L9) - Ranged utility
+8. Hamstring (L10) - Utility slow
+9. Pummel (L11) - Interrupt
+10. Battle Shout (L12) - Party buff
+11. Taunt (L12) - Off-spec utility
+12. Shield Slam (L12) - Off-spec utility
+
+**Protection Baseline Abilities (Shield Tank):**
+1. Taunt (L3) - Core tanking tool (early threat generation)
+2. Shield Slam (L4) - Shield-based damage
+3. Heroic Throw (L5) - Ranged pull tool
+4. Charge (L6) - Gap closer for engagement
+5. Pummel (L7) - Interrupt (critical for tanks)
+6. Slam (L8) - Filler damage
+7. Execute (L9) - Threat spike tool
+8. Victory Rush (L10) - Sustain
+9. Whirlwind (L11) - AoE threat generation
+10. Battle Shout (L12) - Party buff
+11. Hamstring (L12) - Utility slow
+12. Berserker Rage (L12) - Cleanse
+
+**Status:** ✅ ALL 12 EXIST in current implementation (Spell_Target.txt, Spell_Zone.txt, Spell_Shout.txt)
+
+**Design Rationale:** 
+- **Protection gets Taunt at L3** (not L12) - Can effectively tank from subclass selection
+- **Arms gets Execute at L4** - Reinforces Arms as the Execute specialist
+- **Fury gets Berserker Rage at L5** - Early access to enrage mechanics defines Fury gameplay
+- **Each spec feels unique** - Different ability orders create distinct playstyles from early levels
+
+**Implementation:** Boosts in Progressions.lsx that auto-unlock spells at specific levels
+
+### Pool 4 & 5: Specializations (Hero Talents - L13-20)
+
+**Availability:** Choose 1 of 2 options per base spec at L13  
+**Levels:** 13-20  
+**Structure:** 3-tier OR 4-tier progression
+
+**Specialization Availability Matrix:**
+
+| Base Spec | Specialization Option 1 | Specialization Option 2 |
+|-----------|------------------------|------------------------|
+| **Arms** | Colossus (3 tiers) | Slayer (3 tiers) |
+| **Fury** | Mountain Thane (4 tiers) | Slayer (3 tiers) |
+| **Protection** | Mountain Thane (4 tiers) | Colossus (3 tiers) |
+
+#### 3-Tier Specializations (Colossus, Slayer)
+
+**Structure:**
+- **L13:** Keystone (auto-granted, defines specialization theme)
+- **L14:** Passive 1 (auto-granted)
+- **L15:** Choice Node 1 (pick 1 of 2-3 talents)
+- **L16:** Passive 2 (auto-granted)
+- **L17:** Choice Node 2 (pick 1 of 2-3 talents)
+- **L18:** Passive 3 (auto-granted)
+- **L19:** Choice Node 3 (pick 1 of 2-3 talents)
+- **L20:** Passive 4 (auto-granted) + **Capstone** (ultimate power)
+
+**Total:** 1 Keystone + 3 choices + 4 passives + 1 Capstone = **9 talents**
+
+#### 4-Tier Specializations (Mountain Thane)
+
+**Structure:**
+- **L13:** Keystone (auto-granted)
+- **L14:** Passive 1 (auto-granted)
+- **L15:** Choice Node 1 (pick 1 of 2)
+- **L16:** Choice Node 2 (pick 1 of 2)
+- **L17:** Passive 2 (auto-granted)
+- **L18:** Choice Node 3 (pick 1 of 2)
+- **L19:** Choice Node 4 (pick 1 of 2)
+- **L20:** Passive 3 (auto-granted) + **Capstone**
+
+**Total:** 1 Keystone + 4 choices + 3 passives + 1 Capstone = **9 talents**
+
+### Specialization Descriptions
+
+**Mountain Thane** (4-tier):
+- **Theme:** Storm and lightning, Avatar enhancement
+- **Keystone:** Avatar of the Storm (Lightning bursts during Avatar)
+- **Playstyle:** Thunder Clap focused, Lightning damage, Avatar-centric
+
+**Colossus** (3-tier):
+- **Theme:** Tank/Defense, Demolish ability, Colossal Might stacking
+- **Keystone:** Demolish (3d12 armor-crushing strike) + Colossal Might passive
+- **Playstyle:** Shield Slam/Revenge focused, stacking mechanic, mitigation
+
+**Slayer** (3-tier):
+- **Theme:** DPS/Execution, Marked for Execution debuff
+- **Keystone:** Slayer's Dominance (15% chance to Mark targets)
+- **Playstyle:** Execute focused, high damage against marked enemies
+
+### Detailed Documentation
+
+For complete talent breakdowns, see:
+- **`ARMS_WARRIOR_5_POOL_TALENT_SYSTEM.md`** - Full Arms implementation with all 5 pools (95KB)
+- **`SPECIALIZATION_TIER_STRUCTURES.md`** - 3-tier vs 4-tier comparisons
+- **`Arms_Warrior_Talents_Extracted.md`** - Arms: Colossus + Slayer specs
+- **`Fury_Warrior_Talents_Extracted.md`** - Fury: Mountain Thane + Slayer specs
+- **`Protection_Warrior_Talents_Extracted.md`** - Protection: Mountain Thane + Colossus specs
+
+---
+
+## Extra Attack (Level 5)
+
+**Status:** Core BG3 Mechanic, Auto-Granted
+
+### Overview
+
+At **Level 5**, all Warriors gain the **Extra Attack** feature, a standard BG3 martial class progression milestone. This feature is **auto-granted** and does not require player choice.
+
+### Mechanics
+
+**Extra Attack**
+- **Type:** Passive Feature
+- **Granted At:** Level 5 (all Warriors - Arms, Fury, Protection)
+- **Effect:** When you take the **Attack** action on your turn, you can attack **twice** instead of once
+- **Applies To:** Main Attack action only (not bonus actions, reactions, or special attacks)
+
+### Implementation
+
+**Progressions.lsx Entry:**
+```xml
+<node id="Progression">
+    <attribute id="Level" type="uint8" value="5"/>
+    <attribute id="Name" type="LSString" value="Warrior"/>
+    <attribute id="Boosts" type="LSString" value="ActionResource(ActionPoint,1,0)"/>
+    <attribute id="PassivesAdded" type="LSString" value="ExtraAttack"/>
+</node>
+```
+
+**How It Works:**
+1. Player selects "Attack" action in combat
+2. First attack executes normally
+3. Second attack automatically available (same target or different)
+4. Both attacks use the same modifier (Strength + proficiency)
+5. Both attacks can trigger on-hit effects (Rage generation, status effects, etc.)
+
+### Interactions with Warrior Abilities
+
+**Compatible With:**
+- ✅ Whirlwind (AoE attacks count as separate mechanic)
+- ✅ Cleave (can cleave on both attacks)
+- ✅ Charge (gap closer, then Extra Attack applies)
+- ✅ Execute (Execute is separate action, not affected by Extra Attack)
+- ✅ Mortal Strike / Overpower (spec abilities still use single attacks)
+
+**Does NOT Stack With:**
+- ❌ Sweeping Strikes (separate dual-wield mechanic)
+- ❌ Rampage (Fury-specific multi-hit ability)
+- ❌ Bloodthirst (single attack ability)
+
+### Standard BG3 Implementation
+
+Extra Attack is a **core BG3 feature** shared with:
+- **Fighter** (Level 5)
+- **Barbarian** (Level 5)
+- **Ranger** (Level 5)
+- **Paladin** (Level 5)
+- **Monk** (Level 5)
+
+Warriors follow the same implementation pattern as these classes, ensuring compatibility and balance.
+
+### Why Level 5?
+
+Level 5 is the **power spike level** in BG3 where martial classes gain significant combat effectiveness:
+- **Casters:** Get Level 3 spells (Fireball, Lightning Bolt, etc.)
+- **Martials:** Get Extra Attack (double damage output)
+
+This maintains class balance and follows D&D 5e core rules.
+
+### Documentation
+
+For implementation details, see:
+- **`WARRIOR_LEVEL_5_EXTRA_ATTACK.md`** - Full mechanical breakdown
+- **Progressions.lsx** - Lines 150-165 (Level 5 progression node)
+
+---
+
 ## Core Abilities
 
 Core abilities available to all Warriors regardless of subclass.

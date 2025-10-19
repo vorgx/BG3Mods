@@ -34,10 +34,11 @@ Documentation/
 Tests/
 ├── 01_ValidationReports/          ✅ Already numbered
 ├── 02_ExampleMods/                ✅ Already numbered
-├── 03_ExtractedContent/           ✅ Already numbered
-├── 04_TestReports/                ✅ Already numbered (was TestReports)
-├── 05_Tools/                      ✅ Already numbered (was Tools)
-├── 06_Troubleshooting/            ✅ Already numbered
+├── 03_TestReports/                ✅ Renumbered (was 04_TestReports)
+├── 04_Tools/                      ✅ Renumbered (was 05_Tools)
+└── 05_Troubleshooting/            ✅ Renumbered (was 06_Troubleshooting)
+
+Note: 03_ExtractedContent was deleted due to Windows MAX_PATH issues (260 char limit)
 └── RUN_ALL_TESTS.ps1              ✅ Master test runner
 ```
 
@@ -78,9 +79,9 @@ My Documentation/
 | Documentation Tables | `PROJECT_INDEX.md` | `Documentation/01_Reference-Guides/PROJECT_INDEX.md` |
 | Documentation Tables | `DOCUMENTATION_LIBRARY.md` | `Documentation/01_Reference-Guides/DOCUMENTATION_LIBRARY.md` |
 | Documentation Tables | `FOLDER_STRUCTURE_DIAGRAM.md` | `Documentation/01_Reference-Guides/FOLDER_STRUCTURE_DIAGRAM.md` |
-| Documentation Tables | `SE_DEBUGGING_GUIDE.md` | `Tests/06_Troubleshooting/SE_DEBUGGING_GUIDE.md` |
-| Documentation Tables | `Tests/SessionReports/*` | `Tests/04_TestReports/*` or `Documentation/05_SessionReports/*` |
-| Find Info | `LOCALIZATION_FIX_COMPLETE.md` | `Tests/04_TestReports/LOCALIZATION_FIX_COMPLETE.md` |
+| Documentation Tables | `SE_DEBUGGING_GUIDE.md` | `Tests/05_Troubleshooting/SE_DEBUGGING_GUIDE.md` |
+| Documentation Tables | `Tests/SessionReports/*` | `Tests/03_TestReports/*` or `Documentation/05_SessionReports/*` |
+| Find Info | `LOCALIZATION_FIX_COMPLETE.md` | `Tests/03_TestReports/LOCALIZATION_FIX_COMPLETE.md` |
 | Find Info | `Tests/01_ValidationReports/LOCALIZATION_COMPLETE.md` | ✅ Already correct |
 
 **Project Structure diagram** needs complete rewrite to show new folder names.
@@ -253,7 +254,8 @@ My Documentation/02_DesignDocuments/Warrior_Class_Blueprint.md  ← needs spell 
 ```
 Tests/RUN_ALL_TESTS.ps1                                ← master test runner
 Tests/01_ValidationReports/                            ← validation results
-Tests/06_Troubleshooting/SE_DEBUGGING_GUIDE.md         ← SE debugging
+Tests/05_Troubleshooting/SE_DEBUGGING_GUIDE.md         ← SE debugging
+Tests/03_TestReports/                                   ← Test & validation reports
 ```
 
 ---

@@ -19,25 +19,32 @@
 
 ## Baseline Abilities (All Specs)
 
-### ✅ Offensive Abilities (COMPLETE)
-| WoW Ability | BG3 Implementation | File | Line | Notes |
-|-------------|-------------------|------|------|-------|
-| Whirlwind | ✅ Zone_WAR_Whirlwind | Spell_Zone.txt | 142 | AoE attack |
-| Slam | ✅ Target_WAR_Slam | Spell_Target.txt | 779 | Basic Rage spender |
-| Shield Slam | ✅ Target_WAR_ShieldSlam | Spell_Target.txt | 69 | Protection main attack |
-| Hamstring | ✅ Target_WAR_Hamstring | Spell_Target.txt | 659 | Snare ability |
-| Victory Rush | ✅ Target_WAR_VictoryRush | Spell_Target.txt | 700 | Free heal after kill |
-| Execute | ✅ Target_WAR_Execute | Spell_Target.txt | 29 | Low-HP finisher |
-| Heroic Throw | ✅ Projectile_WAR_HeroicThrow | Spell_Projectile.txt | 14 | Ranged pull |
+**Note**: All 12 baseline abilities are implemented and shared across Arms/Fury/Protection. Each subclass unlocks them at different levels to support their unique identity.
 
-### ✅ Utility Abilities (COMPLETE)
-| WoW Ability | BG3 Implementation | File | Line | Notes |
-|-------------|-------------------|------|------|-------|
-| Charge | ✅ Target_WAR_Charge | Spell_Target.txt | 271 | Gap closer |
-| Pummel | ✅ Target_WAR_Pummel | Spell_Target.txt | 739 | Interrupt |
-| Battle Shout | ✅ Shout_WAR_BattleShout | Spell_Shout.txt | 16 | Party buff |
-| Berserker Rage | ✅ Target_WAR_BerserkerRage | Spell_Target.txt | 817 | CC break |
-| Taunt | 🟡 Not needed | N/A | N/A | BG3 has different threat mechanics |
+### ✅ Offensive Abilities (COMPLETE - 7 total)
+| WoW Ability | BG3 Implementation | File | Line | Arms Level | Fury Level | Prot Level |
+|-------------|-------------------|------|------|------------|------------|------------|
+| Whirlwind | ✅ Zone_WAR_Whirlwind | Spell_Zone.txt | 142 | L3 | L3 | L11 |
+| Slam | ✅ Target_WAR_Slam | Spell_Target.txt | 779 | L6 | L4 | L8 |
+| Shield Slam | ✅ Target_WAR_ShieldSlam | Spell_Target.txt | 69 | L10 | L12 | L4 |
+| Hamstring | ✅ Target_WAR_Hamstring | Spell_Target.txt | 659 | L5 | L10 | L12 |
+| Victory Rush | ✅ Target_WAR_VictoryRush | Spell_Target.txt | 700 | L8 | L7 | L10 |
+| Execute | ✅ Target_WAR_Execute | Spell_Target.txt | 29 | L4 ⭐ | L8 | L9 |
+| Heroic Throw | ✅ Projectile_WAR_HeroicThrow | Spell_Projectile.txt | 14 | L9 | L9 | L5 |
+
+### ✅ Utility Abilities (COMPLETE - 5 total)
+| WoW Ability | BG3 Implementation | File | Line | Arms Level | Fury Level | Prot Level |
+|-------------|-------------------|------|------|------------|------------|------------|
+| Charge | ✅ Target_WAR_Charge | Spell_Target.txt | 271 | L7 | L6 | L6 |
+| Pummel | ✅ Target_WAR_Pummel | Spell_Target.txt | 739 | L11 | L11 | L7 |
+| Battle Shout | ✅ Shout_WAR_BattleShout | Spell_Shout.txt | 16 | L12 | L12 | L12 |
+| Berserker Rage | ✅ Target_WAR_BerserkerRage | Spell_Target.txt | 817 | L12 | L5 ⭐ | L12 |
+| Taunt | ✅ Target_WAR_Taunt | Spell_Target.txt | 962 | L12 | L12 | L3 ⭐ |
+
+**Key Differences:**
+- ⭐ **Arms gets Execute at L4** - Reinforces Arms as the Execute specialist
+- ⭐ **Fury gets Berserker Rage at L5** - Early enrage mechanic defines Fury gameplay
+- ⭐ **Protection gets Taunt at L3** - Can effectively tank from subclass selection
 
 ---
 

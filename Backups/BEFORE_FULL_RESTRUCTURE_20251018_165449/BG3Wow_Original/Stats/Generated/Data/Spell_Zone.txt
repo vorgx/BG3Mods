@@ -1,0 +1,261 @@
+// ========================================
+// WARRIOR SPELL DEFINITIONS - ZONE/AOE SPELLS
+// Created: October 16, 2025
+// Patch: 8 Compatible (4.8.0.10)
+// ========================================
+// Total Spells: 4
+// - Revenge (Protection - critical dependency)
+// - Shockwave (Protection - critical dependency)
+// - Thunder Clap (All specs - critical dependency)
+// - Whirlwind (All specs - critical dependency)
+// ========================================
+
+// ========================================
+// REVENGE - Protection AoE Attack
+// Critical Dependency: Referenced by all specializations
+// ========================================
+
+new entry "Zone_WAR_Revenge"
+type "SpellData"
+data "SpellType" "Zone"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "TargetRadius" "13"
+data "AreaRadius" "3"
+data "SpellRoll" "Attack(AttackType.MeleeWeaponAttack)"
+data "SpellSuccess" "DealDamage(2d8+StrengthModifier,MainMeleeWeaponDamageType,Magical)"
+data "TargetConditions" "not Self() and not Dead() and Enemy()"
+data "Icon" "Action_Cleave"
+data "DisplayName" "h125abc139;1"
+data "Description" "h125abc140;2"
+data "DescriptionParams" "DealDamage(2d8+StrengthModifier,MainMeleeWeaponDamageType);20"
+data "TooltipDamageList" "DealDamage(2d8+StrengthModifier,MainMeleeWeaponDamageType)"
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "TooltipOnMiss" "5d5f4487-0434-4dfc-8d60-c21948149dc8"
+data "TooltipOnSave" "5d5f4487-0434-4dfc-8d60-c21948149dc8"
+data "PrepareSound" "Spell_Prepare_Damage_Physical_Gen_L1to3"
+data "PrepareLoopSound" "Spell_Prepare_Damage_Physical_Gen_L1to3_Loop"
+data "CastSound" "Spell_Cast_Damage_Physical_MeleeWeaponAttack_L1to3"
+data "TargetSound" "Spell_Impact_Damage_Physical_MeleeWeaponAttack_L1to3"
+data "VocalComponentSound" "Vocal_Component_Attack"
+data "Cooldown" "None"
+data "UseCosts" "ActionPoint:1;Rage:20"
+data "SpellAnimation" "dd86aa43-8189-4d9f-9a5c-3b62f5c6af4c,,;,,;4e7df28e-27b0-4d61-84a4-bb6e9a791d90,,;,,;dd86aa43-8189-4d9f-9a5c-3b62f5c6af4c,,;,,;dd86aa43-8189-4d9f-9a5c-3b62f5c6af4c,,;,,;,,"
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsMelee;IsHarmful;CombatLogSetSingleLineRoll"
+data "HitAnimationType" "MeleeWeaponAttack"
+data "PrepareEffect" "db76e04c-fc50-40e5-ac06-1d3b4d5f5450"
+data "CastEffect" "db76e04c-fc50-40e5-ac06-1d3b4d5f5450"
+data "TargetEffect" "b863dc6e-f551-4a93-951f-c3f389b30470"
+data "DamageType" "Slashing"
+data "SpellSoundMagnitude" "Big"
+data "Shape" "Cone"
+
+// ========================================
+// SHOCKWAVE - Protection AoE Stun
+// Critical Dependency: Referenced by Colossus specialization
+// ========================================
+
+new entry "Zone_WAR_Shockwave"
+type "SpellData"
+data "SpellType" "Zone"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "TargetRadius" "13"
+data "AreaRadius" "9"
+data "SpellRoll" "Attack(AttackType.MeleeWeaponAttack)"
+data "SpellSuccess" "DealDamage(1d6+StrengthModifier,Bludgeoning,Magical);ApplyStatus(STUNNED,100,2)"
+data "TargetConditions" "not Self() and not Dead() and Enemy()"
+data "Icon" "Action_Shove"
+data "DisplayName" "h125abc141;1"
+data "Description" "h125abc142;2"
+data "DescriptionParams" "DealDamage(1d6+StrengthModifier,Bludgeoning);2"
+data "TooltipDamageList" "DealDamage(1d6+StrengthModifier,Bludgeoning)"
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "TooltipStatusApply" "ApplyStatus(STUNNED,100,2)"
+data "TooltipOnMiss" "5d5f4487-0434-4dfc-8d60-c21948149dc8"
+data "TooltipOnSave" "5d5f4487-0434-4dfc-8d60-c21948149dc8"
+data "PrepareSound" "Spell_Prepare_Damage_Physical_Gen_L1to3"
+data "PrepareLoopSound" "Spell_Prepare_Damage_Physical_Gen_L1to3_Loop"
+data "CastSound" "Spell_Cast_Damage_Physical_MeleeWeaponAttack_L1to3"
+data "TargetSound" "Spell_Impact_Damage_Physical_MeleeWeaponAttack_L1to3"
+data "VocalComponentSound" "Vocal_Component_Attack"
+data "Cooldown" "OncePerShortRest"
+data "UseCosts" "ActionPoint:1"
+data "SpellAnimation" "dd86aa43-8189-4d9f-9a5c-3b62f5c6af4c,,;,,;4e7df28e-27b0-4d61-84a4-bb6e9a791d90,,;,,;dd86aa43-8189-4d9f-9a5c-3b62f5c6af4c,,;,,;dd86aa43-8189-4d9f-9a5c-3b62f5c6af4c,,;,,;,,"
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsMelee;IsHarmful;CombatLogSetSingleLineRoll"
+data "HitAnimationType" "MeleeWeaponAttack"
+data "PrepareEffect" "db76e04c-fc50-40e5-ac06-1d3b4d5f5450"
+data "CastEffect" "db76e04c-fc50-40e5-ac06-1d3b4d5f5450"
+data "TargetEffect" "b863dc6e-f551-4a93-951f-c3f389b30470"
+data "DamageType" "Bludgeoning"
+data "SpellSoundMagnitude" "Big"
+data "Shape" "Cone"
+
+// ========================================
+// THUNDER CLAP - AoE Damage + Slow
+// Critical Dependency: Referenced by Mountain Thane specialization
+// ========================================
+
+new entry "Zone_WAR_ThunderClap"
+type "SpellData"
+data "SpellType" "Zone"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "TargetRadius" "13"
+data "AreaRadius" "4"
+data "SpellRoll" "Attack(AttackType.MeleeWeaponAttack)"
+data "SpellSuccess" "DealDamage(2d6+StrengthModifier,Thunder,Magical);ApplyStatus(WAR_THUNDER_CLAP_SLOW,100,3)"
+data "TargetConditions" "not Self() and not Dead() and Enemy()"
+data "Icon" "Action_Monk_FlourishOfBlows"
+data "DisplayName" "h125abc143;1"
+data "Description" "h125abc144;3"
+data "DescriptionParams" "DealDamage(2d6+StrengthModifier,Thunder);20;3"
+data "TooltipDamageList" "DealDamage(2d6+StrengthModifier,Thunder)"
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "TooltipStatusApply" "ApplyStatus(WAR_THUNDER_CLAP_SLOW,100,3)"
+data "TooltipOnMiss" "5d5f4487-0434-4dfc-8d60-c21948149dc8"
+data "TooltipOnSave" "5d5f4487-0434-4dfc-8d60-c21948149dc8"
+data "PrepareSound" "Spell_Prepare_Damage_Thunder_L1to3"
+data "PrepareLoopSound" "Spell_Prepare_Damage_Thunder_L1to3_Loop"
+data "CastSound" "Spell_Cast_Damage_Thunder_L1to3"
+data "TargetSound" "Spell_Impact_Damage_Thunder_L1to3"
+data "VocalComponentSound" "Vocal_Component_Attack"
+data "Cooldown" "None"
+data "UseCosts" "ActionPoint:1;Rage:10"
+data "SpellAnimation" "dd86aa43-8189-4d9f-9a5c-3b62f5c6af4c,,;,,;4e7df28e-27b0-4d61-84a4-bb6e9a791d90,,;,,;dd86aa43-8189-4d9f-9a5c-3b62f5c6af4c,,;,,;dd86aa43-8189-4d9f-9a5c-3b62f5c6af4c,,;,,;,,"
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsMelee;IsHarmful;CombatLogSetSingleLineRoll"
+data "HitAnimationType" "MeleeWeaponAttack"
+data "PrepareEffect" "bfcac38c-21c7-4135-a69a-d2a1f9e0c1f8"
+data "CastEffect" "bfcac38c-21c7-4135-a69a-d2a1f9e0c1f8"
+data "TargetEffect" "9cc87566-0716-4d08-8880-5e6a54e16620"
+data "DamageType" "Thunder"
+data "SpellSoundMagnitude" "Big"
+
+// ========================================
+// WHIRLWIND - AoE Attack + Cleave Buff
+// Critical Dependency: Referenced by Mountain Thane and Slayer specializations
+// ========================================
+
+new entry "Zone_WAR_Whirlwind"
+type "SpellData"
+data "SpellType" "Zone"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "TargetRadius" "13"
+data "AreaRadius" "3"
+data "SpellRoll" "Attack(AttackType.MeleeWeaponAttack)"
+data "SpellSuccess" "DealDamage(1d8+StrengthModifier,MainMeleeWeaponDamageType,Magical);ApplyStatus(SELF,WAR_WHIRLWIND_BUFF,100,2)"
+data "TargetConditions" "not Self() and not Dead() and Enemy()"
+data "Icon" "Action_Cleave"
+data "DisplayName" "h125abc145;1"
+data "Description" "h125abc146;3"
+data "DescriptionParams" "DealDamage(1d8+StrengthModifier,MainMeleeWeaponDamageType);10;2"
+data "TooltipDamageList" "DealDamage(1d8+StrengthModifier,MainMeleeWeaponDamageType)"
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "TooltipStatusApply" "ApplyStatus(SELF,WAR_WHIRLWIND_BUFF,100,2)"
+data "TooltipOnMiss" "5d5f4487-0434-4dfc-8d60-c21948149dc8"
+data "TooltipOnSave" "5d5f4487-0434-4dfc-8d60-c21948149dc8"
+data "PrepareSound" "Spell_Prepare_Damage_Physical_Gen_L1to3"
+data "PrepareLoopSound" "Spell_Prepare_Damage_Physical_Gen_L1to3_Loop"
+data "CastSound" "Spell_Cast_Damage_Physical_MeleeWeaponAttack_L1to3"
+data "TargetSound" "Spell_Impact_Damage_Physical_MeleeWeaponAttack_L1to3"
+data "VocalComponentSound" "Vocal_Component_Attack"
+data "Cooldown" "None"
+data "UseCosts" "ActionPoint:1;Rage:10"
+data "SpellAnimation" "dd86aa43-8189-4d9f-9a5c-3b62f5c6af4c,,;,,;4e7df28e-27b0-4d61-84a4-bb6e9a791d90,,;,,;dd86aa43-8189-4d9f-9a5c-3b62f5c6af4c,,;,,;dd86aa43-8189-4d9f-9a5c-3b62f5c6af4c,,;,,;,,"
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsMelee;IsHarmful;CombatLogSetSingleLineRoll"
+data "HitAnimationType" "MeleeWeaponAttack"
+data "PrepareEffect" "db76e04c-fc50-40e5-ac06-1d3b4d5f5450"
+data "CastEffect" "db76e04c-fc50-40e5-ac06-1d3b4d5f5450"
+data "TargetEffect" "b863dc6e-f551-4a93-951f-c3f389b30470"
+data "DamageType" "Slashing"
+data "SpellSoundMagnitude" "Big"
+
+// ========================================
+// ARMS WARRIOR SUBCLASS - AoE ABILITIES
+// ========================================
+
+// ========================================
+// WARBREAKER - Arms L12 AoE Debuff
+// ========================================
+
+new entry "Zone_WAR_ARMS_Warbreaker"
+type "SpellData"
+data "SpellType" "Zone"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "TargetRadius" "13"
+data "AreaRadius" "9"
+data "SpellRoll" "Attack(AttackType.MeleeWeaponAttack)"
+data "SpellSuccess" "DealDamage(4d10+StrengthModifier,Slashing,Magical);ApplyStatus(WAR_SUNDERED_ARMOR,100,3)"
+data "TargetConditions" "not Self() and not Dead() and Enemy()"
+data "Icon" "Spell_Necromancy_CircleOfDeath"
+data "DisplayName" "h125abc77;1"
+data "Description" "h125abc78;4"
+data "DescriptionParams" "DealDamage(4d10+StrengthModifier,Slashing);2;3;40"
+data "TooltipDamageList" "DealDamage(4d10+StrengthModifier,Slashing)"
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "TooltipStatusApply" "ApplyStatus(WAR_SUNDERED_ARMOR,100,3)"
+data "TooltipOnMiss" "5d5f4487-0434-4dfc-8d60-c21948149dc8"
+data "PrepareSound" "Spell_Prepare_Damage_Physical_Gen_L1to3"
+data "PrepareLoopSound" "Spell_Prepare_Damage_Physical_Gen_L1to3_Loop"
+data "CastSound" "Spell_Cast_Damage_Physical_MeleeWeaponAttack_L1to3"
+data "TargetSound" "Spell_Impact_Damage_Physical_MeleeWeaponAttack_L1to3"
+data "VocalComponentSound" "Vocal_Component_Attack"
+data "Cooldown" "OncePerLongRest"
+data "UseCosts" "ActionPoint:1;Rage:40"
+data "SpellAnimation" "dd86aa43-8189-4d9f-9a5c-3b62f5c6af4c,,;,,;4e7df28e-27b0-4d61-84a4-bb6e9a791d90,,;,,;dd86aa43-8189-4d9f-9a5c-3b62f5c6af4c,,;,,;dd86aa43-8189-4d9f-9a5c-3b62f5c6af4c,,;,,;,,"
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsMelee;IsHarmful;CombatLogSetSingleLineRoll"
+data "HitAnimationType" "MeleeWeaponAttack"
+data "PrepareEffect" "db76e04c-fc50-40e5-ac06-1d3b4d5f5450"
+data "CastEffect" "db76e04c-fc50-40e5-ac06-1d3b4d5f5450"
+data "TargetEffect" "b863dc6e-f551-4a93-951f-c3f389b30470"
+data "DamageType" "Slashing"
+data "SpellSoundMagnitude" "Huge"
+data "Shape" "Cone"
+
+// ========================================
+// BLADESTORM - Arms L15 Channeled AoE
+// ========================================
+
+new entry "Zone_WAR_ARMS_Bladestorm"
+type "SpellData"
+data "SpellType" "Zone"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "TargetRadius" "13"
+data "AreaRadius" "3"
+data "SpellRoll" "not SavingThrow(Ability.None, 0)"
+data "SpellSuccess" "ApplyStatus(SELF,WAR_BLADESTORM,100,4)"
+data "TargetConditions" "Self()"
+data "Icon" "Spell_Transmutation_ArcaneGate"
+data "DisplayName" "h125abc79;1"
+data "Description" "h125abc80;2"
+data "DescriptionParams" "DealDamage(2d8+StrengthModifier,Slashing);4"
+data "TooltipStatusApply" "ApplyStatus(SELF,WAR_BLADESTORM,100,4)"
+data "PrepareSound" "Spell_Prepare_Damage_Physical_Gen_L1to3"
+data "PrepareLoopSound" "Spell_Prepare_Damage_Physical_Gen_L1to3_Loop"
+data "CastSound" "Spell_Cast_Damage_Physical_MeleeWeaponAttack_L1to3"
+data "TargetSound" "Spell_Impact_Damage_Physical_MeleeWeaponAttack_L1to3"
+data "VocalComponentSound" "Vocal_Component_Attack"
+data "Cooldown" "OncePerLongRest"
+data "UseCosts" "ActionPoint:1"
+data "SpellAnimation" "dd86aa43-8189-4d9f-9a5c-3b62f5c6af4c,,;,,;4e7df28e-27b0-4d61-84a4-bb6e9a791d90,,;,,;dd86aa43-8189-4d9f-9a5c-3b62f5c6af4c,,;,,;dd86aa43-8189-4d9f-9a5c-3b62f5c6af4c,,;,,;,,"
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsMelee;IsHarmful;CombatLogSetSingleLineRoll;Concentration"
+data "HitAnimationType" "MeleeWeaponAttack"
+data "PrepareEffect" "db76e04c-fc50-40e5-ac06-1d3b4d5f5450"
+data "CastEffect" "db76e04c-fc50-40e5-ac06-1d3b4d5f5450"
+data "TargetEffect" "b863dc6e-f551-4a93-951f-c3f389b30470"
+data "DamageType" "Slashing"
+data "SpellSoundMagnitude" "Huge"
+
+// ========================================
+// END OF ZONE SPELLS
+// ========================================
+

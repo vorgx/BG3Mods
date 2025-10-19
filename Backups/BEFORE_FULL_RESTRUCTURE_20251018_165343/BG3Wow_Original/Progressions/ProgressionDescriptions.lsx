@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml version="1.0" encoding="UTF-8"?>
+
+<save><save>
+
+    <version major="4" minor="8" revision="0" build="10"/>    <version major="4" minor="8" revision="0" build="10"/>
+
+    <region id="ProgressionDescriptions">    <region id="ProgressionDescriptions">
+
+        <node id="root">        <node id="root">
+
+            <children>            <children>
+
+                <!-- Warrior Base Class -->                <!-- Base Warrior Class -->
+
+                <node id="ProgressionDescription">                <node id="ProgressionDescription">
+
+                    <attribute id="Description" type="TranslatedString" handle="hec9f49b2g20fbg427bgb437gfd4041ffd5ec" version="1"/>                    <attribute id="Description" type="TranslatedString" handle="hd78e30bagb1c9g4f9bg0c9ag1f8e9c7d2a" version="1"/>
+
+                    <attribute id="DisplayName" type="TranslatedString" handle="h2192a15fgd3c6g47c8g8f2ag887078521591" version="1"/>                    <attribute id="DisplayName" type="TranslatedString" handle="h5a8b9c0dg1e2fg3a4bg5c6dg7e8f9a0b1c2d" version="1"/>
+
+                    <attribute id="ProgressionTableId" type="guid" value="a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d"/>                    <attribute id="ProgressionTableId" type="guid" value="a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d"/>
+
+                    <attribute id="Type" type="FixedString" value="WoWWarrior"/>                    <attribute id="Type" type="FixedString" value="WoWWarrior"/>
+
+                    <attribute id="UUID" type="guid" value="7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c2d"/>                    <attribute id="UUID" type="guid" value="7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c2d"/>
+
+                </node>                </node>
+
+                <!-- Arms Warrior Subclass -->                
+
+                <node id="ProgressionDescription">                <!-- Arms Warrior Subclass -->
+
+                    <attribute id="Description" type="TranslatedString" handle="h5300bf31g2077g4482g80dfg06112305b4d5" version="1"/>                <node id="ProgressionDescription">
+
+                    <attribute id="DisplayName" type="TranslatedString" handle="h0ae71f9cgcb9ag4eb9g8bedgdc08c872bccc" version="1"/>                    <attribute id="Description" type="TranslatedString" handle="h1a2b3c4dg5e6fg7a8bg9c0dg1e2f3a4b5c6d" version="1"/>
+
+                    <attribute id="ProgressionTableId" type="guid" value="2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e"/>                    <attribute id="DisplayName" type="TranslatedString" handle="h9c0d1e2fg3a4bg5c6dg7e8fg9a0b1c2d3e4f" version="1"/>
+
+                    <attribute id="Type" type="FixedString" value="ArmsWarrior"/>                    <attribute id="ProgressionTableId" type="guid" value="2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e"/>
+
+                    <attribute id="UUID" type="guid" value="8b9c0d1e-2f3a-4b5c-6d7e-8f9a0b1c2d3e"/>                    <attribute id="Type" type="FixedString" value="ArmsWarrior"/>
+
+                </node>                    <attribute id="UUID" type="guid" value="8b9c0d1e-2f3a-4b5c-6d7e-8f9a0b1c2d3e"/>
+
+                <!-- Fury Warrior Subclass -->                </node>
+
+                <node id="ProgressionDescription">                
+
+                    <attribute id="Description" type="TranslatedString" handle="h151545dbg38fdg42d8gbfe8g784683acd258" version="1"/>                <!-- Fury Warrior Subclass -->
+
+                    <attribute id="DisplayName" type="TranslatedString" handle="h8d2875a5g4c2ag482fg9158g98f8d100d978" version="1"/>                <node id="ProgressionDescription">
+
+                    <attribute id="ProgressionTableId" type="guid" value="4c5d6e7f-8a9b-0c1d-2e3f-4a5b6c7d8e9f"/>                    <attribute id="Description" type="TranslatedString" handle="h3b4c5d6eg7f8ag9b0cg1d2eg3f4a5b6c7d8e" version="1"/>
+
+                    <attribute id="Type" type="FixedString" value="FuryWarrior"/>                    <attribute id="DisplayName" type="TranslatedString" handle="h4c5d6e7fg8a9bg0c1dg2e3fg4a5b6c7d8e9f" version="1"/>
+
+                    <attribute id="UUID" type="guid" value="9c0d1e2f-3a4b-5c6d-7e8f-9a0b1c2d3e4f"/>                    <attribute id="ProgressionTableId" type="guid" value="4c5d6e7f-8a9b-0c1d-2e3f-4a5b6c7d8e9f"/>
+
+                </node>                    <attribute id="Type" type="FixedString" value="FuryWarrior"/>
+
+                <!-- Protection Warrior Subclass -->                    <attribute id="UUID" type="guid" value="9c0d1e2f-3a4b-5c6d-7e8f-9a0b1c2d3e4f"/>
+
+                <node id="ProgressionDescription">                </node>
+
+                    <attribute id="Description" type="TranslatedString" handle="hd276f0e5g1198g4d05g9a64ga3a38e97aea2" version="1"/>                
+
+                    <attribute id="DisplayName" type="TranslatedString" handle="hc4f8321dgffefg447fgb8fagd3f964cc05d8" version="1"/>                <!-- Protection Warrior Subclass -->
+
+                    <attribute id="ProgressionTableId" type="guid" value="6d7e8f9a-0b1c-2d3e-4f5a-6b7c8d9e0f1a"/>                <node id="ProgressionDescription">
+
+                    <attribute id="Type" type="FixedString" value="ProtectionWarrior"/>                    <attribute id="Description" type="TranslatedString" handle="h5c6d7e8fg9a0bg1c2dg3e4fg5a6b7c8d9e0f" version="1"/>
+
+                    <attribute id="UUID" type="guid" value="0d1e2f3a-4b5c-6d7e-8f9a-0b1c2d3e4f5a"/>                    <attribute id="DisplayName" type="TranslatedString" handle="h6d7e8f9ag0b1cg2d3eg4f5ag6b7c8d9e0f1a" version="1"/>
+
+                </node>                    <attribute id="ProgressionTableId" type="guid" value="6d7e8f9a-0b1c-2d3e-4f5a-6b7c8d9e0f1a"/>
+
+            </children>                    <attribute id="Type" type="FixedString" value="ProtectionWarrior"/>
+
+        </node>                    <attribute id="UUID" type="guid" value="0d1e2f3a-4b5c-6d7e-8f9a-0b1c2d3e4f5a"/>
+
+    </region>                </node>
+
+</save>            </children>
+
+        </node>
+    </region>
+</save>

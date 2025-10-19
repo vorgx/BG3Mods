@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<save>
+    <version major='4' minor='8' revision='0' build='10' />
+    <region id='ProgressionDescriptions'>
+        <node id='root'>
+            <children />
+        </node>
+    </region>
+</save>

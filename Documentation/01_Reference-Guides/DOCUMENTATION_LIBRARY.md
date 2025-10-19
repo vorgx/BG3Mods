@@ -39,6 +39,7 @@
 | Topic | Source | Location | Description |
 |-------|--------|----------|-------------|
 | BG3 Modding Overview | [INT] | `My Documentation/01_ProjectDocuments/GETTING_STARTED.md` | 4-week roadmap for building WoW class mods |
+| ⭐ **Basic Class Creation Guide** | [EXT] | https://wiki.bg3.community/Tutorials/Classes/Basic-Class-Creation | **REQUIRED READING** - Complete step-by-step class creation tutorial with ALL required files |
 | Modding Resources Hub | [EXT] | https://bg3.wiki/wiki/Modding:Modding_resources | Official BG3 wiki modding homepage (tools, paths, sites) |
 | Creating Mods Guide | [EXT] | https://bg3.wiki/wiki/Modding:Creating_mods | Step-by-step tutorials for creating BG3 mods |
 | Getting Started with BG3 Modding | [EXT] | https://bg3.wiki/wiki/Modding:Getting_Started_with_BG3_Modding | Official beginner's guide |

@@ -88,21 +88,19 @@ Tests/
 │   ├── ExampleMod_5eSpells/
 │   └── ExampleMod_WoWWarlock/
 │
-├── 03_ExtractedContent/        ← Unpacked PAK files
-│   ├── ExtractedPak/
-│   ├── InstalledPackageCheck/
-│   └── NewPackage/
-│
-├── SessionReports/             ← Historical session docs
+├── 03_TestReports/             ← Test & session reports (renamed from 04)
 │   ├── FIRST_BUILD_READY.md
 │   ├── LOCALIZATION_FIX_COMPLETE.md
 │   ├── SE_INTEGRATION_COMPLETE.md
-│   ├── SETUP_COMPLETE.md
-│   ├── VSCODE_INTEGRATION_COMPLETE.md
-│   └── VSCODE_INTEGRATION_IMPLEMENTATION.md
+│   └── [Session documentation]
 │
-└── Troubleshooting/            ← Debug guides
+├── 04_Tools/                   ← Development scripts (renamed from 05)
+│   └── MIGRATE_TESTS.ps1
+│
+└── 05_Troubleshooting/         ← Debug guides (renamed from 06)
     └── SE_DEBUGGING_GUIDE.md
+
+Note: 03_ExtractedContent/ was deleted due to Windows path length issues (MAX_PATH 260 char limit)
 ```
 
 ---

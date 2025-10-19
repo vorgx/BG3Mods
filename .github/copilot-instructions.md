@@ -238,6 +238,13 @@ Before packaging a new version, ALWAYS run these checks:
 
 **CRITICAL**: Before making ANY changes to code or documentation, ALWAYS follow this protocol:
 
+### 0. Check Official Class Creation Guide FIRST (NEW)
+- **⚠️ MANDATORY**: Before ANY class-related changes, read https://wiki.bg3.community/Tutorials/Classes/Basic-Class-Creation
+- **⚠️ VALIDATE**: Check `Documentation/10_ValidationReports/CLASS_CREATION_REQUIREMENTS_CHECKLIST.md`
+- **⚠️ VERIFY**: Confirm all 9 required files exist (see checklist)
+- This guide defines the AUTHORITATIVE structure for BG3 classes
+- Our mod MUST match this structure or class won't appear in character creation
+
 ### 1. Read Design Documents FIRST
 - **ALWAYS check**: `Documentation/07_DesignDocuments/` - Class blueprints, design specs, intended mechanics
 - **ALWAYS check**: `Documentation/06_ProjectDocuments/` - Implementation guides, passive definitions, file references

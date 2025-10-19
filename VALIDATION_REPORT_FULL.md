@@ -26,12 +26,13 @@
 **Tests Folder - HAS NUMBERED PREFIXES:**
 ```
 Tests/
-├── 01_ValidationReports/    ✅ Numbered
+├── 01_ValidationReports/     ✅ Numbered
 ├── 02_ExampleMods/           ✅ Numbered
-├── 03_ExtractedContent/      ✅ Numbered
-├── 04_TestReports/           ✅ Numbered
-├── 05_Tools/                 ✅ Numbered
-└── 06_Troubleshooting/       ✅ Numbered
+├── 03_TestReports/           ✅ Numbered (renamed from 04)
+├── 04_Tools/                 ✅ Numbered (renamed from 05)
+└── 05_Troubleshooting/       ✅ Numbered (renamed from 06)
+
+Note: 03_ExtractedContent was deleted due to Windows path length issues
 ```
 
 **Documentation Folder - NO NUMBERED PREFIXES:**
@@ -211,7 +212,8 @@ All links in INDEX.md need to be updated to reflect:
 - New Documentation/ folder structure with numbered prefixes
 - Moved files (QUICK_REFERENCE, pre_package_checklist)
 - Scripts/ folder for validation scripts
-- Tests/ updated structure (04_TestReports, 05_Tools, 06_Troubleshooting)
+- Tests/ updated structure (03_TestReports, 04_Tools, 05_Troubleshooting)
+- Note: 03_ExtractedContent deleted (path length issues), folders renumbered
 
 ### Priority 4: Update Warrior_Class_Blueprint.md
 

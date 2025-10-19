@@ -40,7 +40,7 @@ $ErrorActionPreference = "Continue"
 # Get paths
 $ProjectRoot = Split-Path -Parent $PSScriptRoot
 $ScriptsFolder = Join-Path $ProjectRoot "Scripts"
-$ToolsFolder = Join-Path $PSScriptRoot "Tools"
+$ToolsFolder = Join-Path $PSScriptRoot "04_Tools"
 
 Write-Host "`n================================================================" -ForegroundColor Cyan
 Write-Host "  BG3WOW MOD - COMPREHENSIVE TEST SUITE" -ForegroundColor White

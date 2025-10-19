@@ -148,13 +148,21 @@ BG3Mods/  (c:\Users\tenod\source\repos\BG3Mods\)
     │   ├── 📁 ExampleMod_WoWWarlock/        # WoW Warlock reference (critical)
     │   └── 📁 MinimalMod/                   # Minimal template
     │
-    └── 📁 03_ExtractedContent/  ✨ NEW SUBFOLDER
-        ├── 📄 README.md                     # Subfolder documentation (extraction workflows)
-        ├── 📁 ExtractedPak/                 # Vanilla BG3 content
-        ├── 📁 InstalledPackageCheck/        # BG3Wow installed state
-        ├── 📁 NewPackage/                   # Experimental builds
-        ├── 📁 WoWWarrior_BACKUP/            # Backup folder (rollback)
-        └── 📄 WoWWarrior_BACKUP.pak         # Backup .pak (quick rollback)
+    ├── 📁 03_TestReports/  ✨ RENUMBERED (was 04)
+    │   ├── 📄 README.md                     # Session reports and test documentation
+    │   ├── � FIRST_BUILD_READY.md          # Build milestone
+    │   ├── 📄 LOCALIZATION_FIX_COMPLETE.md  # Localization milestone
+    │   └── � [Session documentation]       # Historical session docs
+    │
+    ├── 📁 04_Tools/  ✨ RENUMBERED (was 05)
+    │   ├── 📄 README.md                     # Development scripts documentation
+    │   └── 📄 MIGRATE_TESTS.ps1             # Tests folder migration script
+    │
+    └── 📁 05_Troubleshooting/  ✨ RENUMBERED (was 06)
+        ├── 📄 README.md                     # Debugging and troubleshooting guides
+        └── 📄 SE_DEBUGGING_GUIDE.md         # Script Extender debugging
+
+⚠️ **Note**: 03_ExtractedContent/ was deleted due to Windows MAX_PATH (260 char) limit issues with nested reference mod files. Folders were renumbered to maintain sequential organization.
 ```
 
 ---

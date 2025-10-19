@@ -5,9 +5,10 @@
         <node id="root">
             <children>
                 <node id="ActionResourceDefinition">
-                    <attribute id="Description" type="TranslatedString" handle="h8a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d" version="1"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="h9b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e" version="1"/>
+                    <attribute id="Description" type="TranslatedString" handle="h2483ce0dg3709g4983g8aacg8dde1c406c97" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="hdffb5cfegff1fg4209gb239ga15ec5d929ee" version="1"/>
                     <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="MaxValue" type="uint32" value="100"/>
                     <attribute id="Name" type="FixedString" value="Rage"/>
                     <attribute id="ReplenishType" type="FixedString" value="Never"/>
                     <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>

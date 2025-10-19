@@ -1,5 +1,0 @@
-{
-  "RequiredVersion": 10,
-  "ModTable": "BG3Wow",
-  "FeatureFlags": ["Lua"]
-}

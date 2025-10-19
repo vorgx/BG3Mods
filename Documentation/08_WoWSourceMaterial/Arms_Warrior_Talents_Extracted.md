@@ -363,59 +363,133 @@ These are abilities available when choosing Arms spec, separate from talent rows
 
 ---
 
-## SPECIALIZATION: Mountain Thane (Hero Talent - Choice at L13)
+## ❌ SPECIALIZATION: Mountain Thane (NOT Available to Arms Warriors)
 
-Arms warriors can choose **Mountain Thane** OR **Slayer** at Level 13.
+**Important Note**: Arms Warriors **CANNOT** choose Mountain Thane at Level 13.
 
-### Mountain Thane - Key Talent (Granted at L13)
+**Correct Specialization Options for Arms**:
+- **Colossus** (Tank/Defense hero talents) - See section below
+- **Slayer** (DPS/Execution hero talents) - See section below
 
-**Avatar of the Storm**
-- **Type**: Passive Enhancement
-- **Effect**: Enhances Avatar cooldown with lightning theme
-- **BG3 Implementation**: When you activate Avatar, gain Avatar of the Storm status: Lightning bursts deal 1d8 Lightning damage to all enemies within 3m every turn for Avatar's duration
+**Mountain Thane Availability**:
+- ✅ **Fury Warriors**: Mountain Thane OR Slayer
+- ✅ **Protection Warriors**: Mountain Thane OR Colossus
+- ❌ **Arms Warriors**: Colossus OR Slayer (NOT Mountain Thane)
 
-### Mountain Thane - Choice Nodes (Granted L13-L20)
-
-**Lightning Strikes (L13)**
-- **Type**: Passive
-- **Effect**: Auto-attacks during Avatar trigger lightning
-- **BG3 Implementation**: While Avatar active, melee attacks have 30% chance to deal bonus 1d6 Lightning damage to target + all enemies within 2m
-
-**Thunder Blast (L15)**
-- **Type**: Passive Enhancement
-- **Effect**: Stronger version of Thunder Clap that ignores armor
-- **BG3 Implementation**: Thunder Clap ignores enemy AC bonuses from armor/shields and deals +1d6 damage
-
-**Burst of Power (L18)**
-- **Type**: Passive
-- **Effect**: Makes core abilities better
-- **BG3 Implementation**: Mortal Strike gains +1d8 damage and applies Deep Wounds (1d6 bleed per turn for 3 turns)
-
-### Mountain Thane - Passives (Granted L13-L20)
-
-**Crashing Thunder** (L13)
-- **Type**: Passive
-- **Effect**: Thunder Clap damage increase
-- **BG3 Implementation**: Thunder Clap deals +50% damage
-
-**Ground Current** (L15)
-- **Type**: Passive
-- **Effect**: Lightning damage spreads
-- **BG3 Implementation**: When you deal Lightning damage, it chains to 1 additional nearby enemy (50% damage)
-
-**Thorim's Might** (L18)
-- **Type**: Passive
-- **Effect**: Strength increase during Avatar
-- **BG3 Implementation**: While Avatar active, gain +4 Strength (total +8 with Champion's Might)
-
-**Gathering Storms** (L20 - Capstone)
-- **Type**: Passive
-- **Effect**: Stacking damage buff during Avatar
-- **BG3 Implementation**: While Avatar active, gain +5% damage per turn (stacks up to 50%)
+For Mountain Thane details, see:
+- `Fury_Warrior_Talents_Extracted.md`
+- `Protection_Warrior_Talents_Extracted.md`
 
 ---
 
-## SPECIALIZATION: Slayer (Hero Talent - Alternative Choice at L13)
+## SPECIALIZATION: Colossus (Hero Talent - Choice at L13)
+
+**Arms Warriors choose COLOSSUS OR SLAYER at Level 13.**
+
+### Colossus - Keystone (Granted at L13)
+
+**Demolish**
+- **Type**: Active Ability
+- **Cooldown**: Short Rest
+- **Rage Cost**: 20
+- **Effect**: Unleash devastating strike that demolishes armor
+- **BG3 Implementation**:
+  - **Base**: Deal 3d12+STR weapon damage
+  - **Debuff**: Apply Demolished status (target takes +10% physical damage) for 3 turns
+  - **Synergy**: Against targets with Sunder Armor, deal +2d12 damage and refresh Sunder duration to maximum
+- **Tags**: Active, Keystone, Single-Target, Debuff
+
+### Colossus - Choice Nodes (3 Tiers: L15, L17, L19)
+
+**Choice Node 1 (L15) - Pick 1 of 3:**
+
+**Unstoppable Force**
+- **Type**: Passive
+- **Effect**: Shield Slam chains to additional targets
+- **BG3 Implementation**: Shield Slam bounces to 1 additional target within 6m, dealing 50% damage
+
+**Mountain of Muscle and Scars**
+- **Type**: Passive
+- **Effect**: Damage reduction when using Rage
+- **BG3 Implementation**: While you have 50+ Rage (5+ pips), gain resistance to physical damage (take half damage)
+
+**Colossal Might**
+- **Type**: Passive
+- **Effect**: Rage generation from Shield Slam
+- **BG3 Implementation**: Shield Slam generates +10 Rage (total 30 Rage generated instead of 20)
+
+**Choice Node 2 (L17) - Pick 1 of 3:**
+
+**Dominance of the Colossus (Choice)**
+- **Type**: Passive
+- **Effect**: Demolish range increase (not the capstone - this is a choice node option)
+- **BG3 Implementation**: Demolish can target enemies up to 18m away (from 3m melee range), becomes a ranged slam
+
+**One Against Many**
+- **Type**: Passive
+- **Effect**: Damage reduction when surrounded
+- **BG3 Implementation**: For each enemy within 3m of you (max 5), gain +5% damage reduction (max +25% at 5+ enemies)
+
+**Arterial Bleed**
+- **Type**: Passive
+- **Effect**: Shield Slam causes bleeding
+- **BG3 Implementation**: Shield Slam applies Bleeding status (2d4 damage per turn) for 3 turns
+
+**Choice Node 3 (L19) - Pick 1 of 3:**
+
+**Boneshaker**
+- **Type**: Passive
+- **Effect**: Demolish stuns low-health enemies
+- **BG3 Implementation**: Demolish stuns enemies below 30% HP for 1 turn (Constitution save DC 15 negates)
+
+**Practiced Strikes**
+- **Type**: Passive
+- **Effect**: Shield Slam cooldown reduction
+- **BG3 Implementation**: Shield Slam recharge time reduced by 50% (recharges every 2 turns instead of 4)
+
+**Martial Expert**
+- **Type**: Passive
+- **Effect**: General damage increase with shields
+- **BG3 Implementation**: +15% damage with all abilities while wielding a shield
+
+### Colossus - Passives (Auto-Granted)
+
+**Tide of Battle** (L14)
+- **Type**: Passive
+- **Effect**: Revenge enhances next Shield Slam
+- **BG3 Implementation**: When you use Revenge, your next Shield Slam within 2 turns deals +1d8 damage and generates +5 Rage
+
+**Earthen Tenacity** (L16)
+- **Type**: Passive
+- **Effect**: Damage reduction while Rage is high
+- **BG3 Implementation**: When you are above 80 Rage (8+ pips), gain +2 AC
+
+**Disrupting Shout** (L18)
+- **Type**: Passive
+- **Effect**: Thunder Clap reduces enemy damage
+- **BG3 Implementation**: Enemies hit by Thunder Clap deal -10% damage for 2 turns
+
+**Titanic Fury** (L20)
+- **Type**: Passive
+- **Effect**: Shield Slam empowerment at high Rage
+- **BG3 Implementation**: When you have 80+ Rage (8+ pips), Shield Slam automatically critically hits
+
+### Colossus - Capstone (L20)
+
+**Dominance of the Colossus (Capstone)**
+- **Type**: Passive
+- **Effect**: Demolish becomes even more devastating
+- **BG3 Implementation**:
+  - **Damage Increase**: Demolish deals +50% damage (4d12+1d6+STR instead of 3d12+STR)
+  - **AoE Effect**: Demolish now hits all enemies in a 3m radius around the primary target for 50% damage
+  - **Debuff Enhancement**: Demolished status now also reduces target's AC by -2
+- **Tags**: Passive, Enhancement, Capstone
+
+---
+
+## SPECIALIZATION: Slayer (Hero Talent - Choice at L13)
+
+**Arms Warriors choose SLAYER OR COLOSSUS at Level 13.**
 
 ### Slayer - Key Talent (Granted at L13)
 
@@ -424,49 +498,90 @@ Arms warriors can choose **Mountain Thane** OR **Slayer** at Level 13.
 - **Effect**: Frequent random single-target damage proc that inflicts Marked for Execution
 - **BG3 Implementation**: 15% chance on melee hit to deal bonus 2d8 damage and apply Marked for Execution status (target takes +10% damage from Execute and takes +1d6 damage from your attacks) for 4 turns
 
-### Slayer - Choice Nodes (Granted L13-L20)
+### Slayer - Choice Nodes (3 Tiers: L15, L17, L19)
 
-**Brutal Finish (L13)**
+**Choice Node 1 (L15) - Pick 1 of 3:**
+
+**Brutal Finish**
 - **Type**: Passive
 - **Effect**: Execute damage increase when Marked
 - **BG3 Implementation**: Execute deals +50% damage against Marked for Execution targets
 
-**Overwhelming Blades (L15)**
-- **Type**: Passive
-- **Effect**: Multi-target Marked for Execution spread
-- **BG3 Implementation**: When you apply Marked for Execution, it spreads to 1 additional nearby enemy (within 3m)
-
-**Opportunist (L18)**
+**Opportunist**
 - **Type**: Passive
 - **Effect**: Mortal Strike enhancement
 - **BG3 Implementation**: When Mortal Strike hits a Marked for Execution target, it deals +1d8 damage and refunds 10 Rage
 
-### Slayer - Passives (Granted L13-L20)
-
-**Imminent Demise** (L13)
+**Overwhelming Blades**
 - **Type**: Passive
-- **Effect**: Core ability damage increase against Marked targets
-- **BG3 Implementation**: Mortal Strike and Overpower deal +25% damage against Marked for Execution targets
+- **Effect**: Multi-target Marked for Execution spread
+- **BG3 Implementation**: When you apply Marked for Execution, it spreads to 1 additional nearby enemy (within 3m) at half effectiveness (duration 2 turns instead of 4)
 
-**Culling Cyclone** (L15)
-- **Type**: Passive
-- **Effect**: Whirlwind benefit from Marked
-- **BG3 Implementation**: Whirlwind deals +1d6 damage per Marked for Execution enemy hit
+**Choice Node 2 (L17) - Pick 1 of 3:**
 
-**Show No Mercy** (L18)
+**Show No Mercy**
 - **Type**: Passive
 - **Effect**: Critical strike bonus tied to Marked for Execution
-- **BG3 Implementation**: Attacks against Marked for Execution targets have critical hit range increased by 1 (19-20)
+- **BG3 Implementation**: Attacks against Marked for Execution targets have critical hit range increased by 1 (19-20, or 18-20 if combined with other crit talents)
 
-**Reap the Storm** (L18)
+**Culling Cyclone**
+- **Type**: Passive
+- **Effect**: Whirlwind benefit from Marked
+- **BG3 Implementation**: Whirlwind deals +1d6 damage per Marked for Execution enemy hit (stacks multiplicatively, 3 marked enemies = +3d6)
+
+**Relentless Pursuit**
+- **Type**: Passive
+- **Effect**: Movement speed increase
+- **BG3 Implementation**: +3m movement speed. When you Execute a Marked enemy, gain +6m movement for 2 turns (stacks with base)
+
+**Choice Node 3 (L19) - Pick 1 of 3:**
+
+**Reap the Storm**
 - **Type**: Passive
 - **Effect**: Multi-target debuff
 - **BG3 Implementation**: When you hit 3+ enemies with a single attack, apply Overwhelmed status on all targets (take +8% damage from you) for 3 turns
 
-**Slayer's Malice** (L20 - Capstone)
+**Flurry of Blades**
 - **Type**: Passive
-- **Effect**: General damage increase further emphasizing Execute
-- **BG3 Implementation**: Execute deals +30% damage and has +10% chance to apply Marked for Execution
+- **Effect**: Overpower multi-target
+- **BG3 Implementation**: Overpower cleaves to 2 additional nearby targets for 50% damage
+
+**Death Sentence**
+- **Type**: Passive
+- **Effect**: Execute extends Marked for Execution
+- **BG3 Implementation**: When you Execute a target, extend Marked for Execution duration by 3 turns on all marked enemies within 9m
+
+### Slayer - Passives (Auto-Granted)
+
+**Imminent Demise** (L14)
+- **Type**: Passive
+- **Effect**: Core ability damage increase against Marked targets
+- **BG3 Implementation**: Mortal Strike and Overpower deal +25% damage against Marked for Execution targets
+
+**Marked Fury** (L16)
+- **Type**: Passive
+- **Effect**: Rage generation from Marked targets
+- **BG3 Implementation**: Gain +5 Rage when you attack a Marked for Execution target (max 3 procs per turn)
+
+**Unrelenting Onslaught** (L18)
+- **Type**: Passive
+- **Effect**: Attack speed increase
+- **BG3 Implementation**: +10% attack speed while at least 1 enemy is Marked for Execution
+
+**Slayer's Focus** (L20)
+- **Type**: Passive
+- **Effect**: Your primary target (most recently attacked enemy) focus
+- **BG3 Implementation**: Your primary target (most recently attacked enemy) takes +10% damage from you. When you apply Marked for Execution, it's automatically applied to your primary target
+
+### Slayer - Capstone (L20)
+
+**Slayer's Malice**
+- **Type**: Passive
+- **Effect**: General damage increase further emphasizing Execute and Overpower
+- **BG3 Implementation**:
+  - Execute deals +30% damage and has +10% chance to apply Marked for Execution
+  - Overpower deals +30% damage (Arms-specific capstone effect)
+- **Tags**: Passive, Enhancement, Capstone
 
 ---
 
@@ -499,7 +614,7 @@ Arms warriors can choose **Mountain Thane** OR **Slayer** at Level 13.
 ### Talent Progression Recommendations:
 - **Early (L1-7)**: Mortal Strike → Overpower → Rend → Colossus Smash
 - **Mid (L8-12)**: Sweeping Strikes, Avatar, Warbreaker
-- **Late (L13-20)**: Specialization choice (Mountain Thane vs Slayer) + capstones
+- **Late (L13-20)**: Specialization choice (Colossus vs Slayer) + capstones
 
 ### Key Differences from Other Specs:
 - Arms focuses on **big single hits and bleeds**
