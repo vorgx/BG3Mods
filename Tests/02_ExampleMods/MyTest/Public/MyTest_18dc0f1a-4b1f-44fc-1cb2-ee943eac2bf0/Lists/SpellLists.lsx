@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="500"/>
+    <region id="SpellLists">
+        <node id="root">
+            <children>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="New_Stat_0"/>
+                    <attribute id="Spells" type="LSString" value="Target_ShockingGrasp;Target_TrueStrike"/>
+                    <attribute id="UUID" type="guid" value="e5395f4a-d6aa-4441-b1dd-aa808f071080"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="New_Stat_1"/>
+                    <attribute id="Spells" type="LSString" value="Zone_BurningHands;Target_Jump;Target_Longstrider"/>
+                    <attribute id="UUID" type="guid" value="fde3932b-e2e4-411f-8903-b447a106bc20"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

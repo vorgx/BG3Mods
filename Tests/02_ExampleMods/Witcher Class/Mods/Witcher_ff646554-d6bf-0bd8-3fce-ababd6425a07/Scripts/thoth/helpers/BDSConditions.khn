@@ -1,0 +1,99 @@
+local __util = require 'larian.util'
+
+function EXP_HasAnyExtraAttackBladesinging(entity)
+    local entity = entity or context.Target
+	local result = HasAnyStatus({'EXTRA_ATTACK','EXTRA_ATTACK_2','EXTRA_ATTACK_WAR_MAGIC','EXTRA_ATTACK_WAR_PRIEST','MAG_MARTIAL_EXERTION','WILDSTRIKE_EXTRA_ATTACK','WILDSTRIKE_2_EXTRA_ATTACK','STALKERS_FLURRY','EXTRA_ATTACK_THIRSTING_BLADE','COMMANDERS_STRIKE_D10','COMMANDERS_STRIKE_D8','EXTRA_ATTACK_BLADESINGING','EXTRA_ATTACK_CANTRIP'},{},{}, entity, context.Source, false).Result
+    return ConditionResult(result)
+end
+
+function EXP_HasHigherPriorityExtraAttackQueuedBladesinging(status, entity)
+    local entity = entity or context.Target
+    local eaQueuedStatuses = {'EXTRA_ATTACK_3_Q'
+        , 'EXTRA_ATTACK_2_Q'
+        , 'EXTRA_ATTACK_BLADESINGING_Q'
+        , 'EXTRA_ATTACK_CANTRIP_Q'
+        , 'EXTRA_ATTACK_Q'
+        , 'EXTRA_ATTACK_WAR_MAGIC_Q'
+        , 'MAG_MARTIAL_EXERTION_Q'
+        , 'WILDSTRIKE_EXTRA_ATTACK_Q'
+        , 'STALKERS_FLURRY_Q'
+        , 'EXTRA_ATTACK_THIRSTING_BLADE_Q'
+        , 'COMMANDERS_STRIKE_Q_D10'
+        , 'COMMANDERS_STRIKE_Q_D8'
+        , 'WILDSTRIKE_2_EXTRA_ATTACK_Q'
+        , 'EXTRA_ATTACK_WAR_PRIEST_Q'
+    }
+    for i,v in ipairs(eaQueuedStatuses) do
+        if (v == status) then
+            return ConditionResult(false)
+        end
+        if HasStatus(v, entity, context.Source, false).Result then
+            return ConditionResult(true)
+        end
+    end
+    return ConditionResult(false)
+end
+
+function HasMediumArmor(entity)
+    entity = entity or context.Target
+    local armor = GetActiveArmor(entity)
+    local hasMediumArmor = armor.ArmorType == ArmorType.Hide or armor.ArmorType == ArmorType.ChainShirt or armor.ArmorType == ArmorType.ScaleMail or armor.ArmorType == ArmorType.BreastPlate or armor.ArmorType == ArmorType.HalfPlate
+    return ConditionResult(hasMediumArmor)
+end
+
+function NoMediumOrHeavyArmorOrShield(entity)
+    entity = entity or context.Target
+    result = Character(entity) & ~HasHeavyArmor(entity) & ~HasMediumArmor(entity) & ~HasShieldEquipped(entity)
+    return ConditionResult(result.Result, {ConditionError("Bladesong_IncompatibleArmor")})
+end
+
+function IsVitality()
+	return SpellId('Target_ShadowStrike_Cat')
+	|SpellId('CS_ViperFangs')
+	|SpellId('CS_Rush_Bear')
+	|SpellId('Shout_Roar_Bear_witcher')
+	|SpellId('CS_Rush_Bear_1')
+	|SpellId('Shout_Quen')
+	|SpellId('Shout_Leadership_Griffin')
+	|SpellId('Shout_Wolf_Fang')
+	|SpellId('Target_Axii')
+	|SpellId('Target_Axii_2')
+	|SpellId('Target_Yrden')
+	|SpellId('Target_Base')
+	|SpellId('Target_Joyous')
+	|SpellId('Target_Shatter')
+	|SpellId('Target_Extend')
+	|SpellId('Target_Focus')
+	|SpellId('Target_CS_ExecutionStrike')
+	|SpellId('Zone_Igni')
+	|SpellId('Zone_Aard')
+	|SpellId('Zone_Aard_Enpower')
+	|SpellId('Shout_Refulgo1')
+	|SpellId('Shout_Refulgo2')
+	|SpellId('Target_Griffin_moahk1')
+	|SpellId('Target_Griffin_moahk2')
+	|SpellId('Target_Griffin_moahk3')
+    |SpellId('Target_Griffin_moahk4')
+    |SpellId('Projectile_ChainLightning1')
+    |SpellId('Projectile_ChainLightning_Enpower1')
+    |SpellId('Projectile_ChainLightning_enpower2')
+    |SpellId('Zone_Griffin_Ruput1')
+    |SpellId('Zone_Griffin_Ruput2')
+    |SpellId('Zone_Griffin_Ruput3')
+    |SpellId('Target_Griffin_Thermora1')
+    |SpellId('Zone_Griffin_Thermora2')
+    |SpellId('Shout_Griffin_Thermora3')
+end
+
+function DuelWieldingFinesseWeapon(entity)
+	-- Default to Target, like cpp functions
+    entity = entity or context.Target
+    return WieldingWeapon('Finesse', false, false, entity) & WieldingWeapon('Finesse', true, false, entity)
+end
+
+function MainhandFinesse_OffhandEmpty(entity)
+    entity = entity or context.Target
+    local hasNonVersatileWeapon = WieldingWeapon('Finesse', false, false, entity) & ~WieldingWeapon('Versatile', false, false, entity) & ~WieldingWeapon('Twohanded', false, false, entity) & ~WieldingWeapon('Melee', true, false, entity) & ~WieldingWeapon('Ammunition', true, false, entity)
+    local hasVersatileWeapon = WieldingWeapon('Versatile', false, false, entity) & WieldingWeapon('Melee', false, false, entity) & HasShieldEquipped(entity)
+    return hasNonVersatileWeapon | hasVersatileWeapon
+end

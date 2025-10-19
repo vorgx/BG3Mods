@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="6" build="5"/>
+    <region id="Progressions">
+        <node id="root">
+            <children>
+                <node id="Progression"> DemonHunter Main Class level 1
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(DemonicFury,100,0);"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="WoWDemonHunter"/>
+                    <attribute id="PassivesAdded" type="LSString" value="DH_UnlockDemonicFury"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSkills(ebba66c9-ad8a-4593-a8a9-574f5744480a,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/>
+					<attribute id="TableUUID" type="guid" value="4a0e24b1-5866-4ae1-9815-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="d3555619-845c-43c5-ad49-574f5744480a"/>
+					<children>
+                        <node id="SubClasses">
+                            <children>
+                                <node id="SubClass"> Havoc
+                                    <attribute id="Object" type="guid" value="d846a33f-3bfd-43c7-ab78-574f5744480a"/> 
+                                </node>
+                                <node id="SubClass"> Vengeance
+                                    <attribute id="Object" type="guid" value="b2650fe7-4a44-4981-aa65-574f5744480a"/> 
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+				<node id="Progression"> DemonHunter Main Class level 1 MULTICLASS
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
+                    <attribute id="Boosts" type="LSString" value="Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(DemonicFury,100,0);"/>
+                    <attribute id="IsMulticlass" type="bool" value="true"/>
+					<attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="WoWDemonHunter"/>
+                    <attribute id="Selectors" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value="DH_UnlockDemonicFury"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+					<attribute id="TableUUID" type="guid" value="4a0e24b1-5866-4ae1-9815-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="2a432806-8003-47ab-aa0e-574f5744480a"/>
+					<children>
+                        <node id="SubClasses">
+                            <children>
+                                <node id="SubClass"> Havoc
+                                    <attribute id="Object" type="guid" value="d846a33f-3bfd-43c7-ab78-574f5744480a"/> 
+                                </node>
+                                <node id="SubClass"> Vengeance
+                                    <attribute id="Object" type="guid" value="b2650fe7-4a44-4981-aa65-574f5744480a"/> 
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+				<node id="Progression"> Level 2
+                    <attribute id="Level" type="uint8" value="2"/>
+                    <attribute id="Name" type="LSString" value="WoWDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(d61d0ab9-eb93-42e2-b62b-574f5744480a,1,FightingStyle)"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4a0e24b1-5866-4ae1-9815-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="42d1d41b-d73b-4147-be99-574f5744480a"/>
+                </node>
+				<node id="Progression"> Level 3
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="WoWDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(b562c1d8-1f1e-4f05-ae0b-574f5744480a,,,,AlwaysPrepared)"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4a0e24b1-5866-4ae1-9815-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="4dfc43ee-c302-4831-ade0-574f5744480a"/>
+                </node>
+				<node id="Progression"> Level 4
+					<attribute id="AllowImprovement" type="bool" value="true"/>
+                    <attribute id="Level" type="uint8" value="4"/>
+                    <attribute id="Name" type="LSString" value="WoWDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4a0e24b1-5866-4ae1-9815-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="5ae09d7b-2a90-40f2-8da5-574f5744480a"/>
+                </node>
+				<node id="Progression"> Level 5
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="WoWDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value="ExtraAttack"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4a0e24b1-5866-4ae1-9815-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="5fef4ea3-d5f2-42d8-8f06-574f5744480a"/>
+                </node>
+				<node id="Progression"> Level 6
+                    <attribute id="Level" type="uint8" value="6"/>
+                    <attribute id="Name" type="LSString" value="WoWDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>                
+                    <attribute id="TableUUID" type="guid" value="4a0e24b1-5866-4ae1-9815-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="5fe96ed3-8ed2-456a-9ef6-574f5744480a"/>
+                </node>
+				<node id="Progression"> Level 7
+                    <attribute id="Level" type="uint8" value="7"/>
+                    <attribute id="Name" type="LSString" value="WoWDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(DemonicFury,20,0)"/>
+                    <attribute id="PassivesAdded" type="LSString" value="DH_UnlockDemonicFury_2"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4a0e24b1-5866-4ae1-9815-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="b1c90de7-697d-403d-b48a-574f5744480a"/>
+                </node>
+				<node id="Progression"> Level 8
+                    <attribute id="AllowImprovement" type="bool" value="true"/>
+                    <attribute id="Level" type="uint8" value="8"/>
+                    <attribute id="Name" type="LSString" value="WoWDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(2c3c622f-74e9-41c0-a032-574f5744480a,,,,AlwaysPrepared)"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4a0e24b1-5866-4ae1-9815-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="2ed5dc58-b721-4fa7-a936-574f5744480a"/>
+                </node>
+				<node id="Progression"> Level 9
+                    <attribute id="Level" type="uint8" value="9"/>
+                    <attribute id="Name" type="LSString" value="WoWDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4a0e24b1-5866-4ae1-9815-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="a60afe62-e709-4873-be50-574f5744480a"/>
+                </node>
+				<node id="Progression"> Level 10
+                    <attribute id="Level" type="uint8" value="10"/>
+                    <attribute id="Name" type="LSString" value="WoWDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(d4ef1a49-e28f-4d7e-8ceb-574f5744480a,,,,AlwaysPrepared)"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4a0e24b1-5866-4ae1-9815-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="ffe38aab-a10a-4d5c-a8db-574f5744480a"/>
+                </node>
+				<node id="Progression"> Level 11
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="Level" type="uint8" value="11"/>
+                    <attribute id="Name" type="LSString" value="WoWDemonHunter"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(f5e40b7d-cd81-4111-91cd-574f5744480a,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="4a0e24b1-5866-4ae1-9815-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="f3a33664-5f37-445c-a99e-574f5744480a"/>
+                </node>
+				<node id="Progression"> Level 12
+                    <attribute id="AllowImprovement" type="bool" value="true"/> 
+                    <attribute id="Level" type="uint8" value="12"/>
+                    <attribute id="Name" type="LSString" value="WoWDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(DemonicFury,30,0)"/>
+                    <attribute id="PassivesAdded" type="LSString" value="DH_UnlockDemonicFury_3"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4a0e24b1-5866-4ae1-9815-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="0130768b-90b2-4ab2-b4d1-574f5744480a"/>
+                </node>
+				<node id="Progression"> Level 13
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="WoWDemonHunter"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4a0e24b1-5866-4ae1-9815-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="9f8777a7-ce14-4063-b8e0-574f5744480a"/>
+                </node>
+				<node id="Progression"> Level 14
+                    <attribute id="Level" type="uint8" value="14"/>
+                    <attribute id="Name" type="LSString" value="WoWDemonHunter"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4a0e24b1-5866-4ae1-9815-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="fe49af38-bd55-4ca5-93a7-574f5744480a"/>
+                </node>
+				<node id="Progression"> Level 15
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="WoWDemonHunter"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4a0e24b1-5866-4ae1-9815-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="80e88992-c0af-4046-9a69-574f5744480a"/>
+                </node>
+				<node id="Progression"> Level 16
+                    <attribute id="AllowImprovement" type="bool" value="true"/>
+                    <attribute id="Level" type="uint8" value="16"/>
+                    <attribute id="Name" type="LSString" value="WoWDemonHunter"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4a0e24b1-5866-4ae1-9815-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="746ae1b9-1c8e-46ab-8c6d-574f5744480a"/>
+                </node>
+				<node id="Progression"> Level 17
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="WoWDemonHunter"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4a0e24b1-5866-4ae1-9815-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="8162c5d5-c109-42e1-af80-574f5744480a"/>
+                </node>
+				<node id="Progression"> Level 18
+                    <attribute id="AllowImprovement" type="bool" value="true"/>
+                    <attribute id="Level" type="uint8" value="18"/>
+                    <attribute id="Name" type="LSString" value="WoWDemonHunter"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4a0e24b1-5866-4ae1-9815-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="ac13ef2f-189e-4239-98e9-574f5744480a"/>
+                </node>
+				<node id="Progression"> Level 19
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="WoWDemonHunter"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4a0e24b1-5866-4ae1-9815-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="4e04f2b0-2e8d-42dc-bfbf-574f5744480a"/>
+                </node>
+				<node id="Progression"> Level 20
+                    <attribute id="AllowImprovement" type="bool" value="true"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="WoWDemonHunter"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4a0e24b1-5866-4ae1-9815-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="3013e4ee-13aa-4167-9538-574f5744480a"/>
+                </node>
+                <node id="Progression"> Havoc DH - Level 1
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="HavocDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value="DH_Mastery_DemonicPresence;DH_Metamorphosis_Havoc_AbilityBoost"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(bc76bcd5-b481-4cc8-8c04-574f5744480a,,,,AlwaysPrepared)"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="ec00a440-e871-4412-84f7-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="85125e34-1a16-472d-911c-574f5744480a"/>
+                </node>
+				<node id="Progression"> Havoc DH - Level 2
+                    <attribute id="Level" type="uint8" value="2"/>
+                    <attribute id="Name" type="LSString" value="HavocDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value="DH_Havoc_UnlockChaosStrike"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(7e456407-36da-4600-8b67-574f5744480a,,,,AlwaysPrepared)"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="ec00a440-e871-4412-84f7-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="1326d6c0-f8b1-4af0-bd89-574f5744480a"/>
+                </node>
+				<node id="Progression"> Havoc DH - Level 3
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="HavocDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value="DH_Havoc_FelRush_DoubleCast"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(0ee218d4-4bc0-4000-b20e-574f5744480a,,,,AlwaysPrepared)"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="ec00a440-e871-4412-84f7-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="ac158761-7d25-4f33-9cb2-574f5744480a"/>
+                </node>
+				<node id="Progression"> Havoc DH - Level 4 
+                    <attribute id="Level" type="uint8" value="4"/>
+                    <attribute id="Name" type="LSString" value="HavocDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(3965f689-7190-4c29-8135-574f5744480a,,,,AlwaysPrepared)"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/> 
+                    <attribute id="TableUUID" type="guid" value="ec00a440-e871-4412-84f7-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="64d8031a-638f-4cd6-ba50-574f5744480a"/>
+                </node>
+				<node id="Progression"> Havoc DH - Level 5
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="HavocDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(34795224-b130-4821-ac56-574f5744480a,,,,AlwaysPrepared)"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="ec00a440-e871-4412-84f7-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="54b1c58c-85b7-4e80-8c3f-574f5744480a"/>
+                </node>
+				<node id="Progression"> Havoc DH - Level 6
+                    <attribute id="Level" type="uint8" value="6"/>
+                    <attribute id="Name" type="LSString" value="HavocDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value="DH_Havoc_SoulFragment_Passive;DH_Havoc_SoulFragment_Passive_Strike"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(b6a109ff-556d-44b8-b93b-574f5744480a,,,,AlwaysPrepared)"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="ec00a440-e871-4412-84f7-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="8142c711-d0f1-45a9-bdf3-574f5744480a"/>
+                </node>
+				<node id="Progression"> Havoc DH - Level 7
+                    <attribute id="Level" type="uint8" value="7"/>
+                    <attribute id="Name" type="LSString" value="HavocDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(1e741eac-a13f-4a12-844e-574f5744480a,,,,AlwaysPrepared)"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="ec00a440-e871-4412-84f7-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="5e3f935a-5e5e-4c51-b4a9-574f5744480a"/>
+                </node>
+				<node id="Progression"> Havoc DH - Level 8
+                    <attribute id="Level" type="uint8" value="8"/>
+                    <attribute id="Name" type="LSString" value="HavocDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="ec00a440-e871-4412-84f7-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="23f3aec3-0793-44db-bfde-574f5744480a"/>
+                </node>
+				<node id="Progression"> Havoc DH - Level 9
+                    <attribute id="Level" type="uint8" value="9"/>
+                    <attribute id="Name" type="LSString" value="HavocDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value="DH_HavocDemonic;DH_HavocDemonic_Strikes"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="ec00a440-e871-4412-84f7-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="c59a4176-822f-44f0-b0aa-574f5744480a"/>
+                </node>
+				<node id="Progression"> Havoc DH - Level 10
+                    <attribute id="Level" type="uint8" value="10"/>
+                    <attribute id="Name" type="LSString" value="HavocDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="ec00a440-e871-4412-84f7-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="c4f29803-47cb-4859-866b-574f5744480a"/>
+                </node>
+				<node id="Progression"> Havoc DH - Level 11
+                    <attribute id="Level" type="uint8" value="11"/>
+                    <attribute id="Name" type="LSString" value="HavocDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="ec00a440-e871-4412-84f7-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="ee19ca77-9bb1-45ba-aabd-574f5744480a"/>
+                </node>
+				<node id="Progression"> Havoc DH - Level 12
+                    <attribute id="Level" type="uint8" value="12"/>
+                    <attribute id="Name" type="LSString" value="HavocDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value="DH_ShatteredDestiny;DH_ShatteredDestiny_Strikes"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="ec00a440-e871-4412-84f7-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="96cbcbeb-b4f1-4afa-b49a-574f5744480a"/>
+                </node>
+                <node id="Progression"> Havoc DH - Level 13
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="HavocDemonHunter"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="ec00a440-e871-4412-84f7-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="673c269d-4799-425e-9bc8-574f5744480a"/>
+                </node>
+                <node id="Progression"> Havoc DH - Level 14
+                    <attribute id="Level" type="uint8" value="14"/>
+                    <attribute id="Name" type="LSString" value="HavocDemonHunter"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="ec00a440-e871-4412-84f7-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="64ad81b8-05f9-498d-a26c-574f5744480a"/>
+                </node>
+                <node id="Progression"> Havoc DH - Level 15
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="HavocDemonHunter"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="ec00a440-e871-4412-84f7-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="35055ea0-8bce-41de-8a38-574f5744480a"/>
+                </node>
+                <node id="Progression"> Havoc DH - Level 16
+                    <attribute id="Level" type="uint8" value="16"/>
+                    <attribute id="Name" type="LSString" value="HavocDemonHunter"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="ec00a440-e871-4412-84f7-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="ac913ca6-e30a-468b-bdbf-574f5744480a"/>
+                </node>
+                <node id="Progression"> Havoc DH - Level 17
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="HavocDemonHunter"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="ec00a440-e871-4412-84f7-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="f48253e9-6c6c-4792-80ab-574f5744480a"/>
+                </node>
+                <node id="Progression"> Havoc DH - Level 18
+                    <attribute id="Level" type="uint8" value="18"/>
+                    <attribute id="Name" type="LSString" value="HavocDemonHunter"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="ec00a440-e871-4412-84f7-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="0058752b-dde9-44ef-86cb-574f5744480a"/>
+                </node>
+                <node id="Progression"> Havoc DH - Level 19
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="HavocDemonHunter"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="ec00a440-e871-4412-84f7-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="7790ab31-fd4d-42be-a16a-574f5744480a"/>
+                </node>
+                <node id="Progression"> Havoc DH - Level 20
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="HavocDemonHunter"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="ec00a440-e871-4412-84f7-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="3514770f-dc00-4af0-8ad1-574f5744480a"/>
+                </node>
+				<node id="Progression"> Vengeance Demon Hunter - Level 1
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="VengeanceDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value="DH_Mastery_FelBlood;DH_Metamorphosis_Vengeance_AbilityBoost"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(413164a2-46af-4063-a371-574f5744480a,,,,AlwaysPrepared)"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="cbef6b7c-80fb-4f84-a78c-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="7eaa415e-2c24-4e7b-987e-574f5744480a"/>
+                </node>
+				<node id="Progression"> Vengeance Demon Hunter - Level 2
+                    <attribute id="Level" type="uint8" value="2"/>
+                    <attribute id="Name" type="LSString" value="VengeanceDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value="DH_Vengeance_SoulFragment_Passive;DH_Vengeance_SoulCleave_Passive"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(57693590-1522-4322-a14a-574f5744480a,,,,AlwaysPrepared)"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="cbef6b7c-80fb-4f84-a78c-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="33c12448-1774-43fe-9be4-574f5744480a"/>
+                </node>
+				<node id="Progression"> Vengeance Demon Hunter - Level 3
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="VengeanceDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(2f03c47a-8ec6-4abd-85bc-574f5744480a,,,,AlwaysPrepared)"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="cbef6b7c-80fb-4f84-a78c-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="14c51304-e9d4-47a4-aa3a-574f5744480a"/>
+                </node>
+				<node id="Progression"> Vengeance Demon Hunter - Level 4 
+                    <attribute id="Level" type="uint8" value="4"/>
+                    <attribute id="Name" type="LSString" value="VengeanceDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(7298a417-f30b-4b83-be5f-574f5744480a,,,,AlwaysPrepared)"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>                 
+                    <attribute id="TableUUID" type="guid" value="cbef6b7c-80fb-4f84-a78c-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="e555ad4e-4da4-4ce4-8f4d-574f5744480a"/>
+                </node>
+				<node id="Progression"> Vengeance Demon Hunter - Level 5
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="VengeanceDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(67b101d8-1818-44cf-918d-574f5744480a,,,,AlwaysPrepared)"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="cbef6b7c-80fb-4f84-a78c-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="56d22f20-2c04-4558-8cb7-574f5744480a"/>
+                </node>
+				<node id="Progression"> Vengeance Demon Hunter - Level 6
+                    <attribute id="Level" type="uint8" value="6"/>
+                    <attribute id="Name" type="LSString" value="VengeanceDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(2010c5fc-fd81-4ffd-b80b-574f5744480a,,,,AlwaysPrepared)"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="cbef6b7c-80fb-4f84-a78c-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="cbbc2a24-cdec-4927-8e7e-574f5744480a"/>
+                </node>
+				<node id="Progression"> Vengeance Demon Hunter - Level 7
+                    <attribute id="Level" type="uint8" value="7"/>
+                    <attribute id="Name" type="LSString" value="VengeanceDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(b9d35ff4-6309-4728-86e0-574f5744480a,,,,AlwaysPrepared)"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="cbef6b7c-80fb-4f84-a78c-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="fd2abf5b-4c44-41a8-9b16-574f5744480a"/>
+                </node>
+				<node id="Progression"> Vengeance Demon Hunter - Level 8
+                    <attribute id="Level" type="uint8" value="8"/>
+                    <attribute id="Name" type="LSString" value="VengeanceDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="cbef6b7c-80fb-4f84-a78c-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="8201a961-dcaa-415c-ab26-574f5744480a"/>
+                </node>
+				<node id="Progression"> Vengeance Demon Hunter - Level 9
+                    <attribute id="Level" type="uint8" value="9"/>
+                    <attribute id="Name" type="LSString" value="VengeanceDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value="DH_VengeanceDemonic;DH_VengeanceDemonic_SF"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="cbef6b7c-80fb-4f84-a78c-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="c403d2ed-14c0-46ff-8650-574f5744480a"/>
+                </node>
+				<node id="Progression"> Vengeance Demon Hunter - Level 10
+                    <attribute id="Level" type="uint8" value="10"/>
+                    <attribute id="Name" type="LSString" value="VengeanceDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="cbef6b7c-80fb-4f84-a78c-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="084deb2f-6b1a-4bcc-a95b-574f5744480a"/>
+                </node>
+				<node id="Progression"> Vengeance Demon Hunter - Level 11
+                    <attribute id="Level" type="uint8" value="11"/>
+                    <attribute id="Name" type="LSString" value="VengeanceDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="cbef6b7c-80fb-4f84-a78c-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="2ba1f096-f56c-45f1-8db4-574f5744480a"/>
+                </node>
+				<node id="Progression"> Vengeance Demon Hunter - Level 12
+                    <attribute id="Level" type="uint8" value="12"/>
+                    <attribute id="Name" type="LSString" value="VengeanceDemonHunter"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="PassivesAdded" type="LSString" value="DH_RevelInPain;DH_RevelInPain_CheatDeath"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="Selectors" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="cbef6b7c-80fb-4f84-a78c-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="d62fbbc2-54fd-406d-866f-574f5744480a"/>
+                </node>
+                <node id="Progression"> Vengeance Demon Hunter - Level 13
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="VengeanceDemonHunter"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="cbef6b7c-80fb-4f84-a78c-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="7314c756-e84d-4817-a686-574f5744480a"/>
+                </node>
+                <node id="Progression"> Vengeance Demon Hunter - Level 14
+                    <attribute id="Level" type="uint8" value="14"/>
+                    <attribute id="Name" type="LSString" value="VengeanceDemonHunter"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="cbef6b7c-80fb-4f84-a78c-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="9810f828-ebad-4384-8910-574f5744480a"/>
+                </node>
+                <node id="Progression"> Vengeance Demon Hunter - Level 15
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="VengeanceDemonHunter"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="cbef6b7c-80fb-4f84-a78c-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="a58a66e6-2f99-4296-9969-574f5744480a"/>
+                </node>
+                <node id="Progression"> Vengeance Demon Hunter - Level 16
+                    <attribute id="Level" type="uint8" value="16"/>
+                    <attribute id="Name" type="LSString" value="VengeanceDemonHunter"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="cbef6b7c-80fb-4f84-a78c-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="119903ec-6613-42f7-9f98-574f5744480a"/>
+                </node>
+                <node id="Progression"> Vengeance Demon Hunter - Level 17
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="VengeanceDemonHunter"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="cbef6b7c-80fb-4f84-a78c-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="64c97b8b-64ec-425b-9809-574f5744480a"/>
+                </node>
+                <node id="Progression"> Vengeance Demon Hunter - Level 18
+                    <attribute id="Level" type="uint8" value="18"/>
+                    <attribute id="Name" type="LSString" value="VengeanceDemonHunter"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="cbef6b7c-80fb-4f84-a78c-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="5b521680-0262-4bfa-a303-574f5744480a"/>
+                </node>
+                <node id="Progression"> Vengeance Demon Hunter - Level 19
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="VengeanceDemonHunter"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="cbef6b7c-80fb-4f84-a78c-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="5cab7d88-fc6f-4395-a81d-574f5744480a"/>
+                </node>
+                <node id="Progression"> Vengeance Demon Hunter - Level 20
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="VengeanceDemonHunter"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="cbef6b7c-80fb-4f84-a78c-574f5744480a"/>
+                    <attribute id="UUID" type="guid" value="cf4edaa2-72c6-46ab-9c04-574f5744480a"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

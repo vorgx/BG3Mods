@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="PassiveLists">
+        <node id="root">
+            <children>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="Battlemaster Maneuvers Witcher"/>
+                    <attribute id="Passives" type="LSString" value="DisarmingAttack,FeintingAttack,MenacingAttack,Riposte,SweepingAttack,TripAttack"/>
+                    <attribute id="UUID" type="guid" value="1c030128-3eeb-4939-9f32-c795b3380306"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="WolfWitcherBoost"/>
+                    <attribute id="Passives" type="LSString" value="Passive_Wolf_Fang,Wolf_Aard_enhance"/>
+                    <attribute id="UUID" type="guid" value="2fa3a93d-76b5-4cf9-b870-a51bd8a1ccf1"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

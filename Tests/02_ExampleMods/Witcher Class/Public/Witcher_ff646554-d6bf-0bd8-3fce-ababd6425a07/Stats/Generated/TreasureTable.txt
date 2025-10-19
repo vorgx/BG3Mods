@@ -1,0 +1,33 @@
+treasure itemtypes "Common","Uncommon","Rare","Epic","Legendary","Divine","Unique"
+new treasuretable "DEN_GoblinRaider_Captain"
+CanMerge 1
+new subtable "-1"
+object category "I_Goblin_decoction",1,0,0,0,0,0,0,0
+new treasuretable "Owlbear"
+CanMerge 1
+new subtable "-1"
+object category "I_Owlbear_decoction",1,0,0,0,0,0,0,0
+new treasuretable "FOR_Spiders_SpiderQueen"
+CanMerge 1
+new subtable "1,1"
+object category "I_PhaseSpide_decoction",1,0,0,0,0,0,0,0
+new treasuretable "FOR_SchoolOgre_Smart_Corpse"
+CanMerge 1
+new subtable "1,1"
+object category "I_Ogre_decoction",1,0,0,0,0,0,0,0
+new treasuretable "Gnoll_Flind"
+CanMerge 1
+new subtable "1,1"
+object category "I_Werewolf_decoction",1,0,0,0,0,0,0,0
+new treasuretable "Dror_Ragzlin"
+CanMerge 1
+new subtable "1,1"
+object category "I_Hobgoblin_decoction",1,0,0,0,0,0,0,0
+new treasuretable "UND_Bulette"
+CanMerge 1
+new subtable "1,1"
+object category "I_Bulette_decoction",1,0,0,0,0,0,0,0
+new treasuretable "TWN_Brewer"
+CanMerge 1
+new subtable "-1"
+object category "I_Thisobald_decoction",1,0,0,0,0,0,0,0

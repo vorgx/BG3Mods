@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="500"/>
+    <region id="Progressions">
+        <node id="root">
+            <children>
+                <node id="Progression">
+                    <attribute id="Name" type="LSString" value="battlemage"/>
+                    <attribute id="TableUUID" type="guid" value="a70c3ac1-d070-414f-868f-e880ecb8494b"/>
+                    <attribute id="UUID" type="guid" value="3612c00a-7951-4f6c-a24a-0488ebcbe610"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

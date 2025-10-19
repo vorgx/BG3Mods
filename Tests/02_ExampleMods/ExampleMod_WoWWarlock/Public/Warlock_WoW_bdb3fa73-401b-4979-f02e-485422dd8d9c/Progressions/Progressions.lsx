@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="500"/>
+    <region id="Progressions">
+        <node id="root">
+            <children>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,0);Proficiency(LightArmor);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(SimpleWeapons)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="WoWWarlock"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Unlock_SoulShard;WoWWarlock_BlackHarvest"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSkills(6f3122fa-de19-4512-a307-49cba0369bf0,2);SelectAbilityBonus(d94c3eda-bdd9-4aaf-9372-7fccde528781,AbilityBonus,2,1);AddSpells(9e2ec5ea-a47c-475a-b756-c0e0ca69a281)"/>
+                    <attribute id="TableUUID" type="guid" value="95fff39d-c6ae-4a85-a0d8-98553fb5bd8e"/>
+                    <attribute id="UUID" type="guid" value="20d09f2d-2239-4e9f-abda-22b476847d5b"/>
+                    <children>
+                        <node id="SubClasses">
+                            <children>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="8e387e2d-1cfd-46a0-9b2d-af065217f841"/>
+                                </node>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="54ad57a9-7b0b-4cd5-944f-efe20a80d9e9"/>
+                                </node>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="e9aaae5b-7f50-4c51-8d4a-8cfc8b575e15"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,0);Proficiency(LightArmor);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(SimpleWeapons)"/>
+                    <attribute id="IsMulticlass" type="bool" value="true"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="WoWWarlock"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Unlock_SoulShard;WoWWarlock_BlackHarvest"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(9e2ec5ea-a47c-475a-b756-c0e0ca69a281)"/>
+                    <attribute id="TableUUID" type="guid" value="95fff39d-c6ae-4a85-a0d8-98553fb5bd8e"/>
+                    <attribute id="UUID" type="guid" value="c57b9f04-2789-4fdf-ae2a-446aaab90c55"/>
+                    <children>
+                        <node id="SubClasses">
+                            <children>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="8e387e2d-1cfd-46a0-9b2d-af065217f841"/>
+                                </node>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="54ad57a9-7b0b-4cd5-944f-efe20a80d9e9"/>
+                                </node>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="e9aaae5b-7f50-4c51-8d4a-8cfc8b575e15"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="2"/>
+                    <attribute id="Name" type="LSString" value="WoWWarlock"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_SouLeech_Description;WoWWarlock_SouLeech_DrainLife;WoWWarlock_MortalCoil_Heal"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(7e7c204e-0bcb-4ddb-9dd5-78a2f85cdfb2);SelectPassives(ebd12d3f-5232-43e0-bb52-dc7b98f4041e,1,WarlockClassTalentRow1)"/>
+                    <attribute id="TableUUID" type="guid" value="95fff39d-c6ae-4a85-a0d8-98553fb5bd8e"/>
+                    <attribute id="UUID" type="guid" value="0859af09-f861-4ba8-bee3-c21e93625116"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="WoWWarlock"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(59be68b9-a2e2-400a-9a2f-daae17f0c40a);SelectPassives(ebd12d3f-5232-43e0-bb52-dc7b98f4041e,1,WarlockClassTalentRow1);SelectPassives(bf5b693e-2e0e-443d-b950-fe1adc6b8fac,1,WarlockClassTalentRow2)"/>
+                    <attribute id="TableUUID" type="guid" value="95fff39d-c6ae-4a85-a0d8-98553fb5bd8e"/>
+                    <attribute id="UUID" type="guid" value="fe985ba3-ae93-4c20-82a5-b325df3c75f0"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="true"/>
+                    <attribute id="Level" type="uint8" value="4"/>
+                    <attribute id="Name" type="LSString" value="WoWWarlock"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(874b3746-8d60-4a90-aab0-bd656d1342d5);SelectPassives(ebd12d3f-5232-43e0-bb52-dc7b98f4041e,1,WarlockClassTalentRow1);SelectPassives(bf5b693e-2e0e-443d-b950-fe1adc6b8fac,1,WarlockClassTalentRow2);SelectPassives(cd2781e4-a985-42b6-ab26-2598f0ccdf8b,1,WarlockClassTalentRow3)"/>
+                    <attribute id="TableUUID" type="guid" value="95fff39d-c6ae-4a85-a0d8-98553fb5bd8e"/>
+                    <attribute id="UUID" type="guid" value="83f04612-e89e-4056-89bb-1d9a27f2ce0a"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="WoWWarlock"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(dd824bd4-3afa-41e1-9120-4410f6b31e7c);SelectPassives(bf5b693e-2e0e-443d-b950-fe1adc6b8fac,1,WarlockClassTalentRow2);SelectPassives(ee501594-1b66-4291-9b80-253cac88830f,1,WarlockClassTalentRow4)"/>
+                    <attribute id="TableUUID" type="guid" value="95fff39d-c6ae-4a85-a0d8-98553fb5bd8e"/>
+                    <attribute id="UUID" type="guid" value="45638b06-24ff-4a4e-8e36-545115ab7f76"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="6"/>
+                    <attribute id="Name" type="LSString" value="WoWWarlock"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(6ed5c46a-61bc-431a-a3fd-16acf9081476);SelectPassives(cd2781e4-a985-42b6-ab26-2598f0ccdf8b,1,WarlockClassTalentRow3);SelectPassives(ee501594-1b66-4291-9b80-253cac88830f,1,WarlockClassTalentRow4);SelectPassives(2b6f2d2b-c047-4ed9-9458-74534e4b87c9,1,WarlockClassTalentRow5)"/>
+                    <attribute id="TableUUID" type="guid" value="95fff39d-c6ae-4a85-a0d8-98553fb5bd8e"/>
+                    <attribute id="UUID" type="guid" value="629ba699-63bf-4312-ad9c-26f306f7a913"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="7"/>
+                    <attribute id="Name" type="LSString" value="WoWWarlock"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(99b1fb40-47da-4131-a804-16ecea4e5085);SelectPassives(ee501594-1b66-4291-9b80-253cac88830f,1,WarlockClassTalentRow4);SelectPassives(2b6f2d2b-c047-4ed9-9458-74534e4b87c9,1,WarlockClassTalentRow5);SelectPassives(19aff8b0-d238-4987-998f-e57aa2daadd1,1,WarlockClassTalentRow6)"/>
+                    <attribute id="TableUUID" type="guid" value="95fff39d-c6ae-4a85-a0d8-98553fb5bd8e"/>
+                    <attribute id="UUID" type="guid" value="1a7f95a5-0937-4a3e-a487-076dfe760680"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="true"/>
+                    <attribute id="Level" type="uint8" value="8"/>
+                    <attribute id="Name" type="LSString" value="WoWWarlock"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(368968fd-270d-4c05-b9c8-1495d3222a2b);SelectPassives(2b6f2d2b-c047-4ed9-9458-74534e4b87c9,1,WarlockClassTalentRow5);SelectPassives(19aff8b0-d238-4987-998f-e57aa2daadd1,1,WarlockClassTalentRow6);SelectPassives(1fca296a-a162-4cab-bb05-517f2410a2fd,1,WarlockClassTalentRow7)"/>
+                    <attribute id="TableUUID" type="guid" value="95fff39d-c6ae-4a85-a0d8-98553fb5bd8e"/>
+                    <attribute id="UUID" type="guid" value="8ade93fa-4338-4a69-b4f6-4635937a5c5d"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="9"/>
+                    <attribute id="Name" type="LSString" value="WoWWarlock"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Improved_DrainLife"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(fe643b97-0c09-46ee-a3c6-98da8ba94ec3);SelectPassives(19aff8b0-d238-4987-998f-e57aa2daadd1,1,WarlockClassTalentRow6);SelectPassives(1fca296a-a162-4cab-bb05-517f2410a2fd,1,WarlockClassTalentRow7)"/>
+                    <attribute id="TableUUID" type="guid" value="95fff39d-c6ae-4a85-a0d8-98553fb5bd8e"/>
+                    <attribute id="UUID" type="guid" value="8e4870f2-670b-4dce-abc1-42eb15ba4c71"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="10"/>
+                    <attribute id="Name" type="LSString" value="WoWWarlock"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Unlock_Healthstone_2"/>
+                    <attribute id="PassivesRemoved" type="LSString" value="WoWWarlock_Unlock_Healthstone_1"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(f93816a0-3639-452b-959e-e3b63ec82257);SelectPassives(1fca296a-a162-4cab-bb05-517f2410a2fd,1,WarlockClassTalentRow7);SelectPassives(bb380d22-1bf3-407c-a01a-3207eaf6c41a,1,WarlockClassTalentRow9)"/>
+                    <attribute id="TableUUID" type="guid" value="95fff39d-c6ae-4a85-a0d8-98553fb5bd8e"/>
+                    <attribute id="UUID" type="guid" value="b3737cc3-c47d-4822-80cc-d6dfd1b29838"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="11"/>
+                    <attribute id="Name" type="LSString" value="WoWWarlock"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_SoulConduit_Description"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(1cc306ed-4f58-4d00-aad8-82b8520bd6d6);SelectPassives(bb380d22-1bf3-407c-a01a-3207eaf6c41a,1,WarlockClassTalentRow9)"/>
+                    <attribute id="TableUUID" type="guid" value="95fff39d-c6ae-4a85-a0d8-98553fb5bd8e"/>
+                    <attribute id="UUID" type="guid" value="dc03581d-97ec-4ab3-a725-329510b8a354"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="true"/>
+                    <attribute id="Level" type="uint8" value="12"/>
+                    <attribute id="Name" type="LSString" value="WoWWarlock"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(b9bec33f-fd30-4498-921c-6821529a66ba)"/>
+                    <attribute id="TableUUID" type="guid" value="95fff39d-c6ae-4a85-a0d8-98553fb5bd8e"/>
+                    <attribute id="UUID" type="guid" value="a2ba42ec-2d51-45c1-ba4e-de54ee9e526d"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="WoWWarlock"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="95fff39d-c6ae-4a85-a0d8-98553fb5bd8e"/>
+                    <attribute id="UUID" type="guid" value="c070ff6b-0eaa-4eaf-b900-d841e0d6c5a0"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="Demonology"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Demo"/>
+                    <attribute id="PassivesRemoved" type="LSString" value="WoWWarlock_Demo_Bonus_WickedMaw_1"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(aedc2c38-5a25-4033-bb19-f801f2e79101)"/>
+                    <attribute id="TableUUID" type="guid" value="6e4f6936-18e7-4981-8b26-4ad249c71164"/>
+                    <attribute id="UUID" type="guid" value="835ae745-4a8a-4bc3-abab-d702c59f7e51"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="2"/>
+                    <attribute id="Name" type="LSString" value="Demonology"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Demo_SouLeech_Shadowbolt;WoWWarlock_Demo_SouLeech_HandOfGuldan;WoWWarlock_Demo_SouLeech_Demonbolt;WoWWarlock_Demo_SouLeech_SummonDreadstalkers;WoWWarlock_Demo_SouLeech_BilescourgeBombers;WoWWarlock_Demo_SouLeech_BilescourgeBombers_SI"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(92355092-ac2f-48dc-8658-6ff1efa72685);SelectPassives(aa7da72c-92d1-4b2f-b3e4-d04920ffe68a,1,WarlockDemoTalentRow1)"/>
+                    <attribute id="TableUUID" type="guid" value="6e4f6936-18e7-4981-8b26-4ad249c71164"/>
+                    <attribute id="UUID" type="guid" value="df80b4a2-7f7a-4ad9-b2b3-720614c5fdf1"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="Demonology"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Demo_DemonicCore;WoWWarlock_Demo_DemonicCore_HandOfGuldan_1;WoWWarlock_Demo_DemonicCore_HandOfGuldan_2;WoWWarlock_Demo_DemonicCore_HandOfGuldan_3;WoWWarlock_Demo_DemonicCore_HandOfGuldan_4;WoWWarlock_Demo_DemonicCore_SummonDreadstalkers_1;WoWWarlock_Demo_DemonicCore_SummonDreadstalkers_2"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(c970cbf1-bc7f-4ff4-b9ae-6ee43e1b0737);SelectPassives(aa7da72c-92d1-4b2f-b3e4-d04920ffe68a,1,WarlockDemoTalentRow1);SelectPassives(c12df8e1-342b-4ca7-b811-acca4e705ef4,1,WarlockDemoTalentRow2)"/>
+                    <attribute id="TableUUID" type="guid" value="6e4f6936-18e7-4981-8b26-4ad249c71164"/>
+                    <attribute id="UUID" type="guid" value="64e367b1-1e06-4345-a171-35885fc7e265"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="4"/>
+                    <attribute id="Name" type="LSString" value="Demonology"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(287f33fc-9010-4a4d-b0a0-b9c7cc1b8018);SelectPassives(aa7da72c-92d1-4b2f-b3e4-d04920ffe68a,1,WarlockDemoTalentRow1);SelectPassives(c12df8e1-342b-4ca7-b811-acca4e705ef4,1,WarlockDemoTalentRow2);SelectPassives(b96ebe34-101a-46be-b7cc-9adf1cf23a88,1,WarlockDemoTalentRow3)"/>
+                    <attribute id="TableUUID" type="guid" value="6e4f6936-18e7-4981-8b26-4ad249c71164"/>
+                    <attribute id="UUID" type="guid" value="61f1d88f-386e-4e34-865d-529f931c560d"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="Demonology"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Demo_SargereiTeachings;WoWWarlock_Demo_Unlock_ImpGangBoss"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(6f3563d0-88fa-4ce8-875c-4e41be8ff458);SelectPassives(c12df8e1-342b-4ca7-b811-acca4e705ef4,1,WarlockDemoTalentRow2);SelectPassives(b96ebe34-101a-46be-b7cc-9adf1cf23a88,1,WarlockDemoTalentRow3);SelectPassives(ae0b33b4-cea1-4cc9-b38f-39289f0f793b,1,WarlockDemoTalentRow4)"/>
+                    <attribute id="TableUUID" type="guid" value="6e4f6936-18e7-4981-8b26-4ad249c71164"/>
+                    <attribute id="UUID" type="guid" value="09e5a3c5-d7ac-480a-ac9a-56eb13cb1078"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="6"/>
+                    <attribute id="Name" type="LSString" value="Demonology"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Demo_ShadowInvocation"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(b8ccbb62-9d37-454f-9abe-475067df728b);SelectPassives(b96ebe34-101a-46be-b7cc-9adf1cf23a88,1,WarlockDemoTalentRow3);SelectPassives(edbd4de0-c39e-4e08-b84b-6e13634c90e9,1,WarlockDemoTalentRow5)"/>
+                    <attribute id="TableUUID" type="guid" value="6e4f6936-18e7-4981-8b26-4ad249c71164"/>
+                    <attribute id="UUID" type="guid" value="cc6a3a92-9eef-4172-9dea-1b57d4b3f391"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="7"/>
+                    <attribute id="Name" type="LSString" value="Demonology"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Demo_Dreadlash"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(b8d86615-99a4-4fa8-b62b-922e7d085441);SelectPassives(ae0b33b4-cea1-4cc9-b38f-39289f0f793b,1,WarlockDemoTalentRow4);SelectPassives(edbd4de0-c39e-4e08-b84b-6e13634c90e9,1,WarlockDemoTalentRow5);SelectPassives(09c8d902-ea92-4be9-aaf5-23ae1c3a2cb5,1,WarlockDemoTalentRow6)"/>
+                    <attribute id="TableUUID" type="guid" value="6e4f6936-18e7-4981-8b26-4ad249c71164"/>
+                    <attribute id="UUID" type="guid" value="40081bc0-2413-4119-a8b8-ffe01195b524"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="8"/>
+                    <attribute id="Name" type="LSString" value="Demonology"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Demo_SocretharsGuile"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(be391572-a846-4bcd-aae5-7917d2d87929);SelectPassives(edbd4de0-c39e-4e08-b84b-6e13634c90e9,1,WarlockDemoTalentRow5);SelectPassives(09c8d902-ea92-4be9-aaf5-23ae1c3a2cb5,1,WarlockDemoTalentRow6);SelectPassives(0dcf0a7c-1eaf-4700-a2a7-0a548ef813c7,1,WarlockDemoTalentRow7)"/>
+                    <attribute id="TableUUID" type="guid" value="6e4f6936-18e7-4981-8b26-4ad249c71164"/>
+                    <attribute id="UUID" type="guid" value="44e54096-1aee-4a53-b754-e9467afa6c04"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="9"/>
+                    <attribute id="Name" type="LSString" value="Demonology"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Demo_ImprovedDemonbolt_I"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(2a1e34a8-8545-4d41-b5cb-b5214d5e09d0);SelectPassives(36698e48-dfe7-4e32-b842-41cfeaf420f0,1,WarlockClassTalentRow8);SelectPassives(09c8d902-ea92-4be9-aaf5-23ae1c3a2cb5,1,WarlockDemoTalentRow6);SelectPassives(0dcf0a7c-1eaf-4700-a2a7-0a548ef813c7,1,WarlockDemoTalentRow7);SelectPassives(69ea804e-cc31-4c60-b447-055d0dd5bef6,1,WarlockDemoTalentRow8)"/>
+                    <attribute id="TableUUID" type="guid" value="6e4f6936-18e7-4981-8b26-4ad249c71164"/>
+                    <attribute id="UUID" type="guid" value="40d39eeb-368e-4985-aa09-641cde443da8"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="10"/>
+                    <attribute id="Name" type="LSString" value="Demonology"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Demo_PactofAnnihilan;WoWWarlock_Demo_InfernalCommand"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(2ff077a9-a3ef-40c7-bc34-e16c8dbcdef8);SelectPassives(36698e48-dfe7-4e32-b842-41cfeaf420f0,1,WarlockClassTalentRow8);SelectPassives(0dcf0a7c-1eaf-4700-a2a7-0a548ef813c7,1,WarlockDemoTalentRow7);SelectPassives(69ea804e-cc31-4c60-b447-055d0dd5bef6,1,WarlockDemoTalentRow8);SelectPassives(ad23a9eb-a19b-4f9f-b6bc-1f9a9e9648cb,1,WarlockDemoTalentRow9)"/>
+                    <attribute id="TableUUID" type="guid" value="6e4f6936-18e7-4981-8b26-4ad249c71164"/>
+                    <attribute id="UUID" type="guid" value="2b6c5244-775b-4612-9a8d-6951ce8ababc"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="11"/>
+                    <attribute id="Name" type="LSString" value="Demonology"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Demo_SoulConduit_HandOfGuldan_1;WoWWarlock_Demo_SoulConduit_HandOfGuldan_2;WoWWarlock_Demo_SoulConduit_HandOfGuldan_3;WoWWarlock_Demo_SoulConduit_SummonDreadstalkers_1;WoWWarlock_Demo_SoulConduit_SummonDreadstalkers_2;WoWWarlock_Demo_SoulConduit_SummonDemonDog_Vilefiend;WoWWarlock_Demo_SoulConduit_Grimoire;WoWWarlock_Demo_SoulConduit_SummonDemonDog_Charhound;WoWWarlock_Demo_SoulConduit_SummonDemonDog_Gloomhound"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(82ca53eb-7287-4a0f-8a56-98dfe335d638);SelectPassives(36698e48-dfe7-4e32-b842-41cfeaf420f0,1,WarlockClassTalentRow8);SelectPassives(69ea804e-cc31-4c60-b447-055d0dd5bef6,1,WarlockDemoTalentRow8);SelectPassives(ad23a9eb-a19b-4f9f-b6bc-1f9a9e9648cb,1,WarlockDemoTalentRow9)"/>
+                    <attribute id="TableUUID" type="guid" value="6e4f6936-18e7-4981-8b26-4ad249c71164"/>
+                    <attribute id="UUID" type="guid" value="01781c20-b00c-40e8-980c-476398692713"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="12"/>
+                    <attribute id="Name" type="LSString" value="Demonology"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Demo_ImprovedMastery;WoWWarlock_Demo_RuneofShadow"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(f9e61954-a7a0-4505-ae1e-2f0a22b2bd2f);SelectPassives(6ab95d39-d811-4b1a-8268-950ef3211de0,1,LegionRemains);SelectPassives(ad23a9eb-a19b-4f9f-b6bc-1f9a9e9648cb,1,WarlockDemoTalentRow9)"/>
+                    <attribute id="TableUUID" type="guid" value="6e4f6936-18e7-4981-8b26-4ad249c71164"/>
+                    <attribute id="UUID" type="guid" value="b871dc2b-42a4-4f3d-8a90-19447f0b3798"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="Destruction"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Destro_SoulShardRestoration;WoWWarlock_Destro_Chaosbolt_Critical;WoWWarlock_Destro"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(b751c5be-652a-46bc-a0f1-31d50a6fed73)"/>
+                    <attribute id="TableUUID" type="guid" value="c0a214a0-2ea1-4f68-aa28-f17382b13c55"/>
+                    <attribute id="UUID" type="guid" value="3966cd47-667f-4d2c-92e3-91e8ed4654e0"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="2"/>
+                    <attribute id="Name" type="LSString" value="Destruction"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Destro_UnlockSpell_Immolate;WoWWarlock_Destro_Shadowburn_Critical;WoWWarlock_Destro_SouLeech_Incinerate;WoWWarlock_Destro_SouLeech_Immolate;WoWWarlock_Destro_SouLeech_Conflagrate;WoWWarlock_Destro_SouLeech_Cataclysm;WoWWarlock_Destro_SouLeech_Soullfire;WoWWarlock_Destro_SouLeech_ChaosBolt;WoWWarlock_Destro_SouLeech_RainOfFire;WoWWarlock_Destro_SouLeech_ChannelDemonfire;WoWWarlock_Destro_SouLeech_Shadowburn"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(fbd2ee26-1a51-4bfc-aba5-cc7388fd4417);SelectPassives(d0e81080-4624-4dab-ac09-1b2676c5a296,1,WarlockDestroTalentRow1)"/>
+                    <attribute id="TableUUID" type="guid" value="c0a214a0-2ea1-4f68-aa28-f17382b13c55"/>
+                    <attribute id="UUID" type="guid" value="c861af22-8d02-4917-8769-b97f8aa8845c"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="Destruction"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(aca056cc-49f0-4c6d-8ea5-086dfa64b495);SelectPassives(d0e81080-4624-4dab-ac09-1b2676c5a296,1,WarlockDestroTalentRow1);SelectPassives(0ff0fe7c-75b0-4865-89ed-96ce0600eefd,1,WarlockDestroTalentRow2)"/>
+                    <attribute id="TableUUID" type="guid" value="c0a214a0-2ea1-4f68-aa28-f17382b13c55"/>
+                    <attribute id="UUID" type="guid" value="25cffbbe-c4a4-4ee1-be5d-4da94610d14b"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="4"/>
+                    <attribute id="Name" type="LSString" value="Destruction"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(5cea9d91-2d99-4197-9c89-6dd890f176eb);SelectPassives(d0e81080-4624-4dab-ac09-1b2676c5a296,1,WarlockDestroTalentRow1);SelectPassives(08aebd7c-9406-4fde-a983-0a20721ca4df,1,WarlockDestroSpecChoise);SelectPassives(4d808d77-680a-4675-9f1b-b10ee925cf58,1,WarlockDestroTalentRow3)"/>
+                    <attribute id="TableUUID" type="guid" value="c0a214a0-2ea1-4f68-aa28-f17382b13c55"/>
+                    <attribute id="UUID" type="guid" value="ddbb2b3a-9422-42d8-b465-b041a5843ced"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="Destruction"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Destro_SargereiTeachings"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(40d182d0-6648-4d05-80be-edc8d728dddc);SelectPassives(0ff0fe7c-75b0-4865-89ed-96ce0600eefd,1,WarlockDestroTalentRow2);SelectPassives(fc879b66-4211-410d-a6ac-a29051e1fd93,1,WarlockDestroSpecChoise);SelectPassives(ba497f36-780c-41eb-a4a8-c27f421f0744,1,WarlockDestroTalentRow4)"/>
+                    <attribute id="TableUUID" type="guid" value="c0a214a0-2ea1-4f68-aa28-f17382b13c55"/>
+                    <attribute id="UUID" type="guid" value="c6ad5d3d-a4a9-424a-bf21-1976cc67390f"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="6"/>
+                    <attribute id="Name" type="LSString" value="Destruction"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Destro_Mastery;"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(1f92f86c-7894-4885-ba12-299566017436);SelectPassives(4d808d77-680a-4675-9f1b-b10ee925cf58,1,WarlockDestroTalentRow3);SelectPassives(ba497f36-780c-41eb-a4a8-c27f421f0744,1,WarlockDestroTalentRow4);SelectPassives(db7a998e-9006-480b-9d1f-54ca76cd5656,1,WarlockDestroTalentRow5)"/>
+                    <attribute id="TableUUID" type="guid" value="c0a214a0-2ea1-4f68-aa28-f17382b13c55"/>
+                    <attribute id="UUID" type="guid" value="5bb7bc0c-3f8c-471c-9810-3e38de7f5867"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="7"/>
+                    <attribute id="Name" type="LSString" value="Destruction"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Destro_Inferno"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(bf203bc1-179e-48a3-9c33-580a0bc0468a);SelectPassives(ba497f36-780c-41eb-a4a8-c27f421f0744,1,WarlockDestroTalentRow4);SelectPassives(db7a998e-9006-480b-9d1f-54ca76cd5656,1,WarlockDestroTalentRow5);SelectPassives(48670133-33d0-4589-8fc8-a1e9b053ae7b,1,WarlockDestroTalentRow6)"/>
+                    <attribute id="TableUUID" type="guid" value="c0a214a0-2ea1-4f68-aa28-f17382b13c55"/>
+                    <attribute id="UUID" type="guid" value="81ad7bc4-3472-41b8-9db9-e5d85811c527"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="8"/>
+                    <attribute id="Name" type="LSString" value="Destruction"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Destro_SocretharsGuile"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(e25ffcfa-8027-422e-9a33-9592b521a6ec);SelectPassives(db7a998e-9006-480b-9d1f-54ca76cd5656,1,WarlockDestroTalentRow5);SelectPassives(8f8e30fd-b6c6-440f-bfac-6dc1e225ff1f,1,WarlockDestroSpecChoise);SelectPassives(aa2b01f6-68a5-4289-b8e0-7608f17286eb,1,WarlockDestroTalentRow7)"/>
+                    <attribute id="TableUUID" type="guid" value="c0a214a0-2ea1-4f68-aa28-f17382b13c55"/>
+                    <attribute id="UUID" type="guid" value="3dc712e5-c6b4-4926-880c-53d85e489300"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="9"/>
+                    <attribute id="Name" type="LSString" value="Destruction"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Destro_ImprovedChaosBolt"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(a7436895-03ae-4fe4-9545-79cf6c700542);SelectPassives(90c84d93-e6f0-40b7-a888-3bfecc8fbafb,1,WarlockClassTalentRow8);SelectPassives(48670133-33d0-4589-8fc8-a1e9b053ae7b,1,WarlockDestroTalentRow6);SelectPassives(aa2b01f6-68a5-4289-b8e0-7608f17286eb,1,WarlockDestroTalentRow7);SelectPassives(d5c3cb1f-4a46-4240-aa81-a43c85a96c9c,1,WarlockDestroTalentRow8)"/>
+                    <attribute id="TableUUID" type="guid" value="c0a214a0-2ea1-4f68-aa28-f17382b13c55"/>
+                    <attribute id="UUID" type="guid" value="28e5375b-02ee-430c-803a-8828819723d3"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="10"/>
+                    <attribute id="Name" type="LSString" value="Destruction"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Destro_PactofAnnihilan;WoWWarlock_Destro_DemonfireMastery"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(96b033c2-646d-42ac-a4e1-a4c27f2b98c2);SelectPassives(90c84d93-e6f0-40b7-a888-3bfecc8fbafb,1,WarlockClassTalentRow8);SelectPassives(aa2b01f6-68a5-4289-b8e0-7608f17286eb,1,WarlockDestroTalentRow7);SelectPassives(d5c3cb1f-4a46-4240-aa81-a43c85a96c9c,1,WarlockDestroTalentRow8);SelectPassives(74f62b43-d73e-4eac-8ef2-3fccfaac0f1a,1,WarlockDestroTalentRow9)"/>
+                    <attribute id="TableUUID" type="guid" value="c0a214a0-2ea1-4f68-aa28-f17382b13c55"/>
+                    <attribute id="UUID" type="guid" value="8cebffaf-c44e-423c-a28a-904206955bac"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="11"/>
+                    <attribute id="Name" type="LSString" value="Destruction"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Destro_ScaldingFlames;WoWWarlock_Destro_SoulConduit_ChaoBolt_1;WoWWarlock_Destro_SoulConduit_ChaoBolt_2;WoWWarlock_Destro_SoulConduit_RainOfFire_1;WoWWarlock_Destro_SoulConduit_RainOfFire_2;WoWWarlock_Destro_SoulConduit_Shadowburn_1"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(51e71a98-1274-4cd5-a141-1804d511e16b);SelectPassives(90c84d93-e6f0-40b7-a888-3bfecc8fbafb,1,WarlockClassTalentRow8);SelectPassives(d5c3cb1f-4a46-4240-aa81-a43c85a96c9c,1,WarlockDestroTalentRow8);SelectPassives(74f62b43-d73e-4eac-8ef2-3fccfaac0f1a,1,WarlockDestroTalentRow9)"/>
+                    <attribute id="TableUUID" type="guid" value="c0a214a0-2ea1-4f68-aa28-f17382b13c55"/>
+                    <attribute id="UUID" type="guid" value="dd3726d6-b1f6-40a9-b351-659629100a5f"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="12"/>
+                    <attribute id="Name" type="LSString" value="Destruction"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Destro_ImprovedMastery;WoWWarlock_Destro_Emberstorm"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(05eece96-1bae-4915-a83d-a6b12f5db833);SelectPassives(af9c80bd-6df1-471b-98f0-e937cd6c7e5c,1,LegionRemains)"/>
+                    <attribute id="TableUUID" type="guid" value="c0a214a0-2ea1-4f68-aa28-f17382b13c55"/>
+                    <attribute id="UUID" type="guid" value="a1cc1687-9b4d-42da-a174-079f716f2913"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="Affliction"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Aff_UnlockSpell_Shadowbolt;WoWWarlock_Aff_UnlockSpell_Corruption;WoWWarlock_Aff"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(185c0bd7-3da1-4dc4-94fc-a666ac4fd785)"/>
+                    <attribute id="TableUUID" type="guid" value="13638a8a-d968-4abc-8f5c-5ba23595cdd1"/>
+                    <attribute id="UUID" type="guid" value="d336e718-5218-4ec4-a3cd-1c1f1be0754a"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="2"/>
+                    <attribute id="Name" type="LSString" value="Affliction"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Aff_EternalHunger;WoWWarlock_Aff_SouLeech_Shadowbolt;WoWWarlock_Aff_SouLeech_DrainSoul;WoWWarlock_Aff_SouLeech_DrainSoul_1;WoWWarlock_Aff_SouLeech_Corruption;WoWWarlock_Aff_SouLeech_Agony;WoWWarlock_Aff_SouLeech_UnstableAffliction;WoWWarlock_Aff_SouLeech_SoulRot;WoWWarlock_Aff_SouLeech_Oblivion"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(0063a842-170d-4a70-b8d7-4ecfb8e1b125);SelectPassives(ea28aca3-a552-4a20-869e-f6675a887ce6,1,WarlockAffTalentRow1)"/>
+                    <attribute id="TableUUID" type="guid" value="13638a8a-d968-4abc-8f5c-5ba23595cdd1"/>
+                    <attribute id="UUID" type="guid" value="2b302843-5dab-49a1-9f3d-5d0d955ee382"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="Affliction"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Aff_DarkVirtuosity;WoWWarlock_Aff_SiphonLife"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(8489dd2a-15a7-4935-83ae-552607ec2ad6);SelectPassives(c1db71ba-f7f4-443a-b14d-61b66ea7c06e,1,WarlockAffTalentRow2)"/>
+                    <attribute id="TableUUID" type="guid" value="13638a8a-d968-4abc-8f5c-5ba23595cdd1"/>
+                    <attribute id="UUID" type="guid" value="f94ab12a-6091-4681-aec2-bd191fcd1467"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="4"/>
+                    <attribute id="Name" type="LSString" value="Affliction"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Aff_KindledMalice"/>
+                    <attribute id="PassivesRemoved" type="LSString" value="WoWWarlock_Aff_UnlockSpell_Shadowbolt"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(134a01cc-10c7-400a-9524-b6aadd909538);SelectPassives(ea28aca3-a552-4a20-869e-f6675a887ce6,1,WarlockAffTalentRow1);SelectPassives(f5d1eb53-362d-4435-9123-fff8cf07c81a,1,WarlockAffSpecChoise);SelectPassives(416af2ea-2e9e-4922-b9b8-4fe6c0a35e1a,1,WarlockAffTalentRow3)"/>
+                    <attribute id="TableUUID" type="guid" value="13638a8a-d968-4abc-8f5c-5ba23595cdd1"/>
+                    <attribute id="UUID" type="guid" value="3c64d24f-d422-4be8-adc5-a165c5295dec"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="Affliction"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Aff_SargereiTeachings"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(0e5680ae-9cc3-4ef9-a878-0a77c037c490);SelectPassives(c1db71ba-f7f4-443a-b14d-61b66ea7c06e,1,WarlockAffTalentRow2);SelectPassives(99f3a3c4-d2f6-4142-867e-e2253ebe6cd2,1,WarlockAffSpecChoise);SelectPassives(9b112721-bcaa-4696-a9bf-9f4c0e2f2e80,1,WarlockAffTalentRow4)"/>
+                    <attribute id="TableUUID" type="guid" value="13638a8a-d968-4abc-8f5c-5ba23595cdd1"/>
+                    <attribute id="UUID" type="guid" value="33395dee-06dd-498a-965f-255afccc8a59"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="6"/>
+                    <attribute id="Name" type="LSString" value="Affliction"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Aff_AbsoluteCorruption"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(f7166afe-516f-4c87-92bb-f3cf8746fa98);SelectPassives(416af2ea-2e9e-4922-b9b8-4fe6c0a35e1a,1,WarlockAffTalentRow3);SelectPassives(9b112721-bcaa-4696-a9bf-9f4c0e2f2e80,1,WarlockAffTalentRow4);SelectPassives(1bf7257d-702f-4891-a89c-c6311f3df1dd,1,WarlockAffTalentRow5)"/>
+                    <attribute id="TableUUID" type="guid" value="13638a8a-d968-4abc-8f5c-5ba23595cdd1"/>
+                    <attribute id="UUID" type="guid" value="2d900a91-cfa8-472f-b30b-f3ddf472913e"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="7"/>
+                    <attribute id="Name" type="LSString" value="Affliction"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(03752c69-289b-4387-8563-24a6037b695a);SelectPassives(3e991072-dbef-4004-b042-51057dc9492d,1,WarlockAffSpecChoise);SelectPassives(9b112721-bcaa-4696-a9bf-9f4c0e2f2e80,1,WarlockAffTalentRow4);SelectPassives(1bf7257d-702f-4891-a89c-c6311f3df1dd,1,WarlockAffTalentRow5);SelectPassives(936371ca-51de-44e4-b219-9de432bcf61a,1,WarlockAffTalentRow6)"/>
+                    <attribute id="TableUUID" type="guid" value="13638a8a-d968-4abc-8f5c-5ba23595cdd1"/>
+                    <attribute id="UUID" type="guid" value="7a10c29a-866b-44d3-9cd7-6cdb364189d6"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="8"/>
+                    <attribute id="Name" type="LSString" value="Affliction"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Aff_SocretharsGuile"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(1fdae767-57ea-414f-8026-89a05bbcbb9c);SelectPassives(1bf7257d-702f-4891-a89c-c6311f3df1dd,1,WarlockAffTalentRow5);SelectPassives(936371ca-51de-44e4-b219-9de432bcf61a,1,WarlockAffTalentRow6);SelectPassives(d380a820-1601-456a-86c6-6527def3e135,1,WarlockAffTalentRow7)"/>
+                    <attribute id="TableUUID" type="guid" value="13638a8a-d968-4abc-8f5c-5ba23595cdd1"/>
+                    <attribute id="UUID" type="guid" value="a480ca70-b931-49ed-96b7-7b007d51d178"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="9"/>
+                    <attribute id="Name" type="LSString" value="Affliction"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Aff_Relinquished;WoWWarlock_Aff_ImprovedMalficRapture"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(7a5f300d-9a06-49de-b00a-c96954a3bc29);SelectPassives(59496156-8955-4d65-9469-5baef5d47c31,1,WarlockClassTalentRow8);SelectPassives(936371ca-51de-44e4-b219-9de432bcf61a,1,WarlockAffTalentRow6);SelectPassives(d380a820-1601-456a-86c6-6527def3e135,1,WarlockAffTalentRow7)"/>
+                    <attribute id="TableUUID" type="guid" value="13638a8a-d968-4abc-8f5c-5ba23595cdd1"/>
+                    <attribute id="UUID" type="guid" value="805591c9-ec79-4828-9e51-b70604ad3b6a"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="10"/>
+                    <attribute id="Name" type="LSString" value="Affliction"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Aff_PactofAnnihilan;WoWWarlock_Aff_XaviusGambit"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(9c54b9d7-ffe8-43bf-bba4-10ff01e464be);SelectPassives(59496156-8955-4d65-9469-5baef5d47c31,1,WarlockClassTalentRow8);SelectPassives(d380a820-1601-456a-86c6-6527def3e135,1,WarlockAffTalentRow7);SelectPassives(03c9a6d8-2d54-41cd-a9a3-db30eafe8e4b,1,WarlockAffTalentRow8);SelectPassives(9f662e1c-8d05-4729-b540-b875444a5df7,1,WarlockAffTalentRow9)"/>
+                    <attribute id="TableUUID" type="guid" value="13638a8a-d968-4abc-8f5c-5ba23595cdd1"/>
+                    <attribute id="UUID" type="guid" value="0ab40d85-dc2d-4e5d-8004-1eb1cf967a0f"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="11"/>
+                    <attribute id="Name" type="LSString" value="Affliction"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(dbc291a5-8895-4850-abe0-c5ab6516dd69);SelectPassives(59496156-8955-4d65-9469-5baef5d47c31,1,WarlockClassTalentRow8);SelectPassives(03c9a6d8-2d54-41cd-a9a3-db30eafe8e4b,1,WarlockAffTalentRow8);SelectPassives(9f662e1c-8d05-4729-b540-b875444a5df7,1,WarlockAffTalentRow9)"/>
+                    <attribute id="TableUUID" type="guid" value="13638a8a-d968-4abc-8f5c-5ba23595cdd1"/>
+                    <attribute id="UUID" type="guid" value="dad31c6a-f90e-4e75-87c7-93209797a662"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="12"/>
+                    <attribute id="Name" type="LSString" value="Affliction"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WoWWarlock_Aff_ImprovedMastery"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(02705675-1991-4cee-aa02-d520aa081526);SelectPassives(b54fc59c-9d07-4035-9463-e7a619fd62c5,1,LegionRemains);SelectPassives(9f662e1c-8d05-4729-b540-b875444a5df7,1,WarlockAffTalentRow9)"/>
+                    <attribute id="TableUUID" type="guid" value="13638a8a-d968-4abc-8f5c-5ba23595cdd1"/>
+                    <attribute id="UUID" type="guid" value="381642a5-e91f-4959-b7d5-940d1338cafb"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

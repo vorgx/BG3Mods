@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="SkillLists">
+        <node id="root">
+            <children>
+                <node id="SkillList">
+                    <attribute id="Name" type="FixedString" value="WoWWarlock Skill List"/>
+                    <attribute id="Skills" type="LSString" value="Arcana, Deception, History, Intimidation, Investigation, Religion"/>
+                    <attribute id="UUID" type="guid" value="6f3122fa-de19-4512-a307-49cba0369bf0"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

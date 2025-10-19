@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="312"/>
+    <region id="ActionResourceGroupDefinitions">
+        <node id="root">
+            <children>
+                <node id="ActionResourceGroupDefinition">
+                    <attribute id="ActionResourceDefinitions" type="LSString" value="672d8944-4fff-4d42-84e9-574f5744480a"/>
+                    <attribute id="Name" type="LSString" value="DemonicFuryGroup"/>
+                    <attribute id="UUID" type="guid" value="5bc868c3-4b7d-4071-ad83-574f5744480a"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

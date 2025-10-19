@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="8" build="613" />
+	<region id="TextureBank">
+		<node id="TextureBank">
+			<children>
+				<node id="Resource">
+					<attribute id="Name" type="LSString" value="DemonHunter_F_Upper_BM" />
+					<attribute id="ID" type="FixedString" value="2edddac0-8a26-4633-bf6c-574f5744480a" />
+					<attribute id="SourceFile" type="LSString" value="Generated/Public/Shared/Assets/Armor/DemonHunter_F_Upper_BM.dds" />
+					<attribute id="Format" type="uint32" value="64" />
+					<attribute id="Width" type="int32" value="2048" />
+					<attribute id="Height" type="int32" value="2048" />
+					<attribute id="Depth" type="int32" value="1" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="SRGB" type="bool" value="True" />
+					<attribute id="Streaming" type="bool" value="True" />
+					<attribute id="Template" type="FixedString" value="" />
+					<attribute id="Type" type="int32" value="1" />
+				</node>
+				<node id="Resource">
+					<attribute id="Name" type="LSString" value="DemonHunter_F_Upper_PM" />
+					<attribute id="ID" type="FixedString" value="f043551e-2c55-485a-bbd5-574f5744480a" />
+					<attribute id="SourceFile" type="LSString" value="Generated/Public/Shared/Assets/Armor/DemonHunter_F_Upper_PM.dds" />
+					<attribute id="Format" type="uint32" value="62" />
+					<attribute id="Width" type="int32" value="2048" />
+					<attribute id="Height" type="int32" value="2048" />
+					<attribute id="Depth" type="int32" value="1" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="SRGB" type="bool" value="False" />
+					<attribute id="Streaming" type="bool" value="True" />
+					<attribute id="Template" type="FixedString" value="" />
+					<attribute id="Type" type="int32" value="1" />
+				</node>
+				<node id="Resource">
+					<attribute id="Name" type="LSString" value="DemonHunter_F_Upper_NM" />
+					<attribute id="ID" type="FixedString" value="fdd77791-cc83-4b04-a798-574f5744480a" />
+					<attribute id="SourceFile" type="LSString" value="Generated/Public/Shared/Assets/Armor/DemonHunter_F_Upper_NM.dds" />
+					<attribute id="Format" type="uint32" value="64" />
+					<attribute id="Width" type="int32" value="2048" />
+					<attribute id="Height" type="int32" value="2048" />
+					<attribute id="Depth" type="int32" value="1" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="SRGB" type="bool" value="False" />
+					<attribute id="Streaming" type="bool" value="True" />
+					<attribute id="Template" type="FixedString" value="" />
+					<attribute id="Type" type="int32" value="1" />
+				</node>
+				<node id="Resource">
+					<attribute id="Name" type="LSString" value="DemonHunter_M_Upper_BM" />
+					<attribute id="ID" type="FixedString" value="a66d3b13-4ec2-492d-b9b9-574f5744480a" />
+					<attribute id="SourceFile" type="LSString" value="Generated/Public/Shared/Assets/Armor/DemonHunter_M_Upper_BM.dds" />
+					<attribute id="Format" type="uint32" value="64" />
+					<attribute id="Width" type="int32" value="2048" />
+					<attribute id="Height" type="int32" value="2048" />
+					<attribute id="Depth" type="int32" value="1" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="SRGB" type="bool" value="True" />
+					<attribute id="Streaming" type="bool" value="True" />
+					<attribute id="Template" type="FixedString" value="" />
+					<attribute id="Type" type="int32" value="1" />
+				</node>
+				<node id="Resource">
+					<attribute id="Name" type="LSString" value="DemonHunter_M_Upper_PM" />
+					<attribute id="ID" type="FixedString" value="197d30ee-cb1e-43f1-b9fd-574f5744480a" />
+					<attribute id="SourceFile" type="LSString" value="Generated/Public/Shared/Assets/Armor/DemonHunter_M_Upper_PM.dds" />
+					<attribute id="Format" type="uint32" value="62" />
+					<attribute id="Width" type="int32" value="2048" />
+					<attribute id="Height" type="int32" value="2048" />
+					<attribute id="Depth" type="int32" value="1" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="SRGB" type="bool" value="False" />
+					<attribute id="Streaming" type="bool" value="True" />
+					<attribute id="Template" type="FixedString" value="" />
+					<attribute id="Type" type="int32" value="1" />
+				</node>
+				<node id="Resource">
+					<attribute id="Name" type="LSString" value="DemonHunter_M_Upper_NM" />
+					<attribute id="ID" type="FixedString" value="5f56575d-735b-4ffc-b635-574f5744480a" />
+					<attribute id="SourceFile" type="LSString" value="Generated/Public/Shared/Assets/Armor/DemonHunter_M_Upper_NM.dds" />
+					<attribute id="Format" type="uint32" value="64" />
+					<attribute id="Width" type="int32" value="2048" />
+					<attribute id="Height" type="int32" value="2048" />
+					<attribute id="Depth" type="int32" value="1" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="SRGB" type="bool" value="False" />
+					<attribute id="Streaming" type="bool" value="True" />
+					<attribute id="Template" type="FixedString" value="" />
+					<attribute id="Type" type="int32" value="1" />
+				</node>
+			</children>
+		</node>
+	</region>
+</save>
