@@ -8,6 +8,25 @@
 
 ## 🚀 Quick Start
 
+### 📌 SOURCE OF TRUTH - Read First!
+**Before making ANY changes, consult these files:**
+
+1. **[SOURCE_OF_TRUTH.md](Documentation/00_SourcesOfTruth/SOURCE_OF_TRUTH.md)**  
+   Master documentation - Current project state (always up-to-date)
+
+2. **[AbilityDatabase_Warrior_FullyEnriched.csv](Documentation/00_SourcesOfTruth/AbilityDatabase_Warrior_FullyEnriched.csv)**  
+   Production ability database - 215 abilities, 100% complete with BG3 mechanics
+
+3. **[Warrior Progression for all subclasses.xlsx](Documentation/00_SourcesOfTruth/Warrior%20Progression%20for%20all%20subclasses.xlsx)**  
+   Excel source data - Level progression tables and formulas
+
+4. **[00_SourcesOfTruth/README.md](Documentation/00_SourcesOfTruth/README.md)**  
+   Folder maintenance policy - "4 files only" rule
+
+**See Also**: [.github/copilot-instructions.md](.github/copilot-instructions.md) - SOURCE OF TRUTH PROTOCOL section
+
+---
+
 ### New Here? Start With These (In Order):
 1. **[START_HERE.md](Documentation/Setup-Guides/START_HERE.md)** - 5-minute setup guide
 2. **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - Keyboard shortcuts cheat sheet
@@ -24,14 +43,52 @@
 
 ```
 BG3Mods/
-├── 📄 INDEX.md (this file)           ← Project navigation hub
 ├── 📄 README.md                       ← Project overview
-├── 📄 START_HERE.md                   ← New user quick start
-├── 📄 QUICK_REFERENCE.md              ← Daily keyboard shortcuts
+├── 📄 INDEX.md (this file)           ← Project navigation hub
+├── 📄 BG3Mods.code-workspace         ← VS Code workspace
+├── 📄 settings.json                  ← Project settings
+├── � CLEANUP_SOURCE_OF_TRUTH.ps1    ← Reusable folder cleanup utility
+├── � CLEANUP_ROOT_DIRECTORY.ps1     ← Root directory cleanup utility
 │
 ├── 📂 Data/                           ← Mod source files
-│   ├── Mods/BG3Wow_*/                ← meta.lsx, localization
+│   ├── Mods/BG3Wow_*/                ← meta.lsx, ScriptExtender
 │   └── Public/BG3Wow_*/              ← Class data, spells, progressions
+│
+├── 📂 Documentation/                  ← All project documentation
+│   ├── 00_SourcesOfTruth/            ← SOURCE OF TRUTH (4 files + Archive/)
+│   │   ├── SOURCE_OF_TRUTH.md        ← Master living document (1,297 lines)
+│   │   ├── AbilityDatabase_Warrior_FullyEnriched.csv ← Production DB (215 abilities)
+│   │   ├── Warrior Progression.xlsx  ← Excel source data
+│   │   ├── README.md                 ← Folder maintenance policy
+│   │   └── Archive/                  ← Historical files (5 subfolders)
+│   ├── 01_Reference-Guides/          ← Reference documentation
+│   ├── 02_Setup-Guides/              ← Setup & onboarding
+│   ├── 03_Workflows/                 ← Workflow guides
+│   ├── 04_Organization-Reports/      ← Organization documents
+│   ├── 05_SessionReports/            ← Completion reports
+│   ├── 06_ProjectDocuments/          ← Implementation guides
+│   ├── 07_DesignDocuments/           ← Class blueprints
+│   ├── 08_WoWSourceMaterial/         ← WoW reference material
+│   ├── 09_ResearchFindings/          ← Research notes
+│   ├── 10_SessionSummaries/          ← Session summaries
+│   ├── 11_ValidationReports/         ← Validation results
+│   ├── 12_ReferenceMods/             ← Reference mod examples
+│   └── 13_Assets/                    ← Project assets
+│
+├── 📂 Scripts/                        ← Development scripts (organized!)
+│   ├── Database/                     ← Database scripts (3 scripts)
+│   │   ├── CREATE_ABILITY_DATABASE.ps1
+│   │   ├── CLEANUP_ABILITY_DATABASE.ps1
+│   │   └── FIX_CLASSIFICATION.ps1
+│   ├── Enrichment/                   ← Enrichment scripts (10 scripts)
+│   │   ├── AUTO_ENRICH_PASSIVES.ps1
+│   │   ├── COMPREHENSIVE_WOW_ENRICHMENT.ps1
+│   │   ├── ENRICH_*.ps1              ← Batch enrichment scripts
+│   │   └── PARSE_ICYVEINS_*.ps1      ← HTML parsing scripts
+│   ├── Extract-SlayerTalents.ps1     ← Extraction utilities
+│   ├── View_Logs.ps1                 ← Log viewer
+│   ├── validate_spell_references.ps1 ← Spell validation
+│   └── validate_mod_structure.ps1    ← Mod structure validation
 │
 ├── 📂 Package/                        ← Built PAK files (output)
 │   ├── BG3Wow_Latest.pak             ← Most recent build
@@ -39,36 +96,31 @@ BG3Mods/
 │
 ├── 📂 .vscode/                        ← VS Code build system
 │   ├── build-pak.ps1                 ← Main packaging script
+│   ├── unpack-pak.ps1                ← PAK unpacker
 │   ├── tasks.json                    ← Ctrl+Shift+B configuration
-│   ├── launch.json                   ← F5 debug menu
-│   └── README.md                     ← Build system docs
-│
-├── 📂 My Documentation/               ← Design & implementation guides
-│   ├── 01_ProjectDocuments/          ← Core documentation
-│   ├── 02_DesignDocuments/           ← Class blueprints
-│   └── 03_WoWSourceMaterial/         ← Reference material
+│   └── launch.json                   ← F5 debug menu
 │
 ├── 📂 Tests/                          ← Validation & testing
-│   ├── 01_ValidationReports/         ← Build validation results
-│   ├── SessionReports/               ← Session completion reports
-│   ├── Troubleshooting/              ← Debug guides
-│   └── ExampleMod_*/                 ← Reference mod examples
+│   ├── RUN_ALL_TESTS.ps1             ← Test runner
+│   └── 04_Tools/                     ← Test migration tools
 │
-├── 📂 Documentation/                  ← Organized guides
-│   ├── Setup-Guides/                 ← Setup & onboarding
-│   │   ├── START_HERE.md             ← 5-minute quick start
-│   │   └── MULTITOOL_SETUP.md        ← Detailed setup guide
-│   └── Reference-Guides/             ← Reference documentation
-│       ├── PACKAGING_GUIDE.md        ← Packaging workflows
-│       ├── PROJECT_INDEX.md          ← File inventory
-│       ├── DOCUMENTATION_LIBRARY.md  ← External links
-│       └── FOLDER_STRUCTURE_DIAGRAM.md ← Folder layout
+├── 📂 Transformation_Templates/       ← Warlock template reference
+│   ├── Tests/                        ← Template test scripts
+│   │   ├── Test-MetaLsx.ps1          ← FILE 1 validation
+│   │   ├── Test-ClassDescriptions.ps1 ← FILE 2 validation
+│   │   └── Test-AllFiles.ps1         ← Master test runner
+│   └── README.md                     ← Template documentation
+│
+├── 📂 Reports/                        ← Analysis reports
+│   ├── 01_Analysis/                  ← Analysis documents
+│   ├── 02_Transformation/            ← Transformation plans
+│   └── 03_Progress/                  ← Progress tracking
 │
 ├── 📂 LsLib/                          ← LSLib tools (fallback)
-│   └── ConverterApp.exe              ← LSLib PAK builder
+│   └── Tools/                        ← LSLib binaries
 │
-├── 📄 validate_mod_structure.ps1     ← Pre-build validation script
-└── 📄 pre_package_checklist.md       ← Quality assurance checklist
+├── � Backups/                        ← Project backups (5 timestamped)
+└── � Archive/                        ← Archived content
 ```
 
 ---

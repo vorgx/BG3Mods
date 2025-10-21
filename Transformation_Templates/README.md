@@ -227,7 +227,7 @@ From Warlock template, we preserve:
 ## Related Documentation
 
 ### Project Documentation:
-- `HANDOVER_FILE_BY_FILE_START.md` - Session handover context
+- `Documentation/10_SessionSummaries/HANDOVER_FILE_BY_FILE_START.md` - Session handover context
 - `Reports/FILE_BY_FILE_TRANSFORMATION_PLAN.md` - Detailed 15-file plan
 - `Documentation/07_DesignDocuments/` - Class blueprints & design specs
 - `Documentation/06_ProjectDocuments/` - Implementation guides

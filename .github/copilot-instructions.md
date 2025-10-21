@@ -80,6 +80,31 @@ This is the **single authoritative source** for all project information. All oth
 - **File creation**: Check folder inventory → Confirm location → Create → Update inventory
 - **Cross-reference**: Search old name → Update all → Test → Record change
 
+### Ability Database Protocol
+**Production Database**: `Documentation/00_SourcesOfTruth/AbilityDatabase_Warrior_FullyEnriched.csv`
+
+This CSV file is the **single source of truth** for all 215 Warrior abilities (100% enriched with BG3 mechanics).
+
+**BEFORE implementing abilities**:
+1. Read ability row from `AbilityDatabase_Warrior_FullyEnriched.csv`
+2. Use `bg3_file_type` column to determine stat file location (Spell_Target.txt, Passive.txt, etc.)
+3. Use `implementation_notes` for WoW → BG3 conversion guidance (damage formulas, status effects, conditions)
+4. Use `archetype_tags` for build association context (Offensive, Defensive, Utility, Hero Talents)
+5. Check `requires_ability` and `modified_by` columns for dependencies
+
+**AFTER implementing abilities**:
+1. Update `implementation_status` column in database ("Implemented", "Tested", "Complete")
+2. Add actual BG3 spell/passive name if different from `ability_name`
+3. Update `implementation_notes` with any adjustments made during implementation
+4. Verify in-game and mark `tested_in_game` column when validated
+
+**Database as Single Source**:
+- **215 abilities** (100% enriched) - no guesswork needed
+- All WoW mechanics pre-converted to BG3 functors (DealDamage, ApplyStatus, etc.)
+- All dependencies tracked (requires_ability, unlocks_ability, modified_by)
+- All archetype associations documented for build guides
+- **ALWAYS use database** - never implement abilities without consulting it first
+
 ---
 
 ## Critical Architecture Patterns

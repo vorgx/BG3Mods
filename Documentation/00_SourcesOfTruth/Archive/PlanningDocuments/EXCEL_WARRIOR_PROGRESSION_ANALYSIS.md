@@ -49,12 +49,13 @@
 - **L3**: Devastate (Offensive) + Shield Block (Utility) + Riposte (Passive)
 - **L5**: Heroic Throw (Utility) + Charge (Utility) + Shield Block 2nd charge (Passive)
 - **L7**: Slam (Offensive) + Pummel (Utility) + Vanguard (Passive)
-- **L9**: Execute (Offensive) + Victory Rush (Utility)
-- **L11**: Battle Shout (Utility)
-- **L12**: Whirlwind (Offensive) + Hamstring (Utility) + Shield Slam enhancement (Offensive)
+- **L9**: Victory Rush (Offensive)
+- **L10**: Execute (Offensive)
+- **L11**: Hamstring (Utility) + Battle Shout (Utility)
+- **L12**: Whirlwind (Offensive)
 
 **Fury Order** (Col 9-10):
-- **L1**: Whirlwind (Offensive) + Berserker Rage (Utility) + Battle Stance + Defensive Stance
+- **L1**: Whirlwind (Offensive) + Berserker Rage (Utility)
 - **L3**: Slam (Offensive) + Charge (Utility)
 - **L5**: Victory Rush (Utility) + Pummel (Utility)
 - **L7**: Execute (Offensive) + Battle Shout (Utility)
@@ -137,14 +138,14 @@
 **Baseline Abilities Granted**:
 - **Arms**: Whirlwind + Charge
 - **Protection**: Shield Slam + Taunt + Mastery: Critical Block
-- **Fury**: Whirlwind + Berserker Rage + Battle Stance + Defensive Stance
+- **Fury**: Whirlwind + Berserker Rage
 
-**Class Talents**: Row 1 auto-granted (Battle Stance + Defensive Stance for Arms/Protection, already granted for Fury)
+**Class Talents**: Row 1 auto-granted (Battle Stance + Defensive Stance) - ALL Warriors
 
 **Total Abilities at L1**:
 - Arms: 2 abilities + 2 stances = **4 features**
 - Protection: 3 abilities + 1 passive + 2 stances = **6 features**
-- Fury: 2 abilities + 2 stances (already have) = **4 features**
+- Fury: 2 abilities + 2 stances = **4 features**
 
 ---
 
@@ -233,7 +234,7 @@
 **BG3 Milestones**: None
 **Baseline Abilities Granted**:
 - **Arms**: Victory Rush + Taunt
-- **Protection**: Execute + Victory Rush
+- **Protection**: Victory Rush
 - **Fury**: Hamstring + Taunt
 
 **Class Talents**: Row 9 choice (3 options - Thunderous Roar | Avatar | Champion's Spear)
@@ -245,7 +246,9 @@
 
 ### Level 10
 **BG3 Milestones**: None
-**Baseline Abilities**: None
+**Baseline Abilities Granted**:
+- **Protection**: Execute
+
 **Class Talents**: Row 10 choice (6 options)
 **SubclassSpec Talents**: Row 8 (varies by subclass)
 
@@ -257,7 +260,7 @@
 **BG3 Milestones**: None
 **Baseline Abilities Granted**:
 - **Arms**: Heroic Throw
-- **Protection**: Battle Shout
+- **Protection**: Hamstring + Battle Shout
 - **Fury**: Heroic Throw
 
 **Class Talents**: None (Row 10 was last)
@@ -271,7 +274,7 @@
 **BG3 Milestones**: Feat or Ability Score Increase
 **Baseline Abilities Granted**:
 - **Arms**: Shield Slam
-- **Protection**: Whirlwind + Hamstring + Shield Slam enhancement
+- **Protection**: Whirlwind
 - **Fury**: Shield Slam
 
 **Class Talents**: None (Row 10 was last)
@@ -288,7 +291,7 @@
 **SubclassSpec Talents**: None
 **Specialization**: **Keystone** auto-granted (varies by choice)
 - **Mountain Thane**: Lightning Strikes (keystone)
-- **Colossus**: Demolish (keystone ability + Colossal Might passive)
+- **Colossus**: Demolish (keystone ability)
 - **Slayer**: Slayer's Dominance (keystone)
 
 **Player Choices This Level**: **1 choice** (Pick specialization - keystone auto-granted after selection)
@@ -393,7 +396,7 @@
 - **9 Class Talent choices** (Pool 1, Rows 2-10)
 - **9 SubclassSpec Talent choices** (Pool 2, Rows 1-10)
 - **0 Specialization choices** (all 11 talents auto-granted!)
-- **5 Feats/ASI** (L4, L8, L12, L16, L20) - **NOTE: Missing L19 Feat!**
+- **6 Feats/ASI** (L4, L8, L12, L16, L19, L20)
 
 ---
 
@@ -469,13 +472,7 @@ All 3 specializations follow same structure:
 - L20: Avatar of the Storm (capstone)
 - **Total**: 11 talents, 0 choices
 
-### 6. **Missing L19 Feat in Excel**
-
-The Excel shows Feats at L4, L8, L12, L16, L20 (5 total), but **BG3 standard is 6 Feats** (L4, L8, L12, L16, L19, L20).
-
-**Conclusion**: Excel may be missing L19 Feat milestone, or design intentionally skips it.
-
-### 7. **Row 7 of Class Talents Has Most Options (9 Choices)**
+### 6. **Row 7 of Class Talents Has Most Options (9 Choices)**
 
 At L7, players choose from **9 Class Talent options** (largest choice pool):
 - Wrecking Throw
@@ -490,7 +487,7 @@ At L7, players choose from **9 Class Talent options** (largest choice pool):
 
 This is the "utility buffet" level where players customize mobility/crowd control.
 
-### 8. **Baseline Abilities Stop at L12 (12 Total Per Subclass)**
+### 7. **Baseline Abilities Stop at L12 (12 Total Per Subclass)**
 
 Each subclass receives exactly **12 baseline abilities** L1-12:
 - **Arms**: 7 offensive + 5 utility = **12 abilities**
@@ -510,12 +507,11 @@ After L12, progression is purely talent choices (SubclassSpec Row 10) and specia
 4. ✅ L3 Arms gets Execute (both sources agree)
 5. ✅ L5 Extra Attack (both sources agree)
 6. ✅ L13 Specialization choice (both sources agree)
-7. ✅ Feats at L4, L8, L12, L16, L20 (both sources agree)
+7. ✅ Feats at L4, L8, L12, L16, L19, L20 (both sources agree)
 
 ### Discrepancies ⚠️
 1. ⚠️ **Excel shows Baseline Abilities spread L1-L12**, WARRIOR_COMPLETE_PROGRESSION_CHART shows SubclassBase L3-L12 (different starting level)
 2. ⚠️ **Excel Col 11 shows "Row 1 of Warrior Class Talents" at L1**, WARRIOR_COMPLETE_PROGRESSION_CHART shows Row 1 auto-granted + Row 2 choice at L1
-3. ⚠️ **Excel lacks L19 Feat milestone**, WARRIOR_COMPLETE_PROGRESSION_CHART shows Feat at L19
 
 **Resolution**: Excel appears to be **WoW source data** (how it works in World of Warcraft), while WARRIOR_COMPLETE_PROGRESSION_CHART is **BG3 adaptation** (how we're implementing it in BG3).
 
@@ -560,7 +556,7 @@ The Excel file is a **comprehensive WoW source reference** showing:
 2. ✅ **10-row Class Talent tree** (shared by all Warriors) - L2-L10
 3. ✅ **10-row SubclassSpec Talent trees** (unique per spec) - L3-L12
 4. ✅ **3 Specialization trees** (Mountain Thane, Colossus, Slayer) - L13-L20
-5. ✅ **28 total player choices** across 20 levels (2 major picks + 9 Class + 9 SubclassSpec + 3 Specialization + 5 Feats)
+5. ✅ **29 total player choices** across 20 levels (2 major picks + 9 Class + 9 SubclassSpec + 3 Specialization + 6 Feats)
 
 **Critical for Building Base Abilities Table**: Use Excel columns 4-10 to show **exact level-by-level unlock progression** for each subclass, highlighting Protection's L1 tank capability and Arms' L3 Execute specialty.
 

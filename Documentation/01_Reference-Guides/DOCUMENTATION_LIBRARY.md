@@ -270,6 +270,16 @@
 | WoW Source Material | [INT] | `My Documentation/03_WoWSourceMaterial/` | WoW Warrior class source data |
 | README.md | [INT] | `README.md` (root) | WoW Warrior class blueprint (128 lines) |
 
+### **WoW Hero Talent HTML References** ✨ NEW
+| Topic | Source | Location | Description |
+|-------|--------|----------|-------------|
+| **Arms Warrior - Slayer** | [EXT-LOCAL] | `c:\WowSource\Arms Warrior DPS Guide - The War Within 11.2 - Wowhead - Slayer.html` | Slayer hero talents (Arms+Fury) with tooltips, tree structure, prerequisites |
+| **Arms Warrior - Colossus** | [EXT-LOCAL] | `c:\WowSource\Arms Warrior DPS Guide - The War Within 11.2 - Wowhead- Colossus.html` | Colossus hero talents (Arms+Protection) with tooltips, tree structure, prerequisites |
+| **Fury Warrior - Mountain Thane** | [EXT-LOCAL] | `c:\WowSource\Fury Warrior DPS Guide - The War Within 11.2 - Wowhead - Mountain Thane.html` | Mountain Thane hero talents (Protection+Fury) with tooltips, tree structure, prerequisites |
+| **Fury Warrior - Slayer** | [EXT-LOCAL] | `c:\WowSource\Fury Warrior DPS Guide - The War Within 11.2 - Wowhead - Slayer.html` | Slayer hero talents (Arms+Fury) with tooltips, tree structure, prerequisites |
+| **Protection Warrior - Colossus** | [EXT-LOCAL] | `c:\WowSource\Protection Warrior Tank Guide - The War Within 11.2 - Wowhead - Colossus.html` | Colossus hero talents (Arms+Protection) with tooltips, tree structure, prerequisites |
+| **Protection Warrior - Mountain Thane** | [EXT-LOCAL] | `c:\WowSource\Protection Warrior Tank Guide - The War Within 11.2 - Wowhead - Mountain Thane.html` | Mountain Thane hero talents (Protection+Fury) with tooltips, tree structure, prerequisites |
+
 ### **Reference Mods**
 | Topic | Source | Location | Description |
 |-------|--------|----------|-------------|
@@ -379,6 +389,7 @@
 
 ---
 
-**Last Updated**: October 17, 2025  
+**Last Updated**: October 20, 2025  
+**Recent Changes**: Added 6 WoW Hero Talent HTML references + Slayer extraction document  
 **Maintained By**: BG3Wow Development Team  
 **For Questions**: Use Ctrl+F to search this document by topic, tool name, or file type

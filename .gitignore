@@ -1,0 +1,204 @@
+# ============================================================================
+# BG3Wow - WoW Classes for BG3 Modding Project
+# ============================================================================
+# Purpose: Exclude generated files, build artifacts, large reference files
+# Keep: Source files, documentation, test scripts, databases
+# ============================================================================
+
+# ============================================================================
+# 1. BG3 MOD BUILD ARTIFACTS
+# ============================================================================
+
+# Generated PAK files (exclude all except versioned archives)
+Package/*.pak
+!Package/BG3Wow_Latest.pak
+!Package/*_CHECKPOINT.pak
+!Package/*_PHASE*.pak
+
+# LSLib build artifacts
+LsLib/divine.log
+LsLib/temp/
+LsLib/*.exe.config
+
+# Mod Manager exports
+modsettings.lsx
+*.lsx.bak
+
+# ============================================================================
+# 2. BACKUPS & ARCHIVES (Exclude - Too Large)
+# ============================================================================
+
+# Automated backups (restore from Backups/ folder if needed)
+Backups/*_BeforeFullRestructure/
+Backups/*_BACKUP_*/
+
+# Archive folders (keep README.md only)
+Archive/Documentation_RootClutter/
+Archive/PreOct19_SessionDocs/
+Archive/TemporaryFiles/
+
+# Temporary backup files
+*.bak
+*.old
+*.tmp
+*~
+
+# ============================================================================
+# 3. LARGE REFERENCE FILES & EXTERNAL RESOURCES (User-Specified)
+# ============================================================================
+
+# Example mods (large, can re-download if needed)
+Tests/02_ExampleMods/
+
+# WoW source material (images, videos, large assets)
+Documentation/08_WoWSourceMaterial/
+
+# Reference mods (large PAK files, external mods)
+Documentation/12_ReferenceMods/
+
+# Large asset packs (spell icons, textures)
+Documentation/13_Assets/Megapack WoW Spell Icons.zip
+Documentation/13_Assets/*.zip
+Documentation/13_Assets/*.rar
+Documentation/13_Assets/*.7z
+
+# ============================================================================
+# 4. EDITOR & IDE FILES
+# ============================================================================
+
+# VS Code (keep workspace settings, exclude user preferences)
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/*.log
+
+# JetBrains IDEs
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# ============================================================================
+# 5. OPERATING SYSTEM FILES
+# ============================================================================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+.directory
+
+# ============================================================================
+# 6. DOCUMENTATION BUILD ARTIFACTS
+# ============================================================================
+
+# Markdown preview files
+*.html
+*.pdf
+
+# Temporary session files (keep completed session summaries)
+Documentation/10_SessionSummaries/*_DRAFT.md
+Documentation/10_SessionSummaries/*_WIP.md
+Documentation/10_SessionSummaries/TEMP_*.md
+
+# ============================================================================
+# 7. TEST OUTPUTS & LOGS
+# ============================================================================
+
+# PowerShell test logs
+Tests/**/*.log
+Tests/**/output.txt
+Transformation_Templates/Tests/**/*.log
+
+# BG3 Script Extender logs (user-specific)
+# Note: These are in %LOCALAPPDATA%, not in repo, so not needed here
+
+# ============================================================================
+# 8. EXCEL TEMPORARY FILES
+# ============================================================================
+
+# Excel temp files
+~$*.xlsx
+~$*.xls
+*.xlk
+
+# Excel backup files
+Documentation/00_SourcesOfTruth/~$*.xlsx
+Documentation/00_SourcesOfTruth/~$*.csv
+
+# ============================================================================
+# 9. USER-SPECIFIC CONFIGURATION
+# ============================================================================
+
+# User-specific paths in scripts (if any)
+Scripts/user_config.ps1
+Scripts/local_paths.json
+
+# Personal notes (keep project docs)
+NOTES_PERSONAL.md
+TODO_PERSONAL.md
+
+# ============================================================================
+# 10. NODE MODULES & DEPENDENCIES (If Using Node Tools)
+# ============================================================================
+
+# If you add Node.js tooling later
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# ============================================================================
+# 11. PYTHON VIRTUAL ENVIRONMENTS (If Using Python Tools)
+# ============================================================================
+
+# If you add Python tooling later
+venv/
+env/
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# ============================================================================
+# EXCEPTIONS (Force Include Important Files)
+# ============================================================================
+
+# Keep critical reference files
+!Documentation/00_SourcesOfTruth/*.csv
+!Documentation/00_SourcesOfTruth/*.xlsx
+!Documentation/00_SourcesOfTruth/*.md
+
+# Keep test scripts
+!Transformation_Templates/Tests/*.ps1
+!Scripts/*.ps1
+
+# Keep LsLib tools (exclude logs)
+!LsLib/Tools/**/*
+
+# Keep small documentation assets (images, diagrams)
+!Documentation/13_Assets/*.png
+!Documentation/13_Assets/*.jpg
+!Documentation/13_Assets/*.svg
+
+# ============================================================================
+# END OF .gitignore
+# ============================================================================

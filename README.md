@@ -12,6 +12,11 @@ A comprehensive mod bringing WoW classes to BG3, starting with the **Warrior** c
 > Setup guides → `Documentation/02_Setup-Guides/`  
 > Design documents → `Documentation/07_DesignDocuments/`
 
+> **📌 SOURCE OF TRUTH - Read First!**  
+> **Master Documentation**: [SOURCE_OF_TRUTH.md](Documentation/00_SourcesOfTruth/SOURCE_OF_TRUTH.md) - Current project state (always up-to-date)  
+> **Ability Database**: [AbilityDatabase_Warrior_FullyEnriched.csv](Documentation/00_SourcesOfTruth/AbilityDatabase_Warrior_FullyEnriched.csv) - 215 abilities, 100% complete  
+> **Folder Policy**: Only 4 files in [00_SourcesOfTruth/](Documentation/00_SourcesOfTruth/README.md) - all others archived
+
 > **🤖 AI Assistants: Read [AI Agent Protocol](Documentation/03_Workflows/AI_AGENT_PROTOCOL.md) FIRST**  
 > Mandatory workflow for all AI agents: Read design docs → Scan implementation → Document changes
 
