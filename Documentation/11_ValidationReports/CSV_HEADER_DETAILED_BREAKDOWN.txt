@@ -1,0 +1,267 @@
+﻿
+=== DETAILED HEADER STRUCTURE ANALYSIS ===
+File: C:\Users\tenod\source\repos\BG3Mods\Documentation\00_SourcesOfTruth\Warrior Progression for all subclasses and Default hero structure.csv
+
+Total Columns: 69
+
+ + ========================================================================================================================
+
+=== ROW 1: MAIN CATEGORY HEADERS ===
+(Headers span multiple columns until next non-empty header)
+
+Columns 0-0 (span: 1 columns)
+  Level
+
+Columns 1-2 (span: 2 columns)
+  BG3 (All Classes)
+  Row 2 (Sub-headers):
+    [1] Attacks
+    [2] Feats
+
+Columns 3-4 (span: 2 columns)
+  Baseline Arms Warrior Abilities (This is the Arms order)
+  Row 2 (Sub-headers):
+    [3] Auto Grant
+  Row 3 (Types):
+    [3] Offensive Abilities (Auto Grant)
+    [4] Utility Abilities (Auto Grant)
+
+Columns 5-7 (span: 3 columns)
+  Baseline Protection Warrior Spells (This is the Protection order)
+  Row 3 (Types):
+    [5] Offensive Abilities (Auto Grant)
+    [6] Utility Abilities (Auto Grant)
+    [7] Passives (Auto Grant)
+
+Columns 8-9 (span: 2 columns)
+  Baseline Fury Warrior Abilities (This is the Fury order)
+  Row 3 (Types):
+    [8] Offensive Abilities (Auto Grant)
+    [9] Utility Abilities (Auto Grant)
+
+Columns 10-19 (span: 10 columns)
+  Warrior Class Talents (All subclasses has these abilities)
+  Row 2 (Sub-headers):
+    [10] AutoGrant
+    [12] Choose one for this per level
+  Row 3 (Types):
+    [10] Stance
+    [11] Stance
+    [12] General Class Abilities
+
+Columns 20-32 (span: 13 columns)
+  Arms Spec Talents (Only for Arms)
+  Row 2 (Sub-headers):
+    [20] Auto Grant
+    [24] Pick one for this level
+  Row 3 (Types):
+    [20] Passive
+    [22] Arms Ability
+
+Columns 33-43 (span: 11 columns)
+  ?Fury Spec Talents (Only for Fury)
+  Row 2 (Sub-headers):
+    [33] Auto Grant
+    [36] Pick one for this level
+  Row 3 (Types):
+    [33] Passive
+    [35] Fury Ability
+
+Columns 44-51 (span: 8 columns)
+  Protection Warrior Spec Talents (Only for Protection)
+  Row 2 (Sub-headers):
+    [44] Auto Grant
+    [45] Pick one for this level
+  Row 3 (Types):
+    [44] Protection Ability
+
+Columns 52-54 (span: 3 columns)
+  Mountain Thane Talents (Protection, Fury)
+  Row 2 (Sub-headers):
+    [52] Auto Granted
+  Row 3 (Types):
+    [52] Mountain Thane Talents
+
+Columns 55-57 (span: 3 columns)
+  Colossus Talents (Arms, Protection)
+  Row 2 (Sub-headers):
+    [55] Auto Granted
+  Row 3 (Types):
+    [55] Colossus Talents
+
+Columns 58-68 (span: 11 columns)
+  Slayers Talents (Arms, Fury)
+  Row 2 (Sub-headers):
+    [58] Auto Granted
+  Row 3 (Types):
+    [58] Slayers Talents
+
+
+ + ========================================================================================================================
+
+=== ROW 2: SUB-HEADER DETAILS ===
+(Grant types, choice indicators, notes)
+
+
+"Attacks":
+  Column 1 - under: BG3 (All Classes)
+
+"Auto Grant":
+  Column 3 - under: Baseline Arms Warrior Abilities (This is
+  Column 20 - under: Arms Spec Talents (Only for Arms)
+  Column 33 - under: ?Fury Spec Talents (Only for Fury)
+  Column 44 - under: Protection Warrior Spec Talents (Only fo
+
+"Auto Granted":
+  Column 52 - under: Mountain Thane Talents (Protection, Fury
+  Column 55 - under: Colossus Talents (Arms, Protection)
+  Column 58 - under: Slayers Talents (Arms, Fury)
+
+"AutoGrant":
+  Column 10 - under: Warrior Class Talents (All subclasses ha
+
+"Choose one for this per level":
+  Column 12 - under: Warrior Class Talents (All subclasses ha
+
+"Feats":
+  Column 2 - under: BG3 (All Classes)
+
+"Pick one for this level":
+  Column 24 - under: Arms Spec Talents (Only for Arms)
+  Column 36 - under: ?Fury Spec Talents (Only for Fury)
+  Column 45 - under: Protection Warrior Spec Talents (Only fo
+
+ + ========================================================================================================================
+
+=== ROW 3: TYPE DESCRIPTORS ===
+(Ability types, grant mechanisms, talent categories)
+
+
+"Arms Ability":
+  Column 22 - Arms Spec Talents (Only for Arms)
+
+"Colossus Talents":
+  Column 55 - Colossus Talents (Arms, Protection) | Sub: Auto Granted
+
+"Fury Ability":
+  Column 35 - ?Fury Spec Talents (Only for Fury)
+
+"General Class Abilities":
+  Column 12 - Warrior Class Talents (All subclasses ha | Sub: Choose one for this per level
+
+"Mountain Thane Talents":
+  Column 52 - Mountain Thane Talents (Protection, Fury | Sub: Auto Granted
+
+"Offensive Abilities (Auto Grant)":
+  Column 3 - Baseline Arms Warrior Abilities (This is | Sub: Auto Grant
+  Column 5 - Baseline Protection Warrior Spells (This
+  Column 8 - Baseline Fury Warrior Abilities (This is
+
+"Passive":
+  Column 20 - Arms Spec Talents (Only for Arms) | Sub: Auto Grant
+  Column 33 - ?Fury Spec Talents (Only for Fury) | Sub: Auto Grant
+
+"Passives (Auto Grant)":
+  Column 7 - Baseline Protection Warrior Spells (This
+
+"Protection Ability":
+  Column 44 - Protection Warrior Spec Talents (Only fo | Sub: Auto Grant
+
+"Slayers Talents":
+  Column 58 - Slayers Talents (Arms, Fury) | Sub: Auto Granted
+
+"Stance":
+  Column 10 - Warrior Class Talents (All subclasses ha | Sub: AutoGrant
+  Column 11 - Warrior Class Talents (All subclasses ha
+
+"Utility Abilities (Auto Grant)":
+  Column 4 - Baseline Arms Warrior Abilities (This is
+  Column 6 - Baseline Protection Warrior Spells (This
+  Column 9 - Baseline Fury Warrior Abilities (This is
+
+ + ========================================================================================================================
+
+=== COLUMN-BY-COLUMN GRID VIEW ===
+(First 30 columns shown for detail)
+
+Col# | Row 1 (Category)                      | Row 2 (Sub-header)      | Row 3 (Type)
+------------------------------------------------------------------------------------------------------------------------
+   0 | Level                                  |                          | 
+   1 | BG3 (All Classes)                      | Attacks                  | 
+   2 |                                        | Feats                    | 
+   3 | Baseline Arms Warrior Abilities (This  | Auto Grant               | Offensive Abilities (Auto Grant)
+   4 |                                        |                          | Utility Abilities (Auto Grant)
+   5 | Baseline Protection Warrior Spells (Th |                          | Offensive Abilities (Auto Grant)
+   6 |                                        |                          | Utility Abilities (Auto Grant)
+   7 |                                        |                          | Passives (Auto Grant)
+   8 | Baseline Fury Warrior Abilities (This  |                          | Offensive Abilities (Auto Grant)
+   9 |                                        |                          | Utility Abilities (Auto Grant)
+  10 | Warrior Class Talents (All subclasses  | AutoGrant                | Stance
+  11 |                                        |                          | Stance
+  12 |                                        | Choose one for this per  | General Class Abilities
+  13 |                                        |                          | 
+  14 |                                        |                          | 
+  15 |                                        |                          | 
+  16 |                                        |                          | 
+  17 |                                        |                          | 
+  18 |                                        |                          | 
+  19 |                                        |                          | 
+  20 | Arms Spec Talents (Only for Arms)      | Auto Grant               | Passive
+  21 |                                        |                          | 
+  22 |                                        |                          | Arms Ability
+  23 |                                        |                          | 
+  24 |                                        | Pick one for this level  | 
+  25 |                                        |                          | 
+  26 |                                        |                          | 
+  27 |                                        |                          | 
+  28 |                                        |                          | 
+  29 |                                        |                          | 
+
+(Columns 30-68 omitted for brevity - see full CSV for complete view)
+
+ + ========================================================================================================================
+
+=== DATABASE COLUMN MAPPING ===
+(Which CSV columns populate which database unlock columns)
+
+
+CSVColumns CSVHeader                              DBColumn                        Type        
+---------- ---------                              --------                        ----        
+3-4        Baseline Arms Warrior Abilities        arms_unlock                     Baseline    
+5-7        Baseline Protection Warrior Spells     protection_unlock               Baseline    
+8-9        Baseline Fury Warrior Abilities        fury_unlock                     Baseline    
+10-19      Warrior Class Talents (All subclasses) warrior_unlock                  Class Talent
+20-32      Arms Spec Talents                      arms_unlock                     Spec Talent 
+33-43      Fury Spec Talents                      fury_unlock                     Spec Talent 
+44-51      Protection Spec Talents                protection_unlock               Spec Talent 
+52-54      Mountain Thane Talents                 protection_unlock + fury_unlock Hero Talent 
+55-57      Colossus Talents                       arms_unlock + protection_unlock Hero Talent 
+58-68      Slayers Talents                        arms_unlock + fury_unlock       Hero Talent 
+
+
+
+ + ========================================================================================================================
+
+=== CRITICAL INSIGHTS ===
+
+1. Multi-Column Headers:
+   - Headers in Row 1 SPAN multiple columns until next non-empty header
+   - 'Warrior Class Talents' (Col 10) spans Columns 10-19 (10 columns!)
+   - This caused our original V3 script to miss columns 12-19
+
+2. Row Hierarchy:
+   - Row 1: Main category (e.g., 'Warrior Class Talents')
+   - Row 2: Grant mechanism (e.g., 'Auto Grant', 'Choose one')
+   - Row 3: Ability type (e.g., 'Stance', 'General Class Abilities')
+
+3. warrior_unlock Population:
+   - Only abilities in Columns 10-19 should populate warrior_unlock
+   - These are talents ALL subclasses get at the SAME level
+   - Total: 48 talents across levels 1-10
+
+4. Hero Talents:
+   - Mountain Thane (52-54): Populate BOTH protection_unlock AND fury_unlock
+   - Colossus (55-57): Populate BOTH arms_unlock AND protection_unlock
+   - Slayers (58-68): Populate BOTH arms_unlock AND fury_unlock
+
+=== ANALYSIS COMPLETE ===

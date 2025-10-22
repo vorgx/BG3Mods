@@ -1,0 +1,489 @@
+﻿
+=== FULL PROGRESSION CSV SCAN ===
+File: C:\Users\tenod\source\repos\BG3Mods\Documentation\00_SourcesOfTruth\Warrior Progression for all subclasses and Default hero structure.csv
+
+=== FILE STRUCTURE ===
+Total rows: 23
+Total columns: 69
+
+=== HEADER STRUCTURE ===
+
+Row 1 (Main Headers) - Column categories:
+  Columns 0-0: Level
+  Columns 1-2: BG3 (All Classes)
+  Columns 3-4: Baseline Arms Warrior Abilities (This is the Arms order)
+  Columns 5-7: Baseline Protection Warrior Spells (This is the Protection order)
+  Columns 8-9: Baseline Fury Warrior Abilities (This is the Fury order)
+  Columns 10-19: Warrior Class Talents (All subclasses has these abilities)
+  Columns 20-32: Arms Spec Talents (Only for Arms)
+  Columns 33-43: ?Fury Spec Talents (Only for Fury)
+  Columns 44-51: Protection Warrior Spec Talents (Only for Protection)
+  Columns 52-54: Mountain Thane Talents (Protection, Fury)
+  Columns 55-57: Colossus Talents (Arms, Protection)
+  Columns 58-68: Slayers Talents (Arms, Fury)
+
+Row 2 (Sub-headers) - Notable entries:
+  Column 1: Attacks
+  Column 2: Feats
+  Column 3: Auto Grant
+  Column 10: AutoGrant
+  Column 12: Choose one for this per level
+  Column 20: Auto Grant
+  Column 24: Pick one for this level
+  Column 33: Auto Grant
+  Column 36: Pick one for this level
+  Column 44: Auto Grant
+  Column 45: Pick one for this level
+  Column 52: Auto Granted
+  Column 55: Auto Granted
+  Column 58: Auto Granted
+
+Row 3 (Types) - Notable entries:
+  Column 3: Offensive Abilities (Auto Grant)
+  Column 4: Utility Abilities (Auto Grant)
+  Column 5: Offensive Abilities (Auto Grant)
+  Column 6: Utility Abilities (Auto Grant)
+  Column 7: Passives (Auto Grant)
+  Column 8: Offensive Abilities (Auto Grant)
+  Column 9: Utility Abilities (Auto Grant)
+  Column 10: Stance
+  Column 11: Stance
+  Column 12: General Class Abilities
+  Column 20: Passive
+  Column 22: Arms Ability
+  Column 33: Passive
+  Column 35: Fury Ability
+  Column 44: Protection Ability
+  Column 52: Mountain Thane Talents
+  Column 55: Colossus Talents
+  Column 58: Slayers Talents
+
+=== DATA ROWS (Levels 1-20) ===
+
+Abilities per level:
+  Level 1: 16 abilities
+  Level 2: 8 abilities
+  Level 3: 21 abilities
+  Level 4: 22 abilities
+  Level 5: 25 abilities
+  Level 6: 29 abilities
+  Level 7: 35 abilities
+  Level 8: 16 abilities
+  Level 9: 25 abilities
+  Level 10: 23 abilities
+  Level 11: 4 abilities
+  Level 12: 3 abilities
+  Level 13: 0 abilities
+  Level 14: 0 abilities
+  Level 15: 0 abilities
+  Level 16: 0 abilities
+  Level 17: 0 abilities
+  Level 18: 0 abilities
+  Level 19: 0 abilities
+  Level 20: 0 abilities
+
+=== COLUMN USAGE ANALYSIS ===
+
+Columns with data (showing header and usage count):
+  Column 0: 20 rows - Level
+  Column 1: 1 rows - BG3 (All Classes)
+  Column 2: 6 rows - (continuation of previous header)
+  Column 3: 7 rows - Baseline Arms Warrior Abilities (This is the Ar...
+  Column 4: 5 rows - (continuation of previous header)
+  Column 5: 8 rows - Baseline Protection Warrior Spells (This is the...
+  Column 6: 5 rows - (continuation of previous header)
+  Column 7: 4 rows - (continuation of previous header)
+  Column 8: 7 rows - Baseline Fury Warrior Abilities (This is the Fu...
+  Column 9: 5 rows - (continuation of previous header)
+  Column 10: 1 rows - Warrior Class Talents (All subclasses has these...
+  Column 11: 1 rows - (continuation of previous header)
+  Column 12: 9 rows - (continuation of previous header)
+  Column 13: 9 rows - (continuation of previous header)
+  Column 14: 9 rows - (continuation of previous header)
+  Column 15: 7 rows - (continuation of previous header)
+  Column 16: 5 rows - (continuation of previous header)
+  Column 17: 5 rows - (continuation of previous header)
+  Column 18: 1 rows - (continuation of previous header)
+  Column 19: 1 rows - (continuation of previous header)
+  Column 20: 1 rows - Arms Spec Talents (Only for Arms)
+  Column 21: 1 rows - (continuation of previous header)
+  Column 22: 1 rows - (continuation of previous header)
+  Column 23: 1 rows - (continuation of previous header)
+  Column 24: 8 rows - (continuation of previous header)
+  Column 25: 8 rows - (continuation of previous header)
+  Column 26: 8 rows - (continuation of previous header)
+  Column 27: 5 rows - (continuation of previous header)
+  Column 28: 5 rows - (continuation of previous header)
+  Column 29: 4 rows - (continuation of previous header)
+  Column 30: 3 rows - (continuation of previous header)
+  Column 31: 2 rows - (continuation of previous header)
+  Column 32: 1 rows - (continuation of previous header)
+  Column 33: 1 rows - ?Fury Spec Talents (Only for Fury)
+  Column 34: 1 rows - (continuation of previous header)
+  Column 35: 2 rows - (continuation of previous header)
+  Column 36: 8 rows - (continuation of previous header)
+  Column 37: 8 rows - (continuation of previous header)
+  Column 38: 8 rows - (continuation of previous header)
+  Column 39: 6 rows - (continuation of previous header)
+  Column 40: 5 rows - (continuation of previous header)
+  Column 41: 5 rows - (continuation of previous header)
+  Column 42: 2 rows - (continuation of previous header)
+  Column 43: 1 rows - (continuation of previous header)
+  Column 44: 1 rows - Protection Warrior Spec Talents (Only for Prote...
+  Column 45: 9 rows - (continuation of previous header)
+  Column 46: 9 rows - (continuation of previous header)
+  Column 47: 8 rows - (continuation of previous header)
+  Column 48: 8 rows - (continuation of previous header)
+  Column 49: 5 rows - (continuation of previous header)
+  Column 50: 3 rows - (continuation of previous header)
+  Column 51: 2 rows - (continuation of previous header)
+  Column 52: 5 rows - Mountain Thane Talents (Protection, Fury)
+  Column 53: 3 rows - (continuation of previous header)
+  Column 54: 3 rows - (continuation of previous header)
+  Column 55: 5 rows - Colossus Talents (Arms, Protection)
+  Column 56: 3 rows - (continuation of previous header)
+  Column 57: 3 rows - (continuation of previous header)
+  Column 58: 5 rows - Slayers Talents (Arms, Fury)
+  Column 59: 3 rows - (continuation of previous header)
+  Column 60: 3 rows - (continuation of previous header)
+
+=== ALL UNIQUE ABILITIES FOUND ===
+Total unique abilities: 186
+
+Abilities appearing at multiple levels:
+  ?Whirlwind?: L12, L1, L1
+  Sudden Death: L6, L4, L4
+  ?Anger Management?: L8, L9, L6
+  ?Execute?: L3, L10, L7
+  ?Victory Rush?: L5, L9, L9
+  ?Massacre?: L9, L7, L7
+  ?Ravager?: L10, L9, L9
+  ?Heroic Throw?: L5, L11, L11
+  ?Hamstring?: L5, L11, L9
+  ?Shield Slam?: L12, L12, L1
+  ?Charge?: L3, L5, L1
+  ?Slam?: L3, L7, L7
+  ?Battle Shout?: L5, L11, L7
+  ?Taunt?: L1, L9, L9
+  ?Pummel?: L3, L5, L7
+  ?Bloodsurge?: L5, L4
+  ?Improved Execute?: L3, L3
+  ?Shield Block?: L3, L5
+  ?Bloodborne?: L7, L7
+  ?Unhinged?: L10, L10
+  ?Rend?: L5, L6
+  ?Fueled by Violence?: L5, L4
+  ?Bladestorm?: L9, L9
+  ?Critical Thinking?: L8, L8
+  ?Ignore Pain?: L1, L4
+  ?Berserker Rage?: L1, L7
+
+=== DETAILED LEVEL-BY-LEVEL BREAKDOWN ===
+
+--- Level 1 (16 abilities) ---
+  Baseline/BG3:
+    [Col 3] ?Whirlwind?
+    [Col 4] ?Charge?
+    [Col 5] ?Shield Slam?
+    [Col 6] ?Taunt?
+    [Col 7] ?Mastery: Critical Block?
+    [Col 8] ?Whirlwind?
+    [Col 9] ?Berserker Rage?
+  Warrior Class Talents:
+    [Col 10] ?Battle Stance?
+    [Col 11] ?Defensive Stance?
+    [Col 20] ?Seasoned Soldier?
+    [Col 21] ?Mastery: Deep Wounds?
+    [Col 22] ?Mortal Strike?
+  Arms Spec Talents:
+    [Col 33] ?Titan's Grip?
+    [Col 34] ?Mastery: Unshackled Fury?
+    [Col 35] ?Bloodthirst?
+  Fury Spec Talents:
+    [Col 44] ?Ignore Pain?
+
+--- Level 2 (8 abilities) ---
+  Warrior Class Talents:
+    [Col 12] ?Fast Footwork?
+    [Col 13] ?War Machine?
+    [Col 14] ?Leeching Strikes?
+    [Col 15] ?Intervene?
+  Arms Spec Talents:
+    [Col 23] ?Overpower?
+    [Col 35] ?Raging Blow?
+  Fury Spec Talents:
+    [Col 45] ?Revenge?
+    [Col 46] ?Demoralizing Shout?
+
+--- Level 3 (21 abilities) ---
+  Baseline/BG3:
+    [Col 3] ?Execute?
+    [Col 4] ?Pummel?
+    [Col 5] ?Devastate?
+    [Col 6] ?Shield Block?
+    [Col 7] ?Riposte?
+    [Col 8] ?Slam?
+    [Col 9] ?Charge?
+  Warrior Class Talents:
+    [Col 12] ?Impending Victory?
+    [Col 13] ?Heroic Leap?
+    [Col 14] ?Storm Bolt?
+  Arms Spec Talents:
+    [Col 24] ?Martial Prowess?
+    [Col 25] ?Die by the Sword?
+    [Col 26] ?Improved Execute?
+  Fury Spec Talents:
+    [Col 36] ?Frenzied Enrage?
+    [Col 37] ?Powerful Enrage?
+    [Col 38] ?Enraged Regeneration?
+    [Col 39] ?Improved Execute?
+    [Col 45] ?Brace For Impact?
+    [Col 46] ?Armor Specialization?
+    [Col 47] ?Fight Through the Flames?
+  Protection Spec Talents:
+    [Col 48] ?Devastator?
+
+--- Level 4 (22 abilities) ---
+  Warrior Class Talents:
+    [Col 12] ?Intimidating Shout?
+    [Col 13] ?Second Wind?
+    [Col 14] ?Frothing Berserker?
+    [Col 15] ?Bounding Stride?
+    [Col 16] ?Pain and Gain?
+    [Col 17] ?Thunder Clap?
+  Arms Spec Talents:
+    [Col 24] ?Improved Overpower?
+    [Col 25] ?Bloodsurge?
+    [Col 26] ?Fueled by Violence?
+    [Col 27] ?Storm Wall?
+    [Col 28] ?Ignore Pain?
+    [Col 29] ?Sudden Death?
+    [Col 30] ?Fervor of Battle?
+  Fury Spec Talents:
+    [Col 36] ?Improved Bloodthirst?
+    [Col 37] ?Fresh Meat?
+    [Col 38] ?Warpaint?
+    [Col 39] ?Invigorating Fury?
+    [Col 40] ?Sudden Death?
+    [Col 41] ?Cruelty?
+    [Col 45] ?Disrupting Shout?
+    [Col 46] ?Best Served Cold?
+    [Col 47] ?Strategist?
+
+--- Level 5 (25 abilities) ---
+  Baseline/BG3:
+    [Col 3] ?Hamstring?
+    [Col 4] ?Battle Shout?
+    [Col 5] ?Heroic Throw?
+    [Col 6] ?Charge?
+    [Col 7] ?Shield Block?
+    [Col 8] ?Victory Rush?
+    [Col 9] ?Pummel?
+  Warrior Class Talents:
+    [Col 12] ?Cacophonous Roar?
+    [Col 13] ?Menace?
+    [Col 14] ?Spell Reflection?
+    [Col 15] ?Rallying Cry?
+    [Col 16] ?Shockwave?
+    [Col 17] ?Barbaric Training?
+  Arms Spec Talents:
+    [Col 24] ?Tactician?
+    [Col 25] ?Colossus Smash?
+    [Col 26] ?Impale?
+  Fury Spec Talents:
+    [Col 36] ?Focus in Chaos?
+    [Col 37] ?Rampage?
+    [Col 38] ?Improved Raging Blow?
+    [Col 45] ?Last Stand?
+    [Col 46] ?Instigate?
+    [Col 47] ?Rend?
+  Protection Spec Talents:
+    [Col 48] ?Bloodsurge?
+    [Col 49] ?Fueled by Violence?
+    [Col 50] ?Brutal Vitality?
+
+--- Level 6 (29 abilities) ---
+  Warrior Class Talents:
+    [Col 12] ?Honed Reflexes?
+    [Col 13] ?Crushing Force?
+    [Col 14] ?Bitter Immunity?
+    [Col 15] ?Overwhelming Rage?
+    [Col 16] ?Rumbling Earth?
+    [Col 17] ?Reinforced Plates?
+  Arms Spec Talents:
+    [Col 24] ?Skullsplitter?
+    [Col 25] ?Rend?
+    [Col 26] ?Finishing Blows?
+    [Col 27] ?Anger Management?
+    [Col 28] ?Spiteful Serenity?
+    [Col 29] ?Exhilarating Blows?
+    [Col 30] ?Collateral Damage?
+    [Col 31] ?Cleave?
+  Fury Spec Talents:
+    [Col 36] ?Single
+    [Col 37] ?Cold Steel, Hot Blood?
+    [Col 38] ?Vicious Contempt?
+    [Col 39] ?Frenzy?
+    [Col 40] ?Hack and Slash?
+    [Col 41] ?Slaughtering Strikes?
+    [Col 42] ?Ashen Juggernaut?
+    [Col 43] ?Improved Whirlwind?
+    [Col 45] ?Unnerving Focus?
+    [Col 46] Bolster
+    [Col 47] ?Thunderlord?
+  Protection Spec Talents:
+    [Col 48] Sudden Death
+    [Col 49] Heavy Repercussions
+    [Col 50] Punish
+    [Col 51] Hunker Down
+
+--- Level 7 (35 abilities) ---
+  Baseline/BG3:
+    [Col 3] ?Slam?
+    [Col 4] ?Berserker Rage?
+    [Col 5] ?Slam?
+    [Col 6] ?Pummel?
+    [Col 7] ?Vanguard?
+    [Col 8] ?Execute?
+    [Col 9] ?Battle Shout?
+  Warrior Class Talents:
+    [Col 12] ?Wrecking Throw?
+    [Col 13] ?Shattering Throw?
+    [Col 14] ?Sidearm?
+    [Col 15] ?Double Time?
+    [Col 16] ?Seismic Reverberation?
+    [Col 17] ?Concussive Blows?
+    [Col 18] ?Berserker Shout?
+    [Col 19] ?Piercing Howl?
+  Arms Spec Talents:
+    [Col 24] ?Bloodborne?
+    [Col 25] ?Dreadnaught?
+    [Col 26] ?Strength of Arms?
+    [Col 27] ?In For The Kill?
+    [Col 28] ?Test of Might?
+    [Col 29] ?Blunt Instruments?
+    [Col 30] ?Warbreaker?
+    [Col 31] ?Massacre?
+    [Col 32] ?Storm of Swords?
+  Fury Spec Talents:
+    [Col 36] ?Bloodborne?
+    [Col 37] ?Bloodcraze?
+    [Col 38] ?Recklessness?
+    [Col 39] ?Massacre?
+    [Col 40] ?Wrath and Fury?
+    [Col 41] ?Meat Cleaver?
+    [Col 45] ?Tough as Nails?
+    [Col 46] ?Shield Wall?
+    [Col 47] ?Enduring Defenses?
+  Protection Spec Talents:
+    [Col 48] Unyielding Stance
+    [Col 49] Red Right Hand
+
+--- Level 8 (16 abilities) ---
+  Warrior Class Talents:
+    [Col 12] ?Cruel Strikes?
+    [Col 13] ?Wild Strikes?
+    [Col 14] ?Dual Wield Specialization?
+    [Col 15] ?Armored to the Teeth?
+  Arms Spec Talents:
+    [Col 24] ?Deft Experience?
+    [Col 25] ?Valor in Victory?
+    [Col 26] ?Critical Thinking?
+  Fury Spec Talents:
+    [Col 36] ?Raging Armaments?
+    [Col 37] ?Swift Strikes?
+    [Col 38] ?Critical Thinking?
+    [Col 45] Defender's Aegis
+    [Col 46] Impenetrable Wall
+    [Col 47] ?Focused Vigor?
+  Protection Spec Talents:
+    [Col 48] ?Shield Specialization?
+    [Col 49] ?Enduring Alacrity?
+    [Col 50] ?Anger Management?
+
+--- Level 9 (25 abilities) ---
+  Baseline/BG3:
+    [Col 3] ?Victory Rush?
+    [Col 4] ?Taunt?
+    [Col 5] ?Victory Rush?
+    [Col 8] ?Hamstring?
+    [Col 9] ?Taunt?
+  Warrior Class Talents:
+    [Col 12] ?Thunderous Roar?
+    [Col 13] ?Avatar?
+    [Col 14] ?Champion's Spear?
+  Arms Spec Talents:
+    [Col 24] ?Battlelord?
+    [Col 25] ?Bloodletting?
+    [Col 26] ?Bladestorm?
+    [Col 27] ?Ravager?
+    [Col 28] ?Sharpened Blades?
+    [Col 29] ?Juggernaut?
+  Fury Spec Talents:
+    [Col 36] ?Onslaught?
+    [Col 37] ?Anger Management?
+    [Col 38] ?Reckless Abandon?
+    [Col 39] ?Bladestorm?
+    [Col 40] ?Ravager?
+    [Col 41] ?Odyn's Fury?
+    [Col 45] ?Massacre?
+    [Col 46] ?Booming Voice?
+    [Col 47] ?Indomitable?
+  Protection Spec Talents:
+    [Col 48] ?Violent Outburst?
+    [Col 49] Heavy Handed
+
+--- Level 10 (23 abilities) ---
+  Baseline/BG3:
+    [Col 5] ?Execute?
+  Warrior Class Talents:
+    [Col 12] ?Uproar?
+    [Col 13] ?Thunderous Words?
+    [Col 14] ?Berserker's Torment?
+    [Col 15] ?Titan's Torment?
+    [Col 16] ?Piercing Challenge?
+    [Col 17] ?Champion's Might?
+  Arms Spec Talents:
+    [Col 24] ?Fatality?
+    [Col 25] ?Dance of Death?
+    [Col 26] ?Unhinged?
+    [Col 27] ?Merciless Bonegrinder?
+    [Col 28] ?Executioner's Precision?
+  Fury Spec Talents:
+    [Col 36] ?Tenderize?
+    [Col 37] ?Unhinged?
+    [Col 38] ?Storm of Steel?
+    [Col 39] ?Unbridled Ferocity?
+    [Col 40] ?Depths of Insanity?
+    [Col 41] ?Dancing Blades?
+    [Col 42] ?Titanic Rage?
+    [Col 45] ?Shield Charge?
+    [Col 46] ?Battle-Scarred Veteran?
+    [Col 47] Whirling Blade
+  Protection Spec Talents:
+    [Col 48] ?Ravager?
+
+--- Level 11 (4 abilities) ---
+  Baseline/BG3:
+    [Col 3] ?Heroic Throw?
+    [Col 5] ?Hamstring?
+    [Col 6] ?Battle Shout?
+    [Col 8] ?Heroic Throw?
+
+--- Level 12 (3 abilities) ---
+  Baseline/BG3:
+    [Col 3] ?Shield Slam?
+    [Col 5] ?Whirlwind?
+    [Col 8] ?Shield Slam?
+
+=== SUMMARY STATISTICS ===
+Total rows: 23
+Header rows: 3
+Data rows (levels 1-20): 20
+Total columns: 69
+Columns with data: 61
+Total unique abilities: 186
+Abilities appearing multiple times: 26
+Total ability instances (with duplicates): 227
+
+=== SCAN COMPLETE ===

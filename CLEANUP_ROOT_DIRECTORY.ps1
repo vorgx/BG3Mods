@@ -37,7 +37,8 @@ $KeepFiles = @(
     "INDEX.md",
     "BG3Mods.code-workspace",
     "settings.json",
-    "CLEANUP_SOURCE_OF_TRUTH.ps1"
+    "CLEANUP_SOURCE_OF_TRUTH.ps1",
+    "CLEANUP_ROOT_DIRECTORY.ps1"
 )
 
 # Define destination folders and their files
@@ -47,7 +48,8 @@ $MoveMap = @{
         "ENRICHMENT_COMPLETE_SUMMARY.md",
         "ENRICHMENT_STATUS_REPORT.md",
         "ENRICHMENT_STRATEGY_PIVOT.md",
-        "HANDOVER_ABILITY_DATABASE_OCT20.md"
+        "HANDOVER_ABILITY_DATABASE_OCT20.md",
+        "HANDOVER_NEXT_SESSION_OCT21.md"
     )
     
     # Planning Documents (Archive)

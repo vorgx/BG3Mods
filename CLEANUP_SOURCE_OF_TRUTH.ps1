@@ -39,11 +39,12 @@ foreach ($folder in $archiveFolders) {
 
 Write-Host ""
 
-# FILES TO KEEP IN ROOT (4 files only)
+# FILES TO KEEP IN ROOT (5 files only)
 $keepFiles = @(
     "SOURCE_OF_TRUTH.md",
     "AbilityDatabase_Warrior_FullyEnriched.csv",
     "Warrior Progression for all subclasses.xlsx",
+    "Warrior Progression for all subclasses and Default hero structure.csv",
     "README.md"
 )
 
@@ -61,6 +62,17 @@ $archiveMap = @{
     "AbilityDatabase_Warrior_Original.csv" = "Archive\OldVersions"
     "AbilityDatabase_Warrior_PreReclassify.csv" = "Archive\OldVersions"
     "Warrior Progression for all subclasses.csv" = "Archive\OldVersions"
+    
+    # CSV backups (recent backups from Oct 21-22)
+    "AbilityDatabase_Warrior_FullyEnriched_BACKUP_20251021_234722.csv" = "Archive\OldVersions"
+    "AbilityDatabase_Warrior_FullyEnriched_BACKUP_20251022_015617.csv" = "Archive\OldVersions"
+    "AbilityDatabase_Warrior_FullyEnriched_BACKUP_20251022_015705.csv" = "Archive\OldVersions"
+    "AbilityDatabase_Warrior_FullyEnriched_BACKUP_20251022_015901.csv" = "Archive\OldVersions"
+    "AbilityDatabase_Warrior_FullyEnriched_BACKUP_20251022_015944.csv" = "Archive\OldVersions"
+    "AbilityDatabase_Warrior_FullyEnriched_BACKUP_20251022_020122.csv" = "Archive\OldVersions"
+    "AbilityDatabase_Warrior_FullyEnriched_BACKUP_20251022_020619.csv" = "Archive\OldVersions"
+    "AbilityDatabase_Warrior_FullyEnriched_BACKUP_20251022_020819.csv" = "Archive\OldVersions"
+    "AbilityUnlockMapping.csv" = "Archive\OldVersions"
     
     # Enrichment batches
     "ENRICHMENT_BATCH_20251020_235804.csv" = "Archive\EnrichmentBatches"
