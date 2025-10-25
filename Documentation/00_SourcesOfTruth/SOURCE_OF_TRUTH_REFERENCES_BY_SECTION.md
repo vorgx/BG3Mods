@@ -459,7 +459,6 @@ Located in `Documentation/08_WoWSourceMaterial/`:
 - Section [7] Lists - Spells (needs Excel reference, EXCEL_ABILITY_COUNT_SUMMARY.md)
 - Section [8] Lists - Status (needs implementation)
 - Section [9] Lists - Passive (needs Excel reference, EXCEL_ABILITY_COUNT_SUMMARY.md)
-- Section [10] Action Resources (needs ActionResourceDefinitions.lsx details)
 - Section [11] File Transformation Status (needs FILES 4-15 status)
 
 ---

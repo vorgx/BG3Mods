@@ -1,0 +1,182 @@
+// ========================================
+// WARRIOR SPELL_PROJECTILE DEFINITIONS
+// Generated: October 24, 2025
+// Patch: 8 Compatible (4.8.0.10)
+// Source: AbilityDatabase_Warrior_FullyEnriched.csv
+// ========================================
+// Total Spell_Projectile: 6
+// ========================================
+
+// Champion's Spear
+// Implementation: Aligns with other 90s cooldowns. Not as useful as Thunderous Roar generally.
+new entry "Projectile_WAR_Champion_s_Spear"
+type "SpellData"
+data "SpellType" "Projectile"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "AIFlags" "CanNotUse"
+data "UseCosts" "ActionPoint:1;Rage:"
+data "SpellProperties" ""
+data "TargetRadius" "18"  // TODO: Adjust range
+data "TargetConditions" "Character() and not Dead()"
+data "ProjectileCount" "1"
+data "Icon" "Action_Projectile"  // TODO: Create custom icon
+data "DisplayName" "h78fe4967g01e3g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Description" "h78fe4967g01e4g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "TooltipDamageList" "DealDamage(1d6,Physical)"  // TODO: Use correct damage formula
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "PrepareEffect" "VFX_Barbarian_Rage_Prepare:Dummy_BodyFX;VFX_Weapons_Fire_Glow_01:Dummy_MainHandFX"  // TODO: Replace with Warrior VFX
+data "CastEffect" "RS3_Impact_Blood_Celestial_01:TargetPosition:attach"  // TODO: Replace with Warrior VFX
+data "TargetEffect" "RS3_Explosion_Blood_01"  // TODO: Replace with Warrior VFX
+data "SpellAnimation" "Action_Attack;::;8f46d84d-6bce-4e89-8c32-01f0dc0d72ce;;Sitting;Self;true;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,"  // TODO: Use Barbarian/Fighter martial animation
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;IsSpell;HasHighGroundRangeExtension"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType,Magical)"  // TODO: Replace with actual mechanics
+// BG3 Mechanic: 
+// TODO: Implement spell mechanics based on:
+// Aligns with other 90s cooldowns. Not as useful as Thunderous Roar generally.
+
+// Heroic Throw
+// Implementation: Wowhead: https://www.wowhead.com/spell=57755
+new entry "Projectile_WAR_Heroic_Throw"
+type "SpellData"
+data "SpellType" "Projectile"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "AIFlags" "CanNotUse"
+data "UseCosts" "ActionPoint:1;Rage:"
+data "SpellProperties" ""
+data "TargetRadius" "18"  // TODO: Adjust range
+data "TargetConditions" "Character() and not Dead()"
+data "ProjectileCount" "1"
+data "Icon" "Action_Projectile"  // TODO: Create custom icon
+data "DisplayName" "h78fe4967g01e5g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Description" "h78fe4967g01e6g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "TooltipDamageList" "DealDamage(1d6,Physical)"  // TODO: Use correct damage formula
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "PrepareEffect" "VFX_Barbarian_Rage_Prepare:Dummy_BodyFX;VFX_Weapons_Fire_Glow_01:Dummy_MainHandFX"  // TODO: Replace with Warrior VFX
+data "CastEffect" "RS3_Impact_Blood_Celestial_01:TargetPosition:attach"  // TODO: Replace with Warrior VFX
+data "TargetEffect" "RS3_Explosion_Blood_01"  // TODO: Replace with Warrior VFX
+data "SpellAnimation" "Action_Attack;::;8f46d84d-6bce-4e89-8c32-01f0dc0d72ce;;Sitting;Self;true;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,"  // TODO: Use Barbarian/Fighter martial animation
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;IsSpell;HasHighGroundRangeExtension"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType,Magical)"  // TODO: Replace with actual mechanics
+// BG3 Mechanic: 
+// TODO: Implement spell mechanics based on:
+// Wowhead: https://www.wowhead.com/spell=57755
+
+// Shattering Throw
+// Implementation: Immunity-breaking throw. Rarely used in PvE, more common in PvP.
+new entry "Projectile_WAR_Shattering_Throw"
+type "SpellData"
+data "SpellType" "Projectile"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "AIFlags" "CanNotUse"
+data "UseCosts" "ActionPoint:1;Rage:"
+data "SpellProperties" ""
+data "TargetRadius" "18"  // TODO: Adjust range
+data "TargetConditions" "Character() and not Dead()"
+data "ProjectileCount" "1"
+data "Icon" "Action_Projectile"  // TODO: Create custom icon
+data "DisplayName" "h78fe4967g01e7g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Description" "h78fe4967g01e8g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "TooltipDamageList" "DealDamage(1d6,Physical)"  // TODO: Use correct damage formula
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "PrepareEffect" "VFX_Barbarian_Rage_Prepare:Dummy_BodyFX;VFX_Weapons_Fire_Glow_01:Dummy_MainHandFX"  // TODO: Replace with Warrior VFX
+data "CastEffect" "RS3_Impact_Blood_Celestial_01:TargetPosition:attach"  // TODO: Replace with Warrior VFX
+data "TargetEffect" "RS3_Explosion_Blood_01"  // TODO: Replace with Warrior VFX
+data "SpellAnimation" "Action_Attack;::;8f46d84d-6bce-4e89-8c32-01f0dc0d72ce;;Sitting;Self;true;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,"  // TODO: Use Barbarian/Fighter martial animation
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;IsSpell;HasHighGroundRangeExtension"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType,Magical)"  // TODO: Replace with actual mechanics
+// BG3 Mechanic: 
+// TODO: Implement spell mechanics based on:
+// Immunity-breaking throw. Rarely used in PvE, more common in PvP.
+
+// Storm Bolt
+// Implementation: Wowhead: https://www.wowhead.com/spell=107570
+new entry "Projectile_WAR_Storm_Bolt"
+type "SpellData"
+data "SpellType" "Projectile"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "AIFlags" "CanNotUse"
+data "UseCosts" "ActionPoint:1;Rage:"
+data "SpellProperties" ""
+data "TargetRadius" "18"  // TODO: Adjust range
+data "TargetConditions" "Character() and not Dead()"
+data "ProjectileCount" "1"
+data "Icon" "Action_Projectile"  // TODO: Create custom icon
+data "DisplayName" "h78fe4967g01e9g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Description" "h78fe4967g01eag0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "TooltipDamageList" "DealDamage(1d6,Physical)"  // TODO: Use correct damage formula
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "PrepareEffect" "VFX_Barbarian_Rage_Prepare:Dummy_BodyFX;VFX_Weapons_Fire_Glow_01:Dummy_MainHandFX"  // TODO: Replace with Warrior VFX
+data "CastEffect" "RS3_Impact_Blood_Celestial_01:TargetPosition:attach"  // TODO: Replace with Warrior VFX
+data "TargetEffect" "RS3_Explosion_Blood_01"  // TODO: Replace with Warrior VFX
+data "SpellAnimation" "Action_Attack;::;8f46d84d-6bce-4e89-8c32-01f0dc0d72ce;;Sitting;Self;true;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,"  // TODO: Use Barbarian/Fighter martial animation
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;IsSpell;HasHighGroundRangeExtension"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType,Magical)"  // TODO: Replace with actual mechanics
+// BG3 Mechanic: 
+// TODO: Implement spell mechanics based on:
+// Wowhead: https://www.wowhead.com/spell=107570
+
+// Storm Bolts
+// Implementation: Mountain Thane ability - Lightning bolt projectile attacks.
+new entry "Projectile_WAR_Storm_Bolts"
+type "SpellData"
+data "SpellType" "Projectile"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "AIFlags" "CanNotUse"
+data "UseCosts" "ActionPoint:1;Rage:"
+data "SpellProperties" ""
+data "TargetRadius" "18"  // TODO: Adjust range
+data "TargetConditions" "Character() and not Dead()"
+data "ProjectileCount" "1"
+data "Icon" "Action_Projectile"  // TODO: Create custom icon
+data "DisplayName" "h78fe4967g01ebg0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Description" "h78fe4967g01ecg0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "TooltipDamageList" "DealDamage(1d6,Physical)"  // TODO: Use correct damage formula
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "PrepareEffect" "VFX_Barbarian_Rage_Prepare:Dummy_BodyFX;VFX_Weapons_Fire_Glow_01:Dummy_MainHandFX"  // TODO: Replace with Warrior VFX
+data "CastEffect" "RS3_Impact_Blood_Celestial_01:TargetPosition:attach"  // TODO: Replace with Warrior VFX
+data "TargetEffect" "RS3_Explosion_Blood_01"  // TODO: Replace with Warrior VFX
+data "SpellAnimation" "Action_Attack;::;8f46d84d-6bce-4e89-8c32-01f0dc0d72ce;;Sitting;Self;true;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,"  // TODO: Use Barbarian/Fighter martial animation
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;IsSpell;HasHighGroundRangeExtension"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType,Magical)"  // TODO: Replace with actual mechanics
+// BG3 Mechanic: DealDamage(Primary) + ApplyStatus(STUNNED,2turns) + Random(2,EnemiesWithin30ft):ApplyStatus(STUNNED,1turn)
+// TODO: Implement spell mechanics based on:
+// Mountain Thane ability - Lightning bolt projectile attacks.
+
+// Wrecking Throw
+// Implementation: Highly effective against absorption shields. Rarely major gain in PvE.
+new entry "Projectile_WAR_Wrecking_Throw"
+type "SpellData"
+data "SpellType" "Projectile"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "AIFlags" "CanNotUse"
+data "UseCosts" "ActionPoint:1;Rage:"
+data "SpellProperties" ""
+data "TargetRadius" "18"  // TODO: Adjust range
+data "TargetConditions" "Character() and not Dead()"
+data "ProjectileCount" "1"
+data "Icon" "Action_Projectile"  // TODO: Create custom icon
+data "DisplayName" "h78fe4967g01edg0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Description" "h78fe4967g01eeg0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "TooltipDamageList" "DealDamage(1d6,Physical)"  // TODO: Use correct damage formula
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "PrepareEffect" "VFX_Barbarian_Rage_Prepare:Dummy_BodyFX;VFX_Weapons_Fire_Glow_01:Dummy_MainHandFX"  // TODO: Replace with Warrior VFX
+data "CastEffect" "RS3_Impact_Blood_Celestial_01:TargetPosition:attach"  // TODO: Replace with Warrior VFX
+data "TargetEffect" "RS3_Explosion_Blood_01"  // TODO: Replace with Warrior VFX
+data "SpellAnimation" "Action_Attack;::;8f46d84d-6bce-4e89-8c32-01f0dc0d72ce;;Sitting;Self;true;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,"  // TODO: Use Barbarian/Fighter martial animation
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;IsSpell;HasHighGroundRangeExtension"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType,Magical)"  // TODO: Replace with actual mechanics
+// BG3 Mechanic: 
+// TODO: Implement spell mechanics based on:
+// Highly effective against absorption shields. Rarely major gain in PvE.

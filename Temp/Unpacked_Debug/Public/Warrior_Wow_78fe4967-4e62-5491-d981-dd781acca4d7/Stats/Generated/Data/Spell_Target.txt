@@ -1,0 +1,521 @@
+﻿// ========================================
+// WARRIOR SPELL_TARGET DEFINITIONS
+// Generated: October 24, 2025
+// Patch: 8 Compatible (4.8.0.10)
+// Source: AbilityDatabase_Warrior_FullyEnriched.csv
+// ========================================
+// Total Spell_Target: 19
+// ========================================
+
+// Bloodthirst
+// Implementation: Wowhead: https://www.wowhead.com/spell=23881
+new entry "Target_WAR_Bloodthirst"
+type "SpellData"
+data "SpellType" "Target"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "AIFlags" "CanNotUse"
+data "UseCosts" "ActionPoint:1;Rage:"
+data "SpellProperties" ""
+data "TargetConditions" "Character() and not Dead()"
+data "Icon" "Action_Attack"  // TODO: Create custom icon
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "TooltipDamageList" "DealDamage(1d6,Physical)"  // TODO: Use correct damage formula
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "PrepareEffect" "VFX_Barbarian_Rage_Prepare:Dummy_BodyFX;VFX_Weapons_Fire_Glow_01:Dummy_MainHandFX"  // TODO: Replace with Warrior VFX
+data "CastEffect" "RS3_Impact_Blood_Celestial_01:TargetPosition:attach"  // TODO: Replace with Warrior VFX
+data "TargetEffect" "RS3_Explosion_Blood_01"  // TODO: Replace with Warrior VFX
+data "SpellAnimation" "Action_Attack;::;8f46d84d-6bce-4e89-8c32-01f0dc0d72ce;;Sitting;Self;true;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,"  // TODO: Use Barbarian/Fighter martial animation
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;IsSpell;HasHighGroundRangeExtension"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType,Magical)"  // TODO: Replace with actual mechanics
+// BG3 Mechanic: 
+// TODO: Implement spell mechanics based on:
+// Wowhead: https://www.wowhead.com/spell=23881
+
+// Colossus Smash
+// Implementation: Wowhead: https://www.wowhead.com/spell=167105
+new entry "Target_WAR_Colossus_Smash"
+type "SpellData"
+data "SpellType" "Target"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "AIFlags" "CanNotUse"
+data "UseCosts" "ActionPoint:1;Rage:"
+data "SpellProperties" ""
+data "TargetConditions" "Character() and not Dead()"
+data "Icon" "Action_Attack"  // TODO: Create custom icon
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "TooltipDamageList" "DealDamage(1d6,Physical)"  // TODO: Use correct damage formula
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "PrepareEffect" "VFX_Barbarian_Rage_Prepare:Dummy_BodyFX;VFX_Weapons_Fire_Glow_01:Dummy_MainHandFX"  // TODO: Replace with Warrior VFX
+data "CastEffect" "RS3_Impact_Blood_Celestial_01:TargetPosition:attach"  // TODO: Replace with Warrior VFX
+data "TargetEffect" "RS3_Explosion_Blood_01"  // TODO: Replace with Warrior VFX
+data "SpellAnimation" "Action_Attack;::;8f46d84d-6bce-4e89-8c32-01f0dc0d72ce;;Sitting;Self;true;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,"  // TODO: Use Barbarian/Fighter martial animation
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;IsSpell;HasHighGroundRangeExtension"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType,Magical)"  // TODO: Replace with actual mechanics
+// BG3 Mechanic: 
+// TODO: Implement spell mechanics based on:
+// Wowhead: https://www.wowhead.com/spell=167105
+
+// Demolish
+// Implementation: Colossus active ability - Massive damage with stun.
+new entry "Target_WAR_Demolish"
+type "SpellData"
+data "SpellType" "Target"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "AIFlags" "CanNotUse"
+data "UseCosts" "ActionPoint:1;Rage:"
+data "SpellProperties" ""
+data "TargetConditions" "Character() and not Dead()"
+data "Icon" "Action_Attack"  // TODO: Create custom icon
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "TooltipDamageList" "DealDamage(1d6,Physical)"  // TODO: Use correct damage formula
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "PrepareEffect" "VFX_Barbarian_Rage_Prepare:Dummy_BodyFX;VFX_Weapons_Fire_Glow_01:Dummy_MainHandFX"  // TODO: Replace with Warrior VFX
+data "CastEffect" "RS3_Impact_Blood_Celestial_01:TargetPosition:attach"  // TODO: Replace with Warrior VFX
+data "TargetEffect" "RS3_Explosion_Blood_01"  // TODO: Replace with Warrior VFX
+data "SpellAnimation" "Action_Attack;::;8f46d84d-6bce-4e89-8c32-01f0dc0d72ce;;Sitting;Self;true;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,"  // TODO: Use Barbarian/Fighter martial animation
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;IsSpell;HasHighGroundRangeExtension"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType,Magical)"  // TODO: Replace with actual mechanics
+// BG3 Mechanic: DealDamage(Hit1) + DealDamage(Hit2) + DealDamage(Hit3) + ApplyStatus(SLOWED_99,3turns)
+// TODO: Implement spell mechanics based on:
+// Colossus active ability - Massive damage with stun.
+
+// Devastate
+// Implementation: Wowhead: https://www.wowhead.com/spell=20243
+new entry "Target_WAR_Devastate"
+type "SpellData"
+data "SpellType" "Target"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "AIFlags" "CanNotUse"
+data "UseCosts" "ActionPoint:1;Rage:"
+data "SpellProperties" ""
+data "TargetConditions" "Character() and not Dead()"
+data "Icon" "Action_Attack"  // TODO: Create custom icon
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "TooltipDamageList" "DealDamage(1d6,Physical)"  // TODO: Use correct damage formula
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "PrepareEffect" "VFX_Barbarian_Rage_Prepare:Dummy_BodyFX;VFX_Weapons_Fire_Glow_01:Dummy_MainHandFX"  // TODO: Replace with Warrior VFX
+data "CastEffect" "RS3_Impact_Blood_Celestial_01:TargetPosition:attach"  // TODO: Replace with Warrior VFX
+data "TargetEffect" "RS3_Explosion_Blood_01"  // TODO: Replace with Warrior VFX
+data "SpellAnimation" "Action_Attack;::;8f46d84d-6bce-4e89-8c32-01f0dc0d72ce;;Sitting;Self;true;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,"  // TODO: Use Barbarian/Fighter martial animation
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;IsSpell;HasHighGroundRangeExtension"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType,Magical)"  // TODO: Replace with actual mechanics
+// BG3 Mechanic: 
+// TODO: Implement spell mechanics based on:
+// Wowhead: https://www.wowhead.com/spell=20243
+
+// Execute
+// Implementation: Wowhead: https://www.wowhead.com/spell=5308
+new entry "Target_WAR_Execute"
+type "SpellData"
+data "SpellType" "Target"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "AIFlags" "CanNotUse"
+data "UseCosts" "ActionPoint:1;Rage:"
+data "SpellProperties" ""
+data "TargetConditions" "Character() and not Dead()"
+data "Icon" "Action_Attack"  // TODO: Create custom icon
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "TooltipDamageList" "DealDamage(1d6,Physical)"  // TODO: Use correct damage formula
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "PrepareEffect" "VFX_Barbarian_Rage_Prepare:Dummy_BodyFX;VFX_Weapons_Fire_Glow_01:Dummy_MainHandFX"  // TODO: Replace with Warrior VFX
+data "CastEffect" "RS3_Impact_Blood_Celestial_01:TargetPosition:attach"  // TODO: Replace with Warrior VFX
+data "TargetEffect" "RS3_Explosion_Blood_01"  // TODO: Replace with Warrior VFX
+data "SpellAnimation" "Action_Attack;::;8f46d84d-6bce-4e89-8c32-01f0dc0d72ce;;Sitting;Self;true;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,"  // TODO: Use Barbarian/Fighter martial animation
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;IsSpell;HasHighGroundRangeExtension"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType,Magical)"  // TODO: Replace with actual mechanics
+// BG3 Mechanic: 
+// TODO: Implement spell mechanics based on:
+// Wowhead: https://www.wowhead.com/spell=5308
+
+// Hamstring
+// Implementation: Wowhead: https://www.wowhead.com/spell=1715
+new entry "Target_WAR_Hamstring"
+type "SpellData"
+data "SpellType" "Target"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "AIFlags" "CanNotUse"
+data "UseCosts" "ActionPoint:1;Rage:"
+data "SpellProperties" ""
+data "TargetConditions" "Character() and not Dead()"
+data "Icon" "Action_Attack"  // TODO: Create custom icon
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "TooltipDamageList" "DealDamage(1d6,Physical)"  // TODO: Use correct damage formula
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "PrepareEffect" "VFX_Barbarian_Rage_Prepare:Dummy_BodyFX;VFX_Weapons_Fire_Glow_01:Dummy_MainHandFX"  // TODO: Replace with Warrior VFX
+data "CastEffect" "RS3_Impact_Blood_Celestial_01:TargetPosition:attach"  // TODO: Replace with Warrior VFX
+data "TargetEffect" "RS3_Explosion_Blood_01"  // TODO: Replace with Warrior VFX
+data "SpellAnimation" "Action_Attack;::;8f46d84d-6bce-4e89-8c32-01f0dc0d72ce;;Sitting;Self;true;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,"  // TODO: Use Barbarian/Fighter martial animation
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;IsSpell;HasHighGroundRangeExtension"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType,Magical)"  // TODO: Replace with actual mechanics
+// BG3 Mechanic: 
+// TODO: Implement spell mechanics based on:
+// Wowhead: https://www.wowhead.com/spell=1715
+
+// Impending Victory
+// Implementation: Healing attack - alternative to Victory Rush
+new entry "Target_WAR_Impending_Victory"
+type "SpellData"
+data "SpellType" "Target"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "AIFlags" "CanNotUse"
+data "UseCosts" "ActionPoint:1;Rage:"
+data "SpellProperties" ""
+data "TargetConditions" "Character() and not Dead()"
+data "Icon" "Action_Attack"  // TODO: Create custom icon
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "TooltipDamageList" "DealDamage(1d6,Physical)"  // TODO: Use correct damage formula
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "PrepareEffect" "VFX_Barbarian_Rage_Prepare:Dummy_BodyFX;VFX_Weapons_Fire_Glow_01:Dummy_MainHandFX"  // TODO: Replace with Warrior VFX
+data "CastEffect" "RS3_Impact_Blood_Celestial_01:TargetPosition:attach"  // TODO: Replace with Warrior VFX
+data "TargetEffect" "RS3_Explosion_Blood_01"  // TODO: Replace with Warrior VFX
+data "SpellAnimation" "Action_Attack;::;8f46d84d-6bce-4e89-8c32-01f0dc0d72ce;;Sitting;Self;true;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,"  // TODO: Use Barbarian/Fighter martial animation
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;IsSpell;HasHighGroundRangeExtension"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType,Magical)"  // TODO: Replace with actual mechanics
+// BG3 Mechanic: 
+// TODO: Implement spell mechanics based on:
+// Healing attack - alternative to Victory Rush
+
+// Menace
+// Implementation: Single-target fear with knockback. More useful than Cacophonous Roar due to knockback.
+new entry "Target_WAR_Menace"
+type "SpellData"
+data "SpellType" "Target"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "AIFlags" "CanNotUse"
+data "UseCosts" "ActionPoint:1;Rage:"
+data "SpellProperties" ""
+data "TargetConditions" "Character() and not Dead()"
+data "Icon" "Action_Attack"  // TODO: Create custom icon
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "TooltipDamageList" "DealDamage(1d6,Physical)"  // TODO: Use correct damage formula
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "PrepareEffect" "VFX_Barbarian_Rage_Prepare:Dummy_BodyFX;VFX_Weapons_Fire_Glow_01:Dummy_MainHandFX"  // TODO: Replace with Warrior VFX
+data "CastEffect" "RS3_Impact_Blood_Celestial_01:TargetPosition:attach"  // TODO: Replace with Warrior VFX
+data "TargetEffect" "RS3_Explosion_Blood_01"  // TODO: Replace with Warrior VFX
+data "SpellAnimation" "Action_Attack;::;8f46d84d-6bce-4e89-8c32-01f0dc0d72ce;;Sitting;Self;true;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,"  // TODO: Use Barbarian/Fighter martial animation
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;IsSpell;HasHighGroundRangeExtension"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType,Magical)"  // TODO: Replace with actual mechanics
+// BG3 Mechanic: 
+// TODO: Implement spell mechanics based on:
+// Single-target fear with knockback. More useful than Cacophonous Roar due to knockback.
+
+// Mortal Strike
+// Implementation: Wowhead: https://www.wowhead.com/spell=12294
+new entry "Target_WAR_Mortal_Strike"
+type "SpellData"
+data "SpellType" "Target"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "AIFlags" "CanNotUse"
+data "UseCosts" "ActionPoint:1;Rage:"
+data "SpellProperties" ""
+data "TargetConditions" "Character() and not Dead()"
+data "Icon" "Action_Attack"  // TODO: Create custom icon
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "TooltipDamageList" "DealDamage(1d6,Physical)"  // TODO: Use correct damage formula
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "PrepareEffect" "VFX_Barbarian_Rage_Prepare:Dummy_BodyFX;VFX_Weapons_Fire_Glow_01:Dummy_MainHandFX"  // TODO: Replace with Warrior VFX
+data "CastEffect" "RS3_Impact_Blood_Celestial_01:TargetPosition:attach"  // TODO: Replace with Warrior VFX
+data "TargetEffect" "RS3_Explosion_Blood_01"  // TODO: Replace with Warrior VFX
+data "SpellAnimation" "Action_Attack;::;8f46d84d-6bce-4e89-8c32-01f0dc0d72ce;;Sitting;Self;true;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,"  // TODO: Use Barbarian/Fighter martial animation
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;IsSpell;HasHighGroundRangeExtension"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType,Magical)"  // TODO: Replace with actual mechanics
+// BG3 Mechanic: 
+// TODO: Implement spell mechanics based on:
+// Wowhead: https://www.wowhead.com/spell=12294
+
+// Onslaught
+// Implementation: Wowhead: https://www.wowhead.com/spell=315720
+new entry "Target_WAR_Onslaught"
+type "SpellData"
+data "SpellType" "Target"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "AIFlags" "CanNotUse"
+data "UseCosts" "ActionPoint:1;Rage:"
+data "SpellProperties" ""
+data "TargetConditions" "Character() and not Dead()"
+data "Icon" "Action_Attack"  // TODO: Create custom icon
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "TooltipDamageList" "DealDamage(1d6,Physical)"  // TODO: Use correct damage formula
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "PrepareEffect" "VFX_Barbarian_Rage_Prepare:Dummy_BodyFX;VFX_Weapons_Fire_Glow_01:Dummy_MainHandFX"  // TODO: Replace with Warrior VFX
+data "CastEffect" "RS3_Impact_Blood_Celestial_01:TargetPosition:attach"  // TODO: Replace with Warrior VFX
+data "TargetEffect" "RS3_Explosion_Blood_01"  // TODO: Replace with Warrior VFX
+data "SpellAnimation" "Action_Attack;::;8f46d84d-6bce-4e89-8c32-01f0dc0d72ce;;Sitting;Self;true;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,"  // TODO: Use Barbarian/Fighter martial animation
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;IsSpell;HasHighGroundRangeExtension"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType,Magical)"  // TODO: Replace with actual mechanics
+// BG3 Mechanic: 
+// TODO: Implement spell mechanics based on:
+// Wowhead: https://www.wowhead.com/spell=315720
+
+// Overpower
+// Implementation: Wowhead: https://www.wowhead.com/spell=7384
+new entry "Target_WAR_Overpower"
+type "SpellData"
+data "SpellType" "Target"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "AIFlags" "CanNotUse"
+data "UseCosts" "ActionPoint:1;Rage:"
+data "SpellProperties" ""
+data "TargetConditions" "Character() and not Dead()"
+data "Icon" "Action_Attack"  // TODO: Create custom icon
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "TooltipDamageList" "DealDamage(1d6,Physical)"  // TODO: Use correct damage formula
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "PrepareEffect" "VFX_Barbarian_Rage_Prepare:Dummy_BodyFX;VFX_Weapons_Fire_Glow_01:Dummy_MainHandFX"  // TODO: Replace with Warrior VFX
+data "CastEffect" "RS3_Impact_Blood_Celestial_01:TargetPosition:attach"  // TODO: Replace with Warrior VFX
+data "TargetEffect" "RS3_Explosion_Blood_01"  // TODO: Replace with Warrior VFX
+data "SpellAnimation" "Action_Attack;::;8f46d84d-6bce-4e89-8c32-01f0dc0d72ce;;Sitting;Self;true;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,"  // TODO: Use Barbarian/Fighter martial animation
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;IsSpell;HasHighGroundRangeExtension"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType,Magical)"  // TODO: Replace with actual mechanics
+// BG3 Mechanic: 
+// TODO: Implement spell mechanics based on:
+// Wowhead: https://www.wowhead.com/spell=7384
+
+// Pummel
+// Implementation: Wowhead: https://www.wowhead.com/spell=6552
+new entry "Target_WAR_Pummel"
+type "SpellData"
+data "SpellType" "Target"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "AIFlags" "CanNotUse"
+data "UseCosts" "ActionPoint:1;Rage:"
+data "SpellProperties" ""
+data "TargetConditions" "Character() and not Dead()"
+data "Icon" "Action_Attack"  // TODO: Create custom icon
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "TooltipDamageList" "DealDamage(1d6,Physical)"  // TODO: Use correct damage formula
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "PrepareEffect" "VFX_Barbarian_Rage_Prepare:Dummy_BodyFX;VFX_Weapons_Fire_Glow_01:Dummy_MainHandFX"  // TODO: Replace with Warrior VFX
+data "CastEffect" "RS3_Impact_Blood_Celestial_01:TargetPosition:attach"  // TODO: Replace with Warrior VFX
+data "TargetEffect" "RS3_Explosion_Blood_01"  // TODO: Replace with Warrior VFX
+data "SpellAnimation" "Action_Attack;::;8f46d84d-6bce-4e89-8c32-01f0dc0d72ce;;Sitting;Self;true;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,"  // TODO: Use Barbarian/Fighter martial animation
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;IsSpell;HasHighGroundRangeExtension"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType,Magical)"  // TODO: Replace with actual mechanics
+// BG3 Mechanic: 
+// TODO: Implement spell mechanics based on:
+// Wowhead: https://www.wowhead.com/spell=6552
+
+// Raging Blow
+// Implementation: Wowhead: https://www.wowhead.com/spell=85288
+new entry "Target_WAR_Raging_Blow"
+type "SpellData"
+data "SpellType" "Target"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "AIFlags" "CanNotUse"
+data "UseCosts" "ActionPoint:1;Rage:"
+data "SpellProperties" ""
+data "TargetConditions" "Character() and not Dead()"
+data "Icon" "Action_Attack"  // TODO: Create custom icon
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "TooltipDamageList" "DealDamage(1d6,Physical)"  // TODO: Use correct damage formula
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "PrepareEffect" "VFX_Barbarian_Rage_Prepare:Dummy_BodyFX;VFX_Weapons_Fire_Glow_01:Dummy_MainHandFX"  // TODO: Replace with Warrior VFX
+data "CastEffect" "RS3_Impact_Blood_Celestial_01:TargetPosition:attach"  // TODO: Replace with Warrior VFX
+data "TargetEffect" "RS3_Explosion_Blood_01"  // TODO: Replace with Warrior VFX
+data "SpellAnimation" "Action_Attack;::;8f46d84d-6bce-4e89-8c32-01f0dc0d72ce;;Sitting;Self;true;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,"  // TODO: Use Barbarian/Fighter martial animation
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;IsSpell;HasHighGroundRangeExtension"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType,Magical)"  // TODO: Replace with actual mechanics
+// BG3 Mechanic: 
+// TODO: Implement spell mechanics based on:
+// Wowhead: https://www.wowhead.com/spell=85288
+
+// Rampage
+// Implementation: Wowhead: https://www.wowhead.com/spell=184367
+new entry "Target_WAR_Rampage"
+type "SpellData"
+data "SpellType" "Target"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "AIFlags" "CanNotUse"
+data "UseCosts" "ActionPoint:1;Rage:"
+data "SpellProperties" ""
+data "TargetConditions" "Character() and not Dead()"
+data "Icon" "Action_Attack"  // TODO: Create custom icon
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "TooltipDamageList" "DealDamage(1d6,Physical)"  // TODO: Use correct damage formula
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "PrepareEffect" "VFX_Barbarian_Rage_Prepare:Dummy_BodyFX;VFX_Weapons_Fire_Glow_01:Dummy_MainHandFX"  // TODO: Replace with Warrior VFX
+data "CastEffect" "RS3_Impact_Blood_Celestial_01:TargetPosition:attach"  // TODO: Replace with Warrior VFX
+data "TargetEffect" "RS3_Explosion_Blood_01"  // TODO: Replace with Warrior VFX
+data "SpellAnimation" "Action_Attack;::;8f46d84d-6bce-4e89-8c32-01f0dc0d72ce;;Sitting;Self;true;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,"  // TODO: Use Barbarian/Fighter martial animation
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;IsSpell;HasHighGroundRangeExtension"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType,Magical)"  // TODO: Replace with actual mechanics
+// BG3 Mechanic: 
+// TODO: Implement spell mechanics based on:
+// Wowhead: https://www.wowhead.com/spell=184367
+
+// Shield Slam
+// Implementation: Wowhead: https://www.wowhead.com/spell=23922
+new entry "Target_WAR_Shield_Slam"
+type "SpellData"
+data "SpellType" "Target"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "AIFlags" "CanNotUse"
+data "UseCosts" "ActionPoint:1;Rage:"
+data "SpellProperties" ""
+data "TargetConditions" "Character() and not Dead()"
+data "Icon" "Action_Attack"  // TODO: Create custom icon
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "TooltipDamageList" "DealDamage(1d6,Physical)"  // TODO: Use correct damage formula
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "PrepareEffect" "VFX_Barbarian_Rage_Prepare:Dummy_BodyFX;VFX_Weapons_Fire_Glow_01:Dummy_MainHandFX"  // TODO: Replace with Warrior VFX
+data "CastEffect" "RS3_Impact_Blood_Celestial_01:TargetPosition:attach"  // TODO: Replace with Warrior VFX
+data "TargetEffect" "RS3_Explosion_Blood_01"  // TODO: Replace with Warrior VFX
+data "SpellAnimation" "Action_Attack;::;8f46d84d-6bce-4e89-8c32-01f0dc0d72ce;;Sitting;Self;true;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,"  // TODO: Use Barbarian/Fighter martial animation
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;IsSpell;HasHighGroundRangeExtension"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType,Magical)"  // TODO: Replace with actual mechanics
+// BG3 Mechanic: 
+// TODO: Implement spell mechanics based on:
+// Wowhead: https://www.wowhead.com/spell=23922
+
+// Skullsplitter
+// Implementation: Rage generator for Arms
+new entry "Target_WAR_Skullsplitter"
+type "SpellData"
+data "SpellType" "Target"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "AIFlags" "CanNotUse"
+data "UseCosts" "ActionPoint:1;Rage:"
+data "SpellProperties" ""
+data "TargetConditions" "Character() and not Dead()"
+data "Icon" "Action_Attack"  // TODO: Create custom icon
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "TooltipDamageList" "DealDamage(1d6,Physical)"  // TODO: Use correct damage formula
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "PrepareEffect" "VFX_Barbarian_Rage_Prepare:Dummy_BodyFX;VFX_Weapons_Fire_Glow_01:Dummy_MainHandFX"  // TODO: Replace with Warrior VFX
+data "CastEffect" "RS3_Impact_Blood_Celestial_01:TargetPosition:attach"  // TODO: Replace with Warrior VFX
+data "TargetEffect" "RS3_Explosion_Blood_01"  // TODO: Replace with Warrior VFX
+data "SpellAnimation" "Action_Attack;::;8f46d84d-6bce-4e89-8c32-01f0dc0d72ce;;Sitting;Self;true;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,"  // TODO: Use Barbarian/Fighter martial animation
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;IsSpell;HasHighGroundRangeExtension"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType,Magical)"  // TODO: Replace with actual mechanics
+// BG3 Mechanic: 
+// TODO: Implement spell mechanics based on:
+// Rage generator for Arms
+
+// Slam
+// Implementation: Wowhead: https://www.wowhead.com/spell=1464
+new entry "Target_WAR_Slam"
+type "SpellData"
+data "SpellType" "Target"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "AIFlags" "CanNotUse"
+data "UseCosts" "ActionPoint:1;Rage:"
+data "SpellProperties" ""
+data "TargetConditions" "Character() and not Dead()"
+data "Icon" "Action_Attack"  // TODO: Create custom icon
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "TooltipDamageList" "DealDamage(1d6,Physical)"  // TODO: Use correct damage formula
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "PrepareEffect" "VFX_Barbarian_Rage_Prepare:Dummy_BodyFX;VFX_Weapons_Fire_Glow_01:Dummy_MainHandFX"  // TODO: Replace with Warrior VFX
+data "CastEffect" "RS3_Impact_Blood_Celestial_01:TargetPosition:attach"  // TODO: Replace with Warrior VFX
+data "TargetEffect" "RS3_Explosion_Blood_01"  // TODO: Replace with Warrior VFX
+data "SpellAnimation" "Action_Attack;::;8f46d84d-6bce-4e89-8c32-01f0dc0d72ce;;Sitting;Self;true;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,"  // TODO: Use Barbarian/Fighter martial animation
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;IsSpell;HasHighGroundRangeExtension"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType,Magical)"  // TODO: Replace with actual mechanics
+// BG3 Mechanic: 
+// TODO: Implement spell mechanics based on:
+// Wowhead: https://www.wowhead.com/spell=1464
+
+// Taunt
+// Implementation: Wowhead: https://www.wowhead.com/spell=355
+new entry "Target_WAR_Taunt"
+type "SpellData"
+data "SpellType" "Target"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "AIFlags" "CanNotUse"
+data "UseCosts" "ActionPoint:1;Rage:"
+data "SpellProperties" ""
+data "TargetConditions" "Character() and not Dead()"
+data "Icon" "Action_Attack"  // TODO: Create custom icon
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "TooltipDamageList" "DealDamage(1d6,Physical)"  // TODO: Use correct damage formula
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "PrepareEffect" "VFX_Barbarian_Rage_Prepare:Dummy_BodyFX;VFX_Weapons_Fire_Glow_01:Dummy_MainHandFX"  // TODO: Replace with Warrior VFX
+data "CastEffect" "RS3_Impact_Blood_Celestial_01:TargetPosition:attach"  // TODO: Replace with Warrior VFX
+data "TargetEffect" "RS3_Explosion_Blood_01"  // TODO: Replace with Warrior VFX
+data "SpellAnimation" "Action_Attack;::;8f46d84d-6bce-4e89-8c32-01f0dc0d72ce;;Sitting;Self;true;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,"  // TODO: Use Barbarian/Fighter martial animation
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;IsSpell;HasHighGroundRangeExtension"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType,Magical)"  // TODO: Replace with actual mechanics
+// BG3 Mechanic: 
+// TODO: Implement spell mechanics based on:
+// Wowhead: https://www.wowhead.com/spell=355
+
+// Victory Rush
+// Implementation: Wowhead: https://www.wowhead.com/spell=34428
+new entry "Target_WAR_Victory_Rush"
+type "SpellData"
+data "SpellType" "Target"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "AIFlags" "CanNotUse"
+data "UseCosts" "ActionPoint:1;Rage:"
+data "SpellProperties" ""
+data "TargetConditions" "Character() and not Dead()"
+data "Icon" "Action_Attack"  // TODO: Create custom icon
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "TooltipDamageList" "DealDamage(1d6,Physical)"  // TODO: Use correct damage formula
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "PrepareEffect" "VFX_Barbarian_Rage_Prepare:Dummy_BodyFX;VFX_Weapons_Fire_Glow_01:Dummy_MainHandFX"  // TODO: Replace with Warrior VFX
+data "CastEffect" "RS3_Impact_Blood_Celestial_01:TargetPosition:attach"  // TODO: Replace with Warrior VFX
+data "TargetEffect" "RS3_Explosion_Blood_01"  // TODO: Replace with Warrior VFX
+data "SpellAnimation" "Action_Attack;::;8f46d84d-6bce-4e89-8c32-01f0dc0d72ce;;Sitting;Self;true;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,"  // TODO: Use Barbarian/Fighter martial animation
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;IsSpell;HasHighGroundRangeExtension"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType,Magical)"  // TODO: Replace with actual mechanics
+// BG3 Mechanic: 
+// TODO: Implement spell mechanics based on:
+// Wowhead: https://www.wowhead.com/spell=34428

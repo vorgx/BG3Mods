@@ -4,10 +4,29 @@
     <region id="AbilityLists">
         <node id="root">
             <children>
+                <!-- Base Warrior Class - Default ability order -->
                 <node id="AbilityList">
                     <attribute id="Abilities" type="LSString" value="Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma"/>
-                    <attribute id="Name" type="FixedString" value="WoWWarlock List"/>
-                    <attribute id="UUID" type="guid" value="d94c3eda-bdd9-4aaf-9372-7fccde528781"/>
+                    <attribute id="Name" type="FixedString" value="Warrior Base"/>
+                    <attribute id="UUID" type="guid" value="78fe4967-0001-0000-0000-000000000001"/>
+                </node>
+                <!-- Arms Warrior - Balanced warrior (STR primary, CON secondary) -->
+                <node id="AbilityList">
+                    <attribute id="Abilities" type="LSString" value="Strength, Constitution, Dexterity, Wisdom, Intelligence, Charisma"/>
+                    <attribute id="Name" type="FixedString" value="Warrior Arms"/>
+                    <attribute id="UUID" type="guid" value="78fe4967-0001-0000-0000-000000000002"/>
+                </node>
+                <!-- Fury Warrior - Mobile DPS (STR + DEX for dual-wield) -->
+                <node id="AbilityList">
+                    <attribute id="Abilities" type="LSString" value="Strength, Dexterity, Constitution, Wisdom, Intelligence, Charisma"/>
+                    <attribute id="Name" type="FixedString" value="Warrior Fury"/>
+                    <attribute id="UUID" type="guid" value="78fe4967-0001-0000-0000-000000000003"/>
+                </node>
+                <!-- Protection Warrior - Tank (CON primary, STR secondary) -->
+                <node id="AbilityList">
+                    <attribute id="Abilities" type="LSString" value="Constitution, Strength, Dexterity, Wisdom, Intelligence, Charisma"/>
+                    <attribute id="Name" type="FixedString" value="Warrior Protection"/>
+                    <attribute id="UUID" type="guid" value="78fe4967-0001-0000-0000-000000000004"/>
                 </node>
             </children>
         </node>

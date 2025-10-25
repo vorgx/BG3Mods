@@ -55,12 +55,12 @@ if ($Resources.Count -eq 6) {
 
 # Test 5: Validate each resource (name, max, replenish, UUID)
 $ExpectedResources = @(
-    @{ Name="Rage"; Max=100; Replenish="Default"; UUID="a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d" },
-    @{ Name="DefensiveCharge"; Max=1; Replenish="Rest"; UUID="e7f8a9b0-1c2d-3e4f-5a6b-7c8d9e0f1a2b" },
-    @{ Name="TankCooldown"; Max=1; Replenish="Rest"; UUID="b3c4d5e6-f7a8-9b0c-1d2e-3f4a5b6c7d8e" },
-    @{ Name="MobilityCharge"; Max=2; Replenish="ShortRest"; UUID="c9d8e7f6-5a4b-3c2d-1e0f-9b8a7c6d5e4f" },
-    @{ Name="OverpowerCharge"; Max=2; Replenish="Default"; UUID="d1e2f3a4-b5c6-7d8e-9f0a-1b2c3d4e5f6a" },
-    @{ Name="ThunderCharge"; Max=3; Replenish="Default"; UUID="e5f6a7b8-c9d0-1e2f-3a4b-5c6d7e8f9a0b" }
+    @{ Name="Rage"; Max=100; MaxLevel=1; Replenish="Never"; UUID="8fe271a3-3f3c-4170-8c6a-a6eb9b597894" },
+    @{ Name="DefensiveCharge"; Max=1; MaxLevel=1; Replenish="Rest"; UUID="e7f8a9b0-1c2d-3e4f-5a6b-7c8d9e0f1a2b" },
+    @{ Name="TankCooldown"; Max=1; MaxLevel=1; Replenish="Rest"; UUID="b3c4d5e6-f7a8-9b0c-1d2e-3f4a5b6c7d8e" },
+    @{ Name="MobilityCharge"; Max=2; MaxLevel=1; Replenish="ShortRest"; UUID="c9d8e7f6-5a4b-3c2d-1e0f-9b8a7c6d5e4f" },
+    @{ Name="OverpowerCharge"; Max=2; MaxLevel=1; Replenish="Never"; UUID="d1e2f3a4-b5c6-7d8e-9f0a-1b2c3d4e5f6a" },
+    @{ Name="ThunderCharge"; Max=3; MaxLevel=1; Replenish="Never"; UUID="e5f6a7b8-c9d0-1e2f-3a4b-5c6d7e8f9a0b" }
 )
 
 foreach ($Expected in $ExpectedResources) {
@@ -89,6 +89,14 @@ foreach ($Expected in $ExpectedResources) {
         Write-Pass "  MaxValue: $MaxValue"
     } else {
         Write-Fail "  MaxValue mismatch: expected $($Expected.Max), got $MaxValue"
+    }
+
+    # Check MaxLevel
+    $MaxLevel = ($Resource.attribute | Where-Object { $_.id -eq "MaxLevel" }).value
+    if ($MaxLevel -eq $Expected.MaxLevel) {
+        Write-Pass "  MaxLevel: $MaxLevel"
+    } else {
+        Write-Fail "  MaxLevel mismatch: expected $($Expected.MaxLevel), got $MaxLevel"
     }
     
     # Check ReplenishType
@@ -136,7 +144,7 @@ if (-not $FoundWarlock) {
 }
 
 # Test 7: Valid ReplenishType values only
-$ValidReplenishTypes = @("Combat", "ShortRest", "Rest", "Proc", "Default")
+$ValidReplenishTypes = @("Combat", "ShortRest", "Rest", "Proc", "Default", "Never")
 $AllValid = $true
 foreach ($Resource in $Resources) {
     $Replenish = ($Resource.attribute | Where-Object { $_.id -eq "ReplenishType" }).value

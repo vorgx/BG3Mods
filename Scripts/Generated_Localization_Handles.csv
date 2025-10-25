@@ -1,0 +1,1767 @@
+﻿"EntryName","FileType","HandleName","HandleDesc","DisplayName","Description"
+"WAR_Lightning_Strikes","Passive","h78fe4967g0001","h78fe4967g0002","Lightning Strikes","Random single target damage proc from most rotational abilities. The increased chance is multiplicative (25 * 1.3 = 32.5% chance), rather than additive.
+
+- Role: Passive
+- Subtype: Single-Target-Attack
+- Tags: Mountain-Thane, Hero-Talent, Lightning-Proc
+- Notes: Mountain Thane passive - Lightning strikes proc on abilities."
+"WAR_Crashing_Thunder","Passive","h78fe4967g0003","h78fe4967g0004","Crashing Thunder","Allows Thunder Clap to effectively replace Whirlwind within the rotation.
+
+- Role: Passive
+- Subtype: Hero-Talent-Passive
+- Tags: Mountain-Thane, Hero-Talent, Thunder-Clap-Enhancement
+- Notes: Enhances Thunder Clap with additional effects."
+"WAR_Avatar_of_the_Storm","Passive","h78fe4967g0005","h78fe4967g0006","Avatar of the Storm","Thunder Blast charges are only granted by natural casts of Avatar, not including procs from Berserker or Titan's Torment.
+
+- Role: Passive
+- Subtype: Hero-Talent-Passive
+- Tags: Mountain-Thane, Hero-Talent, Avatar-Enhancement
+- Notes: Mountain Thane keystone - Enhances Avatar with storm/lightning effects."
+"WAR_Reap_the_Storm","Passive","h78fe4967g0007","h78fe4967g0008","Reap the Storm","Whirlwind generates 1 Rage per target hit
+
+- Role: Passive
+- Subtype: Hero-Talent
+- Tags: Slayer, Hero-Talent, Rage-Generation
+- Effects: IF(HasStringInSpellRoll('WAR__Whirlwind_')):RestoreResource(self,Rage,10,0)
+- Notes: Slayer Hero Talent - Path 3. Your Whirlwind generates additional Rage."
+"WAR_Slayer_s_Dominance","Passive","h78fe4967g0009","h78fe4967g000a","Slayers Dominance","Frequent random single target damage proc that inflicts the much more important Marked for Execution debuff.
+
+- Role: Passive
+- Subtype: Hero-Talent-Passive
+- Tags: Slayer, Hero-Talent, Keystone
+- Notes: Slayer keystone passive - Grants core Slayer mechanics."
+"WAR_Dominance_of_the_Colossus","Passive","h78fe4967g000b","h78fe4967g000c","Dominance of the Colossus","Grants cooldown reduction and applies a debuff that increases all damage dealt, including that of the Demolish that applies it.
+
+- Role: Passive
+- Subtype: Hero-Talent-Passive
+- Tags: Colossus, Hero-Talent, Keystone
+- Notes: Colossus keystone passive - Grants core Colossus mechanics."
+"WAR_Slayer_s_Dominance","Passive","h78fe4967g000d","h78fe4967g000e","Slayers Dominance","Frequent random single target damage proc that inflicts the much more important Marked for Execution debuff.
+
+- Role: Passive
+- Subtype: Hero-Talent-Passive
+- Tags: Slayer, Hero-Talent, Keystone
+- Notes: Slayer keystone passive - Grants core Slayer mechanics."
+"WAR_Brutal_Finish","Passive","h78fe4967g000f","h78fe4967g0010","Brutal Finish","+2d12 to Execute
+
+- Role: Passive
+- Subtype: Hero-Talent
+- Tags: Slayer, Hero-Talent, Execute, Damage-Boost
+- Effects: IF(HasStringInSpellRoll('WAR__Execute_')):AddDamageBonus(2d12)
+- Notes: Slayer Hero Talent - Path 1. Your Execute deals significantly more damage."
+"WAR_Slayer_s_Malice","Passive","h78fe4967g0011","h78fe4967g0012","Slayer's Malice","Capstone: Crits restore 5 Rage (max 100/combat)
+
+- Role: Passive
+- Subtype: Hero-Talent
+- Tags: Slayer, Hero-Talent, Capstone, Rage-Generation
+- Effects: IF(IsCriticalHit()):RestoreResource(self,Rage,5,0)
+- Notes: Slayer Hero Talent - Capstone. Your critical strikes restore Rage."
+"WAR_Seasoned_Soldier","Passive","h78fe4967g0013","h78fe4967g0014","Seasoned Soldier","increases Arms rage generation from critical strikes.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, Stat-Boost, Critical
+- Notes: Simple stat boost passive"
+"WAR_Titan_s_Grip","Passive","h78fe4967g0015","h78fe4967g0016","Titan's Grip","passive bonus which allows dual wielding two-handed weapons.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Fury, Passive, Dual-Wield
+- Effects: Equipment proficiency unlock
+- Notes:"
+"WAR_Mastery_Critical_Block","Passive","h78fe4967g0017","h78fe4967g0018","Mastery: Critical Block","This is your Mastery. It reduces the damage taken from auto-attacks you block. It also increases your Attack Power. Its okay.
+
+- Role: Passive
+- Subtype: Mastery-Passive
+- Tags: Protection, Passive, Block
+- Effects: Passive mitigation boost
+- Notes:"
+"WAR_Mastery_Deep_Wounds","Passive","h78fe4967g0019","h78fe4967g001a","Mastery: Deep Wounds","enables scaling damage from Mastery.
+
+- Role: Passive
+- Subtype: Mastery-Passive
+- Tags: Arms, Passive, Bleed
+- Effects: Passive boost
+- Notes:"
+"WAR_Mastery_Unshackled_Fury","Passive","h78fe4967g001b","h78fe4967g001c","Mastery: Unshackled Fury","passive bonus which scales damage with Mastery.
+
+- Role: Passive
+- Subtype: Mastery-Passive
+- Tags: Passive, Mastery, Stat-Scaling
+- Notes: Mastery stat - BG3 equivalent could be bonus damage scaling. Needs custom implementation."
+"WAR_Fast_Footwork","Passive","h78fe4967g001d","h78fe4967g001e","Fast Footwork","minor passive speed boost.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, Mobility
+- Notes: Movement speed boost"
+"WAR_War_Machine","Passive","h78fe4967g001f","h78fe4967g0020","War Machine","passive boost to rage generation with bonus on kill effects.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, Proc, Movement
+- Notes: Apply status on kill that grants movement speed boost"
+"WAR_Leeching_Strikes","Passive","h78fe4967g0021","h78fe4967g0022","Leeching Strikes","minor passive healing boost.
+
+- Role: Passive
+- Subtype: Single-Target-Attack
+- Tags: Passive, Healing, Lifesteal
+- Notes: Lifesteal passive - may need custom functor"
+"WAR_Riposte","Passive","h78fe4967g0023","h78fe4967g0024","Riposte","A very simple Crit to Parry conversion.
+
+- Role: Offensive
+- Subtype: General
+- Tags: Protection, Passive, Mitigation
+- Effects: Passive conversion"
+"WAR_Martial_Prowess","Passive","h78fe4967g0025","h78fe4967g0026","Martial Prowess","enables Overpower's buff.
+
+- Role: Offensive
+- Subtype: General
+- Tags: Arms, Passive, Damage-Boost
+- Notes: Spec-wide damage boost"
+"WAR_Improved_Execute","Passive","h78fe4967g0027","h78fe4967g0028","Improved Execute","enables Arms Execute.
+
+- Role: Offensive
+- Subtype: Execute
+- Tags: Passive, Execute-Build, Damage-Boost
+- Resources: Rage 20
+- Damage Roll: DealDamage(4d12+StrengthModifier,MainMeleeWeaponDamageType,Magical)
+- Statuses Applied: None - Damage Only
+- Notes: Modifies Execute - add to modified_by column"
+"WAR_Frenzied_Enrage","Passive","h78fe4967g0029","h78fe4967g002a","Frenzied Enrage","greatly increases the speed of Fury gameplay.
+
+- Role: Passive
+- Subtype: Rage-Management
+- Tags: Fury, Enrage, Damage-Boost
+- Notes: Conditional damage boost while Enraged"
+"WAR_Powerful_Enrage","Passive","h78fe4967g002b","h78fe4967g002c","Powerful Enrage","large damage increase without increasing the speed of Fury gameplay.
+
+- Role: Passive
+- Subtype: Rage-Management
+- Tags: Fury, Enrage, Critical
+- Notes: Conditional crit boost while Enraged"
+"WAR_Brace_For_Impact","Passive","h78fe4967g002d","h78fe4967g002e","Brace For Impact","Stacking buff that grants 10% Shield Slam damage and 5% Block Value per stack. Extremely easy to maintain 2-3 stacks, which provides incredible value for a single point. Absolutely mandatory talent.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Protection, Defensive, Mitigation
+- Notes: Enhances Shield Block mitigation"
+"WAR_Armor_Specialization","Passive","h78fe4967g002f","h78fe4967g0030","Armor Specialization","Basic Armor increase, has synergy with other talents to increase Strength.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Protection, Passive, Defensive
+- Notes: Simple AC boost"
+"WAR_Fight_Through_the_Flames","Passive","h78fe4967g0031","h78fe4967g0032","Fight Through the Flames","Newly added in The War Within, reduces magic dmg taken while in Defensive Stance, not overly useful for most situations. Niche application in Mythic Plus, more useful in Raid.
+
+- Role: Defensive
+- Subtype: General
+- Tags: Protection, Defensive, Resistance
+- Notes: Damage type resistance"
+"WAR_Devastator","Passive","h78fe4967g0033","h78fe4967g0034","Devastator","Excellent rotation-smoothing talent, must-have talent. DO NOT TRY TO SKIP THIS.
+
+- Role: Offensive
+- Subtype: General
+- Tags: Protection, Proc, Shield-Slam-Enhancement
+- Notes: Proc-based Shield Slam reset"
+"WAR_Frothing_Berserker","Passive","h78fe4967g0035","h78fe4967g0036","Frothing Berserker","inconsistent passive rage refund.
+
+- Role: Passive
+- Subtype: Rage-Management
+- Tags: Fury, Enrage, Rage-Generation
+- Notes: Rage generation on damage taken"
+"WAR_Bounding_Stride","Passive","h78fe4967g0037","h78fe4967g0038","Bounding Stride","allows more leaping.
+
+- Role: Utility
+- Subtype: General
+- Tags: Utility, Mobility, Passive
+- Notes: Passive that triggers on mobility ability use"
+"WAR_Pain_and_Gain","Passive","h78fe4967g0039","h78fe4967g003a","Pain and Gain","passive self-healing.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, Healing, Lifesteal
+- Notes: Passive self-healing - heal based on damage dealt."
+"WAR_Improved_Overpower","Passive","h78fe4967g003b","h78fe4967g003c","Improved Overpower","insignificant damage increase.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, -Enhancement, Damage-Boost
+- Notes: Enhances with bonus damage"
+"WAR_Bloodsurge","Passive","h78fe4967g003d","h78fe4967g003e","Bloodsurge","provides minor rage generation against a single target, but ramps greatly against multiple.
+
+- Role: Offensive
+- Subtype: General
+- Tags: Fury, Proc, Rage-Generation
+- Notes: Rage generation proc"
+"WAR_Fueled_by_Violence","Passive","h78fe4967g003f","h78fe4967g0040","Fueled by Violence","minor amount of passive healing which ramps against multiple targets.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, Healing, AoE-Scaling
+- Notes: Minor passive healing that ramps against multiple targets."
+"WAR_Storm_Wall","Passive","h78fe4967g0041","h78fe4967g0042","Storm Wall","heals on any parry, not just when Die by the Sword is active.
+
+- Role: Defensive
+- Subtype: General
+- Tags: Arms, Defensive, Raid-Utility
+- Statuses Applied: WAR_STORM_WALL
+- Notes: Extends Die by the Sword with AoE benefit"
+"WAR_Sudden_Death","Passive","h78fe4967g0043","h78fe4967g0044","Sudden Death","Excellent single-target damage proc, adds up to quite a bit of damage throughout a raid fight.
+
+- Role: Offensive
+- Subtype: General
+- Tags: Execute-Build, Proc, Fury
+- Notes: Proc that enables Execute outside execute phase"
+"WAR_Fervor_of_Battle","Passive","h78fe4967g0045","h78fe4967g0046","Fervor of Battle","single target damage enhancement, which also allows the abilities to stack Collateral Damage. The auto-cast Slam does not cost rage.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Arms, AoE-Enhancement, Cleave
+- Notes: Allows Slam/Whirlwind to stack Collateral Damage. Enables single-target abilities to hit multiple targets."
+"WAR_Improved_Bloodthirst","Passive","h78fe4967g0047","h78fe4967g0048","Improved Bloodthirst","very small but worthwhile damage increase.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, -Enhancement, Damage-Boost
+- Notes: Enhances with bonus damage"
+"WAR_Fresh_Meat","Passive","h78fe4967g0049","h78fe4967g004a","Fresh Meat","useful leveling talent, but not very useful anywhere else.
+
+- Role: Offensive
+- Subtype: General
+- Tags: Fury, Proc, Bloodthirst-Enhancement
+- Notes: Enhances Bloodthirst crits"
+"WAR_Warpaint","Passive","h78fe4967g004b","h78fe4967g004c","Warpaint","strong passive damage reduction.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, Defensive, Mitigation
+- Notes: Passive damage mitigation"
+"WAR_Invigorating_Fury","Passive","h78fe4967g004d","h78fe4967g004e","Invigorating Fury","situationally useful in PvP, but otherwise much worse than Warpaint.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Fury, Healing, Enrage
+- Notes: Heal when Enrage expires. PvP-focused talent, less useful in PvE."
+"WAR_Cruelty","Passive","h78fe4967g004f","h78fe4967g0050","Cruelty","notable damage increase, though only while Enraged.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, Enrage, Conditional-Boost
+- Notes: Conditional bonus while Enraged status active"
+"WAR_Best_Served_Cold","Passive","h78fe4967g0051","h78fe4967g0052","Best Served Cold","Increases
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Protection, Revenge-Enhancement
+- Notes: Increases Revenge effectiveness. Tank passive."
+"WAR_Strategist","Passive","h78fe4967g0053","h78fe4967g0054","Strategist","Critical rotational functionality. Absolutely mandatory talent. Not just for pathing reasons.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Arms, Proc, Overpower-Build, Critical
+- Notes: Critical rotational talent - MANDATORY. 30% chance to reset Overpower charges."
+"WAR_Grant_Extra_Attack","Passive","h78fe4967g0055","h78fe4967g0056","Grant Extra Attack","Provides an extra attack action during combat, allowing for additional offensive capabilities.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Unknown, Extra-Attack
+- Notes: NEEDS RESEARCH - No description available. Likely grants additional attack proc."
+"WAR_Barbaric_Training","Passive","h78fe4967g0057","h78fe4967g0058","Barbaric Training","only useful for Mountain Thane in multitarget.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Fury, AoE, Mountain-Thane
+- Notes: Only useful for Mountain Thane in multitarget. Spec-specific passive."
+"WAR_Tactician","Passive","h78fe4967g0059","h78fe4967g005a","Tactician","calculates the total rage spent on an ability and converts it into a chance to reset the cooldown on Overpower.
+
+- Role: Offensive
+- Subtype: General
+- Tags: Arms, Proc, Overpower-Build
+- Notes: Proc passive - requires charge resource for Overpower"
+"WAR_Impale","Passive","h78fe4967g005b","h78fe4967g005c","Impale","increases the extra critical hit damage inflicted by crits, meaning it's closer to a 5% damage bonus than 10%.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, Critical, Damage-Boost
+- Notes: Increases critical strike damage"
+"WAR_Focus_in_Chaos","Passive","h78fe4967g005d","h78fe4967g005e","Focus in Chaos","removes the 19% dual wield miss penalty from auto-attacks, although they can still be parried.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Fury, Dual-Wield, Hit-Chance
+- Notes: Removes 19% dual-wield miss penalty from auto-attacks (though they can still be dodged/parried)."
+"WAR_Improved_Raging_Blow","Passive","h78fe4967g005f","h78fe4967g0060","Improved Raging Blow","critical talent which enables Raging Blow resets.
+
+- Role: Passive
+- Subtype: Single-Target-Attack
+- Tags: Fury, Raging-Blow-Enhancement, Reset-Mechanic
+- Notes: Critical talent - enables Raging Blow resets. 20% chance per cast."
+"WAR_Instigate","Passive","h78fe4967g0061","h78fe4967g0062","Instigate","Basically auto-attack rage generation by 2 and performs very well.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Protection, Rage-Generation, Auto-Attack
+- Notes: Increases auto-attack rage generation by 2. Performs very well for tanks."
+"WAR_Rend","Passive","h78fe4967g0063","h78fe4967g0064","Rend","Excellent DPS increase applied passively by
+
+- Role: Passive
+- Subtype: Bleed
+- Tags: Passive, DoT, Bleed
+- Notes: Applies damage over time effect"
+"WAR_Brutal_Vitality","Passive","h78fe4967g0065","h78fe4967g0066","Brutal Vitality","This grants ~8% Leech whenever Ignore Pain is active. It's a decent boost to self-sustain, especially since the dmg from
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, Healing, Leech
+- Notes: Leech - percentage of damage heals you"
+"WAR_Honed_Reflexes","Passive","h78fe4967g0067","h78fe4967g0068","Honed Reflexes","Reduces most defensive cooldowns by a very minor amount.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Defensive, Cooldown-Reduction
+- Notes: Reduces defensive cooldowns by minor amount. General survivability passive."
+"WAR_Crushing_Force","Passive","h78fe4967g0069","h78fe4967g006a","Crushing Force","major damage increase for Slam.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, Enhancement, Major-Boost
+- Notes: Major enhancement passive - research specific mechanics needed"
+"WAR_Bitter_Immunity","Passive","h78fe4967g006b","h78fe4967g006c","Bitter Immunity","highly situational due to its long cooldown.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Defensive, CC-Immunity, Situational
+- Notes: Highly situational due to long cooldown. Grants immunity to specific effects."
+"WAR_Overwhelming_Rage","Passive","h78fe4967g006d","h78fe4967g006e","Overwhelming Rage","eases the burdens of rage management.
+
+- Role: Passive
+- Subtype: Rage-Management
+- Tags: Fury, Rage-Generation
+- Notes: Increases maximum Rage by 15-20 and eases rage management burdens."
+"WAR_Rumbling_Earth","Passive","h78fe4967g006f","h78fe4967g0070","Rumbling Earth","greatly increases the usefulness of Shockwave when using it regularly against groups.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, Enhancement, Major-Boost
+- Notes: Major enhancement passive - research specific mechanics needed"
+"WAR_Reinforced_Plates","Passive","h78fe4967g0071","h78fe4967g0072","Reinforced Plates","synergizes with Armored to the Teeth to provide additional damage.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, Armor, Damage-Synergy
+- Notes: Synergizes with Armored to the Teeth. Provides armor and damage boost."
+"WAR_Finishing_Blows","Passive","h78fe4967g0073","h78fe4967g0074","Finishing Blows","increases rage generation during the Execute phase to fuel its higher costs.
+
+- Role: Passive
+- Subtype: Execute
+- Tags: Passive, Rage-Generation
+- Notes: Increases Rage generation under specific conditions"
+"WAR_Anger_Management","Passive","h78fe4967g0075","h78fe4967g0076","Anger Management","an indispensable talent, creating more frequent increased damage windows.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, Cooldown-Reduction, Critical
+- Notes: Indispensable talent - reduces cooldowns, creates more frequent damage windows."
+"WAR_Spiteful_Serenity","Passive","h78fe4967g0077","h78fe4967g0078","Spiteful Serenity","a very underwhelming talent with its own negative bonus in addition to strong competition in Anger Management.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Fury, Enrage, Underwhelming
+- Notes: Very underwhelming talent with negative bonus. Strong competition from other talents."
+"WAR_Exhilarating_Blows","Passive","h78fe4967g0079","h78fe4967g007a","Exhilarating Blows","allows more casts of Mortal Strike and Cleave.
+
+- Role: Passive
+- Subtype: Single-Target-Attack
+- Tags: Arms, Rage-Reduction, Cost-Reduction
+- Notes: Reduces Mortal Strike and Cleave rage costs. Allows more frequent casts."
+"WAR_Collateral_Damage","Passive","h78fe4967g007b","h78fe4967g007c","Collateral Damage","gains a stack for each single target attack cleaved by Sweeping Strikes, which includes the free Slam cast by Fervor of Battle, creating great synergy between them.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Arms, AoE, Cleave, Stacking-Buff
+- Notes: Gains stacks for each single-target attack cleaved by Sweeping Strikes. Increases next AoE damage."
+"WAR_Single","Passive","h78fe4967g007d","h78fe4967g007e","Single","Minded Fury- increase the effectiveness of dual wielding one-handed weapons, but not by enough to make them competitive with two-handed weapons.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Fury, Dual-Wield, Weapon-Specialization
+- Notes: Single-Minded Fury - increases effectiveness of dual-wielding one-handed weapons."
+"WAR_Cold_Steel_Hot_Blood","Passive","h78fe4967g007f","h78fe4967g0080","Cold Steel & Hot Blood","inflicts a powerful bleed, which can be applied to multiple targets via Whirlwind.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Arms, DoT, Bleed, Whirlwind-Enhancement
+- Notes: Inflicts powerful bleed on critical hits. Can be applied to multiple targets via Whirlwind Meat Cleaver."
+"WAR_Vicious_Contempt","Passive","h78fe4967g0081","h78fe4967g0082","Vicious Contempt","promotes Bloodthirst playstyles by greatly increasing its damage during the execute phase.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Fury, Execute-Build, Bloodthirst-Enhancement
+- Notes: Greatly increases Bloodthirst damage during execute phase (<35% HP). Promotes Bloodthirst playstyles."
+"WAR_Frenzy","Passive","h78fe4967g0083","h78fe4967g0084","Frenzy","semi-passive haste buff, with the downside of easily falling off when regularly switching targets.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, Haste, Attack-Speed
+- Notes: Haste passive - BG3 equivalent could be bonus action or extra attack"
+"WAR_Hack_and_Slash","Passive","h78fe4967g0085","h78fe4967g0086","Hack and Slash","very important reset mechanic for Raging Blow builds.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Fury, Proc, Raging-Blow-Build
+- Notes: Very important reset mechanic for Raging Blow builds. Auto-attacks have 10% chance to reset."
+"WAR_Slaughtering_Strikes","Passive","h78fe4967g0087","h78fe4967g0088","Slaughtering Strikes","provides a significant damage boost for Rampage and greatly emphasizes Raging Blow's role in the rotation.
+
+- Role: Passive
+- Subtype: Single-Target-Attack
+- Tags: Fury, Damage-Boost, Rampage-Enhancement
+- Notes: Significant damage boost for Rampage. Greatly emphasizes Raging Blow usage."
+"WAR_Ashen_Juggernaut","Passive","h78fe4967g0089","h78fe4967g008a","Ashen Juggernaut","provides a significant damage boost when using Execute regularly.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Execute-Build, Fury, Damage-Boost
+- Notes: Significant damage boost when using Execute regularly. Stacks up during execute phase."
+"WAR_Improved_Whirlwind","Passive","h78fe4967g008b","h78fe4967g008c","Improved Whirlwind","enables Fury's ability to cleave single target attacks onto other targets, forming the basis of its multitarget rotation.
+
+- Role: Passive
+- Subtype: AoE-Attack
+- Tags: Fury, AoE, Cleave-Mechanic
+- Notes: Enables Fury's cleave mechanics. Core Fury talent - single-target attacks hit additional targets after Whirlwind."
+"WAR_Unnerving_Focus","Passive","h78fe4967g008d","h78fe4967g008e","Unnerving Focus","Increases Rage Generation while Last Stand is active. Has rarely seen play.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, Rage-Generation
+- Notes: Increases Rage generation under specific conditions"
+"WAR_Bolster","Passive","h78fe4967g008f","h78fe4967g0090","Bolster","Reduces the cooldown of Last Stand to 2 minutes and grants Shield Block. Can find a niche application if the lower cooldown is beneficial.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, Cooldown-Reduction
+- Notes: Reduces cooldowns - BG3 implementation may need custom functor"
+"WAR_Thunderlord","Passive","h78fe4967g0091","h78fe4967g0092","Thunderlord","Good cooldown reduction for demoralizing Shout that synergizes with other talents in the tree. Good talent in AoE, very mediocre in single target.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Protection, Cooldown-Reduction, Defensive
+- Notes: Good cooldown reduction for Demoralizing Shout. Synergizes with other talents."
+"WAR_Sudden_Death","Passive","h78fe4967g0093","h78fe4967g0094","Sudden Death","Excellent single-target damage proc, adds up to quite a bit of damage throughout a raid fight.
+
+- Role: Offensive
+- Subtype: General
+- Tags: Execute-Build, Proc, Fury
+- Notes: Proc that enables Execute outside execute phase"
+"WAR_Heavy_Repercussions","Passive","h78fe4967g0095","h78fe4967g0096","Heavy Repercussions","Increases Rage Generation of Shield Slam by 2, which is also multiplied by Violent Outburst. But more importantly, it increases Shield Block duration by 1 second every time you press Shield Slam, resulting in pretty much infinite Shield Block uptime. Mandatory pick for low haste levels early in an expansion.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, Rage-Generation
+- Notes: Increases Rage generation under specific conditions"
+"WAR_Punish","Passive","h78fe4967g0097","h78fe4967g0098","Punish","Increases Shield Slam damage and causes the hit enemy to deal less damage to you.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Protection, Shield-Slam-Enhancement, Mitigation
+- Notes: Increases Shield Slam damage. Hit enemy deals less damage to you."
+"WAR_Hunker_Down","Passive","h78fe4967g0099","h78fe4967g009a","Hunker Down","Increases Spell Reflection magic damage reduction and grants you 2% passive AoE damage reduction.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, Defensive, Mitigation
+- Notes: Passive damage mitigation"
+"WAR_Vanguard","Passive","h78fe4967g009b","h78fe4967g009c","Vanguard","Simple defensive aura, reduces your damage taken, increases your Stamina and Armor.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, Defensive, Mitigation
+- Notes: Passive damage mitigation"
+"WAR_Sidearm","Passive","h78fe4967g009d","h78fe4967g009e","Sidearm","minor passive damage increase.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, Rage-Generation, Throw
+- Notes: Minor passive damage increase. Increases throwing weapon effectiveness."
+"WAR_Double_Time","Passive","h78fe4967g009f","h78fe4967g00a0","Double Time","a must-have mobility increase.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Utility, Mobility, Charge-Enhancement
+- Notes: Must-have mobility increase. Grants 2 charges of Charge instead of 1."
+"WAR_Seismic_Reverberation","Passive","h78fe4967g00a1","h78fe4967g00a2","Seismic Reverberation","very minor with Whirlwind, but highly effective for Mountain Thane.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Fury, AoE, Mountain-Thane, Whirlwind-Enhancement
+- Notes: Very minor with base Whirlwind, but highly effective for Mountain Thane builds."
+"WAR_Concussive_Blows","Passive","h78fe4967g00a3","h78fe4967g00a4","Concussive Blows","rather underwhelming due to only affecting the target which is interrupted, rather than increasing all damage dealt, though the reduced cooldown can be nice.
+
+- Role: Passive
+- Subtype: Single-Target-Attack
+- Tags: Utility, Interrupt, Stun
+- Notes: Underwhelming - only affects interrupted target, not AoE. 3s stun after successful interrupt."
+"WAR_Bloodborne","Passive","h78fe4967g00a5","h78fe4967g00a6","Bloodborne","general bleed damage increase, which synergizes well with other bleed talents found throughout the tree.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, DoT, Bleed
+- Notes: Applies damage over time effect"
+"WAR_Dreadnaught","Passive","h78fe4967g00a7","h78fe4967g00a8","Dreadnaught","a multitarget option for Overpower.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Arms, AoE, Overpower-Enhancement
+- Notes: Multitarget option for Overpower. Allows hitting 2 targets instead of 1."
+"WAR_Strength_of_Arms","Passive","h78fe4967g00a9","h78fe4967g00aa","Strength of Arms","a single/two target power increase for Overpower.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Arms, Overpower-Enhancement, Damage-Boost
+- Notes: Single/two target power increase for Overpower."
+"WAR_In_For_The_Kill","Passive","h78fe4967g00ab","h78fe4967g00ac","In For The Kill","has the same duration of Colossus Smash, with good benefit against both single and multiple targets.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Arms, Colossus-Build, Haste-Buff
+- Notes: Same duration as Colossus Smash. Good benefit against single and multitarget."
+"WAR_Test_of_Might","Passive","h78fe4967g00ad","h78fe4967g00ae","Test of Might","stacks up a powerful strength buff, effectively extending the increased damage window created by Colossus Smash.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Arms, Colossus-Build, Damage-Boost
+- Notes: Modifies Colossus Smash to buff caster"
+"WAR_Blunt_Instruments","Passive","h78fe4967g00af","h78fe4967g00b0","Blunt Instruments","a single target alternative to Warbreaker, which also extends the duration of In for the Kill and Test of Might.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Arms, Colossus-Build, Duration-Extension
+- Notes: Single-target alternative to Warbreaker. Extends In For The Kill duration."
+"WAR_Massacre","Passive","h78fe4967g00b1","h78fe4967g00b2","Massacre","allows more frequent use of Execute.
+
+- Role: Offensive
+- Subtype: General
+- Tags: Arms, Execute-Build, Execute-Extension
+- Notes: Extends Execute window"
+"WAR_Storm_of_Swords","Passive","h78fe4967g00b3","h78fe4967g00b4","Storm of Swords","largely unnecessary, resulting in overcapping.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Arms, Overpower-Build, Rage-Generation
+- Notes: Largely unnecessary, results in rage overcapping. Generates rage on Overpower."
+"WAR_Bloodcraze","Passive","h78fe4967g00b5","h78fe4967g00b6","Bloodcraze","creates strong synergy between Raging Blow and Bloodthirst, though it resets after any critical strike from Bloodthirst.
+
+- Role: Offensive
+- Subtype: General
+- Tags: Fury, Proc, Rage-Generation
+- Notes: Enhances Bloodthirst rage generation"
+"WAR_Wrath_and_Fury","Passive","h78fe4967g00b7","h78fe4967g00b8","Wrath and Fury","a moderate damage and reset chance increase for Raging Blow.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Fury, Raging-Blow-Enhancement, Reset-Mechanic
+- Notes: Moderate damage and reset chance increase for Raging Blow."
+"WAR_Meat_Cleaver","Passive","h78fe4967g00b9","h78fe4967g00ba","Meat Cleaver","reduces the amount of Whirlwind casts needed to maintain multitarget cleave.
+
+- Role: Offensive
+- Subtype: AoE-Attack
+- Tags: Fury, AoE, Cleave
+- Resources: Rage 20
+- Damage Roll: DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType,Magical)
+- Statuses Applied: None - Damage Only
+- Notes: Enables cleave after Whirlwind"
+"WAR_Tough_As_Nails","Passive","h78fe4967g00bb","h78fe4967g00bc","Tough as Nails","Passive damage output whenever you block an attack, recently buffed, however, still not a popular or strong choice.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Protection, Block, Damage-On-Block
+- Notes: Passive damage whenever you block. Recently buffed, still underwhelming."
+"WAR_Enduring_Defenses","Passive","h78fe4967g00bd","h78fe4967g00be","Enduring Defenses","Incredible defensive bonus, simply grants 33% more Shield Block uptime. Massive increase to Protection Warriors ability to survive damage in any situation.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Protection, Block, Duration-Extension, Critical
+- Notes: Incredible defensive bonus - grants 33% more Shield Block uptime. Massive survivability boost."
+"WAR_Unyielding_Stance","Passive","h78fe4967g00bf","h78fe4967g00c0","Unyielding Stance","Simple increase of Defensive Stance damage reduction. Required for pathing.
+
+- Role: Passive
+- Subtype: Defensive-CD
+- Tags: Passive, Defensive, Mitigation
+- Notes: Passive damage mitigation"
+"WAR_Red_Right_Hand","Passive","h78fe4967g00c1","h78fe4967g00c2","Red Right Hand","Simple increase of Execute damage. Great in combination with other Execute talents.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Arms, Execute-Enhancement, Damage-Boost
+- Notes: Simple Execute damage increase. Great in combination with other Execute talents."
+"WAR_Cruel_Strikes","Passive","h78fe4967g00c3","h78fe4967g00c4","Cruel Strikes","a minor increase to Execute, smaller than it may seem.
+
+- Role: Passive
+- Subtype: Single-Target-Attack
+- Tags: Fury, Execute-Enhancement, Critical
+- Notes: Minor Execute crit increase. Smaller than it may seem."
+"WAR_Wild_Strikes","Passive","h78fe4967g00c5","h78fe4967g00c6","Wild Strikes","deceptively powerful due to the already high frequency of auto-attacks.
+
+- Role: Offensive
+- Subtype: Single-Target-Attack
+- Tags: Fury, Proc, Raging-Blow-Enhancement
+- Damage Roll: DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType,Magical)
+- Statuses Applied: None - Damage Only
+- Notes: Extra attack proc for Raging Blow"
+"WAR_Dual_Wield_Specialization","Passive","h78fe4967g00c7","h78fe4967g00c8","Dual Wield Specialization","a must-have passive damage increase.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Fury, Dual-Wield, Damage-Boost, Critical
+- Notes: Must-have passive damage increase for dual-wielding."
+"WAR_Armored_to_the_Teeth","Passive","h78fe4967g00c9","h78fe4967g00ca","Armored to the Teeth","near indispensable damage increase that helps gear scaling over the course of an expansion.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, Armor, Damage-Scaling, Critical
+- Notes: Near indispensable damage increase. Helps gear scaling over expansion."
+"WAR_Deft_Experience","Passive","h78fe4967g00cb","h78fe4967g00cc","Deft Experience","a minor Mastery increase, with the much more important effect of doubling the chance to trigger Tactician.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Arms, Passive, Proc
+- Notes: Enhances Tactician - bidirectional dependency"
+"WAR_Valor_in_Victory","Passive","h78fe4967g00cd","h78fe4967g00ce","Valor in Victory","a minor Versatility increase, which also reduces the cooldown of Die by the Sword.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, Cooldown-Reduction
+- Notes: Reduces cooldowns - BG3 implementation may need custom functor"
+"WAR_Critical_Thinking","Passive","h78fe4967g00cf","h78fe4967g00d0","Critical Thinking","a minor Critical Strike increase, with a very impactful rage refund for Execute, which is also additive with Improved Execute for a combined 30% refund.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, Execute-Build, Critical
+- Notes: Modifies Execute crit chance"
+"WAR_Raging_Armaments","Passive","h78fe4967g00d1","h78fe4967g00d2","Raging Armaments","minor mastery buff, with a very important Enrage extension, which helps keep Bloodthirst active in the rotation.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, Enrage, Conditional-Boost
+- Notes: Conditional bonus while Enraged status active"
+"WAR_Swift_Strikes","Passive","h78fe4967g00d3","h78fe4967g00d4","Swift Strikes","a minor haste buff, with a small rage generation increase which adds up significantly over the course of a dungeon or encounter.
+
+- Role: Passive
+- Subtype: Single-Target-Attack
+- Tags: Passive, Rage-Generation
+- Notes: Increases Rage generation under specific conditions"
+"WAR_Defender_s_Aegis","Passive","h78fe4967g00d5","h78fe4967g00d6","Defender's Aegis","Grants a 2nd charge of Shield Wall and significantly reduces the base cooldown.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, Cooldown-Reduction
+- Notes: Reduces cooldowns - BG3 implementation may need custom functor"
+"WAR_Impenetrable_Wall","Passive","h78fe4967g00d7","h78fe4967g00d8","Impenetrable Wall","Reduces the cooldown of Shield Wall whenever you cast Shield Slam.
+
+- Role: Defensive
+- Subtype: General
+- Tags: Protection, Defensive, CC-Immunity
+- Statuses Applied: WAR_IMPENETRABLE_WALL
+- Notes: Enhances Shield Wall with CC immunity"
+"WAR_Focused_Vigor","Passive","h78fe4967g00d9","h78fe4967g00da","Focused Vigor","Amazing Talent, offers huge amounts of damage output and Armor for just 1 Talent point, not mandatory for pathing but heavily encouraged to pick up!
+
+- Role: Offensive
+- Subtype: General
+- Tags: Protection, Defensive, Healing
+- Notes: Conditional healing boost during Avatar"
+"WAR_Shield_Specialization","Passive","h78fe4967g00db","h78fe4967g00dc","Shield Specialization","Outstanding defensive bonus. Greatly reduces damage taken from blockable hits and is crucial for pathing to the Talents that enable the ""Rage Feedback Machine"" further.
+
+- Role: Defensive
+- Subtype: General
+- Tags: Protection, Passive, Block
+- Notes: Simple block chance boost"
+"WAR_Enduring_Alacrity","Passive","h78fe4967g00dd","h78fe4967g00de","Enduring Alacrity","A significant increase in Health and 2% Haste gain makes this talent one of the most attractive talents on our talent tree.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, Haste, Attack-Speed
+- Notes: Haste passive - BG3 equivalent could be bonus action or extra attack"
+"WAR_Battlelord","Passive","h78fe4967g00df","h78fe4967g00e0","Battlelord","creates an entertaining gameplay loop of Mortal Strike refreshing Overpower via Tactician and Overpower refreshing Mortal Strike via Battlelord.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Arms, Overpower-Build, Reset-Mechanic
+- Notes: Entertaining gameplay loop - Mortal Strike refreshes Overpower via Tactician procs."
+"WAR_Bloodletting","Passive","h78fe4967g00e1","h78fe4967g00e2","Bloodletting","a very important bleed damage increase, which reduces the amount of maintenance required to maintain the debuffs and synergizes very well with Skullsplitter and Thunderous Roar/Words.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, DoT, Bleed
+- Notes: Applies damage over time effect"
+"WAR_Sharpened_Blades","Passive","h78fe4967g00e3","h78fe4967g00e4","Sharpened Blades","a moderate damage increase for Arms' most important rotational abilities.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Arms, Damage-Boost, Core-Abilities
+- Notes: Moderate damage increase for Arms' most important rotational abilities."
+"WAR_Juggernaut","Passive","h78fe4967g00e5","h78fe4967g00e6","Juggernaut","provides a large ramping damage increase, though not well suited for short encounters and susceptible to dropping during downtime.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Arms, Execute-Build, Stacking-Buff
+- Notes: Large ramping damage increase. Not suited for short encounters."
+"WAR_Reckless_Abandon","Passive","h78fe4967g00e7","h78fe4967g00e8","Reckless Abandon","causes Bloodthirst and Raging Blow to be replaced by stronger versions - Bloodbath and Crushing Blow, creating a powerful gameplay loop.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Fury, Recklessness-Build, Ability-Replacement
+- Notes: Bloodthirst and Raging Blow replaced by stronger versions (Bloodbath/Crushing Blow) during Recklessness."
+"WAR_Booming_Voice","Passive","h78fe4967g00e9","h78fe4967g00ea","Booming Voice","Turns Demoralizing Shout into a good offensive cooldown and Rage generation tool. Grants 30 rage and synergizes very nicely with
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, Rage-Generation
+- Notes: Increases Rage generation under specific conditions"
+"WAR_Indomitable","Passive","h78fe4967g00eb","h78fe4967g00ec","Indomitable","Extremely valuable defensive talent. Substantially increases tankiness and grants a steady trickle of self-healing. Mandatory if you want to call yourself a tank.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Defensive, Tankiness, Critical
+- Notes: Extremely valuable defensive talent. Substantially increases tankiness and grants ignore pain charges."
+"WAR_Violent_Outburst","Passive","h78fe4967g00ed","h78fe4967g00ee","Violent Outburst","Excellent Rage generation increase, one of the vital pillarstones to the ""Rage Feedback Machine"" to deal huge amounts of damage and be an absolute brick house of a tank.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, Rage-Generation
+- Notes: Increases Rage generation under specific conditions"
+"WAR_Heavy_Handed","Passive","h78fe4967g00ef","h78fe4967g00f0","Heavy Handed","Allows Execute to strike 2 additional targets for a reduced amount. Great for raiding and overall damage output!
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Arms, Execute-Build, AoE
+- Notes: Execute strikes 2 additional targets for reduced damage. Great for refreshing Sudden Death."
+"WAR_Uproar","Passive","h78fe4967g00f1","h78fe4967g00f2","Uproar","keeps Thunderous Roar aligned with Avatar and other cooldowns, provides a noticeable overall damage increase, especially in multitarget.
+
+- Role: Passive
+- Subtype: AoE-Buff
+- Tags: Fury, Cooldown-Reduction, Alignment
+- Notes: Keeps Thunderous Roar aligned with Avatar and other cooldowns. Noticeable damage increase."
+"WAR_Thunderous_Words","Passive","h78fe4967g00f3","h78fe4967g00f4","Thunderous Words","increases the damage of all bleeds only while Thunderous Roar is active, creating powerful burst windows that synergize well with Odyn's Fury.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, DoT, Bleed
+- Notes: Applies damage over time effect"
+"WAR_Berserker_s_Torment","Passive","h78fe4967g00f5","h78fe4967g00f6","Berserker's Torment","highly effective and extends the duration of their normal counterparts.
+
+- Role: Passive
+- Subtype: Rage-Management
+- Tags: Fury, Recklessness-Build, Duration-Extension
+- Notes: Highly effective. Extends duration of Bloodbath/Crushing Blow beyond normal counterparts."
+"WAR_Titan_s_Torment","Passive","h78fe4967g00f7","h78fe4967g00f8","Titan's Torment","very strong AoE damage increase, which synergizes with other additional effects from Odyn's Fury.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Fury, Avatar-Build, AoE-Damage
+- Notes: Very strong AoE damage increase. Synergizes with other Avatar effects on Odyn's Fury."
+"WAR_Piercing_Challenge","Passive","h78fe4967g00f9","h78fe4967g00fa","Piercing Challenge","a minor overall damage increase, though the extra rage generation is largely irrelevant.
+
+- Role: Passive
+- Subtype: Threat-Gen
+- Tags: Passive, Rage-Generation
+- Notes: Increases Rage generation under specific conditions"
+"WAR_Champion_s_Might","Passive","h78fe4967g00fb","h78fe4967g00fc","Champion's Might","a short but powerful damage window, which now activates on the target instead of requiring the player to stand within a specific location.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Offensive, Champion-Spear-Enhancement, Damage-Window
+- Notes: Short but powerful damage window. Activates on target instead of self now."
+"WAR_Fatality","Passive","h78fe4967g00fd","h78fe4967g00fe","Fatality","provides increased damage during Execute, while keeping the abilities used before Execute relevant. It cannot critically strike and does not benefit from class buffs such as Colossus Smash or Avatar, but it can be buffed by primary stat increases like Test of Might or potions.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Fury, Execute-Build, Damage-Boost
+- Notes: Increased damage during Execute phase. Keeps pre-execute abilities relevant."
+"WAR_Dance_of_Death","Passive","h78fe4967g00ff","h78fe4967g0100","Dance of Death","provides a significant damage increase for Bladestorm and can be chained from pack to pack, but the timing does not work cleanly with all of Bladestorm's other follow-on talents.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Arms, AoE, Cooldown-Enhancement
+- Notes: Major Bladestorm enhancement"
+"WAR_Unhinged","Passive","h78fe4967g0101","h78fe4967g0102","Unhinged","a significant single/two target damage increase while using Bladestorm or Ravager, highly effective in combination with other effects that synergize with Mortal Strike.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Arms, Bladestorm-Enhancement, Damage-Boost
+- Notes: Significant single/two target damage increase while using Bladestorm or Ravager."
+"WAR_Merciless_Bonegrinder","Passive","h78fe4967g0103","h78fe4967g0104","Merciless Bonegrinder","a major damage increase for Cleave or Whirlwind, creating strong AoE damage windows.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Protection, AoE, Damage-Boost
+- Notes: Enhances Ravager AoE"
+"WAR_Executioner_s_Precision","Passive","h78fe4967g0105","h78fe4967g0106","Executioner's Precision","provides great value to Mortal Strike, keeping the ability relevant during Execute.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Arms, Execute-Build, Mortal-Strike-Enhancement
+- Notes: Great value to Mortal Strike, keeps it relevant during Execute phase."
+"WAR_Tenderize","Passive","h78fe4967g0107","h78fe4967g0108","Tenderize","greatly increases the value of Onslaught, both in jumpstarting the rotation and increasing the damage of Rampage.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, Enhancement, Major-Boost
+- Notes: Major enhancement passive - research specific mechanics needed"
+"WAR_Storm_of_Steel","Passive","h78fe4967g0109","h78fe4967g010a","Storm of Steel","gives Ravager a second charge, which is fairly important in most content.
+
+- Role: Utility
+- Subtype: General
+- Tags: Arms, Ravager-Enhancement, Extra-Charge
+- Notes: Gives Ravager second charge. Fairly important in most content."
+"WAR_Unbridled_Ferocity","Passive","h78fe4967g010b","h78fe4967g010c","Unbridled Ferocity","randomly triggers Recklessness, though its low proc chance leaves it generally uncompetitive.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Fury, Recklessness-Build, Proc
+- Notes: Randomly triggers Recklessness. Low proc chance leaves it generally underwhelming."
+"WAR_Depths_of_Insanity","Passive","h78fe4967g010d","h78fe4967g010e","Depths of Insanity","generally uncompetitive, due to its small impact on overall uptime.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Fury, Enrage, Duration-Extension
+- Notes: Generally uncompetitive due to small impact on overall uptime. Extends Enrage duration."
+"WAR_Dancing_Blades","Passive","h78fe4967g010f","h78fe4967g0110","Dancing Blades","triggers a large auto-attack buff, which provides a bonus to Odyn's Fury's single target value.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Fury, Odyn-Build, Auto-Attack-Buff
+- Notes: Triggers large auto-attack buff. Provides bonus to Odyn's Fury single-target damage."
+"WAR_Titanic_Rage","Passive","h78fe4967g0111","h78fe4967g0112","Titanic Rage","a minor damage buff, but jumpstarts the AoE rotation by auto-applying important buffs, with even greater synergy in combination with Titan's
+
+- Role: Passive
+- Subtype: Rage-Management
+- Tags: Fury, Avatar-Build, AoE-Rotation
+- Notes: Minor damage buff. Jumpstarts AoE rotation by auto-applying important statuses."
+"WAR_Shield_Charge","Passive","h78fe4967g0113","h78fe4967g0114","Shield Charge","Decent offensive cooldown and Rage generation tool. It is not great on its own, but it is good with the talent synergy below. Grants 20 rage. It deals slightly more single-target damage than Ravager, but less AoE damage.
+
+- Role: Passive
+- Subtype: Gap-Closer
+- Tags: Passive, Rage-Generation
+- Notes: Increases Rage generation under specific conditions"
+"WAR_Battle_Scarred_Veteran","Passive","h78fe4967g0115","h78fe4967g0116","Battle-Scarred Veteran","Reactive defensive cooldown that provides a ton of damage reduction and increased healing taken. The 3-minute cooldown is long. After FINALLY being fixed in 10.2.7, this Talent is properly useful for new players and may have niche applications in high keys as a planned defensive. Great tool to recover from a mistake or generally when in trouble.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Passive, Healing, Lifesteal
+- Notes: Lifesteal passive - heal based on damage dealt"
+"WAR_Whirling_Blade","Passive","h78fe4967g0117","h78fe4967g0118","Whirling Blade","This talent randomly sends out more frequent and shorter versions of Ravager.
+
+- Role: Passive
+- Subtype: Talent-Passive
+- Tags: Protection, Ravager-Enhancement, Proc
+- Notes: Randomly sends out more frequent and shorter versions of Ravager."
+"WAR_Ground_Current","Passive","h78fe4967g0119","h78fe4967g011a","Ground Current","Allows Lightning Strikes to hit multiple targets for significantly reduced damage. Does not hit the primary target of the lightning strike's initial target.
+
+- Role: Passive
+- Subtype: Hero-Talent-Passive
+- Tags: Mountain-Thane, Hero-Talent, Lightning
+- Notes: Mountain Thane passive - NEEDS WOWHEAD RESEARCH for specific mechanics."
+"WAR_Strength_of_the_Mountain","Passive","h78fe4967g011b","h78fe4967g011c","Strength of the Mountain","General damage increase for Mountain Thane warriors.
+
+- Role: Passive
+- Subtype: Hero-Talent-Passive
+- Tags: Mountain-Thane, Hero-Talent, Stat-Boost
+- Notes: Mountain Thane passive - Likely strength boost or damage increase."
+"WAR_Colossal_Might","Passive","h78fe4967g011d","h78fe4967g011e","Colossal Might","Effectively doubles the damage of Demolish when active.
+
+- Role: Passive
+- Subtype: Hero-Talent-Passive
+- Tags: Colossus, Hero-Talent, Demolish-Enhancement
+- Notes: Colossus passive - Likely enhances Demolish ability damage or effects."
+"WAR_Keep_your_feet_on_the_Ground","Passive","h78fe4967g011f","h78fe4967g0120","Keep your feet on the Ground","Very strong passive defensive bonus due to the high frequency of Thunder Blast procs.
+
+- Role: Passive
+- Subtype: Hero-Talent-Passive
+- Tags: Mountain-Thane, Hero-Talent, CC
+- Notes: Mountain Thane passive - Likely knockdown or root mechanic."
+"WAR_Tide_of_Battle","Passive","h78fe4967g0121","h78fe4967g0122","Tide of Battle","Variable Overpower damage increase based on combat conditions.
+
+- Role: Passive
+- Subtype: Hero-Talent-Passive
+- Tags: Colossus, Hero-Talent
+- Notes: Mountain Thane passive - NEEDS RESEARCH for specific mechanics."
+"WAR_No_Stranger_to_Pain","Passive","h78fe4967g0123","h78fe4967g0124","No Stranger to Pain","Increases the value of Ignore Pain, though the ability itself is rather small.
+
+- Role: Passive
+- Subtype: Hero-Talent-Passive
+- Tags: Colossus, Hero-Talent, Defensive
+- Notes: Mountain Thane passive - Likely damage reduction or pain suppression."
+"WAR_Thorim_s_Might","Passive","h78fe4967g0125","h78fe4967g0126","Thorims Might","Very powerful, giving lightning strikes and rotational abilities much more value.
+
+- Role: Passive
+- Subtype: Hero-Talent-Passive
+- Tags: Mountain-Thane, Hero-Talent, Power-Boost
+- Notes: Mountain Thane passive - Thorim's power, likely damage or strength boost."
+"WAR_Burst_of_Power","Passive","h78fe4967g0127","h78fe4967g0128","Burst of Power","Random Bloodthirst damage increase triggered by lightning effects.
+
+- Role: Passive
+- Subtype: Hero-Talent-Passive
+- Tags: Mountain-Thane, Hero-Talent, Burst-Damage
+- Notes: Mountain Thane passive - Burst damage window or cooldown enhancement."
+"WAR_Precise_Might","Passive","h78fe4967g0129","h78fe4967g012a","Precise Might","Further emphasizes using Mortal Strike regularly and getting critical strikes.
+
+- Role: Passive
+- Subtype: Hero-Talent-Passive
+- Tags: Colossus, Hero-Talent, Critical
+- Notes: Colossus passive - Likely crit chance or crit damage boost."
+"WAR_Mountain_of_Muscle_and_Scars","Passive","h78fe4967g012b","h78fe4967g012c","Mountain of Muscle and Scars","General damage/defense, and almost unnoticeable size increase.
+
+- Role: Passive
+- Subtype: Hero-Talent-Passive
+- Tags: Colossus, Hero-Talent, Tank, HP-Boost
+- Notes: Mountain Thane passive - Likely HP increase or damage reduction for tanks."
+"WAR_Martial_Expert","Passive","h78fe4967g012d","h78fe4967g012e","Martial Expert","One of several critical strike damage boosts for Colossus warriors.
+
+- Role: Passive
+- Subtype: Hero-Talent-Passive
+- Tags: Colossus, Hero-Talent, Mastery-Boost
+- Notes: Colossus passive - Likely mastery or expertise increase."
+"WAR_Imminent_Demise","Passive","h78fe4967g012f","h78fe4967g0130","Imminent Demise","Allows the consumption of Marked for Execution, even without Sudden Death talented, while also making Bladestorm much more powerful. Has strong synergy with Unhinged.
+
+- Role: Passive
+- Subtype: Hero-Talent-Passive
+- Tags: Slayer, Hero-Talent, Execute-Build
+- Notes: Slayer passive - Execute-focused enhancement."
+"WAR_Arterial_Bleed","Passive","h78fe4967g0131","h78fe4967g0132","Arterial Bleed","Enhances bleed effects applied by Colossus abilities.
+
+- Role: Passive
+- Subtype: Bleed
+- Tags: Colossus, Hero-Talent, Bleed, DoT
+- Notes: Slayer passive - Applies or enhances bleed effects."
+"WAR_Death_Drive","Passive","h78fe4967g0133","h78fe4967g0134","Death Drive","Very minor and largely random, which means it will not always be effective healing.
+
+- Role: Passive
+- Subtype: Hero-Talent-Passive
+- Tags: Slayer, Hero-Talent, Execute-Phase
+- Notes: Slayer passive - Bonuses during execute/death phase."
+"WAR_Flashing_Skies","Passive","h78fe4967g0135","h78fe4967g0136","Flashing Skies","Significantly boosts the single target value of Thunder Blast. Triggers in addition to the normal random chance for a lightning strike, allowing two for one cast.
+
+- Role: Passive
+- Subtype: Hero-Talent-Passive
+- Tags: Mountain-Thane, Hero-Talent, Lightning
+- Notes: Mountain Thane passive - Increases lightning effects frequency/damage."
+"WAR_Practiced_Strikes","Passive","h78fe4967g0137","h78fe4967g0138","Practiced Strikes","General damage increase for Colossus warriors.
+
+- Role: Passive
+- Subtype: Single-Target-Attack
+- Tags: Colossus, Hero-Talent, Attack-Speed
+- Notes: Slayer passive - Increases attack frequency or reduces GCD."
+"WAR_Show_No_Mercy","Passive","h78fe4967g0139","h78fe4967g013a","Show No Mercy","Another damage increase tied to Marked for Execution and Sudden Death procs.
+
+- Role: Passive
+- Subtype: Hero-Talent-Passive
+- Tags: Slayer, Hero-Talent, Execute-Finisher
+- Notes: Slayer passive - Execute enhancements, no mercy mechanics."
+"WAR_Unrelenting_Onslaught","Passive","h78fe4967g013b","h78fe4967g013c","Unrelenting Onslaught","Typically desyncs Bladestorm from other major cooldowns, though the increased frequency is worth the tradeoff.
+
+- Role: Passive
+- Subtype: Hero-Talent-Passive
+- Tags: Slayer, Hero-Talent, Aggressive-Playstyle
+- Notes: Slayer passive - Continuous assault bonuses."
+"WAR_Opportunist","Passive","h78fe4967g013d","h78fe4967g013e","Opportunist","+1d8 vs bleeding/stunned
+
+- Role: Passive
+- Subtype: Hero-Talent
+- Tags: Slayer, Hero-Talent, Conditional-Damage
+- Effects: IF(HasStatus('BLEEDING',target) OR HasStatus('STUNNED',target)):AddDamageBonus(1d8)
+- Notes: Slayer Hero Talent - Path 2. Your attacks deal additional damage to bleeding or stunned targets."
+"WAR_Overwhelming_Blades","Passive","h78fe4967g013f","h78fe4967g0140","Overwhelming Blades","+1d10 to Whirlwind/Bladestorm
+
+- Role: Passive
+- Subtype: Hero-Talent
+- Tags: Slayer, Hero-Talent, AoE, Damage-Boost
+- Effects: IF(HasStringInSpellRoll('WAR__Whirlwind_') OR HasStringInSpellRoll('WAR__Bladestorm_')):AddDamageBonus(1d10)
+- Notes: Slayer Hero Talent - Path 3. Your Whirlwind and Bladestorm deal significantly more damage."
+"WAR_Relentless_Pursuit","Passive","h78fe4967g0141","h78fe4967g0142","Relentless Pursuit","Charge range +10ft, CDR on kills
+
+- Role: Passive
+- Subtype: Hero-Talent
+- Tags: Slayer, Hero-Talent, Mobility, CDR
+- Effects: ModifyCooldown(WAR__Charge_,-1)
+- Notes: Slayer Hero Talent - Path 1. Your Charge cooldown is reduced."
+"Zone_WAR_Bladestorm","Spell_Zone","h78fe4967g0143","h78fe4967g0144","Bladestorm","Bladestorm - Warrior ability
+
+- BG3 Spell Type: Zone
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Zone_WAR_Cleave","Spell_Zone","h78fe4967g0145","h78fe4967g0146","Cleave","Cleave - Warrior ability
+
+- BG3 Spell Type: Zone
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Zone_WAR_Earthquake","Spell_Zone","h78fe4967g0147","h78fe4967g0148","Earthquake","Earthquake - Warrior ability
+
+- BG3 Spell Type: Zone
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Zone_WAR_Odyn_s_Fury","Spell_Zone","h78fe4967g0149","h78fe4967g014a","Odyn s Fury","Odyn s Fury - Warrior ability
+
+- BG3 Spell Type: Zone
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Zone_WAR_Ravager","Spell_Zone","h78fe4967g014b","h78fe4967g014c","Ravager","Ravager - Warrior ability
+
+- BG3 Spell Type: Zone
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Zone_WAR_Revenge","Spell_Zone","h78fe4967g014d","h78fe4967g014e","Revenge","Revenge - Warrior ability
+
+- BG3 Spell Type: Zone
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Zone_WAR_Shockwave","Spell_Zone","h78fe4967g014f","h78fe4967g0150","Shockwave","Shockwave - Warrior ability
+
+- BG3 Spell Type: Zone
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Zone_WAR_Thunder_Blast","Spell_Zone","h78fe4967g0151","h78fe4967g0152","Thunder Blast","Thunder Blast - Warrior ability
+
+- BG3 Spell Type: Zone
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Zone_WAR_Thunder_Clap","Spell_Zone","h78fe4967g0153","h78fe4967g0154","Thunder Clap","Thunder Clap - Warrior ability
+
+- BG3 Spell Type: Zone
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Zone_WAR_Thunderous_Roar","Spell_Zone","h78fe4967g0155","h78fe4967g0156","Thunderous Roar","Thunderous Roar - Warrior ability
+
+- BG3 Spell Type: Zone
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Zone_WAR_Warbreaker","Spell_Zone","h78fe4967g0157","h78fe4967g0158","Warbreaker","Warbreaker - Warrior ability
+
+- BG3 Spell Type: Zone
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Zone_WAR_Whirlwind","Spell_Zone","h78fe4967g0159","h78fe4967g015a","Whirlwind","Whirlwind - Warrior ability
+
+- BG3 Spell Type: Zone
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Shout_WAR_Avatar","Spell_Shout","h78fe4967g015b","h78fe4967g015c","Avatar","Avatar - Warrior ability
+
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: Self()"
+"Shout_WAR_Battle_Shout","Spell_Shout","h78fe4967g015d","h78fe4967g015e","Battle Shout","Battle Shout - Warrior ability
+
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: Self()"
+"Shout_WAR_Battle_Stance","Spell_Shout","h78fe4967g015f","h78fe4967g0160","Battle Stance","Battle Stance - Warrior ability
+
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: Self()"
+"Shout_WAR_Berserker_Rage","Spell_Shout","h78fe4967g0161","h78fe4967g0162","Berserker Rage","Berserker Rage - Warrior ability
+
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: Self()"
+"Shout_WAR_Berserker_Shout","Spell_Shout","h78fe4967g0163","h78fe4967g0164","Berserker Shout","Berserker Shout - Warrior ability
+
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: Self()"
+"Shout_WAR_Cacophonous_Roar","Spell_Shout","h78fe4967g0165","h78fe4967g0166","Cacophonous Roar","Cacophonous Roar - Warrior ability
+
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: Self()"
+"Shout_WAR_Defensive_Stance","Spell_Shout","h78fe4967g0167","h78fe4967g0168","Defensive Stance","Defensive Stance - Warrior ability
+
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: Self()"
+"Shout_WAR_Demoralizing_Shout","Spell_Shout","h78fe4967g0169","h78fe4967g016a","Demoralizing Shout","Demoralizing Shout - Warrior ability
+
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: Self()"
+"Shout_WAR_Die_by_the_Sword","Spell_Shout","h78fe4967g016b","h78fe4967g016c","Die by the Sword","Die by the Sword - Warrior ability
+
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: Self()"
+"Shout_WAR_Disrupting_Shout","Spell_Shout","h78fe4967g016d","h78fe4967g016e","Disrupting Shout","Disrupting Shout - Warrior ability
+
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: Self()"
+"Shout_WAR_Enraged_Regeneration","Spell_Shout","h78fe4967g016f","h78fe4967g0170","Enraged Regeneration","Enraged Regeneration - Warrior ability
+
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: Self()"
+"Shout_WAR_Ignore_Pain","Spell_Shout","h78fe4967g0171","h78fe4967g0172","Ignore Pain","Ignore Pain - Warrior ability
+
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: Self()"
+"Shout_WAR_Intimidating_Shout","Spell_Shout","h78fe4967g0173","h78fe4967g0174","Intimidating Shout","Intimidating Shout - Warrior ability
+
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: Self()"
+"Shout_WAR_Last_Stand","Spell_Shout","h78fe4967g0175","h78fe4967g0176","Last Stand","Last Stand - Warrior ability
+
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: Self()"
+"Shout_WAR_Piercing_Howl","Spell_Shout","h78fe4967g0177","h78fe4967g0178","Piercing Howl","Piercing Howl - Warrior ability
+
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: Self()"
+"Shout_WAR_Rallying_Cry","Spell_Shout","h78fe4967g0179","h78fe4967g017a","Rallying Cry","Rallying Cry - Warrior ability
+
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: Self()"
+"Shout_WAR_Recklessness","Spell_Shout","h78fe4967g017b","h78fe4967g017c","Recklessness","Recklessness - Warrior ability
+
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: Self()"
+"Shout_WAR_Second_Wind","Spell_Shout","h78fe4967g017d","h78fe4967g017e","Second Wind","Second Wind - Warrior ability
+
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: Self()"
+"Shout_WAR_Shield_Block","Spell_Shout","h78fe4967g017f","h78fe4967g0180","Shield Block","Shield Block - Warrior ability
+
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: Self()"
+"Shout_WAR_Shield_Wall","Spell_Shout","h78fe4967g0181","h78fe4967g0182","Shield Wall","Shield Wall - Warrior ability
+
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: Self()"
+"Shout_WAR_Spell_Reflection","Spell_Shout","h78fe4967g0183","h78fe4967g0184","Spell Reflection","Spell Reflection - Warrior ability
+
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: Self()"
+"Jump_WAR_Charge","Spell_Jump","h78fe4967g0185","h78fe4967g0186","Charge","Charge - Warrior ability
+
+- BG3 Spell Type: Jump
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: Ground()"
+"Jump_WAR_Heroic_Leap","Spell_Jump","h78fe4967g0187","h78fe4967g0188","Heroic Leap","Heroic Leap - Warrior ability
+
+- BG3 Spell Type: Jump
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: Ground()"
+"Jump_WAR_Intervene","Spell_Jump","h78fe4967g0189","h78fe4967g018a","Intervene","Intervene - Warrior ability
+
+- BG3 Spell Type: Jump
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: Ground()"
+"WAR_AVATAR","Status_BOOST","h78fe4967g018b","h78fe4967g018c","Avatar","one of the main personal cooldowns that should always be taken.
+
+- Role: Offensive
+- Subtype: General
+- Tags: Cooldown, Burst, Offensive
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Cooldown: 3 minutes (OncePerCombat)
+- Effects: Apply WAR_AVATAR to self for 10 turn(s)
+- Target Requirements: Self
+- Statuses Applied: WAR_AVATAR
+- Notes:"
+"WAR_BATTLE_SHOUT","Status_BOOST","h78fe4967g018d","h78fe4967g018e","Battle Shout","worth ~5% damage for melee classes and Hunters.
+
+- Role: Offensive
+- Subtype: AoE-Buff
+- Tags: Buff, Raid-Utility
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Cooldown: OncePerShortRest
+- Effects: Apply WAR_BATTLE_SHOUT to self for 600 turn(s)
+- Target Requirements: Self
+- Statuses Applied: WAR_BATTLE_SHOUT
+- Notes:"
+"WAR_BATTLE_STANCE","Status_BOOST","h78fe4967g018f","h78fe4967g0190","Battle Stance","basic offensive stance.
+
+- Role: Offensive
+- Subtype: Defensive-CD
+- Tags: Stance, Offensive
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Cooldown: UntilLongRest
+- Effects: Apply WAR_BATTLE_STANCE to self indefinitely
+- Target Requirements: Self
+- Statuses Applied: WAR_BATTLE_STANCE
+- Notes:"
+"WAR_BERSERKER_SHOUT","Status_BOOST","h78fe4967g0191","h78fe4967g0192","Berserker Shout","seldom used group-wide fear breaker.
+
+- Role: Offensive
+- Subtype: AoE-Buff
+- Tags: Utility, AoE, CC-Break, Fear-Removal
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Cooldown: 60 seconds
+- Effects: Remove status SELF_AND_ALLIES,FRIGHTENED
+- Target Requirements: Self
+- Statuses Applied: WAR_BERSERKER_SHOUT
+- Notes: Group-wide fear breaker. Seldom used outside PvP."
+"WAR_COLOSSUS_SMASH","Status_BOOST","h78fe4967g0193","h78fe4967g0194","Colossus Smash","Arms' primary offensive cooldown, which also inflicts Deep Wounds.
+
+- Role: Offensive
+- Subtype: Single-Target-Attack
+- Tags: Arms, Debuff, Burst
+- BG3 Spell Type: Target
+- Action Cost: Action
+- Cooldown: 45 seconds (OncePerShortRest)
+- Damage Roll: 2d10+StrengthModifier,Physical
+- Effects: Deal 2d10+StrengthModifier Physical damage; ApplyStatus(WAR_COLOSSUS_SMASH,100,5)
+- Target Requirements: melee range and not dead
+- Statuses Applied: WAR_COLOSSUS_SMASH
+- Notes:"
+"WAR_DEFENSIVE_STANCE","Status_BOOST","h78fe4967g0195","h78fe4967g0196","Defensive Stance","basic defensive stance.
+
+- Role: Defensive
+- Subtype: Defensive-CD
+- Tags: Stance, Defensive
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Cooldown: UntilLongRest
+- Effects: Apply WAR_DEFENSIVE_STANCE to self indefinitely
+- Target Requirements: Self
+- Statuses Applied: WAR_DEFENSIVE_STANCE
+- Notes:"
+"WAR_DEMORALIZING_SHOUT","Status_BOOST","h78fe4967g0197","h78fe4967g0198","Demoralizing Shout","Minor defensive cooldown with good talent synergy deeper in the tree. Must-have talent.
+
+- Role: Defensive
+- Subtype: AoE-Buff
+- Tags: Defensive, AoE, Debuff
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Cooldown: OncePerShortRest
+- Effects: Apply WAR_DEMORALIZED to nearby enemies for 8 turn(s)
+- Target Requirements: Self
+- Statuses Applied: WAR_DEMORALIZING_SHOUT
+- Notes: AoE debuff shout"
+"WAR_DIE_BY_THE_SWORD","Status_BOOST","h78fe4967g0199","h78fe4967g019a","Die by the Sword","Arms primary defensive cooldown.
+
+- Role: Defensive
+- Subtype: Defensive-CD
+- Tags: Arms, Defensive, Cooldown
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Cooldown: 3 minutes (OncePerCombat)
+- Effects: Apply WAR_DIE_BY_SWORD to self for 4 turn(s)
+- Target Requirements: Self
+- Statuses Applied: WAR_DIE_BY_THE_SWORD
+- Notes:"
+"WAR_DISRUPTING_SHOUT","Status_BOOST","h78fe4967g019b","h78fe4967g019c","Disrupting Shout","Reduces the cooldown of Challenging Shout to 90s and converts it into an AoE taunt/interrupt. Cool concept, decent in Mythic+, and useful on some raid bosses!
+
+- Role: Offensive
+- Subtype: AoE-Buff
+- Tags: Utility, AoE, Taunt, Cooldown-Reduction
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Cooldown: 90 seconds
+- Effects: Apply TAUNTED to nearby enemies for 6 turn(s)
+- Target Requirements: Self
+- Statuses Applied: WAR_DISRUPTING_SHOUT
+- Notes: Converts Challenging Shout to AoE taunt with reduced cooldown (90s vs 240s)"
+"WAR_ENRAGED_REGENERATION","Status_BOOST","h78fe4967g019d","h78fe4967g019e","Enraged Regeneration","Fury's primary defensive cooldown.
+
+- Role: Defensive
+- Subtype: Rage-Management
+- Tags: Fury, Defensive, Healing
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Cooldown: OncePerShortRest
+- Effects: Apply WAR_ENRAGED_REGEN to self for 5 turn(s)
+- Target Requirements: Self
+- Statuses Applied: WAR_ENRAGED_REGENERATION
+- Notes:"
+"WAR_HAMSTRING","Status_BOOST","h78fe4967g019f","h78fe4967g01a0","Hamstring","minor snare.
+
+- Role: Offensive
+- Subtype: General
+- Tags: Utility, Slow
+- BG3 Spell Type: Target
+- Action Cost: Action
+- Effects: ApplyStatus(WAR_HAMSTRUNG,100,3)
+- Target Requirements: melee range and not dead
+- Statuses Applied: WAR_HAMSTRING
+- Notes:"
+"WAR_IGNORE_PAIN","Status_BOOST","h78fe4967g01a1","h78fe4967g01a2","Ignore Pain","Core defensive skill, must-have talent.
+
+- Role: Defensive
+- Subtype: Defensive-CD
+- Tags: Protection, Defensive, Absorb
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Resources: Rage 40
+- Cooldown: OncePerTurn
+- Effects: Apply WAR_IGNORE_PAIN to self for 6 turn(s)
+- Target Requirements: Self
+- Statuses Applied: WAR_IGNORE_PAIN
+- Notes:"
+"WAR_IMPENETRABLE_WALL","Status_BOOST","h78fe4967g01a3","h78fe4967g01a4","Impenetrable Wall","Reduces the cooldown of Shield Wall whenever you cast Shield Slam.
+
+- Role: Defensive
+- Subtype: General
+- Tags: Protection, Defensive, CC-Immunity
+- BG3 Spell Type: Target
+- Action Cost: Action
+- Target Requirements: melee range and not dead
+- Statuses Applied: WAR_IMPENETRABLE_WALL
+- Notes: Enhances Shield Wall with CC immunity"
+"WAR_INTIMIDATING_SHOUT","Status_BOOST","h78fe4967g01a5","h78fe4967g01a6","Intimidating Shout","easily broken AoE fear which can be used as a pseudo interrupt.
+
+- Role: Offensive
+- Subtype: AoE-Buff
+- Tags: Utility, AoE, CC, Fear
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Cooldown: OncePerShortRest
+- Effects: Apply FRIGHTENED to nearby enemies for 8 turn(s)
+- Target Requirements: Self
+- Statuses Applied: WAR_INTIMIDATING_SHOUT
+- Notes: AoE fear effect"
+"WAR_PUMMEL","Status_BOOST","h78fe4967g01a7","h78fe4967g01a8","Pummel","low cooldown interrupt.
+
+- Role: Offensive
+- Subtype: General
+- Tags: Utility, Interrupt
+- BG3 Spell Type: Target
+- Action Cost: Action
+- Resources: Rage 10
+- Cooldown: OncePerTurn
+- Effects: Interrupt the target
+- Target Requirements: melee range and not dead
+- Statuses Applied: WAR_PUMMEL
+- Notes:"
+"WAR_RECKLESSNESS","Status_BOOST","h78fe4967g01a9","h78fe4967g01aa","Recklessness","Fury's primary offensive cooldown, greatly increasing rage generation and the frequency of Rampage casts.
+
+- Role: Offensive
+- Subtype: General
+- Tags: Fury, Cooldown, Burst
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Cooldown: 90 seconds (OncePerCombat)
+- Effects: Apply WAR_RECKLESSNESS to self for 6 turn(s)
+- Target Requirements: Self
+- Statuses Applied: WAR_RECKLESSNESS
+- Notes:"
+"WAR_SHIELD_BLOCK","Status_BOOST","h78fe4967g01ab","h78fe4967g01ac","Shield Block","Primary defensive skill. Very powerful damage mitigation while active.
+
+- Role: Defensive
+- Subtype: Defensive-CD
+- Tags: Protection, Defensive, Mitigation
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Resources: Rage 30
+- Cooldown: Short Rest (1-2 charges)
+- Effects: Apply WAR_SHIELD_BLOCK to self for 2 turn(s)
+- Target Requirements: Self
+- Statuses Applied: WAR_SHIELD_BLOCK
+- Notes:"
+"WAR_SHIELD_WALL","Status_BOOST","h78fe4967g01ad","h78fe4967g01ae","Shield Wall","Iconic, mandatory defensive cooldown. The ultimate tank defensive cooldown. Take it.
+
+- Role: Defensive
+- Subtype: General
+- Tags: Protection, Defensive, Cooldown
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Cooldown: 5 minutes (OncePerCombat)
+- Effects: Apply WAR_SHIELD_WALL to self for 8 turn(s)
+- Target Requirements: Self
+- Statuses Applied: WAR_SHIELD_WALL
+- Notes:"
+"WAR_SHOCKWAVE","Status_BOOST","h78fe4967g01af","h78fe4967g01b0","Shockwave","on demand AoE stun.
+
+- Role: Offensive
+- Subtype: General
+- Tags: AoE, Stun, CC
+- BG3 Spell Type: Zone
+- Action Cost: Action
+- Resources: Rage 20
+- Cooldown: OncePerShortRest
+- Damage Roll: 1d6+StrengthModifier,Force
+- Effects: Deal 1d6+StrengthModifier Force damage; ApplyStatus(WAR_STUNNED,100,2)
+- Target Requirements: area target
+- Statuses Applied: WAR_SHOCKWAVE
+- Notes:"
+"WAR_SPELL_REFLECTION","Status_BOOST","h78fe4967g01b1","h78fe4967g01b2","Spell Reflection","very useful, low cooldown damage reduction.
+
+- Role: Offensive
+- Subtype: General
+- Tags: Defensive, Magic-Defense
+- BG3 Spell Type: Shout
+- Action Cost: Action
+- Resources: Rage 10
+- Cooldown: OncePerShortRest
+- Effects: Apply WAR_SPELL_REFLECT to self for 3 turn(s)
+- Target Requirements: Self
+- Statuses Applied: WAR_SPELL_REFLECTION
+- Notes:"
+"WAR_STORM_BOLT","Status_BOOST","h78fe4967g01b3","h78fe4967g01b4","Storm Bolt","useful ranged stun on a relatively low cooldown.
+
+- Role: Offensive
+- Subtype: General
+- Tags: Utility, Stun, Ranged
+- BG3 Spell Type: Projectile
+- Action Cost: Action
+- Cooldown: OncePerShortRest
+- Damage Roll: 1d6+StrengthModifier,Thunder
+- Effects: Deal 1d6+StrengthModifier Thunder damage; ApplyStatus(WAR_STUNNED,100,2)
+- Target Requirements: Distance() <= 18 and not dead
+- Statuses Applied: WAR_STORM_BOLT
+- Notes:"
+"WAR_STORM_BOLTS","Status_BOOST","h78fe4967g01b5","h78fe4967g01b6","Storm Bolts","A mostly PvP talent, as being unable to dictate which two extra targets can contribute to diminishing returns.
+
+- Role: Offensive
+- Subtype: Hero-Talent-Passive
+- Tags: Mountain-Thane, Hero-Talent, Lightning, Projectile
+- BG3 Spell Type: Projectile
+- Action Cost: Action
+- Cooldown: OncePerTurn
+- Damage Roll: DealDamage(2d6+StrengthModifier,Bludgeoning,Magical)
+- Target Requirements: Distance() <= 18 and not dead
+- Statuses Applied: WAR_STORM_BOLTS
+- Notes: Mountain Thane ability - Lightning bolt projectile attacks."
+"WAR_STORM_WALL","Status_BOOST","h78fe4967g01b7","h78fe4967g01b8","Storm Wall","heals on any parry, not just when Die by the Sword is active.
+
+- Role: Defensive
+- Subtype: General
+- Tags: Arms, Defensive, Raid-Utility
+- BG3 Spell Type: Target
+- Action Cost: Action
+- Target Requirements: melee range and not dead
+- Statuses Applied: WAR_STORM_WALL
+- Notes: Extends Die by the Sword with AoE benefit"
+"WAR_TAUNTED","Status_BOOST","h78fe4967g01b9","h78fe4967g01ba","TAUNTED","TAUNTED - Warrior ability"
+"WAR_WARBREAKER","Status_BOOST","h78fe4967g01bb","h78fe4967g01bc","Warbreaker","turns Colossus Smash into a multitarget attack, extremely important for effective AoE damage.
+
+- Role: Offensive
+- Subtype: General
+- Tags: Arms, AoE, Cooldown, Debuff
+- BG3 Spell Type: Zone
+- Action Cost: Action
+- Cooldown: 45 seconds
+- Damage Roll: 3d10+StrengthModifier,Physical
+- Effects: Deal 3d10+StrengthModifier Physical damage; ApplyStatus(WAR_COLOSSUS_SMASH,100,10)
+- Target Requirements: area target
+- Statuses Applied: WAR_WARBREAKER
+- Notes: Requires Colossus Smash talent"
+"Target_WAR_Bloodthirst","Spell_Target","h78fe4967g01bd","h78fe4967g01be","Bloodthirst","Bloodthirst - Warrior ability
+
+- BG3 Spell Type: Target
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Target_WAR_Colossus_Smash","Spell_Target","h78fe4967g01bf","h78fe4967g01c0","Colossus Smash","Colossus Smash - Warrior ability
+
+- BG3 Spell Type: Target
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Target_WAR_Demolish","Spell_Target","h78fe4967g01c1","h78fe4967g01c2","Demolish","Demolish - Warrior ability
+
+- BG3 Spell Type: Target
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Target_WAR_Devastate","Spell_Target","h78fe4967g01c3","h78fe4967g01c4","Devastate","Devastate - Warrior ability
+
+- BG3 Spell Type: Target
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Target_WAR_Execute","Spell_Target","h78fe4967g01c5","h78fe4967g01c6","Execute","Execute - Warrior ability
+
+- BG3 Spell Type: Target
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Target_WAR_Hamstring","Spell_Target","h78fe4967g01c7","h78fe4967g01c8","Hamstring","Hamstring - Warrior ability
+
+- BG3 Spell Type: Target
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Target_WAR_Impending_Victory","Spell_Target","h78fe4967g01c9","h78fe4967g01ca","Impending Victory","Impending Victory - Warrior ability
+
+- BG3 Spell Type: Target
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Target_WAR_Menace","Spell_Target","h78fe4967g01cb","h78fe4967g01cc","Menace","Menace - Warrior ability
+
+- BG3 Spell Type: Target
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Target_WAR_Mortal_Strike","Spell_Target","h78fe4967g01cd","h78fe4967g01ce","Mortal Strike","Mortal Strike - Warrior ability
+
+- BG3 Spell Type: Target
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Target_WAR_Onslaught","Spell_Target","h78fe4967g01cf","h78fe4967g01d0","Onslaught","Onslaught - Warrior ability
+
+- BG3 Spell Type: Target
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Target_WAR_Overpower","Spell_Target","h78fe4967g01d1","h78fe4967g01d2","Overpower","Overpower - Warrior ability
+
+- BG3 Spell Type: Target
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Target_WAR_Pummel","Spell_Target","h78fe4967g01d3","h78fe4967g01d4","Pummel","Pummel - Warrior ability
+
+- BG3 Spell Type: Target
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Target_WAR_Raging_Blow","Spell_Target","h78fe4967g01d5","h78fe4967g01d6","Raging Blow","Raging Blow - Warrior ability
+
+- BG3 Spell Type: Target
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Target_WAR_Rampage","Spell_Target","h78fe4967g01d7","h78fe4967g01d8","Rampage","Rampage - Warrior ability
+
+- BG3 Spell Type: Target
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Target_WAR_Shield_Slam","Spell_Target","h78fe4967g01d9","h78fe4967g01da","Shield Slam","Shield Slam - Warrior ability
+
+- BG3 Spell Type: Target
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Target_WAR_Skullsplitter","Spell_Target","h78fe4967g01db","h78fe4967g01dc","Skullsplitter","Skullsplitter - Warrior ability
+
+- BG3 Spell Type: Target
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Target_WAR_Slam","Spell_Target","h78fe4967g01dd","h78fe4967g01de","Slam","Slam - Warrior ability
+
+- BG3 Spell Type: Target
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Target_WAR_Taunt","Spell_Target","h78fe4967g01df","h78fe4967g01e0","Taunt","Taunt - Warrior ability
+
+- BG3 Spell Type: Target
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Target_WAR_Victory_Rush","Spell_Target","h78fe4967g01e1","h78fe4967g01e2","Victory Rush","Victory Rush - Warrior ability
+
+- BG3 Spell Type: Target
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Projectile_WAR_Champion_s_Spear","Spell_Projectile","h78fe4967g01e3","h78fe4967g01e4","Champion s Spear","Champion s Spear - Warrior ability
+
+- BG3 Spell Type: Projectile
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Projectile_WAR_Heroic_Throw","Spell_Projectile","h78fe4967g01e5","h78fe4967g01e6","Heroic Throw","Heroic Throw - Warrior ability
+
+- BG3 Spell Type: Projectile
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Projectile_WAR_Shattering_Throw","Spell_Projectile","h78fe4967g01e7","h78fe4967g01e8","Shattering Throw","Shattering Throw - Warrior ability
+
+- BG3 Spell Type: Projectile
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Projectile_WAR_Storm_Bolt","Spell_Projectile","h78fe4967g01e9","h78fe4967g01ea","Storm Bolt","Storm Bolt - Warrior ability
+
+- BG3 Spell Type: Projectile
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Projectile_WAR_Storm_Bolts","Spell_Projectile","h78fe4967g01eb","h78fe4967g01ec","Storm Bolts","Storm Bolts - Warrior ability
+
+- BG3 Spell Type: Projectile
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"
+"Projectile_WAR_Wrecking_Throw","Spell_Projectile","h78fe4967g01ed","h78fe4967g01ee","Wrecking Throw","Wrecking Throw - Warrior ability
+
+- BG3 Spell Type: Projectile
+- Action Cost: Action
+- Resources: Rage
+- Damage Roll: DealDamage(1d6,Physical)
+- Effects: Deal MainMeleeWeapon MainMeleeWeaponDamageType damage
+- Target Requirements: character and not dead"

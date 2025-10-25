@@ -4,10 +4,32 @@
     <region id="SkillLists">
         <node id="root">
             <children>
+                <!-- Base Warrior - General martial combat versatility -->
                 <node id="SkillList">
-                    <attribute id="Name" type="FixedString" value="WoWWarlock Skill List"/>
-                    <attribute id="Skills" type="LSString" value="Arcana, Deception, History, Intimidation, Investigation, Religion"/>
-                    <attribute id="UUID" type="guid" value="6f3122fa-de19-4512-a307-49cba0369bf0"/>
+                    <attribute id="Name" type="FixedString" value="Base Warrior Skill List"/>
+                    <attribute id="Skills" type="LSString" value="Athletics, Acrobatics, Intimidation, Perception, Survival, AnimalHandling"/>
+                    <attribute id="UUID" type="guid" value="78fe4967-0003-0000-0000-000000000001"/>
+                </node>
+                
+                <!-- Arms Warrior - Battlefield Tactician -->
+                <node id="SkillList">
+                    <attribute id="Name" type="FixedString" value="Arms Warrior Skill List"/>
+                    <attribute id="Skills" type="LSString" value="Athletics, Intimidation, Perception, Survival"/>
+                    <attribute id="UUID" type="guid" value="78fe4967-0003-0000-0000-000000000002"/>
+                </node>
+                
+                <!-- Fury Warrior - Raging Berserker -->
+                <node id="SkillList">
+                    <attribute id="Name" type="FixedString" value="Fury Warrior Skill List"/>
+                    <attribute id="Skills" type="LSString" value="Athletics, Acrobatics, Intimidation, Survival"/>
+                    <attribute id="UUID" type="guid" value="78fe4967-0003-0000-0000-000000000003"/>
+                </node>
+                
+                <!-- Protection Warrior - Tank Guardian (5 skills for diverse utility) -->
+                <node id="SkillList">
+                    <attribute id="Name" type="FixedString" value="Protection Warrior Skill List"/>
+                    <attribute id="Skills" type="LSString" value="Athletics, Intimidation, Perception, Survival, AnimalHandling"/>
+                    <attribute id="UUID" type="guid" value="78fe4967-0003-0000-0000-000000000004"/>
                 </node>
             </children>
         </node>

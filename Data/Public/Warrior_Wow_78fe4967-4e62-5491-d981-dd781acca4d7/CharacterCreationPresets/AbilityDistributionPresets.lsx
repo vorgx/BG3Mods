@@ -1,18 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
-    <version major="4" minor="7" revision="1" build="3"/>
-    <region id="AbilityDistributionPresets">
+    <version major="4" minor="0" revision="9" build="330"/>
+    <region id="CharacterCreationAbilityDistributionPresets">
         <node id="root">
             <children>
-                <node id="AbilityDistributionPreset">
-                    <attribute id="Charisma" type="int32" value="15"/>
-                    <attribute id="ClassUUID" type="guid" value="a417135a-918e-4acf-9ab9-e1e72ef50afb"/>
-                    <attribute id="Constitution" type="int32" value="14"/>
-                    <attribute id="Dexterity" type="int32" value="12"/>
-                    <attribute id="Intelligence" type="int32" value="13"/>
-                    <attribute id="Strength" type="int32" value="8"/>
-                    <attribute id="UUID" type="guid" value="dde75767-7e67-439a-b4fb-d464dbe01770"/>
+                <!-- Base Warrior: Standard strength-focused warrior (15 STR +2 = 17, 15 CON +1 = 16, 13 DEX) -->
+                <node id="CharacterCreationAbilityDistributionPreset">
+                    <attribute id="ClassUUID" type="guid" value="78fe4967-4e62-5491-d981-dd781acca4d7"/>
+                    <attribute id="Charisma" type="int32" value="8"/>
+                    <attribute id="Constitution" type="int32" value="15"/>
+                    <attribute id="Dexterity" type="int32" value="13"/>
+                    <attribute id="Intelligence" type="int32" value="8"/>
+                    <attribute id="Strength" type="int32" value="15"/>
                     <attribute id="Wisdom" type="int32" value="10"/>
+                    <attribute id="UUID" type="guid" value="78fe4967-0002-0000-0000-000000000001"/>
+                </node>
+                <!-- Arms Warrior: Balanced melee combatant (15 STR +2 = 17, 15 CON +1 = 16, 14 DEX) - emphasizes endurance and consistent damage -->
+                <node id="CharacterCreationAbilityDistributionPreset">
+                    <attribute id="ClassUUID" type="guid" value="78fe4967-4e62-5491-d981-dd781acca4d7"/>
+                    <attribute id="Charisma" type="int32" value="8"/>
+                    <attribute id="Constitution" type="int32" value="15"/>
+                    <attribute id="Dexterity" type="int32" value="14"/>
+                    <attribute id="Intelligence" type="int32" value="8"/>
+                    <attribute id="Strength" type="int32" value="15"/>
+                    <attribute id="Wisdom" type="int32" value="8"/>
+                    <attribute id="UUID" type="guid" value="78fe4967-0002-0000-0000-000000000002"/>
+                </node>
+                <!-- Fury Warrior: Mobile dual-wielding berserker (15 STR +2 = 17, 15 DEX +1 = 16, 14 CON) - high damage, aggressive playstyle -->
+                <node id="CharacterCreationAbilityDistributionPreset">
+                    <attribute id="ClassUUID" type="guid" value="78fe4967-4e62-5491-d981-dd781acca4d7"/>
+                    <attribute id="Charisma" type="int32" value="8"/>
+                    <attribute id="Constitution" type="int32" value="14"/>
+                    <attribute id="Dexterity" type="int32" value="15"/>
+                    <attribute id="Intelligence" type="int32" value="8"/>
+                    <attribute id="Strength" type="int32" value="15"/>
+                    <attribute id="Wisdom" type="int32" value="8"/>
+                    <attribute id="UUID" type="guid" value="78fe4967-0002-0000-0000-000000000003"/>
+                </node>
+                <!-- Protection Warrior: Defensive tank (15 CON +2 = 17, 15 STR +1 = 16, 14 DEX) - maximum survivability, frontline protector -->
+                <node id="CharacterCreationAbilityDistributionPreset">
+                    <attribute id="ClassUUID" type="guid" value="78fe4967-4e62-5491-d981-dd781acca4d7"/>
+                    <attribute id="Charisma" type="int32" value="8"/>
+                    <attribute id="Constitution" type="int32" value="15"/>
+                    <attribute id="Dexterity" type="int32" value="14"/>
+                    <attribute id="Intelligence" type="int32" value="8"/>
+                    <attribute id="Strength" type="int32" value="15"/>
+                    <attribute id="Wisdom" type="int32" value="8"/>
+                    <attribute id="UUID" type="guid" value="78fe4967-0002-0000-0000-000000000004"/>
                 </node>
             </children>
         </node>

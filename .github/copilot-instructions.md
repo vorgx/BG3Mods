@@ -54,11 +54,14 @@ This is the **single authoritative source** for all project information. All oth
 
 ### File Creation Protocol
 **BEFORE creating new files**:
-1. Check [12] Folder Structure Inventory in SOURCE_OF_TRUTH.md
-2. Determine correct folder location
+1. Check [12] Folder Structure Inventory in SOURCE_OF_TRUTH.md (line 5298)
+   - **Critical Project Files section**: Complete inventory of all custom files created
+   - Organized by category: Root files, Data files, Documentation, Validation/Testing, Scripts, Build files
+   - 100+ files documented with purpose and status
+2. Determine correct folder location based on file type
 3. Present location to user for confirmation
 4. Create file in confirmed location
-5. Update SOURCE_OF_TRUTH.md folder inventory
+5. Update SOURCE_OF_TRUTH.md folder inventory with new file details
 
 ### Cross-Reference Protocol
 **WHEN moving/renaming files or folders**:
@@ -74,11 +77,33 @@ This is the **single authoritative source** for all project information. All oth
 - Always use SOURCE_OF_TRUTH.md as primary reference
 - If user asks about history, check Archive/ AFTER checking SOURCE_OF_TRUTH.md
 
+### Troubleshooting Protocol
+**Production Log**: `TROUBLESHOOTING_LOG.md` (root folder)
+
+**CRITICAL**: ALWAYS check troubleshooting log BEFORE attempting ANY fix to avoid repeating failed attempts.
+
+**BEFORE troubleshooting**:
+1. Read `TROUBLESHOOTING_LOG.md` to see what's been tried
+2. Check "DEAD ENDS" section - DO NOT retry these
+3. Check "VERIFIED WORKING" section - DO NOT re-check these
+4. Review "FIXES ATTEMPTED" for context and results
+
+**AFTER attempting fix**:
+1. Document attempt in "FIXES ATTEMPTED" section with:
+   - Date, problem statement, evidence, exact code changes, result, files modified
+2. If fix doesn't work, add to "DEAD ENDS" section
+3. If fix works, add to "VERIFIED WORKING" section
+4. Update version history table with package info
+5. Update "Last Updated" timestamp
+
+**Purpose**: Prevents circular troubleshooting, documents all attempts, provides evidence-based decision making
+
 ### Enforcement
 - **Pre-change**: Read SOURCE_OF_TRUTH.md section → Use as baseline → Proceed
 - **Post-change**: Update SOURCE_OF_TRUTH.md → Update timestamp → Add change log → Confirm
 - **File creation**: Check folder inventory → Confirm location → Create → Update inventory
 - **Cross-reference**: Search old name → Update all → Test → Record change
+- **Troubleshooting**: Check TROUBLESHOOTING_LOG.md → Document attempt → Update results
 
 ### Ability Database Protocol
 **Production Database**: `Documentation/00_SourcesOfTruth/AbilityDatabase_Warrior_FullyEnriched.csv`

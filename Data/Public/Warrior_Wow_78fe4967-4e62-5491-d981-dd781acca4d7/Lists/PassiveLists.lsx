@@ -1,263 +1,303 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <save>
-    <version major="4" minor="8" revision="0" build="200"/>
+    <version major="4" minor="0" revision="9" build="0"/>
     <region id="PassiveLists">
         <node id="root">
             <children>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="WoWWarlock_PassiveList"/>
-                    <attribute id="UUID" type="guid" value="d0534f79-93fe-49a0-b1e0-8284d8dab134"/>
+                    <attribute id="Comment" type="LSString" value="Warrior Level 2 Passives"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Fast_Footwork;WAR_War_Machine"/>
+                    <attribute id="UUID" type="guid" value="8624bd73-aec2-4f1f-b17f-a577d28d0547"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="Class_PassiveList"/>
-                    <attribute id="UUID" type="guid" value="95865c86-4bc8-4e7d-8da6-c22c8367863d"/>
+                    <attribute id="Comment" type="LSString" value="Warrior Level 4 Passives"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Pain_and_Gain"/>
+                    <attribute id="UUID" type="guid" value="48c8e716-246a-4d20-bdf5-38566c2e4f79"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="ClassRow1"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_UnlockBurningRush,WoWWarlock_FelDomination,WoWWarlock_Unlock_Healthstone_1"/>
-                    <attribute id="UUID" type="guid" value="ebd12d3f-5232-43e0-bb52-dc7b98f4041e"/>
+                    <attribute id="Comment" type="LSString" value="Warrior Level 5 Passives"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Barbaric_Training"/>
+                    <attribute id="UUID" type="guid" value="aa79db48-c952-4374-a9af-7d986b5d2d80"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="ClassRow2"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Unlock_DemonArmor,WoWWarlock_Unlock_FelArmor,WoWWarlock_Unlocspell_Mortal Coil"/>
-                    <attribute id="UUID" type="guid" value="bf5b693e-2e0e-443d-b950-fe1adc6b8fac"/>
+                    <attribute id="Comment" type="LSString" value="Warrior Level 6 Passives"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Honed_Reflexes;WAR_Crushing_Force;WAR_Bitter_Immunity;WAR_Rumbling_Earth;WAR_Reinforced_Plates"/>
+                    <attribute id="UUID" type="guid" value="565f8b59-c2e3-40a7-8b7e-0def0736ae3d"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="ClassRow3"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Unlock_Curses,WoWWarlock_Unlock_HowlofTerror"/>
-                    <attribute id="UUID" type="guid" value="cd2781e4-a985-42b6-ab26-2598f0ccdf8b"/>
+                    <attribute id="Comment" type="LSString" value="Warrior Level 7 Passives"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Sidearm;WAR_Double_Time;WAR_Seismic_Reverberation"/>
+                    <attribute id="UUID" type="guid" value="486c3227-9fa2-44cc-bb5c-fbab4b2f7249"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="ClassRow4"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_DemonicEmbrace,WoWWarlock_WrathfulMinion,WoWWarlock_Unlock_Banish"/>
-                    <attribute id="UUID" type="guid" value="ee501594-1b66-4291-9b80-253cac88830f"/>
+                    <attribute id="Comment" type="LSString" value="Warrior Level 8 Passives"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Dual_Wield_Specialization;WAR_Armored_to_the_Teeth;WAR_Enduring_Alacrity"/>
+                    <attribute id="UUID" type="guid" value="90f2d4a0-7bb2-4bcd-b9ca-8bf3debdf33f"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="ClassRow5"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_TeachingsoftheSatyr,WoWWarlock_Unlock_Shadowfury,WoWWarlock_DemonicFortitude"/>
-                    <attribute id="UUID" type="guid" value="2b6f2d2b-c047-4ed9-9458-74534e4b87c9"/>
+                    <attribute id="Comment" type="LSString" value="Warrior Level 9 Passives"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Indomitable"/>
+                    <attribute id="UUID" type="guid" value="c690679a-a14a-4cf9-8d2d-2670affef076"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="ClassRow6"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Unlock_DarkPact,WoWWarlock_DarkAccord,WoWWarlock_StrenghofWill"/>
-                    <attribute id="UUID" type="guid" value="19aff8b0-d238-4987-998f-e57aa2daadd1"/>
+                    <attribute id="Comment" type="LSString" value="Warrior Level 10 Passives"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Thunderous_Words;WAR_Titan_s_Torment;WAR_Champion_s_Might"/>
+                    <attribute id="UUID" type="guid" value="f165d892-883d-43df-9e72-1cc279992256"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="ClassRow7"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_FrequentDonor,WoWWarlock_Darkfury,WoWWarlock_Unlock_LifeTap"/>
-                    <attribute id="UUID" type="guid" value="1fca296a-a162-4cab-bb05-517f2410a2fd"/>
+                    <attribute id="Comment" type="LSString" value="Arms Level 1 Passives"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Seasoned_Soldier"/>
+                    <attribute id="UUID" type="guid" value="d06dc016-8756-4550-aeb3-bdacd4b2993d"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="ClassRow8Demo"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_DemonicTactics,WoWWarlock_ImprovedArmors,WoWWarlock_Demo_PacofEredar"/>
-                    <attribute id="UUID" type="guid" value="36698e48-dfe7-4e32-b842-41cfeaf420f0"/>
+                    <attribute id="Comment" type="LSString" value="Arms Level 4 Passives"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Fervor_of_Battle"/>
+                    <attribute id="UUID" type="guid" value="d4ad8233-6dee-4417-8578-a5b7db23b83a"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="ClassRow8Destro"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_DemonicTactics,WoWWarlock_ImprovedArmors,WoWWarlock_Destro_PactofEredar"/>
-                    <attribute id="UUID" type="guid" value="90c84d93-e6f0-40b7-a888-3bfecc8fbafb"/>
+                    <attribute id="Comment" type="LSString" value="Arms Level 5 Passives"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Barbaric_Training"/>
+                    <attribute id="UUID" type="guid" value="4ca23df0-66a7-4a18-9ea2-12f354d477c1"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="ClassRow8Aff"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_DemonicTactics,WoWWarlock_ImprovedArmors,WoWWarlock_Aff_PactofEredar"/>
-                    <attribute id="UUID" type="guid" value="59496156-8955-4d65-9469-5baef5d47c31"/>
+                    <attribute id="Comment" type="LSString" value="Arms Level 6 Passives"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Anger_Management"/>
+                    <attribute id="UUID" type="guid" value="ae579c55-4740-44c6-95cb-cddcbda14d8c"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="ClassRow9"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_InquisitorGaze,WoWWarlock_SummonSoulkeeper"/>
-                    <attribute id="UUID" type="guid" value="bb380d22-1bf3-407c-a01a-3207eaf6c41a"/>
+                    <attribute id="Comment" type="LSString" value="Arms Level 7 Passives"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Dreadnaught;WAR_Strength_of_Arms;WAR_In_For_The_Kill;WAR_Test_of_Might"/>
+                    <attribute id="UUID" type="guid" value="a06797be-be33-4f3f-99cc-5e1f3ca7f2a9"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="Demo_PassiveList"/>
-                    <attribute id="UUID" type="guid" value="4ca8bee8-266f-40e3-9901-fdf0b4332fa9"/>
+                    <attribute id="Comment" type="LSString" value="Arms Level 8 Passives"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Enduring_Alacrity"/>
+                    <attribute id="UUID" type="guid" value="c9186e46-0c19-464b-89d3-4ed30831d2db"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="DemoLevel12"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Demo_ArchimondesDarkness,WoWWarlock_Demo_MannorothsFury,WoWWarlock_Demo_KiljaedensCunning"/>
-                    <attribute id="UUID" type="guid" value="6ab95d39-d811-4b1a-8268-950ef3211de0"/>
+                    <attribute id="Comment" type="LSString" value="Arms Level 9 Passives"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Indomitable"/>
+                    <attribute id="UUID" type="guid" value="374589cb-549d-4834-bdba-62b099015789"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="DemoRow1"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Demo_SacrificedSouls,WoWWarlock_Demo_Imperator,WoWWarlock_Demo_UnlockSoulStrike"/>
-                    <attribute id="UUID" type="guid" value="aa7da72c-92d1-4b2f-b3e4-d04920ffe68a"/>
+                    <attribute id="Comment" type="LSString" value="Arms Level 10 Passives"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Executioner_s_Precision"/>
+                    <attribute id="UUID" type="guid" value="73ef8e04-defc-4d00-8298-962a26554492"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="DemoRow2"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Demo_AnnihilanTraining,WoWWarlock_Demo_Unlock_WickedMaw,WoWWarlock_Demo_Unlock_BilescourgeBombers"/>
-                    <attribute id="UUID" type="guid" value="c12df8e1-342b-4ca7-b811-acca4e705ef4"/>
+                    <attribute id="Comment" type="LSString" value="Fury Level 1 Passives"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Titan_s_Grip"/>
+                    <attribute id="UUID" type="guid" value="d095abe3-469b-41e9-af54-97a647a5f98a"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="DemoRow3"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Demo_Unlock_PowerSiphon,WoWWarlock_Demo_Unlock_DemonicTyrant,WoWWarlock_Demo_Unlock_GrimoireFelguard"/>
-                    <attribute id="UUID" type="guid" value="b96ebe34-101a-46be-b7cc-9adf1cf23a88"/>
+                    <attribute id="Comment" type="LSString" value="Fury Level 6 Passives"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Cold_Steel_Hot_Blood;WAR_Vicious_Contempt;WAR_Hack_and_Slash"/>
+                    <attribute id="UUID" type="guid" value="0ce79c46-b25b-45c6-957d-7187487bf93f"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="DemoRow4"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Demo_BloodInvocation,WoWWarlock_Demo_UmbralBlaze"/>
-                    <attribute id="UUID" type="guid" value="ae0b33b4-cea1-4cc9-b38f-39289f0f793b"/>
+                    <attribute id="Comment" type="LSString" value="Fury Level 7 Passives"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Bloodborne"/>
+                    <attribute id="UUID" type="guid" value="e54e1931-f1cf-4928-8b34-13065fa39a87"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="DemoRow5"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Demo_ImpendingDoom,WoWWarlock_Demo_Unlock_DemonicCalling,WoWWarlock_Demo_FiendishOblitation"/>
-                    <attribute id="UUID" type="guid" value="edbd4de0-c39e-4e08-b84b-6e13634c90e9"/>
+                    <attribute id="Comment" type="LSString" value="Fury Level 8 Passives"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Enduring_Alacrity"/>
+                    <attribute id="UUID" type="guid" value="ca5f2b4a-e75a-4113-a673-36b886a10d59"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="DemoRow6"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Demo_ReignofTyrany,WoWWarlock_Demo_UnlockVilefiend,WoWWarlock_Demo_AntoranArmaments"/>
-                    <attribute id="UUID" type="guid" value="09c8d902-ea92-4be9-aaf5-23ae1c3a2cb5"/>
+                    <attribute id="Comment" type="LSString" value="Fury Level 9 Passives"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Anger_Management;WAR_Reckless_Abandon;WAR_Indomitable"/>
+                    <attribute id="UUID" type="guid" value="6eadc4a5-d842-4eb8-abfb-70a4a26802dc"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="DemoRow7"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Demo_PactoftheImpMother,WoWWarlock_Demo_FoulMouth,WoWWarlock_Demo_HoundmastersGambit"/>
-                    <attribute id="UUID" type="guid" value="0dcf0a7c-1eaf-4700-a2a7-0a548ef813c7"/>
+                    <attribute id="Comment" type="LSString" value="Protection Level 3 Passives"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Brace_For_Impact"/>
+                    <attribute id="UUID" type="guid" value="98238d1a-afa4-4aaa-9c61-ec59cdaada41"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="DemoRow8"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Demo_DoomEternal,WoWWarlock_Demo_Flametouched,WoWWarlock_Demo_ImproveDemonicTactics"/>
-                    <attribute id="UUID" type="guid" value="69ea804e-cc31-4c60-b447-055d0dd5bef6"/>
+                    <attribute id="Comment" type="LSString" value="Protection Level 4 Passives"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Best_Served_Cold"/>
+                    <attribute id="UUID" type="guid" value="9767d1ee-e156-4c71-b12b-c8147bdca73f"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="DemoRow9"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Demo_Unlock_PactOfEredruin,WoWWarlock_Demo_Unlock_Shadowtouched,WoWWarlock_Demo_MarkoftheFelhounts"/>
-                    <attribute id="UUID" type="guid" value="ad23a9eb-a19b-4f9f-b6bc-1f9a9e9648cb"/>
+                    <attribute id="Comment" type="LSString" value="Protection Level 5 Passives"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Fueled_by_Violence;WAR_Last_Stand;WAR_Brutal_Vitality"/>
+                    <attribute id="UUID" type="guid" value="eaeebe44-3b6b-44e3-9a7d-51e06fb391f2"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="Destro_PassiveList"/>
-                    <attribute id="UUID" type="guid" value="b72eba21-2d64-4b50-8c17-477a9843ce3a"/>
+                    <attribute id="Comment" type="LSString" value="Protection Level 6 Passives"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Thunderlord;WAR_Heavy_Repercussions"/>
+                    <attribute id="UUID" type="guid" value="e02cdfde-10c6-4f6a-a4bb-618ed1cfa36d"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="DestroLevel12"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Destro_ArchimondesDarkness,WoWWarlock_Destro_MannorothsFury,WoWWarlock_Destro_KiljaedensCunning"/>
-                    <attribute id="UUID" type="guid" value="af9c80bd-6df1-471b-98f0-e937cd6c7e5c"/>
+                    <attribute id="Comment" type="LSString" value="Protection Level 7 Passives"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Bloodborne;WAR_Tough_As_Nails;WAR_Enduring_Defenses"/>
+                    <attribute id="UUID" type="guid" value="dcf5b84d-f509-44be-b514-b8f7ec5f1963"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="DestroRow1"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Destro_UnlockSpell_RainofFire,WoWWarlock_Destro_AshenRemains,WoWWarlock_Destro_DiabolicEmbers"/>
-                    <attribute id="UUID" type="guid" value="d0e81080-4624-4dab-ac09-1b2676c5a296"/>
+                    <attribute id="Comment" type="LSString" value="Protection Level 8 Passives"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Anger_Management;WAR_Defender_s_Aegis;WAR_Enduring_Alacrity"/>
+                    <attribute id="UUID" type="guid" value="347d7f22-88e9-454c-92d1-9e21763934c8"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="DestroRow2"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Destro_ImprovedConflagrate,WoWWarlock_Destro_Backlash"/>
-                    <attribute id="UUID" type="guid" value="0ff0fe7c-75b0-4865-89ed-96ce0600eefd"/>
+                    <attribute id="Comment" type="LSString" value="Protection Level 9 Passives"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Booming_Voice;WAR_Indomitable;WAR_Violent_Outburst"/>
+                    <attribute id="UUID" type="guid" value="b485355d-5b97-4921-acc5-1ecc5d5b646d"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="DestroRow3"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Destro_IndiscriminateFlames,WoWWarlock_Destro_Havoc"/>
-                    <attribute id="UUID" type="guid" value="4d808d77-680a-4675-9f1b-b10ee925cf58"/>
+                    <attribute id="Comment" type="LSString" value="Protection Level 10 Passives"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Battle_Scarred_Veteran"/>
+                    <attribute id="UUID" type="guid" value="83309215-b030-4841-bde9-e7fad7b7864a"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="DestroRow4"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Destro_UnlockSpell_Shadowburn,WoWWarlock_Destro_UnlockSpell_Cataclysm,WoWWarlock_Destro_UnlockSpell_EmberTap"/>
-                    <attribute id="UUID" type="guid" value="ba497f36-780c-41eb-a4a8-c27f421f0744"/>
+                    <attribute id="Comment" type="LSString" value="Arms Colossus Level 13"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Demolish"/>
+                    <attribute id="UUID" type="guid" value="05123561-5a13-49ed-8bcc-fec9759d1b5a"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="DestroRow5"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Destro_BlisteringAtrophy,WoWWarlock_Destro_UnlockSpell_SummonInfernal,WoWWarlock_Destro_FireandBrimstone"/>
-                    <attribute id="UUID" type="guid" value="db7a998e-9006-480b-9d1f-54ca76cd5656"/>
+                    <attribute id="Comment" type="LSString" value="Arms Colossus Level 15"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Martial_Expert;WAR_Colossal_Might;WAR_Earthquake"/>
+                    <attribute id="UUID" type="guid" value="8956901f-11f7-4a76-856f-dec496253c7e"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="DestroRow6"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Destro_FiendishCruelty,WoWWarlock_Destro_ReverseEntropy"/>
-                    <attribute id="UUID" type="guid" value="48670133-33d0-4589-8fc8-a1e9b053ae7b"/>
+                    <attribute id="Comment" type="LSString" value="Arms Colossus Level 17"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Tide_of_Battle;WAR_No_Stranger_to_Pain"/>
+                    <attribute id="UUID" type="guid" value="20bb2a51-61f1-406c-babe-f87ebc83ff13"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="DestroRow7"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Destro_Devastation,WoWWarlock_Destro_RitualOfRuin,WoWWarlock_Destro_Ruin"/>
-                    <attribute id="UUID" type="guid" value="aa2b01f6-68a5-4289-b8e0-7608f17286eb"/>
+                    <attribute id="Comment" type="LSString" value="Arms Colossus Level 19"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Precise_Might;WAR_Mountain_of_Muscle_and_Scars"/>
+                    <attribute id="UUID" type="guid" value="253ee805-5ce1-4dd3-b83e-aad2a93f6473"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="DestroRow8"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Destro_UnlockSpell_Soulfire,WoWWarlock_Destro_BurnToAshes,WoWWarlock_Destro_ConflagrationofChaos"/>
-                    <attribute id="UUID" type="guid" value="d5c3cb1f-4a46-4240-aa81-a43c85a96c9c"/>
+                    <attribute id="Comment" type="LSString" value="Arms Colossus Level 20"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Dominance_of_the_Colossus"/>
+                    <attribute id="UUID" type="guid" value="3a612342-bec4-4f89-938b-b956f63d51a1"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="DestroRow9"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Destro_Decimation,WoWWarlock_Destro_AvatarofDestruction"/>
-                    <attribute id="UUID" type="guid" value="74f62b43-d73e-4eac-8ef2-3fccfaac0f1a"/>
+                    <attribute id="Comment" type="LSString" value="Arms Slayer Level 13"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Slayer_s_Dominance"/>
+                    <attribute id="UUID" type="guid" value="6579c253-50b9-46b9-97e8-79dd30d5fd76"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="DestroLevel4"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Destro_SummonersEmbrace,WoWWarlock_Destro_Grimoire"/>
-                    <attribute id="UUID" type="guid" value="08aebd7c-9406-4fde-a983-0a20721ca4df"/>
+                    <attribute id="Comment" type="LSString" value="Arms Slayer Level 15"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Imminent_Demise"/>
+                    <attribute id="UUID" type="guid" value="6d382a59-a559-4b05-9743-f22ffcdcbe87"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="DestroLevel5"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Destro_ChannelDemonfire,WoWWarlock_Destro_DemonfireInfusion"/>
-                    <attribute id="UUID" type="guid" value="fc879b66-4211-410d-a6ac-a29051e1fd93"/>
+                    <attribute id="Comment" type="LSString" value="Arms Slayer Level 17"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Death_Drive"/>
+                    <attribute id="UUID" type="guid" value="67fefd15-47bd-487d-9bd6-8728add1eccc"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="DestroLevel8"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Destro_CrashingChaos,WoWWarlock_Destro_RainofChaos"/>
-                    <attribute id="UUID" type="guid" value="8f8e30fd-b6c6-440f-bfac-6dc1e225ff1f"/>
+                    <attribute id="Comment" type="LSString" value="Arms Slayer Level 19"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Show_No_Mercy"/>
+                    <attribute id="UUID" type="guid" value="9d8faaf7-7eeb-48d0-88db-960e2c4ef22e"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="Aff_PassiveList"/>
-                    <attribute id="UUID" type="guid" value="4517f1dc-ec43-48a8-a3b4-91f58e9b19ff"/>
+                    <attribute id="Comment" type="LSString" value="Arms Slayer Level 20"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Unrelenting_Onslaught"/>
+                    <attribute id="UUID" type="guid" value="d6d0eea5-9895-43fa-96e6-f5565c770d39"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="AffLevel12"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Aff_ArchimondesDarkness,WoWWarlock_Aff_MannorothsFury,WoWWarlock_Aff_KiljaedensCunning"/>
-                    <attribute id="UUID" type="guid" value="b54fc59c-9d07-4035-9463-e7a619fd62c5"/>
+                    <attribute id="Comment" type="LSString" value="Fury Slayer Level 13"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Slayer_s_Dominance"/>
+                    <attribute id="UUID" type="guid" value="46c12901-eb9f-4d5b-a93c-0ef6ab5adf02"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="AffRow1"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Aff_Nightfall,WoWWarlock_Aff_UnlockSpell_SeedOfCorruption"/>
-                    <attribute id="UUID" type="guid" value="ea28aca3-a552-4a20-869e-f6675a887ce6"/>
+                    <attribute id="Comment" type="LSString" value="Fury Slayer Level 15"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Imminent_Demise"/>
+                    <attribute id="UUID" type="guid" value="65b189c4-ef45-407d-af2f-54dc0799a6c5"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="AffRow2"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Aff_PandemicInvocation,WoWWarlock_Aff_CunningCruelty"/>
-                    <attribute id="UUID" type="guid" value="c1db71ba-f7f4-443a-b14d-61b66ea7c06e"/>
+                    <attribute id="Comment" type="LSString" value="Fury Slayer Level 17"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Death_Drive"/>
+                    <attribute id="UUID" type="guid" value="9eb19ed9-35fa-49d9-82ce-764fab665cee"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="AffRow3"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Aff_UnlockSpell_Haunt,WoWWarlock_Aff_ImprovedLifeTap_I"/>
-                    <attribute id="UUID" type="guid" value="416af2ea-2e9e-4922-b9b8-4fe6c0a35e1a"/>
+                    <attribute id="Comment" type="LSString" value="Fury Slayer Level 19"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Show_No_Mercy"/>
+                    <attribute id="UUID" type="guid" value="465e42f6-0bd5-4332-9938-f1d64e8fb415"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="AffRow4"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Aff_UnlockSpell_Darkglare,WoWWarlock_Aff_ShadowEmbrace,WoWWarlock_Aff_SecretOfTheNecrolyte"/>
-                    <attribute id="UUID" type="guid" value="9b112721-bcaa-4696-a9bf-9f4c0e2f2e80"/>
+                    <attribute id="Comment" type="LSString" value="Fury Slayer Level 20"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Unrelenting_Onslaught"/>
+                    <attribute id="UUID" type="guid" value="f6241ea5-0606-4bec-8ecb-a47a961c26d8"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="AffRow5"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Aff_WitheringBolt,WoWWarlock_Aff_ImprovedHaunt,WoWWarlock_Aff_MalevolentVisionary"/>
-                    <attribute id="UUID" type="guid" value="1bf7257d-702f-4891-a89c-c6311f3df1dd"/>
+                    <attribute id="Comment" type="LSString" value="Fury Mountain Thane Level 13"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Lightning_Strikes"/>
+                    <attribute id="UUID" type="guid" value="f2f5ef08-e203-4f59-96a8-e9a8cee062e2"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="AffRow6"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Aff_CulltheWeak,WoWWarlock_Aff_UnlockSpell_SoulRot,WoWWarlock_Aff_FocusedMalignancy"/>
-                    <attribute id="UUID" type="guid" value="936371ca-51de-44e4-b219-9de432bcf61a"/>
+                    <attribute id="Comment" type="LSString" value="Fury Mountain Thane Level 15"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Crashing_Thunder;WAR_Ground_Current;WAR_Strength_of_the_Mountain"/>
+                    <attribute id="UUID" type="guid" value="f8393b77-081b-4052-b82b-9a83cac2b91b"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="AffRow7"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Aff_TormentedCrescendo,WoWWarlock_Aff_MalignOmen,WoWWarlock_Aff_RavenousAfflictions"/>
-                    <attribute id="UUID" type="guid" value="d380a820-1601-456a-86c6-6527def3e135"/>
+                    <attribute id="Comment" type="LSString" value="Fury Mountain Thane Level 17"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Thunder_Blast;WAR_Storm_Bolts;WAR_Keep_your_feet_on_the_Ground"/>
+                    <attribute id="UUID" type="guid" value="e3725f7c-cc0c-42c4-98c0-862f26617d7b"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="AffRow8"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Aff_DeathEmbrace_1,WoWWarlock_Aff_UnlockSpell_Oblivion"/>
-                    <attribute id="UUID" type="guid" value="03c9a6d8-2d54-41cd-a9a3-db30eafe8e4b"/>
+                    <attribute id="Comment" type="LSString" value="Fury Mountain Thane Level 19"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Flashing_Skies;WAR_Thorim_s_Might;WAR_Burst_of_Power"/>
+                    <attribute id="UUID" type="guid" value="e5c9a995-b2e4-4856-8d65-d35cac52c7c8"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="AffRow9"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Aff_DarkHarvest,WoWWarlock_Aff_MaleficTouch,WoWWarlock_Aff_DeathDealer"/>
-                    <attribute id="UUID" type="guid" value="9f662e1c-8d05-4729-b540-b875444a5df7"/>
+                    <attribute id="Comment" type="LSString" value="Fury Mountain Thane Level 20"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Avatar_of_the_Storm"/>
+                    <attribute id="UUID" type="guid" value="c7f2b595-9c69-47ad-8ad5-9243cdaa523f"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="AffLevel4"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Aff_UnlockSpell_DrainSoul,WoWWarlock_Aff_UnlockSpell_Shadowbolt_2"/>
-                    <attribute id="UUID" type="guid" value="f5d1eb53-362d-4435-9123-fff8cf07c81a"/>
+                    <attribute id="Comment" type="LSString" value="Protection Colossus Level 13"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Demolish"/>
+                    <attribute id="UUID" type="guid" value="11c6e8ad-9248-4a01-9c0f-e27ea57ae6e7"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="AffLevel5"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Aff_UnlockSpell_VileTaint,WoWWarlock_Aff_UnlockSpell_PhantomSingularity"/>
-                    <attribute id="UUID" type="guid" value="99f3a3c4-d2f6-4142-867e-e2253ebe6cd2"/>
+                    <attribute id="Comment" type="LSString" value="Protection Colossus Level 15"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Martial_Expert;WAR_Colossal_Might;WAR_Earthquake"/>
+                    <attribute id="UUID" type="guid" value="cc85e2b7-156a-4e5a-ac63-8ed1961b9912"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Name" type="FixedString" value="AffLevel7"/>
-                    <attribute id="Passives" type="LSString" value="WoWWarlock_Destro_SummonersEmbrace,WoWWarlock_Aff_Grimoire"/>
-                    <attribute id="UUID" type="guid" value="3e991072-dbef-4004-b042-51057dc9492d"/>
+                    <attribute id="Comment" type="LSString" value="Protection Colossus Level 17"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Tide_of_Battle;WAR_No_Stranger_to_Pain"/>
+                    <attribute id="UUID" type="guid" value="dcb52f52-d4e7-426f-bbe4-163a9afe6882"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Comment" type="LSString" value="Protection Colossus Level 19"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Precise_Might;WAR_Mountain_of_Muscle_and_Scars"/>
+                    <attribute id="UUID" type="guid" value="e008f9c6-a0f0-4fc5-ad7b-4174860158bf"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Comment" type="LSString" value="Protection Colossus Level 20"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Dominance_of_the_Colossus"/>
+                    <attribute id="UUID" type="guid" value="116949d5-a20e-4760-96aa-25ce47dddf83"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Comment" type="LSString" value="Protection Mountain Thane Level 13"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Lightning_Strikes"/>
+                    <attribute id="UUID" type="guid" value="1df4e0bf-ab98-4117-a15b-b9ddd9b218da"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Comment" type="LSString" value="Protection Mountain Thane Level 15"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Crashing_Thunder;WAR_Ground_Current;WAR_Strength_of_the_Mountain"/>
+                    <attribute id="UUID" type="guid" value="d6a815e8-cba0-4f02-8861-157133ddd101"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Comment" type="LSString" value="Protection Mountain Thane Level 17"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Thunder_Blast;WAR_Storm_Bolts;WAR_Keep_your_feet_on_the_Ground"/>
+                    <attribute id="UUID" type="guid" value="592b9bd0-ce44-4255-bc73-21895a85e296"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Comment" type="LSString" value="Protection Mountain Thane Level 19"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Flashing_Skies;WAR_Thorim_s_Might;WAR_Burst_of_Power"/>
+                    <attribute id="UUID" type="guid" value="279ea2b8-78ac-4071-9578-b624024198d8"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Comment" type="LSString" value="Protection Mountain Thane Level 20"/>
+                    <attribute id="Passives" type="LSString" value="WAR_Avatar_of_the_Storm"/>
+                    <attribute id="UUID" type="guid" value="8c6f90d1-b61b-4773-b8d2-4f2fb611cf53"/>
                 </node>
             </children>
         </node>

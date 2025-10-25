@@ -1,0 +1,95 @@
+﻿// ========================================
+// WARRIOR SPELL_JUMP DEFINITIONS
+// Generated: October 24, 2025
+// Patch: 8 Compatible (4.8.0.10)
+// Source: AbilityDatabase_Warrior_FullyEnriched.csv
+// ========================================
+// Total Spell_Jump: 3
+// ========================================
+
+// Charge
+// Implementation: Wowhead: https://www.wowhead.com/spell=100
+new entry "Jump_WAR_Charge"
+type "SpellData"
+data "SpellType" "Jump"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "AIFlags" "CanNotUse"
+data "UseCosts" "ActionPoint:1;Rage:"
+data "SpellProperties" ""
+data "TargetRadius" "15"  // TODO: Adjust jump distance
+data "TargetConditions" "Ground()"
+data "TeleportSelf" "Yes"
+data "Icon" "Action_Jump"  // TODO: Create custom icon
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "TooltipDamageList" "DealDamage(1d6,Physical)"  // TODO: Use correct damage formula
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "PrepareEffect" "VFX_Barbarian_Rage_Prepare:Dummy_BodyFX;VFX_Weapons_Fire_Glow_01:Dummy_MainHandFX"  // TODO: Replace with Warrior VFX
+data "CastEffect" "RS3_Impact_Blood_Celestial_01:TargetPosition:attach"  // TODO: Replace with Warrior VFX
+data "TargetEffect" "RS3_Explosion_Blood_01"  // TODO: Replace with Warrior VFX
+data "SpellAnimation" "Action_Attack;::;8f46d84d-6bce-4e89-8c32-01f0dc0d72ce;;Sitting;Self;true;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,"  // TODO: Use Barbarian/Fighter martial animation
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;IsSpell;HasHighGroundRangeExtension"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType,Magical)"  // TODO: Replace with actual mechanics
+// BG3 Mechanic: 
+// TODO: Implement spell mechanics based on:
+// Wowhead: https://www.wowhead.com/spell=100
+
+// Heroic Leap
+// Implementation: Wowhead: https://www.wowhead.com/spell=6544
+new entry "Jump_WAR_Heroic_Leap"
+type "SpellData"
+data "SpellType" "Jump"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "AIFlags" "CanNotUse"
+data "UseCosts" "ActionPoint:1;Rage:"
+data "SpellProperties" ""
+data "TargetRadius" "15"  // TODO: Adjust jump distance
+data "TargetConditions" "Ground()"
+data "TeleportSelf" "Yes"
+data "Icon" "Action_Jump"  // TODO: Create custom icon
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "TooltipDamageList" "DealDamage(1d6,Physical)"  // TODO: Use correct damage formula
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "PrepareEffect" "VFX_Barbarian_Rage_Prepare:Dummy_BodyFX;VFX_Weapons_Fire_Glow_01:Dummy_MainHandFX"  // TODO: Replace with Warrior VFX
+data "CastEffect" "RS3_Impact_Blood_Celestial_01:TargetPosition:attach"  // TODO: Replace with Warrior VFX
+data "TargetEffect" "RS3_Explosion_Blood_01"  // TODO: Replace with Warrior VFX
+data "SpellAnimation" "Action_Attack;::;8f46d84d-6bce-4e89-8c32-01f0dc0d72ce;;Sitting;Self;true;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,"  // TODO: Use Barbarian/Fighter martial animation
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;IsSpell;HasHighGroundRangeExtension"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType,Magical)"  // TODO: Replace with actual mechanics
+// BG3 Mechanic: 
+// TODO: Implement spell mechanics based on:
+// Wowhead: https://www.wowhead.com/spell=6544
+
+// Intervene
+// Implementation: Wowhead: https://www.wowhead.com/spell=3411
+new entry "Jump_WAR_Intervene"
+type "SpellData"
+data "SpellType" "Jump"
+data "Level" "0"
+data "SpellSchool" "Evocation"
+data "AIFlags" "CanNotUse"
+data "UseCosts" "ActionPoint:1;Rage:"
+data "SpellProperties" ""
+data "TargetRadius" "15"  // TODO: Adjust jump distance
+data "TargetConditions" "Ground()"
+data "TeleportSelf" "Yes"
+data "Icon" "Action_Jump"  // TODO: Create custom icon
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "TooltipDamageList" "DealDamage(1d6,Physical)"  // TODO: Use correct damage formula
+data "TooltipAttackSave" "MeleeWeaponAttack"
+data "PrepareEffect" "VFX_Barbarian_Rage_Prepare:Dummy_BodyFX;VFX_Weapons_Fire_Glow_01:Dummy_MainHandFX"  // TODO: Replace with Warrior VFX
+data "CastEffect" "RS3_Impact_Blood_Celestial_01:TargetPosition:attach"  // TODO: Replace with Warrior VFX
+data "TargetEffect" "RS3_Explosion_Blood_01"  // TODO: Replace with Warrior VFX
+data "SpellAnimation" "Action_Attack;::;8f46d84d-6bce-4e89-8c32-01f0dc0d72ce;;Sitting;Self;true;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,"  // TODO: Use Barbarian/Fighter martial animation
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;IsSpell;HasHighGroundRangeExtension"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType,Magical)"  // TODO: Replace with actual mechanics
+// BG3 Mechanic: 
+// TODO: Implement spell mechanics based on:
+// Wowhead: https://www.wowhead.com/spell=3411

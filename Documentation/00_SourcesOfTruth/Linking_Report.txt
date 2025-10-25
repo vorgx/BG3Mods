@@ -1,0 +1,26 @@
+﻿=== ABILITY LINKING REPORT ===
+Date: 2025-10-23 16:30:18
+Format: Ability Name - ability_id
+
+Source: Warrior Progression for all subclasses and Default hero structure.csv
+Database: AbilityDatabase_Warrior_FullyEnriched.csv
+Output: Warrior Progression LINKED.csv
+
+STATISTICS:
+- Total abilities mapped: 254
+- Total abilities unmapped: 6
+
+=== UNMAPPED ABILITIES (REQUIRES REVIEW) ===
+
+NO MATCH: Overwhelming Blades (in cell: Overwhelming Blades)
+NO MATCH: Relentless Pursuit (in cell: Relentless Pursuit)
+NO MATCH: Brutal Finish (in cell: Brutal Finish)
+NO MATCH: Opportunist (in cell: Opportunist)
+NO MATCH: Reap the Storm (in cell: Reap the Storm)
+NO MATCH: Slayer�s Malice (in cell: Slayer�s Malice)
+
+=== MAPPED ABILITIES (SUCCESSFUL) ===
+
+
+... and 204 more
+

@@ -1,0 +1,844 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="0"/>
+    <region id="Progressions">
+        <node id="root">
+            <children>
+                <!-- Warrior Level 1 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4f5d1434-5175-4fa9-b7dc-5a1c8f6c5521"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(Rage,100,0);Proficiency(HeavyArmor);Proficiency(MartialWeapons);Proficiency(Shields)"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="UUID" type="guid" value="4fdae78e-c394-46b6-8753-21722231bcf6"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <!-- Warrior Level 2 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="2"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4f5d1434-5175-4fa9-b7dc-5a1c8f6c5521"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Fast_Footwork;WAR_War_Machine;WAR_Leeching_Strikes"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="UUID" type="guid" value="f8793cca-d667-476b-bfdb-5370ad1cad26"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <!-- Warrior Level 3 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4f5d1434-5175-4fa9-b7dc-5a1c8f6c5521"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="UUID" type="guid" value="993a96a8-dc49-4984-9502-1ac155cdbd9f"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <!-- Warrior Level 4 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="4"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4f5d1434-5175-4fa9-b7dc-5a1c8f6c5521"/>
+                    <attribute id="Boosts" type="LSString" value="Ability(Strength,1,4)"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Frothing_Berserker;WAR_Bounding_Stride;WAR_Pain_and_Gain"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="UUID" type="guid" value="7ee47c7f-80e1-4df3-a879-b8b900f8b2f8"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <!-- Warrior Level 5 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4f5d1434-5175-4fa9-b7dc-5a1c8f6c5521"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(Rage,120,0)"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Barbaric_Training"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="UUID" type="guid" value="d58a4641-b94e-4b9d-8246-ac301604978f"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <!-- Warrior Level 6 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="6"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4f5d1434-5175-4fa9-b7dc-5a1c8f6c5521"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Honed_Reflexes;WAR_Crushing_Force;WAR_Bitter_Immunity;WAR_Overwhelming_Rage;WAR_Rumbling_Earth;WAR_Reinforced_Plates"/>
+                </node>
+                <!-- Warrior Level 7 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="7"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4f5d1434-5175-4fa9-b7dc-5a1c8f6c5521"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Sidearm;WAR_Double_Time;WAR_Seismic_Reverberation;WAR_Concussive_Blows"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="UUID" type="guid" value="19c53f66-dbb0-4ed1-a2c4-8813d8a33676"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <!-- Warrior Level 8 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="8"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4f5d1434-5175-4fa9-b7dc-5a1c8f6c5521"/>
+                    <attribute id="Boosts" type="LSString" value="Ability(Strength,1,4)"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Cruel_Strikes;WAR_Wild_Strikes;WAR_Dual_Wield_Specialization;WAR_Armored_to_the_Teeth;WAR_Enduring_Alacrity"/>
+                </node>
+                <!-- Warrior Level 9 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="9"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4f5d1434-5175-4fa9-b7dc-5a1c8f6c5521"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(Rage,140,0)"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Indomitable"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="UUID" type="guid" value="f00b6cc7-294b-4d17-8551-61fd05caa206"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <!-- Warrior Level 10 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="10"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4f5d1434-5175-4fa9-b7dc-5a1c8f6c5521"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Uproar;WAR_Thunderous_Words;WAR_Berserker_s_Torment;WAR_Titan_s_Torment;WAR_Piercing_Challenge;WAR_Champion_s_Might"/>
+                </node>
+                <!-- Warrior Level 11 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="11"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4f5d1434-5175-4fa9-b7dc-5a1c8f6c5521"/>
+                </node>
+                <!-- Warrior Level 12 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="12"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4f5d1434-5175-4fa9-b7dc-5a1c8f6c5521"/>
+                    <attribute id="Boosts" type="LSString" value="Ability(Strength,1,4)"/>
+                </node>
+                <!-- Warrior Level 13 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4f5d1434-5175-4fa9-b7dc-5a1c8f6c5521"/>
+                </node>
+                <!-- Warrior Level 14 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="14"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4f5d1434-5175-4fa9-b7dc-5a1c8f6c5521"/>
+                </node>
+                <!-- Warrior Level 15 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4f5d1434-5175-4fa9-b7dc-5a1c8f6c5521"/>
+                </node>
+                <!-- Warrior Level 16 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="16"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4f5d1434-5175-4fa9-b7dc-5a1c8f6c5521"/>
+                </node>
+                <!-- Warrior Level 17 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4f5d1434-5175-4fa9-b7dc-5a1c8f6c5521"/>
+                </node>
+                <!-- Warrior Level 18 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="18"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4f5d1434-5175-4fa9-b7dc-5a1c8f6c5521"/>
+                </node>
+                <!-- Warrior Level 19 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4f5d1434-5175-4fa9-b7dc-5a1c8f6c5521"/>
+                </node>
+                <!-- Warrior Level 20 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="Warrior"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="4f5d1434-5175-4fa9-b7dc-5a1c8f6c5521"/>
+                </node>
+                <!-- Arms Level 3 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="Arms"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d3c5a4f2-8b6e-4a1d-9c7f-2e8b5a3c1d9f"/>
+                    <attribute id="Boosts" type="LSString" value="Proficiency(TwoHandedWeapons)"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="UUID" type="guid" value="931471a2-a68a-4a34-bbaf-111707ad48fb"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <!-- Arms Level 4 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="4"/>
+                    <attribute id="Name" type="LSString" value="Arms"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d3c5a4f2-8b6e-4a1d-9c7f-2e8b5a3c1d9f"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Sudden_Death;WAR_Fervor_of_Battle;WAR_Sudden_Death"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="UUID" type="guid" value="2b4e17ce-d3f2-489b-badb-924fbaf3ede1"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <!-- Arms Level 5 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="Arms"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d3c5a4f2-8b6e-4a1d-9c7f-2e8b5a3c1d9f"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Barbaric_Training"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="UUID" type="guid" value="1a84011c-a031-4162-88e8-de11cc586e00"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <!-- Arms Level 6 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="6"/>
+                    <attribute id="Name" type="LSString" value="Arms"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d3c5a4f2-8b6e-4a1d-9c7f-2e8b5a3c1d9f"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Anger_Management"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="UUID" type="guid" value="e571bf45-200f-45b1-b5c4-b017c985a9af"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <!-- Arms Level 7 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="7"/>
+                    <attribute id="Name" type="LSString" value="Arms"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d3c5a4f2-8b6e-4a1d-9c7f-2e8b5a3c1d9f"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Dreadnaught;WAR_Strength_of_Arms;WAR_In_For_The_Kill;WAR_Test_of_Might"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="UUID" type="guid" value="446babc7-c873-43f9-801c-3252a3b689f1"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <!-- Arms Level 8 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="8"/>
+                    <attribute id="Name" type="LSString" value="Arms"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d3c5a4f2-8b6e-4a1d-9c7f-2e8b5a3c1d9f"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Enduring_Alacrity"/>
+                </node>
+                <!-- Arms Level 9 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="9"/>
+                    <attribute id="Name" type="LSString" value="Arms"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d3c5a4f2-8b6e-4a1d-9c7f-2e8b5a3c1d9f"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Indomitable"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="UUID" type="guid" value="82932bf4-af5c-450b-9bd7-56d7668ab13e"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <!-- Arms Level 10 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="10"/>
+                    <attribute id="Name" type="LSString" value="Arms"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d3c5a4f2-8b6e-4a1d-9c7f-2e8b5a3c1d9f"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Executioner_s_Precision"/>
+                </node>
+                <!-- Arms Level 11 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="11"/>
+                    <attribute id="Name" type="LSString" value="Arms"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d3c5a4f2-8b6e-4a1d-9c7f-2e8b5a3c1d9f"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="UUID" type="guid" value="2233d990-017c-4e6d-8232-165664140720"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <!-- Arms Level 12 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="12"/>
+                    <attribute id="Name" type="LSString" value="Arms"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d3c5a4f2-8b6e-4a1d-9c7f-2e8b5a3c1d9f"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="UUID" type="guid" value="c90496a7-0742-4879-a67c-c71946093a7e"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <!-- Arms Level 13 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="Arms"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d3c5a4f2-8b6e-4a1d-9c7f-2e8b5a3c1d9f"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Slayer_s_Dominance;WAR_Dominance_of_the_Colossus;WAR_Brutal_Finish"/>
+                </node>
+                <!-- Arms Level 14 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="14"/>
+                    <attribute id="Name" type="LSString" value="Arms"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d3c5a4f2-8b6e-4a1d-9c7f-2e8b5a3c1d9f"/>
+                </node>
+                <!-- Arms Level 15 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="Arms"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d3c5a4f2-8b6e-4a1d-9c7f-2e8b5a3c1d9f"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Opportunist;WAR_Relentless_Pursuit"/>
+                </node>
+                <!-- Arms Level 16 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="16"/>
+                    <attribute id="Name" type="LSString" value="Arms"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d3c5a4f2-8b6e-4a1d-9c7f-2e8b5a3c1d9f"/>
+                </node>
+                <!-- Arms Level 17 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="Arms"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d3c5a4f2-8b6e-4a1d-9c7f-2e8b5a3c1d9f"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Overwhelming_Blades;WAR_Reap_the_Storm"/>
+                </node>
+                <!-- Arms Level 18 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="18"/>
+                    <attribute id="Name" type="LSString" value="Arms"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d3c5a4f2-8b6e-4a1d-9c7f-2e8b5a3c1d9f"/>
+                </node>
+                <!-- Arms Level 19 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="Arms"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d3c5a4f2-8b6e-4a1d-9c7f-2e8b5a3c1d9f"/>
+                </node>
+                <!-- Arms Level 20 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="Arms"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="d3c5a4f2-8b6e-4a1d-9c7f-2e8b5a3c1d9f"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Slayer_s_Malice"/>
+                </node>
+                <!-- Fury Level 3 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="Fury"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="e4d6b5g3-9c7f-5b2e-ad8g-3f9c6b4d2e0g"/>
+                    <attribute id="Boosts" type="LSString" value="Proficiency(DualWielding)"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="UUID" type="guid" value="a58526a2-ac7a-450d-bbb8-da4de7c45563"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <!-- Fury Level 4 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="4"/>
+                    <attribute id="Name" type="LSString" value="Fury"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="e4d6b5g3-9c7f-5b2e-ad8g-3f9c6b4d2e0g"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Sudden_Death;WAR_Sudden_Death"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="UUID" type="guid" value="7e51e374-2d52-45ae-9b97-2f8ab7ba3560"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <!-- Fury Level 5 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="Fury"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="e4d6b5g3-9c7f-5b2e-ad8g-3f9c6b4d2e0g"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="UUID" type="guid" value="0ecebb24-ab1d-4552-b61c-2290b4c5fa5f"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <!-- Fury Level 6 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="6"/>
+                    <attribute id="Name" type="LSString" value="Fury"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="e4d6b5g3-9c7f-5b2e-ad8g-3f9c6b4d2e0g"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Cold_Steel_Hot_Blood;WAR_Vicious_Contempt;WAR_Hack_and_Slash"/>
+                </node>
+                <!-- Fury Level 7 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="7"/>
+                    <attribute id="Name" type="LSString" value="Fury"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="e4d6b5g3-9c7f-5b2e-ad8g-3f9c6b4d2e0g"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Bloodborne"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="UUID" type="guid" value="2d591d6f-2ae4-4dc6-9a76-d2eb4c467a91"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <!-- Fury Level 8 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="8"/>
+                    <attribute id="Name" type="LSString" value="Fury"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="e4d6b5g3-9c7f-5b2e-ad8g-3f9c6b4d2e0g"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Enduring_Alacrity"/>
+                </node>
+                <!-- Fury Level 9 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="9"/>
+                    <attribute id="Name" type="LSString" value="Fury"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="e4d6b5g3-9c7f-5b2e-ad8g-3f9c6b4d2e0g"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Anger_Management;WAR_Reckless_Abandon;WAR_Indomitable"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="UUID" type="guid" value="78eee86a-2d49-4033-8303-f3ee6085c2f9"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <!-- Fury Level 10 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="10"/>
+                    <attribute id="Name" type="LSString" value="Fury"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="e4d6b5g3-9c7f-5b2e-ad8g-3f9c6b4d2e0g"/>
+                </node>
+                <!-- Fury Level 11 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="11"/>
+                    <attribute id="Name" type="LSString" value="Fury"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="e4d6b5g3-9c7f-5b2e-ad8g-3f9c6b4d2e0g"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="UUID" type="guid" value="94739795-c296-4d1b-a639-fbec9741581e"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <!-- Fury Level 12 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="12"/>
+                    <attribute id="Name" type="LSString" value="Fury"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="e4d6b5g3-9c7f-5b2e-ad8g-3f9c6b4d2e0g"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="UUID" type="guid" value="1500aec9-8d8c-4344-8bcd-6703cc6e106e"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <!-- Fury Level 13 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="Fury"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="e4d6b5g3-9c7f-5b2e-ad8g-3f9c6b4d2e0g"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Slayer_s_Dominance;WAR_Brutal_Finish"/>
+                </node>
+                <!-- Fury Level 14 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="14"/>
+                    <attribute id="Name" type="LSString" value="Fury"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="e4d6b5g3-9c7f-5b2e-ad8g-3f9c6b4d2e0g"/>
+                </node>
+                <!-- Fury Level 15 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="Fury"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="e4d6b5g3-9c7f-5b2e-ad8g-3f9c6b4d2e0g"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Opportunist;WAR_Relentless_Pursuit"/>
+                </node>
+                <!-- Fury Level 16 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="16"/>
+                    <attribute id="Name" type="LSString" value="Fury"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="e4d6b5g3-9c7f-5b2e-ad8g-3f9c6b4d2e0g"/>
+                </node>
+                <!-- Fury Level 17 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="Fury"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="e4d6b5g3-9c7f-5b2e-ad8g-3f9c6b4d2e0g"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Overwhelming_Blades;WAR_Reap_the_Storm"/>
+                </node>
+                <!-- Fury Level 18 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="18"/>
+                    <attribute id="Name" type="LSString" value="Fury"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="e4d6b5g3-9c7f-5b2e-ad8g-3f9c6b4d2e0g"/>
+                </node>
+                <!-- Fury Level 19 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="Fury"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="e4d6b5g3-9c7f-5b2e-ad8g-3f9c6b4d2e0g"/>
+                </node>
+                <!-- Fury Level 20 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="Fury"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="e4d6b5g3-9c7f-5b2e-ad8g-3f9c6b4d2e0g"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Slayer_s_Malice"/>
+                </node>
+                <!-- Protection Level 3 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="Protection"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="f5e7c6h4-ad8g-6c3f-be9h-4g0d7c5e3f1h"/>
+                    <attribute id="Boosts" type="LSString" value="Proficiency(Shields);AC(1)"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Brace_For_Impact;WAR_Fight_Through_the_Flames"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="UUID" type="guid" value="aa8447fb-823d-4d1f-b8db-a8d5e8a2ad5c"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <!-- Protection Level 4 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="4"/>
+                    <attribute id="Name" type="LSString" value="Protection"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="f5e7c6h4-ad8g-6c3f-be9h-4g0d7c5e3f1h"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Best_Served_Cold"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="UUID" type="guid" value="b1e99140-47b8-488b-b87d-d6b77862d4bf"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <!-- Protection Level 5 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="Protection"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="f5e7c6h4-ad8g-6c3f-be9h-4g0d7c5e3f1h"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Fueled_by_Violence;WAR_Brutal_Vitality"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="UUID" type="guid" value="407322ac-574f-4acf-85f0-34b1dca61f42"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <!-- Protection Level 6 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="6"/>
+                    <attribute id="Name" type="LSString" value="Protection"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="f5e7c6h4-ad8g-6c3f-be9h-4g0d7c5e3f1h"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Sudden_Death;WAR_Thunderlord;WAR_Sudden_Death;WAR_Heavy_Repercussions"/>
+                </node>
+                <!-- Protection Level 7 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="7"/>
+                    <attribute id="Name" type="LSString" value="Protection"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="f5e7c6h4-ad8g-6c3f-be9h-4g0d7c5e3f1h"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Bloodborne;WAR_Tough_As_Nails;WAR_Enduring_Defenses"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="UUID" type="guid" value="f62ffc1c-087c-4f0b-9c14-3b6ee34b33c0"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <!-- Protection Level 8 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="8"/>
+                    <attribute id="Name" type="LSString" value="Protection"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="f5e7c6h4-ad8g-6c3f-be9h-4g0d7c5e3f1h"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Anger_Management;WAR_Defender_s_Aegis;WAR_Impenetrable_Wall;WAR_Focused_Vigor;WAR_Enduring_Alacrity"/>
+                </node>
+                <!-- Protection Level 9 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="9"/>
+                    <attribute id="Name" type="LSString" value="Protection"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="f5e7c6h4-ad8g-6c3f-be9h-4g0d7c5e3f1h"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Booming_Voice;WAR_Indomitable;WAR_Violent_Outburst"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="UUID" type="guid" value="9b672bde-0107-4fbf-9166-0e31a7023ab8"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <!-- Protection Level 10 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="10"/>
+                    <attribute id="Name" type="LSString" value="Protection"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="f5e7c6h4-ad8g-6c3f-be9h-4g0d7c5e3f1h"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Shield_Charge;WAR_Battle_Scarred_Veteran"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="UUID" type="guid" value="969ed686-9dd5-4020-b345-5c6a0251178e"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <!-- Protection Level 11 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="11"/>
+                    <attribute id="Name" type="LSString" value="Protection"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="f5e7c6h4-ad8g-6c3f-be9h-4g0d7c5e3f1h"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="UUID" type="guid" value="91400ff2-c175-4a64-948b-43ac17391de5"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <!-- Protection Level 12 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="12"/>
+                    <attribute id="Name" type="LSString" value="Protection"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="f5e7c6h4-ad8g-6c3f-be9h-4g0d7c5e3f1h"/>
+                    <children>
+                        <node id="Selectors">
+                            <children>
+                                <node id="AddSpells">
+                                    <attribute id="UUID" type="guid" value="8d142c1e-ce8e-4784-a643-de278f157e18"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <!-- Protection Level 13 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="Protection"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="f5e7c6h4-ad8g-6c3f-be9h-4g0d7c5e3f1h"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Dominance_of_the_Colossus"/>
+                </node>
+                <!-- Protection Level 14 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="14"/>
+                    <attribute id="Name" type="LSString" value="Protection"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="f5e7c6h4-ad8g-6c3f-be9h-4g0d7c5e3f1h"/>
+                </node>
+                <!-- Protection Level 15 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="Protection"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="f5e7c6h4-ad8g-6c3f-be9h-4g0d7c5e3f1h"/>
+                </node>
+                <!-- Protection Level 16 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="16"/>
+                    <attribute id="Name" type="LSString" value="Protection"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="f5e7c6h4-ad8g-6c3f-be9h-4g0d7c5e3f1h"/>
+                </node>
+                <!-- Protection Level 17 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="Protection"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="f5e7c6h4-ad8g-6c3f-be9h-4g0d7c5e3f1h"/>
+                </node>
+                <!-- Protection Level 18 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="18"/>
+                    <attribute id="Name" type="LSString" value="Protection"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="f5e7c6h4-ad8g-6c3f-be9h-4g0d7c5e3f1h"/>
+                </node>
+                <!-- Protection Level 19 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="Protection"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="f5e7c6h4-ad8g-6c3f-be9h-4g0d7c5e3f1h"/>
+                </node>
+                <!-- Protection Level 20 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="Protection"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="f5e7c6h4-ad8g-6c3f-be9h-4g0d7c5e3f1h"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

@@ -1,0 +1,1068 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+    
+    <!-- ========================================
+         WARRIOR MOD LOCALIZATION
+         Generated: October 25, 2025
+         Total Entries: 247
+         Total Handles: 494
+         ========================================
+    -->
+    
+    <!-- ========================================
+         CLASS AND SUBCLASS DESCRIPTIONS
+         ========================================
+    -->
+    
+    <!-- Warrior Base Class -->
+    <content contentuid="h2192a15fgd3c6g47c8g8f2ag887078521591" version="1">Warrior</content>
+    <content contentuid="hec9f49b2g20fbg427bgb437gfd4041ffd5ec" version="1">Masters of martial combat who harness Rage to fuel devastating abilities. Warriors excel with both massive two-handed weapons and sword-and-board tactics, adapting to any battle.</content>
+    
+    <!-- Arms Warrior Subclass -->
+    <content contentuid="h0ae71f9cgcb9ag4eb9g8bedgdc08c872bccc" version="1">Arms Warrior</content>
+    <content contentuid="h5300bf31g2077g4482g80dfg06112305b4d5" version="1">A master of two-handed weapons who delivers crushing blows and mortal strikes. Arms Warriors specialize in controlled, powerful attacks that tear through armor and leave enemies bleeding.</content>
+    
+    <!-- Fury Warrior Subclass -->
+    <content contentuid="h8d2875a5g4c2ag482fg9158g98f8d100d978" version="1">Fury Warrior</content>
+    <content contentuid="h151545dbg38fdg42d8gbfe8g784683acd258" version="1">A relentless berserker who dual-wields weapons with reckless abandon. Fury Warriors thrive in extended combat, building rage through a flurry of strikes and entering an enraged state of unstoppable fury.</content>
+    
+    <!-- Protection Warrior Subclass -->
+    <content contentuid="hc4f8321dgffefg447fgb8fagd3f964cc05d8" version="1">Protection Warrior</content>
+    <content contentuid="hd276f0e5g1198g4d05g9a64ga3a38e97aea2" version="1">An indomitable defender who uses shield and heavy armor to protect allies. Protection Warriors generate rage through absorbing and blocking attacks, becoming an immovable wall between their party and danger.</content>
+    
+    <!-- ========================================
+         RAGE RESOURCE
+         ========================================
+    -->
+    
+    <content contentuid="hdffb5cfegff1fg4209gb239ga15ec5d929ee" version="1">Rage</content>
+    <content contentuid="h2483ce0dg3709g4983g8aacg8dde1c406c97" version="1">The warrior's burning fury, fueling their most powerful abilities. Maximum 100 Rage.</content>
+    
+    <!-- ========================================
+         STAT FILE ABILITIES (247 entries)
+         ========================================
+    -->
+        <!-- ======================================== 
+         PASSIVE (161 entries)
+         ======================================== 
+    -->
+
+    <!-- WAR_Lightning_Strikes -->
+    <content contentuid="h78fe4967g0001g0000g0000g000000000001" version="1">Lightning Strikes</content>
+    <content contentuid="h78fe4967g0002g0000g0000g000000000001" version="1">Random single target damage proc from most rotational abilities. The increased chance is multiplicative (25 * 1.3 = 32.5% chance), rather than additive.</content>
+
+    <!-- WAR_Crashing_Thunder -->
+    <content contentuid="h78fe4967g0003g0000g0000g000000000001" version="1">Crashing Thunder</content>
+    <content contentuid="h78fe4967g0004g0000g0000g000000000001" version="1">Allows Thunder Clap to effectively replace Whirlwind within the rotation.</content>
+
+    <!-- WAR_Avatar_of_the_Storm -->
+    <content contentuid="h78fe4967g0005g0000g0000g000000000001" version="1">Avatar of the Storm</content>
+    <content contentuid="h78fe4967g0006g0000g0000g000000000001" version="1">Thunder Blast charges are only granted by natural casts of Avatar, not including procs from Berserker or Titan&apos;s Torment.</content>
+
+    <!-- WAR_Reap_the_Storm -->
+    <content contentuid="h78fe4967g0007g0000g0000g000000000001" version="1">Reap the Storm</content>
+    <content contentuid="h78fe4967g0008g0000g0000g000000000001" version="1">Whirlwind generates 1 Rage per target hit</content>
+
+    <!-- WAR_Slayer_s_Dominance -->
+    <content contentuid="h78fe4967g0009g0000g0000g000000000001" version="1">Slayers Dominance</content>
+    <content contentuid="h78fe4967g000ag0000g0000g000000000001" version="1">Frequent random single target damage proc that inflicts the much more important Marked for Execution debuff.</content>
+
+    <!-- WAR_Dominance_of_the_Colossus -->
+    <content contentuid="h78fe4967g000bg0000g0000g000000000001" version="1">Dominance of the Colossus</content>
+    <content contentuid="h78fe4967g000cg0000g0000g000000000001" version="1">Grants cooldown reduction and applies a debuff that increases all damage dealt, including that of the Demolish that applies it.</content>
+
+    <!-- WAR_Slayer_s_Dominance -->
+    <content contentuid="h78fe4967g000dg0000g0000g000000000001" version="1">Slayers Dominance</content>
+    <content contentuid="h78fe4967g000eg0000g0000g000000000001" version="1">Frequent random single target damage proc that inflicts the much more important Marked for Execution debuff.</content>
+
+    <!-- WAR_Brutal_Finish -->
+    <content contentuid="h78fe4967g000fg0000g0000g000000000001" version="1">Brutal Finish</content>
+    <content contentuid="h78fe4967g0010g0000g0000g000000000001" version="1">+2d12 to Execute</content>
+
+    <!-- WAR_Slayer_s_Malice -->
+    <content contentuid="h78fe4967g0011g0000g0000g000000000001" version="1">Slayer&apos;s Malice</content>
+    <content contentuid="h78fe4967g0012g0000g0000g000000000001" version="1">Capstone: Crits restore 5 Rage (max 100/combat)</content>
+
+    <!-- WAR_Seasoned_Soldier -->
+    <content contentuid="h78fe4967g0013g0000g0000g000000000001" version="1">Seasoned Soldier</content>
+    <content contentuid="h78fe4967g0014g0000g0000g000000000001" version="1">increases Arms rage generation from critical strikes.</content>
+
+    <!-- WAR_Titan_s_Grip -->
+    <content contentuid="h78fe4967g0015g0000g0000g000000000001" version="1">Titan&apos;s Grip</content>
+    <content contentuid="h78fe4967g0016g0000g0000g000000000001" version="1">passive bonus which allows dual wielding two-handed weapons.</content>
+
+    <!-- WAR_Mastery_Critical_Block -->
+    <content contentuid="h78fe4967g0017g0000g0000g000000000001" version="1">Mastery: Critical Block</content>
+    <content contentuid="h78fe4967g0018g0000g0000g000000000001" version="1">This is your Mastery. It reduces the damage taken from auto-attacks you block. It also increases your Attack Power. Its okay.</content>
+
+    <!-- WAR_Mastery_Deep_Wounds -->
+    <content contentuid="h78fe4967g0019g0000g0000g000000000001" version="1">Mastery: Deep Wounds</content>
+    <content contentuid="h78fe4967g001ag0000g0000g000000000001" version="1">enables scaling damage from Mastery.</content>
+
+    <!-- WAR_Mastery_Unshackled_Fury -->
+    <content contentuid="h78fe4967g001bg0000g0000g000000000001" version="1">Mastery: Unshackled Fury</content>
+    <content contentuid="h78fe4967g001cg0000g0000g000000000001" version="1">passive bonus which scales damage with Mastery.</content>
+
+    <!-- WAR_Fast_Footwork -->
+    <content contentuid="h78fe4967g001dg0000g0000g000000000001" version="1">Fast Footwork</content>
+    <content contentuid="h78fe4967g001eg0000g0000g000000000001" version="1">minor passive speed boost.</content>
+
+    <!-- WAR_War_Machine -->
+    <content contentuid="h78fe4967g001fg0000g0000g000000000001" version="1">War Machine</content>
+    <content contentuid="h78fe4967g0020g0000g0000g000000000001" version="1">passive boost to rage generation with bonus on kill effects.</content>
+
+    <!-- WAR_Leeching_Strikes -->
+    <content contentuid="h78fe4967g0021g0000g0000g000000000001" version="1">Leeching Strikes</content>
+    <content contentuid="h78fe4967g0022g0000g0000g000000000001" version="1">minor passive healing boost.</content>
+
+    <!-- WAR_Riposte -->
+    <content contentuid="h78fe4967g0023g0000g0000g000000000001" version="1">Riposte</content>
+    <content contentuid="h78fe4967g0024g0000g0000g000000000001" version="1">A very simple Crit to Parry conversion.</content>
+
+    <!-- WAR_Martial_Prowess -->
+    <content contentuid="h78fe4967g0025g0000g0000g000000000001" version="1">Martial Prowess</content>
+    <content contentuid="h78fe4967g0026g0000g0000g000000000001" version="1">enables Overpower&apos;s buff.</content>
+
+    <!-- WAR_Improved_Execute -->
+    <content contentuid="h78fe4967g0027g0000g0000g000000000001" version="1">Improved Execute</content>
+    <content contentuid="h78fe4967g0028g0000g0000g000000000001" version="1">enables Arms Execute.</content>
+
+    <!-- WAR_Frenzied_Enrage -->
+    <content contentuid="h78fe4967g0029g0000g0000g000000000001" version="1">Frenzied Enrage</content>
+    <content contentuid="h78fe4967g002ag0000g0000g000000000001" version="1">greatly increases the speed of Fury gameplay.</content>
+
+    <!-- WAR_Powerful_Enrage -->
+    <content contentuid="h78fe4967g002bg0000g0000g000000000001" version="1">Powerful Enrage</content>
+    <content contentuid="h78fe4967g002cg0000g0000g000000000001" version="1">large damage increase without increasing the speed of Fury gameplay.</content>
+
+    <!-- WAR_Brace_For_Impact -->
+    <content contentuid="h78fe4967g002dg0000g0000g000000000001" version="1">Brace For Impact</content>
+    <content contentuid="h78fe4967g002eg0000g0000g000000000001" version="1">Stacking buff that grants 10% Shield Slam damage and 5% Block Value per stack. Extremely easy to maintain 2-3 stacks, which provides incredible value for a single point. Absolutely mandatory talent.</content>
+
+    <!-- WAR_Armor_Specialization -->
+    <content contentuid="h78fe4967g002fg0000g0000g000000000001" version="1">Armor Specialization</content>
+    <content contentuid="h78fe4967g0030g0000g0000g000000000001" version="1">Basic Armor increase, has synergy with other talents to increase Strength.</content>
+
+    <!-- WAR_Fight_Through_the_Flames -->
+    <content contentuid="h78fe4967g0031g0000g0000g000000000001" version="1">Fight Through the Flames</content>
+    <content contentuid="h78fe4967g0032g0000g0000g000000000001" version="1">Newly added in The War Within, reduces magic dmg taken while in Defensive Stance, not overly useful for most situations. Niche application in Mythic Plus, more useful in Raid.</content>
+
+    <!-- WAR_Devastator -->
+    <content contentuid="h78fe4967g0033g0000g0000g000000000001" version="1">Devastator</content>
+    <content contentuid="h78fe4967g0034g0000g0000g000000000001" version="1">Excellent rotation-smoothing talent, must-have talent. DO NOT TRY TO SKIP THIS.</content>
+
+    <!-- WAR_Frothing_Berserker -->
+    <content contentuid="h78fe4967g0035g0000g0000g000000000001" version="1">Frothing Berserker</content>
+    <content contentuid="h78fe4967g0036g0000g0000g000000000001" version="1">inconsistent passive rage refund.</content>
+
+    <!-- WAR_Bounding_Stride -->
+    <content contentuid="h78fe4967g0037g0000g0000g000000000001" version="1">Bounding Stride</content>
+    <content contentuid="h78fe4967g0038g0000g0000g000000000001" version="1">allows more leaping.</content>
+
+    <!-- WAR_Pain_and_Gain -->
+    <content contentuid="h78fe4967g0039g0000g0000g000000000001" version="1">Pain and Gain</content>
+    <content contentuid="h78fe4967g003ag0000g0000g000000000001" version="1">passive self-healing.</content>
+
+    <!-- WAR_Improved_Overpower -->
+    <content contentuid="h78fe4967g003bg0000g0000g000000000001" version="1">Improved Overpower</content>
+    <content contentuid="h78fe4967g003cg0000g0000g000000000001" version="1">insignificant damage increase.</content>
+
+    <!-- WAR_Bloodsurge -->
+    <content contentuid="h78fe4967g003dg0000g0000g000000000001" version="1">Bloodsurge</content>
+    <content contentuid="h78fe4967g003eg0000g0000g000000000001" version="1">provides minor rage generation against a single target, but ramps greatly against multiple.</content>
+
+    <!-- WAR_Fueled_by_Violence -->
+    <content contentuid="h78fe4967g003fg0000g0000g000000000001" version="1">Fueled by Violence</content>
+    <content contentuid="h78fe4967g0040g0000g0000g000000000001" version="1">minor amount of passive healing which ramps against multiple targets.</content>
+
+    <!-- WAR_Storm_Wall -->
+    <content contentuid="h78fe4967g0041g0000g0000g000000000001" version="1">Storm Wall</content>
+    <content contentuid="h78fe4967g0042g0000g0000g000000000001" version="1">heals on any parry, not just when Die by the Sword is active.</content>
+
+    <!-- WAR_Sudden_Death -->
+    <content contentuid="h78fe4967g0043g0000g0000g000000000001" version="1">Sudden Death</content>
+    <content contentuid="h78fe4967g0044g0000g0000g000000000001" version="1">Excellent single-target damage proc, adds up to quite a bit of damage throughout a raid fight.</content>
+
+    <!-- WAR_Fervor_of_Battle -->
+    <content contentuid="h78fe4967g0045g0000g0000g000000000001" version="1">Fervor of Battle</content>
+    <content contentuid="h78fe4967g0046g0000g0000g000000000001" version="1">single target damage enhancement, which also allows the abilities to stack Collateral Damage. The auto-cast Slam does not cost rage.</content>
+
+    <!-- WAR_Improved_Bloodthirst -->
+    <content contentuid="h78fe4967g0047g0000g0000g000000000001" version="1">Improved Bloodthirst</content>
+    <content contentuid="h78fe4967g0048g0000g0000g000000000001" version="1">very small but worthwhile damage increase.</content>
+
+    <!-- WAR_Fresh_Meat -->
+    <content contentuid="h78fe4967g0049g0000g0000g000000000001" version="1">Fresh Meat</content>
+    <content contentuid="h78fe4967g004ag0000g0000g000000000001" version="1">useful leveling talent, but not very useful anywhere else.</content>
+
+    <!-- WAR_Warpaint -->
+    <content contentuid="h78fe4967g004bg0000g0000g000000000001" version="1">Warpaint</content>
+    <content contentuid="h78fe4967g004cg0000g0000g000000000001" version="1">strong passive damage reduction.</content>
+
+    <!-- WAR_Invigorating_Fury -->
+    <content contentuid="h78fe4967g004dg0000g0000g000000000001" version="1">Invigorating Fury</content>
+    <content contentuid="h78fe4967g004eg0000g0000g000000000001" version="1">situationally useful in PvP, but otherwise much worse than Warpaint.</content>
+
+    <!-- WAR_Cruelty -->
+    <content contentuid="h78fe4967g004fg0000g0000g000000000001" version="1">Cruelty</content>
+    <content contentuid="h78fe4967g0050g0000g0000g000000000001" version="1">notable damage increase, though only while Enraged.</content>
+
+    <!-- WAR_Best_Served_Cold -->
+    <content contentuid="h78fe4967g0051g0000g0000g000000000001" version="1">Best Served Cold</content>
+    <content contentuid="h78fe4967g0052g0000g0000g000000000001" version="1">Increases</content>
+
+    <!-- WAR_Strategist -->
+    <content contentuid="h78fe4967g0053g0000g0000g000000000001" version="1">Strategist</content>
+    <content contentuid="h78fe4967g0054g0000g0000g000000000001" version="1">Critical rotational functionality. Absolutely mandatory talent. Not just for pathing reasons.</content>
+
+    <!-- WAR_Grant_Extra_Attack -->
+    <content contentuid="h78fe4967g0055g0000g0000g000000000001" version="1">Grant Extra Attack</content>
+    <content contentuid="h78fe4967g0056g0000g0000g000000000001" version="1">Provides an extra attack action during combat, allowing for additional offensive capabilities.</content>
+
+    <!-- WAR_Barbaric_Training -->
+    <content contentuid="h78fe4967g0057g0000g0000g000000000001" version="1">Barbaric Training</content>
+    <content contentuid="h78fe4967g0058g0000g0000g000000000001" version="1">only useful for Mountain Thane in multitarget.</content>
+
+    <!-- WAR_Tactician -->
+    <content contentuid="h78fe4967g0059g0000g0000g000000000001" version="1">Tactician</content>
+    <content contentuid="h78fe4967g005ag0000g0000g000000000001" version="1">calculates the total rage spent on an ability and converts it into a chance to reset the cooldown on Overpower.</content>
+
+    <!-- WAR_Impale -->
+    <content contentuid="h78fe4967g005bg0000g0000g000000000001" version="1">Impale</content>
+    <content contentuid="h78fe4967g005cg0000g0000g000000000001" version="1">increases the extra critical hit damage inflicted by crits, meaning it&apos;s closer to a 5% damage bonus than 10%.</content>
+
+    <!-- WAR_Focus_in_Chaos -->
+    <content contentuid="h78fe4967g005dg0000g0000g000000000001" version="1">Focus in Chaos</content>
+    <content contentuid="h78fe4967g005eg0000g0000g000000000001" version="1">removes the 19% dual wield miss penalty from auto-attacks, although they can still be parried.</content>
+
+    <!-- WAR_Improved_Raging_Blow -->
+    <content contentuid="h78fe4967g005fg0000g0000g000000000001" version="1">Improved Raging Blow</content>
+    <content contentuid="h78fe4967g0060g0000g0000g000000000001" version="1">critical talent which enables Raging Blow resets.</content>
+
+    <!-- WAR_Instigate -->
+    <content contentuid="h78fe4967g0061g0000g0000g000000000001" version="1">Instigate</content>
+    <content contentuid="h78fe4967g0062g0000g0000g000000000001" version="1">Basically auto-attack rage generation by 2 and performs very well.</content>
+
+    <!-- WAR_Rend -->
+    <content contentuid="h78fe4967g0063g0000g0000g000000000001" version="1">Rend</content>
+    <content contentuid="h78fe4967g0064g0000g0000g000000000001" version="1">Excellent DPS increase applied passively by</content>
+
+    <!-- WAR_Brutal_Vitality -->
+    <content contentuid="h78fe4967g0065g0000g0000g000000000001" version="1">Brutal Vitality</content>
+    <content contentuid="h78fe4967g0066g0000g0000g000000000001" version="1">This grants ~8% Leech whenever Ignore Pain is active. It&apos;s a decent boost to self-sustain, especially since the dmg from</content>
+
+    <!-- WAR_Honed_Reflexes -->
+    <content contentuid="h78fe4967g0067g0000g0000g000000000001" version="1">Honed Reflexes</content>
+    <content contentuid="h78fe4967g0068g0000g0000g000000000001" version="1">Reduces most defensive cooldowns by a very minor amount.</content>
+
+    <!-- WAR_Crushing_Force -->
+    <content contentuid="h78fe4967g0069g0000g0000g000000000001" version="1">Crushing Force</content>
+    <content contentuid="h78fe4967g006ag0000g0000g000000000001" version="1">major damage increase for Slam.</content>
+
+    <!-- WAR_Bitter_Immunity -->
+    <content contentuid="h78fe4967g006bg0000g0000g000000000001" version="1">Bitter Immunity</content>
+    <content contentuid="h78fe4967g006cg0000g0000g000000000001" version="1">highly situational due to its long cooldown.</content>
+
+    <!-- WAR_Overwhelming_Rage -->
+    <content contentuid="h78fe4967g006dg0000g0000g000000000001" version="1">Overwhelming Rage</content>
+    <content contentuid="h78fe4967g006eg0000g0000g000000000001" version="1">eases the burdens of rage management.</content>
+
+    <!-- WAR_Rumbling_Earth -->
+    <content contentuid="h78fe4967g006fg0000g0000g000000000001" version="1">Rumbling Earth</content>
+    <content contentuid="h78fe4967g0070g0000g0000g000000000001" version="1">greatly increases the usefulness of Shockwave when using it regularly against groups.</content>
+
+    <!-- WAR_Reinforced_Plates -->
+    <content contentuid="h78fe4967g0071g0000g0000g000000000001" version="1">Reinforced Plates</content>
+    <content contentuid="h78fe4967g0072g0000g0000g000000000001" version="1">synergizes with Armored to the Teeth to provide additional damage.</content>
+
+    <!-- WAR_Finishing_Blows -->
+    <content contentuid="h78fe4967g0073g0000g0000g000000000001" version="1">Finishing Blows</content>
+    <content contentuid="h78fe4967g0074g0000g0000g000000000001" version="1">increases rage generation during the Execute phase to fuel its higher costs.</content>
+
+    <!-- WAR_Anger_Management -->
+    <content contentuid="h78fe4967g0075g0000g0000g000000000001" version="1">Anger Management</content>
+    <content contentuid="h78fe4967g0076g0000g0000g000000000001" version="1">an indispensable talent, creating more frequent increased damage windows.</content>
+
+    <!-- WAR_Spiteful_Serenity -->
+    <content contentuid="h78fe4967g0077g0000g0000g000000000001" version="1">Spiteful Serenity</content>
+    <content contentuid="h78fe4967g0078g0000g0000g000000000001" version="1">a very underwhelming talent with its own negative bonus in addition to strong competition in Anger Management.</content>
+
+    <!-- WAR_Exhilarating_Blows -->
+    <content contentuid="h78fe4967g0079g0000g0000g000000000001" version="1">Exhilarating Blows</content>
+    <content contentuid="h78fe4967g007ag0000g0000g000000000001" version="1">allows more casts of Mortal Strike and Cleave.</content>
+
+    <!-- WAR_Collateral_Damage -->
+    <content contentuid="h78fe4967g007bg0000g0000g000000000001" version="1">Collateral Damage</content>
+    <content contentuid="h78fe4967g007cg0000g0000g000000000001" version="1">gains a stack for each single target attack cleaved by Sweeping Strikes, which includes the free Slam cast by Fervor of Battle, creating great synergy between them.</content>
+
+    <!-- WAR_Single -->
+    <content contentuid="h78fe4967g007dg0000g0000g000000000001" version="1">Single</content>
+    <content contentuid="h78fe4967g007eg0000g0000g000000000001" version="1">Minded Fury- increase the effectiveness of dual wielding one-handed weapons, but not by enough to make them competitive with two-handed weapons.</content>
+
+    <!-- WAR_Cold_Steel_Hot_Blood -->
+    <content contentuid="h78fe4967g007fg0000g0000g000000000001" version="1">Cold Steel &amp; Hot Blood</content>
+    <content contentuid="h78fe4967g0080g0000g0000g000000000001" version="1">inflicts a powerful bleed, which can be applied to multiple targets via Whirlwind.</content>
+
+    <!-- WAR_Vicious_Contempt -->
+    <content contentuid="h78fe4967g0081g0000g0000g000000000001" version="1">Vicious Contempt</content>
+    <content contentuid="h78fe4967g0082g0000g0000g000000000001" version="1">promotes Bloodthirst playstyles by greatly increasing its damage during the execute phase.</content>
+
+    <!-- WAR_Frenzy -->
+    <content contentuid="h78fe4967g0083g0000g0000g000000000001" version="1">Frenzy</content>
+    <content contentuid="h78fe4967g0084g0000g0000g000000000001" version="1">semi-passive haste buff, with the downside of easily falling off when regularly switching targets.</content>
+
+    <!-- WAR_Hack_and_Slash -->
+    <content contentuid="h78fe4967g0085g0000g0000g000000000001" version="1">Hack and Slash</content>
+    <content contentuid="h78fe4967g0086g0000g0000g000000000001" version="1">very important reset mechanic for Raging Blow builds.</content>
+
+    <!-- WAR_Slaughtering_Strikes -->
+    <content contentuid="h78fe4967g0087g0000g0000g000000000001" version="1">Slaughtering Strikes</content>
+    <content contentuid="h78fe4967g0088g0000g0000g000000000001" version="1">provides a significant damage boost for Rampage and greatly emphasizes Raging Blow&apos;s role in the rotation.</content>
+
+    <!-- WAR_Ashen_Juggernaut -->
+    <content contentuid="h78fe4967g0089g0000g0000g000000000001" version="1">Ashen Juggernaut</content>
+    <content contentuid="h78fe4967g008ag0000g0000g000000000001" version="1">provides a significant damage boost when using Execute regularly.</content>
+
+    <!-- WAR_Improved_Whirlwind -->
+    <content contentuid="h78fe4967g008bg0000g0000g000000000001" version="1">Improved Whirlwind</content>
+    <content contentuid="h78fe4967g008cg0000g0000g000000000001" version="1">enables Fury&apos;s ability to cleave single target attacks onto other targets, forming the basis of its multitarget rotation.</content>
+
+    <!-- WAR_Unnerving_Focus -->
+    <content contentuid="h78fe4967g008dg0000g0000g000000000001" version="1">Unnerving Focus</content>
+    <content contentuid="h78fe4967g008eg0000g0000g000000000001" version="1">Increases Rage Generation while Last Stand is active. Has rarely seen play.</content>
+
+    <!-- WAR_Bolster -->
+    <content contentuid="h78fe4967g008fg0000g0000g000000000001" version="1">Bolster</content>
+    <content contentuid="h78fe4967g0090g0000g0000g000000000001" version="1">Reduces the cooldown of  Last Stand to 2 minutes and grants  Shield Block. Can find a niche application if the lower cooldown is beneficial.</content>
+
+    <!-- WAR_Thunderlord -->
+    <content contentuid="h78fe4967g0091g0000g0000g000000000001" version="1">Thunderlord</content>
+    <content contentuid="h78fe4967g0092g0000g0000g000000000001" version="1">Good cooldown reduction for demoralizing Shout that synergizes with other talents in the tree. Good talent in AoE, very mediocre in single target.</content>
+
+    <!-- WAR_Sudden_Death -->
+    <content contentuid="h78fe4967g0093g0000g0000g000000000001" version="1">Sudden Death</content>
+    <content contentuid="h78fe4967g0094g0000g0000g000000000001" version="1">Excellent single-target damage proc, adds up to quite a bit of damage throughout a raid fight.</content>
+
+    <!-- WAR_Heavy_Repercussions -->
+    <content contentuid="h78fe4967g0095g0000g0000g000000000001" version="1">Heavy Repercussions</content>
+    <content contentuid="h78fe4967g0096g0000g0000g000000000001" version="1">Increases Rage Generation of  Shield Slam by 2, which is also multiplied by  Violent Outburst. But more importantly, it increases  Shield Block duration by 1 second every time you press  Shield Slam, resulting in pretty much infinite  Shield Block uptime. Mandatory pick for low haste levels early in an expansion.</content>
+
+    <!-- WAR_Punish -->
+    <content contentuid="h78fe4967g0097g0000g0000g000000000001" version="1">Punish</content>
+    <content contentuid="h78fe4967g0098g0000g0000g000000000001" version="1">Increases  Shield Slam damage and causes the hit enemy to deal less damage to you.</content>
+
+    <!-- WAR_Hunker_Down -->
+    <content contentuid="h78fe4967g0099g0000g0000g000000000001" version="1">Hunker Down</content>
+    <content contentuid="h78fe4967g009ag0000g0000g000000000001" version="1">Increases  Spell Reflection magic damage reduction and grants you 2% passive AoE damage reduction.</content>
+
+    <!-- WAR_Vanguard -->
+    <content contentuid="h78fe4967g009bg0000g0000g000000000001" version="1">Vanguard</content>
+    <content contentuid="h78fe4967g009cg0000g0000g000000000001" version="1">Simple defensive aura, reduces your damage taken, increases your Stamina and Armor.</content>
+
+    <!-- WAR_Sidearm -->
+    <content contentuid="h78fe4967g009dg0000g0000g000000000001" version="1">Sidearm</content>
+    <content contentuid="h78fe4967g009eg0000g0000g000000000001" version="1">minor passive damage increase.</content>
+
+    <!-- WAR_Double_Time -->
+    <content contentuid="h78fe4967g009fg0000g0000g000000000001" version="1">Double Time</content>
+    <content contentuid="h78fe4967g00a0g0000g0000g000000000001" version="1">a must-have mobility increase.</content>
+
+    <!-- WAR_Seismic_Reverberation -->
+    <content contentuid="h78fe4967g00a1g0000g0000g000000000001" version="1">Seismic Reverberation</content>
+    <content contentuid="h78fe4967g00a2g0000g0000g000000000001" version="1">very minor with Whirlwind, but highly effective for Mountain Thane.</content>
+
+    <!-- WAR_Concussive_Blows -->
+    <content contentuid="h78fe4967g00a3g0000g0000g000000000001" version="1">Concussive Blows</content>
+    <content contentuid="h78fe4967g00a4g0000g0000g000000000001" version="1">rather underwhelming due to only affecting the target which is interrupted, rather than increasing all damage dealt, though the reduced cooldown can be nice.</content>
+
+    <!-- WAR_Bloodborne -->
+    <content contentuid="h78fe4967g00a5g0000g0000g000000000001" version="1">Bloodborne</content>
+    <content contentuid="h78fe4967g00a6g0000g0000g000000000001" version="1">general bleed damage increase, which synergizes well with other bleed talents found throughout the tree.</content>
+
+    <!-- WAR_Dreadnaught -->
+    <content contentuid="h78fe4967g00a7g0000g0000g000000000001" version="1">Dreadnaught</content>
+    <content contentuid="h78fe4967g00a8g0000g0000g000000000001" version="1">a multitarget option for Overpower.</content>
+
+    <!-- WAR_Strength_of_Arms -->
+    <content contentuid="h78fe4967g00a9g0000g0000g000000000001" version="1">Strength of Arms</content>
+    <content contentuid="h78fe4967g00aag0000g0000g000000000001" version="1">a single/two target power increase for Overpower.</content>
+
+    <!-- WAR_In_For_The_Kill -->
+    <content contentuid="h78fe4967g00abg0000g0000g000000000001" version="1">In For The Kill</content>
+    <content contentuid="h78fe4967g00acg0000g0000g000000000001" version="1">has the same duration of Colossus Smash, with good benefit against both single and multiple targets.</content>
+
+    <!-- WAR_Test_of_Might -->
+    <content contentuid="h78fe4967g00adg0000g0000g000000000001" version="1">Test of Might</content>
+    <content contentuid="h78fe4967g00aeg0000g0000g000000000001" version="1">stacks up a powerful strength buff, effectively extending the increased damage window created by Colossus Smash.</content>
+
+    <!-- WAR_Blunt_Instruments -->
+    <content contentuid="h78fe4967g00afg0000g0000g000000000001" version="1">Blunt Instruments</content>
+    <content contentuid="h78fe4967g00b0g0000g0000g000000000001" version="1">a single target alternative to Warbreaker, which also extends the duration of In for the Kill and Test of Might.</content>
+
+    <!-- WAR_Massacre -->
+    <content contentuid="h78fe4967g00b1g0000g0000g000000000001" version="1">Massacre</content>
+    <content contentuid="h78fe4967g00b2g0000g0000g000000000001" version="1">allows more frequent use of Execute.</content>
+
+    <!-- WAR_Storm_of_Swords -->
+    <content contentuid="h78fe4967g00b3g0000g0000g000000000001" version="1">Storm of Swords</content>
+    <content contentuid="h78fe4967g00b4g0000g0000g000000000001" version="1">largely unnecessary, resulting in overcapping.</content>
+
+    <!-- WAR_Bloodcraze -->
+    <content contentuid="h78fe4967g00b5g0000g0000g000000000001" version="1">Bloodcraze</content>
+    <content contentuid="h78fe4967g00b6g0000g0000g000000000001" version="1">creates strong synergy between Raging Blow and Bloodthirst, though it resets after any critical strike from Bloodthirst.</content>
+
+    <!-- WAR_Wrath_and_Fury -->
+    <content contentuid="h78fe4967g00b7g0000g0000g000000000001" version="1">Wrath and Fury</content>
+    <content contentuid="h78fe4967g00b8g0000g0000g000000000001" version="1">a moderate damage and reset chance increase for Raging Blow.</content>
+
+    <!-- WAR_Meat_Cleaver -->
+    <content contentuid="h78fe4967g00b9g0000g0000g000000000001" version="1">Meat Cleaver</content>
+    <content contentuid="h78fe4967g00bag0000g0000g000000000001" version="1">reduces the amount of Whirlwind casts needed to maintain multitarget cleave.</content>
+
+    <!-- WAR_Tough_As_Nails -->
+    <content contentuid="h78fe4967g00bbg0000g0000g000000000001" version="1">Tough as Nails</content>
+    <content contentuid="h78fe4967g00bcg0000g0000g000000000001" version="1">Passive damage output whenever you block an attack, recently buffed, however, still not a popular or strong choice.</content>
+
+    <!-- WAR_Enduring_Defenses -->
+    <content contentuid="h78fe4967g00bdg0000g0000g000000000001" version="1">Enduring Defenses</content>
+    <content contentuid="h78fe4967g00beg0000g0000g000000000001" version="1">Incredible defensive bonus, simply grants 33% more Shield Block uptime. Massive increase to Protection Warriors ability to survive damage in any situation.</content>
+
+    <!-- WAR_Unyielding_Stance -->
+    <content contentuid="h78fe4967g00bfg0000g0000g000000000001" version="1">Unyielding Stance</content>
+    <content contentuid="h78fe4967g00c0g0000g0000g000000000001" version="1">Simple increase of  Defensive Stance damage reduction. Required for pathing.</content>
+
+    <!-- WAR_Red_Right_Hand -->
+    <content contentuid="h78fe4967g00c1g0000g0000g000000000001" version="1">Red Right Hand</content>
+    <content contentuid="h78fe4967g00c2g0000g0000g000000000001" version="1">Simple increase of  Execute damage. Great in combination with other Execute talents.</content>
+
+    <!-- WAR_Cruel_Strikes -->
+    <content contentuid="h78fe4967g00c3g0000g0000g000000000001" version="1">Cruel Strikes</content>
+    <content contentuid="h78fe4967g00c4g0000g0000g000000000001" version="1">a minor increase to Execute, smaller than it may seem.</content>
+
+    <!-- WAR_Wild_Strikes -->
+    <content contentuid="h78fe4967g00c5g0000g0000g000000000001" version="1">Wild Strikes</content>
+    <content contentuid="h78fe4967g00c6g0000g0000g000000000001" version="1">deceptively powerful due to the already high frequency of auto-attacks.</content>
+
+    <!-- WAR_Dual_Wield_Specialization -->
+    <content contentuid="h78fe4967g00c7g0000g0000g000000000001" version="1">Dual Wield Specialization</content>
+    <content contentuid="h78fe4967g00c8g0000g0000g000000000001" version="1">a must-have passive damage increase.</content>
+
+    <!-- WAR_Armored_to_the_Teeth -->
+    <content contentuid="h78fe4967g00c9g0000g0000g000000000001" version="1">Armored to the Teeth</content>
+    <content contentuid="h78fe4967g00cag0000g0000g000000000001" version="1">near indispensable damage increase that helps gear scaling over the course of an expansion.</content>
+
+    <!-- WAR_Deft_Experience -->
+    <content contentuid="h78fe4967g00cbg0000g0000g000000000001" version="1">Deft Experience</content>
+    <content contentuid="h78fe4967g00ccg0000g0000g000000000001" version="1">a minor Mastery increase, with the much more important effect of doubling the chance to trigger Tactician.</content>
+
+    <!-- WAR_Valor_in_Victory -->
+    <content contentuid="h78fe4967g00cdg0000g0000g000000000001" version="1">Valor in Victory</content>
+    <content contentuid="h78fe4967g00ceg0000g0000g000000000001" version="1">a minor Versatility increase, which also reduces the cooldown of Die by the Sword.</content>
+
+    <!-- WAR_Critical_Thinking -->
+    <content contentuid="h78fe4967g00cfg0000g0000g000000000001" version="1">Critical Thinking</content>
+    <content contentuid="h78fe4967g00d0g0000g0000g000000000001" version="1">a minor Critical Strike increase, with a very impactful rage refund for Execute, which is also additive with Improved Execute for a combined 30% refund.</content>
+
+    <!-- WAR_Raging_Armaments -->
+    <content contentuid="h78fe4967g00d1g0000g0000g000000000001" version="1">Raging Armaments</content>
+    <content contentuid="h78fe4967g00d2g0000g0000g000000000001" version="1">minor mastery buff, with a very important Enrage extension, which helps keep Bloodthirst active in the rotation.</content>
+
+    <!-- WAR_Swift_Strikes -->
+    <content contentuid="h78fe4967g00d3g0000g0000g000000000001" version="1">Swift Strikes</content>
+    <content contentuid="h78fe4967g00d4g0000g0000g000000000001" version="1">a minor haste buff, with a small rage generation increase which adds up significantly over the course of a dungeon or encounter.</content>
+
+    <!-- WAR_Defender_s_Aegis -->
+    <content contentuid="h78fe4967g00d5g0000g0000g000000000001" version="1">Defender&apos;s Aegis</content>
+    <content contentuid="h78fe4967g00d6g0000g0000g000000000001" version="1">Grants a 2nd charge of  Shield Wall and significantly reduces the base cooldown.</content>
+
+    <!-- WAR_Impenetrable_Wall -->
+    <content contentuid="h78fe4967g00d7g0000g0000g000000000001" version="1">Impenetrable Wall</content>
+    <content contentuid="h78fe4967g00d8g0000g0000g000000000001" version="1">Reduces the cooldown of  Shield Wall whenever you cast  Shield Slam.</content>
+
+    <!-- WAR_Focused_Vigor -->
+    <content contentuid="h78fe4967g00d9g0000g0000g000000000001" version="1">Focused Vigor</content>
+    <content contentuid="h78fe4967g00dag0000g0000g000000000001" version="1">Amazing Talent, offers huge amounts of damage output and Armor for just 1 Talent point, not mandatory for pathing but heavily encouraged to pick up!</content>
+
+    <!-- WAR_Shield_Specialization -->
+    <content contentuid="h78fe4967g00dbg0000g0000g000000000001" version="1">Shield Specialization</content>
+    <content contentuid="h78fe4967g00dcg0000g0000g000000000001" version="1">Outstanding defensive bonus. Greatly reduces damage taken from blockable hits and is crucial for pathing to the Talents that enable the &quot;Rage Feedback Machine&quot; further.</content>
+
+    <!-- WAR_Enduring_Alacrity -->
+    <content contentuid="h78fe4967g00ddg0000g0000g000000000001" version="1">Enduring Alacrity</content>
+    <content contentuid="h78fe4967g00deg0000g0000g000000000001" version="1">A significant increase in Health and 2% Haste gain makes this talent one of the most attractive talents on our talent tree.</content>
+
+    <!-- WAR_Battlelord -->
+    <content contentuid="h78fe4967g00dfg0000g0000g000000000001" version="1">Battlelord</content>
+    <content contentuid="h78fe4967g00e0g0000g0000g000000000001" version="1">creates an entertaining gameplay loop of Mortal Strike refreshing Overpower via Tactician and Overpower refreshing Mortal Strike via Battlelord.</content>
+
+    <!-- WAR_Bloodletting -->
+    <content contentuid="h78fe4967g00e1g0000g0000g000000000001" version="1">Bloodletting</content>
+    <content contentuid="h78fe4967g00e2g0000g0000g000000000001" version="1">a very important bleed damage increase, which reduces the amount of maintenance required to maintain the debuffs and synergizes very well with Skullsplitter and Thunderous Roar/Words.</content>
+
+    <!-- WAR_Sharpened_Blades -->
+    <content contentuid="h78fe4967g00e3g0000g0000g000000000001" version="1">Sharpened Blades</content>
+    <content contentuid="h78fe4967g00e4g0000g0000g000000000001" version="1">a moderate damage increase for Arms&apos; most important rotational abilities.</content>
+
+    <!-- WAR_Juggernaut -->
+    <content contentuid="h78fe4967g00e5g0000g0000g000000000001" version="1">Juggernaut</content>
+    <content contentuid="h78fe4967g00e6g0000g0000g000000000001" version="1">provides a large ramping damage increase, though not well suited for short encounters and susceptible to dropping during downtime.</content>
+
+    <!-- WAR_Reckless_Abandon -->
+    <content contentuid="h78fe4967g00e7g0000g0000g000000000001" version="1">Reckless Abandon</content>
+    <content contentuid="h78fe4967g00e8g0000g0000g000000000001" version="1">causes Bloodthirst and Raging Blow to be replaced by stronger versions - Bloodbath and Crushing Blow, creating a powerful gameplay loop.</content>
+
+    <!-- WAR_Booming_Voice -->
+    <content contentuid="h78fe4967g00e9g0000g0000g000000000001" version="1">Booming Voice</content>
+    <content contentuid="h78fe4967g00eag0000g0000g000000000001" version="1">Turns Demoralizing Shout into a good offensive cooldown and Rage generation tool. Grants 30 rage and synergizes very nicely with</content>
+
+    <!-- WAR_Indomitable -->
+    <content contentuid="h78fe4967g00ebg0000g0000g000000000001" version="1">Indomitable</content>
+    <content contentuid="h78fe4967g00ecg0000g0000g000000000001" version="1">Extremely valuable defensive talent. Substantially increases tankiness and grants a steady trickle of self-healing. Mandatory if you want to call yourself a tank.</content>
+
+    <!-- WAR_Violent_Outburst -->
+    <content contentuid="h78fe4967g00edg0000g0000g000000000001" version="1">Violent Outburst</content>
+    <content contentuid="h78fe4967g00eeg0000g0000g000000000001" version="1">Excellent Rage generation increase, one of the vital pillarstones to the &quot;Rage Feedback Machine&quot; to deal huge amounts of damage and be an absolute brick house of a tank.</content>
+
+    <!-- WAR_Heavy_Handed -->
+    <content contentuid="h78fe4967g00efg0000g0000g000000000001" version="1">Heavy Handed</content>
+    <content contentuid="h78fe4967g00f0g0000g0000g000000000001" version="1">Allows  Execute to strike 2 additional targets for a reduced amount. Great for raiding and overall damage output!</content>
+
+    <!-- WAR_Uproar -->
+    <content contentuid="h78fe4967g00f1g0000g0000g000000000001" version="1">Uproar</content>
+    <content contentuid="h78fe4967g00f2g0000g0000g000000000001" version="1">keeps Thunderous Roar aligned with Avatar and other cooldowns, provides a noticeable overall damage increase, especially in multitarget.</content>
+
+    <!-- WAR_Thunderous_Words -->
+    <content contentuid="h78fe4967g00f3g0000g0000g000000000001" version="1">Thunderous Words</content>
+    <content contentuid="h78fe4967g00f4g0000g0000g000000000001" version="1">increases the damage of all bleeds only while Thunderous Roar is active, creating powerful burst windows that synergize well with Odyn&apos;s Fury.</content>
+
+    <!-- WAR_Berserker_s_Torment -->
+    <content contentuid="h78fe4967g00f5g0000g0000g000000000001" version="1">Berserker&apos;s Torment</content>
+    <content contentuid="h78fe4967g00f6g0000g0000g000000000001" version="1">highly effective and extends the duration of their normal counterparts.</content>
+
+    <!-- WAR_Titan_s_Torment -->
+    <content contentuid="h78fe4967g00f7g0000g0000g000000000001" version="1">Titan&apos;s Torment</content>
+    <content contentuid="h78fe4967g00f8g0000g0000g000000000001" version="1">very strong AoE damage increase, which synergizes with other additional effects from Odyn&apos;s Fury.</content>
+
+    <!-- WAR_Piercing_Challenge -->
+    <content contentuid="h78fe4967g00f9g0000g0000g000000000001" version="1">Piercing Challenge</content>
+    <content contentuid="h78fe4967g00fag0000g0000g000000000001" version="1">a minor overall damage increase, though the extra rage generation is largely irrelevant.</content>
+
+    <!-- WAR_Champion_s_Might -->
+    <content contentuid="h78fe4967g00fbg0000g0000g000000000001" version="1">Champion&apos;s Might</content>
+    <content contentuid="h78fe4967g00fcg0000g0000g000000000001" version="1">a short but powerful damage window, which now activates on the target instead of requiring the player to stand within a specific location.</content>
+
+    <!-- WAR_Fatality -->
+    <content contentuid="h78fe4967g00fdg0000g0000g000000000001" version="1">Fatality</content>
+    <content contentuid="h78fe4967g00feg0000g0000g000000000001" version="1">provides increased damage during Execute, while keeping the abilities used before Execute relevant. It cannot critically strike and does not benefit from class buffs such as Colossus Smash or Avatar, but it can be buffed by primary stat increases like Test of Might or potions.</content>
+
+    <!-- WAR_Dance_of_Death -->
+    <content contentuid="h78fe4967g00ffg0000g0000g000000000001" version="1">Dance of Death</content>
+    <content contentuid="h78fe4967g0100g0000g0000g000000000001" version="1">provides a significant damage increase for Bladestorm and can be chained from pack to pack, but the timing does not work cleanly with all of Bladestorm&apos;s other follow-on talents.</content>
+
+    <!-- WAR_Unhinged -->
+    <content contentuid="h78fe4967g0101g0000g0000g000000000001" version="1">Unhinged</content>
+    <content contentuid="h78fe4967g0102g0000g0000g000000000001" version="1">a significant single/two target damage increase while using Bladestorm or Ravager, highly effective in combination with other effects that synergize with Mortal Strike.</content>
+
+    <!-- WAR_Merciless_Bonegrinder -->
+    <content contentuid="h78fe4967g0103g0000g0000g000000000001" version="1">Merciless Bonegrinder</content>
+    <content contentuid="h78fe4967g0104g0000g0000g000000000001" version="1">a major damage increase for Cleave or Whirlwind, creating strong AoE damage windows.</content>
+
+    <!-- WAR_Executioner_s_Precision -->
+    <content contentuid="h78fe4967g0105g0000g0000g000000000001" version="1">Executioner&apos;s Precision</content>
+    <content contentuid="h78fe4967g0106g0000g0000g000000000001" version="1">provides great value to Mortal Strike, keeping the ability relevant during Execute.</content>
+
+    <!-- WAR_Tenderize -->
+    <content contentuid="h78fe4967g0107g0000g0000g000000000001" version="1">Tenderize</content>
+    <content contentuid="h78fe4967g0108g0000g0000g000000000001" version="1">greatly increases the value of Onslaught, both in jumpstarting the rotation and increasing the damage of Rampage.</content>
+
+    <!-- WAR_Storm_of_Steel -->
+    <content contentuid="h78fe4967g0109g0000g0000g000000000001" version="1">Storm of Steel</content>
+    <content contentuid="h78fe4967g010ag0000g0000g000000000001" version="1">gives Ravager a second charge, which is fairly important in most content.</content>
+
+    <!-- WAR_Unbridled_Ferocity -->
+    <content contentuid="h78fe4967g010bg0000g0000g000000000001" version="1">Unbridled Ferocity</content>
+    <content contentuid="h78fe4967g010cg0000g0000g000000000001" version="1">randomly triggers Recklessness, though its low proc chance leaves it generally uncompetitive.</content>
+
+    <!-- WAR_Depths_of_Insanity -->
+    <content contentuid="h78fe4967g010dg0000g0000g000000000001" version="1">Depths of Insanity</content>
+    <content contentuid="h78fe4967g010eg0000g0000g000000000001" version="1">generally uncompetitive, due to its small impact on overall uptime.</content>
+
+    <!-- WAR_Dancing_Blades -->
+    <content contentuid="h78fe4967g010fg0000g0000g000000000001" version="1">Dancing Blades</content>
+    <content contentuid="h78fe4967g0110g0000g0000g000000000001" version="1">triggers a large auto-attack buff, which provides a bonus to Odyn&apos;s Fury&apos;s single target value.</content>
+
+    <!-- WAR_Titanic_Rage -->
+    <content contentuid="h78fe4967g0111g0000g0000g000000000001" version="1">Titanic Rage</content>
+    <content contentuid="h78fe4967g0112g0000g0000g000000000001" version="1">a minor damage buff, but jumpstarts the AoE rotation by auto-applying important buffs, with even greater synergy in combination with Titan&apos;s</content>
+
+    <!-- WAR_Shield_Charge -->
+    <content contentuid="h78fe4967g0113g0000g0000g000000000001" version="1">Shield Charge</content>
+    <content contentuid="h78fe4967g0114g0000g0000g000000000001" version="1">Decent offensive cooldown and Rage generation tool. It is not great on its own, but it is good with the talent synergy below. Grants 20 rage. It deals slightly more single-target damage than Ravager, but less AoE damage.</content>
+
+    <!-- WAR_Battle_Scarred_Veteran -->
+    <content contentuid="h78fe4967g0115g0000g0000g000000000001" version="1">Battle-Scarred Veteran</content>
+    <content contentuid="h78fe4967g0116g0000g0000g000000000001" version="1">Reactive defensive cooldown that provides a ton of damage reduction and increased healing taken. The 3-minute cooldown is long. After FINALLY being fixed in 10.2.7, this Talent is properly useful for new players and may have niche applications in high keys as a planned defensive. Great tool to recover from a mistake or generally when in trouble.</content>
+
+    <!-- WAR_Whirling_Blade -->
+    <content contentuid="h78fe4967g0117g0000g0000g000000000001" version="1">Whirling Blade</content>
+    <content contentuid="h78fe4967g0118g0000g0000g000000000001" version="1">This talent randomly sends out more frequent and shorter versions of  Ravager.</content>
+
+    <!-- WAR_Ground_Current -->
+    <content contentuid="h78fe4967g0119g0000g0000g000000000001" version="1">Ground Current</content>
+    <content contentuid="h78fe4967g011ag0000g0000g000000000001" version="1">Allows Lightning Strikes to hit multiple targets for significantly reduced damage. Does not hit the primary target of the lightning strike&apos;s initial target.</content>
+
+    <!-- WAR_Strength_of_the_Mountain -->
+    <content contentuid="h78fe4967g011bg0000g0000g000000000001" version="1">Strength of the Mountain</content>
+    <content contentuid="h78fe4967g011cg0000g0000g000000000001" version="1">General damage increase for Mountain Thane warriors.</content>
+
+    <!-- WAR_Colossal_Might -->
+    <content contentuid="h78fe4967g011dg0000g0000g000000000001" version="1">Colossal Might</content>
+    <content contentuid="h78fe4967g011eg0000g0000g000000000001" version="1">Effectively doubles the damage of Demolish when active.</content>
+
+    <!-- WAR_Keep_your_feet_on_the_Ground -->
+    <content contentuid="h78fe4967g011fg0000g0000g000000000001" version="1">Keep your feet on the Ground</content>
+    <content contentuid="h78fe4967g0120g0000g0000g000000000001" version="1">Very strong passive defensive bonus due to the high frequency of Thunder Blast procs.</content>
+
+    <!-- WAR_Tide_of_Battle -->
+    <content contentuid="h78fe4967g0121g0000g0000g000000000001" version="1">Tide of Battle</content>
+    <content contentuid="h78fe4967g0122g0000g0000g000000000001" version="1">Variable Overpower damage increase based on combat conditions.</content>
+
+    <!-- WAR_No_Stranger_to_Pain -->
+    <content contentuid="h78fe4967g0123g0000g0000g000000000001" version="1">No Stranger to Pain</content>
+    <content contentuid="h78fe4967g0124g0000g0000g000000000001" version="1">Increases the value of Ignore Pain, though the ability itself is rather small.</content>
+
+    <!-- WAR_Thorim_s_Might -->
+    <content contentuid="h78fe4967g0125g0000g0000g000000000001" version="1">Thorims Might</content>
+    <content contentuid="h78fe4967g0126g0000g0000g000000000001" version="1">Very powerful, giving lightning strikes and rotational abilities much more value.</content>
+
+    <!-- WAR_Burst_of_Power -->
+    <content contentuid="h78fe4967g0127g0000g0000g000000000001" version="1">Burst of Power</content>
+    <content contentuid="h78fe4967g0128g0000g0000g000000000001" version="1">Random Bloodthirst damage increase triggered by lightning effects.</content>
+
+    <!-- WAR_Precise_Might -->
+    <content contentuid="h78fe4967g0129g0000g0000g000000000001" version="1">Precise Might</content>
+    <content contentuid="h78fe4967g012ag0000g0000g000000000001" version="1">Further emphasizes using Mortal Strike regularly and getting critical strikes.</content>
+
+    <!-- WAR_Mountain_of_Muscle_and_Scars -->
+    <content contentuid="h78fe4967g012bg0000g0000g000000000001" version="1">Mountain of Muscle and Scars</content>
+    <content contentuid="h78fe4967g012cg0000g0000g000000000001" version="1">General damage/defense, and almost unnoticeable size increase.</content>
+
+    <!-- WAR_Martial_Expert -->
+    <content contentuid="h78fe4967g012dg0000g0000g000000000001" version="1">Martial Expert</content>
+    <content contentuid="h78fe4967g012eg0000g0000g000000000001" version="1">One of several critical strike damage boosts for Colossus warriors.</content>
+
+    <!-- WAR_Imminent_Demise -->
+    <content contentuid="h78fe4967g012fg0000g0000g000000000001" version="1">Imminent Demise</content>
+    <content contentuid="h78fe4967g0130g0000g0000g000000000001" version="1">Allows the consumption of Marked for Execution, even without Sudden Death talented, while also making Bladestorm much more powerful. Has strong synergy with Unhinged.</content>
+
+    <!-- WAR_Arterial_Bleed -->
+    <content contentuid="h78fe4967g0131g0000g0000g000000000001" version="1">Arterial Bleed</content>
+    <content contentuid="h78fe4967g0132g0000g0000g000000000001" version="1">Enhances bleed effects applied by Colossus abilities.</content>
+
+    <!-- WAR_Death_Drive -->
+    <content contentuid="h78fe4967g0133g0000g0000g000000000001" version="1">Death Drive</content>
+    <content contentuid="h78fe4967g0134g0000g0000g000000000001" version="1">Very minor and largely random, which means it will not always be effective healing.</content>
+
+    <!-- WAR_Flashing_Skies -->
+    <content contentuid="h78fe4967g0135g0000g0000g000000000001" version="1">Flashing Skies</content>
+    <content contentuid="h78fe4967g0136g0000g0000g000000000001" version="1">Significantly boosts the single target value of Thunder Blast. Triggers in addition to the normal random chance for a lightning strike, allowing two for one cast.</content>
+
+    <!-- WAR_Practiced_Strikes -->
+    <content contentuid="h78fe4967g0137g0000g0000g000000000001" version="1">Practiced Strikes</content>
+    <content contentuid="h78fe4967g0138g0000g0000g000000000001" version="1">General damage increase for Colossus warriors.</content>
+
+    <!-- WAR_Show_No_Mercy -->
+    <content contentuid="h78fe4967g0139g0000g0000g000000000001" version="1">Show No Mercy</content>
+    <content contentuid="h78fe4967g013ag0000g0000g000000000001" version="1">Another damage increase tied to Marked for Execution and Sudden Death procs.</content>
+
+    <!-- WAR_Unrelenting_Onslaught -->
+    <content contentuid="h78fe4967g013bg0000g0000g000000000001" version="1">Unrelenting Onslaught</content>
+    <content contentuid="h78fe4967g013cg0000g0000g000000000001" version="1">Typically desyncs Bladestorm from other major cooldowns, though the increased frequency is worth the tradeoff.</content>
+
+    <!-- WAR_Opportunist -->
+    <content contentuid="h78fe4967g013dg0000g0000g000000000001" version="1">Opportunist</content>
+    <content contentuid="h78fe4967g013eg0000g0000g000000000001" version="1">+1d8 vs bleeding/stunned</content>
+
+    <!-- WAR_Overwhelming_Blades -->
+    <content contentuid="h78fe4967g013fg0000g0000g000000000001" version="1">Overwhelming Blades</content>
+    <content contentuid="h78fe4967g0140g0000g0000g000000000001" version="1">+1d10 to Whirlwind/Bladestorm</content>
+
+    <!-- WAR_Relentless_Pursuit -->
+    <content contentuid="h78fe4967g0141g0000g0000g000000000001" version="1">Relentless Pursuit</content>
+    <content contentuid="h78fe4967g0142g0000g0000g000000000001" version="1">Charge range +10ft, CDR on kills</content>
+
+    <!-- ======================================== 
+         SPELL_ZONE (12 entries)
+         ======================================== 
+    -->
+
+    <!-- Zone_WAR_Bladestorm -->
+    <content contentuid="h78fe4967g0143g0000g0000g000000000001" version="1">Bladestorm</content>
+    <content contentuid="h78fe4967g0144g0000g0000g000000000001" version="1">Bladestorm - Warrior ability</content>
+
+    <!-- Zone_WAR_Cleave -->
+    <content contentuid="h78fe4967g0145g0000g0000g000000000001" version="1">Cleave</content>
+    <content contentuid="h78fe4967g0146g0000g0000g000000000001" version="1">Cleave - Warrior ability</content>
+
+    <!-- Zone_WAR_Earthquake -->
+    <content contentuid="h78fe4967g0147g0000g0000g000000000001" version="1">Earthquake</content>
+    <content contentuid="h78fe4967g0148g0000g0000g000000000001" version="1">Earthquake - Warrior ability</content>
+
+    <!-- Zone_WAR_Odyn_s_Fury -->
+    <content contentuid="h78fe4967g0149g0000g0000g000000000001" version="1">Odyn s Fury</content>
+    <content contentuid="h78fe4967g014ag0000g0000g000000000001" version="1">Odyn s Fury - Warrior ability</content>
+
+    <!-- Zone_WAR_Ravager -->
+    <content contentuid="h78fe4967g014bg0000g0000g000000000001" version="1">Ravager</content>
+    <content contentuid="h78fe4967g014cg0000g0000g000000000001" version="1">Ravager - Warrior ability</content>
+
+    <!-- Zone_WAR_Revenge -->
+    <content contentuid="h78fe4967g014dg0000g0000g000000000001" version="1">Revenge</content>
+    <content contentuid="h78fe4967g014eg0000g0000g000000000001" version="1">Revenge - Warrior ability</content>
+
+    <!-- Zone_WAR_Shockwave -->
+    <content contentuid="h78fe4967g014fg0000g0000g000000000001" version="1">Shockwave</content>
+    <content contentuid="h78fe4967g0150g0000g0000g000000000001" version="1">Shockwave - Warrior ability</content>
+
+    <!-- Zone_WAR_Thunder_Blast -->
+    <content contentuid="h78fe4967g0151g0000g0000g000000000001" version="1">Thunder Blast</content>
+    <content contentuid="h78fe4967g0152g0000g0000g000000000001" version="1">Thunder Blast - Warrior ability</content>
+
+    <!-- Zone_WAR_Thunder_Clap -->
+    <content contentuid="h78fe4967g0153g0000g0000g000000000001" version="1">Thunder Clap</content>
+    <content contentuid="h78fe4967g0154g0000g0000g000000000001" version="1">Thunder Clap - Warrior ability</content>
+
+    <!-- Zone_WAR_Thunderous_Roar -->
+    <content contentuid="h78fe4967g0155g0000g0000g000000000001" version="1">Thunderous Roar</content>
+    <content contentuid="h78fe4967g0156g0000g0000g000000000001" version="1">Thunderous Roar - Warrior ability</content>
+
+    <!-- Zone_WAR_Warbreaker -->
+    <content contentuid="h78fe4967g0157g0000g0000g000000000001" version="1">Warbreaker</content>
+    <content contentuid="h78fe4967g0158g0000g0000g000000000001" version="1">Warbreaker - Warrior ability</content>
+
+    <!-- Zone_WAR_Whirlwind -->
+    <content contentuid="h78fe4967g0159g0000g0000g000000000001" version="1">Whirlwind</content>
+    <content contentuid="h78fe4967g015ag0000g0000g000000000001" version="1">Whirlwind - Warrior ability</content>
+
+    <!-- ======================================== 
+         SPELL_SHOUT (21 entries)
+         ======================================== 
+    -->
+
+    <!-- Shout_WAR_Avatar -->
+    <content contentuid="h78fe4967g015bg0000g0000g000000000001" version="1">Avatar</content>
+    <content contentuid="h78fe4967g015cg0000g0000g000000000001" version="1">Avatar - Warrior ability</content>
+
+    <!-- Shout_WAR_Battle_Shout -->
+    <content contentuid="h78fe4967g015dg0000g0000g000000000001" version="1">Battle Shout</content>
+    <content contentuid="h78fe4967g015eg0000g0000g000000000001" version="1">Battle Shout - Warrior ability</content>
+
+    <!-- Shout_WAR_Battle_Stance -->
+    <content contentuid="h78fe4967g015fg0000g0000g000000000001" version="1">Battle Stance</content>
+    <content contentuid="h78fe4967g0160g0000g0000g000000000001" version="1">Battle Stance - Warrior ability</content>
+
+    <!-- Shout_WAR_Berserker_Rage -->
+    <content contentuid="h78fe4967g0161g0000g0000g000000000001" version="1">Berserker Rage</content>
+    <content contentuid="h78fe4967g0162g0000g0000g000000000001" version="1">Berserker Rage - Warrior ability</content>
+
+    <!-- Shout_WAR_Berserker_Shout -->
+    <content contentuid="h78fe4967g0163g0000g0000g000000000001" version="1">Berserker Shout</content>
+    <content contentuid="h78fe4967g0164g0000g0000g000000000001" version="1">Berserker Shout - Warrior ability</content>
+
+    <!-- Shout_WAR_Cacophonous_Roar -->
+    <content contentuid="h78fe4967g0165g0000g0000g000000000001" version="1">Cacophonous Roar</content>
+    <content contentuid="h78fe4967g0166g0000g0000g000000000001" version="1">Cacophonous Roar - Warrior ability</content>
+
+    <!-- Shout_WAR_Defensive_Stance -->
+    <content contentuid="h78fe4967g0167g0000g0000g000000000001" version="1">Defensive Stance</content>
+    <content contentuid="h78fe4967g0168g0000g0000g000000000001" version="1">Defensive Stance - Warrior ability</content>
+
+    <!-- Shout_WAR_Demoralizing_Shout -->
+    <content contentuid="h78fe4967g0169g0000g0000g000000000001" version="1">Demoralizing Shout</content>
+    <content contentuid="h78fe4967g016ag0000g0000g000000000001" version="1">Demoralizing Shout - Warrior ability</content>
+
+    <!-- Shout_WAR_Die_by_the_Sword -->
+    <content contentuid="h78fe4967g016bg0000g0000g000000000001" version="1">Die by the Sword</content>
+    <content contentuid="h78fe4967g016cg0000g0000g000000000001" version="1">Die by the Sword - Warrior ability</content>
+
+    <!-- Shout_WAR_Disrupting_Shout -->
+    <content contentuid="h78fe4967g016dg0000g0000g000000000001" version="1">Disrupting Shout</content>
+    <content contentuid="h78fe4967g016eg0000g0000g000000000001" version="1">Disrupting Shout - Warrior ability</content>
+
+    <!-- Shout_WAR_Enraged_Regeneration -->
+    <content contentuid="h78fe4967g016fg0000g0000g000000000001" version="1">Enraged Regeneration</content>
+    <content contentuid="h78fe4967g0170g0000g0000g000000000001" version="1">Enraged Regeneration - Warrior ability</content>
+
+    <!-- Shout_WAR_Ignore_Pain -->
+    <content contentuid="h78fe4967g0171g0000g0000g000000000001" version="1">Ignore Pain</content>
+    <content contentuid="h78fe4967g0172g0000g0000g000000000001" version="1">Ignore Pain - Warrior ability</content>
+
+    <!-- Shout_WAR_Intimidating_Shout -->
+    <content contentuid="h78fe4967g0173g0000g0000g000000000001" version="1">Intimidating Shout</content>
+    <content contentuid="h78fe4967g0174g0000g0000g000000000001" version="1">Intimidating Shout - Warrior ability</content>
+
+    <!-- Shout_WAR_Last_Stand -->
+    <content contentuid="h78fe4967g0175g0000g0000g000000000001" version="1">Last Stand</content>
+    <content contentuid="h78fe4967g0176g0000g0000g000000000001" version="1">Last Stand - Warrior ability</content>
+
+    <!-- Shout_WAR_Piercing_Howl -->
+    <content contentuid="h78fe4967g0177g0000g0000g000000000001" version="1">Piercing Howl</content>
+    <content contentuid="h78fe4967g0178g0000g0000g000000000001" version="1">Piercing Howl - Warrior ability</content>
+
+    <!-- Shout_WAR_Rallying_Cry -->
+    <content contentuid="h78fe4967g0179g0000g0000g000000000001" version="1">Rallying Cry</content>
+    <content contentuid="h78fe4967g017ag0000g0000g000000000001" version="1">Rallying Cry - Warrior ability</content>
+
+    <!-- Shout_WAR_Recklessness -->
+    <content contentuid="h78fe4967g017bg0000g0000g000000000001" version="1">Recklessness</content>
+    <content contentuid="h78fe4967g017cg0000g0000g000000000001" version="1">Recklessness - Warrior ability</content>
+
+    <!-- Shout_WAR_Second_Wind -->
+    <content contentuid="h78fe4967g017dg0000g0000g000000000001" version="1">Second Wind</content>
+    <content contentuid="h78fe4967g017eg0000g0000g000000000001" version="1">Second Wind - Warrior ability</content>
+
+    <!-- Shout_WAR_Shield_Block -->
+    <content contentuid="h78fe4967g017fg0000g0000g000000000001" version="1">Shield Block</content>
+    <content contentuid="h78fe4967g0180g0000g0000g000000000001" version="1">Shield Block - Warrior ability</content>
+
+    <!-- Shout_WAR_Shield_Wall -->
+    <content contentuid="h78fe4967g0181g0000g0000g000000000001" version="1">Shield Wall</content>
+    <content contentuid="h78fe4967g0182g0000g0000g000000000001" version="1">Shield Wall - Warrior ability</content>
+
+    <!-- Shout_WAR_Spell_Reflection -->
+    <content contentuid="h78fe4967g0183g0000g0000g000000000001" version="1">Spell Reflection</content>
+    <content contentuid="h78fe4967g0184g0000g0000g000000000001" version="1">Spell Reflection - Warrior ability</content>
+
+    <!-- ======================================== 
+         SPELL_JUMP (3 entries)
+         ======================================== 
+    -->
+
+    <!-- Jump_WAR_Charge -->
+    <content contentuid="h78fe4967g0185g0000g0000g000000000001" version="1">Charge</content>
+    <content contentuid="h78fe4967g0186g0000g0000g000000000001" version="1">Charge - Warrior ability</content>
+
+    <!-- Jump_WAR_Heroic_Leap -->
+    <content contentuid="h78fe4967g0187g0000g0000g000000000001" version="1">Heroic Leap</content>
+    <content contentuid="h78fe4967g0188g0000g0000g000000000001" version="1">Heroic Leap - Warrior ability</content>
+
+    <!-- Jump_WAR_Intervene -->
+    <content contentuid="h78fe4967g0189g0000g0000g000000000001" version="1">Intervene</content>
+    <content contentuid="h78fe4967g018ag0000g0000g000000000001" version="1">Intervene - Warrior ability</content>
+
+    <!-- ======================================== 
+         STATUS_BOOST (25 entries)
+         ======================================== 
+    -->
+
+    <!-- WAR_AVATAR -->
+    <content contentuid="h78fe4967g018bg0000g0000g000000000001" version="1">Avatar</content>
+    <content contentuid="h78fe4967g018cg0000g0000g000000000001" version="1">one of the main personal cooldowns that should always be taken.</content>
+
+    <!-- WAR_BATTLE_SHOUT -->
+    <content contentuid="h78fe4967g018dg0000g0000g000000000001" version="1">Battle Shout</content>
+    <content contentuid="h78fe4967g018eg0000g0000g000000000001" version="1">worth ~5% damage for melee classes and Hunters.</content>
+
+    <!-- WAR_BATTLE_STANCE -->
+    <content contentuid="h78fe4967g018fg0000g0000g000000000001" version="1">Battle Stance</content>
+    <content contentuid="h78fe4967g0190g0000g0000g000000000001" version="1">basic offensive stance.</content>
+
+    <!-- WAR_BERSERKER_SHOUT -->
+    <content contentuid="h78fe4967g0191g0000g0000g000000000001" version="1">Berserker Shout</content>
+    <content contentuid="h78fe4967g0192g0000g0000g000000000001" version="1">seldom used group-wide fear breaker.</content>
+
+    <!-- WAR_COLOSSUS_SMASH -->
+    <content contentuid="h78fe4967g0193g0000g0000g000000000001" version="1">Colossus Smash</content>
+    <content contentuid="h78fe4967g0194g0000g0000g000000000001" version="1">Arms&apos; primary offensive cooldown, which also inflicts Deep Wounds.</content>
+
+    <!-- WAR_DEFENSIVE_STANCE -->
+    <content contentuid="h78fe4967g0195g0000g0000g000000000001" version="1">Defensive Stance</content>
+    <content contentuid="h78fe4967g0196g0000g0000g000000000001" version="1">basic defensive stance.</content>
+
+    <!-- WAR_DEMORALIZING_SHOUT -->
+    <content contentuid="h78fe4967g0197g0000g0000g000000000001" version="1">Demoralizing Shout</content>
+    <content contentuid="h78fe4967g0198g0000g0000g000000000001" version="1">Minor defensive cooldown with good talent synergy deeper in the tree. Must-have talent.</content>
+
+    <!-- WAR_DIE_BY_THE_SWORD -->
+    <content contentuid="h78fe4967g0199g0000g0000g000000000001" version="1">Die by the Sword</content>
+    <content contentuid="h78fe4967g019ag0000g0000g000000000001" version="1">Arms primary defensive cooldown.</content>
+
+    <!-- WAR_DISRUPTING_SHOUT -->
+    <content contentuid="h78fe4967g019bg0000g0000g000000000001" version="1">Disrupting Shout</content>
+    <content contentuid="h78fe4967g019cg0000g0000g000000000001" version="1">Reduces the cooldown of Challenging Shout to 90s and converts it into an AoE taunt/interrupt. Cool concept, decent in Mythic+, and useful on some raid bosses!</content>
+
+    <!-- WAR_ENRAGED_REGENERATION -->
+    <content contentuid="h78fe4967g019dg0000g0000g000000000001" version="1">Enraged Regeneration</content>
+    <content contentuid="h78fe4967g019eg0000g0000g000000000001" version="1">Fury&apos;s primary defensive cooldown.</content>
+
+    <!-- WAR_HAMSTRING -->
+    <content contentuid="h78fe4967g019fg0000g0000g000000000001" version="1">Hamstring</content>
+    <content contentuid="h78fe4967g01a0g0000g0000g000000000001" version="1">minor snare.</content>
+
+    <!-- WAR_IGNORE_PAIN -->
+    <content contentuid="h78fe4967g01a1g0000g0000g000000000001" version="1">Ignore Pain</content>
+    <content contentuid="h78fe4967g01a2g0000g0000g000000000001" version="1">Core defensive skill, must-have talent.</content>
+
+    <!-- WAR_IMPENETRABLE_WALL -->
+    <content contentuid="h78fe4967g01a3g0000g0000g000000000001" version="1">Impenetrable Wall</content>
+    <content contentuid="h78fe4967g01a4g0000g0000g000000000001" version="1">Reduces the cooldown of  Shield Wall whenever you cast  Shield Slam.</content>
+
+    <!-- WAR_INTIMIDATING_SHOUT -->
+    <content contentuid="h78fe4967g01a5g0000g0000g000000000001" version="1">Intimidating Shout</content>
+    <content contentuid="h78fe4967g01a6g0000g0000g000000000001" version="1">easily broken AoE fear which can be used as a pseudo interrupt.</content>
+
+    <!-- WAR_PUMMEL -->
+    <content contentuid="h78fe4967g01a7g0000g0000g000000000001" version="1">Pummel</content>
+    <content contentuid="h78fe4967g01a8g0000g0000g000000000001" version="1">low cooldown interrupt.</content>
+
+    <!-- WAR_RECKLESSNESS -->
+    <content contentuid="h78fe4967g01a9g0000g0000g000000000001" version="1">Recklessness</content>
+    <content contentuid="h78fe4967g01aag0000g0000g000000000001" version="1">Fury&apos;s primary offensive cooldown, greatly increasing rage generation and the frequency of Rampage casts.</content>
+
+    <!-- WAR_SHIELD_BLOCK -->
+    <content contentuid="h78fe4967g01abg0000g0000g000000000001" version="1">Shield Block</content>
+    <content contentuid="h78fe4967g01acg0000g0000g000000000001" version="1">Primary defensive skill. Very powerful damage mitigation while active.</content>
+
+    <!-- WAR_SHIELD_WALL -->
+    <content contentuid="h78fe4967g01adg0000g0000g000000000001" version="1">Shield Wall</content>
+    <content contentuid="h78fe4967g01aeg0000g0000g000000000001" version="1">Iconic, mandatory defensive cooldown. The ultimate tank defensive cooldown. Take it.</content>
+
+    <!-- WAR_SHOCKWAVE -->
+    <content contentuid="h78fe4967g01afg0000g0000g000000000001" version="1">Shockwave</content>
+    <content contentuid="h78fe4967g01b0g0000g0000g000000000001" version="1">on demand AoE stun.</content>
+
+    <!-- WAR_SPELL_REFLECTION -->
+    <content contentuid="h78fe4967g01b1g0000g0000g000000000001" version="1">Spell Reflection</content>
+    <content contentuid="h78fe4967g01b2g0000g0000g000000000001" version="1">very useful, low cooldown damage reduction.</content>
+
+    <!-- WAR_STORM_BOLT -->
+    <content contentuid="h78fe4967g01b3g0000g0000g000000000001" version="1">Storm Bolt</content>
+    <content contentuid="h78fe4967g01b4g0000g0000g000000000001" version="1">useful ranged stun on a relatively low cooldown.</content>
+
+    <!-- WAR_STORM_BOLTS -->
+    <content contentuid="h78fe4967g01b5g0000g0000g000000000001" version="1">Storm Bolts</content>
+    <content contentuid="h78fe4967g01b6g0000g0000g000000000001" version="1">A mostly PvP talent, as being unable to dictate which two extra targets can contribute to diminishing returns.</content>
+
+    <!-- WAR_STORM_WALL -->
+    <content contentuid="h78fe4967g01b7g0000g0000g000000000001" version="1">Storm Wall</content>
+    <content contentuid="h78fe4967g01b8g0000g0000g000000000001" version="1">heals on any parry, not just when Die by the Sword is active.</content>
+
+    <!-- WAR_TAUNTED -->
+    <content contentuid="h78fe4967g01b9g0000g0000g000000000001" version="1">TAUNTED</content>
+    <content contentuid="h78fe4967g01bag0000g0000g000000000001" version="1">TAUNTED - Warrior ability</content>
+
+    <!-- WAR_WARBREAKER -->
+    <content contentuid="h78fe4967g01bbg0000g0000g000000000001" version="1">Warbreaker</content>
+    <content contentuid="h78fe4967g01bcg0000g0000g000000000001" version="1">turns Colossus Smash into a multitarget attack, extremely important for effective AoE damage.</content>
+
+    <!-- ======================================== 
+         SPELL_TARGET (19 entries)
+         ======================================== 
+    -->
+
+    <!-- Target_WAR_Bloodthirst -->
+    <content contentuid="h78fe4967g01bdg0000g0000g000000000001" version="1">Bloodthirst</content>
+    <content contentuid="h78fe4967g01beg0000g0000g000000000001" version="1">Bloodthirst - Warrior ability</content>
+
+    <!-- Target_WAR_Colossus_Smash -->
+    <content contentuid="h78fe4967g01bfg0000g0000g000000000001" version="1">Colossus Smash</content>
+    <content contentuid="h78fe4967g01c0g0000g0000g000000000001" version="1">Colossus Smash - Warrior ability</content>
+
+    <!-- Target_WAR_Demolish -->
+    <content contentuid="h78fe4967g01c1g0000g0000g000000000001" version="1">Demolish</content>
+    <content contentuid="h78fe4967g01c2g0000g0000g000000000001" version="1">Demolish - Warrior ability</content>
+
+    <!-- Target_WAR_Devastate -->
+    <content contentuid="h78fe4967g01c3g0000g0000g000000000001" version="1">Devastate</content>
+    <content contentuid="h78fe4967g01c4g0000g0000g000000000001" version="1">Devastate - Warrior ability</content>
+
+    <!-- Target_WAR_Execute -->
+    <content contentuid="h78fe4967g01c5g0000g0000g000000000001" version="1">Execute</content>
+    <content contentuid="h78fe4967g01c6g0000g0000g000000000001" version="1">Execute - Warrior ability</content>
+
+    <!-- Target_WAR_Hamstring -->
+    <content contentuid="h78fe4967g01c7g0000g0000g000000000001" version="1">Hamstring</content>
+    <content contentuid="h78fe4967g01c8g0000g0000g000000000001" version="1">Hamstring - Warrior ability</content>
+
+    <!-- Target_WAR_Impending_Victory -->
+    <content contentuid="h78fe4967g01c9g0000g0000g000000000001" version="1">Impending Victory</content>
+    <content contentuid="h78fe4967g01cag0000g0000g000000000001" version="1">Impending Victory - Warrior ability</content>
+
+    <!-- Target_WAR_Menace -->
+    <content contentuid="h78fe4967g01cbg0000g0000g000000000001" version="1">Menace</content>
+    <content contentuid="h78fe4967g01ccg0000g0000g000000000001" version="1">Menace - Warrior ability</content>
+
+    <!-- Target_WAR_Mortal_Strike -->
+    <content contentuid="h78fe4967g01cdg0000g0000g000000000001" version="1">Mortal Strike</content>
+    <content contentuid="h78fe4967g01ceg0000g0000g000000000001" version="1">Mortal Strike - Warrior ability</content>
+
+    <!-- Target_WAR_Onslaught -->
+    <content contentuid="h78fe4967g01cfg0000g0000g000000000001" version="1">Onslaught</content>
+    <content contentuid="h78fe4967g01d0g0000g0000g000000000001" version="1">Onslaught - Warrior ability</content>
+
+    <!-- Target_WAR_Overpower -->
+    <content contentuid="h78fe4967g01d1g0000g0000g000000000001" version="1">Overpower</content>
+    <content contentuid="h78fe4967g01d2g0000g0000g000000000001" version="1">Overpower - Warrior ability</content>
+
+    <!-- Target_WAR_Pummel -->
+    <content contentuid="h78fe4967g01d3g0000g0000g000000000001" version="1">Pummel</content>
+    <content contentuid="h78fe4967g01d4g0000g0000g000000000001" version="1">Pummel - Warrior ability</content>
+
+    <!-- Target_WAR_Raging_Blow -->
+    <content contentuid="h78fe4967g01d5g0000g0000g000000000001" version="1">Raging Blow</content>
+    <content contentuid="h78fe4967g01d6g0000g0000g000000000001" version="1">Raging Blow - Warrior ability</content>
+
+    <!-- Target_WAR_Rampage -->
+    <content contentuid="h78fe4967g01d7g0000g0000g000000000001" version="1">Rampage</content>
+    <content contentuid="h78fe4967g01d8g0000g0000g000000000001" version="1">Rampage - Warrior ability</content>
+
+    <!-- Target_WAR_Shield_Slam -->
+    <content contentuid="h78fe4967g01d9g0000g0000g000000000001" version="1">Shield Slam</content>
+    <content contentuid="h78fe4967g01dag0000g0000g000000000001" version="1">Shield Slam - Warrior ability</content>
+
+    <!-- Target_WAR_Skullsplitter -->
+    <content contentuid="h78fe4967g01dbg0000g0000g000000000001" version="1">Skullsplitter</content>
+    <content contentuid="h78fe4967g01dcg0000g0000g000000000001" version="1">Skullsplitter - Warrior ability</content>
+
+    <!-- Target_WAR_Slam -->
+    <content contentuid="h78fe4967g01ddg0000g0000g000000000001" version="1">Slam</content>
+    <content contentuid="h78fe4967g01deg0000g0000g000000000001" version="1">Slam - Warrior ability</content>
+
+    <!-- Target_WAR_Taunt -->
+    <content contentuid="h78fe4967g01dfg0000g0000g000000000001" version="1">Taunt</content>
+    <content contentuid="h78fe4967g01e0g0000g0000g000000000001" version="1">Taunt - Warrior ability</content>
+
+    <!-- Target_WAR_Victory_Rush -->
+    <content contentuid="h78fe4967g01e1g0000g0000g000000000001" version="1">Victory Rush</content>
+    <content contentuid="h78fe4967g01e2g0000g0000g000000000001" version="1">Victory Rush - Warrior ability</content>
+
+    <!-- ======================================== 
+         SPELL_PROJECTILE (6 entries)
+         ======================================== 
+    -->
+
+    <!-- Projectile_WAR_Champion_s_Spear -->
+    <content contentuid="h78fe4967g01e3g0000g0000g000000000001" version="1">Champion s Spear</content>
+    <content contentuid="h78fe4967g01e4g0000g0000g000000000001" version="1">Champion s Spear - Warrior ability</content>
+
+    <!-- Projectile_WAR_Heroic_Throw -->
+    <content contentuid="h78fe4967g01e5g0000g0000g000000000001" version="1">Heroic Throw</content>
+    <content contentuid="h78fe4967g01e6g0000g0000g000000000001" version="1">Heroic Throw - Warrior ability</content>
+
+    <!-- Projectile_WAR_Shattering_Throw -->
+    <content contentuid="h78fe4967g01e7g0000g0000g000000000001" version="1">Shattering Throw</content>
+    <content contentuid="h78fe4967g01e8g0000g0000g000000000001" version="1">Shattering Throw - Warrior ability</content>
+
+    <!-- Projectile_WAR_Storm_Bolt -->
+    <content contentuid="h78fe4967g01e9g0000g0000g000000000001" version="1">Storm Bolt</content>
+    <content contentuid="h78fe4967g01eag0000g0000g000000000001" version="1">Storm Bolt - Warrior ability</content>
+
+    <!-- Projectile_WAR_Storm_Bolts -->
+    <content contentuid="h78fe4967g01ebg0000g0000g000000000001" version="1">Storm Bolts</content>
+    <content contentuid="h78fe4967g01ecg0000g0000g000000000001" version="1">Storm Bolts - Warrior ability</content>
+
+    <!-- Projectile_WAR_Wrecking_Throw -->
+    <content contentuid="h78fe4967g01edg0000g0000g000000000001" version="1">Wrecking Throw</content>
+    <content contentuid="h78fe4967g01eeg0000g0000g000000000001" version="1">Wrecking Throw - Warrior ability</content>
+
+</contentList>

@@ -1,0 +1,124 @@
+﻿
+// --- ADDITIONAL HERO TALENTS (Missing from name-based grouping) ---
+
+// Martial Expert
+// Implementation: Colossus passive - Likely mastery or expertise increase.
+new entry "WAR_Martial_Expert"
+type "PassiveData"
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "Icon" "PassiveFeature_Generic_Damage"  // TODO: Create custom icon
+data "Properties" "Highlighted"
+// TODO: Implement passive mechanics
+data "Boosts" "Placeholder();"  // TODO: Replace with actual boosts
+
+// Imminent Demise
+// Implementation: Slayer passive - Execute-focused enhancement.
+new entry "WAR_Imminent_Demise"
+type "PassiveData"
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "Icon" "PassiveFeature_Generic_Damage"  // TODO: Create custom icon
+data "Properties" "Highlighted"
+// TODO: Implement passive mechanics
+data "Boosts" "Placeholder();"  // TODO: Replace with actual boosts
+
+// Arterial Bleed
+// Implementation: Slayer passive - Applies or enhances bleed effects.
+new entry "WAR_Arterial_Bleed"
+type "PassiveData"
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "Icon" "PassiveFeature_Generic_Damage"  // TODO: Create custom icon
+data "Properties" "Highlighted"
+// TODO: Implement passive mechanics
+data "Boosts" "Placeholder();"  // TODO: Replace with actual boosts
+
+// Death Drive
+// Implementation: Slayer passive - Bonuses during execute/death phase.
+new entry "WAR_Death_Drive"
+type "PassiveData"
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "Icon" "PassiveFeature_Generic_Damage"  // TODO: Create custom icon
+data "Properties" "Highlighted"
+// TODO: Implement passive mechanics
+data "Boosts" "Placeholder();"  // TODO: Replace with actual boosts
+
+// Flashing Skies
+// Implementation: Mountain Thane passive - Increases lightning effects frequency/damage.
+new entry "WAR_Flashing_Skies"
+type "PassiveData"
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "Icon" "PassiveFeature_Generic_Damage"  // TODO: Create custom icon
+data "Properties" "Highlighted"
+// TODO: Implement passive mechanics
+data "Boosts" "Placeholder();"  // TODO: Replace with actual boosts
+
+// Practiced Strikes
+// Implementation: Slayer passive - Increases attack frequency or reduces GCD.
+new entry "WAR_Practiced_Strikes"
+type "PassiveData"
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "Icon" "PassiveFeature_Generic_Damage"  // TODO: Create custom icon
+data "Properties" "Highlighted"
+// TODO: Implement passive mechanics
+data "Boosts" "Placeholder();"  // TODO: Replace with actual boosts
+
+// Show No Mercy
+// Implementation: Slayer passive - Execute enhancements, no mercy mechanics.
+new entry "WAR_Show_No_Mercy"
+type "PassiveData"
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "Icon" "PassiveFeature_Generic_Damage"  // TODO: Create custom icon
+data "Properties" "Highlighted"
+// TODO: Implement passive mechanics
+data "Boosts" "Placeholder();"  // TODO: Replace with actual boosts
+
+// Unrelenting Onslaught
+// Implementation: Slayer passive - Continuous assault bonuses.
+new entry "WAR_Unrelenting_Onslaught"
+type "PassiveData"
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "Icon" "PassiveFeature_Generic_Damage"  // TODO: Create custom icon
+data "Properties" "Highlighted"
+// TODO: Implement passive mechanics
+data "Boosts" "Placeholder();"  // TODO: Replace with actual boosts
+
+// Opportunist
+// Implementation: Slayer Hero Talent - Path 2. Your attacks deal additional damage to bleeding or stunned targets. https://www.wowhead.com/spell=279066
+new entry "WAR_Opportunist"
+type "PassiveData"
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "Icon" "PassiveFeature_Generic_Damage"  // TODO: Create custom icon
+data "Properties" "Highlighted"
+// TODO: Implement passive mechanics
+data "Boosts" "Placeholder();"  // TODO: Replace with actual boosts
+
+// Overwhelming Blades
+// Implementation: Slayer Hero Talent - Path 3. Your Whirlwind and Bladestorm deal significantly more damage. https://www.wowhead.com/spell=427581
+new entry "WAR_Overwhelming_Blades"
+type "PassiveData"
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "Icon" "PassiveFeature_Generic_Damage"  // TODO: Create custom icon
+data "Properties" "Highlighted"
+// TODO: Implement passive mechanics
+data "Boosts" "Placeholder();"  // TODO: Replace with actual boosts
+
+// Relentless Pursuit
+// Implementation: Slayer Hero Talent - Path 1. Your Charge cooldown is reduced. https://www.wowhead.com/spell=394931
+new entry "WAR_Relentless_Pursuit"
+type "PassiveData"
+data "DisplayName" "h123abc01;1"  // TODO: Generate proper localization handle
+data "Description" "h123abc02;1"  // TODO: Generate proper localization handle
+data "Icon" "PassiveFeature_Generic_Damage"  // TODO: Create custom icon
+data "Properties" "Highlighted"
+// TODO: Implement passive mechanics
+data "Boosts" "Placeholder();"  // TODO: Replace with actual boosts
+

@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================================ -->
+<!-- HERO SUBCLASS PROGRESSION NODES (Phase 2 Step 6)                            -->
+<!-- Generated: 2025-10-24 11:51:17                        -->
+<!-- Total Nodes: 48                                       -->
+<!-- ============================================================================ -->
+<!-- INSTRUCTIONS:                                                                -->
+<!-- 1. Copy each subclass's 8 nodes into Progressions.lsx                       -->
+<!-- 2. Insert AFTER the parent spec's L20 node                                  -->
+<!-- 3. Maintain proper indentation (16 spaces for <node id="Progression">)      -->
+<!-- 4. Verify XML structure after insertion                                     -->
+<!-- ============================================================================ -->
+
+                <!-- Arms Colossus Level 13 - Keystone -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="ArmsColossus"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="6a1b8c3d-7e9f-4a5b-8c6d-9e0f1a2b3c4d"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Demolish"/>
+                </node>
+
+                <!-- Arms Colossus Level 14 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="14"/>
+                    <attribute id="Name" type="LSString" value="ArmsColossus"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="6a1b8c3d-7e9f-4a5b-8c6d-9e0f1a2b3c4d"/>
+                </node>
+
+                <!-- Arms Colossus Level 15 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="ArmsColossus"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="6a1b8c3d-7e9f-4a5b-8c6d-9e0f1a2b3c4d"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Martial_Expert;WAR_Colossal_Might;WAR_Earthquake"/>
+                </node>
+
+                <!-- Arms Colossus Level 16 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="16"/>
+                    <attribute id="Name" type="LSString" value="ArmsColossus"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="6a1b8c3d-7e9f-4a5b-8c6d-9e0f1a2b3c4d"/>
+                </node>
+
+                <!-- Arms Colossus Level 17 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="ArmsColossus"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="6a1b8c3d-7e9f-4a5b-8c6d-9e0f1a2b3c4d"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Arterial_Bleed;WAR_Tide_of_Battle;WAR_No_Stranger_to_Pain"/>
+                </node>
+
+                <!-- Arms Colossus Level 18 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="18"/>
+                    <attribute id="Name" type="LSString" value="ArmsColossus"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="6a1b8c3d-7e9f-4a5b-8c6d-9e0f1a2b3c4d"/>
+                </node>
+
+                <!-- Arms Colossus Level 19 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="ArmsColossus"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="6a1b8c3d-7e9f-4a5b-8c6d-9e0f1a2b3c4d"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Practiced_Strikes;WAR_Precise_Might;WAR_Mountain_of_Muscle_and_Scars"/>
+                </node>
+
+                <!-- Arms Colossus Level 20 - Capstone -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="ArmsColossus"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="6a1b8c3d-7e9f-4a5b-8c6d-9e0f1a2b3c4d"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Dominance_of_the_Colossus"/>
+                </node>
+
+                <!-- Arms Slayer Level 13 - Keystone -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="ArmsSlayers"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="7b2c9d4e-8f0g-5b6c-9d7e-0f1g2b3c4d5e"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Slayer_s_Dominance"/>
+                </node>
+
+                <!-- Arms Slayer Level 14 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="14"/>
+                    <attribute id="Name" type="LSString" value="ArmsSlayers"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="7b2c9d4e-8f0g-5b6c-9d7e-0f1g2b3c4d5e"/>
+                </node>
+
+                <!-- Arms Slayer Level 15 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="ArmsSlayers"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="7b2c9d4e-8f0g-5b6c-9d7e-0f1g2b3c4d5e"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Imminent_Demise;WAR_Overwhelming_Blades;WAR_Relentless_Pursuit"/>
+                </node>
+
+                <!-- Arms Slayer Level 16 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="16"/>
+                    <attribute id="Name" type="LSString" value="ArmsSlayers"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="7b2c9d4e-8f0g-5b6c-9d7e-0f1g2b3c4d5e"/>
+                </node>
+
+                <!-- Arms Slayer Level 17 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="ArmsSlayers"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="7b2c9d4e-8f0g-5b6c-9d7e-0f1g2b3c4d5e"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Death_Drive;WAR_Brutal_Finish;WAR_Opportunist"/>
+                </node>
+
+                <!-- Arms Slayer Level 18 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="18"/>
+                    <attribute id="Name" type="LSString" value="ArmsSlayers"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="7b2c9d4e-8f0g-5b6c-9d7e-0f1g2b3c4d5e"/>
+                </node>
+
+                <!-- Arms Slayer Level 19 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="ArmsSlayers"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="7b2c9d4e-8f0g-5b6c-9d7e-0f1g2b3c4d5e"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Show_No_Mercy;WAR_Reap_the_Storm;WAR_Slayer_s_Malice"/>
+                </node>
+
+                <!-- Arms Slayer Level 20 - Capstone -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="ArmsSlayers"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="7b2c9d4e-8f0g-5b6c-9d7e-0f1g2b3c4d5e"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Unrelenting_Onslaught"/>
+                </node>
+
+                <!-- Fury Mountain Thane Level 13 - Keystone -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="FuryMountainThane"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="8c3d0e5f-9g1h-6c7d-0e8f-1g2h3c4d5e6f"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Lightning_Strikes"/>
+                </node>
+
+                <!-- Fury Mountain Thane Level 14 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="14"/>
+                    <attribute id="Name" type="LSString" value="FuryMountainThane"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="8c3d0e5f-9g1h-6c7d-0e8f-1g2h3c4d5e6f"/>
+                </node>
+
+                <!-- Fury Mountain Thane Level 15 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="FuryMountainThane"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="8c3d0e5f-9g1h-6c7d-0e8f-1g2h3c4d5e6f"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Crashing_Thunder;WAR_Ground_Current;WAR_Strength_of_the_Mountain"/>
+                </node>
+
+                <!-- Fury Mountain Thane Level 16 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="16"/>
+                    <attribute id="Name" type="LSString" value="FuryMountainThane"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="8c3d0e5f-9g1h-6c7d-0e8f-1g2h3c4d5e6f"/>
+                </node>
+
+                <!-- Fury Mountain Thane Level 17 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="FuryMountainThane"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="8c3d0e5f-9g1h-6c7d-0e8f-1g2h3c4d5e6f"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Thunder_Blast;WAR_Storm_Bolts;WAR_Keep_your_feet_on_the_Ground"/>
+                </node>
+
+                <!-- Fury Mountain Thane Level 18 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="18"/>
+                    <attribute id="Name" type="LSString" value="FuryMountainThane"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="8c3d0e5f-9g1h-6c7d-0e8f-1g2h3c4d5e6f"/>
+                </node>
+
+                <!-- Fury Mountain Thane Level 19 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="FuryMountainThane"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="8c3d0e5f-9g1h-6c7d-0e8f-1g2h3c4d5e6f"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Flashing_Skies;WAR_Thorim_s_Might;WAR_Burst_of_Power"/>
+                </node>
+
+                <!-- Fury Mountain Thane Level 20 - Capstone -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="FuryMountainThane"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="8c3d0e5f-9g1h-6c7d-0e8f-1g2h3c4d5e6f"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Avatar_of_the_Storm"/>
+                </node>
+
+                <!-- Fury Slayer Level 13 - Keystone -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="FurySlayers"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="9d4e1f6g-0h2i-7d8e-1f9g-2h3i4d5e6f7g"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Slayer_s_Dominance"/>
+                </node>
+
+                <!-- Fury Slayer Level 14 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="14"/>
+                    <attribute id="Name" type="LSString" value="FurySlayers"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="9d4e1f6g-0h2i-7d8e-1f9g-2h3i4d5e6f7g"/>
+                </node>
+
+                <!-- Fury Slayer Level 15 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="FurySlayers"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="9d4e1f6g-0h2i-7d8e-1f9g-2h3i4d5e6f7g"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Imminent_Demise;WAR_Overwhelming_Blades;WAR_Relentless_Pursuit"/>
+                </node>
+
+                <!-- Fury Slayer Level 16 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="16"/>
+                    <attribute id="Name" type="LSString" value="FurySlayers"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="9d4e1f6g-0h2i-7d8e-1f9g-2h3i4d5e6f7g"/>
+                </node>
+
+                <!-- Fury Slayer Level 17 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="FurySlayers"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="9d4e1f6g-0h2i-7d8e-1f9g-2h3i4d5e6f7g"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Death_Drive;WAR_Brutal_Finish;WAR_Opportunist"/>
+                </node>
+
+                <!-- Fury Slayer Level 18 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="18"/>
+                    <attribute id="Name" type="LSString" value="FurySlayers"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="9d4e1f6g-0h2i-7d8e-1f9g-2h3i4d5e6f7g"/>
+                </node>
+
+                <!-- Fury Slayer Level 19 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="FurySlayers"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="9d4e1f6g-0h2i-7d8e-1f9g-2h3i4d5e6f7g"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Show_No_Mercy;WAR_Reap_the_Storm;WAR_Slayer_s_Malice"/>
+                </node>
+
+                <!-- Fury Slayer Level 20 - Capstone -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="FurySlayers"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="9d4e1f6g-0h2i-7d8e-1f9g-2h3i4d5e6f7g"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Unrelenting_Onslaught"/>
+                </node>
+
+                <!-- Protection Colossus Level 13 - Keystone -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="ProtectionColossus"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="1f6g3h8i-2j4k-9f0g-3h1i-4j5k6f7g8h9i"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Demolish"/>
+                </node>
+
+                <!-- Protection Colossus Level 14 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="14"/>
+                    <attribute id="Name" type="LSString" value="ProtectionColossus"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="1f6g3h8i-2j4k-9f0g-3h1i-4j5k6f7g8h9i"/>
+                </node>
+
+                <!-- Protection Colossus Level 15 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="ProtectionColossus"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="1f6g3h8i-2j4k-9f0g-3h1i-4j5k6f7g8h9i"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Martial_Expert;WAR_Colossal_Might;WAR_Earthquake"/>
+                </node>
+
+                <!-- Protection Colossus Level 16 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="16"/>
+                    <attribute id="Name" type="LSString" value="ProtectionColossus"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="1f6g3h8i-2j4k-9f0g-3h1i-4j5k6f7g8h9i"/>
+                </node>
+
+                <!-- Protection Colossus Level 17 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="ProtectionColossus"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="1f6g3h8i-2j4k-9f0g-3h1i-4j5k6f7g8h9i"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Arterial_Bleed;WAR_Tide_of_Battle;WAR_No_Stranger_to_Pain"/>
+                </node>
+
+                <!-- Protection Colossus Level 18 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="18"/>
+                    <attribute id="Name" type="LSString" value="ProtectionColossus"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="1f6g3h8i-2j4k-9f0g-3h1i-4j5k6f7g8h9i"/>
+                </node>
+
+                <!-- Protection Colossus Level 19 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="ProtectionColossus"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="1f6g3h8i-2j4k-9f0g-3h1i-4j5k6f7g8h9i"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Practiced_Strikes;WAR_Precise_Might;WAR_Mountain_of_Muscle_and_Scars"/>
+                </node>
+
+                <!-- Protection Colossus Level 20 - Capstone -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="ProtectionColossus"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="1f6g3h8i-2j4k-9f0g-3h1i-4j5k6f7g8h9i"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Dominance_of_the_Colossus"/>
+                </node>
+
+                <!-- Protection Mountain Thane Level 13 - Keystone -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="ProtectionMountainThane"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="0e5f2g7h-1i3j-8e9f-2g0h-3i4j5e6f7g8h"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Lightning_Strikes"/>
+                </node>
+
+                <!-- Protection Mountain Thane Level 14 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="14"/>
+                    <attribute id="Name" type="LSString" value="ProtectionMountainThane"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="0e5f2g7h-1i3j-8e9f-2g0h-3i4j5e6f7g8h"/>
+                </node>
+
+                <!-- Protection Mountain Thane Level 15 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="ProtectionMountainThane"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="0e5f2g7h-1i3j-8e9f-2g0h-3i4j5e6f7g8h"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Crashing_Thunder;WAR_Ground_Current;WAR_Strength_of_the_Mountain"/>
+                </node>
+
+                <!-- Protection Mountain Thane Level 16 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="16"/>
+                    <attribute id="Name" type="LSString" value="ProtectionMountainThane"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="0e5f2g7h-1i3j-8e9f-2g0h-3i4j5e6f7g8h"/>
+                </node>
+
+                <!-- Protection Mountain Thane Level 17 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="ProtectionMountainThane"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="0e5f2g7h-1i3j-8e9f-2g0h-3i4j5e6f7g8h"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Thunder_Blast;WAR_Storm_Bolts;WAR_Keep_your_feet_on_the_Ground"/>
+                </node>
+
+                <!-- Protection Mountain Thane Level 18 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="18"/>
+                    <attribute id="Name" type="LSString" value="ProtectionMountainThane"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="0e5f2g7h-1i3j-8e9f-2g0h-3i4j5e6f7g8h"/>
+                </node>
+
+                <!-- Protection Mountain Thane Level 19 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="ProtectionMountainThane"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="0e5f2g7h-1i3j-8e9f-2g0h-3i4j5e6f7g8h"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Flashing_Skies;WAR_Thorim_s_Might;WAR_Burst_of_Power"/>
+                </node>
+
+                <!-- Protection Mountain Thane Level 20 - Capstone -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="ProtectionMountainThane"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="0e5f2g7h-1i3j-8e9f-2g0h-3i4j5e6f7g8h"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WAR_Avatar_of_the_Storm"/>
+                </node>
+
+<!-- ============================================================================ -->
+<!-- END OF GENERATED NODES                                                       -->
+<!-- ============================================================================ -->

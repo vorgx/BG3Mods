@@ -1,244 +1,375 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <save>
-    <version major="4" minor="8" revision="0" build="200"/>
+    <version major="4" minor="0" revision="9" build="0"/>
     <region id="SpellLists">
         <node id="root">
             <children>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="Class_SpellLists"/>
-                    <attribute id="UUID" type="guid" value="09d2d6d9-542d-488f-a51d-ea469e9d36c6"/>
+                    <attribute id="Comment" type="LSString" value="Warrior Level 1 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Battle_Stance;WAR_Defensive_Stance"/>
+                    <attribute id="UUID" type="guid" value="c343f86d-f48c-4e06-a934-d0fd721f9395"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Class_Level_1"/>
-                    <attribute id="Spells" type="LSString" value="Target_SummonDemon"/>
-                    <attribute id="UUID" type="guid" value="9e2ec5ea-a47c-475a-b756-c0e0ca69a281"/>
+                    <attribute id="Comment" type="LSString" value="Warrior Level 2 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Intervene"/>
+                    <attribute id="UUID" type="guid" value="09ff8f32-eb05-4950-8335-034051893229"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Class_Level_2"/>
-                    <attribute id="UUID" type="guid" value="7e7c204e-0bcb-4ddb-9dd5-78a2f85cdfb2"/>
+                    <attribute id="Comment" type="LSString" value="Warrior Level 3 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Impending_Victory;WAR_Heroic_Leap;WAR_Storm_Bolt"/>
+                    <attribute id="UUID" type="guid" value="8af209b2-2c83-4c85-8e3a-76e59f1e6ddf"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Class_Level_3"/>
-                    <attribute id="Spells" type="LSString" value="Target_SummonDemon_Voidwalker;Target_SummonDemon_Voidwalker_2"/>
-                    <attribute id="UUID" type="guid" value="59be68b9-a2e2-400a-9a2f-daae17f0c40a"/>
+                    <attribute id="Comment" type="LSString" value="Warrior Level 4 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Intimidating_Shout;WAR_Second_Wind;WAR_Thunder_Clap"/>
+                    <attribute id="UUID" type="guid" value="f17bce06-cd17-4115-b7e7-eaa024f4d53e"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Class_Level_4"/>
-                    <attribute id="Spells" type="LSString" value="Shout_UnendingResolve"/>
-                    <attribute id="UUID" type="guid" value="874b3746-8d60-4a90-aab0-bd656d1342d5"/>
+                    <attribute id="Comment" type="LSString" value="Warrior Level 5 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Cacophonous_Roar;WAR_Menace;WAR_Spell_Reflection;WAR_Rallying_Cry;WAR_Shockwave"/>
+                    <attribute id="UUID" type="guid" value="521e35d6-1e80-40d8-96a1-b1dabf18a893"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Class_Level_5"/>
-                    <attribute id="Spells" type="LSString" value="Target_SummonDemon_Felhunter;Target_SummonDemon_Felhunter_2"/>
-                    <attribute id="UUID" type="guid" value="dd824bd4-3afa-41e1-9120-4410f6b31e7c"/>
+                    <attribute id="Comment" type="LSString" value="Warrior Level 7 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Wrecking_Throw;WAR_Shattering_Throw;WAR_Berserker_Shout;WAR_Piercing_Howl"/>
+                    <attribute id="UUID" type="guid" value="21be590b-45e2-4d14-aa2b-4f8bdf900122"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Class_Level_6"/>
-                    <attribute id="Spells" type="LSString" value="Projectile_DrainLife"/>
-                    <attribute id="UUID" type="guid" value="6ed5c46a-61bc-431a-a3fd-16acf9081476"/>
+                    <attribute id="Comment" type="LSString" value="Warrior Level 9 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Thunderous_Roar;WAR_Avatar;WAR_Champion_s_Spear"/>
+                    <attribute id="UUID" type="guid" value="2fd3ca73-2092-4444-9510-08361233d8ed"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Class_Level_7"/>
-                    <attribute id="Spells" type="LSString" value="Target_SummonDemon_Succubus;Target_SummonDemon_Incubus;Target_SummonDemon_Succubus_2;Target_SummonDemon_Incubus_2"/>
-                    <attribute id="UUID" type="guid" value="99b1fb40-47da-4131-a804-16ecea4e5085"/>
+                    <attribute id="Comment" type="LSString" value="Arms Level 1 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Whirlwind;WAR_Battle_Stance;WAR_Defensive_Stance;WAR_Mortal_Strike"/>
+                    <attribute id="UUID" type="guid" value="3e7209b8-9b32-4775-98f0-8b5b96709131"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Class_Level_8"/>
-                    <attribute id="Spells" type="LSString" value="Target_Fear"/>
-                    <attribute id="UUID" type="guid" value="368968fd-270d-4c05-b9c8-1495d3222a2b"/>
+                    <attribute id="Comment" type="LSString" value="Arms Level 2 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Overpower"/>
+                    <attribute id="UUID" type="guid" value="3a810fef-ac14-4177-9384-5a5baa157d75"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Class_Level_9"/>
-                    <attribute id="Spells" type="LSString" value="Target_CreateSoulstone"/>
-                    <attribute id="UUID" type="guid" value="fe643b97-0c09-46ee-a3c6-98da8ba94ec3"/>
+                    <attribute id="Comment" type="LSString" value="Arms Level 3 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Execute;WAR_Impending_Victory;WAR_Heroic_Leap;WAR_Die_by_the_Sword"/>
+                    <attribute id="UUID" type="guid" value="080bb246-7aba-4655-9a8d-3010e61241cf"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Class_Level_10"/>
-                    <attribute id="UUID" type="guid" value="f93816a0-3639-452b-959e-e3b63ec82257"/>
+                    <attribute id="Comment" type="LSString" value="Arms Level 4 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Ignore_Pain;WAR_Thunder_Clap"/>
+                    <attribute id="UUID" type="guid" value="281636e4-119f-4147-9741-07ab80cc2bfd"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Class_Level_11"/>
-                    <attribute id="UUID" type="guid" value="1cc306ed-4f58-4d00-aad8-82b8520bd6d6"/>
+                    <attribute id="Comment" type="LSString" value="Arms Level 5 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Hamstring;WAR_Battle_Shout;WAR_Spell_Reflection;WAR_Rallying_Cry;WAR_Colossus_Smash"/>
+                    <attribute id="UUID" type="guid" value="1179e678-bc9f-489b-a4f0-4e0d3472ed42"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Class_Level_12"/>
-                    <attribute id="UUID" type="guid" value="b9bec33f-fd30-4498-921c-6821529a66ba"/>
+                    <attribute id="Comment" type="LSString" value="Arms Level 6 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Skullsplitter"/>
+                    <attribute id="UUID" type="guid" value="b1fb62d7-e892-4534-bd01-12fb1531d28e"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="Demonology_SpellLists"/>
-                    <attribute id="UUID" type="guid" value="28de3c50-3f61-4445-97b8-b24636d34d03"/>
+                    <attribute id="Comment" type="LSString" value="Arms Level 7 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Berserker_Rage;WAR_Slam;WAR_Warbreaker"/>
+                    <attribute id="UUID" type="guid" value="c1492260-cb49-47ed-9d53-da54b07c27b2"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Demo_Level_1"/>
-                    <attribute id="Spells" type="LSString" value="Projectile_Demo_Shadowbolt_1"/>
-                    <attribute id="UUID" type="guid" value="aedc2c38-5a25-4033-bb19-f801f2e79101"/>
+                    <attribute id="Comment" type="LSString" value="Arms Level 9 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Victory_Rush;WAR_Thunderous_Roar;WAR_Avatar;WAR_Champion_s_Spear;WAR_Bladestorm;WAR_Ravager"/>
+                    <attribute id="UUID" type="guid" value="7008c625-bc7e-4e39-a1cc-956ef7b84e6d"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Demo_Level_2"/>
-                    <attribute id="Spells" type="LSString" value="Target_SummonDemon_Felguard_1;Projectile_Demo_HandOfGuldan_1;Target_SummonDemon_Felguard_2"/>
-                    <attribute id="UUID" type="guid" value="92355092-ac2f-48dc-8658-6ff1efa72685"/>
+                    <attribute id="Comment" type="LSString" value="Arms Level 11 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Heroic_Throw"/>
+                    <attribute id="UUID" type="guid" value="4093d22b-4aae-4690-8d68-caca18e20fa2"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Demo_Level_3"/>
-                    <attribute id="Spells" type="LSString" value="Projectile_Demo_Demonbolt_1"/>
-                    <attribute id="UUID" type="guid" value="c970cbf1-bc7f-4ff4-b9ae-6ee43e1b0737"/>
+                    <attribute id="Comment" type="LSString" value="Arms Level 12 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Shield_Slam"/>
+                    <attribute id="UUID" type="guid" value="cad97667-daee-4c67-b526-ff781a1b53ef"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Demo_Level_4"/>
-                    <attribute id="Spells" type="LSString" value="Projectile_Demo_CallDreadstalkers_1"/>
-                    <attribute id="UUID" type="guid" value="287f33fc-9010-4a4d-b0a0-b9c7cc1b8018"/>
+                    <attribute id="Comment" type="LSString" value="Arms Level 13 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Demolish"/>
+                    <attribute id="UUID" type="guid" value="38cc20a0-6d75-4fa2-b65c-d1e5259ddb4d"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Demo_Level_5"/>
-                    <attribute id="Spells" type="LSString" value="Shout_DarkRegeneration"/>
-                    <attribute id="UUID" type="guid" value="6f3563d0-88fa-4ce8-875c-4e41be8ff458"/>
+                    <attribute id="Comment" type="LSString" value="Arms Level 15 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Earthquake"/>
+                    <attribute id="UUID" type="guid" value="b3ac5ebe-8403-406d-ab7b-be17e2ac707c"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Demo_Level_6"/>
-                    <attribute id="Spells" type="LSString" value="Shout_Demo_Mastery"/>
-                    <attribute id="UUID" type="guid" value="b8ccbb62-9d37-454f-9abe-475067df728b"/>
+                    <attribute id="Comment" type="LSString" value="Fury Level 1 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Whirlwind;WAR_Taunt;WAR_Berserker_Rage;WAR_Battle_Stance;WAR_Defensive_Stance;WAR_Bloodthirst"/>
+                    <attribute id="UUID" type="guid" value="035f920f-8788-4836-aa06-ffe431099227"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Demo_Level_7"/>
-                    <attribute id="UUID" type="guid" value="b8d86615-99a4-4fa8-b62b-922e7d085441"/>
+                    <attribute id="Comment" type="LSString" value="Fury Level 2 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Raging_Blow"/>
+                    <attribute id="UUID" type="guid" value="238b703e-1153-48be-8c58-64c2e1d6fc60"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Demo_Level_8"/>
-                    <attribute id="Spells" type="LSString" value="Shout_DarkSoul_Knowledge"/>
-                    <attribute id="UUID" type="guid" value="be391572-a846-4bcd-aae5-7917d2d87929"/>
+                    <attribute id="Comment" type="LSString" value="Fury Level 3 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Slam;WAR_Impending_Victory;WAR_Heroic_Leap;WAR_Enraged_Regeneration"/>
+                    <attribute id="UUID" type="guid" value="64dc5508-b406-4b12-aa2e-fde0d89e2eb1"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Demo_Level_9"/>
-                    <attribute id="UUID" type="guid" value="2a1e34a8-8545-4d41-b5cb-b5214d5e09d0"/>
+                    <attribute id="Comment" type="LSString" value="Fury Level 4 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Thunder_Clap"/>
+                    <attribute id="UUID" type="guid" value="d6a3659b-e28e-4dda-bd03-2d5ab55d4260"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Demo_Level_10"/>
-                    <attribute id="UUID" type="guid" value="2ff077a9-a3ef-40c7-bc34-e16c8dbcdef8"/>
+                    <attribute id="Comment" type="LSString" value="Fury Level 5 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Victory_Rush;WAR_Spell_Reflection;WAR_Rallying_Cry;WAR_Rampage"/>
+                    <attribute id="UUID" type="guid" value="2b75e33e-5836-4725-aa0f-1902578882f3"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Demo_Level_11"/>
-                    <attribute id="Spells" type="LSString" value="Shout_DemonicPact"/>
-                    <attribute id="UUID" type="guid" value="82ca53eb-7287-4a0f-8a56-98dfe335d638"/>
+                    <attribute id="Comment" type="LSString" value="Fury Level 7 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Execute;WAR_Pummel;WAR_Battle_Shout;WAR_Recklessness"/>
+                    <attribute id="UUID" type="guid" value="a14cf183-9859-4486-9250-6a9344e08b3f"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Demo_Level_12"/>
-                    <attribute id="UUID" type="guid" value="f9e61954-a7a0-4505-ae1e-2f0a22b2bd2f"/>
+                    <attribute id="Comment" type="LSString" value="Fury Level 9 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Hamstring;WAR_Thunderous_Roar;WAR_Avatar;WAR_Champion_s_Spear;WAR_Bladestorm;WAR_Ravager;WAR_Onslaught;WAR_Odyn_s_Fury"/>
+                    <attribute id="UUID" type="guid" value="55d6a927-a874-4058-ab33-6a95731aa049"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="Destruction_SpellLists"/>
-                    <attribute id="UUID" type="guid" value="633ee1ef-1e53-4ca2-ab3c-98e01ce989d9"/>
+                    <attribute id="Comment" type="LSString" value="Fury Level 11 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Heroic_Throw"/>
+                    <attribute id="UUID" type="guid" value="a9fbc71b-ed70-49da-bdc1-cc08ed8c3cb5"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Destro_Level_1"/>
-                    <attribute id="Spells" type="LSString" value="Projectile_Destro_Incinerate_1"/>
-                    <attribute id="UUID" type="guid" value="b751c5be-652a-46bc-a0f1-31d50a6fed73"/>
+                    <attribute id="Comment" type="LSString" value="Fury Level 12 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Shield_Slam"/>
+                    <attribute id="UUID" type="guid" value="c7946688-d572-4f98-a15a-9f4ab7dd58ce"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Destro_Level_2"/>
-                    <attribute id="Spells" type="LSString" value="Projectile_Destro_Chaosbolt_1"/>
-                    <attribute id="UUID" type="guid" value="fbd2ee26-1a51-4bfc-aba5-cc7388fd4417"/>
+                    <attribute id="Comment" type="LSString" value="Fury Level 17 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Thunder_Blast;WAR_Storm_Bolts"/>
+                    <attribute id="UUID" type="guid" value="7a0393e7-9b8f-4727-8cd7-da88355c6aa8"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Destro_Level_3"/>
-                    <attribute id="Spells" type="LSString" value="Target_Destro_Conflagrate_1"/>
-                    <attribute id="UUID" type="guid" value="aca056cc-49f0-4c6d-8ea5-086dfa64b495"/>
+                    <attribute id="Comment" type="LSString" value="Protection Level 1 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Shield_Slam;WAR_Battle_Stance;WAR_Defensive_Stance;WAR_Ignore_Pain"/>
+                    <attribute id="UUID" type="guid" value="b34debd2-7c01-4819-98ea-2765d9af2423"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Destro_Level_4"/>
-                    <attribute id="UUID" type="guid" value="5cea9d91-2d99-4197-9c89-6dd890f176eb"/>
+                    <attribute id="Comment" type="LSString" value="Protection Level 2 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Demoralizing_Shout"/>
+                    <attribute id="UUID" type="guid" value="249f2a2d-3620-4f36-a062-d231153e89a6"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Destro_Level_5"/>
-                    <attribute id="UUID" type="guid" value="40d182d0-6648-4d05-80be-edc8d728dddc"/>
+                    <attribute id="Comment" type="LSString" value="Protection Level 3 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Devastate;WAR_Shield_Block;WAR_Impending_Victory;WAR_Heroic_Leap"/>
+                    <attribute id="UUID" type="guid" value="0577e918-9845-40c2-b3fa-28bd5fba342f"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Destro_Level_6"/>
-                    <attribute id="UUID" type="guid" value="1f92f86c-7894-4885-ba12-299566017436"/>
+                    <attribute id="Comment" type="LSString" value="Protection Level 4 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Thunder_Clap"/>
+                    <attribute id="UUID" type="guid" value="51fa77f7-4fb9-4f58-8369-73be57586808"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Destro_Level_7"/>
-                    <attribute id="UUID" type="guid" value="bf203bc1-179e-48a3-9c33-580a0bc0468a"/>
+                    <attribute id="Comment" type="LSString" value="Protection Level 5 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Heroic_Throw;WAR_Spell_Reflection;WAR_Rallying_Cry;WAR_Last_Stand"/>
+                    <attribute id="UUID" type="guid" value="bde72d1c-de74-4791-b560-f99173467aef"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Destro_Level_8"/>
-                    <attribute id="Spells" type="LSString" value="Shout_DarkSoul_Instability"/>
-                    <attribute id="UUID" type="guid" value="e25ffcfa-8027-422e-9a33-9592b521a6ec"/>
+                    <attribute id="Comment" type="LSString" value="Protection Level 7 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Berserker_Rage;WAR_Pummel;WAR_Slam;WAR_Shield_Wall"/>
+                    <attribute id="UUID" type="guid" value="35fb8b6e-c8a9-4d32-8766-99d9dde9a144"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Destro_Level_9"/>
-                    <attribute id="UUID" type="guid" value="a7436895-03ae-4fe4-9545-79cf6c700542"/>
+                    <attribute id="Comment" type="LSString" value="Protection Level 9 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Victory_Rush;WAR_Thunderous_Roar;WAR_Avatar;WAR_Champion_s_Spear"/>
+                    <attribute id="UUID" type="guid" value="bca6911c-ecc3-4efd-8454-2d8d1bd7cb42"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Destro_Level_10"/>
-                    <attribute id="UUID" type="guid" value="96b033c2-646d-42ac-a4e1-a4c27f2b98c2"/>
+                    <attribute id="Comment" type="LSString" value="Protection Level 10 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Execute"/>
+                    <attribute id="UUID" type="guid" value="536ed64f-87db-430f-a02a-8ca9ef21ad9a"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Destro_Level_11"/>
-                    <attribute id="UUID" type="guid" value="51e71a98-1274-4cd5-a141-1804d511e16b"/>
+                    <attribute id="Comment" type="LSString" value="Protection Level 11 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Hamstring;WAR_Battle_Shout"/>
+                    <attribute id="UUID" type="guid" value="e8ad679c-32a3-40be-bc4d-11602e750061"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Destro_Level_12"/>
-                    <attribute id="UUID" type="guid" value="05eece96-1bae-4915-a83d-a6b12f5db833"/>
+                    <attribute id="Comment" type="LSString" value="Protection Level 12 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Whirlwind"/>
+                    <attribute id="UUID" type="guid" value="dea36d5b-0a56-47ef-86c1-0a539c0f5d73"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Destro_Level_12_Talent"/>
-                    <attribute id="UUID" type="guid" value="dfc4c0cd-87da-47aa-93d4-2c0329599b54"/>
+                    <attribute id="Comment" type="LSString" value="Protection Level 13 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Demolish"/>
+                    <attribute id="UUID" type="guid" value="b0a7020f-69f3-431c-9cf4-959d9c7498b2"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="Affliciton_SpellLists"/>
-                    <attribute id="UUID" type="guid" value="879bc166-b51f-4674-8c3f-a1786d34c25d"/>
+                    <attribute id="Comment" type="LSString" value="Protection Level 15 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Earthquake"/>
+                    <attribute id="UUID" type="guid" value="fb4b42f4-9bfe-422e-bc99-4da94552e062"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Aff_Level_1"/>
-                    <attribute id="UUID" type="guid" value="185c0bd7-3da1-4dc4-94fc-a666ac4fd785"/>
+                    <attribute id="Comment" type="LSString" value="Protection Level 17 Spells"/>
+                    <attribute id="Spells" type="LSString" value="WAR_Thunder_Blast;WAR_Storm_Bolts"/>
+                    <attribute id="UUID" type="guid" value="35df9931-2855-4e8f-9869-b93b8435a467"/>
+                </node>
+                <!-- Hero Subclass SpellLists (L13/15/17/19/20) - Zero SpellList Pattern -->
+                <!-- ArmsColossus Hero Subclass Spell Lists -->
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="ArmsColossus Level 13 Spells"/>
+                    <attribute id="Spells" type="LSString" value=""/>
+                    <attribute id="UUID" type="guid" value="6a1b8c3d-7e9f-4a5b-8c6d-9e0f1a2b3c4d"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Aff_Level_2"/>
-                    <attribute id="Spells" type="LSString" value="Shout_Aff_MaleficGrasp_1;Target_Aff_Agony_1"/>
-                    <attribute id="UUID" type="guid" value="0063a842-170d-4a70-b8d7-4ecfb8e1b125"/>
+                    <attribute id="Comment" type="LSString" value="ArmsColossus Level 15 Spells"/>
+                    <attribute id="Spells" type="LSString" value=""/>
+                    <attribute id="UUID" type="guid" value="6a1b8c3d-7e9f-4a5b-8c6d-9e0f1a2b3c4e"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Aff_Level_3"/>
-                    <attribute id="Spells" type="LSString" value="Target_Aff_UnstableAffliction_1"/>
-                    <attribute id="UUID" type="guid" value="8489dd2a-15a7-4935-83ae-552607ec2ad6"/>
+                    <attribute id="Comment" type="LSString" value="ArmsColossus Level 17 Spells"/>
+                    <attribute id="Spells" type="LSString" value=""/>
+                    <attribute id="UUID" type="guid" value="6a1b8c3d-7e9f-4a5b-8c6d-9e0f1a2b3c4f"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Aff_Level_4"/>
-                    <attribute id="UUID" type="guid" value="134a01cc-10c7-400a-9524-b6aadd909538"/>
+                    <attribute id="Comment" type="LSString" value="ArmsColossus Level 19 Spells"/>
+                    <attribute id="Spells" type="LSString" value=""/>
+                    <attribute id="UUID" type="guid" value="6a1b8c3d-7e9f-4a5b-8c6d-9e0f1a2b3c5a"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Aff_Level_5"/>
-                    <attribute id="UUID" type="guid" value="0e5680ae-9cc3-4ef9-a878-0a77c037c490"/>
+                    <attribute id="Comment" type="LSString" value="ArmsColossus Level 20 Spells"/>
+                    <attribute id="Spells" type="LSString" value=""/>
+                    <attribute id="UUID" type="guid" value="6a1b8c3d-7e9f-4a5b-8c6d-9e0f1a2b3c5b"/>
+                </node>
+                <!-- ArmsSlayers Hero Subclass Spell Lists -->
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="ArmsSlayers Level 13 Spells"/>
+                    <attribute id="Spells" type="LSString" value=""/>
+                    <attribute id="UUID" type="guid" value="7b2c9d4e-8f0a-5b6c-9d7e-0f1a2b3c4d5e"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Aff_Level_6"/>
-                    <attribute id="Spells" type="LSString" value="Shout_Aff_Mastery"/>
-                    <attribute id="UUID" type="guid" value="f7166afe-516f-4c87-92bb-f3cf8746fa98"/>
+                    <attribute id="Comment" type="LSString" value="ArmsSlayers Level 15 Spells"/>
+                    <attribute id="Spells" type="LSString" value=""/>
+                    <attribute id="UUID" type="guid" value="7b2c9d4e-8f0a-5b6c-9d7e-0f1a2b3c4d5f"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Aff_Level_7"/>
-                    <attribute id="UUID" type="guid" value="03752c69-289b-4387-8563-24a6037b695a"/>
+                    <attribute id="Comment" type="LSString" value="ArmsSlayers Level 17 Spells"/>
+                    <attribute id="Spells" type="LSString" value=""/>
+                    <attribute id="UUID" type="guid" value="7b2c9d4e-8f0a-5b6c-9d7e-0f1a2b3c4d6a"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Aff_Level_8"/>
-                    <attribute id="Spells" type="LSString" value="Shout_DarkSoul_Misery"/>
-                    <attribute id="UUID" type="guid" value="1fdae767-57ea-414f-8026-89a05bbcbb9c"/>
+                    <attribute id="Comment" type="LSString" value="ArmsSlayers Level 19 Spells"/>
+                    <attribute id="Spells" type="LSString" value=""/>
+                    <attribute id="UUID" type="guid" value="7b2c9d4e-8f0a-5b6c-9d7e-0f1a2b3c4d6b"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Aff_Level_9"/>
-                    <attribute id="UUID" type="guid" value="7a5f300d-9a06-49de-b00a-c96954a3bc29"/>
+                    <attribute id="Comment" type="LSString" value="ArmsSlayers Level 20 Spells"/>
+                    <attribute id="Spells" type="LSString" value=""/>
+                    <attribute id="UUID" type="guid" value="7b2c9d4e-8f0a-5b6c-9d7e-0f1a2b3c4d6c"/>
+                </node>
+                <!-- FuryMountainThane Hero Subclass Spell Lists -->
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="FuryMountainThane Level 13 Spells"/>
+                    <attribute id="Spells" type="LSString" value=""/>
+                    <attribute id="UUID" type="guid" value="8c3d0e5f-9a1b-6c7d-0e8f-1a2b3c4d5e6f"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Aff_Level_10"/>
-                    <attribute id="UUID" type="guid" value="9c54b9d7-ffe8-43bf-bba4-10ff01e464be"/>
+                    <attribute id="Comment" type="LSString" value="FuryMountainThane Level 15 Spells"/>
+                    <attribute id="Spells" type="LSString" value=""/>
+                    <attribute id="UUID" type="guid" value="8c3d0e5f-9a1b-6c7d-0e8f-1a2b3c4d5e7a"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Aff_Level_11"/>
-                    <attribute id="UUID" type="guid" value="dbc291a5-8895-4850-abe0-c5ab6516dd69"/>
+                    <attribute id="Comment" type="LSString" value="FuryMountainThane Level 17 Spells"/>
+                    <attribute id="Spells" type="LSString" value=""/>
+                    <attribute id="UUID" type="guid" value="8c3d0e5f-9a1b-6c7d-0e8f-1a2b3c4d5e7b"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Aff_Level_12"/>
-                    <attribute id="UUID" type="guid" value="02705675-1991-4cee-aa02-d520aa081526"/>
+                    <attribute id="Comment" type="LSString" value="FuryMountainThane Level 19 Spells"/>
+                    <attribute id="Spells" type="LSString" value=""/>
+                    <attribute id="UUID" type="guid" value="8c3d0e5f-9a1b-6c7d-0e8f-1a2b3c4d5e7c"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="FuryMountainThane Level 20 Spells"/>
+                    <attribute id="Spells" type="LSString" value=""/>
+                    <attribute id="UUID" type="guid" value="8c3d0e5f-9a1b-6c7d-0e8f-1a2b3c4d5e7d"/>
+                </node>
+                <!-- FurySlayers Hero Subclass Spell Lists -->
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="FurySlayers Level 13 Spells"/>
+                    <attribute id="Spells" type="LSString" value=""/>
+                    <attribute id="UUID" type="guid" value="9d4e1f6a-0b2c-7d8e-1f9a-2b3c4d5e6f7a"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="FurySlayers Level 15 Spells"/>
+                    <attribute id="Spells" type="LSString" value=""/>
+                    <attribute id="UUID" type="guid" value="9d4e1f6a-0b2c-7d8e-1f9a-2b3c4d5e6f7b"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="FurySlayers Level 17 Spells"/>
+                    <attribute id="Spells" type="LSString" value=""/>
+                    <attribute id="UUID" type="guid" value="9d4e1f6a-0b2c-7d8e-1f9a-2b3c4d5e6f7c"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="FurySlayers Level 19 Spells"/>
+                    <attribute id="Spells" type="LSString" value=""/>
+                    <attribute id="UUID" type="guid" value="9d4e1f6a-0b2c-7d8e-1f9a-2b3c4d5e6f7d"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="FurySlayers Level 20 Spells"/>
+                    <attribute id="Spells" type="LSString" value=""/>
+                    <attribute id="UUID" type="guid" value="9d4e1f6a-0b2c-7d8e-1f9a-2b3c4d5e6f7e"/>
+                </node>
+                <!-- ProtectionMountainThane Hero Subclass Spell Lists -->
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="ProtectionMountainThane Level 13 Spells"/>
+                    <attribute id="Spells" type="LSString" value=""/>
+                    <attribute id="UUID" type="guid" value="0e5f2a7b-1c3d-8e9f-2a0b-3c4d5e6f7a8b"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="ProtectionMountainThane Level 15 Spells"/>
+                    <attribute id="Spells" type="LSString" value=""/>
+                    <attribute id="UUID" type="guid" value="0e5f2a7b-1c3d-8e9f-2a0b-3c4d5e6f7a8c"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="ProtectionMountainThane Level 17 Spells"/>
+                    <attribute id="Spells" type="LSString" value=""/>
+                    <attribute id="UUID" type="guid" value="0e5f2a7b-1c3d-8e9f-2a0b-3c4d5e6f7a8d"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="ProtectionMountainThane Level 19 Spells"/>
+                    <attribute id="Spells" type="LSString" value=""/>
+                    <attribute id="UUID" type="guid" value="0e5f2a7b-1c3d-8e9f-2a0b-3c4d5e6f7a8e"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="ProtectionMountainThane Level 20 Spells"/>
+                    <attribute id="Spells" type="LSString" value=""/>
+                    <attribute id="UUID" type="guid" value="0e5f2a7b-1c3d-8e9f-2a0b-3c4d5e6f7a8f"/>
+                </node>
+                <!-- ProtectionColossus Hero Subclass Spell Lists -->
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="ProtectionColossus Level 13 Spells"/>
+                    <attribute id="Spells" type="LSString" value=""/>
+                    <attribute id="UUID" type="guid" value="1f6a3b8c-2d4e-9f0a-3b1c-4d5e6f7a8b9c"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="ProtectionColossus Level 15 Spells"/>
+                    <attribute id="Spells" type="LSString" value=""/>
+                    <attribute id="UUID" type="guid" value="1f6a3b8c-2d4e-9f0a-3b1c-4d5e6f7a8b9d"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="ProtectionColossus Level 17 Spells"/>
+                    <attribute id="Spells" type="LSString" value=""/>
+                    <attribute id="UUID" type="guid" value="1f6a3b8c-2d4e-9f0a-3b1c-4d5e6f7a8b9e"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="ProtectionColossus Level 19 Spells"/>
+                    <attribute id="Spells" type="LSString" value=""/>
+                    <attribute id="UUID" type="guid" value="1f6a3b8c-2d4e-9f0a-3b1c-4d5e6f7a8b9f"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="ProtectionColossus Level 20 Spells"/>
+                    <attribute id="Spells" type="LSString" value=""/>
+                    <attribute id="UUID" type="guid" value="1f6a3b8c-2d4e-9f0a-3b1c-4d5e6f7a8ba0"/>
                 </node>
             </children>
         </node>

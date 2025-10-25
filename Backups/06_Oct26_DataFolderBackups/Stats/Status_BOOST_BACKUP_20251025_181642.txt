@@ -1,0 +1,484 @@
+// ========================================
+// WARRIOR STATUS_BOOST DEFINITIONS
+// Generated: October 24, 2025
+// Patch: 8 Compatible (4.8.0.10)
+// Source: AbilityDatabase_Warrior_FullyEnriched.csv
+// ========================================
+// Total Status Effects: 25
+// Note: Status effects applied by Warrior abilities
+// ========================================
+
+// WAR_AVATAR
+// Source: Avatar
+// Implementation: Wowhead: https://www.wowhead.com/spell=107574
+new entry "WAR_AVATAR"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h78fe4967g018bg0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Description" "h78fe4967g018cg0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Icon" "statIcons_Default"  // TODO: Create custom icon
+data "StackId" "WAR_AVATAR"
+data "StackType" "Overwrite"
+data "TickType" "StartTurn"
+data "RemoveEvents" "OnTurn"
+data "RemoveConditions" ""
+data "StatusPropertyFlags" "BringIntoCombat"
+// TODO: Implement status effects based on source ability mechanics
+// Possible effects: Boosts, StatusPropertyFlags, OnApply, OnRemove, OnTick, TickFunctors
+data "Boosts" "Advantage(AttackRoll);AC(3);StatusImmunity(SG_Frightened);StatusImmunity(SG_Charmed);RollBonus(Damage,1d8);Size(Increase)""  // TODO: Replace with actual status effects
+
+// WAR_BATTLE_SHOUT
+// Source: Battle Shout
+// Implementation: Wowhead: https://www.wowhead.com/spell=6673
+new entry "WAR_BATTLE_SHOUT"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h78fe4967g018dg0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Description" "h78fe4967g018eg0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Icon" "statIcons_Default"  // TODO: Create custom icon
+data "StackId" "WAR_BATTLE_SHOUT"
+data "StackType" "Overwrite"
+data "TickType" "StartTurn"
+data "RemoveEvents" "OnTurn"
+data "RemoveConditions" ""
+data "StatusPropertyFlags" "BringIntoCombat"
+// TODO: Implement status effects based on source ability mechanics
+// Possible effects: Boosts, StatusPropertyFlags, OnApply, OnRemove, OnTick, TickFunctors
+data "Boosts" "AC(2);RollBonus(Attack,1d4)""  // TODO: Replace with actual status effects
+
+// WAR_BATTLE_STANCE
+// Source: Battle Stance
+// Implementation: Wowhead: https://www.wowhead.com/spell=2457
+new entry "WAR_BATTLE_STANCE"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h78fe4967g018fg0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Description" "h78fe4967g0190g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Icon" "statIcons_Default"  // TODO: Create custom icon
+data "StackId" "WAR_BATTLE_STANCE"
+data "StackType" "Overwrite"
+data "TickType" "StartTurn"
+data "RemoveEvents" "OnTurn"
+data "RemoveConditions" ""
+data "StatusPropertyFlags" "BringIntoCombat"
+// TODO: Implement status effects based on source ability mechanics
+// Possible effects: Boosts, StatusPropertyFlags, OnApply, OnRemove, OnTick, TickFunctors
+data "Boosts" "RollBonus(MeleeWeaponAttack,1d6);RollBonus(MeleeWeaponDamage,1d4)""  // TODO: Replace with actual status effects
+
+// WAR_BERSERKER_SHOUT
+// Source: Berserker Shout
+// Implementation: Group-wide fear breaker. Seldom used outside PvP.
+new entry "WAR_BERSERKER_SHOUT"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h78fe4967g0191g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Description" "h78fe4967g0192g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Icon" "statIcons_Default"  // TODO: Create custom icon
+data "StackId" "WAR_BERSERKER_SHOUT"
+data "StackType" "Overwrite"
+data "TickType" "StartTurn"
+data "RemoveEvents" "OnTurn"
+data "RemoveConditions" ""
+data "StatusPropertyFlags" "BringIntoCombat"
+// TODO: Implement status effects based on source ability mechanics
+// Possible effects: Boosts, StatusPropertyFlags, OnApply, OnRemove, OnTick, TickFunctors
+data "Boosts" "RemoveStatus(FRIGHTENED);RemoveStatus(CHARMED);ActionResource(Rage,10,0)""  // TODO: Replace with actual status effects
+
+// WAR_COLOSSUS_SMASH
+// Source: Colossus Smash
+// Implementation: Wowhead: https://www.wowhead.com/spell=167105
+new entry "WAR_COLOSSUS_SMASH"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h78fe4967g0193g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Description" "h78fe4967g0194g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Icon" "statIcons_Default"  // TODO: Create custom icon
+data "StackId" "WAR_COLOSSUS_SMASH"
+data "StackType" "Overwrite"
+data "TickType" "StartTurn"
+data "RemoveEvents" "OnTurn"
+data "RemoveConditions" ""
+data "StatusPropertyFlags" "BringIntoCombat"
+// TODO: Implement status effects based on source ability mechanics
+// Possible effects: Boosts, StatusPropertyFlags, OnApply, OnRemove, OnTick, TickFunctors
+data "Boosts" "AC(-5);Resistance(Slashing,Vulnerable);Resistance(Piercing,Vulnerable);Resistance(Bludgeoning,Vulnerable)""  // TODO: Replace with actual status effects
+
+// WAR_DEFENSIVE_STANCE
+// Source: Defensive Stance
+// Implementation: Wowhead: https://www.wowhead.com/spell=71
+new entry "WAR_DEFENSIVE_STANCE"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h78fe4967g0195g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Description" "h78fe4967g0196g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Icon" "statIcons_Default"  // TODO: Create custom icon
+data "StackId" "WAR_DEFENSIVE_STANCE"
+data "StackType" "Overwrite"
+data "TickType" "StartTurn"
+data "RemoveEvents" "OnTurn"
+data "RemoveConditions" ""
+data "StatusPropertyFlags" "BringIntoCombat"
+// TODO: Implement status effects based on source ability mechanics
+// Possible effects: Boosts, StatusPropertyFlags, OnApply, OnRemove, OnTick, TickFunctors
+data "Boosts" "AC(3);Resistance(Slashing,Resistant);Resistance(Piercing,Resistant);Resistance(Bludgeoning,Resistant)""  // TODO: Replace with actual status effects
+
+// WAR_DEMORALIZING_SHOUT
+// Source: Demoralizing Shout
+// Implementation: AoE debuff shout
+new entry "WAR_DEMORALIZING_SHOUT"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h78fe4967g0197g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Description" "h78fe4967g0198g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Icon" "statIcons_Default"  // TODO: Create custom icon
+data "StackId" "WAR_DEMORALIZING_SHOUT"
+data "StackType" "Overwrite"
+data "TickType" "StartTurn"
+data "RemoveEvents" "OnTurn"
+data "RemoveConditions" ""
+data "StatusPropertyFlags" "BringIntoCombat"
+// TODO: Implement status effects based on source ability mechanics
+// Possible effects: Boosts, StatusPropertyFlags, OnApply, OnRemove, OnTick, TickFunctors
+data "Boosts" "RollBonus(Attack,-1d4);RollBonus(Damage,-1d4)""  // TODO: Replace with actual status effects
+
+// WAR_DIE_BY_THE_SWORD
+// Source: Die by the Sword
+// Implementation: Wowhead: https://www.wowhead.com/spell=118038
+new entry "WAR_DIE_BY_THE_SWORD"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h78fe4967g0199g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Description" "h78fe4967g019ag0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Icon" "statIcons_Default"  // TODO: Create custom icon
+data "StackId" "WAR_DIE_BY_THE_SWORD"
+data "StackType" "Overwrite"
+data "TickType" "StartTurn"
+data "RemoveEvents" "OnTurn"
+data "RemoveConditions" ""
+data "StatusPropertyFlags" "BringIntoCombat"
+// TODO: Implement status effects based on source ability mechanics
+// Possible effects: Boosts, StatusPropertyFlags, OnApply, OnRemove, OnTick, TickFunctors
+data "Boosts" "AC(10);Dodge();IF(AttackTarget()):DealDamage(1d6+StrengthModifier,MainMeleeWeaponDamageType,Magical)""  // TODO: Replace with actual status effects
+
+// WAR_DISRUPTING_SHOUT
+// Source: Disrupting Shout
+// Implementation: Converts Challenging Shout to AoE taunt with reduced cooldown (90s vs 240s)
+new entry "WAR_DISRUPTING_SHOUT"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h78fe4967g019bg0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Description" "h78fe4967g019cg0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Icon" "statIcons_Default"  // TODO: Create custom icon
+data "StackId" "WAR_DISRUPTING_SHOUT"
+data "StackType" "Overwrite"
+data "TickType" "StartTurn"
+data "RemoveEvents" "OnTurn"
+data "RemoveConditions" ""
+data "StatusPropertyFlags" "BringIntoCombat"
+// TODO: Implement status effects based on source ability mechanics
+// Possible effects: Boosts, StatusPropertyFlags, OnApply, OnRemove, OnTick, TickFunctors
+data "Boosts" "Disadvantage(SavingThrow,Concentration);RollBonus(SpellAttack,-2)""  // TODO: Replace with actual status effects
+
+// WAR_ENRAGED_REGENERATION
+// Source: Enraged Regeneration
+// Implementation: Wowhead: https://www.wowhead.com/spell=184364
+new entry "WAR_ENRAGED_REGENERATION"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h78fe4967g019dg0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Description" "h78fe4967g019eg0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Icon" "statIcons_Default"  // TODO: Create custom icon
+data "StackId" "WAR_ENRAGED_REGENERATION"
+data "StackType" "Overwrite"
+data "TickType" "StartTurn"
+data "RemoveEvents" "OnTurn"
+data "RemoveConditions" ""
+data "StatusPropertyFlags" "BringIntoCombat"
+// TODO: Implement status effects based on source ability mechanics
+// Possible effects: Boosts, StatusPropertyFlags, OnApply, OnRemove, OnTick, TickFunctors
+data "Boosts" "IF(TurnBased()):RegainHP(Level+ConstitutionModifier*2)""  // TODO: Replace with actual status effects
+
+// WAR_HAMSTRING
+// Source: Hamstring
+// Implementation: Wowhead: https://www.wowhead.com/spell=1715
+new entry "WAR_HAMSTRING"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h78fe4967g019fg0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Description" "h78fe4967g01a0g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Icon" "statIcons_Default"  // TODO: Create custom icon
+data "StackId" "WAR_HAMSTRING"
+data "StackType" "Overwrite"
+data "TickType" "StartTurn"
+data "RemoveEvents" "OnTurn"
+data "RemoveConditions" ""
+data "StatusPropertyFlags" "BringIntoCombat"
+// TODO: Implement status effects based on source ability mechanics
+// Possible effects: Boosts, StatusPropertyFlags, OnApply, OnRemove, OnTick, TickFunctors
+data "Boosts" "Disadvantage(SavingThrow,Dexterity);StatusImmunity(SG_Dash);AC(-1)""  // TODO: Replace with actual status effects
+
+// WAR_IGNORE_PAIN
+// Source: Ignore Pain
+// Implementation: Wowhead: https://www.wowhead.com/spell=190456
+new entry "WAR_IGNORE_PAIN"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h78fe4967g01a1g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Description" "h78fe4967g01a2g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Icon" "statIcons_Default"  // TODO: Create custom icon
+data "StackId" "WAR_IGNORE_PAIN"
+data "StackType" "Overwrite"
+data "TickType" "StartTurn"
+data "RemoveEvents" "OnTurn"
+data "RemoveConditions" ""
+data "StatusPropertyFlags" "BringIntoCombat"
+// TODO: Implement status effects based on source ability mechanics
+// Possible effects: Boosts, StatusPropertyFlags, OnApply, OnRemove, OnTick, TickFunctors
+data "Boosts" "TemporaryHP(Level*2+ConstitutionModifier)""  // TODO: Replace with actual status effects
+
+// WAR_IMPENETRABLE_WALL
+// Source: Impenetrable Wall
+// Implementation: Enhances Shield Wall with CC immunity
+new entry "WAR_IMPENETRABLE_WALL"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h78fe4967g01a3g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Description" "h78fe4967g01a4g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Icon" "statIcons_Default"  // TODO: Create custom icon
+data "StackId" "WAR_IMPENETRABLE_WALL"
+data "StackType" "Overwrite"
+data "TickType" "StartTurn"
+data "RemoveEvents" "OnTurn"
+data "RemoveConditions" ""
+data "StatusPropertyFlags" "BringIntoCombat"
+// TODO: Implement status effects based on source ability mechanics
+// Possible effects: Boosts, StatusPropertyFlags, OnApply, OnRemove, OnTick, TickFunctors
+data "Boosts" "AC(5);ReduceDamage(SELF,Percentage,30);Resistance(Force,Resistant)""  // TODO: Replace with actual status effects
+
+// WAR_INTIMIDATING_SHOUT
+// Source: Intimidating Shout
+// Implementation: AoE fear effect
+new entry "WAR_INTIMIDATING_SHOUT"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h78fe4967g01a5g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Description" "h78fe4967g01a6g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Icon" "statIcons_Default"  // TODO: Create custom icon
+data "StackId" "WAR_INTIMIDATING_SHOUT"
+data "StackType" "Overwrite"
+data "TickType" "StartTurn"
+data "RemoveEvents" "OnTurn"
+data "RemoveConditions" ""
+data "StatusPropertyFlags" "BringIntoCombat"
+// TODO: Implement status effects based on source ability mechanics
+// Possible effects: Boosts, StatusPropertyFlags, OnApply, OnRemove, OnTick, TickFunctors
+data "Boosts" "ApplyStatus(FRIGHTENED,100,2)""  // TODO: Replace with actual status effects
+
+// WAR_PUMMEL
+// Source: Pummel
+// Implementation: Wowhead: https://www.wowhead.com/spell=6552
+new entry "WAR_PUMMEL"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h78fe4967g01a7g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Description" "h78fe4967g01a8g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Icon" "statIcons_Default"  // TODO: Create custom icon
+data "StackId" "WAR_PUMMEL"
+data "StackType" "Overwrite"
+data "TickType" "StartTurn"
+data "RemoveEvents" "OnTurn"
+data "RemoveConditions" ""
+data "StatusPropertyFlags" "BringIntoCombat"
+// TODO: Implement status effects based on source ability mechanics
+// Possible effects: Boosts, StatusPropertyFlags, OnApply, OnRemove, OnTick, TickFunctors
+data "Boosts" "Silenced();Incapacitated()""  // TODO: Replace with actual status effects
+
+// WAR_RECKLESSNESS
+// Source: Recklessness
+// Implementation: Wowhead: https://www.wowhead.com/spell=1719
+new entry "WAR_RECKLESSNESS"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h78fe4967g01a9g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Description" "h78fe4967g01aag0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Icon" "statIcons_Default"  // TODO: Create custom icon
+data "StackId" "WAR_RECKLESSNESS"
+data "StackType" "Overwrite"
+data "TickType" "StartTurn"
+data "RemoveEvents" "OnTurn"
+data "RemoveConditions" ""
+data "StatusPropertyFlags" "BringIntoCombat"
+// TODO: Implement status effects based on source ability mechanics
+// Possible effects: Boosts, StatusPropertyFlags, OnApply, OnRemove, OnTick, TickFunctors
+data "Boosts" "Advantage(AttackRoll);CriticalHit(AttackRoll)""  // TODO: Replace with actual status effects
+
+// WAR_SHIELD_BLOCK
+// Source: Shield Block
+// Implementation: Wowhead: https://www.wowhead.com/spell=2565
+new entry "WAR_SHIELD_BLOCK"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h78fe4967g01abg0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Description" "h78fe4967g01acg0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Icon" "statIcons_Default"  // TODO: Create custom icon
+data "StackId" "WAR_SHIELD_BLOCK"
+data "StackType" "Overwrite"
+data "TickType" "StartTurn"
+data "RemoveEvents" "OnTurn"
+data "RemoveConditions" ""
+data "StatusPropertyFlags" "BringIntoCombat"
+// TODO: Implement status effects based on source ability mechanics
+// Possible effects: Boosts, StatusPropertyFlags, OnApply, OnRemove, OnTick, TickFunctors
+data "Boosts" "ReduceDamage(SELF,Flat,2d6+ConstitutionModifier)""  // TODO: Replace with actual status effects
+
+// WAR_SHIELD_WALL
+// Source: Shield Wall
+// Implementation: Wowhead: https://www.wowhead.com/spell=871
+new entry "WAR_SHIELD_WALL"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h78fe4967g01adg0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Description" "h78fe4967g01aeg0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Icon" "statIcons_Default"  // TODO: Create custom icon
+data "StackId" "WAR_SHIELD_WALL"
+data "StackType" "Overwrite"
+data "TickType" "StartTurn"
+data "RemoveEvents" "OnTurn"
+data "RemoveConditions" ""
+data "StatusPropertyFlags" "BringIntoCombat"
+// TODO: Implement status effects based on source ability mechanics
+// Possible effects: Boosts, StatusPropertyFlags, OnApply, OnRemove, OnTick, TickFunctors
+data "Boosts" "ReduceDamage(SELF,Percentage,40);AC(2)""  // TODO: Replace with actual status effects
+
+// WAR_SHOCKWAVE
+// Source: Shockwave
+// Implementation: Wowhead: https://www.wowhead.com/spell=46968
+new entry "WAR_SHOCKWAVE"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h78fe4967g01afg0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Description" "h78fe4967g01b0g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Icon" "statIcons_Default"  // TODO: Create custom icon
+data "StackId" "WAR_SHOCKWAVE"
+data "StackType" "Overwrite"
+data "TickType" "StartTurn"
+data "RemoveEvents" "OnTurn"
+data "RemoveConditions" ""
+data "StatusPropertyFlags" "BringIntoCombat"
+// TODO: Implement status effects based on source ability mechanics
+// Possible effects: Boosts, StatusPropertyFlags, OnApply, OnRemove, OnTick, TickFunctors
+data "Boosts" "ApplyStatus(PRONE,100,1)""  // TODO: Replace with actual status effects
+
+// WAR_SPELL_REFLECTION
+// Source: Spell Reflection
+// Implementation: Wowhead: https://www.wowhead.com/spell=23920
+new entry "WAR_SPELL_REFLECTION"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h78fe4967g01b1g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Description" "h78fe4967g01b2g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Icon" "statIcons_Default"  // TODO: Create custom icon
+data "StackId" "WAR_SPELL_REFLECTION"
+data "StackType" "Overwrite"
+data "TickType" "StartTurn"
+data "RemoveEvents" "OnTurn"
+data "RemoveConditions" ""
+data "StatusPropertyFlags" "BringIntoCombat"
+// TODO: Implement status effects based on source ability mechanics
+// Possible effects: Boosts, StatusPropertyFlags, OnApply, OnRemove, OnTick, TickFunctors
+data "Boosts" "Resistance(Force,Immune);Resistance(Lightning,Immune);Resistance(Fire,Immune);Resistance(Cold,Immune);Resistance(Acid,Immune)""  // TODO: Replace with actual status effects
+
+// WAR_STORM_BOLT
+// Source: Storm Bolt
+// Implementation: Wowhead: https://www.wowhead.com/spell=107570
+new entry "WAR_STORM_BOLT"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h78fe4967g01b3g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Description" "h78fe4967g01b4g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Icon" "statIcons_Default"  // TODO: Create custom icon
+data "StackId" "WAR_STORM_BOLT"
+data "StackType" "Overwrite"
+data "TickType" "StartTurn"
+data "RemoveEvents" "OnTurn"
+data "RemoveConditions" ""
+data "StatusPropertyFlags" "BringIntoCombat"
+// TODO: Implement status effects based on source ability mechanics
+// Possible effects: Boosts, StatusPropertyFlags, OnApply, OnRemove, OnTick, TickFunctors
+data "Boosts" "IF(TurnBased()):DealDamage(2d6,Lightning,Magical)""  // TODO: Replace with actual status effects
+
+// WAR_STORM_BOLTS
+// Source: Storm Bolts
+// Implementation: Mountain Thane ability - Lightning bolt projectile attacks.
+new entry "WAR_STORM_BOLTS"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h78fe4967g01b5g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Description" "h78fe4967g01b6g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Icon" "statIcons_Default"  // TODO: Create custom icon
+data "StackId" "WAR_STORM_BOLTS"
+data "StackType" "Overwrite"
+data "TickType" "StartTurn"
+data "RemoveEvents" "OnTurn"
+data "RemoveConditions" ""
+data "StatusPropertyFlags" "BringIntoCombat"
+// TODO: Implement status effects based on source ability mechanics
+// Possible effects: Boosts, StatusPropertyFlags, OnApply, OnRemove, OnTick, TickFunctors
+data "Boosts" "IF(TurnBased()):DealDamage(1d8,Lightning,Magical);IF(TurnBased()):DealDamage(1d8,Lightning,Magical);IF(TurnBased()):DealDamage(1d8,Lightning,Magical)""  // TODO: Replace with actual status effects
+
+// WAR_STORM_WALL
+// Source: Storm Wall
+// Implementation: Extends Die by the Sword with AoE benefit
+new entry "WAR_STORM_WALL"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h78fe4967g01b7g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Description" "h78fe4967g01b8g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Icon" "statIcons_Default"  // TODO: Create custom icon
+data "StackId" "WAR_STORM_WALL"
+data "StackType" "Overwrite"
+data "TickType" "StartTurn"
+data "RemoveEvents" "OnTurn"
+data "RemoveConditions" ""
+data "StatusPropertyFlags" "BringIntoCombat"
+// TODO: Implement status effects based on source ability mechanics
+// Possible effects: Boosts, StatusPropertyFlags, OnApply, OnRemove, OnTick, TickFunctors
+data "Boosts" "ReduceDamage(SELF,Flat,1d10);IF(AttackTarget()):DealDamage(1d6,Lightning,Magical)""  // TODO: Replace with actual status effects
+
+// WAR_TAUNTED
+// Source: Taunt
+// Implementation: Wowhead: https://www.wowhead.com/spell=355
+new entry "WAR_TAUNTED"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h78fe4967g01b9g0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Description" "h78fe4967g01bag0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Icon" "statIcons_Default"  // TODO: Create custom icon
+data "StackId" "WAR_TAUNTED"
+data "StackType" "Overwrite"
+data "TickType" "StartTurn"
+data "RemoveEvents" "OnTurn"
+data "RemoveConditions" ""
+data "StatusPropertyFlags" "BringIntoCombat"
+// TODO: Implement status effects based on source ability mechanics
+// Possible effects: Boosts, StatusPropertyFlags, OnApply, OnRemove, OnTick, TickFunctors
+data "Boosts" "Disadvantage(AttackRoll);IF(not(Tagged('TAUNTED_SOURCE',context.Source))):Disadvantage(AttackRoll)""  // TODO: Replace with actual status effects
+
+// WAR_WARBREAKER
+// Source: Warbreaker
+// Implementation: Requires Colossus Smash talent
+new entry "WAR_WARBREAKER"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h78fe4967g01bbg0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Description" "h78fe4967g01bcg0000g0000g000000000001;1"  // TODO: Generate proper localization handle
+data "Icon" "statIcons_Default"  // TODO: Create custom icon
+data "StackId" "WAR_WARBREAKER"
+data "StackType" "Overwrite"
+data "TickType" "StartTurn"
+data "RemoveEvents" "OnTurn"
+data "RemoveConditions" ""
+data "StatusPropertyFlags" "BringIntoCombat"
+// TODO: Implement status effects based on source ability mechanics
+// Possible effects: Boosts, StatusPropertyFlags, OnApply, OnRemove, OnTick, TickFunctors
+data "Boosts" "AC(-3);Resistance(Slashing,Vulnerable);Resistance(Piercing,Vulnerable);Resistance(Bludgeoning,Vulnerable)""  // TODO: Replace with actual status effects

@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+  <version major="4" minor="0" revision="9" build="328" />
+  <region id="SpellLists">
+    <node id="root">
+      <children>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Class_SpellLists" />
+                    <attribute id="UUID" type="guid" value="09d2d6d9-542d-488f-a51d-ea469e9d36c6" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Class_Level_1" />
+                    <attribute id="Spells" type="LSString" value="Target_SummonDemon" />
+                    <attribute id="UUID" type="guid" value="9e2ec5ea-a47c-475a-b756-c0e0ca69a281" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Class_Level_2" />
+                    <attribute id="UUID" type="guid" value="7e7c204e-0bcb-4ddb-9dd5-78a2f85cdfb2" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Class_Level_3" />
+                    <attribute id="Spells" type="LSString" value="Target_SummonDemon_Voidwalker;Target_SummonDemon_Voidwalker_2" />
+                    <attribute id="UUID" type="guid" value="59be68b9-a2e2-400a-9a2f-daae17f0c40a" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Class_Level_4" />
+                    <attribute id="Spells" type="LSString" value="Shout_UnendingResolve" />
+                    <attribute id="UUID" type="guid" value="874b3746-8d60-4a90-aab0-bd656d1342d5" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Class_Level_5" />
+                    <attribute id="Spells" type="LSString" value="Target_SummonDemon_Felhunter;Target_SummonDemon_Felhunter_2" />
+                    <attribute id="UUID" type="guid" value="dd824bd4-3afa-41e1-9120-4410f6b31e7c" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Class_Level_6" />
+                    <attribute id="Spells" type="LSString" value="Projectile_DrainLife" />
+                    <attribute id="UUID" type="guid" value="6ed5c46a-61bc-431a-a3fd-16acf9081476" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Class_Level_7" />
+                    <attribute id="Spells" type="LSString" value="Target_SummonDemon_Succubus;Target_SummonDemon_Incubus;Target_SummonDemon_Succubus_2;Target_SummonDemon_Incubus_2" />
+                    <attribute id="UUID" type="guid" value="99b1fb40-47da-4131-a804-16ecea4e5085" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Class_Level_8" />
+                    <attribute id="Spells" type="LSString" value="Target_Fear" />
+                    <attribute id="UUID" type="guid" value="368968fd-270d-4c05-b9c8-1495d3222a2b" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Class_Level_9" />
+                    <attribute id="Spells" type="LSString" value="Target_CreateSoulstone" />
+                    <attribute id="UUID" type="guid" value="fe643b97-0c09-46ee-a3c6-98da8ba94ec3" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Class_Level_10" />
+                    <attribute id="UUID" type="guid" value="f93816a0-3639-452b-959e-e3b63ec82257" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Class_Level_11" />
+                    <attribute id="UUID" type="guid" value="1cc306ed-4f58-4d00-aad8-82b8520bd6d6" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Class_Level_12" />
+                    <attribute id="UUID" type="guid" value="b9bec33f-fd30-4498-921c-6821529a66ba" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Demonology_SpellLists" />
+                    <attribute id="UUID" type="guid" value="28de3c50-3f61-4445-97b8-b24636d34d03" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Demo_Level_1" />
+                    <attribute id="Spells" type="LSString" value="Projectile_Demo_Shadowbolt_1" />
+                    <attribute id="UUID" type="guid" value="aedc2c38-5a25-4033-bb19-f801f2e79101" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Demo_Level_2" />
+                    <attribute id="Spells" type="LSString" value="Target_SummonDemon_Felguard_1;Projectile_Demo_HandOfGuldan_1;Target_SummonDemon_Felguard_2" />
+                    <attribute id="UUID" type="guid" value="92355092-ac2f-48dc-8658-6ff1efa72685" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Demo_Level_3" />
+                    <attribute id="Spells" type="LSString" value="Projectile_Demo_Demonbolt_1" />
+                    <attribute id="UUID" type="guid" value="c970cbf1-bc7f-4ff4-b9ae-6ee43e1b0737" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Demo_Level_4" />
+                    <attribute id="Spells" type="LSString" value="Projectile_Demo_CallDreadstalkers_1" />
+                    <attribute id="UUID" type="guid" value="287f33fc-9010-4a4d-b0a0-b9c7cc1b8018" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Demo_Level_5" />
+                    <attribute id="Spells" type="LSString" value="Shout_DarkRegeneration" />
+                    <attribute id="UUID" type="guid" value="6f3563d0-88fa-4ce8-875c-4e41be8ff458" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Demo_Level_6" />
+                    <attribute id="Spells" type="LSString" value="Shout_Demo_Mastery" />
+                    <attribute id="UUID" type="guid" value="b8ccbb62-9d37-454f-9abe-475067df728b" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Demo_Level_7" />
+                    <attribute id="UUID" type="guid" value="b8d86615-99a4-4fa8-b62b-922e7d085441" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Demo_Level_8" />
+                    <attribute id="Spells" type="LSString" value="Shout_DarkSoul_Knowledge" />
+                    <attribute id="UUID" type="guid" value="be391572-a846-4bcd-aae5-7917d2d87929" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Demo_Level_9" />
+                    <attribute id="UUID" type="guid" value="2a1e34a8-8545-4d41-b5cb-b5214d5e09d0" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Demo_Level_10" />
+                    <attribute id="UUID" type="guid" value="2ff077a9-a3ef-40c7-bc34-e16c8dbcdef8" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Demo_Level_11" />
+                    <attribute id="Spells" type="LSString" value="Shout_DemonicPact" />
+                    <attribute id="UUID" type="guid" value="82ca53eb-7287-4a0f-8a56-98dfe335d638" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Demo_Level_12" />
+                    <attribute id="UUID" type="guid" value="f9e61954-a7a0-4505-ae1e-2f0a22b2bd2f" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Destruction_SpellLists" />
+                    <attribute id="UUID" type="guid" value="633ee1ef-1e53-4ca2-ab3c-98e01ce989d9" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Destro_Level_1" />
+                    <attribute id="Spells" type="LSString" value="Projectile_Destro_Incinerate_1" />
+                    <attribute id="UUID" type="guid" value="b751c5be-652a-46bc-a0f1-31d50a6fed73" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Destro_Level_2" />
+                    <attribute id="Spells" type="LSString" value="Projectile_Destro_Chaosbolt_1" />
+                    <attribute id="UUID" type="guid" value="fbd2ee26-1a51-4bfc-aba5-cc7388fd4417" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Destro_Level_3" />
+                    <attribute id="Spells" type="LSString" value="Target_Destro_Conflagrate_1" />
+                    <attribute id="UUID" type="guid" value="aca056cc-49f0-4c6d-8ea5-086dfa64b495" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Destro_Level_4" />
+                    <attribute id="UUID" type="guid" value="5cea9d91-2d99-4197-9c89-6dd890f176eb" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Destro_Level_5" />
+                    <attribute id="UUID" type="guid" value="40d182d0-6648-4d05-80be-edc8d728dddc" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Destro_Level_6" />
+                    <attribute id="UUID" type="guid" value="1f92f86c-7894-4885-ba12-299566017436" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Destro_Level_7" />
+                    <attribute id="UUID" type="guid" value="bf203bc1-179e-48a3-9c33-580a0bc0468a" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Destro_Level_8" />
+                    <attribute id="Spells" type="LSString" value="Shout_DarkSoul_Instability" />
+                    <attribute id="UUID" type="guid" value="e25ffcfa-8027-422e-9a33-9592b521a6ec" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Destro_Level_9" />
+                    <attribute id="UUID" type="guid" value="a7436895-03ae-4fe4-9545-79cf6c700542" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Destro_Level_10" />
+                    <attribute id="UUID" type="guid" value="96b033c2-646d-42ac-a4e1-a4c27f2b98c2" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Destro_Level_11" />
+                    <attribute id="UUID" type="guid" value="51e71a98-1274-4cd5-a141-1804d511e16b" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Destro_Level_12" />
+                    <attribute id="UUID" type="guid" value="05eece96-1bae-4915-a83d-a6b12f5db833" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Destro_Level_12_Talent" />
+                    <attribute id="UUID" type="guid" value="dfc4c0cd-87da-47aa-93d4-2c0329599b54" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Affliciton_SpellLists" />
+                    <attribute id="UUID" type="guid" value="879bc166-b51f-4674-8c3f-a1786d34c25d" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Aff_Level_1" />
+                    <attribute id="UUID" type="guid" value="185c0bd7-3da1-4dc4-94fc-a666ac4fd785" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Aff_Level_2" />
+                    <attribute id="Spells" type="LSString" value="Shout_Aff_MaleficGrasp_1;Target_Aff_Agony_1" />
+                    <attribute id="UUID" type="guid" value="0063a842-170d-4a70-b8d7-4ecfb8e1b125" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Aff_Level_3" />
+                    <attribute id="Spells" type="LSString" value="Target_Aff_UnstableAffliction_1" />
+                    <attribute id="UUID" type="guid" value="8489dd2a-15a7-4935-83ae-552607ec2ad6" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Aff_Level_4" />
+                    <attribute id="UUID" type="guid" value="134a01cc-10c7-400a-9524-b6aadd909538" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Aff_Level_5" />
+                    <attribute id="UUID" type="guid" value="0e5680ae-9cc3-4ef9-a878-0a77c037c490" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Aff_Level_6" />
+                    <attribute id="Spells" type="LSString" value="Shout_Aff_Mastery" />
+                    <attribute id="UUID" type="guid" value="f7166afe-516f-4c87-92bb-f3cf8746fa98" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Aff_Level_7" />
+                    <attribute id="UUID" type="guid" value="03752c69-289b-4387-8563-24a6037b695a" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Aff_Level_8" />
+                    <attribute id="Spells" type="LSString" value="Shout_DarkSoul_Misery" />
+                    <attribute id="UUID" type="guid" value="1fdae767-57ea-414f-8026-89a05bbcbb9c" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Aff_Level_9" />
+                    <attribute id="UUID" type="guid" value="7a5f300d-9a06-49de-b00a-c96954a3bc29" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Aff_Level_10" />
+                    <attribute id="UUID" type="guid" value="9c54b9d7-ffe8-43bf-bba4-10ff01e464be" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Aff_Level_11" />
+                    <attribute id="UUID" type="guid" value="dbc291a5-8895-4850-abe0-c5ab6516dd69" />
+                </node>
+        <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="WoW_Warlock_Aff_Level_12" />
+                    <attribute id="UUID" type="guid" value="02705675-1991-4cee-aa02-d520aa081526" />
+                </node>
+      </children>
+    </node>
+  </region>
+</save>

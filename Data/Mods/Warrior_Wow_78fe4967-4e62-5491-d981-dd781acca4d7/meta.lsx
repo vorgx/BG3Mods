@@ -122,7 +122,7 @@
                     <attribute id="LobbyLevelName" type="FixedString" value=""/>
                     <attribute id="MD5" type="LSString" value="8ea2dd292f7889b47d0467dcda341c05"/>
                     <attribute id="MenuLevelName" type="FixedString" value=""/>
-                    <attribute id="Name" type="LSString" value="WoWWarrior"/>
+                    <attribute id="Name" type="LSString" value="BG3Wow - World of Warcraft Warrior Class for Baldur's Gate 3"/>
                     <attribute id="NumPlayers" type="uint8" value="4"/>
                     <attribute id="PhotoBooth" type="FixedString" value=""/>
                     <attribute id="PublishHandle" type="uint64" value="4763361"/>

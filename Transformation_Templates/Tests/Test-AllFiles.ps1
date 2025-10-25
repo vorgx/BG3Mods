@@ -151,15 +151,87 @@ if ($ModUUID) {
     $ActionResPath = Join-Path $ModPath "Public\Warrior_Wow_$ModUUID\ActionResourceDefinitions\ActionResourceDefinitions.lsx"
     
     if (Test-Path $ActionResPath) {
-        Invoke-ValidationTest -TestName "FILE 3: ActionResourceDefinitions.lsx" `
+        $test3Result = Invoke-ValidationTest -TestName "FILE 3: ActionResourceDefinitions.lsx" `
                                -ScriptPath (Join-Path $TestsPath "FILE_03_Test-ActionResourceDefinitions.ps1") `
                                -Parameters @{ FilePath = $ActionResPath }
+        
+        if (-not $test3Result -and $StopOnFirstFailure) {
+            Write-Host "Stopping after first failure" -ForegroundColor Yellow
+            exit 1
+        }
     } else {
         Write-Host "⚠️  SKIP: ActionResourceDefinitions.lsx not found at: $ActionResPath" -ForegroundColor Yellow
         Write-Host ""
     }
 } else {
     Write-Host "⚠️  SKIP: FILE 3 test (could not determine mod folder)" -ForegroundColor Yellow
+    Write-Host ""
+}
+
+# FILE 4: Passive charge unlock wiring
+if ($ModUUID) {
+    $PassivePath = Join-Path $ModPath "Public\Warrior_Wow_$ModUUID\Stats\Generated\Data\Passive.txt"
+    $StatusPath = Join-Path $ModPath "Public\Warrior_Wow_$ModUUID\Stats\Generated\Data\Status_BOOST.txt"
+
+    if ((Test-Path $PassivePath) -and (Test-Path $StatusPath)) {
+        $test4Result = Invoke-ValidationTest -TestName "FILE 4: Charge unlock passives" `
+                               -ScriptPath (Join-Path $TestsPath "FILE_07_Test-ChargeUnlocks.ps1") `
+                               -Parameters @{ PassiveFilePath = $PassivePath; StatusFilePath = $StatusPath }
+
+        if (-not $test4Result -and $StopOnFirstFailure) {
+            Write-Host "Stopping after first failure" -ForegroundColor Yellow
+            exit 1
+        }
+    } else {
+        Write-Host "⚠️  SKIP: Passive.txt or Status_BOOST.txt not found for charge unlock audit" -ForegroundColor Yellow
+        Write-Host ""
+    }
+} else {
+    Write-Host "⚠️  SKIP: FILE 4 test (could not determine mod folder)" -ForegroundColor Yellow
+    Write-Host ""
+}
+
+# FILE 12: SpellLists.lsx
+if ($ModUUID) {
+    $SpellListsPath = Join-Path $ModPath "Public\Warrior_Wow_$ModUUID\Lists\SpellLists.lsx"
+    
+    if (Test-Path $SpellListsPath) {
+        $test12Result = Invoke-ValidationTest -TestName "FILE 12: SpellLists.lsx" `
+                               -ScriptPath (Join-Path $TestsPath "Test-SpellLists.ps1") `
+                               -Parameters @{ FilePath = $SpellListsPath }
+        
+        if (-not $test12Result -and $StopOnFirstFailure) {
+            Write-Host "Stopping after first failure" -ForegroundColor Yellow
+            exit 1
+        }
+    } else {
+        Write-Host "⚠️  SKIP: SpellLists.lsx not found at: $SpellListsPath" -ForegroundColor Yellow
+        Write-Host ""
+    }
+} else {
+    Write-Host "⚠️  SKIP: FILE 12 test (could not determine mod folder)" -ForegroundColor Yellow
+    Write-Host ""
+}
+
+# FILE 13: PassiveLists.lsx
+if ($ModUUID) {
+    $PassiveListsPath = Join-Path $ModPath "Public\Warrior_Wow_$ModUUID\Lists\PassiveLists.lsx"
+    
+    if (Test-Path $PassiveListsPath) {
+        $test13Result = Invoke-ValidationTest -TestName "FILE 13: PassiveLists.lsx" `
+                               -ScriptPath (Join-Path $TestsPath "Test-PassiveLists.ps1") `
+                               -Parameters @{ FilePath = $PassiveListsPath }
+        
+        if (-not $test13Result -and $StopOnFirstFailure) {
+            Write-Host "Stopping after first failure" -ForegroundColor Yellow
+            exit 1
+        }
+    } else {
+        Write-Host "⚠️  SKIP: PassiveLists.lsx not found at: $PassiveListsPath" -ForegroundColor Yellow
+        Write-Host ""
+    }
+} else {
+    Write-Host "⚠️  SKIP: FILE 13 test (could not determine mod folder)" -ForegroundColor Yellow
     Write-Host ""
 }
 

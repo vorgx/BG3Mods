@@ -1,0 +1,1068 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+    
+    <!-- ========================================
+         WARRIOR MOD LOCALIZATION
+         Generated: October 25, 2025
+         Total Entries: 247
+         Total Handles: 494
+         ========================================
+    -->
+    
+    <!-- ========================================
+         CLASS AND SUBCLASS DESCRIPTIONS
+         ========================================
+    -->
+    
+    <!-- Warrior Base Class -->
+    <content contentuid="h2192a15fgd3c6g47c8g8f2ag887078521591" version="1">Warrior</content>
+    <content contentuid="hec9f49b2g20fbg427bgb437gfd4041ffd5ec" version="1">Masters of martial combat who harness Rage to fuel devastating abilities. Warriors excel with both massive two-handed weapons and sword-and-board tactics, adapting to any battle.</content>
+    
+    <!-- Arms Warrior Subclass -->
+    <content contentuid="h0ae71f9cgcb9ag4eb9g8bedgdc08c872bccc" version="1">Arms Warrior</content>
+    <content contentuid="h5300bf31g2077g4482g80dfg06112305b4d5" version="1">A master of two-handed weapons who delivers crushing blows and mortal strikes. Arms Warriors specialize in controlled, powerful attacks that tear through armor and leave enemies bleeding.</content>
+    
+    <!-- Fury Warrior Subclass -->
+    <content contentuid="h8d2875a5g4c2ag482fg9158g98f8d100d978" version="1">Fury Warrior</content>
+    <content contentuid="h151545dbg38fdg42d8gbfe8g784683acd258" version="1">A relentless berserker who dual-wields weapons with reckless abandon. Fury Warriors thrive in extended combat, building rage through a flurry of strikes and entering an enraged state of unstoppable fury.</content>
+    
+    <!-- Protection Warrior Subclass -->
+    <content contentuid="hc4f8321dgffefg447fgb8fagd3f964cc05d8" version="1">Protection Warrior</content>
+    <content contentuid="hd276f0e5g1198g4d05g9a64ga3a38e97aea2" version="1">An indomitable defender who uses shield and heavy armor to protect allies. Protection Warriors generate rage through absorbing and blocking attacks, becoming an immovable wall between their party and danger.</content>
+    
+    <!-- ========================================
+         RAGE RESOURCE
+         ========================================
+    -->
+    
+    <content contentuid="hdffb5cfegff1fg4209gb239ga15ec5d929ee" version="1">Rage</content>
+    <content contentuid="h2483ce0dg3709g4983g8aacg8dde1c406c97" version="1">The warrior's burning fury, fueling their most powerful abilities. Maximum 100 Rage.</content>
+    
+    <!-- ========================================
+         STAT FILE ABILITIES (247 entries)
+         ========================================
+    -->
+        <!-- ======================================== 
+         PASSIVE (161 entries)
+         ======================================== 
+    -->
+
+    <!-- WAR_Lightning_Strikes -->
+    <content contentuid="h78fe4967g0001g0000g0000g000000000001" version="1">Lightning Strikes</content>
+    <content contentuid="h78fe4967g0002g0000g0000g000000000001" version="1">Lightning Strikes - Description pending</content>
+
+    <!-- WAR_Crashing_Thunder -->
+    <content contentuid="h78fe4967g0003g0000g0000g000000000001" version="1">Crashing Thunder</content>
+    <content contentuid="h78fe4967g0004g0000g0000g000000000001" version="1">Crashing Thunder - Description pending</content>
+
+    <!-- WAR_Avatar_of_the_Storm -->
+    <content contentuid="h78fe4967g0005g0000g0000g000000000001" version="1">Avatar of the Storm</content>
+    <content contentuid="h78fe4967g0006g0000g0000g000000000001" version="1">Avatar of the Storm - Description pending</content>
+
+    <!-- WAR_Reap_the_Storm -->
+    <content contentuid="h78fe4967g0007g0000g0000g000000000001" version="1">Reap the Storm</content>
+    <content contentuid="h78fe4967g0008g0000g0000g000000000001" version="1">Reap the Storm - Description pending</content>
+
+    <!-- WAR_Slayer_s_Dominance -->
+    <content contentuid="h78fe4967g0009g0000g0000g000000000001" version="1">Slayers Dominance</content>
+    <content contentuid="h78fe4967g000ag0000g0000g000000000001" version="1">Slayers Dominance - Description pending</content>
+
+    <!-- WAR_Dominance_of_the_Colossus -->
+    <content contentuid="h78fe4967g000bg0000g0000g000000000001" version="1">Dominance of the Colossus</content>
+    <content contentuid="h78fe4967g000cg0000g0000g000000000001" version="1">Dominance of the Colossus - Description pending</content>
+
+    <!-- WAR_Slayer_s_Dominance -->
+    <content contentuid="h78fe4967g000dg0000g0000g000000000001" version="1">Slayers Dominance</content>
+    <content contentuid="h78fe4967g000eg0000g0000g000000000001" version="1">Slayers Dominance - Description pending</content>
+
+    <!-- WAR_Brutal_Finish -->
+    <content contentuid="h78fe4967g000fg0000g0000g000000000001" version="1">Brutal Finish</content>
+    <content contentuid="h78fe4967g0010g0000g0000g000000000001" version="1">Brutal Finish - Description pending</content>
+
+    <!-- WAR_Slayer_s_Malice -->
+    <content contentuid="h78fe4967g0011g0000g0000g000000000001" version="1">Slayer&apos;s Malice</content>
+    <content contentuid="h78fe4967g0012g0000g0000g000000000001" version="1">Slayer&apos;s Malice - Description pending</content>
+
+    <!-- WAR_Seasoned_Soldier -->
+    <content contentuid="h78fe4967g0013g0000g0000g000000000001" version="1">Seasoned Soldier</content>
+    <content contentuid="h78fe4967g0014g0000g0000g000000000001" version="1">Seasoned Soldier - Description pending</content>
+
+    <!-- WAR_Titan_s_Grip -->
+    <content contentuid="h78fe4967g0015g0000g0000g000000000001" version="1">Titan&apos;s Grip</content>
+    <content contentuid="h78fe4967g0016g0000g0000g000000000001" version="1">Titan&apos;s Grip - Description pending</content>
+
+    <!-- WAR_Mastery_Critical_Block -->
+    <content contentuid="h78fe4967g0017g0000g0000g000000000001" version="1">Mastery: Critical Block</content>
+    <content contentuid="h78fe4967g0018g0000g0000g000000000001" version="1">Mastery: Critical Block - Description pending</content>
+
+    <!-- WAR_Mastery_Deep_Wounds -->
+    <content contentuid="h78fe4967g0019g0000g0000g000000000001" version="1">Mastery: Deep Wounds</content>
+    <content contentuid="h78fe4967g001ag0000g0000g000000000001" version="1">Mastery: Deep Wounds - Description pending</content>
+
+    <!-- WAR_Mastery_Unshackled_Fury -->
+    <content contentuid="h78fe4967g001bg0000g0000g000000000001" version="1">Mastery: Unshackled Fury</content>
+    <content contentuid="h78fe4967g001cg0000g0000g000000000001" version="1">Mastery: Unshackled Fury - Description pending</content>
+
+    <!-- WAR_Fast_Footwork -->
+    <content contentuid="h78fe4967g001dg0000g0000g000000000001" version="1">Fast Footwork</content>
+    <content contentuid="h78fe4967g001eg0000g0000g000000000001" version="1">Fast Footwork - Description pending</content>
+
+    <!-- WAR_War_Machine -->
+    <content contentuid="h78fe4967g001fg0000g0000g000000000001" version="1">War Machine</content>
+    <content contentuid="h78fe4967g0020g0000g0000g000000000001" version="1">War Machine - Description pending</content>
+
+    <!-- WAR_Leeching_Strikes -->
+    <content contentuid="h78fe4967g0021g0000g0000g000000000001" version="1">Leeching Strikes</content>
+    <content contentuid="h78fe4967g0022g0000g0000g000000000001" version="1">Leeching Strikes - Description pending</content>
+
+    <!-- WAR_Riposte -->
+    <content contentuid="h78fe4967g0023g0000g0000g000000000001" version="1">Riposte</content>
+    <content contentuid="h78fe4967g0024g0000g0000g000000000001" version="1">Riposte - Description pending</content>
+
+    <!-- WAR_Martial_Prowess -->
+    <content contentuid="h78fe4967g0025g0000g0000g000000000001" version="1">Martial Prowess</content>
+    <content contentuid="h78fe4967g0026g0000g0000g000000000001" version="1">Martial Prowess - Description pending</content>
+
+    <!-- WAR_Improved_Execute -->
+    <content contentuid="h78fe4967g0027g0000g0000g000000000001" version="1">Improved Execute</content>
+    <content contentuid="h78fe4967g0028g0000g0000g000000000001" version="1">Improved Execute - Description pending</content>
+
+    <!-- WAR_Frenzied_Enrage -->
+    <content contentuid="h78fe4967g0029g0000g0000g000000000001" version="1">Frenzied Enrage</content>
+    <content contentuid="h78fe4967g002ag0000g0000g000000000001" version="1">Frenzied Enrage - Description pending</content>
+
+    <!-- WAR_Powerful_Enrage -->
+    <content contentuid="h78fe4967g002bg0000g0000g000000000001" version="1">Powerful Enrage</content>
+    <content contentuid="h78fe4967g002cg0000g0000g000000000001" version="1">Powerful Enrage - Description pending</content>
+
+    <!-- WAR_Brace_For_Impact -->
+    <content contentuid="h78fe4967g002dg0000g0000g000000000001" version="1">Brace For Impact</content>
+    <content contentuid="h78fe4967g002eg0000g0000g000000000001" version="1">Brace For Impact - Description pending</content>
+
+    <!-- WAR_Armor_Specialization -->
+    <content contentuid="h78fe4967g002fg0000g0000g000000000001" version="1">Armor Specialization</content>
+    <content contentuid="h78fe4967g0030g0000g0000g000000000001" version="1">Armor Specialization - Description pending</content>
+
+    <!-- WAR_Fight_Through_the_Flames -->
+    <content contentuid="h78fe4967g0031g0000g0000g000000000001" version="1">Fight Through the Flames</content>
+    <content contentuid="h78fe4967g0032g0000g0000g000000000001" version="1">Fight Through the Flames - Description pending</content>
+
+    <!-- WAR_Devastator -->
+    <content contentuid="h78fe4967g0033g0000g0000g000000000001" version="1">Devastator</content>
+    <content contentuid="h78fe4967g0034g0000g0000g000000000001" version="1">Devastator - Description pending</content>
+
+    <!-- WAR_Frothing_Berserker -->
+    <content contentuid="h78fe4967g0035g0000g0000g000000000001" version="1">Frothing Berserker</content>
+    <content contentuid="h78fe4967g0036g0000g0000g000000000001" version="1">Frothing Berserker - Description pending</content>
+
+    <!-- WAR_Bounding_Stride -->
+    <content contentuid="h78fe4967g0037g0000g0000g000000000001" version="1">Bounding Stride</content>
+    <content contentuid="h78fe4967g0038g0000g0000g000000000001" version="1">Bounding Stride - Description pending</content>
+
+    <!-- WAR_Pain_and_Gain -->
+    <content contentuid="h78fe4967g0039g0000g0000g000000000001" version="1">Pain and Gain</content>
+    <content contentuid="h78fe4967g003ag0000g0000g000000000001" version="1">Pain and Gain - Description pending</content>
+
+    <!-- WAR_Improved_Overpower -->
+    <content contentuid="h78fe4967g003bg0000g0000g000000000001" version="1">Improved Overpower</content>
+    <content contentuid="h78fe4967g003cg0000g0000g000000000001" version="1">Improved Overpower - Description pending</content>
+
+    <!-- WAR_Bloodsurge -->
+    <content contentuid="h78fe4967g003dg0000g0000g000000000001" version="1">Bloodsurge</content>
+    <content contentuid="h78fe4967g003eg0000g0000g000000000001" version="1">Bloodsurge - Description pending</content>
+
+    <!-- WAR_Fueled_by_Violence -->
+    <content contentuid="h78fe4967g003fg0000g0000g000000000001" version="1">Fueled by Violence</content>
+    <content contentuid="h78fe4967g0040g0000g0000g000000000001" version="1">Fueled by Violence - Description pending</content>
+
+    <!-- WAR_Storm_Wall -->
+    <content contentuid="h78fe4967g0041g0000g0000g000000000001" version="1">Storm Wall</content>
+    <content contentuid="h78fe4967g0042g0000g0000g000000000001" version="1">Storm Wall - Description pending</content>
+
+    <!-- WAR_Sudden_Death -->
+    <content contentuid="h78fe4967g0043g0000g0000g000000000001" version="1">Sudden Death</content>
+    <content contentuid="h78fe4967g0044g0000g0000g000000000001" version="1">Sudden Death - Description pending</content>
+
+    <!-- WAR_Fervor_of_Battle -->
+    <content contentuid="h78fe4967g0045g0000g0000g000000000001" version="1">Fervor of Battle</content>
+    <content contentuid="h78fe4967g0046g0000g0000g000000000001" version="1">Fervor of Battle - Description pending</content>
+
+    <!-- WAR_Improved_Bloodthirst -->
+    <content contentuid="h78fe4967g0047g0000g0000g000000000001" version="1">Improved Bloodthirst</content>
+    <content contentuid="h78fe4967g0048g0000g0000g000000000001" version="1">Improved Bloodthirst - Description pending</content>
+
+    <!-- WAR_Fresh_Meat -->
+    <content contentuid="h78fe4967g0049g0000g0000g000000000001" version="1">Fresh Meat</content>
+    <content contentuid="h78fe4967g004ag0000g0000g000000000001" version="1">Fresh Meat - Description pending</content>
+
+    <!-- WAR_Warpaint -->
+    <content contentuid="h78fe4967g004bg0000g0000g000000000001" version="1">Warpaint</content>
+    <content contentuid="h78fe4967g004cg0000g0000g000000000001" version="1">Warpaint - Description pending</content>
+
+    <!-- WAR_Invigorating_Fury -->
+    <content contentuid="h78fe4967g004dg0000g0000g000000000001" version="1">Invigorating Fury</content>
+    <content contentuid="h78fe4967g004eg0000g0000g000000000001" version="1">Invigorating Fury - Description pending</content>
+
+    <!-- WAR_Cruelty -->
+    <content contentuid="h78fe4967g004fg0000g0000g000000000001" version="1">Cruelty</content>
+    <content contentuid="h78fe4967g0050g0000g0000g000000000001" version="1">Cruelty - Description pending</content>
+
+    <!-- WAR_Best_Served_Cold -->
+    <content contentuid="h78fe4967g0051g0000g0000g000000000001" version="1">Best Served Cold</content>
+    <content contentuid="h78fe4967g0052g0000g0000g000000000001" version="1">Best Served Cold - Description pending</content>
+
+    <!-- WAR_Strategist -->
+    <content contentuid="h78fe4967g0053g0000g0000g000000000001" version="1">Strategist</content>
+    <content contentuid="h78fe4967g0054g0000g0000g000000000001" version="1">Strategist - Description pending</content>
+
+    <!-- WAR_Grant_Extra_Attack -->
+    <content contentuid="h78fe4967g0055g0000g0000g000000000001" version="1">Grant Extra Attack</content>
+    <content contentuid="h78fe4967g0056g0000g0000g000000000001" version="1">Grant Extra Attack - Description pending</content>
+
+    <!-- WAR_Barbaric_Training -->
+    <content contentuid="h78fe4967g0057g0000g0000g000000000001" version="1">Barbaric Training</content>
+    <content contentuid="h78fe4967g0058g0000g0000g000000000001" version="1">Barbaric Training - Description pending</content>
+
+    <!-- WAR_Tactician -->
+    <content contentuid="h78fe4967g0059g0000g0000g000000000001" version="1">Tactician</content>
+    <content contentuid="h78fe4967g005ag0000g0000g000000000001" version="1">Tactician - Description pending</content>
+
+    <!-- WAR_Impale -->
+    <content contentuid="h78fe4967g005bg0000g0000g000000000001" version="1">Impale</content>
+    <content contentuid="h78fe4967g005cg0000g0000g000000000001" version="1">Impale - Description pending</content>
+
+    <!-- WAR_Focus_in_Chaos -->
+    <content contentuid="h78fe4967g005dg0000g0000g000000000001" version="1">Focus in Chaos</content>
+    <content contentuid="h78fe4967g005eg0000g0000g000000000001" version="1">Focus in Chaos - Description pending</content>
+
+    <!-- WAR_Improved_Raging_Blow -->
+    <content contentuid="h78fe4967g005fg0000g0000g000000000001" version="1">Improved Raging Blow</content>
+    <content contentuid="h78fe4967g0060g0000g0000g000000000001" version="1">Improved Raging Blow - Description pending</content>
+
+    <!-- WAR_Instigate -->
+    <content contentuid="h78fe4967g0061g0000g0000g000000000001" version="1">Instigate</content>
+    <content contentuid="h78fe4967g0062g0000g0000g000000000001" version="1">Instigate - Description pending</content>
+
+    <!-- WAR_Rend -->
+    <content contentuid="h78fe4967g0063g0000g0000g000000000001" version="1">Rend</content>
+    <content contentuid="h78fe4967g0064g0000g0000g000000000001" version="1">Rend - Description pending</content>
+
+    <!-- WAR_Brutal_Vitality -->
+    <content contentuid="h78fe4967g0065g0000g0000g000000000001" version="1">Brutal Vitality</content>
+    <content contentuid="h78fe4967g0066g0000g0000g000000000001" version="1">Brutal Vitality - Description pending</content>
+
+    <!-- WAR_Honed_Reflexes -->
+    <content contentuid="h78fe4967g0067g0000g0000g000000000001" version="1">Honed Reflexes</content>
+    <content contentuid="h78fe4967g0068g0000g0000g000000000001" version="1">Honed Reflexes - Description pending</content>
+
+    <!-- WAR_Crushing_Force -->
+    <content contentuid="h78fe4967g0069g0000g0000g000000000001" version="1">Crushing Force</content>
+    <content contentuid="h78fe4967g006ag0000g0000g000000000001" version="1">Crushing Force - Description pending</content>
+
+    <!-- WAR_Bitter_Immunity -->
+    <content contentuid="h78fe4967g006bg0000g0000g000000000001" version="1">Bitter Immunity</content>
+    <content contentuid="h78fe4967g006cg0000g0000g000000000001" version="1">Bitter Immunity - Description pending</content>
+
+    <!-- WAR_Overwhelming_Rage -->
+    <content contentuid="h78fe4967g006dg0000g0000g000000000001" version="1">Overwhelming Rage</content>
+    <content contentuid="h78fe4967g006eg0000g0000g000000000001" version="1">Overwhelming Rage - Description pending</content>
+
+    <!-- WAR_Rumbling_Earth -->
+    <content contentuid="h78fe4967g006fg0000g0000g000000000001" version="1">Rumbling Earth</content>
+    <content contentuid="h78fe4967g0070g0000g0000g000000000001" version="1">Rumbling Earth - Description pending</content>
+
+    <!-- WAR_Reinforced_Plates -->
+    <content contentuid="h78fe4967g0071g0000g0000g000000000001" version="1">Reinforced Plates</content>
+    <content contentuid="h78fe4967g0072g0000g0000g000000000001" version="1">Reinforced Plates - Description pending</content>
+
+    <!-- WAR_Finishing_Blows -->
+    <content contentuid="h78fe4967g0073g0000g0000g000000000001" version="1">Finishing Blows</content>
+    <content contentuid="h78fe4967g0074g0000g0000g000000000001" version="1">Finishing Blows - Description pending</content>
+
+    <!-- WAR_Anger_Management -->
+    <content contentuid="h78fe4967g0075g0000g0000g000000000001" version="1">Anger Management</content>
+    <content contentuid="h78fe4967g0076g0000g0000g000000000001" version="1">Anger Management - Description pending</content>
+
+    <!-- WAR_Spiteful_Serenity -->
+    <content contentuid="h78fe4967g0077g0000g0000g000000000001" version="1">Spiteful Serenity</content>
+    <content contentuid="h78fe4967g0078g0000g0000g000000000001" version="1">Spiteful Serenity - Description pending</content>
+
+    <!-- WAR_Exhilarating_Blows -->
+    <content contentuid="h78fe4967g0079g0000g0000g000000000001" version="1">Exhilarating Blows</content>
+    <content contentuid="h78fe4967g007ag0000g0000g000000000001" version="1">Exhilarating Blows - Description pending</content>
+
+    <!-- WAR_Collateral_Damage -->
+    <content contentuid="h78fe4967g007bg0000g0000g000000000001" version="1">Collateral Damage</content>
+    <content contentuid="h78fe4967g007cg0000g0000g000000000001" version="1">Collateral Damage - Description pending</content>
+
+    <!-- WAR_Single -->
+    <content contentuid="h78fe4967g007dg0000g0000g000000000001" version="1">Single</content>
+    <content contentuid="h78fe4967g007eg0000g0000g000000000001" version="1">Single - Description pending</content>
+
+    <!-- WAR_Cold_Steel_Hot_Blood -->
+    <content contentuid="h78fe4967g007fg0000g0000g000000000001" version="1">Cold Steel &amp; Hot Blood</content>
+    <content contentuid="h78fe4967g0080g0000g0000g000000000001" version="1">Cold Steel &amp; Hot Blood - Description pending</content>
+
+    <!-- WAR_Vicious_Contempt -->
+    <content contentuid="h78fe4967g0081g0000g0000g000000000001" version="1">Vicious Contempt</content>
+    <content contentuid="h78fe4967g0082g0000g0000g000000000001" version="1">Vicious Contempt - Description pending</content>
+
+    <!-- WAR_Frenzy -->
+    <content contentuid="h78fe4967g0083g0000g0000g000000000001" version="1">Frenzy</content>
+    <content contentuid="h78fe4967g0084g0000g0000g000000000001" version="1">Frenzy - Description pending</content>
+
+    <!-- WAR_Hack_and_Slash -->
+    <content contentuid="h78fe4967g0085g0000g0000g000000000001" version="1">Hack and Slash</content>
+    <content contentuid="h78fe4967g0086g0000g0000g000000000001" version="1">Hack and Slash - Description pending</content>
+
+    <!-- WAR_Slaughtering_Strikes -->
+    <content contentuid="h78fe4967g0087g0000g0000g000000000001" version="1">Slaughtering Strikes</content>
+    <content contentuid="h78fe4967g0088g0000g0000g000000000001" version="1">Slaughtering Strikes - Description pending</content>
+
+    <!-- WAR_Ashen_Juggernaut -->
+    <content contentuid="h78fe4967g0089g0000g0000g000000000001" version="1">Ashen Juggernaut</content>
+    <content contentuid="h78fe4967g008ag0000g0000g000000000001" version="1">Ashen Juggernaut - Description pending</content>
+
+    <!-- WAR_Improved_Whirlwind -->
+    <content contentuid="h78fe4967g008bg0000g0000g000000000001" version="1">Improved Whirlwind</content>
+    <content contentuid="h78fe4967g008cg0000g0000g000000000001" version="1">Improved Whirlwind - Description pending</content>
+
+    <!-- WAR_Unnerving_Focus -->
+    <content contentuid="h78fe4967g008dg0000g0000g000000000001" version="1">Unnerving Focus</content>
+    <content contentuid="h78fe4967g008eg0000g0000g000000000001" version="1">Unnerving Focus - Description pending</content>
+
+    <!-- WAR_Bolster -->
+    <content contentuid="h78fe4967g008fg0000g0000g000000000001" version="1">Bolster</content>
+    <content contentuid="h78fe4967g0090g0000g0000g000000000001" version="1">Bolster - Description pending</content>
+
+    <!-- WAR_Thunderlord -->
+    <content contentuid="h78fe4967g0091g0000g0000g000000000001" version="1">Thunderlord</content>
+    <content contentuid="h78fe4967g0092g0000g0000g000000000001" version="1">Thunderlord - Description pending</content>
+
+    <!-- WAR_Sudden_Death -->
+    <content contentuid="h78fe4967g0093g0000g0000g000000000001" version="1">Sudden Death</content>
+    <content contentuid="h78fe4967g0094g0000g0000g000000000001" version="1">Sudden Death - Description pending</content>
+
+    <!-- WAR_Heavy_Repercussions -->
+    <content contentuid="h78fe4967g0095g0000g0000g000000000001" version="1">Heavy Repercussions</content>
+    <content contentuid="h78fe4967g0096g0000g0000g000000000001" version="1">Heavy Repercussions - Description pending</content>
+
+    <!-- WAR_Punish -->
+    <content contentuid="h78fe4967g0097g0000g0000g000000000001" version="1">Punish</content>
+    <content contentuid="h78fe4967g0098g0000g0000g000000000001" version="1">Punish - Description pending</content>
+
+    <!-- WAR_Hunker_Down -->
+    <content contentuid="h78fe4967g0099g0000g0000g000000000001" version="1">Hunker Down</content>
+    <content contentuid="h78fe4967g009ag0000g0000g000000000001" version="1">Hunker Down - Description pending</content>
+
+    <!-- WAR_Vanguard -->
+    <content contentuid="h78fe4967g009bg0000g0000g000000000001" version="1">Vanguard</content>
+    <content contentuid="h78fe4967g009cg0000g0000g000000000001" version="1">Vanguard - Description pending</content>
+
+    <!-- WAR_Sidearm -->
+    <content contentuid="h78fe4967g009dg0000g0000g000000000001" version="1">Sidearm</content>
+    <content contentuid="h78fe4967g009eg0000g0000g000000000001" version="1">Sidearm - Description pending</content>
+
+    <!-- WAR_Double_Time -->
+    <content contentuid="h78fe4967g009fg0000g0000g000000000001" version="1">Double Time</content>
+    <content contentuid="h78fe4967g00a0g0000g0000g000000000001" version="1">Double Time - Description pending</content>
+
+    <!-- WAR_Seismic_Reverberation -->
+    <content contentuid="h78fe4967g00a1g0000g0000g000000000001" version="1">Seismic Reverberation</content>
+    <content contentuid="h78fe4967g00a2g0000g0000g000000000001" version="1">Seismic Reverberation - Description pending</content>
+
+    <!-- WAR_Concussive_Blows -->
+    <content contentuid="h78fe4967g00a3g0000g0000g000000000001" version="1">Concussive Blows</content>
+    <content contentuid="h78fe4967g00a4g0000g0000g000000000001" version="1">Concussive Blows - Description pending</content>
+
+    <!-- WAR_Bloodborne -->
+    <content contentuid="h78fe4967g00a5g0000g0000g000000000001" version="1">Bloodborne</content>
+    <content contentuid="h78fe4967g00a6g0000g0000g000000000001" version="1">Bloodborne - Description pending</content>
+
+    <!-- WAR_Dreadnaught -->
+    <content contentuid="h78fe4967g00a7g0000g0000g000000000001" version="1">Dreadnaught</content>
+    <content contentuid="h78fe4967g00a8g0000g0000g000000000001" version="1">Dreadnaught - Description pending</content>
+
+    <!-- WAR_Strength_of_Arms -->
+    <content contentuid="h78fe4967g00a9g0000g0000g000000000001" version="1">Strength of Arms</content>
+    <content contentuid="h78fe4967g00aag0000g0000g000000000001" version="1">Strength of Arms - Description pending</content>
+
+    <!-- WAR_In_For_The_Kill -->
+    <content contentuid="h78fe4967g00abg0000g0000g000000000001" version="1">In For The Kill</content>
+    <content contentuid="h78fe4967g00acg0000g0000g000000000001" version="1">In For The Kill - Description pending</content>
+
+    <!-- WAR_Test_of_Might -->
+    <content contentuid="h78fe4967g00adg0000g0000g000000000001" version="1">Test of Might</content>
+    <content contentuid="h78fe4967g00aeg0000g0000g000000000001" version="1">Test of Might - Description pending</content>
+
+    <!-- WAR_Blunt_Instruments -->
+    <content contentuid="h78fe4967g00afg0000g0000g000000000001" version="1">Blunt Instruments</content>
+    <content contentuid="h78fe4967g00b0g0000g0000g000000000001" version="1">Blunt Instruments - Description pending</content>
+
+    <!-- WAR_Massacre -->
+    <content contentuid="h78fe4967g00b1g0000g0000g000000000001" version="1">Massacre</content>
+    <content contentuid="h78fe4967g00b2g0000g0000g000000000001" version="1">Massacre - Description pending</content>
+
+    <!-- WAR_Storm_of_Swords -->
+    <content contentuid="h78fe4967g00b3g0000g0000g000000000001" version="1">Storm of Swords</content>
+    <content contentuid="h78fe4967g00b4g0000g0000g000000000001" version="1">Storm of Swords - Description pending</content>
+
+    <!-- WAR_Bloodcraze -->
+    <content contentuid="h78fe4967g00b5g0000g0000g000000000001" version="1">Bloodcraze</content>
+    <content contentuid="h78fe4967g00b6g0000g0000g000000000001" version="1">Bloodcraze - Description pending</content>
+
+    <!-- WAR_Wrath_and_Fury -->
+    <content contentuid="h78fe4967g00b7g0000g0000g000000000001" version="1">Wrath and Fury</content>
+    <content contentuid="h78fe4967g00b8g0000g0000g000000000001" version="1">Wrath and Fury - Description pending</content>
+
+    <!-- WAR_Meat_Cleaver -->
+    <content contentuid="h78fe4967g00b9g0000g0000g000000000001" version="1">Meat Cleaver</content>
+    <content contentuid="h78fe4967g00bag0000g0000g000000000001" version="1">Meat Cleaver - Description pending</content>
+
+    <!-- WAR_Tough_As_Nails -->
+    <content contentuid="h78fe4967g00bbg0000g0000g000000000001" version="1">Tough as Nails</content>
+    <content contentuid="h78fe4967g00bcg0000g0000g000000000001" version="1">Tough as Nails - Description pending</content>
+
+    <!-- WAR_Enduring_Defenses -->
+    <content contentuid="h78fe4967g00bdg0000g0000g000000000001" version="1">Enduring Defenses</content>
+    <content contentuid="h78fe4967g00beg0000g0000g000000000001" version="1">Enduring Defenses - Description pending</content>
+
+    <!-- WAR_Unyielding_Stance -->
+    <content contentuid="h78fe4967g00bfg0000g0000g000000000001" version="1">Unyielding Stance</content>
+    <content contentuid="h78fe4967g00c0g0000g0000g000000000001" version="1">Unyielding Stance - Description pending</content>
+
+    <!-- WAR_Red_Right_Hand -->
+    <content contentuid="h78fe4967g00c1g0000g0000g000000000001" version="1">Red Right Hand</content>
+    <content contentuid="h78fe4967g00c2g0000g0000g000000000001" version="1">Red Right Hand - Description pending</content>
+
+    <!-- WAR_Cruel_Strikes -->
+    <content contentuid="h78fe4967g00c3g0000g0000g000000000001" version="1">Cruel Strikes</content>
+    <content contentuid="h78fe4967g00c4g0000g0000g000000000001" version="1">Cruel Strikes - Description pending</content>
+
+    <!-- WAR_Wild_Strikes -->
+    <content contentuid="h78fe4967g00c5g0000g0000g000000000001" version="1">Wild Strikes</content>
+    <content contentuid="h78fe4967g00c6g0000g0000g000000000001" version="1">Wild Strikes - Description pending</content>
+
+    <!-- WAR_Dual_Wield_Specialization -->
+    <content contentuid="h78fe4967g00c7g0000g0000g000000000001" version="1">Dual Wield Specialization</content>
+    <content contentuid="h78fe4967g00c8g0000g0000g000000000001" version="1">Dual Wield Specialization - Description pending</content>
+
+    <!-- WAR_Armored_to_the_Teeth -->
+    <content contentuid="h78fe4967g00c9g0000g0000g000000000001" version="1">Armored to the Teeth</content>
+    <content contentuid="h78fe4967g00cag0000g0000g000000000001" version="1">Armored to the Teeth - Description pending</content>
+
+    <!-- WAR_Deft_Experience -->
+    <content contentuid="h78fe4967g00cbg0000g0000g000000000001" version="1">Deft Experience</content>
+    <content contentuid="h78fe4967g00ccg0000g0000g000000000001" version="1">Deft Experience - Description pending</content>
+
+    <!-- WAR_Valor_in_Victory -->
+    <content contentuid="h78fe4967g00cdg0000g0000g000000000001" version="1">Valor in Victory</content>
+    <content contentuid="h78fe4967g00ceg0000g0000g000000000001" version="1">Valor in Victory - Description pending</content>
+
+    <!-- WAR_Critical_Thinking -->
+    <content contentuid="h78fe4967g00cfg0000g0000g000000000001" version="1">Critical Thinking</content>
+    <content contentuid="h78fe4967g00d0g0000g0000g000000000001" version="1">Critical Thinking - Description pending</content>
+
+    <!-- WAR_Raging_Armaments -->
+    <content contentuid="h78fe4967g00d1g0000g0000g000000000001" version="1">Raging Armaments</content>
+    <content contentuid="h78fe4967g00d2g0000g0000g000000000001" version="1">Raging Armaments - Description pending</content>
+
+    <!-- WAR_Swift_Strikes -->
+    <content contentuid="h78fe4967g00d3g0000g0000g000000000001" version="1">Swift Strikes</content>
+    <content contentuid="h78fe4967g00d4g0000g0000g000000000001" version="1">Swift Strikes - Description pending</content>
+
+    <!-- WAR_Defender_s_Aegis -->
+    <content contentuid="h78fe4967g00d5g0000g0000g000000000001" version="1">Defender&apos;s Aegis</content>
+    <content contentuid="h78fe4967g00d6g0000g0000g000000000001" version="1">Defender&apos;s Aegis - Description pending</content>
+
+    <!-- WAR_Impenetrable_Wall -->
+    <content contentuid="h78fe4967g00d7g0000g0000g000000000001" version="1">Impenetrable Wall</content>
+    <content contentuid="h78fe4967g00d8g0000g0000g000000000001" version="1">Impenetrable Wall - Description pending</content>
+
+    <!-- WAR_Focused_Vigor -->
+    <content contentuid="h78fe4967g00d9g0000g0000g000000000001" version="1">Focused Vigor</content>
+    <content contentuid="h78fe4967g00dag0000g0000g000000000001" version="1">Focused Vigor - Description pending</content>
+
+    <!-- WAR_Shield_Specialization -->
+    <content contentuid="h78fe4967g00dbg0000g0000g000000000001" version="1">Shield Specialization</content>
+    <content contentuid="h78fe4967g00dcg0000g0000g000000000001" version="1">Shield Specialization - Description pending</content>
+
+    <!-- WAR_Enduring_Alacrity -->
+    <content contentuid="h78fe4967g00ddg0000g0000g000000000001" version="1">Enduring Alacrity</content>
+    <content contentuid="h78fe4967g00deg0000g0000g000000000001" version="1">Enduring Alacrity - Description pending</content>
+
+    <!-- WAR_Battlelord -->
+    <content contentuid="h78fe4967g00dfg0000g0000g000000000001" version="1">Battlelord</content>
+    <content contentuid="h78fe4967g00e0g0000g0000g000000000001" version="1">Battlelord - Description pending</content>
+
+    <!-- WAR_Bloodletting -->
+    <content contentuid="h78fe4967g00e1g0000g0000g000000000001" version="1">Bloodletting</content>
+    <content contentuid="h78fe4967g00e2g0000g0000g000000000001" version="1">Bloodletting - Description pending</content>
+
+    <!-- WAR_Sharpened_Blades -->
+    <content contentuid="h78fe4967g00e3g0000g0000g000000000001" version="1">Sharpened Blades</content>
+    <content contentuid="h78fe4967g00e4g0000g0000g000000000001" version="1">Sharpened Blades - Description pending</content>
+
+    <!-- WAR_Juggernaut -->
+    <content contentuid="h78fe4967g00e5g0000g0000g000000000001" version="1">Juggernaut</content>
+    <content contentuid="h78fe4967g00e6g0000g0000g000000000001" version="1">Juggernaut - Description pending</content>
+
+    <!-- WAR_Reckless_Abandon -->
+    <content contentuid="h78fe4967g00e7g0000g0000g000000000001" version="1">Reckless Abandon</content>
+    <content contentuid="h78fe4967g00e8g0000g0000g000000000001" version="1">Reckless Abandon - Description pending</content>
+
+    <!-- WAR_Booming_Voice -->
+    <content contentuid="h78fe4967g00e9g0000g0000g000000000001" version="1">Booming Voice</content>
+    <content contentuid="h78fe4967g00eag0000g0000g000000000001" version="1">Booming Voice - Description pending</content>
+
+    <!-- WAR_Indomitable -->
+    <content contentuid="h78fe4967g00ebg0000g0000g000000000001" version="1">Indomitable</content>
+    <content contentuid="h78fe4967g00ecg0000g0000g000000000001" version="1">Indomitable - Description pending</content>
+
+    <!-- WAR_Violent_Outburst -->
+    <content contentuid="h78fe4967g00edg0000g0000g000000000001" version="1">Violent Outburst</content>
+    <content contentuid="h78fe4967g00eeg0000g0000g000000000001" version="1">Violent Outburst - Description pending</content>
+
+    <!-- WAR_Heavy_Handed -->
+    <content contentuid="h78fe4967g00efg0000g0000g000000000001" version="1">Heavy Handed</content>
+    <content contentuid="h78fe4967g00f0g0000g0000g000000000001" version="1">Heavy Handed - Description pending</content>
+
+    <!-- WAR_Uproar -->
+    <content contentuid="h78fe4967g00f1g0000g0000g000000000001" version="1">Uproar</content>
+    <content contentuid="h78fe4967g00f2g0000g0000g000000000001" version="1">Uproar - Description pending</content>
+
+    <!-- WAR_Thunderous_Words -->
+    <content contentuid="h78fe4967g00f3g0000g0000g000000000001" version="1">Thunderous Words</content>
+    <content contentuid="h78fe4967g00f4g0000g0000g000000000001" version="1">Thunderous Words - Description pending</content>
+
+    <!-- WAR_Berserker_s_Torment -->
+    <content contentuid="h78fe4967g00f5g0000g0000g000000000001" version="1">Berserker&apos;s Torment</content>
+    <content contentuid="h78fe4967g00f6g0000g0000g000000000001" version="1">Berserker&apos;s Torment - Description pending</content>
+
+    <!-- WAR_Titan_s_Torment -->
+    <content contentuid="h78fe4967g00f7g0000g0000g000000000001" version="1">Titan&apos;s Torment</content>
+    <content contentuid="h78fe4967g00f8g0000g0000g000000000001" version="1">Titan&apos;s Torment - Description pending</content>
+
+    <!-- WAR_Piercing_Challenge -->
+    <content contentuid="h78fe4967g00f9g0000g0000g000000000001" version="1">Piercing Challenge</content>
+    <content contentuid="h78fe4967g00fag0000g0000g000000000001" version="1">Piercing Challenge - Description pending</content>
+
+    <!-- WAR_Champion_s_Might -->
+    <content contentuid="h78fe4967g00fbg0000g0000g000000000001" version="1">Champion&apos;s Might</content>
+    <content contentuid="h78fe4967g00fcg0000g0000g000000000001" version="1">Champion&apos;s Might - Description pending</content>
+
+    <!-- WAR_Fatality -->
+    <content contentuid="h78fe4967g00fdg0000g0000g000000000001" version="1">Fatality</content>
+    <content contentuid="h78fe4967g00feg0000g0000g000000000001" version="1">Fatality - Description pending</content>
+
+    <!-- WAR_Dance_of_Death -->
+    <content contentuid="h78fe4967g00ffg0000g0000g000000000001" version="1">Dance of Death</content>
+    <content contentuid="h78fe4967g0100g0000g0000g000000000001" version="1">Dance of Death - Description pending</content>
+
+    <!-- WAR_Unhinged -->
+    <content contentuid="h78fe4967g0101g0000g0000g000000000001" version="1">Unhinged</content>
+    <content contentuid="h78fe4967g0102g0000g0000g000000000001" version="1">Unhinged - Description pending</content>
+
+    <!-- WAR_Merciless_Bonegrinder -->
+    <content contentuid="h78fe4967g0103g0000g0000g000000000001" version="1">Merciless Bonegrinder</content>
+    <content contentuid="h78fe4967g0104g0000g0000g000000000001" version="1">Merciless Bonegrinder - Description pending</content>
+
+    <!-- WAR_Executioner_s_Precision -->
+    <content contentuid="h78fe4967g0105g0000g0000g000000000001" version="1">Executioner&apos;s Precision</content>
+    <content contentuid="h78fe4967g0106g0000g0000g000000000001" version="1">Executioner&apos;s Precision - Description pending</content>
+
+    <!-- WAR_Tenderize -->
+    <content contentuid="h78fe4967g0107g0000g0000g000000000001" version="1">Tenderize</content>
+    <content contentuid="h78fe4967g0108g0000g0000g000000000001" version="1">Tenderize - Description pending</content>
+
+    <!-- WAR_Storm_of_Steel -->
+    <content contentuid="h78fe4967g0109g0000g0000g000000000001" version="1">Storm of Steel</content>
+    <content contentuid="h78fe4967g010ag0000g0000g000000000001" version="1">Storm of Steel - Description pending</content>
+
+    <!-- WAR_Unbridled_Ferocity -->
+    <content contentuid="h78fe4967g010bg0000g0000g000000000001" version="1">Unbridled Ferocity</content>
+    <content contentuid="h78fe4967g010cg0000g0000g000000000001" version="1">Unbridled Ferocity - Description pending</content>
+
+    <!-- WAR_Depths_of_Insanity -->
+    <content contentuid="h78fe4967g010dg0000g0000g000000000001" version="1">Depths of Insanity</content>
+    <content contentuid="h78fe4967g010eg0000g0000g000000000001" version="1">Depths of Insanity - Description pending</content>
+
+    <!-- WAR_Dancing_Blades -->
+    <content contentuid="h78fe4967g010fg0000g0000g000000000001" version="1">Dancing Blades</content>
+    <content contentuid="h78fe4967g0110g0000g0000g000000000001" version="1">Dancing Blades - Description pending</content>
+
+    <!-- WAR_Titanic_Rage -->
+    <content contentuid="h78fe4967g0111g0000g0000g000000000001" version="1">Titanic Rage</content>
+    <content contentuid="h78fe4967g0112g0000g0000g000000000001" version="1">Titanic Rage - Description pending</content>
+
+    <!-- WAR_Shield_Charge -->
+    <content contentuid="h78fe4967g0113g0000g0000g000000000001" version="1">Shield Charge</content>
+    <content contentuid="h78fe4967g0114g0000g0000g000000000001" version="1">Shield Charge - Description pending</content>
+
+    <!-- WAR_Battle_Scarred_Veteran -->
+    <content contentuid="h78fe4967g0115g0000g0000g000000000001" version="1">Battle-Scarred Veteran</content>
+    <content contentuid="h78fe4967g0116g0000g0000g000000000001" version="1">Battle-Scarred Veteran - Description pending</content>
+
+    <!-- WAR_Whirling_Blade -->
+    <content contentuid="h78fe4967g0117g0000g0000g000000000001" version="1">Whirling Blade</content>
+    <content contentuid="h78fe4967g0118g0000g0000g000000000001" version="1">Whirling Blade - Description pending</content>
+
+    <!-- WAR_Ground_Current -->
+    <content contentuid="h78fe4967g0119g0000g0000g000000000001" version="1">Ground Current</content>
+    <content contentuid="h78fe4967g011ag0000g0000g000000000001" version="1">Ground Current - Description pending</content>
+
+    <!-- WAR_Strength_of_the_Mountain -->
+    <content contentuid="h78fe4967g011bg0000g0000g000000000001" version="1">Strength of the Mountain</content>
+    <content contentuid="h78fe4967g011cg0000g0000g000000000001" version="1">Strength of the Mountain - Description pending</content>
+
+    <!-- WAR_Colossal_Might -->
+    <content contentuid="h78fe4967g011dg0000g0000g000000000001" version="1">Colossal Might</content>
+    <content contentuid="h78fe4967g011eg0000g0000g000000000001" version="1">Colossal Might - Description pending</content>
+
+    <!-- WAR_Keep_your_feet_on_the_Ground -->
+    <content contentuid="h78fe4967g011fg0000g0000g000000000001" version="1">Keep your feet on the Ground</content>
+    <content contentuid="h78fe4967g0120g0000g0000g000000000001" version="1">Keep your feet on the Ground - Description pending</content>
+
+    <!-- WAR_Tide_of_Battle -->
+    <content contentuid="h78fe4967g0121g0000g0000g000000000001" version="1">Tide of Battle</content>
+    <content contentuid="h78fe4967g0122g0000g0000g000000000001" version="1">Tide of Battle - Description pending</content>
+
+    <!-- WAR_No_Stranger_to_Pain -->
+    <content contentuid="h78fe4967g0123g0000g0000g000000000001" version="1">No Stranger to Pain</content>
+    <content contentuid="h78fe4967g0124g0000g0000g000000000001" version="1">No Stranger to Pain - Description pending</content>
+
+    <!-- WAR_Thorim_s_Might -->
+    <content contentuid="h78fe4967g0125g0000g0000g000000000001" version="1">Thorims Might</content>
+    <content contentuid="h78fe4967g0126g0000g0000g000000000001" version="1">Thorims Might - Description pending</content>
+
+    <!-- WAR_Burst_of_Power -->
+    <content contentuid="h78fe4967g0127g0000g0000g000000000001" version="1">Burst of Power</content>
+    <content contentuid="h78fe4967g0128g0000g0000g000000000001" version="1">Burst of Power - Description pending</content>
+
+    <!-- WAR_Precise_Might -->
+    <content contentuid="h78fe4967g0129g0000g0000g000000000001" version="1">Precise Might</content>
+    <content contentuid="h78fe4967g012ag0000g0000g000000000001" version="1">Precise Might - Description pending</content>
+
+    <!-- WAR_Mountain_of_Muscle_and_Scars -->
+    <content contentuid="h78fe4967g012bg0000g0000g000000000001" version="1">Mountain of Muscle and Scars</content>
+    <content contentuid="h78fe4967g012cg0000g0000g000000000001" version="1">Mountain of Muscle and Scars - Description pending</content>
+
+    <!-- WAR_Martial_Expert -->
+    <content contentuid="h78fe4967g012dg0000g0000g000000000001" version="1">Martial Expert</content>
+    <content contentuid="h78fe4967g012eg0000g0000g000000000001" version="1">Martial Expert - Description pending</content>
+
+    <!-- WAR_Imminent_Demise -->
+    <content contentuid="h78fe4967g012fg0000g0000g000000000001" version="1">Imminent Demise</content>
+    <content contentuid="h78fe4967g0130g0000g0000g000000000001" version="1">Imminent Demise - Description pending</content>
+
+    <!-- WAR_Arterial_Bleed -->
+    <content contentuid="h78fe4967g0131g0000g0000g000000000001" version="1">Arterial Bleed</content>
+    <content contentuid="h78fe4967g0132g0000g0000g000000000001" version="1">Arterial Bleed - Description pending</content>
+
+    <!-- WAR_Death_Drive -->
+    <content contentuid="h78fe4967g0133g0000g0000g000000000001" version="1">Death Drive</content>
+    <content contentuid="h78fe4967g0134g0000g0000g000000000001" version="1">Death Drive - Description pending</content>
+
+    <!-- WAR_Flashing_Skies -->
+    <content contentuid="h78fe4967g0135g0000g0000g000000000001" version="1">Flashing Skies</content>
+    <content contentuid="h78fe4967g0136g0000g0000g000000000001" version="1">Flashing Skies - Description pending</content>
+
+    <!-- WAR_Practiced_Strikes -->
+    <content contentuid="h78fe4967g0137g0000g0000g000000000001" version="1">Practiced Strikes</content>
+    <content contentuid="h78fe4967g0138g0000g0000g000000000001" version="1">Practiced Strikes - Description pending</content>
+
+    <!-- WAR_Show_No_Mercy -->
+    <content contentuid="h78fe4967g0139g0000g0000g000000000001" version="1">Show No Mercy</content>
+    <content contentuid="h78fe4967g013ag0000g0000g000000000001" version="1">Show No Mercy - Description pending</content>
+
+    <!-- WAR_Unrelenting_Onslaught -->
+    <content contentuid="h78fe4967g013bg0000g0000g000000000001" version="1">Unrelenting Onslaught</content>
+    <content contentuid="h78fe4967g013cg0000g0000g000000000001" version="1">Unrelenting Onslaught - Description pending</content>
+
+    <!-- WAR_Opportunist -->
+    <content contentuid="h78fe4967g013dg0000g0000g000000000001" version="1">Opportunist</content>
+    <content contentuid="h78fe4967g013eg0000g0000g000000000001" version="1">Opportunist - Description pending</content>
+
+    <!-- WAR_Overwhelming_Blades -->
+    <content contentuid="h78fe4967g013fg0000g0000g000000000001" version="1">Overwhelming Blades</content>
+    <content contentuid="h78fe4967g0140g0000g0000g000000000001" version="1">Overwhelming Blades - Description pending</content>
+
+    <!-- WAR_Relentless_Pursuit -->
+    <content contentuid="h78fe4967g0141g0000g0000g000000000001" version="1">Relentless Pursuit</content>
+    <content contentuid="h78fe4967g0142g0000g0000g000000000001" version="1">Relentless Pursuit - Description pending</content>
+
+    <!-- ======================================== 
+         SPELL_ZONE (12 entries)
+         ======================================== 
+    -->
+
+    <!-- Zone_WAR_Bladestorm -->
+    <content contentuid="h78fe4967g0143g0000g0000g000000000001" version="1">Bladestorm</content>
+    <content contentuid="h78fe4967g0144g0000g0000g000000000001" version="1">Bladestorm - Warrior ability</content>
+
+    <!-- Zone_WAR_Cleave -->
+    <content contentuid="h78fe4967g0145g0000g0000g000000000001" version="1">Cleave</content>
+    <content contentuid="h78fe4967g0146g0000g0000g000000000001" version="1">Cleave - Warrior ability</content>
+
+    <!-- Zone_WAR_Earthquake -->
+    <content contentuid="h78fe4967g0147g0000g0000g000000000001" version="1">Earthquake</content>
+    <content contentuid="h78fe4967g0148g0000g0000g000000000001" version="1">Earthquake - Warrior ability</content>
+
+    <!-- Zone_WAR_Odyn_s_Fury -->
+    <content contentuid="h78fe4967g0149g0000g0000g000000000001" version="1">Odyn s Fury</content>
+    <content contentuid="h78fe4967g014ag0000g0000g000000000001" version="1">Odyn s Fury - Warrior ability</content>
+
+    <!-- Zone_WAR_Ravager -->
+    <content contentuid="h78fe4967g014bg0000g0000g000000000001" version="1">Ravager</content>
+    <content contentuid="h78fe4967g014cg0000g0000g000000000001" version="1">Ravager - Warrior ability</content>
+
+    <!-- Zone_WAR_Revenge -->
+    <content contentuid="h78fe4967g014dg0000g0000g000000000001" version="1">Revenge</content>
+    <content contentuid="h78fe4967g014eg0000g0000g000000000001" version="1">Revenge - Warrior ability</content>
+
+    <!-- Zone_WAR_Shockwave -->
+    <content contentuid="h78fe4967g014fg0000g0000g000000000001" version="1">Shockwave</content>
+    <content contentuid="h78fe4967g0150g0000g0000g000000000001" version="1">Shockwave - Warrior ability</content>
+
+    <!-- Zone_WAR_Thunder_Blast -->
+    <content contentuid="h78fe4967g0151g0000g0000g000000000001" version="1">Thunder Blast</content>
+    <content contentuid="h78fe4967g0152g0000g0000g000000000001" version="1">Thunder Blast - Warrior ability</content>
+
+    <!-- Zone_WAR_Thunder_Clap -->
+    <content contentuid="h78fe4967g0153g0000g0000g000000000001" version="1">Thunder Clap</content>
+    <content contentuid="h78fe4967g0154g0000g0000g000000000001" version="1">Thunder Clap - Warrior ability</content>
+
+    <!-- Zone_WAR_Thunderous_Roar -->
+    <content contentuid="h78fe4967g0155g0000g0000g000000000001" version="1">Thunderous Roar</content>
+    <content contentuid="h78fe4967g0156g0000g0000g000000000001" version="1">Thunderous Roar - Warrior ability</content>
+
+    <!-- Zone_WAR_Warbreaker -->
+    <content contentuid="h78fe4967g0157g0000g0000g000000000001" version="1">Warbreaker</content>
+    <content contentuid="h78fe4967g0158g0000g0000g000000000001" version="1">Warbreaker - Warrior ability</content>
+
+    <!-- Zone_WAR_Whirlwind -->
+    <content contentuid="h78fe4967g0159g0000g0000g000000000001" version="1">Whirlwind</content>
+    <content contentuid="h78fe4967g015ag0000g0000g000000000001" version="1">Whirlwind - Warrior ability</content>
+
+    <!-- ======================================== 
+         SPELL_SHOUT (21 entries)
+         ======================================== 
+    -->
+
+    <!-- Shout_WAR_Avatar -->
+    <content contentuid="h78fe4967g015bg0000g0000g000000000001" version="1">Avatar</content>
+    <content contentuid="h78fe4967g015cg0000g0000g000000000001" version="1">Avatar - Warrior ability</content>
+
+    <!-- Shout_WAR_Battle_Shout -->
+    <content contentuid="h78fe4967g015dg0000g0000g000000000001" version="1">Battle Shout</content>
+    <content contentuid="h78fe4967g015eg0000g0000g000000000001" version="1">Battle Shout - Warrior ability</content>
+
+    <!-- Shout_WAR_Battle_Stance -->
+    <content contentuid="h78fe4967g015fg0000g0000g000000000001" version="1">Battle Stance</content>
+    <content contentuid="h78fe4967g0160g0000g0000g000000000001" version="1">Battle Stance - Warrior ability</content>
+
+    <!-- Shout_WAR_Berserker_Rage -->
+    <content contentuid="h78fe4967g0161g0000g0000g000000000001" version="1">Berserker Rage</content>
+    <content contentuid="h78fe4967g0162g0000g0000g000000000001" version="1">Berserker Rage - Warrior ability</content>
+
+    <!-- Shout_WAR_Berserker_Shout -->
+    <content contentuid="h78fe4967g0163g0000g0000g000000000001" version="1">Berserker Shout</content>
+    <content contentuid="h78fe4967g0164g0000g0000g000000000001" version="1">Berserker Shout - Warrior ability</content>
+
+    <!-- Shout_WAR_Cacophonous_Roar -->
+    <content contentuid="h78fe4967g0165g0000g0000g000000000001" version="1">Cacophonous Roar</content>
+    <content contentuid="h78fe4967g0166g0000g0000g000000000001" version="1">Cacophonous Roar - Warrior ability</content>
+
+    <!-- Shout_WAR_Defensive_Stance -->
+    <content contentuid="h78fe4967g0167g0000g0000g000000000001" version="1">Defensive Stance</content>
+    <content contentuid="h78fe4967g0168g0000g0000g000000000001" version="1">Defensive Stance - Warrior ability</content>
+
+    <!-- Shout_WAR_Demoralizing_Shout -->
+    <content contentuid="h78fe4967g0169g0000g0000g000000000001" version="1">Demoralizing Shout</content>
+    <content contentuid="h78fe4967g016ag0000g0000g000000000001" version="1">Demoralizing Shout - Warrior ability</content>
+
+    <!-- Shout_WAR_Die_by_the_Sword -->
+    <content contentuid="h78fe4967g016bg0000g0000g000000000001" version="1">Die by the Sword</content>
+    <content contentuid="h78fe4967g016cg0000g0000g000000000001" version="1">Die by the Sword - Warrior ability</content>
+
+    <!-- Shout_WAR_Disrupting_Shout -->
+    <content contentuid="h78fe4967g016dg0000g0000g000000000001" version="1">Disrupting Shout</content>
+    <content contentuid="h78fe4967g016eg0000g0000g000000000001" version="1">Disrupting Shout - Warrior ability</content>
+
+    <!-- Shout_WAR_Enraged_Regeneration -->
+    <content contentuid="h78fe4967g016fg0000g0000g000000000001" version="1">Enraged Regeneration</content>
+    <content contentuid="h78fe4967g0170g0000g0000g000000000001" version="1">Enraged Regeneration - Warrior ability</content>
+
+    <!-- Shout_WAR_Ignore_Pain -->
+    <content contentuid="h78fe4967g0171g0000g0000g000000000001" version="1">Ignore Pain</content>
+    <content contentuid="h78fe4967g0172g0000g0000g000000000001" version="1">Ignore Pain - Warrior ability</content>
+
+    <!-- Shout_WAR_Intimidating_Shout -->
+    <content contentuid="h78fe4967g0173g0000g0000g000000000001" version="1">Intimidating Shout</content>
+    <content contentuid="h78fe4967g0174g0000g0000g000000000001" version="1">Intimidating Shout - Warrior ability</content>
+
+    <!-- Shout_WAR_Last_Stand -->
+    <content contentuid="h78fe4967g0175g0000g0000g000000000001" version="1">Last Stand</content>
+    <content contentuid="h78fe4967g0176g0000g0000g000000000001" version="1">Last Stand - Warrior ability</content>
+
+    <!-- Shout_WAR_Piercing_Howl -->
+    <content contentuid="h78fe4967g0177g0000g0000g000000000001" version="1">Piercing Howl</content>
+    <content contentuid="h78fe4967g0178g0000g0000g000000000001" version="1">Piercing Howl - Warrior ability</content>
+
+    <!-- Shout_WAR_Rallying_Cry -->
+    <content contentuid="h78fe4967g0179g0000g0000g000000000001" version="1">Rallying Cry</content>
+    <content contentuid="h78fe4967g017ag0000g0000g000000000001" version="1">Rallying Cry - Warrior ability</content>
+
+    <!-- Shout_WAR_Recklessness -->
+    <content contentuid="h78fe4967g017bg0000g0000g000000000001" version="1">Recklessness</content>
+    <content contentuid="h78fe4967g017cg0000g0000g000000000001" version="1">Recklessness - Warrior ability</content>
+
+    <!-- Shout_WAR_Second_Wind -->
+    <content contentuid="h78fe4967g017dg0000g0000g000000000001" version="1">Second Wind</content>
+    <content contentuid="h78fe4967g017eg0000g0000g000000000001" version="1">Second Wind - Warrior ability</content>
+
+    <!-- Shout_WAR_Shield_Block -->
+    <content contentuid="h78fe4967g017fg0000g0000g000000000001" version="1">Shield Block</content>
+    <content contentuid="h78fe4967g0180g0000g0000g000000000001" version="1">Shield Block - Warrior ability</content>
+
+    <!-- Shout_WAR_Shield_Wall -->
+    <content contentuid="h78fe4967g0181g0000g0000g000000000001" version="1">Shield Wall</content>
+    <content contentuid="h78fe4967g0182g0000g0000g000000000001" version="1">Shield Wall - Warrior ability</content>
+
+    <!-- Shout_WAR_Spell_Reflection -->
+    <content contentuid="h78fe4967g0183g0000g0000g000000000001" version="1">Spell Reflection</content>
+    <content contentuid="h78fe4967g0184g0000g0000g000000000001" version="1">Spell Reflection - Warrior ability</content>
+
+    <!-- ======================================== 
+         SPELL_JUMP (3 entries)
+         ======================================== 
+    -->
+
+    <!-- Jump_WAR_Charge -->
+    <content contentuid="h78fe4967g0185g0000g0000g000000000001" version="1">Charge</content>
+    <content contentuid="h78fe4967g0186g0000g0000g000000000001" version="1">Charge - Warrior ability</content>
+
+    <!-- Jump_WAR_Heroic_Leap -->
+    <content contentuid="h78fe4967g0187g0000g0000g000000000001" version="1">Heroic Leap</content>
+    <content contentuid="h78fe4967g0188g0000g0000g000000000001" version="1">Heroic Leap - Warrior ability</content>
+
+    <!-- Jump_WAR_Intervene -->
+    <content contentuid="h78fe4967g0189g0000g0000g000000000001" version="1">Intervene</content>
+    <content contentuid="h78fe4967g018ag0000g0000g000000000001" version="1">Intervene - Warrior ability</content>
+
+    <!-- ======================================== 
+         STATUS_BOOST (25 entries)
+         ======================================== 
+    -->
+
+    <!-- WAR_AVATAR -->
+    <content contentuid="h78fe4967g018bg0000g0000g000000000001" version="1">Avatar</content>
+    <content contentuid="h78fe4967g018cg0000g0000g000000000001" version="1">Avatar - Description pending</content>
+
+    <!-- WAR_BATTLE_SHOUT -->
+    <content contentuid="h78fe4967g018dg0000g0000g000000000001" version="1">Battle Shout</content>
+    <content contentuid="h78fe4967g018eg0000g0000g000000000001" version="1">Battle Shout - Description pending</content>
+
+    <!-- WAR_BATTLE_STANCE -->
+    <content contentuid="h78fe4967g018fg0000g0000g000000000001" version="1">Battle Stance</content>
+    <content contentuid="h78fe4967g0190g0000g0000g000000000001" version="1">Battle Stance - Description pending</content>
+
+    <!-- WAR_BERSERKER_SHOUT -->
+    <content contentuid="h78fe4967g0191g0000g0000g000000000001" version="1">Berserker Shout</content>
+    <content contentuid="h78fe4967g0192g0000g0000g000000000001" version="1">Berserker Shout - Description pending</content>
+
+    <!-- WAR_COLOSSUS_SMASH -->
+    <content contentuid="h78fe4967g0193g0000g0000g000000000001" version="1">Colossus Smash</content>
+    <content contentuid="h78fe4967g0194g0000g0000g000000000001" version="1">Colossus Smash - Description pending</content>
+
+    <!-- WAR_DEFENSIVE_STANCE -->
+    <content contentuid="h78fe4967g0195g0000g0000g000000000001" version="1">Defensive Stance</content>
+    <content contentuid="h78fe4967g0196g0000g0000g000000000001" version="1">Defensive Stance - Description pending</content>
+
+    <!-- WAR_DEMORALIZING_SHOUT -->
+    <content contentuid="h78fe4967g0197g0000g0000g000000000001" version="1">Demoralizing Shout</content>
+    <content contentuid="h78fe4967g0198g0000g0000g000000000001" version="1">Demoralizing Shout - Description pending</content>
+
+    <!-- WAR_DIE_BY_THE_SWORD -->
+    <content contentuid="h78fe4967g0199g0000g0000g000000000001" version="1">Die by the Sword</content>
+    <content contentuid="h78fe4967g019ag0000g0000g000000000001" version="1">Die by the Sword - Description pending</content>
+
+    <!-- WAR_DISRUPTING_SHOUT -->
+    <content contentuid="h78fe4967g019bg0000g0000g000000000001" version="1">Disrupting Shout</content>
+    <content contentuid="h78fe4967g019cg0000g0000g000000000001" version="1">Disrupting Shout - Description pending</content>
+
+    <!-- WAR_ENRAGED_REGENERATION -->
+    <content contentuid="h78fe4967g019dg0000g0000g000000000001" version="1">Enraged Regeneration</content>
+    <content contentuid="h78fe4967g019eg0000g0000g000000000001" version="1">Enraged Regeneration - Description pending</content>
+
+    <!-- WAR_HAMSTRING -->
+    <content contentuid="h78fe4967g019fg0000g0000g000000000001" version="1">Hamstring</content>
+    <content contentuid="h78fe4967g01a0g0000g0000g000000000001" version="1">Hamstring - Description pending</content>
+
+    <!-- WAR_IGNORE_PAIN -->
+    <content contentuid="h78fe4967g01a1g0000g0000g000000000001" version="1">Ignore Pain</content>
+    <content contentuid="h78fe4967g01a2g0000g0000g000000000001" version="1">Ignore Pain - Description pending</content>
+
+    <!-- WAR_IMPENETRABLE_WALL -->
+    <content contentuid="h78fe4967g01a3g0000g0000g000000000001" version="1">Impenetrable Wall</content>
+    <content contentuid="h78fe4967g01a4g0000g0000g000000000001" version="1">Impenetrable Wall - Description pending</content>
+
+    <!-- WAR_INTIMIDATING_SHOUT -->
+    <content contentuid="h78fe4967g01a5g0000g0000g000000000001" version="1">Intimidating Shout</content>
+    <content contentuid="h78fe4967g01a6g0000g0000g000000000001" version="1">Intimidating Shout - Description pending</content>
+
+    <!-- WAR_PUMMEL -->
+    <content contentuid="h78fe4967g01a7g0000g0000g000000000001" version="1">Pummel</content>
+    <content contentuid="h78fe4967g01a8g0000g0000g000000000001" version="1">Pummel - Description pending</content>
+
+    <!-- WAR_RECKLESSNESS -->
+    <content contentuid="h78fe4967g01a9g0000g0000g000000000001" version="1">Recklessness</content>
+    <content contentuid="h78fe4967g01aag0000g0000g000000000001" version="1">Recklessness - Description pending</content>
+
+    <!-- WAR_SHIELD_BLOCK -->
+    <content contentuid="h78fe4967g01abg0000g0000g000000000001" version="1">Shield Block</content>
+    <content contentuid="h78fe4967g01acg0000g0000g000000000001" version="1">Shield Block - Description pending</content>
+
+    <!-- WAR_SHIELD_WALL -->
+    <content contentuid="h78fe4967g01adg0000g0000g000000000001" version="1">Shield Wall</content>
+    <content contentuid="h78fe4967g01aeg0000g0000g000000000001" version="1">Shield Wall - Description pending</content>
+
+    <!-- WAR_SHOCKWAVE -->
+    <content contentuid="h78fe4967g01afg0000g0000g000000000001" version="1">Shockwave</content>
+    <content contentuid="h78fe4967g01b0g0000g0000g000000000001" version="1">Shockwave - Description pending</content>
+
+    <!-- WAR_SPELL_REFLECTION -->
+    <content contentuid="h78fe4967g01b1g0000g0000g000000000001" version="1">Spell Reflection</content>
+    <content contentuid="h78fe4967g01b2g0000g0000g000000000001" version="1">Spell Reflection - Description pending</content>
+
+    <!-- WAR_STORM_BOLT -->
+    <content contentuid="h78fe4967g01b3g0000g0000g000000000001" version="1">Storm Bolt</content>
+    <content contentuid="h78fe4967g01b4g0000g0000g000000000001" version="1">Storm Bolt - Description pending</content>
+
+    <!-- WAR_STORM_BOLTS -->
+    <content contentuid="h78fe4967g01b5g0000g0000g000000000001" version="1">Storm Bolts</content>
+    <content contentuid="h78fe4967g01b6g0000g0000g000000000001" version="1">Storm Bolts - Description pending</content>
+
+    <!-- WAR_STORM_WALL -->
+    <content contentuid="h78fe4967g01b7g0000g0000g000000000001" version="1">Storm Wall</content>
+    <content contentuid="h78fe4967g01b8g0000g0000g000000000001" version="1">Storm Wall - Description pending</content>
+
+    <!-- WAR_TAUNTED -->
+    <content contentuid="h78fe4967g01b9g0000g0000g000000000001" version="1">TAUNTED</content>
+    <content contentuid="h78fe4967g01bag0000g0000g000000000001" version="1">TAUNTED - Warrior ability</content>
+
+    <!-- WAR_WARBREAKER -->
+    <content contentuid="h78fe4967g01bbg0000g0000g000000000001" version="1">Warbreaker</content>
+    <content contentuid="h78fe4967g01bcg0000g0000g000000000001" version="1">Warbreaker - Description pending</content>
+
+    <!-- ======================================== 
+         SPELL_TARGET (19 entries)
+         ======================================== 
+    -->
+
+    <!-- Target_WAR_Bloodthirst -->
+    <content contentuid="h78fe4967g01bdg0000g0000g000000000001" version="1">Bloodthirst</content>
+    <content contentuid="h78fe4967g01beg0000g0000g000000000001" version="1">Bloodthirst - Warrior ability</content>
+
+    <!-- Target_WAR_Colossus_Smash -->
+    <content contentuid="h78fe4967g01bfg0000g0000g000000000001" version="1">Colossus Smash</content>
+    <content contentuid="h78fe4967g01c0g0000g0000g000000000001" version="1">Colossus Smash - Warrior ability</content>
+
+    <!-- Target_WAR_Demolish -->
+    <content contentuid="h78fe4967g01c1g0000g0000g000000000001" version="1">Demolish</content>
+    <content contentuid="h78fe4967g01c2g0000g0000g000000000001" version="1">Demolish - Warrior ability</content>
+
+    <!-- Target_WAR_Devastate -->
+    <content contentuid="h78fe4967g01c3g0000g0000g000000000001" version="1">Devastate</content>
+    <content contentuid="h78fe4967g01c4g0000g0000g000000000001" version="1">Devastate - Warrior ability</content>
+
+    <!-- Target_WAR_Execute -->
+    <content contentuid="h78fe4967g01c5g0000g0000g000000000001" version="1">Execute</content>
+    <content contentuid="h78fe4967g01c6g0000g0000g000000000001" version="1">Execute - Warrior ability</content>
+
+    <!-- Target_WAR_Hamstring -->
+    <content contentuid="h78fe4967g01c7g0000g0000g000000000001" version="1">Hamstring</content>
+    <content contentuid="h78fe4967g01c8g0000g0000g000000000001" version="1">Hamstring - Warrior ability</content>
+
+    <!-- Target_WAR_Impending_Victory -->
+    <content contentuid="h78fe4967g01c9g0000g0000g000000000001" version="1">Impending Victory</content>
+    <content contentuid="h78fe4967g01cag0000g0000g000000000001" version="1">Impending Victory - Warrior ability</content>
+
+    <!-- Target_WAR_Menace -->
+    <content contentuid="h78fe4967g01cbg0000g0000g000000000001" version="1">Menace</content>
+    <content contentuid="h78fe4967g01ccg0000g0000g000000000001" version="1">Menace - Warrior ability</content>
+
+    <!-- Target_WAR_Mortal_Strike -->
+    <content contentuid="h78fe4967g01cdg0000g0000g000000000001" version="1">Mortal Strike</content>
+    <content contentuid="h78fe4967g01ceg0000g0000g000000000001" version="1">Mortal Strike - Warrior ability</content>
+
+    <!-- Target_WAR_Onslaught -->
+    <content contentuid="h78fe4967g01cfg0000g0000g000000000001" version="1">Onslaught</content>
+    <content contentuid="h78fe4967g01d0g0000g0000g000000000001" version="1">Onslaught - Warrior ability</content>
+
+    <!-- Target_WAR_Overpower -->
+    <content contentuid="h78fe4967g01d1g0000g0000g000000000001" version="1">Overpower</content>
+    <content contentuid="h78fe4967g01d2g0000g0000g000000000001" version="1">Overpower - Warrior ability</content>
+
+    <!-- Target_WAR_Pummel -->
+    <content contentuid="h78fe4967g01d3g0000g0000g000000000001" version="1">Pummel</content>
+    <content contentuid="h78fe4967g01d4g0000g0000g000000000001" version="1">Pummel - Warrior ability</content>
+
+    <!-- Target_WAR_Raging_Blow -->
+    <content contentuid="h78fe4967g01d5g0000g0000g000000000001" version="1">Raging Blow</content>
+    <content contentuid="h78fe4967g01d6g0000g0000g000000000001" version="1">Raging Blow - Warrior ability</content>
+
+    <!-- Target_WAR_Rampage -->
+    <content contentuid="h78fe4967g01d7g0000g0000g000000000001" version="1">Rampage</content>
+    <content contentuid="h78fe4967g01d8g0000g0000g000000000001" version="1">Rampage - Warrior ability</content>
+
+    <!-- Target_WAR_Shield_Slam -->
+    <content contentuid="h78fe4967g01d9g0000g0000g000000000001" version="1">Shield Slam</content>
+    <content contentuid="h78fe4967g01dag0000g0000g000000000001" version="1">Shield Slam - Warrior ability</content>
+
+    <!-- Target_WAR_Skullsplitter -->
+    <content contentuid="h78fe4967g01dbg0000g0000g000000000001" version="1">Skullsplitter</content>
+    <content contentuid="h78fe4967g01dcg0000g0000g000000000001" version="1">Skullsplitter - Warrior ability</content>
+
+    <!-- Target_WAR_Slam -->
+    <content contentuid="h78fe4967g01ddg0000g0000g000000000001" version="1">Slam</content>
+    <content contentuid="h78fe4967g01deg0000g0000g000000000001" version="1">Slam - Warrior ability</content>
+
+    <!-- Target_WAR_Taunt -->
+    <content contentuid="h78fe4967g01dfg0000g0000g000000000001" version="1">Taunt</content>
+    <content contentuid="h78fe4967g01e0g0000g0000g000000000001" version="1">Taunt - Warrior ability</content>
+
+    <!-- Target_WAR_Victory_Rush -->
+    <content contentuid="h78fe4967g01e1g0000g0000g000000000001" version="1">Victory Rush</content>
+    <content contentuid="h78fe4967g01e2g0000g0000g000000000001" version="1">Victory Rush - Warrior ability</content>
+
+    <!-- ======================================== 
+         SPELL_PROJECTILE (6 entries)
+         ======================================== 
+    -->
+
+    <!-- Projectile_WAR_Champion_s_Spear -->
+    <content contentuid="h78fe4967g01e3g0000g0000g000000000001" version="1">Champion s Spear</content>
+    <content contentuid="h78fe4967g01e4g0000g0000g000000000001" version="1">Champion s Spear - Warrior ability</content>
+
+    <!-- Projectile_WAR_Heroic_Throw -->
+    <content contentuid="h78fe4967g01e5g0000g0000g000000000001" version="1">Heroic Throw</content>
+    <content contentuid="h78fe4967g01e6g0000g0000g000000000001" version="1">Heroic Throw - Warrior ability</content>
+
+    <!-- Projectile_WAR_Shattering_Throw -->
+    <content contentuid="h78fe4967g01e7g0000g0000g000000000001" version="1">Shattering Throw</content>
+    <content contentuid="h78fe4967g01e8g0000g0000g000000000001" version="1">Shattering Throw - Warrior ability</content>
+
+    <!-- Projectile_WAR_Storm_Bolt -->
+    <content contentuid="h78fe4967g01e9g0000g0000g000000000001" version="1">Storm Bolt</content>
+    <content contentuid="h78fe4967g01eag0000g0000g000000000001" version="1">Storm Bolt - Warrior ability</content>
+
+    <!-- Projectile_WAR_Storm_Bolts -->
+    <content contentuid="h78fe4967g01ebg0000g0000g000000000001" version="1">Storm Bolts</content>
+    <content contentuid="h78fe4967g01ecg0000g0000g000000000001" version="1">Storm Bolts - Warrior ability</content>
+
+    <!-- Projectile_WAR_Wrecking_Throw -->
+    <content contentuid="h78fe4967g01edg0000g0000g000000000001" version="1">Wrecking Throw</content>
+    <content contentuid="h78fe4967g01eeg0000g0000g000000000001" version="1">Wrecking Throw - Warrior ability</content>
+
+</contentList>
