@@ -1,2 +1,5 @@
-# caches, venv and intermediate JSON from each run
+# caches, venv, downloads and intermediate JSON from each run
 work/
+# the root .gitignore ignores *.html; this one is source
+!newmod_template.html
+!impact_template.html

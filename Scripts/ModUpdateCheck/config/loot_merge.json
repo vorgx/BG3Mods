@@ -1,0 +1,16 @@
+{
+ "_about": "Loot tables rebuilt by build_lootpatch.py into the local 'ModCheck Loot Merge' pak, loaded near the end of the order. 'pools': merge items into a one-list pool (base + what add_from added on top of minus_base). 'subtables': base table plus every subtable later mods add, treating the listed full replacements as additions.",
+ "pools": [
+  {"why": "AMPFEDMIX adds Fade's gear to AMP's random-loot pools; AMP Plus rewrites 29 of those pools with its new items. The patch keeps both.",
+   "base": "AMP_Plus_fcf1d25f-1309-a9f7-ff14-974e39880e42.pak",
+   "add_from": "AMPFEDMIX.pak",
+   "minus_base": "REL_Full_Ancient_c6c0d2bd-6198-de9e-30ad-e8cda1793025.pak",
+   "tables": "shared"}
+ ],
+ "subtables": [
+  {"why": "Witcher Class replaces the Dark Shambling Mound's loot with only its decoction, wiping AMP's drops and five gear mods' additions. The patch keeps all of them.",
+   "table": "SCL_DarkShamblingMound",
+   "base": "REL_Full_Ancient_c6c0d2bd-6198-de9e-30ad-e8cda1793025.pak",
+   "treat_as_merge": ["Witcher Class.pak"]}
+ ]
+}

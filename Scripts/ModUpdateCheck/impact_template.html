@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mod Impact</title>
+<style>
+:root{
+  --bg:#f6f5f1; --panel:#ffffff; --ink:#1d1c19; --muted:#6b6860; --line:#e3e0d8; --hover:#faf9f6; --accent:#8a5a1f;
+  --bad:#b3261e; --bad-bg:#fbe9e7; --warn:#8a5a00; --warn-bg:#fdf1d6; --ok:#2e6b3a; --ok-bg:#e4f2e6; --info:#3b5b8a; --info-bg:#e6edf7;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#151412; --panel:#1e1d1a; --ink:#ecebe6; --muted:#a19d93; --line:#33312c; --hover:#25241f; --accent:#e0a85a;
+    --bad:#ff8a80; --bad-bg:#3a1d1a; --warn:#f2c46b; --warn-bg:#3a2e14; --ok:#86d19a; --ok-bg:#17301d; --info:#9cc0f2; --info-bg:#1b2738; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#151412; --panel:#1e1d1a; --ink:#ecebe6; --muted:#a19d93; --line:#33312c; --hover:#25241f; --accent:#e0a85a;
+  --bad:#ff8a80; --bad-bg:#3a1d1a; --warn:#f2c46b; --warn-bg:#3a2e14; --ok:#86d19a; --ok-bg:#17301d; --info:#9cc0f2; --info-bg:#1b2738; color-scheme: dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:28px 16px 64px}
+h1{margin:0 0 4px;font-size:26px} h2{font-size:18px;margin:32px 0 8px}
+.sub{color:var(--muted);font-size:13px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:18px 0}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.stat b{display:block;font-size:24px;line-height:1.1;font-variant-numeric:tabular-nums}
+.stat.bad b{color:var(--bad)} .stat.warn b{color:var(--warn)} .stat.info b{color:var(--info)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:6px 16px;margin-bottom:10px}
+.row{padding:9px 0;border-top:1px solid var(--line)} .row:first-child{border-top:0}
+.pill{display:inline-block;font-size:11.5px;font-weight:600;padding:2px 8px;border-radius:999px;margin-right:6px;white-space:nowrap}
+.bad{color:var(--bad);background:var(--bad-bg)} .warn{color:var(--warn);background:var(--warn-bg)} .ok{color:var(--ok);background:var(--ok-bg)} .info{color:var(--info);background:var(--info-bg)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+.chip{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:2px 9px}
+code{font-size:12px;color:var(--muted);overflow-wrap:anywhere}
+details summary{cursor:pointer;padding:8px 0}
+.callout{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:12px 16px;margin:14px 0}
+.theme{float:right}
+button.btn{padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--ink);font:inherit;cursor:pointer}
+table{border-collapse:collapse;width:100%} td,th{text-align:left;padding:6px 8px;border-top:1px solid var(--line);vertical-align:top} th{color:var(--muted);font-size:12px;font-weight:600}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <button class="btn theme" id="theme" type="button">Theme</button>
+  <h1 id="title"></h1>
+  <div class="sub" id="subtitle"></div>
+  <div class="stats" id="stats"></div>
+  <div class="callout" id="order"></div>
+
+  <h2>Breaks</h2>
+  <p class="sub">Things that stop working or work wrongly alongside this mod.</p>
+  <div id="breaks"></div>
+
+  <h2>Duplicated</h2>
+  <p class="sub">Your mods already add these. With this mod installed you'd see two of each in character creation or level-up, built differently.</p>
+  <div id="dupes"></div>
+
+  <h2>Replaced</h2>
+  <p class="sub">Definitions your mods and this mod both write, under the same ID. Only one version survives: the one that loads last. Merge-style stat edits keep both sides' changes.</p>
+  <div id="replaced"></div>
+
+  <h2>What it adds and changes in the base game</h2>
+  <div id="adds"></div>
+</div>
+<script id="data" type="application/json">__DATA__</script>
+<script>
+(function(){
+  const R = JSON.parse(document.getElementById('data').textContent);
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const short = p => p.replace(/\.pak$/i, '').replace(/_[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i, '');
+  try { const t = localStorage.getItem('bg3upd-theme'); if (t) document.documentElement.dataset.theme = t; } catch(e) {}
+  document.getElementById('theme').onclick = () => {
+    const dark = document.documentElement.dataset.theme ? document.documentElement.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.dataset.theme = dark ? 'light' : 'dark';
+    try { localStorage.setItem('bg3upd-theme', dark ? 'light' : 'dark'); } catch(e) {}
+  };
+  document.title = 'Impact: ' + R.name;
+  document.getElementById('title').textContent = 'What ' + R.name + ' would do to your game';
+  document.getElementById('subtitle').innerHTML = `Version ${esc(R.version)} · compared with ${R.installed_paks} installed paks and the base game · <a href="${esc(R.url)}" target="_blank" rel="noopener">mod page</a>`;
+
+  const statFull = R.stat_conflicts.reduce((a, c) => a + c.stats - c.stats_new_merges, 0);
+  const lost = R.replaced.reduce((a, x) => a + x.lost_spells.reduce((b, l) => b + l.spells.length, 0), 0);
+  const breaks = R.subclass_breaks.length + R.high_levels.length + R.known_issues.length + (lost ? 1 : 0);
+  document.getElementById('stats').innerHTML = [
+    [breaks, 'Breaks', 'bad'], [R.duplicates.length, 'Duplicated items', 'warn'],
+    [R.replaced.length, 'Mods with replaced definitions', 'warn'], [statFull, 'Stat entries fully replaced', 'warn'],
+    [R.subclasses.length, 'Subclasses it adds', 'info'], [R.classes.filter(c => !c.replaces_vanilla).length, 'New classes', 'info']
+  ].map(([n, l, c]) => `<div class="stat ${c}"><b>${n}</b><span class="sub">${l}</span></div>`).join('');
+  document.getElementById('order').innerHTML = `<b>Load order decides most of this.</b> Where both write the same thing, the mod lower in the list wins.
+    If ${esc(R.name)} loads <i>after</i> a mod below, that mod's version is replaced. If it loads <i>before</i>, that mod undoes part of ${esc(R.name)}.
+    Either way you get one class or spell built from two rule sets.`;
+
+  // breaks
+  const b = [];
+  for (const k of R.known_issues) b.push(`<div class="row"><span class="pill bad">From the mod pages</span>${esc(k.text)} ${k.source ? `<a href="${esc(k.source)}" target="_blank" rel="noopener">source</a>` : ''}</div>`);
+  for (const c of R.level_changes) {
+    const hit = R.subclass_breaks.filter(x => x.class === c.class);
+    b.push(`<div class="row"><span class="pill bad">${esc(c.class)} subclass moves to level ${c.after}</span>The base game lets you pick a ${esc(c.class)} subclass at level ${c.before}; this mod moves it to level ${c.after}.
+      ${hit.length ? `These installed subclasses start at level ${hit[0].starts}, so they won't fit: they may not appear at all, or their level 1-2 features go missing.
+      <div class="chips">${hit.map(x => `<span class="chip">${esc(x.subclass)} <span class="sub">(${esc(short(x.pak))})</span></span>`).join('')}</div>` : ''}</div>`);
+  }
+  for (const h of R.high_levels) b.push(`<div class="row"><span class="pill warn">Levels 13-20</span><b>${esc(short(h.pak))}</b> adds levels above 12 to classes this mod rebuilds. They'd stack on top of the new class without matching it.
+     <div class="chips">${Object.entries(h.classes).map(([k, v]) => `<span class="chip">${esc(k)} ${esc(v)}</span>`).join('')}</div></div>`);
+  const lostRows = R.replaced.filter(x => x.lost_spells.length);
+  if (lostRows.length) b.push(`<div class="row"><span class="pill warn">Spells dropped from class lists</span>These mods add spells to class spell lists that this mod also rewrites. If this mod wins, the spells disappear from those classes.
+     ${lostRows.map(x => `<details><summary><b>${esc(short(x.pak))}</b> <span class="sub">${x.lost_spells.reduce((a, l) => a + l.spells.length, 0)} spells</span></summary>
+       ${x.lost_spells.map(l => `<div class="sub">${esc(l.list)}: <code>${esc(l.spells.join(', '))}</code></div>`).join('')}</details>`).join('')}</div>`);
+  document.getElementById('breaks').innerHTML = `<div class="card">${b.join('') || '<div class="row sub">Nothing found.</div>'}</div>`;
+
+  // duplicates grouped by kind
+  const groups = {};
+  for (const d of R.duplicates) (groups[d.kind] = groups[d.kind] || []).push(d);
+  document.getElementById('dupes').innerHTML = Object.entries(groups).map(([k, v]) => {
+    const byName = {};
+    for (const d of v) (byName[(d.parent ? d.parent + ': ' : '') + d.name] = byName[(d.parent ? d.parent + ': ' : '') + d.name] || new Set()).add(short(d.pak));
+    return `<div class="card"><details ${k === 'Subclass' ? 'open' : ''}><summary><b>${esc(k)}s</b> <span class="sub">(${Object.keys(byName).length})</span></summary>
+      <table><tr><th>${esc(k)}</th><th>Already added by</th></tr>${Object.entries(byName).sort().map(([n, s]) => `<tr><td>${esc(n)}</td><td class="sub">${esc([...s].join(', '))}</td></tr>`).join('')}</table></details></div>`;
+  }).join('') || '<div class="card"><div class="row sub">Nothing duplicated.</div></div>';
+
+  // replaced: definitions + stats, merged per mod
+  const per = {};
+  for (const x of R.replaced) per[x.pak] = {pak: x.pak, pos: x.pos, defs: x.kind_counts, defNames: x.kinds, stats: 0, merges: 0, examples: []};
+  for (const c of R.stat_conflicts) {
+    const p = per[c.pak] = per[c.pak] || {pak: c.pak, pos: c.pos, defs: {}, defNames: {}, stats: 0, merges: 0, examples: []};
+    p.stats += c.stats; p.merges += c.stats_new_merges; p.examples = c.examples;
+  }
+  const list = Object.values(per).map(p => ({...p, weight: Object.values(p.defs).reduce((a, b) => a + b, 0) * 3 + (p.stats - p.merges)}))
+    .filter(p => p.weight > 0).sort((a, b) => b.weight - a.weight);
+  document.getElementById('replaced').innerHTML = `<div class="card"><table><tr><th>Your mod (load order #)</th><th>Definitions replaced</th><th>Stat entries</th></tr>` +
+    list.map(p => `<tr><td><b>${esc(short(p.pak))}</b> <span class="sub">#${p.pos}</span></td>
+      <td>${Object.entries(p.defs).map(([k, n]) => `<span class="chip">${n} ${esc(k)}</span>`).join(' ') || '<span class="sub">-</span>'}
+        ${Object.keys(p.defNames).length ? `<details><summary class="sub">which</summary>${Object.entries(p.defNames).map(([k, v]) => `<div class="sub">${esc(k)}: ${esc(v.join(', '))}</div>`).join('')}</details>` : ''}</td>
+      <td>${p.stats ? `${p.stats - p.merges} fully replaced${p.merges ? `, ${p.merges} merged` : ''}<div><code>${esc(p.examples.slice(0, 5).join(', '))}</code></div>` : '<span class="sub">-</span>'}</td></tr>`).join('') + `</table></div>`;
+
+  // adds
+  const bySub = {};
+  for (const s of R.subclasses) (bySub[s.parent || 'Other'] = bySub[s.parent || 'Other'] || []).push(s.name);
+  const vr = Object.entries(R.vanilla_replaced).map(([k, v]) => `<span class="chip">${v.count} ${esc(k)}</span>`).join(' ');
+  document.getElementById('adds').innerHTML = `<div class="card">
+    <div class="row"><b>Classes:</b> ${R.classes.map(c => `<span class="chip">${esc(c.name)}${c.replaces_vanilla ? ' (rebuilt)' : ' (new)'}</span>`).join(' ')}</div>
+    <div class="row"><b>Base-game definitions it changes:</b> ${vr}</div>
+    <div class="row"><b>Subclasses it adds (${R.subclasses.length}):</b>${Object.entries(bySub).sort().map(([k, v]) => `<div><span class="sub">${esc(k)}:</span> ${esc(v.join(', '))}</div>`).join('')}</div></div>`;
+})();
+</script>
+</body>
+</html>

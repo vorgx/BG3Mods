@@ -105,10 +105,14 @@ for inc in json.load(open(os.path.join(CONF, "incompat_verified.json"), encoding
     if inc["a"] in pos and inc["b"] in pos:
         issue("high", "incompatible", inc["text"], [inc["a"], inc["b"]])
 
+pull_pos = {}  # pak -> position it should be pulled up to (manual rules with "pull")
 # rules checked by hand (spellset overrides etc.)
 for rule in json.load(open(os.path.join(CONF, "manual_rules.json"), encoding="utf-8")):
     if not rule.get("skip"):
         add_edge(rule["before"], rule["after"], rule["reason"], True)
+        if rule.get("pull") and rule["before"] in pos and rule["after"] in pos:
+            # move the small "before" mod up to just above "after", instead of pushing "after" (and its patches) down
+            pull_pos[rule["before"]] = pos[rule["after"]] - 0.5
 # mods the update check marked obsolete
 for pk in active:
     if upd.get(pk, {}).get("status") == "obsolete":
@@ -187,7 +191,7 @@ def topo(edge_list):
     for a, b, _, _ in edge_list:
         succ[a].append(b)
         indeg[b] += 1
-    key = lambda pk: (tier[pk], top_rank.get(pk, 99), pos[pk])
+    key = lambda pk: (tier[pk], top_rank.get(pk, 99), pull_pos.get(pk, pos[pk]))
     heap = [(key(pk), pk) for pk in active if indeg[pk] == 0]
     heapq.heapify(heap)
     out = []

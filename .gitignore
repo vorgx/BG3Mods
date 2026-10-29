@@ -31,6 +31,7 @@ modsettings.lsx
 # Automated backups (restore from Backups/ folder if needed)
 Backups/*_BeforeFullRestructure/
 Backups/*_BACKUP_*/
+Backups/ModCheck/
 
 # Archive folders (keep README.md only)
 Archive/Documentation_RootClutter/

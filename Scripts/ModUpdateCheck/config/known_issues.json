@@ -1,0 +1,11 @@
+{
+ "_about": "Issues stated on mod pages that the data checks can't see. Keyed by the new mod's slug (nexus<id> or modio<id>); shown when the 'if_installed' pak is installed.",
+ "nexus12727": [
+  {"if_installed": "REL_Full_Ancient_c6c0d2bd-6198-de9e-30ad-e8cda1793025.pak",
+   "text": "Ancient Mega Pack's page says saves crash at 70% loading when AMP runs with DnD 5.5e. The fix is AMP Plus together with the 'Ancient Mega Pack - DnD 5.5e BEYOND patch' on mod.io.",
+   "source": "https://mod.io/g/baldursgate3/m/ancient-mega-pack-plus"},
+  {"if_installed": "UnlockLevelCurve.pak",
+   "text": "DnD 5.5e stops at level 12. Its levels 13-20 come from a separate mod, 'Path to Apotheosis - Levels 13-20 for DnD 5.5e All-in-One' (Nexus 25717); Unlock Level Curve's 13-20 levels were built for the base-game classes.",
+   "source": "https://www.nexusmods.com/baldursgate3/mods/25717"}
+ ]
+}

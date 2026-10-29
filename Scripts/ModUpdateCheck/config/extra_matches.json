@@ -1,4 +1,13 @@
 {
+ "AMP_Plus_fcf1d25f-1309-a9f7-ff14-974e39880e42.pak": {
+  "modio_id": 6163496,
+  "how": "Installed with Check-NewMod.ps1 from mod.io"
+ },
+ "ModCheck_LootMerge.pak": {
+  "status": "current",
+  "how": "Built locally",
+  "note": "Built on this PC by build_lootpatch.py from config/loot_merge.json: keeps Fade's gear in AMP Plus's loot pools and restores the Dark Shambling Mound's drops. Rebuild it after updating AMP, AMP Plus, AMPFEDMIX or Witcher Class."
+ },
  "CombatExtenderAI.pak": {
   "nexus_id": 5207,
   "how": "Found by author search (Zehtuka)"

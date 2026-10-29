@@ -219,6 +219,11 @@ def apply_verify(pak, s, installed_version):
     l = v.get("latest") or {}
     if l:
         s.update(latest_version=l.get("version"), latest_file=l.get("file"), latest_date=l.get("uploaded"))
+    if v["result"] in ("differs", "size-differs") and l and (vcmp(installed_version, l.get("version")) or 0) > 0:
+        s.update(status="current", confidence="heuristic",
+                 note=f"Your pak differs from the Nexus download but has a higher version ({installed_version} vs {l.get('version')}), "
+                      "so you probably have a newer build, for example from mod.io.")
+        return s
     if v["result"] == "identical":
         s.update(status="current", confidence="verified", note=f"Verified: your pak is byte-for-byte identical to the one in '{l.get('file')}'.")
     elif v["result"] == "outdated":
@@ -267,6 +272,14 @@ for r in rows:
         e = modio_eval(r, mio)
         if e:
             srcs.append(e)
+    # the same release on both sites is often a different build: if the pak matches mod.io's current file and
+    # Nexus has nothing newer, the Nexus hash mismatch isn't an update
+    mio_cur = next((s for s in srcs if s["source"] == "modio" and s["status"] == "current" and s["confidence"] == "exact"), None)
+    for s in srcs:
+        if (mio_cur and s["source"] == "nexus" and s["status"] == "update" and s.get("verify") in ("differs", "size-differs")
+                and (s.get("latest_date") or 0) <= (mio_cur.get("latest_date") or 0) + SAME_RELEASE):
+            s.update(status="current", confidence="heuristic",
+                     note="Your pak is mod.io's current build of this release; Nexus hosts a different build of the same release.")
     st = {(s["status"], s["confidence"]) for s in srcs}
     st = {(s, "exact" if c in ("verified", "size") else c) for s, c in st}
     if ("update", "exact") in st:

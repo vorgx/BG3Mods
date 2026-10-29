@@ -24,7 +24,10 @@ lo_out = {
     "file": [{**p, "loser": names[p["loser"]], "winner": names[p["winner"]]} for p in lo["file_conflicts"]],
     "stat_pairs": lo["stat_conflict_pairs"], "file_pairs": lo["file_conflict_pairs"],
 }
-data = json.dumps({"generated": rep["generated"], "mods": mods, "lo": lo_out}, ensure_ascii=False).replace("</", "<\\/")
+addons_path = os.path.join(S, "addons.json")
+addons = json.load(open(addons_path, encoding="utf-8")) if os.path.exists(addons_path) else None
+data = json.dumps({"generated": rep["generated"], "mods": mods, "lo": lo_out, "addons": addons},
+                  ensure_ascii=False).replace("</", "<\\/")
 
 HTML = r"""<!doctype html>
 <html lang="en">
@@ -150,6 +153,7 @@ h2{font-size:17px;margin:28px 0 10px}
   <nav class="tabs" role="tablist">
     <button role="tab" id="t-upd" aria-selected="true" data-tab="upd">Updates</button>
     <button role="tab" id="t-lo" aria-selected="false" data-tab="lo">Load order</button>
+    <button role="tab" id="t-add" aria-selected="false" data-tab="add">Add-ons</button>
   </nav>
   <section id="tab-lo" hidden>
     <div class="stats" id="lo-stats"></div>
@@ -180,6 +184,16 @@ h2{font-size:17px;margin:28px 0 10px}
         <li>The recommended order changes as little as possible. It keeps your current order and moves only the mods that break one of these rules. PhotoMode and CrossplayUI dependencies are built into the game and are ignored.</li>
       </ul>
     </details>
+  </section>
+  <section id="tab-add" hidden>
+    <p class="sub" style="margin-top:16px">Things your installed mods ask for or offer that you don't have. Requirements come from each mod's Nexus or mod.io page, with the author's own notes. Suggested patches are files that connect two mods you already run. Check each one before installing; the matching is automatic.</p>
+    <h2>Missing requirements</h2>
+    <div class="issues" id="add-req"></div>
+    <h2>Suggested compatibility patches and add-ons</h2>
+    <div class="issues" id="add-sug"></div>
+    <h2>Other optional files on your mods' pages</h2>
+    <div class="lo-tools"><input type="search" id="add-q" placeholder="Search optional files" aria-label="Search optional files" style="flex:1 1 260px;min-width:0;padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--ink);font:inherit"></div>
+    <div class="list" id="add-opt"></div>
   </section>
   <section id="tab-upd">
   <div class="stats" id="stats"></div>
@@ -317,10 +331,27 @@ h2{font-size:17px;margin:28px 0 10px}
     tabs.forEach(b => b.setAttribute('aria-selected', b.dataset.tab === t));
     document.getElementById('tab-upd').hidden = t !== 'upd';
     document.getElementById('tab-lo').hidden = t !== 'lo';
+    document.getElementById('tab-add').hidden = t !== 'add';
     try { localStorage.setItem('bg3upd-tab', t); } catch(e) {}
   }
   tabs.forEach(b => b.onclick = () => showTab(b.dataset.tab));
   try { const t = localStorage.getItem('bg3upd-tab'); if (t) showTab(t); } catch(e) {}
+
+  // ---- add-ons
+  const A = D.addons || {required: [], suggested: [], optional: []};
+  const addRow = (r, sev) => `<div class="issue ${sev}"><div class="k">For ${esc(r.for.slice(0, 3).join(', '))}${r.for.length > 3 ? ' …' : ''}</div>
+      <b>${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a>` : esc(r.title)}</b>
+      <div class="sub">${esc(r.reason)}</div>${r.notes ? `<div class="note">“${esc(r.notes)}”</div>` : ''}</div>`;
+  document.getElementById('add-req').innerHTML = A.required.length ? A.required.map(r => addRow(r, 'high')).join('') : '<div class="okline">Every requirement is installed.</div>';
+  document.getElementById('add-sug').innerHTML = A.suggested.length ? A.suggested.map(r => addRow(r, 'medium')).join('') : '<div class="okline">No missing patches found.</div>';
+  function renderOpt(q){
+    const v = A.optional.filter(r => !q || (r.title + ' ' + r.for.join(' ') + ' ' + r.notes).toLowerCase().includes(q));
+    document.getElementById('add-opt').innerHTML = v.slice(0, 400).map(r => `<div class="cf-row"><a href="${esc(r.url)}" target="_blank" rel="noopener"><b>${esc(r.title)}</b></a>
+      <div class="sub">${esc(r.reason)}${r.notes ? ' · ' + esc(r.notes) : ''}</div></div>`).join('') || '<div class="cf-row sub">None.</div>';
+  }
+  document.getElementById('add-q').oninput = e => renderOpt(e.target.value.toLowerCase());
+  renderOpt('');
+  document.getElementById('t-add').textContent = `Add-ons (${A.required.length + A.suggested.length})`;
 
   // ---- load order
   const LO = D.lo;

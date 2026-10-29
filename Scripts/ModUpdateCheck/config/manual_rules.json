@@ -2,5 +2,17 @@
  {"before": "Enhance enemies.pak", "after": "Necromancy Reanimated.pak",
   "reason": "Enhanced AI replaces the AnimateDeadZombie action list with an empty one; Necromancy Reanimated must load after it so your zombies keep their actions"},
  {"before": "Enhance enemies.pak", "after": "ManyMoreMonsters.pak",
-  "reason": "not needed: Enhanced AI's beast action list is a superset of Many More Monsters', so either order works", "skip": true}
+  "reason": "not needed: Enhanced AI's beast action list is a superset of Many More Monsters', so either order works", "skip": true},
+ {"before": "Extra_enemies_honour_a33f6ead-093c-5f68-89ef-1722b980547e.pak", "after": "REL_Full_Ancient_c6c0d2bd-6198-de9e-30ad-e8cda1793025.pak",
+  "reason": "More enemies in basic fights ships a full copy of the base character template (_Base); loaded after AMP it erases AMP's merged _Base edits (sight, hearing, hazard pathing). StrongerBosses also ships a full _Base copy, so keep it above AMP too or disable it", "pull": true},
+ {"before": "AMPFEDMIX.pak", "after": "AMP_Plus_fcf1d25f-1309-a9f7-ff14-974e39880e42.pak",
+  "reason": "AMPFEDMIX replaces all 384 AMP loot pools with copies that add FED gear; AMP Plus updates 29 of them. Between AMP and AMP Plus, FED gear stays in 355 pools and AMP Plus keeps its new items", "pull": true},
+ {"before": "AMP_Plus_fcf1d25f-1309-a9f7-ff14-974e39880e42.pak", "after": "SimpleSortingBags.pak",
+  "reason": "AMP fully replaces 7 trader tables this mod merges its bags into; loaded after AMP Plus the bags stay in stock"},
+ {"before": "AMP_Plus_fcf1d25f-1309-a9f7-ff14-974e39880e42.pak", "after": "Scantily Camp Outfit.pak",
+  "reason": "AMP fully replaces 9 trader tables this mod merges its outfits into; loaded after AMP Plus they stay in stock"},
+ {"before": "AMP_Plus_fcf1d25f-1309-a9f7-ff14-974e39880e42.pak", "after": "BasketEquipmentNSFW.pak",
+  "reason": "AMP fully replaces 5 trader tables this mod merges its gear into; loaded after AMP Plus it stays in stock"},
+ {"before": "AMP_Plus_fcf1d25f-1309-a9f7-ff14-974e39880e42.pak", "after": "FaerunColors_a669cf0b-926c-4d50-988d-59bc089a0df2.pak",
+  "reason": "AMP fully replaces 5 trader tables this mod merges its dyes into; loaded after AMP Plus they stay in stock"}
 ]

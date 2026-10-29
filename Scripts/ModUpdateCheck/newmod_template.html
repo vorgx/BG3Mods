@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>New Mod Check</title>
+<style>
+:root{
+  --bg:#f6f5f1; --panel:#ffffff; --ink:#1d1c19; --muted:#6b6860; --line:#e3e0d8; --hover:#faf9f6; --accent:#8a5a1f;
+  --bad:#b3261e; --bad-bg:#fbe9e7; --warn:#8a5a00; --warn-bg:#fdf1d6; --ok:#2e6b3a; --ok-bg:#e4f2e6;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#151412; --panel:#1e1d1a; --ink:#ecebe6; --muted:#a19d93; --line:#33312c; --hover:#25241f; --accent:#e0a85a;
+    --bad:#ff8a80; --bad-bg:#3a1d1a; --warn:#f2c46b; --warn-bg:#3a2e14; --ok:#86d19a; --ok-bg:#17301d; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#151412; --panel:#1e1d1a; --ink:#ecebe6; --muted:#a19d93; --line:#33312c; --hover:#25241f; --accent:#e0a85a;
+  --bad:#ff8a80; --bad-bg:#3a1d1a; --warn:#f2c46b; --warn-bg:#3a2e14; --ok:#86d19a; --ok-bg:#17301d; color-scheme: dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:28px 16px 64px}
+.hero{display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap}
+.hero img{width:200px;max-width:100%;border-radius:10px;border:1px solid var(--line)}
+.hero h1{margin:0 0 4px;font-size:26px}
+.sub{color:var(--muted);font-size:13px}
+h2{font-size:17px;margin:28px 0 10px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.row{padding:9px 0;border-top:1px solid var(--line)}
+.row:first-child{border-top:0}
+.pill{display:inline-block;font-size:12px;font-weight:600;padding:2px 9px;border-radius:999px;margin-right:6px}
+.bad{color:var(--bad);background:var(--bad-bg)} .warn{color:var(--warn);background:var(--warn-bg)} .ok{color:var(--ok);background:var(--ok-bg)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px}
+code{font-size:12px;color:var(--muted);overflow-wrap:anywhere}
+details summary{cursor:pointer}
+.theme{float:right}
+button.btn{padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--ink);font:inherit;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <button class="btn theme" id="theme" type="button">Theme</button>
+  <div class="hero" id="hero"></div>
+  <h2>At a glance</h2>
+  <div class="card" id="glance"></div>
+  <h2>Requirements</h2>
+  <div class="card" id="reqs"></div>
+  <h2>Mods you have that do the same kind of job</h2>
+  <p class="sub">Matched from mod page summaries. Only the categories this mod is clearly about are shown. The first ones are the most likely to double up or be replaceable.</p>
+  <div id="overlap"></div>
+  <h2>Your mods named on its page</h2>
+  <div class="card" id="named"></div>
+  <h2>Pak contents vs your mods</h2>
+  <div id="deep"></div>
+</div>
+<script id="data" type="application/json">__DATA__</script>
+<script>
+(function(){
+  const N = JSON.parse(document.getElementById('data').textContent);
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  try { const t = localStorage.getItem('bg3upd-theme'); if (t) document.documentElement.dataset.theme = t; } catch(e) {}
+  document.getElementById('theme').onclick = () => {
+    const dark = document.documentElement.dataset.theme ? document.documentElement.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.dataset.theme = dark ? 'light' : 'dark';
+    try { localStorage.setItem('bg3upd-theme', dark ? 'light' : 'dark'); } catch(e) {}
+  };
+  document.title = 'New Mod Check: ' + N.name;
+  document.getElementById('hero').innerHTML = (N.picture ? `<img src="${esc(N.picture)}" alt="">` : '') +
+    `<div><h1>${esc(N.name)}</h1><div class="sub">by ${esc(N.author)} · ${N.source === 'nexus' ? 'Nexus Mods' : 'mod.io'} · version ${esc(N.version)}</div>
+     <p>${esc(N.summary)}</p><a href="${esc(N.url)}" target="_blank" rel="noopener">Open the mod page</a></div>`;
+
+  const missing = N.requirements.filter(r => !r.installed.length && !r.optional && !r.tool);
+  const big = ['difficulty','boss changes','extra encounters','enemy AI','NPC stat overhaul','randomized loot','XP and levelling'];
+  const items = [];
+  if (N.already_installed.length) items.push(['ok', `Already installed: ${N.already_installed.join(', ')}`]);
+  items.push(missing.length ? ['bad', `Missing requirement${missing.length>1?'s':''}: ${missing.map(r => r.name).join(', ')}`] : ['ok', 'All listed requirements are installed']);
+  for (const k of big) if (N.overlap[k] && N.overlap[k].length) items.push(['warn', `${k}: ${N.overlap[k].length} of your mods also do this`]);
+  const named = N.named || [];
+  const inc = named.filter(n => n.kind === 'incompatible');
+  if (inc.length) items.push(['bad', `The page calls ${inc.map(n => n.name).join(', ')} incompatible`]);
+  if (N.deep) {
+    const c = N.deep.flatMap(d => d.conflicts);
+    const hard = c.filter(x => x.stats - x.stats_new_merges > 0 || x.spellsets.length || x.treasure.length || x.file_count);
+    items.push([hard.length ? 'warn' : 'ok', `${c.length} installed mods touch the same game data; ${hard.length} of them would be partly overridden`]);
+  } else {
+    items.push(['warn', 'Pak contents not checked yet. Run with -Download to compare stat entries, loot tables and files']);
+  }
+  document.getElementById('glance').innerHTML = items.map(([c, t]) => `<div class="row"><span class="pill ${c}">${c === 'ok' ? 'OK' : c === 'bad' ? 'Problem' : 'Check'}</span>${esc(t)}</div>`).join('');
+
+  document.getElementById('reqs').innerHTML = N.requirements.length ? N.requirements.map(r =>
+    `<div class="row"><span class="pill ${r.installed.length ? 'ok' : r.optional || r.tool ? 'warn' : 'bad'}">${r.installed.length ? 'Installed' : r.tool ? 'Tool' : r.optional ? 'Optional' : 'Missing'}</span>
+     <b>${esc(r.name)}</b>${r.installed.length ? ` <span class="sub">(${esc(r.installed.join(', '))})</span>` : ''}
+     ${r.notes ? `<div class="sub">${esc(r.notes)}</div>` : ''}</div>`).join('') : '<div class="sub">None listed on the page.</div>';
+
+  const keys = Object.keys(N.overlap).sort((a, b) => (big.indexOf(a) < 0) - (big.indexOf(b) < 0));
+  document.getElementById('overlap').innerHTML = keys.length ? keys.map(k => {
+    const v = N.overlap[k];
+    return `<details class="card" style="margin-bottom:8px" ${big.includes(k) ? 'open' : ''}><summary><b>${esc(k)}</b> <span class="sub">(${v.length})</span></summary>
+      ${v.map(x => `<div class="row"><b>${esc(x.name)}</b> <span class="sub">load order #${x.pos}</span><div class="sub">${esc(x.summary)}</div></div>`).join('')}</details>`;
+  }).join('') : '<div class="card sub">No overlap found from page summaries.</div>';
+
+  document.getElementById('named').innerHTML = named.length ? named.map(n =>
+    `<div class="row"><span class="pill ${n.kind === 'incompatible' ? 'bad' : n.kind === 'mentions' ? 'ok' : 'warn'}">${esc(n.kind)}</span><b>${esc(n.name)}</b><div class="sub">“${esc(n.sentence)}”</div></div>`).join('')
+    : '<div class="sub">The description doesn\'t name any mod you have.</div>';
+
+  document.getElementById('deep').innerHTML = !N.deep ? '<div class="card sub">Not downloaded. Re-run with <code>-Download</code> to compare the actual game data.</div>' :
+    N.deep.map(d => `<div class="card" style="margin-bottom:10px"><b>${esc(d.name || d.pak)}</b> <span class="sub">${esc(d.pak)} · ${d.stats} stat entries${d.se ? ' · uses Script Extender' : ''}</span>
+      ${d.replaces_installed ? `<div class="row"><span class="pill warn">Update</span>Same mod UUID as your installed ${esc(d.replaces_installed)}. This is a newer copy of a mod you have.</div>` : ''}
+      ${d.deps.length ? `<div class="row">Needs: ${d.deps.map(x => `${esc(x.name)} ${x.installed ? '<span class="pill ok">installed</span>' : '<span class="pill bad">missing</span>'}`).join(', ')}</div>` : ''}
+      ${d.load_after ? `<div class="row">Load it below position ${d.load_after} (after its dependencies).</div>` : ''}
+      ${d.conflicts.map(c => `<div class="row"><b>${esc(c.name)}</b> <span class="sub">#${c.pos}</span>
+         <div class="sub">${c.stats ? `${c.stats} shared stat entries (${c.stats_new_merges} written by the new mod as merges that keep your mod's changes)` : ''}
+         ${c.spellsets.length ? ` · replaces action lists ${esc(c.spellsets.join(', '))}` : ''}${c.treasure.length ? ` · ${c.treasure.length} shared loot tables` : ''}${c.file_count ? ` · ${c.file_count} identical file paths` : ''}</div>
+         ${c.examples.length ? `<code>${esc(c.examples.join(', '))}</code>` : ''}</div>`).join('') || '<div class="row sub">No shared game data with your mods.</div>'}
+    </div>`).join('');
+})();
+</script>
+</body>
+</html>

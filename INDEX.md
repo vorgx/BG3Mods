@@ -85,7 +85,7 @@ BG3Mods/
 │   │   ├── COMPREHENSIVE_WOW_ENRICHMENT.ps1
 │   │   ├── ENRICH_*.ps1              ← Batch enrichment scripts
 │   │   └── PARSE_ICYVEINS_*.ps1      ← HTML parsing scripts
-│   ├── ModUpdateCheck/               ← Installed-mod update + load order check (Run-ModCheck.ps1)
+│   ├── ModUpdateCheck/               ← Installed-mod updates, load order fix, add-ons, new-mod checks
 │   ├── Extract-SlayerTalents.ps1     ← Extraction utilities
 │   ├── View_Logs.ps1                 ← Log viewer
 │   ├── validate_spell_references.ps1 ← Spell validation
