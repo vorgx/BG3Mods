@@ -367,7 +367,7 @@ h2{font-size:17px;margin:28px 0 10px}
   ].map(([n,l,c]) => `<div class="stat ${c}" style="cursor:default"><b>${n}</b><span>${l}</span></div>`).join('');
   const KIND = {missing:'Missing pak', duplicate:'Duplicate', corrupt:'Unreadable pak', 'missing-dep':'Missing dependency',
     'disabled-dep':'Inactive dependency', obsolete:'Obsolete mod', conflict:'Declared conflict', incompatible:'Incompatible mods', order:'Wrong order',
-    placement:'Placement', inactive:'Not active', nometa:'Loose pak'};
+    placement:'Placement', inactive:'Not active', nometa:'Loose pak', override:'Override pak (always active)', 'partial-override':'Partly still active'};
   const SEV = {high:'Fix this', medium:'Should fix', low:'FYI', info:'FYI'};
   document.getElementById('lo-issues').innerHTML = issues.length ? issues.map(i =>
     `<div class="issue ${i.sev}"><div class="k">${SEV[i.sev]} · ${esc(KIND[i.kind] || i.kind)}</div>${esc(i.text)}</div>`).join('')

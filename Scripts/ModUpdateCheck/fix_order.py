@@ -69,6 +69,12 @@ for m in moved:
     print(f"[INFO] Move  {m['name']}: {m['cur']} -> {m['rec']}  ({m['why']})")
 for n in removed:
     print(f"[INFO] Disable {n} (the pak stays in the Mods folder; re-enable with --enable)")
+for name_ in args.disable:
+    files = L.scan_pak(os.path.join(L.MODS, name_), want_stats=False)["files"]
+    over = [f for f in files if L.OVERRIDE.match(f) and not f.lower().endswith("meta.lsx")]
+    if over:
+        print(f"[WARN] {name_} has {len(over)} file(s) that replace base-game files (e.g. {over[0]}). The game still applies "
+              "those from the Mods folder; move the pak out of Mods to switch it off completely.")
 for n in added:
     print(f"[INFO] Enable {n} (placed above Compatibility Framework)")
 for n in leftover:

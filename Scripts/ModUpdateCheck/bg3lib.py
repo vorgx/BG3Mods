@@ -20,6 +20,9 @@ NX = "https://api.nexusmods.com/v1/games/baldursgate3"
 MODIO = f"https://g-{MODIO_GAME_ID}.modapi.io/v1/games/{MODIO_GAME_ID}"
 ACTIVE = {"MAIN", "UPDATE", "OPTIONAL", "MISCELLANEOUS"}
 BUILTIN = re.compile(r"^(Gustav|GustavDev|GustavX|Shared|SharedDev|Honour|HonourX|MainUI|ModBrowser|PhotoMode|CrossplayUI|Engine|Game|DiceSet_\d+)$", re.I)
+# files inside the base game's own module folders: the game applies them from any pak in Mods, load order or not
+OVERRIDE = re.compile(r"^(Public|Mods|Generated/Public)/(Game|Shared|SharedDev|Gustav|GustavDev|GustavX|Honour|HonourX|Engine|MainUI|"
+                      r"ModBrowser|PhotoMode|CrossplayUI|DiceSet_\d+)/", re.I)
 UUID_RE = re.compile(r"[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}", re.I)
 
 if hasattr(sys.stdout, "reconfigure"):

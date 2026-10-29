@@ -12,6 +12,9 @@ upd = {m["pak"]: m for m in json.load(open(os.path.join(S, "report.json"), encod
 notes = json.load(open(os.path.join(S, "lo_notes.json"), encoding="utf-8"))
 
 BUILTIN = re.compile(r"^(Gustav|GustavDev|GustavX|Shared|SharedDev|Honour|HonourX|MainUI|ModBrowser|PhotoMode|CrossplayUI|Engine|Game|DiceSet_\d+)$", re.I)
+# files inside the base game's own module folders: they replace game files directly
+OVERRIDE = re.compile(r"^(Public|Mods|Generated/Public)/(Game|Shared|SharedDev|Gustav|GustavDev|GustavX|Honour|HonourX|Engine|MainUI|"
+                      r"ModBrowser|PhotoMode|CrossplayUI|DiceSet_\d+)/", re.I)
 PATCHY = re.compile(r"patch|compat|\bfix|addon|add-on|add on|submod|integration|_eotb|eotb\b|tweak", re.I)
 TOP = [  # framework mods whose own pages say to load them first, in this order
     ("communitylibrary", "Community Library: Druid Wild Shape Overhaul's page says it goes at the top"),
@@ -71,7 +74,21 @@ for p in lo["paks"]:
         issue("info", "nometa", f"{p['pak']} has no meta.lsx. It's a loose override pak that loads automatically, "
               "outside the load order.", [p["pak"]])
     elif p["pak"] not in pos and by_uuid[p["uuid"]][0] == p["pak"]:
-        issue("low", "inactive", f"{p.get('name')} is installed but not in the load order, so it isn't active.", [p["pak"]])
+        # the game mounts every pak in the Mods folder, so files that replace base-game files apply even when the
+        # mod isn't in the load order (BG3 Mod Manager lists such paks under "Overrides")
+        content = [f for f in p["files"] if not f.lower().endswith("meta.lsx") and not f.startswith("Localization/")]
+        over = [f for f in content if OVERRIDE.match(f)]
+        if content and len(over) == len(content):
+            issue("info", "override", f"{p.get('name')} is an override pak: all {len(over)} of its files replace base-game files "
+                  f"(e.g. {over[0]}), so the game uses it whether or not it's in the load order. "
+                  "BG3 Mod Manager lists it under Overrides.", [p["pak"]])
+        elif over:
+            some = "1 of its files replaces a base-game file" if len(over) == 1 else f"{len(over)} of its files replace base-game files"
+            issue("medium", "partial-override", f"{p.get('name')} is out of the load order, but {some} "
+                  f"({over[0]}{', …' if len(over) > 1 else ''}) that still applies. To switch it off completely, move the pak "
+                  "out of the Mods folder.", [p["pak"]])
+        else:
+            issue("low", "inactive", f"{p.get('name')} is installed but not in the load order, so it isn't active.", [p["pak"]])
 
 # --- constraints: (before, after, reason, hard)
 edges = []
