@@ -106,6 +106,11 @@ for inc in json.load(open(os.path.join(CONF, "incompat_verified.json"), encoding
         issue("high", "incompatible", inc["text"], [inc["a"], inc["b"]])
 
 pull_pos = {}  # pak -> position it should be pulled up to (manual rules with "pull")
+# the local loot merge patch declares no dependencies (the game rejected them), so keep it after its sources here
+_sources = os.path.join(S, "lootpatch", "sources.json")
+if os.path.exists(_sources):
+    for src_pak in json.load(open(_sources, encoding="utf-8")):
+        add_edge(src_pak, "ModCheck_LootMerge.pak", "the ModCheck Loot Merge patch rebuilds loot tables from this mod and must load after it", True)
 # rules checked by hand (spellset overrides etc.)
 for rule in json.load(open(os.path.join(CONF, "manual_rules.json"), encoding="utf-8")):
     if not rule.get("skip"):

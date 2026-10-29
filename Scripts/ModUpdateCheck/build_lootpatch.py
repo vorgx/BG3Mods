@@ -84,7 +84,7 @@ for rule in cfg.get("pools", []):
 
 for rule in cfg.get("subtables", []):
     n = rule["table"]
-    definers = [pk for pk in order if n in T(pk)] if all(pk in order for pk in [rule["base"]]) else []
+    definers = [pk for pk in order if pk != f"{FOLDER}.pak" and n in T(pk)]  # never feed on our own output
     start = definers.index(rule["base"]) if rule["base"] in definers else None
     if start is None:
         print(f"[WARN] {n}: base {rule['base']} doesn't define it; skipped")
@@ -118,7 +118,10 @@ dep_xml = "".join(
     f'\n            <attribute id="MD5" type="LSString" value="" />\n            <attribute id="Name" type="LSString" value="{d["name"]}" />'
     f'\n            <attribute id="PublishHandle" type="uint64" value="0" />\n            <attribute id="UUID" type="guid" value="{d["uuid"]}" />'
     f'\n            <attribute id="Version64" type="int64" value="0" />\n          </node>'
-    for d in [L.scan_pak(os.path.join(L.MODS, pk), want_stats=False) for pk in sorted(deps, key=order.index)])
+    # No declared dependencies: the game reset the whole load order at startup when this pak listed them
+    # (30 Oct 2026). lo_analyze.py keeps it after its sources using work/lootpatch/sources.json instead.
+    for d in ([L.scan_pak(os.path.join(L.MODS, pk), want_stats=False) for pk in sorted(deps, key=order.index)]
+              if "--with-deps" in sys.argv else []))
 meta = f'''<?xml version="1.0" encoding="utf-8"?>
 <save>
   <version major="4" minor="0" revision="9" build="331" />
@@ -157,6 +160,7 @@ meta = f'''<?xml version="1.0" encoding="utf-8"?>
 </save>
 '''
 open(os.path.join(src, "Mods", FOLDER, "meta.lsx"), "w", encoding="utf-8").write(meta)
+json.dump(sorted(deps, key=order.index), open(os.path.join(root, "sources.json"), "w", encoding="utf-8"), indent=1)
 pak = os.path.join(root, f"{FOLDER}.pak")
 r = subprocess.run([DIVINE, "-g", "bg3", "-a", "create-package", "-s", os.path.abspath(src), "-d", os.path.abspath(pak), "-c", "lz4"],
                    capture_output=True, text=True)

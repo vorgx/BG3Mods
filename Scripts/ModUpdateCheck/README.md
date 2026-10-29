@@ -22,6 +22,7 @@ Run these from `Scripts\ModUpdateCheck`.
 | `.\Check-NewMod.ps1 <url>` | Due diligence on a Nexus or mod.io mod you're considering. Lists its requirements, which of your mods do the same job, and which of your mods its page names. Writes `Reports\New_Mod_Check_<name>_<date>.html`. |
 | `.\Check-NewMod.ps1 <url> -Download` | Also downloads it into `work\newmods\`, for inspection only. Compares its game data with every installed pak: shared stat entries, replaced action lists, shared loot tables, identical files. Says whether it's a newer copy of something you have, and where it should load. Also writes `Reports\Impact_<name>_<date>.html` (via `impact.py`), described below. |
 | `python build_lootpatch.py --install` (from `work\venv`) | Rebuilds the local **ModCheck Loot Merge** pak from `config\loot_merge.json` and copies it into Mods (old copy backed up). Run it after updating AMP, AMP Plus, AMPFEDMIX or Witcher Class, then `.\Run-ModCheck.ps1` to re-check. |
+| `.\Test-GameLoad.ps1` | Starts Baldur's Gate 3, waits up to 45 seconds to see whether it resets the load order (it does this at startup when a mod fails its checks), then closes the game again. It never gets past the main menu, so saves are untouched, and `modsettings.lsx` is restored afterwards. `-Find` bisects over recently changed mods to name the one the game rejects (one launch per step). **Run it after every update, install or order change.** |
 | `.\Restore-ModCheck.ps1` | Lists backups. `latest` or a folder name undoes that change: restores `modsettings.lsx` and moves the replaced paks back. |
 
 Update details:
@@ -97,6 +98,7 @@ For a downloaded new mod, it compares the class, subclass, progression, feat, ra
 | `extra_matches.json` | Paks BG3ModHelper couldn't link (`nexus_id` / `modio_id`), and hand verdicts: `"status": "gone"` (no longer hosted, keep your copy), `"obsolete"` (remove), or `"update"`, each with a `"note"` that shows in the report. |
 | `incompat_verified.json` | Real incompatibilities between two paks. `"a"` is the one to disable. |
 | `manual_rules.json` | Extra "A loads before B" rules. Add `"skip": true` to keep a note without enforcing it, or `"pull": true` to move A up to just above B instead of pushing B down. |
+| `loot_merge.json` (note) | The patch pak declares **no dependencies**. On 30 Oct 2026 the game reset the whole load order at startup when it listed its nine source mods as dependencies. Instead, `build_lootpatch.py` writes `work\lootpatch\sources.json`, and `lo_analyze.py` keeps the patch after those mods. |
 | `loot_merge.json` | Loot tables the local merge patch rebuilds. `pools`: merge one mod's additions into another's single-list pools (AMPFEDMIX's Fade gear into AMP Plus's 29 pools). `subtables`: rebuild a table from a base plus every later mod's drop groups, treating listed full replacements as additions (Witcher Class on the Dark Shambling Mound). |
 | `known_issues.json` | Issues stated on mod pages that data checks can't see, keyed by the new mod (`nexus<id>` / `modio<id>`), shown in its impact report when the named pak is installed. |
 
