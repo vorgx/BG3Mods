@@ -1,0 +1,4 @@
+[
+ {"a": "ASTRLglowingeyes.pak", "b": "EyesOfTheBeholder.pak",
+  "text": "Astralities' Glow Eyes and Eyes of the Beholder are incompatible. Both Nexus pages say so: they edit the same player CharacterVisuals files. You already have EotB's own Glow Eyes preset (GlowEyes.pak), so disabling ASTRL Glowing Eyes is the usual fix."}
+]

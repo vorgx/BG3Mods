@@ -85,6 +85,7 @@ BG3Mods/
 │   │   ├── COMPREHENSIVE_WOW_ENRICHMENT.ps1
 │   │   ├── ENRICH_*.ps1              ← Batch enrichment scripts
 │   │   └── PARSE_ICYVEINS_*.ps1      ← HTML parsing scripts
+│   ├── ModUpdateCheck/               ← Installed-mod update + load order check (Run-ModCheck.ps1)
 │   ├── Extract-SlayerTalents.ps1     ← Extraction utilities
 │   ├── View_Logs.ps1                 ← Log viewer
 │   ├── validate_spell_references.ps1 ← Spell validation
@@ -147,6 +148,12 @@ Press: Ctrl+Shift+P → "Tasks: Run Task" → "Install Mod to BG3"
 
 ### View All Keyboard Shortcuts
 **Open**: [QUICK_REFERENCE.md](QUICK_REFERENCE.md)
+
+### Check Installed Mods for Updates and Load Order
+```
+.\Scripts\ModUpdateCheck\Run-ModCheck.ps1
+```
+**See**: [Scripts/ModUpdateCheck/README.md](Scripts/ModUpdateCheck/README.md)
 
 ---
 

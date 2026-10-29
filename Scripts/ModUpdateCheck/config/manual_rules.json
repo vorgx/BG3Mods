@@ -1,0 +1,6 @@
+[
+ {"before": "Enhance enemies.pak", "after": "Necromancy Reanimated.pak",
+  "reason": "Enhanced AI replaces the AnimateDeadZombie action list with an empty one; Necromancy Reanimated must load after it so your zombies keep their actions"},
+ {"before": "Enhance enemies.pak", "after": "ManyMoreMonsters.pak",
+  "reason": "not needed: Enhanced AI's beast action list is a superset of Many More Monsters', so either order works", "skip": true}
+]

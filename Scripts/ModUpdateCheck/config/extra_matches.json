@@ -1,0 +1,54 @@
+{
+ "CombatExtenderAI.pak": {
+  "nexus_id": 5207,
+  "how": "Found by author search (Zehtuka)"
+ },
+ "DWSO5R.pak": {
+  "nexus_id": 1148,
+  "how": "Found by author search (ShadyDax)",
+  "status": "update",
+  "note": "Confirmed update: the current 'DWSO - 5R Features' download (June 2026) ships 'Druid Wild Shape Overhaul - 5R features.pak' (1.7 MB). Your DWSO5R.pak (3.4 MB) is the older build. The new pak has a different file name, so delete DWSO5R.pak when you install it, or you'll have two copies."
+ },
+ "EQLngerie_7b25c953-f727-cab3-38eb-edad099baf4b.pak": {
+  "modio_id": 5138870,
+  "how": "Found by name search on mod.io"
+ },
+ "Immersive Nightsong Armour.pak": {
+  "nexus_id": 23866,
+  "how": "Found by name search"
+ },
+ "Skynet.pak": {
+  "nexus_id": 19315,
+  "how": "Found by name search"
+ },
+ "Tempests Favour - Thunder and Lightning Divine Favour.pak": {
+  "nexus_id": 18800,
+  "how": "Found by author search (SymboJones)"
+ },
+ "FeatsOverhaul_SpellsPatch.pak": {
+  "nexus_id": 15044,
+  "how": "Same page as FeatsOverhaul.pak",
+  "status": "obsolete",
+  "note": "Obsolete: the FeatsOverhaul 1.5.0 changelog says 'REMOVED FeatsOverhaul_SpellsPatch as it's no longer necessary'. You run 1.5.16, so uninstall this pak."
+ },
+ "JG33_Doom_Hunter_Class.pak": {
+  "status": "gone",
+  "how": "Not on Nexus or mod.io",
+  "note": "Author JeffGrande33 is banned from Nexus, so the mod is gone. Keep your current copy and back it up; it can't be re-downloaded."
+ },
+ "JG33_Shadow_Cursed_Class.pak": {
+  "status": "gone",
+  "how": "Not on Nexus or mod.io",
+  "note": "Author JeffGrande33 is banned from Nexus, so the mod is gone. Keep your current copy and back it up; it can't be re-downloaded."
+ },
+ "Leila Preset.pak": {
+  "status": "gone",
+  "how": "Not on Nexus or mod.io",
+  "note": "Author DeathMetalKitty appears to have deleted their account. Keep your current copy and back it up; it can't be re-downloaded."
+ },
+ "Enhance enemies.pak": {
+  "status": "gone",
+  "how": "Not on Nexus or mod.io",
+  "note": "Heimtak removed this mod (Enhanced AI v3.0, Aug 2025). Worth keeping. It adds a 5e Dodge action for players, NPCs, beasts, summons and goblins, makes Shove a bonus action that AI only uses as a supporting move and never on allies or corpses, and makes enemies with Fly use it. It replaces 8 base-game action lists, so keep it ABOVE Necromancy Reanimated (already true). Otherwise your undead summons would lose all their actions. Its 150 enemy template edits are .txt files the game doesn't load, so they do nothing. It overrides featsextra's Dodge with an almost identical version."
+ }
+}
