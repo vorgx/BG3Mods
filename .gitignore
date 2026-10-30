@@ -111,6 +111,7 @@ $RECYCLE.BIN/
 
 # Markdown preview files
 *.html
+!docs/team-status.html
 *.pdf
 
 # Temporary session files (keep completed session summaries)

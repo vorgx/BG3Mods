@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project Dashboard</title>
+<!--
+  Lead keeps this page current. Edit ONLY the JSON in the #status block below;
+  the page renders from it. Update it on every session start, rename, archive,
+  routing change, install, release, send or baton change. "activeTool" is
+  "Claude", "Codex" or "nobody" (released). Document and quick-link paths are
+  relative to this page (it lives in docs/), e.g. "SESSION-ROLES.md" or
+  "../AGENTS.md". List documents in group order; a group heading appears
+  whenever the group changes.
+-->
+<script type="application/json" id="status">
+{
+  "project": "BG3 Mods",
+  "type": "Game modding + mod-check tool",
+  "updated": "2026-10-31 00:40",
+  "activeTool": "Claude",
+  "baton": {
+    "since": "2026-10-31 00:40",
+    "by": "Lead · BG3 Mods",
+    "lastHandoff": "Team set up; Toolsmith started on sandbox tests. Nothing in flight on the live game."
+  },
+  "waitingOnYou": [
+    "Commit the new team docs (nothing committed yet)",
+    "After your next play session: ask Lead to have the Gatekeeper read the Script Extender log"
+  ],
+  "roles": [
+    {
+      "role": "Lead",
+      "tool": "Claude",
+      "model": "Opus 5.5 · high",
+      "session": "local_dbd0f178-3091-47a9-b414-beef0c7dba1c",
+      "state": "active",
+      "task": "Routing",
+      "last": ""
+    },
+    {
+      "role": "Toolsmith",
+      "tool": "Claude",
+      "model": "Opus 5.5 · medium",
+      "session": "local_224e5963-2402-447a-a3b8-a93183d3bd10",
+      "state": "busy",
+      "task": "Brief done; idle",
+      "last": "Parts A+B done: 44 sandbox tests pass (re-run by Lead), five report fixes, live files unchanged; not committed"
+    },
+    {
+      "role": "Gatekeeper",
+      "tool": "Claude",
+      "model": "Sonnet 5.5 · medium",
+      "session": "not started",
+      "state": "idle",
+      "task": "Starts with the first live change",
+      "last": ""
+    },
+    {
+      "role": "Forge",
+      "tool": "—",
+      "model": "Opus 5.5 · medium",
+      "session": "not started (reserved)",
+      "state": "idle",
+      "task": "Warrior mod, when resumed",
+      "last": ""
+    }
+  ],
+  "quickLinks": [
+    {
+      "title": "Session roles",
+      "path": "SESSION-ROLES.md"
+    },
+    {
+      "title": "Project layout",
+      "path": "PROJECT-LAYOUT.md"
+    },
+    {
+      "title": "Handoff",
+      "path": "HANDOFF.md"
+    },
+    {
+      "title": "Live log",
+      "path": "LIVE-LOG.md"
+    },
+    {
+      "title": "Tool README",
+      "path": "../Scripts/ModUpdateCheck/README.md"
+    },
+    {
+      "title": "Reports",
+      "path": "../Reports/"
+    }
+  ],
+  "documents": [
+    {
+      "group": "Governance",
+      "title": "Session roles",
+      "path": "SESSION-ROLES.md",
+      "version": "—",
+      "updated": "2026-10-31",
+      "owner": "Lead",
+      "note": "current"
+    },
+    {
+      "group": "Governance",
+      "title": "Project layout",
+      "path": "PROJECT-LAYOUT.md",
+      "version": "—",
+      "updated": "2026-10-31",
+      "owner": "Lead",
+      "note": "current"
+    },
+    {
+      "group": "Governance",
+      "title": "Handoff (baton, reports)",
+      "path": "HANDOFF.md",
+      "version": "—",
+      "updated": "2026-10-31",
+      "owner": "Lead",
+      "note": "current"
+    },
+    {
+      "group": "Governance",
+      "title": "Live log",
+      "path": "LIVE-LOG.md",
+      "version": "—",
+      "updated": "2026-10-31",
+      "owner": "Gatekeeper",
+      "note": "append-only; 29–30 Oct back-filled"
+    },
+    {
+      "group": "Governance",
+      "title": "CLAUDE.md",
+      "path": "../CLAUDE.md",
+      "version": "—",
+      "updated": "2026-10-31",
+      "owner": "Lead",
+      "note": "current"
+    },
+    {
+      "group": "Governance",
+      "title": "AGENTS.md (Codex)",
+      "path": "../AGENTS.md",
+      "version": "—",
+      "updated": "2026-10-31",
+      "owner": "Lead",
+      "note": "current"
+    },
+    {
+      "group": "Briefs",
+      "title": "Toolsmith: sandbox tests + report fixes",
+      "path": "briefs/2026-10-31-toolsmith-sandbox-tests.md",
+      "version": "—",
+      "updated": "2026-10-31",
+      "owner": "Lead",
+      "note": "in progress"
+    },
+    {
+      "group": "Tool",
+      "title": "Mod-check tool README",
+      "path": "../Scripts/ModUpdateCheck/README.md",
+      "version": "e92378b",
+      "updated": "2026-10-30",
+      "owner": "Toolsmith",
+      "note": "current"
+    },
+    {
+      "group": "Tool",
+      "title": "Reports folder (dated HTML)",
+      "path": "../Reports/",
+      "version": "—",
+      "updated": "2026-10-30",
+      "owner": "Toolsmith",
+      "note": "write-once output"
+    },
+    {
+      "group": "Warrior mod (paused)",
+      "title": ".agent.md",
+      "path": "../.agent.md",
+      "version": "—",
+      "updated": "2025-10-21",
+      "owner": "Forge",
+      "note": "Warrior mod only"
+    },
+    {
+      "group": "Warrior mod (paused)",
+      "title": "SOURCE_OF_TRUTH.md",
+      "path": "../Documentation/00_SourcesOfTruth/SOURCE_OF_TRUTH.md",
+      "version": "—",
+      "updated": "2025-10-27",
+      "owner": "Forge",
+      "note": "uncommitted edits"
+    },
+    {
+      "group": "Warrior mod (paused)",
+      "title": "INDEX.md",
+      "path": "../INDEX.md",
+      "version": "—",
+      "updated": "2026-10-30",
+      "owner": "Forge",
+      "note": "Warrior mod index (one tool line)"
+    }
+  ],
+  "live": [
+    {
+      "when": "2026-10-30 09:52",
+      "what": "SE runtime logging on + test launch",
+      "by": "Lead (pre-team)",
+      "receipt": "Backups/ModCheck/20261030_095232_se-settings"
+    },
+    {
+      "when": "2026-10-30 09:39",
+      "what": "StrongerBosses parked",
+      "by": "Lead (pre-team)",
+      "receipt": "Backups/ModCheck/20261030_093911_parked"
+    },
+    {
+      "when": "2026-10-30 02:18",
+      "what": "Loot patch rebuilt without dependencies, order verified",
+      "by": "Lead (pre-team)",
+      "receipt": "Backups/ModCheck/20261030_021855_lootpatch"
+    }
+  ],
+  "next": [
+    "Toolsmith: sandbox test suite (Part A) → report",
+    "Toolsmith: five report fixes (Part B)",
+    "Gatekeeper: first live change when Teno asks"
+  ]
+}
+</script>
+<style>
+  :root {
+    --bg: #f7f7f5; --panel: #ffffff; --text: #1d1d1b; --muted: #6b6b66;
+    --line: #e3e2dd; --accent: #2f5fd0; --warn-bg: #fff4dc; --warn: #8a5a00;
+    --ok: #1f7a4d; --busy: #2f5fd0; --idle: #8a8a84; --blocked: #b3261e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #161615; --panel: #1f1f1d; --text: #ecebe6; --muted: #a3a29c;
+      --line: #33332f; --accent: #8fb0ff; --warn-bg: #3a2d10; --warn: #f2c56b;
+      --ok: #6fd3a0; --busy: #8fb0ff; --idle: #8a8a84; --blocked: #ff8a80;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #161615; --panel: #1f1f1d; --text: #ecebe6; --muted: #a3a29c;
+    --line: #33332f; --accent: #8fb0ff; --warn-bg: #3a2d10; --warn: #f2c56b;
+    --ok: #6fd3a0; --busy: #8fb0ff; --idle: #8a8a84; --blocked: #ff8a80;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 960px; margin: 0 auto; padding: 24px 16px 48px; }
+  header h1 { margin: 0; font-size: 22px; }
+  header p { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
+  section { margin-top: 24px; }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .06em;
+    color: var(--muted); margin: 0 0 8px; }
+  .waiting { background: var(--warn-bg); color: var(--warn); border-radius: 8px;
+    padding: 12px 16px; }
+  .waiting ul { margin: 0; padding-left: 18px; }
+  .panel { background: var(--panel); border: 1px solid var(--line);
+    border-radius: 8px; overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--line);
+    vertical-align: top; }
+  th { font-weight: 600; color: var(--muted); font-size: 12px; }
+  tr:last-child td { border-bottom: 0; }
+  code { font-size: 12px; color: var(--muted); word-break: break-all; }
+  .state { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--idle); }
+  .s-active .dot, .s-busy .dot { background: var(--busy); }
+  .s-done .dot { background: var(--ok); }
+  .s-blocked .dot { background: var(--blocked); }
+  .baton { display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: baseline;
+    background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--accent);
+    border-radius: 8px; padding: 12px 16px; }
+  .baton strong { font-size: 18px; color: var(--accent); }
+  .baton span { color: var(--muted); font-size: 13px; }
+  .baton p { flex-basis: 100%; margin: 0; font-size: 14px; }
+  .links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .links a { font-size: 13px; padding: 4px 10px; border: 1px solid var(--line);
+    border-radius: 999px; background: var(--panel); }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .group td { background: var(--bg); font-size: 12px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+  .ver { font-variant-numeric: tabular-nums; white-space: nowrap; }
+  ol { margin: 0; padding: 12px 16px 12px 34px; }
+  .empty { color: var(--muted); padding: 12px 16px; margin: 0; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1 id="title">Team status</h1>
+    <p id="meta"></p>
+    <nav class="links" id="quick"></nav>
+  </header>
+  <section>
+    <h2>Baton</h2>
+    <div class="baton" id="baton"></div>
+  </section>
+  <section id="waiting-wrap">
+    <h2>Waiting on you</h2>
+    <div class="waiting" id="waiting"></div>
+  </section>
+  <section>
+    <h2>Roles</h2>
+    <div class="panel"><table>
+      <thead><tr><th>Role</th><th>Tool</th><th>Model</th><th>State</th><th>Current task</th><th>Last report</th><th>Session</th></tr></thead>
+      <tbody id="roles"></tbody>
+    </table></div>
+  </section>
+  <section>
+    <h2>Documents</h2>
+    <div class="panel" id="docs"></div>
+  </section>
+  <section>
+    <h2>Live changes</h2>
+    <div class="panel" id="live"></div>
+  </section>
+  <section>
+    <h2>Next up</h2>
+    <div class="panel" id="next"></div>
+  </section>
+</main>
+<script>
+  const data = JSON.parse(document.getElementById('status').textContent);
+  const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  document.title = `${data.project} · Dashboard`;
+  document.getElementById('title').textContent = `${data.project} · dashboard`;
+  const link = (path, text) => `<a href="${esc(encodeURI(path || ''))}">${esc(text)}</a>`;
+  document.getElementById('quick').innerHTML =
+    (data.quickLinks || []).filter(l => l.path).map(l => link(l.path, l.title)).join('');
+  document.getElementById('meta').textContent = `${data.type} · updated ${data.updated}`;
+
+  const b = data.baton || {};
+  document.getElementById('baton').innerHTML =
+    `<strong>${esc(data.activeTool || 'nobody')}</strong>` +
+    `<span>since ${esc(b.since)} · ${esc(b.by)}</span>` +
+    (b.lastHandoff ? `<p>${esc(b.lastHandoff)}</p>` : '');
+
+  const waiting = (data.waitingOnYou || []).filter(Boolean);
+  if (waiting.length) {
+    document.getElementById('waiting').innerHTML = `<ul>${waiting.map(w => `<li>${esc(w)}</li>`).join('')}</ul>`;
+  } else {
+    document.getElementById('waiting-wrap').hidden = true;
+  }
+
+  document.getElementById('roles').innerHTML = (data.roles || []).map(r => `
+    <tr>
+      <td><strong>${esc(r.role)}</strong></td>
+      <td>${esc(r.tool)}</td>
+      <td>${esc(r.model)}</td>
+      <td><span class="state s-${esc((r.state || 'idle').toLowerCase())}"><span class="dot"></span>${esc(r.state)}</span></td>
+      <td>${esc(r.task)}</td>
+      <td>${esc(r.last)}</td>
+      <td><code>${esc(r.session)}</code></td>
+    </tr>`).join('');
+
+  const docs = (data.documents || []).filter(d => d.path && d.title);
+  let lastGroup = null;
+  document.getElementById('docs').innerHTML = docs.length
+    ? `<table><thead><tr><th>Document</th><th>Version</th><th>Updated</th><th>Owner</th><th>Note</th></tr></thead><tbody>${
+        docs.map(d => {
+          const head = d.group && d.group !== lastGroup
+            ? `<tr class="group"><td colspan="5">${esc(d.group)}</td></tr>` : '';
+          lastGroup = d.group;
+          return head + `<tr><td>${link(d.path, d.title)}</td><td class="ver">${esc(d.version || '—')}</td><td class="ver">${esc(d.updated)}</td><td>${esc(d.owner)}</td><td>${esc(d.note)}</td></tr>`;
+        }).join('')
+      }</tbody></table>`
+    : '<p class="empty">No documents listed yet.</p>';
+
+  const live = (data.live || []).filter(l => l.what && l.when);
+  document.getElementById('live').innerHTML = live.length
+    ? `<table><thead><tr><th>When</th><th>What</th><th>By</th><th>Receipt</th></tr></thead><tbody>${
+        live.map(l => `<tr><td>${esc(l.when)}</td><td>${esc(l.what)}</td><td>${esc(l.by)}</td><td><code>${esc(l.receipt)}</code></td></tr>`).join('')
+      }</tbody></table>`
+    : '<p class="empty">No live changes yet.</p>';
+
+  const next = (data.next || []).filter(Boolean);
+  document.getElementById('next').innerHTML = next.length
+    ? `<ol>${next.map(n => `<li>${esc(n)}</li>`).join('')}</ol>`
+    : '<p class="empty">Nothing queued.</p>';
+</script>
+</body>
+</html>
