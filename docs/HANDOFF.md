@@ -19,11 +19,12 @@ Claim the baton by updating this table and `activeTool` in `team-status.html`. R
   - `Test-ModCheck.ps1` and `tests/`: 44 sandbox tests. Lead re-ran them: all OK, and live files unchanged.
   - Five report fixes in `build.py` and `addons.py`.
   - The README now has a Tests section, and its `-UseCache` line is corrected.
-- **Not committed:** `Scripts/ModUpdateCheck/`, plus all of `docs/`, `CLAUDE.md` and `AGENTS.md`.
-- **Waiting on Teno:**
-  - whether to commit;
-  - one read-only networked `Run-ModCheck.ps1`, to see fixes 4 and 5 against live data;
-  - whether to add the Toolsmith's preview server to `.claude/launch.json`.
+- **Committed and pushed** on 31 Oct (Teno: "Commit and push"):
+  - `68ad2c6`: the tool tests and fixes;
+  - `8b69129`: the team docs, with a `.gitignore` exception for `docs/team-status.html`.
+- **Preview server** "toolsmith-preview" added to `.claude/launch.json` (Teno: "yes add this"). The browser check passed.
+- **A networked mod check ran at 01:24** on 31 Oct (`Reports/BG3_Mod_Check_2026-10-31.html`). Who ran it isn't recorded. It shows 3 updates: AutomaticMagicalSecretsExtender, B52's Finesse Weaponry, Skynet.
+- **Waiting on Teno:** whether to install those 3 updates (that's the Gatekeeper's first job).
 - **Toolsmith backlog (not briefed):**
   - make `-UseCache` fully offline;
   - in PowerShell 5.1, the tests' "[INFO] Path overrides" stderr line shows as a red NativeCommandError, though the run passes.
