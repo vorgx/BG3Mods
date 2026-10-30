@@ -151,7 +151,7 @@ Where to send it:
 | Lead | Claude | `local_dbd0f178-3091-47a9-b414-beef0c7dba1c` (the session Teno talks to) | Formerly "Mod version checker HTML tool". It built the whole tool (29–30 Oct 2026) |
 | Lead | Codex | "Lead · BG3 Mods" | Not created yet |
 | Toolsmith | Claude | `local_224e5963-2402-447a-a3b8-a93183d3bd10` | "Toolsmith · BG3 mod-check tool", started 31 Oct 2026; first brief `docs/briefs/2026-10-31-toolsmith-sandbox-tests.md` |
-| Gatekeeper | Claude | not started yet | "Gatekeeper · BG3 install and load order"; starts with the first live change |
+| Gatekeeper | Claude | `local_8cb33a72-bb91-40bb-9016-bb1026de1ea1` | "Gatekeeper · BG3 install and load order", started 31 Oct 2026; first brief `docs/briefs/2026-10-31-gatekeeper-install-updates.md` |
 | Forge | — | not started (reserved) | Starts when the Warrior mod resumes |
 
 **Transition note:** before 31 Oct 2026 the Lead session made every live change itself. That covers the load-order fixes, the updates, the AMP Plus install, the loot patch, parking StrongerBosses, and the Script Extender settings. Those changes are back-filled in `docs/LIVE-LOG.md`. From now on, every live change goes through the Gatekeeper.

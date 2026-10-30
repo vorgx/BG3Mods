@@ -25,7 +25,7 @@
     "lastHandoff": "Toolsmith brief done; tool tests + report fixes and team docs committed and pushed (68ad2c6, 8b69129)."
   },
   "waitingOnYou": [
-    "Install the 3 available updates (AutomaticMagicalSecretsExtender, B52's Finesse Weaponry, Skynet)? That's the Gatekeeper's first job",
+    "If you use BG3 Mod Manager: re-import the order (File > Import Order from File) before its next Export",
     "After your next play session: have the Gatekeeper read the Script Extender log"
   ],
   "roles": [
@@ -43,7 +43,7 @@
       "tool": "Claude",
       "model": "Opus 5.5 · medium",
       "session": "local_224e5963-2402-447a-a3b8-a93183d3bd10",
-      "state": "busy",
+      "state": "done",
       "task": "Brief done; idle",
       "last": "Parts A+B done: 44 sandbox tests pass (re-run by Lead), five report fixes, live files unchanged; not committed"
     },
@@ -51,10 +51,10 @@
       "role": "Gatekeeper",
       "tool": "Claude",
       "model": "Sonnet 5.5 · medium",
-      "session": "not started",
-      "state": "idle",
-      "task": "Starts with the first live change",
-      "last": ""
+      "session": "local_8cb33a72-bb91-40bb-9016-bb1026de1ea1",
+      "state": "done",
+      "task": "Idle",
+      "last": "3 updates installed; order unchanged (404); test launch + SE log clean"
     },
     {
       "role": "Forge",
@@ -204,6 +204,12 @@
   ],
   "live": [
     {
+      "when": "2026-10-31 01:35",
+      "what": "3 mod updates (AMSE 1.1.5, B52's Finesse Weaponry 3.1.1.3, Skynet 7.5)",
+      "by": "Gatekeeper",
+      "receipt": "Backups/ModCheck/20261031_013530_update"
+    },
+    {
       "when": "2026-10-30 09:52",
       "what": "SE runtime logging on + test launch",
       "by": "Lead (pre-team)",
@@ -223,7 +229,6 @@
     }
   ],
   "next": [
-    "Gatekeeper: install the 3 updates, if Teno approves",
     "Toolsmith backlog: make -UseCache fully offline; quiet the PowerShell 5.1 stderr notice in Test-ModCheck"
   ]
 }

@@ -11,5 +11,6 @@ One line per change to the live game: the Mods folder, `modsettings.lsx`, the ga
 | 2026-10-30 02:18 | Loot patch rebuilt without dependencies, order restored, verified with a test launch | `build_lootpatch.py --install`, `Test-GameLoad.ps1` | `20261030_021855_lootpatch` | game kept all entries | "i still want 1-10 and the patch fixed. and the load order" |
 | 2026-10-30 09:39 | StrongerBosses pak moved out of Mods | hand move | `20261030_093911_parked` | applied | "Yes, move it out" |
 | 2026-10-30 09:52 | Script Extender `LogRuntime` and `LogFailedCompile` on; test launch | hand edit, `Test-GameLoad.ps1` | `20261030_095232_se-settings` | game kept 404 entries; clean runtime log | "also can you see the logs now from the last run?" |
+| 2026-10-31 01:35 | 3 mod updates (AMSE 1.1.5, B52's Finesse Weaponry 3.1.1.3, Skynet 7.5) | `Update-Mods.ps1 -Only AutomaticMagicalSecretsExtender,"B52's Finesse Weaponry",Skynet -Yes -SkipLoadOrderFix`; `Test-GameLoad.ps1` | `20261031_013530_update` | applied; Fix-LoadOrder preview: nothing to change; test launch kept 404 entries; runtime log clean (no errors/warnings; Skynet and AMSE load as SE mods) | "Install the updates" |
 
-The lines above were made by the Lead session before the team was set up (transition). From 31 Oct 2026 every live change goes through the Gatekeeper.
+The 29–30 Oct lines were made by the Lead session before the team was set up (transition). From 31 Oct 2026 every live change goes through the Gatekeeper.
