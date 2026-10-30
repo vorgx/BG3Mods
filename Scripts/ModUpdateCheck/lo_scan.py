@@ -5,8 +5,8 @@ import lz4.block, lz4.frame, zstandard
 
 LOCAL = os.environ["LOCALAPPDATA"]
 BG3 = os.path.join(LOCAL, "Larian Studios", "Baldur's Gate 3")
-MODS = os.path.join(BG3, "Mods")
-MODSETTINGS = os.path.join(BG3, "PlayerProfiles", "Public", "modsettings.lsx")
+MODS = os.environ.get("BG3MC_MODS") or os.path.join(BG3, "Mods")  # overrides are for testing
+MODSETTINGS = os.environ.get("BG3MC_MODSETTINGS") or os.path.join(BG3, "PlayerProfiles", "Public", "modsettings.lsx")
 OUT = sys.argv[1]
 STATS_RE = re.compile(r"^Public/[^/]+/Stats/Generated/Data/[^/]+\.txt$", re.I)
 

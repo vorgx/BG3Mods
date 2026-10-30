@@ -6,7 +6,7 @@ from datetime import datetime, timezone
 sys.stdout.reconfigure(encoding="utf-8")
 HERE = os.path.dirname(os.path.abspath(__file__))
 S = os.environ.get("BG3MC_WORK") or os.path.join(HERE, "work")  # caches and intermediate JSON
-CONF = os.path.join(HERE, "config")  # hand-checked matches and rules
+CONF = os.environ.get("BG3MC_CONF") or os.path.join(HERE, "config")  # hand-checked matches and rules
 lo = json.load(open(os.path.join(S, "lo_data.json"), encoding="utf-8"))
 upd = {m["pak"]: m for m in json.load(open(os.path.join(S, "report.json"), encoding="utf-8"))["mods"]}
 notes = json.load(open(os.path.join(S, "lo_notes.json"), encoding="utf-8"))

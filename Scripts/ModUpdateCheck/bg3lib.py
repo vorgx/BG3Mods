@@ -6,13 +6,15 @@ import lz4.block, lz4.frame, zstandard, requests
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 WORK = os.environ.get("BG3MC_WORK") or os.path.join(HERE, "work")
-CONF = os.path.join(HERE, "config")
+CONF = os.environ.get("BG3MC_CONF") or os.path.join(HERE, "config")
 PROJECT = os.path.normpath(os.path.join(HERE, "..", ".."))
 BACKUPS = os.environ.get("BG3MC_BACKUPS") or os.path.join(PROJECT, "Backups", "ModCheck")
 LOCAL = os.environ["LOCALAPPDATA"]
 BG3 = os.path.join(LOCAL, "Larian Studios", "Baldur's Gate 3")
 MODS = os.environ.get("BG3MC_MODS") or os.path.join(BG3, "Mods")  # overrides are for testing
 MODSETTINGS = os.environ.get("BG3MC_MODSETTINGS") or os.path.join(BG3, "PlayerProfiles", "Public", "modsettings.lsx")
+if any(os.environ.get(k) for k in ("BG3MC_MODS", "BG3MC_MODSETTINGS", "BG3MC_BACKUPS", "BG3MC_CONF")):
+    print(f"[INFO] Path overrides active: Mods={MODS}, modsettings={MODSETTINGS}, backups={BACKUPS}, config={CONF}", file=sys.stderr)
 HELPER = os.path.join(LOCAL, "BG3ModHelper")
 NEXUS_GAME_ID = 3474
 MODIO_GAME_ID = 6715

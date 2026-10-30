@@ -95,6 +95,74 @@ def label(m):
     return m.get("name") or m["pak"]
 
 
+# every word of every installed mod's names (frameworks included), for checking what a patch's title names
+installed_words = {w for phrase, _ in aliases for w in phrase}  # includes short names like "eotb"
+for m in mods:
+    text = " ".join([m["pak"], m.get("name") or ""] + [s.get("name") or "" for s in m["sources"]])
+    installed_words |= set(words(text)) | set(words(text.lower()))  # "EotB" is split as "eot b"; keep "eotb" too
+GENERIC = {"optional", "compatible", "version", "versions", "patched", "patches", "patchs", "update", "updated", "only", "required",
+           "requires", "mod", "conversion", "ft", "integration", "bridge", "submod", "submods", "addons", "merged", "merge", "hotfix",
+           "vanilla", "unofficial"}
+
+
+def names_only_installed(title, page):
+    """False when a patch's title names a mod you don't have ("Barbie Head - CCO Patch" needs Character Creation Overhaul).
+    Looks only at patch titles, past the page's own name, a closing "by <author>" credit, and the patch's own name when the
+    targets are in brackets; a word counts as a mod name you have when it appears in any installed mod's names."""
+    if not PATCHY.search(title):
+        return True
+    t = re.sub(r"\bby\s+\S+\s*$", "", title, flags=re.I)
+    m = re.match(r"(.+?)\((.+)\)\s*$", t)
+    if m:
+        # "Actual Green-Flame Blade (5e Spells and SCAG patch)": the targets are in the brackets;
+        # "... KAVT Patch (Optional)": the brackets are only a label
+        t = m.group(2) if PATCHY.search(m.group(2)) else m.group(1)
+    left = {w for w in words(t) if w not in STOP | GENERIC and len(w) > 1 and not any(c.isdigit() for c in w)}
+    return not (left - set(words(page)) - installed_words)
+
+
+# installed mods as name phrases, frameworks included (aliases leaves them out), for "only needed if you use MCM"
+everyone = list(aliases)
+for m in mods:
+    if FRAMEWORK.search(f"{m['pak']} {m.get('name')}"):
+        for n in {m.get("name") or "", re.sub(r"\.pak$", "", m["pak"], flags=re.I)} | {s.get("name") or "" for s in m["sources"]}:
+            w = tuple(x for x in words(re.sub(r"\(.*?\)|\s-\s.*$", "", n)) if x not in STOP)
+            if w:
+                everyone.append((w, m))
+
+
+def named_mods(text):
+    """Paks of installed mods (frameworks included) whose name appears in text. Alias phrases have no stop words, so neither
+    does the text here ("Eyes of the Beholder" -> "eyes beholder")."""
+    joined = " " + " ".join(w for w in words(text) if w not in STOP) + " "
+    return {m["pak"] for phrase, m in everyone if " " + " ".join(phrase) + " " in joined}
+
+
+# a requirement the author limits to one version of their mod, or to users of another mod
+CONDITIONAL = re.compile(r"\bonly (?:required|needed|necessary)\b|\b(?:required|needed) (?:only )?(?:for|with)\b.*\bversions?\b|"
+                         r"^\W*(?:only )?for\b.*\b(?:users?|versions?)\b|\bif you(?: are)? (?:use|using|run|play with)\b", re.I)
+NOT_REQUIRED = re.compile(r"^\W*not (?:required|needed)\b", re.I)  # "Not required for the Lite version": a negative, not a condition
+COND_WORDS = {"only", "required", "needed", "necessary", "for", "if", "you", "are", "use", "using", "play", "run", "users", "user",
+              "version", "versions", "the", "this", "that", "when", "with", "and", "or", "all", "both", "any", "every", "each",
+              "either", "latest", "newest", "current", "other"}
+
+
+def conditional_applies(notes, owners):
+    """None when the note sets no real condition ("Required for all versions", "For all users"). Otherwise whether it applies
+    to you: your pak is the version it names ("ONLY REQUIRED FOR THE KAZSTRA TAV VERSION"), or for "For UT/KAVT users" and
+    "Only needed if you use X", you have a mod it names."""
+    if NOT_REQUIRED.search(notes) or not CONDITIONAL.search(notes):
+        return None
+    named = {w for w in words(notes) if w not in STOP | COND_WORDS and not any(c.isdigit() for c in w)}
+    if not named:
+        return None
+    if named & set(words(" ".join(f"{o['pak']} {o.get('name') or ''}" for o in owners))):
+        return True
+    if re.search(r"\bversions?\b", notes, re.I):
+        return False  # about a version of the mod, and yours isn't it
+    return bool(named_mods(notes) - {o["pak"] for o in owners})
+
+
 results = {"required": [], "suggested": [], "optional": []}
 seen = set()
 
@@ -133,6 +201,14 @@ for i in range(0, len(ids), 40):
                 continue
             notes = (req.get("notes") or "").strip()
             url = req.get("url") or (f"https://www.nexusmods.com/baldursgate3/mods/{rid}" if rid else "")
+            page = f"{owner[0]['sources'][0].get('name')}'s" if owner else "its"
+            applies = conditional_applies(notes, owner)
+            if applies is True:
+                add("required", owner, name, url, f"Listed as a requirement on {page} Nexus page, for the version or mod you have", notes)
+            elif applies is False:
+                add("optional", owner, name, url, f"Listed on {page} Nexus page, but only for a version or mod you don't have", notes)
+            if applies is not None:
+                continue
             optional = re.search(r"optional|recommend|not required|only (?:if|for|needed)|if you (?:want|use)|works? (?:fine )?without", notes, re.I)
             add("suggested" if optional else "required", owner, name, url,
                 f"Listed as a requirement on {owner[0]['sources'][0].get('name') if owner else 'its'} Nexus page"
@@ -211,7 +287,11 @@ for mid, owners in nexus_ids.items():
                 variant = o
                 break
         url = f"https://www.nexusmods.com/baldursgate3/mods/{mid}?tab=files&file_id={f['file_id']}"
-        if others and not variant:
+        if others and not variant and not names_only_installed(f.get("name") or "", page):
+            if f.get("category_name") in ("OPTIONAL", "MISCELLANEOUS"):
+                add("optional", owners, f"{page}: {f['name']}", url, "Patch that also names a mod you don't have",
+                    clean(f.get("description"))[:200])
+        elif others and not variant:
             add("suggested", owners + others, f"{page}: {f['name']}", url,
                 f"Optional file on {page}'s page for {', '.join(label(o) for o in others[:3])}, which you also have",
                 clean(f.get("description"))[:300])
@@ -248,7 +328,7 @@ for i in range(0, len(lids), 50):
         for src_mid, ctx in linked[int(node["modId"])]:
             others = mentions(f"{name} {node.get('summary') or ''}", exclude_pages={src_mid}, exclude_text=nexus[str(src_mid)]["mod"]["name"])
             owner = nexus_ids[src_mid]
-            if others:
+            if others and names_only_installed(name, nexus[str(src_mid)]["mod"]["name"]):
                 add("suggested", owner + others, name, f"https://www.nexusmods.com/baldursgate3/mods/{node['modId']}",
                     f"Linked from {nexus[str(src_mid)]['mod']['name']}'s page; it patches it with {', '.join(label(o) for o in others[:3])}, which you have",
                     (node.get("summary") or "")[:300])

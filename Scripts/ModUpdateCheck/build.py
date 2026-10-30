@@ -34,7 +34,7 @@ HTML = r"""<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BG3 Mod Updates</title>
+<title>BG3 Mod Check</title>
 <style>
 :root{
   --bg:#f6f5f1; --panel:#ffffff; --ink:#1d1c19; --muted:#6b6860; --line:#e3e0d8; --hover:#faf9f6;
@@ -101,6 +101,8 @@ button.btn:hover{background:var(--hover)}
 .vtag{display:inline-block;font-size:11px;margin-left:6px;color:var(--cur)}
 .manual{margin-top:6px;font-size:12.5px;color:var(--ink);background:var(--hover);border-radius:6px;padding:6px 8px}
 .note{color:var(--muted);font-size:12.5px;margin-top:6px}
+.row > .c-note{grid-column:2 / -1;margin-top:-6px}
+.row > .c-note .note,.row > .c-note .manual{margin-top:0}
 .lbl{display:none}
 .empty{padding:40px;text-align:center;color:var(--muted)}
 details.how{margin-top:28px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 18px}
@@ -137,7 +139,7 @@ h2{font-size:17px;margin:28px 0 10px}
   .row.head{display:none}
   .row{grid-template-columns:44px minmax(0,1fr);gap:8px 12px}
   .thumb{width:44px;height:34px}
-  .row > .c-inst,.row > .c-new,.row > .c-st{grid-column:2}
+  .row > .c-inst,.row > .c-new,.row > .c-st,.row > .c-note{grid-column:2}
   .lbl{display:inline;color:var(--muted);font-size:12px;margin-right:6px}
   .theme{position:static;margin-bottom:10px}
 }
@@ -239,7 +241,9 @@ h2{font-size:17px;margin:28px 0 10px}
   const day = t => t ? new Date(typeof t === 'number' ? t*1000 : t).toLocaleDateString(undefined,{year:'numeric',month:'short',day:'numeric'}) : '';
   const gen = new Date(D.generated);
   const mods = D.mods.slice().sort((a,b) => ORDER[a.status]-ORDER[b.status] || a.name.localeCompare(b.name));
-  const cnt = s => mods.filter(m => s === 'all' ? true : s === 'attention' ? m.status !== 'current' : m.status === s).length;
+  // gone mods (no longer hosted, keep your copy) need no action, so they're counted on their own, not under Need attention
+  const QUIET = ['current', 'gone'];
+  const cnt = s => mods.filter(m => s === 'all' ? true : s === 'attention' ? !QUIET.includes(m.status) : m.status === s).length;
   document.getElementById('meta').textContent =
     `${mods.length} paks scanned on ${gen.toLocaleString(undefined,{dateStyle:'medium',timeStyle:'short'})} · ` +
     `${mods.filter(m=>m.src.some(s=>s.source==='nexus')).length} on Nexus, ${mods.filter(m=>m.src.some(s=>s.source==='modio')).length} on mod.io`;
@@ -259,7 +263,7 @@ h2{font-size:17px;margin:28px 0 10px}
 
   function visible(){
     return mods.filter(m => {
-      if (state.filter === 'attention' && m.status === 'current') return false;
+      if (state.filter === 'attention' && QUIET.includes(m.status)) return false;
       if (!['all','attention'].includes(state.filter) && m.status !== state.filter) return false;
       if (state.onlyEnabled && m.enabled === false) return false;
       if (state.q) {
@@ -304,8 +308,9 @@ h2{font-size:17px;margin:28px 0 10px}
         ${extra.length ? `<div class="note">${esc(extra.join(' · '))}</div>` : ''}</div>
       <div class="c-inst" role="cell"><span class="lbl">Installed</span><span class="ver">${esc(m.version || '?')}</span><div class="sub">${day(m.mtime)}</div></div>
       <div class="c-new" role="cell"><span class="lbl">Latest</span>${latest}</div>
-      <div class="c-st" role="cell"><span class="badge ${m.status}">${LABEL[m.status]}</span>${vtag(m)}
-        ${m.manual ? `<div class="manual">${esc(m.manual)}</div>` : notes.length ? `<div class="note">${esc(notes.join(' '))}</div>` : ''}</div>
+      <div class="c-st" role="cell"><span class="badge ${m.status}">${LABEL[m.status]}</span>${vtag(m)}</div>
+      ${m.manual ? `<div class="c-note" role="cell" aria-colspan="4"><div class="manual">${esc(m.manual)}</div></div>` :
+        notes.length ? `<div class="c-note" role="cell" aria-colspan="4"><div class="note">${esc(notes.join(' '))}</div></div>` : ''}
     </div>`;
   }
   function render(){

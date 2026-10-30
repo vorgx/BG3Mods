@@ -15,7 +15,7 @@ Run these from `Scripts\ModUpdateCheck`.
 
 | Command | What it does |
 |---------|-------------|
-| `.\Run-ModCheck.ps1` | Builds the report `Reports\BG3_Mod_Check_<date>.html` (tabs: Updates, Load order, Add-ons) and `Reports\BG3_Recommended_Load_Order_<date>.json`. Read-only. About 2 minutes; `-UseCache` re-renders in about 10 seconds without Nexus calls. |
+| `.\Run-ModCheck.ps1` | Builds the report `Reports\BG3_Mod_Check_<date>.html` (tabs: Updates, Load order, Add-ons) and `Reports\BG3_Recommended_Load_Order_<date>.json`. Read-only. About 2 minutes; `-UseCache` reuses the Nexus mod and file data and re-renders in about 10 seconds, but still re-fetches mod.io, asks Nexus GraphQL for requirements and linked mods, and downloads any manifest not yet in `work\manifests`. |
 | `.\Fix-LoadOrder.ps1` | Previews the recommended load order against your current one. |
 | `.\Fix-LoadOrder.ps1 -Apply` | Writes it into `modsettings.lsx`. Add `-Disable X.pak` to take mods out of the order (the pak stays installed), or `-Enable X.pak` to add installed but inactive paks. |
 | `.\Update-Mods.ps1` | Shows the download plan for every "Update available" mod, asks you to type YES, then downloads, backs up, installs, re-checks, and re-applies the load order. `-Only Goon,Rebalance` limits it to matching mods. `-RemoveObsolete` also removes paks marked obsolete. |
@@ -71,11 +71,13 @@ If you also use BG3 Mod Manager, import the same order there (File → Import Or
 
 - **Missing requirements:**
   - Nexus requirements, from the GraphQL API, with the author's notes. "Optional" or "recommended" notes become suggestions instead.
+  - Conditional requirements ("ONLY REQUIRED FOR THE KAZSTRA TAV VERSION", "For UT/KAVT users", "Required for the Unique Tav … versions") count as missing only when your pak's name shows you run that version, or (when the note names another mod rather than a version) you have that mod. Otherwise they're listed under other optional files.
   - mod.io dependencies.
   - Tools (Script Extender, mod managers) and requirements another installed pak already provides are skipped.
 - **Suggested patches:**
   - Optional files on your mods' Nexus pages whose title names another mod you have, or patch files whose description does.
   - Patch mods linked from your mods' descriptions that name another mod you have.
+  - A patch is suggested only when every mod its title names is installed: "Barbie Head - CCO Patch" isn't suggested without Character Creation Overhaul. A title word counts as a mod you have when it appears in any installed mod's names.
   - Not suggested: framework mods (they're mentioned everywhere), game-patch wording ("Patch 8 ready"), translations, close variants of files you already have, and add-ons for mods you're about to disable.
 - **Other optional files** are listed for browsing.
 
@@ -108,4 +110,21 @@ For a downloaded new mod, it compares the class, subclass, progression, feat, ra
 - **`work\`:** caches, the venv, downloads and intermediate JSON. It's git-ignored and safe to delete.
   - Deleting `work\manifests` means about 900 manifests are downloaded again.
   - `work\downloads` keeps each update's original archives until you delete it.
-- **Testing overrides:** set `BG3MC_MODS`, `BG3MC_MODSETTINGS` and `BG3MC_BACKUPS` to point the tools at sandbox copies.
+- **Testing overrides:** set `BG3MC_MODS`, `BG3MC_MODSETTINGS`, `BG3MC_BACKUPS`, `BG3MC_WORK` and `BG3MC_CONF` to point the tools at sandbox copies. Any script using `bg3lib.py` prints `[INFO] Path overrides active: ...` when one is set, so a leftover variable can't quietly redirect a real run. `BG3MC_CONF` is read only by `bg3lib.py` and `lo_analyze.py`; `scan.py` and `verify.py` ignore the overrides and always read the live Mods folder.
+
+## Tests
+
+`.\Test-ModCheck.ps1` runs the sandbox suite in `tests\` (about a minute). `-Filter fix_order` runs only matching tests; `-Detailed` lists each one. It uses Python's built-in `unittest`, so it needs nothing beyond `work\venv`.
+
+- **Copies only.** Each test builds small synthetic paks (LSPK v18 with a `meta.lsx`) and a CRLF `modsettings.lsx` in its own folder under `work\test-sandbox\`, and points the tools there with the five overrides above. `tests\run_tool.py` refuses to start a tool when any of them is unset or resolves outside `work\test-sandbox\` (the live Mods folder, the live `modsettings.lsx`, the game install, the real `Backups\ModCheck` and the real `work\` are all refused). It also runs only the six scripts below; `test_load.py`, `scan.py` and `verify.py` are refused.
+- **Proof.** After the run, `tests\run_tests.py` compares the live `modsettings.lsx` (MD5, modification time and size), every file in the live Mods folder, everything under the real `Backups\ModCheck` and `work\*.json` with a snapshot taken before (folders by modification time only, because Windows can change a folder's reported size without a write). Any change fails the run.
+- **No network.** HTTP calls raise. Downloads are served from the sandbox, and the `bg3.exe` check is stubbed (tests set it to "running" to check the refusals).
+- **Covered:**
+  - `fix_order.py`: preview, `--apply`, `--enable` placement above Compatibility Framework, `--disable` (pak kept, base-game override warning), only the Mods entries change (byte for byte, CRLF kept), backup made, refusal while BG3 runs.
+  - `restore.py`: round trips after a load-order fix, after an update that moved a pak, and after `build_lootpatch.py --install`.
+  - `update.py`: installs a good update and moves the old pak to the backup; refuses a downgrade (listed or downloaded), a changed mod UUID and a taken file name, leaving those paks byte-identical.
+  - `build_lootpatch.py`: the built pak's meta declares no dependencies, `sources.json` lists the sources in load order, and the pool and subtable merges contain everyone's items. Needs `LsLib\Tools\Divine.exe`.
+  - `lo_analyze.py`: `sources.json` keeps the loot patch after its sources; override, partial-override, inactive and no-meta paks.
+  - `addons.py` (with canned GraphQL answers): conditional requirements, and patches suggested only when every mod they name is installed.
+  - `build.py`: the report's own script runs under Node.js against a small DOM stub (`tests\render_report.js`) to check that "Need attention" leaves out no-longer-hosted mods, that notes sit in their own row, and the page title. Skipped when `node` isn't on PATH.
+- The newest sandbox run is kept for inspection and deleted at the start of the next run (`-keep` on `run_tests.py` keeps them all).
